@@ -1,0 +1,65 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by Sergey
+//at Tue Nov 17 12:21:52 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object description15
+	{
+		defaults
+		{
+			pos 0 -7.10543e-015
+			opacity 255
+			color 0xffababab
+			size 480 250
+			effect ""
+			alignment "LT"
+			sampleText "Sdfde gg fhg dh d |df  dfdf b|DFHdbh |D DH D|DXFGHDSG|D ghfggf |FGNng "
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object scroll_
+	{
+		defaults
+		{
+			pos 485 -7.10543e-015
+			opacity 255
+			color 0xffababab
+			size 10 250
+			effect "ui\graphics\scroll_2\scroll_2_main"
+			alignment "LT"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -7.10543e-015
+			opacity 255
+			color 0xffffffff
+			size 500 250
+			effect ""
+			alignment "LT"
+			sampleText " "
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+}
+
