@@ -1,0 +1,428 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Wed Aug 21 15:24:53 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 28
+
+objects 24
+{
+	object text17
+	{
+		defaults
+		{
+			pos 12 -0
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Тебуются  Легкие лазеры"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self132
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 314 220
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text18
+	{
+		defaults
+		{
+			pos 12 29
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Тебуются  Легкие лазеры"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text19
+	{
+		defaults
+		{
+			pos 204 29
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "9999/4445"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 79 193
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\button\button_1"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object money_1_1
+	{
+		defaults
+		{
+			pos 207 77
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object buy_slider_main_1
+	{
+		defaults
+		{
+			pos 7 59
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\clan\build_dread_slider_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object gold_1_1
+	{
+		defaults
+		{
+			pos 43 77
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 412 30
+			opacity 255
+			color 0xffff9a00
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "color_1"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object gold_2_1
+	{
+		defaults
+		{
+			pos 10 77
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect ""
+			alignment "LM"
+			sampleText "12132323"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object money_2_1
+	{
+		defaults
+		{
+			pos 207 77
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect ""
+			alignment "RM"
+			sampleText "899800"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object dread_btn1
+	{
+		defaults
+		{
+			pos 287 -0
+			opacity 255
+			color 0xffffffff
+			size 26 20
+			effect "ui\graphics\clan\build_dread_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_35
+	{
+		defaults
+		{
+			pos 0 193
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\button\button_1"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_36
+	{
+		defaults
+		{
+			pos 157 193
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\button\button_1"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object buy_slider_main_2
+	{
+		defaults
+		{
+			pos 7 102
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\clan\build_dread_slider_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object gold_2_2
+	{
+		defaults
+		{
+			pos 10 120
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect ""
+			alignment "LM"
+			sampleText "12132323"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object gold_1_2
+	{
+		defaults
+		{
+			pos 43 120
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object money_1_2
+	{
+		defaults
+		{
+			pos 207 120
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object money_2_2
+	{
+		defaults
+		{
+			pos 207 120
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect ""
+			alignment "RM"
+			sampleText "899800"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_slider_main_3
+	{
+		defaults
+		{
+			pos 7 146
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\clan\build_dread_slider_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object gold_2_3
+	{
+		defaults
+		{
+			pos 10 164
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect ""
+			alignment "LM"
+			sampleText "12132323"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object gold_1_3
+	{
+		defaults
+		{
+			pos 43 164
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object money_1_3
+	{
+		defaults
+		{
+			pos 207 164
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object money_2_3
+	{
+		defaults
+		{
+			pos 207 164
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect ""
+			alignment "RM"
+			sampleText "899800"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite sp87
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	310.514 -4	318.495 -4	-4 22	4 22	310.514 22	318.495 22	-4 216.809	4 216.809	310.514 216.809	318.495 216.809	-4 225.191	4 225.191	310.514 225.191	318.495 225.191	
+				0.0585916 0.695313	0.0664131 0.695313	0.0742188 0.695313	0.0820312 0.695313	0.0585915 0.720703	0.0664131 0.720703	0.0742187 0.720703	0.0820313 0.720703	0.0585915 0.723631	0.066413 0.723631	0.0742189 0.723631	0.0820313 0.723631	0.0585915 0.731445	0.0664131 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite myself11
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 192	313.505 192	0 194	313.505 194	
+				0.0625 0.140625	0.0673828 0.140625	0.0625 0.142578	0.0673828 0.142578	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp88
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				5 28	11 28	303.505 28	309.505 28	5 34	11 34	303.505 34	309.505 34	5 44	11 44	303.505 44	309.505 44	5 50	11 50	303.505 50	309.505 50	
+				0.447266 0.615234	0.447266 0.621094	0.447266 0.625	0.447266 0.630859	0.453125 0.615234	0.453125 0.621094	0.453125 0.625	0.453125 0.630859	0.457031 0.615234	0.457031 0.621094	0.457031 0.625	0.457031 0.630859	0.462891 0.615234	0.462891 0.621094	0.462891 0.625	0.462891 0.630859	
+				0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp89
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				7 30	13 30	301.505 30	307.505 30	7 36	13 36	301.505 36	307.505 36	7 42	13 42	301.505 42	307.505 42	7 48	13 48	301.505 48	307.505 48	
+				0.470703 0.591797	0.470703 0.597656	0.470703 0.601563	0.470703 0.607422	0.476563 0.591797	0.476563 0.597656	0.476563 0.601563	0.476562 0.607422	0.480469 0.591797	0.480469 0.597656	0.480469 0.601563	0.480469 0.607422	0.486328 0.591797	0.486328 0.597656	0.486328 0.601563	0.486328 0.607422	
+				0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	0x4d000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
