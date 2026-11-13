@@ -1,0 +1,137 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud.ma
+//by sergey_mitryaev
+//at Wed Jul 18 11:01:11 2012
+
+
+animations 7
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim empty
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim activity_on
+	{
+		mode looped
+		cycle_time 0.8
+	}
+}
+
+total_elements 4
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	50 -0	0 50	50 50	
+				0.00193551 0.0635492	0.0507636 0.0635492	0.00193551 0.112377	0.0507636 0.112377	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on active
+		visible_on inactive
+		visible_on sel_inactive
+		anim empty sp_colc
+		{
+			1
+			0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+		}
+		visible_on activity_on
+	}
+	sprite select
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	50 -0	0 50	50 50	
+				0.122158 0.0020119	0.170986 0.0020119	0.122158 0.05084	0.170986 0.05084	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on select
+		visible_on sel_inactive
+		anim activity_on sp_col
+		{
+			5
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xa5a5a5a5	0xa5a5a5a5	0xa5a5a5a5	0xa5a5a5a5	
+			0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	
+			0x8f8f8f8f	0x8f8f8f8f	0x8f8f8f8f	0x8f8f8f8f	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite inactive
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	50 -0	0 50	50 50	
+				0.223366 0.00293684	0.272194 0.00293684	0.223366 0.051765	0.272194 0.051765	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		visible_on inactive
+		visible_on sel_inactive
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				4.42789 3.96913	46.4279 3.96913	4.42789 45.9691	46.4279 45.9691	
+				-9.31323e-009 0	1 0	-9.31323e-009 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+	}
+}
+
