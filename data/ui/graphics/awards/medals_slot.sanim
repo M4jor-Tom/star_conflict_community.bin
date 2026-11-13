@@ -1,0 +1,76 @@
+﻿source_file  Y:/art/source/ui/graphics/awards/awards.ma
+//by sergey_mitryaev
+//at Tue Sep 11 15:06:28 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object medals_1
+	{
+		defaults
+		{
+			pos 146.469 0.557831
+			opacity 255
+			color 0xffffffff
+			size 84 112
+			effect "ui\graphics\awards\medal_ico"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 230 112
+			effect ""
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object medals_2
+	{
+		defaults
+		{
+			pos 108.623 0.557831
+			opacity 255
+			color 0xffffffff
+			size 84 112
+			effect "ui\graphics\awards\medal_ico"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 230 112
+			effect "ui\graphics\awards\medal_blackout"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
