@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Tue Nov 12 11:29:51 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object active_module_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 78 78
+			effect "ui\graphics\equip_1080\active_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object active_module_2
+	{
+		defaults
+		{
+			pos 93 -0
+			opacity 255
+			color 0xffffffff
+			size 78 52
+			effect "ui\graphics\equip_1080\active_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object active_module_3
+	{
+		defaults
+		{
+			pos 186 -0
+			opacity 255
+			color 0xffffffff
+			size 78 52
+			effect "ui\graphics\equip_1080\active_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object active_module_4
+	{
+		defaults
+		{
+			pos 278 -0
+			opacity 255
+			color 0xffffffff
+			size 78 52
+			effect "ui\graphics\equip_1080\active_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 356 78
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
