@@ -1,0 +1,160 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Thu Mar 07 13:39:02 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 5
+{
+	object button_1
+	{
+		defaults
+		{
+			pos 204.622 486.945
+			opacity 255
+			color 0xffffffff
+			size 270 25
+			effect "ui\graphics\login_screen\btn_steam"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 488.1 486.945
+			opacity 255
+			color 0xffffffff
+			size 270 25
+			effect "ui\graphics\login_screen\btn_steam"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object description_1
+	{
+		defaults
+		{
+			pos 230.664 20
+			opacity 255
+			color 0xffffffff
+			size 500 80
+			effect ""
+			alignment "CT"
+			sampleText "DKJEFJEFIO|OEOJKVOVF"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object description_2
+	{
+		defaults
+		{
+			pos 76.5046 432.84
+			opacity 255
+			color 0xffffffff
+			size 800 50
+			effect ""
+			alignment "CM"
+			sampleText "DKJEFJEFIO|OEOJKVOVF"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 950 520
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 28
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				2 3	8 3	940 3	946 3	2 9	8 9	940 9	946 9	2 536	8 536	940 536	946 536	2 542	8 542	940 542	946 542	
+				0.325187 0.000901282	0.331047 0.000901282	0.370158 0.000901282	0.376017 0.000901282	0.325187 0.00676066	0.331047 0.00676066	0.370158 0.00676066	0.376017 0.00676066	0.325187 0.0458738	0.331047 0.0458738	0.370158 0.0458738	0.376017 0.0458738	0.325187 0.0517332	0.331047 0.0517332	0.370158 0.0517332	0.376017 0.0517332	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/steam_img_1.tif"
+			vertices_nc
+			{
+				4.20453 5	944 5	4.20453 540.25	944 540.25	
+				-1.49012e-008 0	1 0	-1.49012e-008 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNamewdf
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/steam_img_1.tif"
+			vertices
+			{
+				4 5	944 5	4 122	944 122	
+				-1.49012e-008 0.977612	1 0.977612	-1.49012e-008 0.996269	1 0.996269	
+				0xe1ffffff	0xe1ffffff	0xe1ffffff	0xe1ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNamewdfwc
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/steam_img_1.tif"
+			vertices
+			{
+				4 423.5	944 423.5	4 539.75	944 539.75	
+				-1.49012e-008 0.977612	1 0.977612	-1.49012e-008 0.996269	1 0.996269	
+				0xe1ffffff	0xe1ffffff	0xe1ffffff	0xe1ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
