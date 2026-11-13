@@ -1,0 +1,118 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Nov 25 12:49:21 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 3
+{
+	object self131
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 130
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text16
+	{
+		defaults
+		{
+			pos 9 4
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Тебуются  Легкие лазеры"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object t_1
+	{
+		defaults
+		{
+			pos 175 44
+			opacity 255
+			color 0xffffffff
+			size 150 40
+			effect ""
+			alignment "RM"
+			sampleText "00:66:89"
+			font "Large"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp69
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	493 -0	499 -0	0 6	6 6	493 6	499 6	0 124	6 124	493 124	499 124	0 130	6 130	493 130	499 130	
+				0.253912 0.0390624	0.253912 0.0332032	0.253912 0.0214843	0.253912 0.0156251	0.248053 0.0390626	0.248053 0.0332032	0.248053 0.0214846	0.248053 0.0156249	0.236323 0.0390626	0.236323 0.0332032	0.236323 0.0214842	0.236323 0.0156249	0.230463 0.0390626	0.230463 0.0332032	0.230463 0.0214843	0.230463 0.0156249	
+				0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp70
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	495 -2	501 -2	-2 4	4 4	495 4	501 4	-2 22	4 22	495 22	501 22	-2 28	4 28	495 28	501 28	
+				0.0800752 0.646482	0.074216 0.646482	0.0664034 0.646482	0.0605441 0.646482	0.0800753 0.652341	0.074216 0.652341	0.0664037 0.652341	0.0605441 0.652341	0.0800753 0.65332	0.0742159 0.65332	0.0664033 0.65332	0.060544 0.65332	0.0800753 0.654297	0.074216 0.654297	0.0664034 0.654297	0.060544 0.654297	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp71
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 102	4 102	495 102	501 102	-2 108	4 108	495 108	501 108	-2 126	4 126	495 126	501 126	-2 132	4 132	495 132	501 132	
+				0.0800752 0.654297	0.074216 0.654297	0.0664034 0.654297	0.0605441 0.654297	0.0800753 0.65332	0.074216 0.65332	0.0664037 0.65332	0.0605441 0.65332	0.0800753 0.652344	0.0742159 0.652344	0.0664033 0.652344	0.060544 0.652344	0.0800753 0.646484	0.074216 0.646484	0.0664034 0.646484	0.060544 0.646484	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
