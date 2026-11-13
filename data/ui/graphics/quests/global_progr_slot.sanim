@@ -1,0 +1,121 @@
+﻿source_file  Y:/art/source/ui/graphics/quests/quests.ma
+//by sergey_mitryaev
+//at Wed Jul 18 15:26:30 2012
+
+
+animations 2
+{
+	anim white
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim grey
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object title
+	{
+		defaults
+		{
+			pos -26.0363 50.5306
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "CM"
+			sampleText "Отрешенный"
+			font "VerySmall"
+		}
+		visible_on white
+		anim grey obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object center
+	{
+		defaults
+		{
+			pos 49.5333 74.7592
+			opacity 255
+			color 0xff88b5ff
+			size 16 16
+			effect "ui\graphics\quests\global_progr_point"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on white
+		visible_on grey
+	}
+	object value
+	{
+		defaults
+		{
+			pos -26.0363 77.5063
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "CM"
+			sampleText "900"
+			font "VerySmall"
+		}
+		visible_on white
+		anim grey obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect ""
+			alignment "LT"
+		}
+		visible_on white
+		visible_on grey
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				24.5333 -7.65641	74.5333 -7.65641	24.5333 57.3436	74.5333 57.3436	
+				1.11759e-008 0	1 0	1.11759e-008 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on white
+		anim grey sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+}
+
