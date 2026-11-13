@@ -1,0 +1,179 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills_2.ma"
+//by sergey_mitryaev
+//at Thu Oct 15 18:27:33 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 170 370
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tir
+	{
+		defaults
+		{
+			pos 8.97174 -10
+			opacity 255
+			color 0xffffffff
+			size 152 40
+			effect "ui\graphics\skills_2\skills_tir"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 4.3163 42.7381
+			opacity 255
+			color 0xffffffff
+			size 162 100
+			effect "ui\graphics\skills_2\skills_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 4.3163 143
+			opacity 255
+			color 0xffffffff
+			size 162 100
+			effect "ui\graphics\skills_2\skills_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 4.3163 243
+			opacity 255
+			color 0xffffffff
+			size 162 100
+			effect "ui\graphics\skills_2\skills_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object top_secret
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 170 370
+			effect "ui\graphics\skills_2\skills_top_secret"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 32
+
+	sprite sdsd1
+	{
+		defaults
+		{
+			rows 2
+			cols 4
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				0.841614 352.376	0.841663 179.706	0.84164 105.19	0.841629 30.674	2.82379 352.376	2.82384 179.706	2.82383 105.19	2.82381 30.674	
+				0.620488 0.705908	0.620488 0.693942	0.620488 0.681976	0.620488 0.67001	0.624815 0.705908	0.624815 0.693942	0.624815 0.681976	0.624815 0.67001	
+				0x0	0x99999999	0x99999999	0x0	0x0	0x99999999	0x99999999	0x0	
+			}
+		}
+		visible_on idle
+	}
+	sprite sdsd2
+	{
+		defaults
+		{
+			rows 2
+			cols 4
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				167.885 352.376	167.885 179.706	167.885 105.19	167.885 30.674	169.867 352.376	169.867 179.706	169.867 105.19	169.867 30.674	
+				0.620488 0.705908	0.620488 0.693942	0.620488 0.681976	0.620488 0.67001	0.624815 0.705908	0.624815 0.693942	0.624815 0.681976	0.624815 0.67001	
+				0x0	0x99999999	0x99999999	0x0	0x0	0x99999999	0x99999999	0x0	
+			}
+		}
+		visible_on idle
+	}
+	sprite sdsd4
+	{
+		defaults
+		{
+			rows 2
+			cols 4
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				55.1587 352.376	55.1587 179.706	55.1587 105.19	55.1587 30.674	57.1409 352.376	57.1409 179.706	57.1409 105.19	57.1409 30.674	
+				0.620488 0.705908	0.620488 0.693942	0.620488 0.681976	0.620488 0.67001	0.624815 0.705908	0.624815 0.693942	0.624815 0.681976	0.624815 0.67001	
+				0x0	0x4c4c4c4c	0x4c4c4c4c	0x0	0x0	0x4c4c4c4c	0x4c4c4c4c	0x0	
+			}
+		}
+		visible_on idle
+	}
+	sprite sdsd5
+	{
+		defaults
+		{
+			rows 2
+			cols 4
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				112.273 352.376	112.273 179.706	112.273 105.19	112.273 30.674	114.256 352.376	114.256 179.706	114.255 105.19	114.255 30.674	
+				0.620488 0.705908	0.620488 0.693942	0.620488 0.681976	0.620488 0.67001	0.624815 0.705908	0.624815 0.693942	0.624815 0.681976	0.624815 0.67001	
+				0x0	0x4c4c4c4c	0x4c4c4c4c	0x0	0x0	0x4c4c4c4c	0x4c4c4c4c	0x0	
+			}
+		}
+		visible_on idle
+	}
+}
+
