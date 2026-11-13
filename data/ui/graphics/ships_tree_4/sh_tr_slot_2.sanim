@@ -1,0 +1,275 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race_4.ma"
+//by sergey_mitryaev
+//at Thu Dec 07 13:55:36 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 14
+{
+	object link
+	{
+		defaults
+		{
+			pos 114.487 9.7893
+			opacity 255
+			color 0xff2b8e27
+			size 42 42
+			effect ""
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object slot_indic_
+	{
+		defaults
+		{
+			pos 141 45
+			opacity 255
+			color 0xffffffff
+			size 30 23
+			effect "ui\graphics\ships_tree_4\slot_indic_main"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 66 187.789
+			opacity 255
+			color 0xffffffff
+			size 22 30
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_btn_1"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object center
+	{
+		defaults
+		{
+			pos 115 119.894
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object name
+	{
+		defaults
+		{
+			pos 17.1949 165.789
+			opacity 255
+			color 0xff99ffff
+			size 200 23
+			effect ""
+			alignment "CM"
+			sampleText "dfssgasdgagdfgdf"
+			font "Tiny"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object ship_ico
+	{
+		defaults
+		{
+			pos 37 42
+			opacity 255
+			color 0xffffffff
+			size 150 150
+			effect "ui\graphics\ships_tree_3\ship_ico"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+	}
+	object role
+	{
+		defaults
+		{
+			pos 113 27
+			opacity 255
+			color 0xff99ffff
+			size 10 23
+			effect "ui\graphics\hud\ratio\gmp_icon"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object rank
+	{
+		defaults
+		{
+			pos 84 23.9312
+			opacity 255
+			color 0xff99ffff
+			size 30 23
+			effect ""
+			alignment "RM"
+			sampleText "10"
+			font "Tiny"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object lock
+	{
+		defaults
+		{
+			pos 106.195 79.7893
+			opacity 255
+			color 0xffffffff
+			size 22 30
+			effect "ui\graphics\ships_tree_4\ship_lock"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object sinergy
+	{
+		defaults
+		{
+			pos 17.1949 102
+			opacity 255
+			color 0xff99ffff
+			size 200 23
+			effect ""
+			alignment "CM"
+			sampleText "Скоро в продаже"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 220 260
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object requir
+	{
+		defaults
+		{
+			pos 17.1949 207.789
+			opacity 255
+			color 0xffff2800
+			size 200 23
+			effect ""
+			alignment "CM"
+			sampleText "dfssgasdgagdfgdf"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object indic3
+	{
+		defaults
+		{
+			pos 89.0089 100
+			opacity 255
+			color 0xffffffff
+			size 22 30
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_indic_inbattle"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object info_btn
+	{
+		defaults
+		{
+			pos 143.432 70.5718
+			opacity 255
+			color 0xffffffff
+			size 50 16
+			effect "ui\graphics\ships_tree_3\info_btn"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite que486
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_5.tif"
+			vertices_nc
+			{
+				49.8644 54.5877	179.864 54.5877	49.8644 184.588	179.864 184.588	
+				0.466797 0.0117188	0.720703 0.0117188	0.466797 0.265625	0.720703 0.265625	
+			}
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
