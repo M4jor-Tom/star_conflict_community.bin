@@ -1,0 +1,110 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Mon Feb 01 16:12:41 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gold
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object player_val
+	{
+		defaults
+		{
+			pos 16 42
+			opacity 255
+			color 0xffcccccc
+			size 20 20
+			effect ""
+			alignment "LM"
+			sampleText "10"
+			font "Tiny"
+		}
+		visible_on idle
+		anim gold obj_colc
+		{
+			1
+			0xffff9100
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 45 62
+			effect ""
+			alignment "LM"
+			sampleText "35"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on gold
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	46 -0	0 42	46 42	
+				0.285156 0.499023	0.329102 0.499023	0.285156 0.540039	0.329102 0.540039	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim gold sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectNameqdqd
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-11.3474 -0	59.3474 -0	-11.3474 42	59.3474 42	
+				0.347656 0.499023	0.416016 0.499023	0.347656 0.540039	0.416016 0.540039	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
