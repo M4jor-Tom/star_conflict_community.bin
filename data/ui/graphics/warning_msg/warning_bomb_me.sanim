@@ -1,0 +1,74 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by sergey_mitryaev
+//at Fri Jan 22 15:46:22 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object value_outl
+	{
+		defaults
+		{
+			pos 27.977 -0.0575969
+			opacity 255
+			color 0xffff2700
+			size 20 20
+			effect ""
+			alignment "LM"
+			sampleText "3"
+			font "VerySmall_outl"
+		}
+		visible_on idle
+	}
+	object value
+	{
+		defaults
+		{
+			pos 27.977 -0.0575969
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LM"
+			sampleText "3"
+			font "VerySmall"
+			back_color 0xff0000
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 2.6522	36 2.6522	0 34.6522	36 34.6522	
+				0.671875 0.358398	0.707031 0.358398	0.671875 0.389648	0.707031 0.389648	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
