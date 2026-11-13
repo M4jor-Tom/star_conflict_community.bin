@@ -1,0 +1,462 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Mon Apr 04 18:13:20 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 3
+	}
+	anim idle_2
+	{
+		mode once
+		cycle_time 3
+	}
+}
+
+total_elements 12
+
+objects 8
+{
+	object icon
+	{
+		defaults
+		{
+			pos 78 42
+			opacity 255
+			color 0xffffffff
+			size 50 25
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			127
+			0
+		}
+		anim idle_2 obj_opc
+		{
+			1 
+			0
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 420 130
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object loot_name
+	{
+		defaults
+		{
+			pos 142 40.705
+			opacity 255
+			color 0xfff3f3f3
+			size 200 15
+			effect ""
+			alignment "LM"
+			sampleText "Монокристалы кадмия"
+			font "Tiny"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			0
+		}
+		anim idle_2 obj_opc
+		{
+			1 
+			0
+		}
+	}
+	object loloyalty
+	{
+		defaults
+		{
+			pos 159.252 139
+			opacity 255
+			color 0xffffffff
+			size 200 25
+			effect ""
+			alignment "RT"
+			sampleText "adsgsgh"
+			font "VerySmall"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			0
+		}
+		anim idle_2 obj_opc
+		{
+			1 
+			0
+		}
+	}
+	object descript
+	{
+		defaults
+		{
+			pos 142 56
+			opacity 255
+			color 0xff8f8f8f
+			size 200 15
+			effect ""
+			alignment "LM"
+			sampleText "Монокристалы кадмия"
+			font "Tiny"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			0
+		}
+		anim idle_2 obj_opc
+		{
+			1 
+			0
+		}
+	}
+	object price
+	{
+		defaults
+		{
+			pos 159.252 83
+			opacity 255
+			color 0xffababab
+			size 200 25
+			effect ""
+			alignment "RT"
+			sampleText "adsgsgh wqfwfwf fw fg"
+			font "VeryTiny"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			0
+		}
+		anim idle_2 obj_opc
+		{
+			1 
+			0
+		}
+	}
+	object price_2
+	{
+		defaults
+		{
+			pos 65 58
+			opacity 0
+			color 0xffffffff
+			size 300 25
+			effect ""
+			alignment "CM"
+			sampleText "adsgsgh sf  asgagaggag "
+			font "VerySmall"
+		}
+		visible_on idle
+		anim idle_2 obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			0
+		}
+	}
+	object parts_slot
+	{
+		defaults
+		{
+			pos 34 42
+			opacity 255
+			color 0xffffffff
+			size 94 25
+			effect "ui\graphics\ships_tree_2\parts_slot"
+			alignment "LT"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			127
+			0
+		}
+		anim idle_2 obj_opc
+		{
+			1 
+			0
+		}
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName173
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			vertices
+			{
+				199.626 36.5459	411.05 36.5461	199.626 101.491	411.05 101.491	
+				0.380886 0.847863	0.774979 0.847863	0.380886 0.955188	0.774979 0.955188	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle_2 sp_posc_col
+		{
+			1 11
+			199.626 53.9999	411.05 54.0001	199.626 87.0399	411.05 87.0397	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName176
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			vertices
+			{
+				199.626 36.5459	1.32553 36.5461	199.626 101.491	1.32553 101.491	
+				0.380886 0.847863	0.774979 0.847863	0.380886 0.955188	0.774979 0.955188	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle_2 sp_posc_col
+		{
+			1 11
+			199.626 53.9999	1.32553 54.0001	199.626 87.0399	1.32553 87.0397	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName177
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices
+			{
+				2.21515 35.5	417.785 35.5	2.21515 38.5	417.785 38.5	
+				0.318874 0.803405	0.581144 0.803405	0.318874 0.809927	0.581144 0.809927	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle_2 sp_posc_col
+		{
+			1 11
+			2.21515 51.5	417.785 51.5	2.21515 54.5	417.785 54.5	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName178
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices
+			{
+				2.21515 99.9511	417.785 99.9511	2.21515 102.951	417.785 102.951	
+				0.318874 0.803405	0.581144 0.803405	0.318874 0.809927	0.581144 0.809927	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle_2 sp_posc_col
+		{
+			1 11
+			2.21515 86.5	417.785 86.5	2.21515 89.5	417.785 89.5	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+}
+
