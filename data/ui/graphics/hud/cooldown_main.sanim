@@ -1,0 +1,78 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by sergey_mitryaev
+//at Mon Jul 17 13:18:14 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect ""
+			alignment "CM"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object flash
+	{
+		defaults
+		{
+			pos 0 -1
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\cooldown_flash"
+			alignment "CM"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object cooldown_text
+	{
+		defaults
+		{
+			pos 0 6
+			opacity 255
+			color 0xffffffff
+			size 50 40
+			effect ""
+			alignment "CM"
+			sampleText "100"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object reload
+	{
+		defaults
+		{
+			pos 32.2029 37.7842
+			opacity 255
+			color 0xffffffff
+			size 22 22
+			effect "ui\graphics\hud\cooldown_reload_2"
+			alignment "CM"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
