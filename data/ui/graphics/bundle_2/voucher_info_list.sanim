@@ -1,0 +1,117 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle_2.ma"
+//by sergey_mitryaev
+//at Mon Jun 06 13:48:51 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object ico_bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 350 350
+			effect "ui\graphics\bundle_2\bundle_ico_bg"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 356 404
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object title
+	{
+		defaults
+		{
+			pos 8 6
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Ржавый  контейнер"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object bundle_ico
+	{
+		defaults
+		{
+			pos 62 17
+			opacity 255
+			color 0xffffffff
+			size 230 200
+			effect "ui\graphics\bundle_2\bundle_ico"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object desription
+	{
+		defaults
+		{
+			pos 25 223
+			opacity 255
+			color 0xffffffff
+			size 300 190
+			effect ""
+			alignment "LT"
+			sampleText "ASEDd|sdfsv|SDVS|sdvSDVASD|sVSDV"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object price13
+	{
+		defaults
+		{
+			pos 141 423
+			opacity 255
+			color 0xff00ddff
+			size 200 50
+			effect ""
+			alignment "RB"
+			sampleText "Исчезнет через|23 часа 50  мин."
+			font "Medium"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
