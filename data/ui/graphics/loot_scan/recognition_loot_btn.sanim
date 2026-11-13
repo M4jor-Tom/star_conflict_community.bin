@@ -1,0 +1,173 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Fri Apr 26 15:20:22 2013
+
+
+animations 2
+{
+	anim free
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gold
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 406 78
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on free
+		visible_on gold
+	}
+	object loot_name
+	{
+		defaults
+		{
+			pos 77.2697 6.75647
+			opacity 255
+			color 0xffffffff
+			size 250 22
+			effect ""
+			alignment "LM"
+			sampleText "Монокристалы кадмия"
+			font "VerySmall"
+		}
+		visible_on free
+		anim gold obj_colc
+		{
+			1
+			0xffff9100
+		}
+	}
+	object t_1
+	{
+		defaults
+		{
+			pos 77.2697 34.7565
+			opacity 255
+			color 0xffffffff
+			size 250 40
+			effect ""
+			alignment "LT"
+			sampleText "swsdfwf|efge fe egv g"
+			font "Tiny"
+		}
+		visible_on free
+		visible_on gold
+	}
+	object t_2
+	{
+		defaults
+		{
+			pos 325.27 2.75647
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect ""
+			alignment "CM"
+			sampleText "Шанс"
+			font "Tiny"
+		}
+		visible_on free
+		visible_on gold
+	}
+	object t_3
+	{
+		defaults
+		{
+			pos 325.27 51.7565
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect ""
+			alignment "CM"
+			sampleText "swsdfwf"
+			font "Tiny"
+		}
+		visible_on free
+		visible_on gold
+	}
+	object price
+	{
+		defaults
+		{
+			pos 301.27 51.7565
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect "ui\graphics\shop\prod_price"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on free
+		visible_on gold
+	}
+	object t_4
+	{
+		defaults
+		{
+			pos 323.27 17.7565
+			opacity 255
+			color 0xffffffff
+			size 80 40
+			effect ""
+			alignment "CM"
+			sampleText "70%"
+			font "Large"
+		}
+		visible_on free
+		anim gold obj_colc
+		{
+			1
+			0xffff9100
+		}
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 406 78
+			effect "ui\graphics\loot_scan\recognition_loot_btn_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on free
+		visible_on gold
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 406 78
+			effect "ui\graphics\loot_scan\recognition_loot_btn_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on free
+		visible_on gold
+	}
+}
+
