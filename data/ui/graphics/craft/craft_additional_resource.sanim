@@ -1,0 +1,142 @@
+﻿source_file "Y:/art/source/ui/graphics/craft/craft.ma"
+//by sergey_mitryaev
+//at Thu Aug 14 17:00:11 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 332 173
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 11 27
+			opacity 255
+			color 0xffc6c6c6
+			size 310 40
+			effect ""
+			alignment "LT"
+			sampleText "Нет не единого товара|efweef wgeeg gwegg"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object marker
+	{
+		defaults
+		{
+			pos 59 -0
+			opacity 255
+			color 0xffffffff
+			size 30 15
+			effect "ui\graphics\craft\craft_additional_marker"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn6
+	{
+		defaults
+		{
+			pos 169.956 144
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object price12
+	{
+		defaults
+		{
+			pos 14.9561 148
+			opacity 255
+			color 0xffffffff
+			size 150 23
+			effect ""
+			alignment "RM"
+			sampleText "13223435"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object item
+	{
+		defaults
+		{
+			pos 13.1424 76
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\craft\craft_additional_item"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp40
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 12	4 12	328 12	334 12	-2 18	4 18	328 18	334 18	-2 170	4 170	328 170	334 170	-2 176	4 176	328 176	334 176	
+				0.0869155 0.672852	0.0927749 0.672852	0.100586 0.672852	0.106445 0.672852	0.0869155 0.678711	0.0927749 0.678711	0.100586 0.678711	0.106445 0.678711	0.0869155 0.686523	0.0927749 0.686523	0.100586 0.686523	0.106445 0.686523	0.0869155 0.692383	0.0927749 0.692383	0.100586 0.692383	0.106445 0.692383	
+				0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	0xff1c1c1c	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp42
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 12	4 12	328 12	334 12	-2 18	4 18	328 18	334 18	-2 170	4 170	328 170	334 170	-2 176	4 176	328 176	334 176	
+				0.028321 0.716797	0.0341804 0.716797	0.0419915 0.716797	0.0478508 0.716797	0.028321 0.722656	0.0341804 0.722656	0.0419915 0.722656	0.0478508 0.722656	0.028321 0.730469	0.0341804 0.730469	0.0419915 0.730469	0.0478508 0.730469	0.028321 0.736328	0.0341804 0.736328	0.0419915 0.736328	0.0478508 0.736328	
+				0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+			}
+		}
+		visible_on idle
+	}
+}
+
