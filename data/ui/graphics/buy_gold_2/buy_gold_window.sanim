@@ -1,0 +1,143 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/gold_buy.ma"
+//by sergey_mitryaev
+//at Mon Nov 11 12:04:31 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 5
+{
+	object title
+	{
+		defaults
+		{
+			pos 10 2
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Покупка лицензии пилота"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 10 27
+			opacity 255
+			color 0xffffffff
+			size 420 20
+			effect ""
+			alignment "LT"
+			sampleText "Лицензия  пилота "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 440 450
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 161
+			opacity 255
+			color 0xffffffff
+			size 440 290
+			effect "ui\graphics\buy_gold_2\buy_gold_list"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 419 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	434 -0	440 -0	0 6	6 6	434 6	440 6	0 447	6 447	434 447	440 447	0 453	6 453	434 453	440 453	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				439.422 25	439.425 23	0.882839 25	0.880341 23.0001	
+				0.0771484 0.145508	0.0791016 0.145508	0.0771484 0.151855	0.0791016 0.151855	
+			}
+		}
+		visible_on idle
+	}
+	sprite sddsd
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/daily_gift.tif"
+			vertices_nc
+			{
+				2.2648 47.1585	437.735 47.1585	2.2648 158.842	437.735 158.842	
+				0.00506911 0.0230623	0.911319 0.0230623	0.00506911 0.169976	0.911319 0.169976	
+			}
+		}
+		visible_on idle
+	}
+}
+
