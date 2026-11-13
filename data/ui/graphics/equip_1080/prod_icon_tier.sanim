@@ -1,0 +1,119 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Mon Feb 26 11:44:06 2018
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim premium
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim red
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object gmp_icon
+	{
+		defaults
+		{
+			pos -7 -1.1161
+			opacity 255
+			color 0xffffffff
+			size 20 18
+			effect "ui\graphics\hud\ratio\gmp_icon"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+		anim premium obj_colc
+		{
+			1
+			0xffffbd2e
+		}
+		anim red obj_colc
+		{
+			1
+			0xffff2700
+		}
+	}
+	object ship_type
+	{
+		defaults
+		{
+			pos 0 1.8839
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\spectate\ship_type_hangar"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+		anim premium obj_colc
+		{
+			1
+			0xffffbd2e
+		}
+		anim red obj_colc
+		{
+			1
+			0xffff2700
+		}
+	}
+	object value
+	{
+		defaults
+		{
+			pos 12.8733 1
+			opacity 255
+			color 0xffffffff
+			size 50 13
+			effect ""
+			alignment "LM"
+			sampleText "III"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim premium obj_colc
+		{
+			1
+			0xffffbd2e
+		}
+		anim red obj_colc
+		{
+			1
+			0xffff2700
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 25 13
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on premium
+		visible_on red
+	}
+}
+
