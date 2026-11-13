@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/matchmaking_pvp/matchmaking_pvp.ma"
+//by sergey_mitryaev
+//at Mon Dec 17 12:06:37 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 614 230
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_1_1
+	{
+		defaults
+		{
+			pos 0 22
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\match_pvp\match_pvp_map_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1_2
+	{
+		defaults
+		{
+			pos 102 22
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\match_pvp\match_pvp_map_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1_3
+	{
+		defaults
+		{
+			pos 0 86
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\match_pvp\match_pvp_map_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1_4
+	{
+		defaults
+		{
+			pos 0 155
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\match_pvp\match_pvp_map_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
