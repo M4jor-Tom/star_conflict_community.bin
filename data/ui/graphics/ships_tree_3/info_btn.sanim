@@ -1,0 +1,121 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey_Mitryaev
+//at Wed Dec 28 16:27:51 2016
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 16
+			effect ""
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 -1
+			opacity 255
+			color 0xffffdeb3
+			size 50 18
+			effect ""
+			alignment "CM"
+			sampleText "INFO"
+			font "Tiny"
+		}
+		visible_on idle
+		anim over obj_colc
+		{
+			1
+			0xffffc677
+		}
+		anim press obj_colc
+		{
+			1
+			0xffffc677
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite que475
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				-5 -4	55 -4	-5 20	55 20	
+				0.882813 0.953125	1 0.953125	0.882813 1	1 1	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	sprite que476
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-5 -4	55 -4	-5 20	55 20	
+				0.882813 0.953125	1 0.953125	0.882813 1	1 1	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
