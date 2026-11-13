@@ -1,0 +1,83 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by Sergey
+//at Wed Jun 22 12:09:27 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object text
+	{
+		defaults
+		{
+			pos 22 2
+			opacity 255
+			color 0xffffffff
+			size 50 16
+			effect ""
+			alignment "LM"
+			sampleText "90"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	20 -0	0 20	20 20	
+				0.963867 0.128906	0.983398 0.128906	0.963867 0.148438	0.983398 0.148438	
+				0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_uvc
+		{
+			1 
+			0.963867 0.149414	0.983398 0.149414	0.963867 0.168945	0.983398 0.168945	
+		}
+	}
+}
+
