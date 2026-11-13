@@ -1,0 +1,231 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Wed Jun 26 12:03:54 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 13
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 466 144
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 13 5
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\sticker\n_sticker_total_price_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 251 5
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\sticker\n_sticker_total_price_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 251 27
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\sticker\n_sticker_total_price_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 251 48
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\sticker\n_sticker_total_price_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 12.888 122.035
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Итого"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 243.888 122.035
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "12232424"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 13 27
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\sticker\n_sticker_total_price_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1_6
+	{
+		defaults
+		{
+			pos 13 48
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\sticker\n_sticker_total_price_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1_7
+	{
+		defaults
+		{
+			pos 13 70
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\sticker\n_sticker_total_price_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1_8
+	{
+		defaults
+		{
+			pos 251 70
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\sticker\n_sticker_total_price_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1_9
+	{
+		defaults
+		{
+			pos 13 92
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\sticker\n_sticker_total_price_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1_10
+	{
+		defaults
+		{
+			pos 251 92
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\sticker\n_sticker_total_price_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				5.59029 2.25169	11.5903 2.25169	480.675 2.25169	486.675 2.25169	5.59029 8.25169	11.5903 8.25169	480.675 8.25169	486.675 8.25169	5.59029 138.851	11.5903 138.851	480.675 138.851	486.675 138.851	5.59029 144.851	11.5903 144.851	480.675 144.851	486.675 144.851	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				12 117	476 117	12 119	476 119	
+				0.0605469 0.140625	0.0732422 0.140625	0.0605469 0.142578	0.0732422 0.142578	
+			}
+		}
+		visible_on idle
+	}
+}
+
