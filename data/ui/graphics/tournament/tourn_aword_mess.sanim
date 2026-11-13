@@ -1,0 +1,133 @@
+﻿source_file "Y:/art/source/ui/graphics/bzs/bzs_tourn.ma"
+//by sergey_mitryaev
+//at Mon Feb 09 12:30:24 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 298 106
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 21 96
+			opacity 255
+			color 0xffffcf00
+			size 250 30
+			effect ""
+			alignment "CM"
+			sampleText "SFdfsg sdhsdfh sh h"
+			font "Medium_outl2"
+		}
+		visible_on idle
+	}
+	object text27
+	{
+		defaults
+		{
+			pos 96 20
+			opacity 255
+			color 0xffffcf00
+			size 100 30
+			effect ""
+			alignment "CM"
+			sampleText "3"
+			font "Medium_outl2"
+		}
+		visible_on idle
+	}
+	object text28
+	{
+		defaults
+		{
+			pos 96 44
+			opacity 255
+			color 0xffffcf00
+			size 100 30
+			effect ""
+			alignment "CM"
+			sampleText "Победа"
+			font "Medium_outl2"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName362
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/chest_2.tif"
+			vertices_nc
+			{
+				0 -0	298 -0	0 106	298 106	
+				0.00488281 0.585938	0.295898 0.585938	0.00488281 1	0.295898 1	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName363
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				-35.3729 97	325.373 97	-35.3729 101	325.373 101	
+				0.271033 0.732806	0.435999 0.732806	0.271033 0.741804	0.435999 0.741804	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName364
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				-35.3729 123	325.373 123	-35.3729 127	325.373 127	
+				0.271033 0.732806	0.435999 0.732806	0.271033 0.741804	0.435999 0.741804	
+			}
+		}
+		visible_on idle
+	}
+}
+
