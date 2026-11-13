@@ -1,0 +1,393 @@
+﻿source_file "Y:/art/source/ui/graphics/spectate/spectate.ma"
+//by sergey_mitryaev
+//at Mon Aug 23 12:19:43 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 24
+
+objects 24
+{
+	object ship_change
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 361 540.754
+			opacity 255
+			color 0xffffffff
+			size 560 76
+			effect "ui\graphics\spectate\ship_change"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object modules
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 356.378 590.159
+			opacity 255
+			color 0xffffffff
+			size 568 130
+			effect "ui\graphics\hud\modules_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 589.227 196
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object warning
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 339.847 118.025
+			opacity 255
+			color 0xffffffff
+			size 600 40
+			effect "ui\graphics\spectate\warning"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object players_slot_left
+	{
+		defaults
+		{
+			anchor "LC"
+			pos 5.31754 114.992
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\players_slot_main_left"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object players_slot_right
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 877.364 114.992
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\players_slot_main_right"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_left
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 564.328 481
+			opacity 255
+			color 0xffffffff
+			size 144 23
+			effect "ui\graphics\spectate\spect_btn_left"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_right
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 564 481
+			opacity 255
+			color 0xffffffff
+			size 144 23
+			effect "ui\graphics\spectate\spect_btn_right"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			anchor "LT"
+			keep_screen_size
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\spectate_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object choise_ship
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 497.813 513
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect "ui\graphics\spectate\choise_ship"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 339.847 59.2174
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Тип Боя Захват"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 339.847 80
+			opacity 255
+			color 0xffffffff
+			size 600 35
+			effect ""
+			alignment "CM"
+			sampleText "Цель уничтожить цца йцупы|йцв ЩШЩЗуцшга"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 393 438
+			opacity 255
+			color 0xff7fb2ff
+			size 500 40
+			effect ""
+			alignment "CM"
+			sampleText "Выберите  один корабль"
+			font "Large_outl2"
+		}
+		visible_on idle
+	}
+	object text_4
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 393 504.556
+			opacity 255
+			color 0xff7fb2ff
+			size 500 30
+			effect ""
+			alignment "CM"
+			sampleText "У вас только один шанс"
+			font "Medium_outl2"
+		}
+		visible_on idle
+	}
+	object capitan_msg
+	{
+		defaults
+		{
+			anchor "C"
+			pos 393 306
+			opacity 255
+			color 0xffffffff
+			size 500 40
+			effect "ui\graphics\spectate\spectate_capitan_msg"
+			alignment "CM"
+			font "Large_outl2"
+		}
+		visible_on idle
+	}
+	object pve_msg
+	{
+		defaults
+		{
+			anchor "C"
+			pos 339.847 183
+			opacity 255
+			color 0xffffffff
+			size 600 40
+			effect "ui\graphics\spectate\pve_msg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_7
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 137 411
+			opacity 255
+			color 0xffff0000
+			size 1000 30
+			effect ""
+			alignment "CM"
+			sampleText "У вас только один шанс"
+			font "Medium_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object drop_down
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 514.734 392.425
+			opacity 255
+			color 0xffffffff
+			size 200 23
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_right1
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 529.406 416.425
+			opacity 255
+			color 0xffffffff
+			size 144 23
+			effect "ui\graphics\spectate\spect_btn_right"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 514.734 368.425
+			opacity 255
+			color 0xffffffff
+			size 160 23
+			effect ""
+			alignment "LM"
+			sampleText "sfsssvv"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object help_btn
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 752.734 368.425
+			opacity 255
+			color 0xffffffff
+			size 160 23
+			effect "ui\graphics\login_screen\btn_help"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_5
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 514.734 368.425
+			opacity 255
+			color 0xffffcd3b
+			size 160 23
+			effect ""
+			alignment "LM"
+			sampleText "sfsssvv"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_6
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 514.734 349.425
+			opacity 255
+			color 0xffffffff
+			size 160 23
+			effect ""
+			alignment "LM"
+			sampleText "sfsssvv"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ship_change3
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 361 446.754
+			opacity 255
+			color 0xffffffff
+			size 560 76
+			effect "ui\graphics\spectate\ship_change2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
