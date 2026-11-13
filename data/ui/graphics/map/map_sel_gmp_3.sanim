@@ -1,0 +1,259 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Wed Aug 27 12:45:51 2014
+
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 186 58
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		visible_on disable
+	}
+	object title
+	{
+		defaults
+		{
+			pos 0 4
+			opacity 204
+			color 0xffffffff
+			size 186 50
+			effect ""
+			alignment "CM"
+			sampleText "В БОЙ"
+			font "Medium"
+		}
+		visible_on idle
+		anim select obj_opc
+		{
+			1 
+			255
+		}
+		anim over obj_opc
+		{
+			1 
+			255
+		}
+		anim sel_over obj_opc
+		{
+			1 
+			255
+		}
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object non_quest
+	{
+		defaults
+		{
+			pos 150 13
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\map\non_quest"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		visible_on disable
+	}
+	object x2
+	{
+		defaults
+		{
+			pos 5 13
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\hangar\start_btn_x2"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		visible_on disable
+	}
+	object title_gold
+	{
+		defaults
+		{
+			pos 0 4
+			opacity 255
+			color 0xffff9100
+			size 186 50
+			effect ""
+			alignment "CM"
+			sampleText "В БОЙ"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object gold
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 186 50
+			effect "ui\graphics\map\map_sel_gmp_gold"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		anim disable obj_opc
+		{
+			1 
+			153
+		}
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp12
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.9 -0	6.9 -0	179.9 -0	185.9 -0	0.9 6	6.9 6	179.9 6	185.9 6	0.9 52	6.9 52	179.9 52	185.9 52	0.9 58	6.9 58	179.9 58	185.9 58	
+				0.169922 0.0507811	0.169922 0.0449219	0.169922 0.0078125	0.169922 0.00195313	0.164063 0.0507813	0.164063 0.0449219	0.164063 0.0078125	0.164063 0.00195313	0.128906 0.0507813	0.128906 0.0449219	0.128906 0.00781244	0.128906 0.00195318	0.123047 0.0507813	0.123047 0.0449219	0.123047 0.00781256	0.123047 0.00195307	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffaa6100	0xffaa6100	0xffff9100	0xffff9100	0xffaa6100	0xffaa6100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	
+		}
+		visible_on over
+		anim sel_over sp_colc
+		{
+			1
+			0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffaa6100	0xffaa6100	0xffff9100	0xffff9100	0xffaa6100	0xffaa6100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	
+		}
+		visible_on disable
+	}
+	sprite objectNamerfhjn
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gameplay_select.tif"
+			vertices
+			{
+				1 -0	186 -0	1 58	186 58	
+				0.432142 0.304545	0.746094 0.304545	0.432142 0.33901	0.746094 0.33901	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		visible_on disable
+	}
+	sprite objectNamerfhjn45t
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				1 -0	185 -0	1 58	185 58	
+				0.03125 0.117676	0.0507813 0.117676	0.03125 0.126953	0.0507813 0.126953	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on disable
+	}
+}
+
