@@ -1,0 +1,101 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map_2.ma"
+//by sergey_mitryaev
+//at Mon Dec 09 16:43:59 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 40
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName409
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 38	70 38	0 40	70 40	
+				0.432853 0.331291	0.440194 0.331291	0.432853 0.338631	0.440194 0.338631	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName4065
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	70 -0	0 2	70 2	
+				0.432853 0.331291	0.440194 0.331291	0.432853 0.338631	0.440194 0.338631	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName411
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				68 40	68 -0	70 40	70 -0	
+				0.432853 0.331291	0.440194 0.331291	0.432853 0.338631	0.440194 0.338631	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName412
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				3.05176e-005 40	1.52588e-005 -1.52588e-005	2.00003 40	2 -3.05176e-005	
+				0.432853 0.331291	0.440194 0.331291	0.432853 0.338631	0.440194 0.338631	
+			}
+		}
+		visible_on idle
+	}
+}
+
