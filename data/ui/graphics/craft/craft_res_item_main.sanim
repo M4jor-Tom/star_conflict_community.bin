@@ -1,0 +1,121 @@
+﻿source_file "Y:/art/source/ui/graphics/craft/craft.ma"
+//by sergey_mitryaev
+//at Wed Jul 23 14:40:47 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 6
+{
+	object icon_1
+	{
+		defaults
+		{
+			pos 13 12
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object icon_2
+	{
+		defaults
+		{
+			pos 76.7144 12
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object icon_3
+	{
+		defaults
+		{
+			pos 140.429 12
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object icon_4
+	{
+		defaults
+		{
+			pos 204.143 12
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object icon_5
+	{
+		defaults
+		{
+			pos 267.858 12
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self86
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 330 74
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp40
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0.5	6 -0.5	326 -0.5	332 -0.5	0 5.5	6 5.5	326 5.5	332 5.5	0 68.5	6 68.5	326 68.5	332 68.5	0 74.5	6 74.5	326 74.5	332 74.5	
+				0.0585966 0.670898	0.064456 0.670898	0.0761719 0.670898	0.0820313 0.670898	0.0585966 0.676758	0.064456 0.676758	0.0761719 0.676758	0.0820313 0.676758	0.0585966 0.688477	0.064456 0.688477	0.0761719 0.688477	0.0820313 0.688477	0.0585966 0.694336	0.064456 0.694336	0.0761719 0.694336	0.0820313 0.694336	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
