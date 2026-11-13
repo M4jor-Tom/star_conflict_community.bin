@@ -1,0 +1,201 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Mon Dec 01 17:56:47 2014
+
+base_res 1280 720
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim unuse
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 5
+{
+	object start
+	{
+		defaults
+		{
+			pos 27.6755 5
+			opacity 255
+			color 0xffff7000
+			size 150 30
+			effect ""
+			alignment "CM"
+			sampleText "FIGHT!"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+		anim unuse obj_colc
+		{
+			1
+			0xffff7200
+		}
+		anim over obj_colc
+		{
+			1
+			0xffff8200
+		}
+		anim press obj_colc
+		{
+			1
+			0xffc3c3c3
+		}
+		anim disable obj_colc
+		{
+			1
+			0xff685340
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 203 40
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object x2
+	{
+		defaults
+		{
+			pos 2 3
+			opacity 255
+			color 0xffffffff
+			size 35 35
+			effect "ui\graphics\hangar\start_btn_x2"
+			alignment "CM"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object btn_expand
+	{
+		defaults
+		{
+			pos 170 7
+			opacity 255
+			color 0xffffffff
+			size 26 26
+			effect "ui\graphics\hangar\btn_expand"
+			alignment "CM"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object loading_small
+	{
+		defaults
+		{
+			pos 77 -6
+			opacity 255
+			color 0xffffffff
+			size 26 26
+			effect "ui\graphics\hangar\loading_small"
+			alignment "CM"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite spr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-0.048317 0.342274	202.952 0.342274	-0.048317 39.3423	202.952 39.3423	
+				0.00100648 0.185477	0.199249 0.185477	0.00100648 0.223563	0.199249 0.223563	
+			}
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	sprite over1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	10 -0	192.917 -0	202.917 -0	0 10	10 10	192.917 10	202.917 10	0 29.3678	10 29.3678	192.917 29.3678	202.917 29.3678	0 39.3678	10 39.3678	192.917 39.3678	202.917 39.3678	
+				0.073449 0.00194174	0.0798425 0.00194174	0.113756 0.00194174	0.12015 0.00194174	0.073449 0.0088253	0.0798425 0.0088253	0.113756 0.0088253	0.12015 0.0088253	0.073449 0.042606	0.0798425 0.042606	0.113756 0.042606	0.12015 0.042606	0.073449 0.0493029	0.0798425 0.0493029	0.113756 0.0493029	0.12015 0.0493029	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on unuse
+		anim over sp_colc
+		{
+			1
+			0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	
+		}
+		visible_on press
+		visible_on disable
+	}
+}
+
