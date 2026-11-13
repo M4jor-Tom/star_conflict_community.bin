@@ -1,0 +1,39 @@
+﻿source_file  Y:/art/source/ui/graphics/option/option.ma
+//by sergey_mitryaev
+//at Mon Jun 25 15:15:36 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sel
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 0.180913	6 0.180913	123.704 0.180913	129.704 0.180913	0 6.18091	6 6.18091	123.704 6.18091	129.704 6.18091	0 19.0853	6 19.0853	123.704 19.0853	129.704 19.0853	0 25.0853	6 25.0853	123.704 25.0853	129.704 25.0853	
+				0.0335658 0.116135	0.039425 0.116135	0.0421601 0.116135	0.0480195 0.116135	0.0335656 0.121994	0.039425 0.121994	0.0421601 0.121994	0.0480195 0.121994	0.0335656 0.123182	0.039425 0.123182	0.0421601 0.123182	0.0480195 0.123182	0.0335656 0.129041	0.039425 0.129041	0.0421601 0.129041	0.0480195 0.129041	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
