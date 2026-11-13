@@ -1,0 +1,1244 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Thu Feb 04 13:38:40 2016
+
+base_res 1280 720
+
+animations 6
+{
+	anim show
+	{
+		mode once
+		cycle_time 0.6
+	}
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hide_alpha
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim show_alpha
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim hide
+	{
+		mode once
+		cycle_time 0.3
+	}
+	anim hide_ico
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 4
+{
+	object self25
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 560 150
+			effect ""
+			alignment "LT"
+		}
+		visible_on show
+		visible_on idle
+		visible_on hide_alpha
+		visible_on show_alpha
+		visible_on hide
+		visible_on hide_ico
+	}
+	object description
+	{
+		defaults
+		{
+			pos 141 57
+			opacity 0
+			color 0xffaff4ff
+			size 390 70
+			effect ""
+			alignment "LT"
+			sampleText "asfasf|fq|F   |e ef ef "
+			font "Tiny"
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			75
+			159
+			227
+			255
+		}
+		anim idle obj_opc
+		{
+			1 
+			255
+		}
+		anim hide_alpha obj_op
+		{
+			11 
+			255
+			227
+			159
+			75
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+		}
+		anim show_alpha obj_op
+		{
+			11 
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			75
+			159
+			227
+			255
+		}
+		anim hide obj_op
+		{
+			11 
+			255
+			227
+			159
+			75
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+		}
+		visible_on hide_ico
+	}
+	object avatar_icon
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 84 88
+			effect "ui\graphics\quests_2\q_2_pers_slot_1_ico"
+			alignment "LT"
+		}
+		visible_on show
+		visible_on idle
+		visible_on hide_alpha
+		visible_on show_alpha
+		visible_on hide
+		anim hide_ico obj_opc
+		{
+			1 
+			0
+		}
+	}
+	object title
+	{
+		defaults
+		{
+			pos 141 35
+			opacity 0
+			color 0xffffffff
+			size 320 20
+			effect ""
+			alignment "LM"
+			sampleText "Дин Венчестер"
+			font "Medium_outl2"
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			127
+			255
+		}
+		anim idle obj_opc
+		{
+			1 
+			255
+		}
+		anim hide_alpha obj_op
+		{
+			11 
+			255
+			120
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+		}
+		anim show_alpha obj_op
+		{
+			11 
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			127
+			255
+		}
+		anim hide obj_op
+		{
+			11 
+			255
+			120
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+			0
+		}
+		visible_on hide_ico
+	}
+}
+
+sprites 10
+{
+	total_vertices 40
+
+	sprite que42
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				95.4885 133.906	95.4887 24.0936	132.621 133.907	132.621 24.0935	
+				0.613281 0.291016	0.613281 0.175781	0.575195 0.291016	0.575195 0.175781	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim show sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide_alpha sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim show_alpha sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on hide_ico
+	}
+	sprite que43
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+				0.573242 0.291016	0.573242 0.175781	0.555664 0.291016	0.555664 0.175781	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim show sp_pos_col
+		{
+			11 11
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	214.039 133.907	214.04 24.0935	
+			132.621 133.906	132.621 24.0935	291.665 133.907	291.666 24.0935	
+			132.621 133.906	132.621 24.0935	369.291 133.907	369.292 24.0935	
+			132.621 133.906	132.621 24.0935	446.917 133.907	446.918 24.0935	
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle sp_posc_colc
+		{
+			1 1
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide_alpha sp_pos_col
+		{
+			11 11
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			132.621 133.906	132.621 24.0935	446.917 133.907	446.918 24.0935	
+			132.621 133.906	132.621 24.0935	369.291 133.907	369.292 24.0935	
+			132.621 133.906	132.621 24.0935	291.665 133.907	291.666 24.0935	
+			132.621 133.906	132.621 24.0935	214.039 133.907	214.04 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim show_alpha sp_pos_col
+		{
+			11 11
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	214.039 133.907	214.04 24.0935	
+			132.621 133.906	132.621 24.0935	291.665 133.907	291.666 24.0935	
+			132.621 133.906	132.621 24.0935	369.291 133.907	369.292 24.0935	
+			132.621 133.906	132.621 24.0935	446.917 133.907	446.918 24.0935	
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide sp_pos_col
+		{
+			11 11
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			132.621 133.906	132.621 24.0935	524.543 133.907	524.544 24.0935	
+			132.621 133.906	132.621 24.0935	446.917 133.907	446.918 24.0935	
+			132.621 133.906	132.621 24.0935	369.291 133.907	369.292 24.0935	
+			132.621 133.906	132.621 24.0935	291.665 133.907	291.666 24.0935	
+			132.621 133.906	132.621 24.0935	214.039 133.907	214.04 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			132.621 133.906	132.621 24.0935	136.413 133.907	136.414 24.0935	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on hide_ico
+	}
+	sprite que44
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+				0.553711 0.291016	0.553711 0.175781	0.518555 0.291016	0.518555 0.175781	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim show sp_pos_col
+		{
+			11 11
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			214.039 133.906	214.04 24.0935	237.778 133.907	237.778 24.0935	
+			291.665 133.906	291.666 24.0935	315.404 133.907	315.404 24.0935	
+			369.291 133.906	369.292 24.0935	393.03 133.907	393.03 24.0935	
+			446.917 133.906	446.918 24.0935	470.656 133.907	470.656 24.0935	
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle sp_posc_colc
+		{
+			1 1
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide_alpha sp_pos_col
+		{
+			11 11
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			446.917 133.906	446.918 24.0935	470.656 133.907	470.656 24.0935	
+			369.291 133.906	369.292 24.0935	393.03 133.907	393.03 24.0935	
+			291.665 133.906	291.666 24.0935	315.404 133.907	315.404 24.0935	
+			214.039 133.906	214.04 24.0935	237.778 133.907	237.778 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim show_alpha sp_pos_col
+		{
+			11 11
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			214.039 133.906	214.04 24.0935	237.778 133.907	237.778 24.0935	
+			291.665 133.906	291.666 24.0935	315.404 133.907	315.404 24.0935	
+			369.291 133.906	369.292 24.0935	393.03 133.907	393.03 24.0935	
+			446.917 133.906	446.918 24.0935	470.656 133.907	470.656 24.0935	
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide sp_pos_col
+		{
+			11 11
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			524.543 133.906	524.544 24.0935	548.282 133.907	548.282 24.0935	
+			446.917 133.906	446.918 24.0935	470.656 133.907	470.656 24.0935	
+			369.291 133.906	369.292 24.0935	393.03 133.907	393.03 24.0935	
+			291.665 133.906	291.666 24.0935	315.404 133.907	315.404 24.0935	
+			214.039 133.906	214.04 24.0935	237.778 133.907	237.778 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			136.413 133.906	136.414 24.0935	160.152 133.907	160.152 24.0935	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on hide_ico
+	}
+	sprite que45
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				14.9999 107	15.0001 43	71.0597 140	71.0596 9.99982	
+				0.537175 0.223019	0.576107 0.223019	0.537175 0.234236	0.576107 0.234236	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim show sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide_alpha sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim show_alpha sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on hide_ico
+	}
+	sprite que46
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				71.0597 140	71.0596 9.99993	128 108	128 44	
+				0.537175 0.234566	0.576107 0.234566	0.537175 0.235556	0.576107 0.235556	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim show sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide_alpha sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim show_alpha sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on hide_ico
+	}
+	sprite que41
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				6 2	136 2	6 150	136 150	
+				0.255859 0	0.509766 0	0.255859 0.289063	0.509766 0.289063	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim show sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide_alpha sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim show_alpha sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on hide_ico
+	}
+	sprite que47
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				6 2	136 2	6 150	136 150	
+				0.726563 0.427734	0.980469 0.427734	0.726563 0.716797	0.980469 0.716797	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim show sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide_alpha sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim show_alpha sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on hide_ico
+	}
+	sprite que48
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices
+			{
+				101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+				0.952148 0.251953	0.952148 0.25	0.978516 0.251953	0.978516 0.25	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		anim show sp_pos_col
+		{
+			11 11
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	214.039 29.0001	214.04 27.5	
+			101 28.9999	101 27.5	291.665 29.0001	291.666 27.5	
+			101 28.9999	101 27.5	369.291 29.0001	369.292 27.5	
+			101 28.9999	101 27.5	446.917 29.0001	446.918 27.5	
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle sp_posc_colc
+		{
+			1 1
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide_alpha sp_pos_col
+		{
+			11 11
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			101 28.9999	101 27.5	446.917 29.0001	446.918 27.5	
+			101 28.9999	101 27.5	369.291 29.0001	369.292 27.5	
+			101 28.9999	101 27.5	291.665 29.0001	291.666 27.5	
+			101 28.9999	101 27.5	214.039 29.0001	214.04 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim show_alpha sp_pos_col
+		{
+			11 11
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	214.039 29.0001	214.04 27.5	
+			101 28.9999	101 27.5	291.665 29.0001	291.666 27.5	
+			101 28.9999	101 27.5	369.291 29.0001	369.292 27.5	
+			101 28.9999	101 27.5	446.917 29.0001	446.918 27.5	
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide sp_pos_col
+		{
+			11 11
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			101 28.9999	101 27.5	524.543 29.0001	524.544 27.5	
+			101 28.9999	101 27.5	446.917 29.0001	446.918 27.5	
+			101 28.9999	101 27.5	369.291 29.0001	369.292 27.5	
+			101 28.9999	101 27.5	291.665 29.0001	291.666 27.5	
+			101 28.9999	101 27.5	214.039 29.0001	214.04 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			101 28.9999	101 27.5	136.413 29.0001	136.414 27.5	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		visible_on hide_ico
+	}
+	sprite que49
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices
+			{
+				96.4346 130	96.4345 129	131.848 130	131.848 129	
+				0.952148 0.251953	0.952148 0.25	0.978516 0.251953	0.978516 0.25	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		anim show sp_pos_col
+		{
+			11 11
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	209.474 130	209.474 129	
+			96.4346 130	96.4345 129	287.1 130	287.1 129	
+			96.4346 130	96.4345 129	364.726 130	364.726 129	
+			96.4346 130	96.4345 129	442.352 130	442.352 129	
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle sp_posc_colc
+		{
+			1 1
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide_alpha sp_pos_col
+		{
+			11 11
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			96.4346 130	96.4345 129	442.352 130	442.352 129	
+			96.4346 130	96.4345 129	364.726 130	364.726 129	
+			96.4346 130	96.4345 129	287.1 130	287.1 129	
+			96.4346 130	96.4345 129	209.474 130	209.474 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim show_alpha sp_pos_col
+		{
+			11 11
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	209.474 130	209.474 129	
+			96.4346 130	96.4345 129	287.1 130	287.1 129	
+			96.4346 130	96.4345 129	364.726 130	364.726 129	
+			96.4346 130	96.4345 129	442.352 130	442.352 129	
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide sp_pos_col
+		{
+			11 11
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			96.4346 130	96.4345 129	519.978 130	519.978 129	
+			96.4346 130	96.4345 129	442.352 130	442.352 129	
+			96.4346 130	96.4345 129	364.726 130	364.726 129	
+			96.4346 130	96.4345 129	287.1 130	287.1 129	
+			96.4346 130	96.4345 129	209.474 130	209.474 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			96.4346 130	96.4345 129	131.848 130	131.848 129	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		visible_on hide_ico
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				8 -12	134 -12	8 152	134 152	
+				0 0	1 0	0 1	1 1	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim show sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x67ffffff	0x67ffffff	0x67ffffff	0x67ffffff	
+			0xcfffffff	0xcfffffff	0xcfffffff	0xcfffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide_alpha sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfaffffff	0xfaffffff	0xfaffffff	0xfaffffff	
+			0xecffffff	0xecffffff	0xecffffff	0xecffffff	
+			0xd7ffffff	0xd7ffffff	0xd7ffffff	0xd7ffffff	
+			0xbdffffff	0xbdffffff	0xbdffffff	0xbdffffff	
+			0x9fffffff	0x9fffffff	0x9fffffff	0x9fffffff	
+			0x7effffff	0x7effffff	0x7effffff	0x7effffff	
+			0x5cffffff	0x5cffffff	0x5cffffff	0x5cffffff	
+			0x3bffffff	0x3bffffff	0x3bffffff	0x3bffffff	
+			0x1bffffff	0x1bffffff	0x1bffffff	0x1bffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim show_alpha sp_col
+		{
+			11
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x67ffffff	0x67ffffff	0x67ffffff	0x67ffffff	
+			0xcfffffff	0xcfffffff	0xcfffffff	0xcfffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim hide sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfaffffff	0xfaffffff	0xfaffffff	0xfaffffff	
+			0xecffffff	0xecffffff	0xecffffff	0xecffffff	
+			0xd7ffffff	0xd7ffffff	0xd7ffffff	0xd7ffffff	
+			0xbdffffff	0xbdffffff	0xbdffffff	0xbdffffff	
+			0x9fffffff	0x9fffffff	0x9fffffff	0x9fffffff	
+			0x7effffff	0x7effffff	0x7effffff	0x7effffff	
+			0x5cffffff	0x5cffffff	0x5cffffff	0x5cffffff	
+			0x3bffffff	0x3bffffff	0x3bffffff	0x3bffffff	
+			0x1bffffff	0x1bffffff	0x1bffffff	0x1bffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on hide_ico
+	}
+}
+
