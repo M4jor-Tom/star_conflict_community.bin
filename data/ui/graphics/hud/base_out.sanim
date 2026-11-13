@@ -1,0 +1,555 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by Sergey_Mitryaev
+//at Tue May 29 17:32:00 2018
+
+base_res 1280 720
+
+animations 9
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_lock
+	{
+		mode looped
+		cycle_time 0.4
+	}
+	anim enemy_shot_lock
+	{
+		mode looped
+		cycle_time 0.4
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_short
+	{
+		mode looped
+		cycle_time 0.4
+	}
+	anim alien_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim alien
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 25 60
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on neutral
+		visible_on neutral_short
+		visible_on alien_shot
+		visible_on alien
+	}
+	object value_outl
+	{
+		defaults
+		{
+			pos 5 31
+			opacity 0
+			color 0xff00ddff
+			size 15 15
+			effect ""
+			alignment "CM"
+			sampleText "A"
+			font "VerySmall_outl"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			153
+			0xffff2800
+		}
+		anim enemy_lock obj_op_colc
+		{
+			4 1
+			0
+			0
+			0
+			0
+			0xffff2800
+		}
+		anim enemy_shot_lock obj_op_colc
+		{
+			5 1
+			153
+			76
+			0
+			76
+			153
+			0xffff2800
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xffb2b2b2
+		}
+		anim neutral_short obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim alien_shot obj_opc_colc
+		{
+			1 1
+			153
+			0xffbd25e5
+		}
+		anim alien obj_colc
+		{
+			1
+			0xffbd25e5
+		}
+	}
+	object friend_damage
+	{
+		defaults
+		{
+			pos 0 29
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\base_friend_damage_out"
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on neutral
+		visible_on neutral_short
+		visible_on alien_shot
+		visible_on alien
+	}
+	object center
+	{
+		defaults
+		{
+			pos 12.9792 39.0224
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on neutral
+		visible_on neutral_short
+		visible_on alien_shot
+		visible_on alien
+	}
+	object value_outl2
+	{
+		defaults
+		{
+			pos 5 31
+			opacity 153
+			color 0xff00ddff
+			size 15 15
+			effect ""
+			alignment "CM"
+			sampleText "A"
+			font "VerySmall_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			0
+			0xffff2800
+		}
+		anim enemy_lock obj_op_colc
+		{
+			4 1
+			153
+			76
+			0
+			153
+			0xffff2800
+		}
+		anim enemy_shot_lock obj_opc_colc
+		{
+			1 1
+			0
+			0xffff2800
+		}
+		anim neutral obj_opc_colc
+		{
+			1 1
+			0
+			0xffb2b2b2
+		}
+		anim neutral_short obj_opc_colc
+		{
+			1 1
+			0
+			0xffffffff
+		}
+		anim alien_shot obj_opc_colc
+		{
+			1 1
+			0
+			0xffcccccc
+		}
+		anim alien obj_opc_colc
+		{
+			1 1
+			0
+			0xffcccccc
+		}
+	}
+	object value
+	{
+		defaults
+		{
+			pos 5 31
+			opacity 0
+			color 0xff00ddff
+			size 15 15
+			effect ""
+			alignment "CM"
+			sampleText "A"
+			font "VerySmall"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			153
+			0xffffffff
+		}
+		anim enemy_lock obj_opc_colc
+		{
+			1 1
+			0
+			0xffff2800
+		}
+		anim enemy_shot_lock obj_op_colc
+		{
+			5 1
+			153
+			76
+			0
+			76
+			153
+			0xffffffff
+		}
+		anim neutral obj_opc_colc
+		{
+			1 1
+			153
+			0xffb2b2b2
+		}
+		anim neutral_short obj_opc_colc
+		{
+			1 1
+			153
+			0xffffffff
+		}
+		anim alien_shot obj_opc_colc
+		{
+			1 1
+			153
+			0xffcccccc
+		}
+		anim alien obj_opc_colc
+		{
+			1 1
+			255
+			0xffbc24e4
+		}
+	}
+	object quest
+	{
+		defaults
+		{
+			pos 12.511 12.3467
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\ratio\gmp_icon2"
+			alignment "CM"
+			font "VerySmall_outl2"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on neutral
+		visible_on neutral_short
+		visible_on alien_shot
+		visible_on alien
+	}
+}
+
+sprites 9
+{
+	total_vertices 36
+
+	sprite friend
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0.00206947 26.0415	26.0021 26.0415	0.00206947 52.0415	26.0021 52.0415	
+				0.353583 0.208984	0.378839 0.208984	0.353583 0.234375	0.378839 0.234375	
+				0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			}
+		}
+		visible_on friend
+	}
+	sprite friend_hidden
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-6.99793 19.0415	33.0021 19.0415	-6.99793 59.0415	33.0021 59.0415	
+				0.173828 0.367188	0.212891 0.367188	0.173828 0.40625	0.212891 0.40625	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+	}
+	sprite enemy
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0.00206947 26.0415	26.0021 26.0415	0.00206947 52.0415	26.0021 52.0415	
+				0.353583 0.236424	0.378839 0.236424	0.353583 0.261623	0.378839 0.261623	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		visible_on enemy
+		anim enemy_lock sp_col
+		{
+			4
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			0x44ffffff	0x44ffffff	0x44ffffff	0x44ffffff	
+			0x8ffffff	0x8ffffff	0x8ffffff	0x8ffffff	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite enemy_hidden
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0.00206947 26.0415	26.0021 26.0415	0.00206947 52.0415	26.0021 52.0415	
+				0.190482 0.241438	0.215873 0.241438	0.190482 0.266637	0.215873 0.266637	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+	}
+	sprite enemy_shot
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0.00206947 26.0415	26.0021 26.0415	0.00206947 52.0415	26.0021 52.0415	
+				0.353583 0.181737	0.378839 0.181737	0.353583 0.206935	0.378839 0.206935	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		visible_on enemy_shot
+		anim enemy_shot_lock sp_col
+		{
+			5
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			0x41ffffff	0x41ffffff	0x41ffffff	0x41ffffff	
+			0x3ffffff	0x3ffffff	0x3ffffff	0x3ffffff	
+			0x41ffffff	0x41ffffff	0x41ffffff	0x41ffffff	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite enemy_hidden_shot
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0.00206947 26.0415	26.0021 26.0415	0.00206947 52.0415	26.0021 52.0415	
+				0.27945 0.421067	0.304706 0.421067	0.27945 0.446266	0.304706 0.446266	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+	}
+	sprite neutral
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0.00206947 26.0415	26.0021 26.0415	0.00206947 52.0415	26.0021 52.0415	
+				0.145575 0.352635	0.170831 0.352635	0.145575 0.377834	0.170831 0.377834	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		anim neutral sp_colc
+		{
+			1
+			0x7f999999	0x7f999999	0x7f999999	0x7f999999	
+		}
+		visible_on neutral_short
+		anim alien_shot sp_colc
+		{
+			1
+			0xb2b2b2	0xb2b2b2	0xb2b2b2	0xb2b2b2	
+		}
+		anim alien sp_colc
+		{
+			1
+			0xb2b2b2	0xb2b2b2	0xb2b2b2	0xb2b2b2	
+		}
+	}
+	sprite neutral3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0.00206947 26.0415	26.0021 26.0415	0.00206947 52.0415	26.0021 52.0415	
+				0.173895 0.409276	0.199152 0.409276	0.173895 0.434474	0.199152 0.434474	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on neutral
+		visible_on neutral_short
+		anim alien_shot sp_colc
+		{
+			1
+			0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	
+		}
+		anim alien sp_colc
+		{
+			1
+			0x1010101	0x1010101	0x1010101	0x1010101	
+		}
+	}
+	sprite neutral4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0.00206947 26.0415	26.0021 26.0415	0.00206947 52.0415	26.0021 52.0415	
+				0.218817 0.379002	0.244073 0.379002	0.218817 0.404201	0.244073 0.404201	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on neutral
+		visible_on neutral_short
+		anim alien_shot sp_colc
+		{
+			1
+			0x1010101	0x1010101	0x1010101	0x1010101	
+		}
+		anim alien sp_colc
+		{
+			1
+			0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	
+		}
+	}
+}
+
