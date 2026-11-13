@@ -1,0 +1,379 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Tue Jan 14 16:19:31 2020
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 25
+
+objects 22
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 576
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tree
+	{
+		defaults
+		{
+			pos 2.00592 21
+			opacity 255
+			color 0xffffffff
+			size 216 26
+			effect "ui\graphics\shop\shop_tree_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object filter
+	{
+		defaults
+		{
+			pos 267.481 17
+			opacity 255
+			color 0xffffffff
+			size 730 90
+			effect "ui\graphics\shop\filter_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object search
+	{
+		defaults
+		{
+			pos 229.923 21
+			opacity 255
+			color 0xffffffff
+			size 730 30
+			effect "ui\graphics\shop\search_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object product_list
+	{
+		defaults
+		{
+			pos 233 61
+			opacity 255
+			color 0xffffffff
+			size 703 494
+			effect "ui\graphics\shop\bundle_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load_modules
+	{
+		defaults
+		{
+			pos 535.361 295.892
+			opacity 255
+			color 0xff88b5ff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn
+	{
+		defaults
+		{
+			pos 804 548
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object empty
+	{
+		defaults
+		{
+			pos 296.02 136.357
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Нет не единого товара"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sort_btn1
+	{
+		defaults
+		{
+			pos 232.824 546
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\sort_view_btn1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sort_btn2
+	{
+		defaults
+		{
+			pos 261.635 546
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\sort_view_btn2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 946 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 10 3
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "LT"
+			sampleText "Нет не единого товара"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_help
+	{
+		defaults
+		{
+			pos 924 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_help"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object add_slot
+	{
+		defaults
+		{
+			pos 12 522
+			opacity 255
+			color 0xffffffff
+			size 250 25
+			effect "ui\graphics\equip\add_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chest_btn
+	{
+		defaults
+		{
+			pos 2 21
+			opacity 255
+			color 0xffffffff
+			size 222 60
+			effect "ui\graphics\shop\chest_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chest_list
+	{
+		defaults
+		{
+			pos 235 57
+			opacity 255
+			color 0xffffffff
+			size 703 300
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chest_ch_main
+	{
+		defaults
+		{
+			pos 235 363
+			opacity 255
+			color 0xffffffff
+			size 703 200
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tree_2
+	{
+		defaults
+		{
+			pos 2.00592 21
+			opacity 255
+			color 0xffffffff
+			size 216 26
+			effect "ui\graphics\shop\shop_tree_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 12 368
+			opacity 255
+			color 0xffffdeb3
+			size 200 150
+			effect ""
+			alignment "LB"
+			sampleText "Нет не единого товара |WErgrg g |GWeg w |ggbfsdg|Srgsg"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object buy_btn_2
+	{
+		defaults
+		{
+			pos 644 548
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object buy_btn5
+	{
+		defaults
+		{
+			pos 292 548
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object add_slot1
+	{
+		defaults
+		{
+			pos 12 548.531
+			opacity 255
+			color 0xffffffff
+			size 250 25
+			effect "ui\graphics\equip\add_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	962 -4	970 -4	-4 22	4 22	962 22	970 22	-4 572	4 572	962 572	970 572	-4 580	4 580	962 580	970 580	
+				0.0585937 0.695313	0.066406 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.066406 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723638	0.066406 0.723638	0.0742187 0.723638	0.0820313 0.723638	0.0585938 0.731454	0.066406 0.731454	0.0742187 0.731454	0.0820312 0.731454	
+			}
+		}
+		visible_on idle
+	}
+	sprite blackout
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				165.499 20.9975	223.862 20.9975	165.499 576.065	223.862 576.065	
+				0.0817908 0.115909	0.156565 0.115909	0.0817908 0.13164	0.156565 0.13164	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				222.802 21.0025	224.802 21.0025	222.802 576.056	224.802 576.056	
+				0.0713222 0.077615	0.069369 0.077615	0.0713222 0.0942166	0.069369 0.0942166	
+			}
+		}
+		visible_on idle
+	}
+}
+
