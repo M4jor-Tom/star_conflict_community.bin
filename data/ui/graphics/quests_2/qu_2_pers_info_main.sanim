@@ -1,0 +1,208 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by Sergey
+//at Tue Nov 17 12:22:48 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 720 380
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_4
+	{
+		defaults
+		{
+			pos 280 326
+			opacity 255
+			color 0xffffffff
+			size 158 50
+			effect "ui\graphics\arena\arena_btn_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title52
+	{
+		defaults
+		{
+			pos 204 7
+			opacity 255
+			color 0xffffffff
+			size 406 24
+			effect ""
+			alignment "LM"
+			sampleText "Рутинная  работа"
+			font "Medium_outl2"
+		}
+		visible_on idle
+	}
+	object pers_ico
+	{
+		defaults
+		{
+			pos 10 12
+			opacity 255
+			color 0xffffffff
+			size 180 302
+			effect "ui\graphics\quests_2\qu_2_pers_ico"
+			alignment "LT"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object title53
+	{
+		defaults
+		{
+			pos 204 37
+			opacity 255
+			color 0xff0099ff
+			size 406 18
+			effect ""
+			alignment "LM"
+			sampleText "Рутинная  работа"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object descript
+	{
+		defaults
+		{
+			pos 204 63
+			opacity 255
+			color 0xffffffff
+			size 480 250
+			effect "ui\graphics\quests_2\qu_2_descript_list"
+			alignment "LT"
+			sampleText " "
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+}
+
+sprites 6
+{
+	total_vertices 36
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/quest_bg.tif"
+			vertices
+			{
+				-256 -1	1024 -1	-256 379	1024 379	
+				-2.98023e-008 0	1 0	-2.98023e-008 0.722656	1 0.722656	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName441
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/quest_bg.tif"
+			vertices
+			{
+				1024 -1	2304 -1	1024 379	2304 379	
+				1 0	0 0	1 0.722656	0 0.722656	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName442
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/quest_bg.tif"
+			vertices
+			{
+				-1536 -1	-256 -1	-1536 379	-256 379	
+				1 0	0 0	1 0.722656	0 0.722656	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName435
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4340.5 -0	-4330.5 -0	5042.5 -0	5052.5 -0	-4340.5 10	-4330.5 10	5042.5 10	5052.5 10	-4340.5 370	-4330.5 370	5042.5 370	5052.5 370	-4340.5 380	-4330.5 380	5042.5 380	5052.5 380	
+				0.343438 0.0719534	0.348854 0.0719534	0.354271 0.0719534	0.359687 0.0719534	0.343438 0.0773699	0.348854 0.0773699	0.354271 0.0773699	0.359687 0.0773699	0.343438 0.0827864	0.348854 0.0827864	0.354271 0.0827864	0.359687 0.0827864	0.343438 0.0882029	0.348854 0.0882029	0.354271 0.0882029	0.359687 0.0882029	
+				0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite que25
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices_nc
+			{
+				-352.004 -3.05176e-005	1074 3.05176e-005	-352.004 0.999939	1074 1.00003	
+				0.923828 0.25	0.986328 0.25	0.923828 0.251953	0.986328 0.251953	
+			}
+		}
+		visible_on idle
+	}
+	sprite que26
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices_nc
+			{
+				-352.004 378.5	1074 378.5	-352.004 379.5	1074 379.5	
+				0.923828 0.25	0.986328 0.25	0.923828 0.251953	0.986328 0.251953	
+			}
+		}
+		visible_on idle
+	}
+}
+
