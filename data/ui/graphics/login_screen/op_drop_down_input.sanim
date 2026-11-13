@@ -1,0 +1,98 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Thu Jan 09 14:18:35 2014
+
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object center
+	{
+		defaults
+		{
+			pos 20 20
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp219
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-0.0539999 -0	5.946 -0	34 -0	40 -0	-0.0539999 6	5.946 6	34 6	40 6	-0.0539999 34	5.946 34	34 34	40 34	-0.0539999 40	5.946 40	34 40	40 40	
+				0.0548148 0.114133	0.0606741 0.114133	0.0732618 0.114133	0.0791212 0.114133	0.0548148 0.119992	0.0606741 0.119992	0.0732618 0.119992	0.0791212 0.119992	0.0548148 0.132716	0.0606741 0.132716	0.0732618 0.132716	0.0791212 0.132716	0.0548148 0.138576	0.0606741 0.138576	0.0732618 0.138576	0.0791212 0.138576	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on select
+		anim deselect sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.0539999 -0	5.946 -0	34 -0	40 -0	-0.0539999 6	5.946 6	34 6	40 6	-0.0539999 34	5.946 34	34 34	40 34	-0.0539999 40	5.946 40	34 40	40 40	
+				0.0019778 0.160203	0.00783718 0.160203	0.0204249 0.160203	0.0262842 0.160203	0.0019778 0.166062	0.00783718 0.166062	0.0204249 0.166062	0.0262842 0.166062	0.0019778 0.178786	0.00783718 0.178786	0.0204249 0.178786	0.0262842 0.178786	0.0019778 0.184645	0.00783718 0.184645	0.0204249 0.184645	0.0262842 0.184645	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
