@@ -1,0 +1,486 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_2.ma"
+//by sergey_mitryaev
+//at Thu Feb 05 14:42:15 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 25
+
+objects 19
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 394 90
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 6 6
+			opacity 255
+			color 0xffffffff
+			size 72 72
+			effect "ui\graphics\equip\dread_mod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object product_name
+	{
+		defaults
+		{
+			pos 82 3
+			opacity 255
+			color 0xffffffff
+			size 330 20
+			effect ""
+			alignment "LT"
+			sampleText "Адаптивный излучаетель щита  134 иавр48"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\equip_2\prod_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object count_1
+	{
+		defaults
+		{
+			pos 6 71
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "LM"
+			sampleText "2in"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object price
+	{
+		defaults
+		{
+			pos 116 69
+			opacity 255
+			color 0xffffffff
+			size 150 22
+			effect ""
+			alignment "RM"
+			sampleText "10000000"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 337 1
+			opacity 255
+			color 0xffffffff
+			size 56 20
+			effect "ui\graphics\equip_2\prod_slot_sale"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 268 66
+			opacity 255
+			color 0xffffffff
+			size 120 22
+			effect "ui\graphics\button\prod_btn_1"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 82 21
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect "ui\graphics\equip_2\prod_progr_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 6 72
+			opacity 255
+			color 0xffffffff
+			size 18 16
+			effect "ui\graphics\button\prod_btn_2"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object count_2
+	{
+		defaults
+		{
+			pos 27 71
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "LM"
+			sampleText "2in"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\equip_2\prod_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object progr1
+	{
+		defaults
+		{
+			pos 62 41
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect "ui\graphics\equip\availability_3"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object gold
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 394 90
+			effect "ui\graphics\equip_2\prod_slot_gold"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object select
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 394 90
+			effect "ui\graphics\equip_2\prod_slot_select"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object labe
+	{
+		defaults
+		{
+			pos 342 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\ships_tree\labe"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object text10
+	{
+		defaults
+		{
+			pos 241 69
+			opacity 255
+			color 0xffffffff
+			size 150 22
+			effect ""
+			alignment "RM"
+			sampleText "10000000"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_10
+	{
+		defaults
+		{
+			pos 146.533 66
+			opacity 255
+			color 0xffffffff
+			size 120 22
+			effect "ui\graphics\button\prod_btn_1"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object price7
+	{
+		defaults
+		{
+			pos -5.46707 69
+			opacity 255
+			color 0xffffffff
+			size 150 22
+			effect ""
+			alignment "RM"
+			sampleText "10000000"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+}
+
+sprites 6
+{
+	total_vertices 48
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	390 -2	396 -2	-2 4	4 4	390 4	396 4	-2 86	4 86	390 86	396 86	-2 92	4 92	390 92	396 92	
+				0.0605797 0.646484	0.0664391 0.646484	0.0742188 0.646484	0.0800781 0.646484	0.0605797 0.652344	0.0664391 0.652344	0.0742188 0.652344	0.0800781 0.652344	0.0605797 0.660162	0.0664391 0.660162	0.0742188 0.660162	0.0800781 0.660162	0.0605797 0.666021	0.0664391 0.666021	0.0742188 0.666021	0.0800781 0.666021	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim disable sp_colc
+		{
+			1
+			0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+		}
+	}
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	388 -0	394 -0	0 6	6 6	388 6	394 6	0 84	6 84	388 84	394 84	0 90	6 90	388 90	394 90	
+				0.0850412 0.644526	0.0909006 0.644526	0.102539 0.644526	0.108398 0.644526	0.0850412 0.650385	0.0909006 0.650385	0.102539 0.650385	0.108398 0.650385	0.0850412 0.662109	0.0909006 0.662109	0.102539 0.662109	0.108398 0.662109	0.0850412 0.667969	0.0909006 0.667969	0.102539 0.667969	0.108398 0.667969	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	
+		}
+		visible_on disable
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 69.1203	394 69.1203	0 70.8797	394 70.8797	
+				0.0566406 0.140625	0.078125 0.140625	0.0566406 0.142578	0.078125 0.142578	
+				0x78ffffff	0x78ffffff	0x78ffffff	0x78ffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	sprite ico13
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				167 -2	395 -2	167 22	395 22	
+				0.408203 0.848633	0.630859 0.848633	0.408203 0.87207	0.630859 0.87207	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	sprite ico14
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				167 68	395 68	167 92	395 92	
+				0.408203 0.87207	0.630859 0.87207	0.408203 0.848633	0.630859 0.848633	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	sprite objectName386
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 19.1203	394 19.1203	0 20.8797	394 20.8797	
+				0.0566406 0.140625	0.078125 0.140625	0.0566406 0.142578	0.078125 0.142578	
+				0x78ffffff	0x78ffffff	0x78ffffff	0x78ffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+}
+
