@@ -1,0 +1,181 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by sergey_mitryaev
+//at Wed Jul 16 11:41:14 2014
+
+
+animations 2
+{
+	anim online
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim offline
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 10
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 560 20
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on online
+		visible_on offline
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 6 -0
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "wdffeegegege"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 302 -0
+			opacity 255
+			color 0xff00ff00
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "wdffeegegege"
+			font "Tiny"
+		}
+		visible_on online
+		anim offline obj_colc
+		{
+			1
+			0xffff2700
+		}
+	}
+	object on_off
+	{
+		defaults
+		{
+			pos 504 2
+			opacity 255
+			color 0xffffffff
+			size 15 15
+			effect "ui\graphics\friend\friend_line_on_off"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+	}
+	object add_btn
+	{
+		defaults
+		{
+			pos 520 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\friend\friend_line_add_btn"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+	}
+	object ignor_btn
+	{
+		defaults
+		{
+			pos 540 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\friend\friend_line_ignor_btn"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 22
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on online
+		visible_on offline
+	}
+	object dist_max
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 117
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on online
+		visible_on offline
+	}
+	object line_spacer
+	{
+		defaults
+		{
+			pos 0 19
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_spacer"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on online
+		visible_on offline
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 443 20
+			effect "ui\graphics\friend\friend_line_2_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on online
+		visible_on offline
+	}
+}
+
