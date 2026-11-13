@@ -1,0 +1,79 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Thu Nov 15 14:27:19 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object text_1
+	{
+		defaults
+		{
+			pos 3.69762 16.9005
+			opacity 255
+			color 0xffffffff
+			size 100 16
+			effect ""
+			alignment "LM"
+			sampleText "min"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 373 22
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_4
+	{
+		defaults
+		{
+			pos 120.846 16.9005
+			opacity 255
+			color 0xffffffff
+			size 100 16
+			effect ""
+			alignment "RM"
+			sampleText "max"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_5
+	{
+		defaults
+		{
+			pos 223.747 3.57835
+			opacity 255
+			color 0xffffffff
+			size 50 16
+			effect ""
+			alignment "CM"
+			sampleText "300"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
