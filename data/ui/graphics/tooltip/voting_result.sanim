@@ -1,0 +1,76 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Fri Feb 08 17:00:23 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 370 60
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progress
+	{
+		defaults
+		{
+			pos 0 50
+			opacity 255
+			color 0xffffffff
+			size 370 10
+			effect "ui\graphics\tooltip\voting_result_progress"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 370 48
+			effect ""
+			alignment "LT"
+			sampleText "Swfew geg g ger herh h hheh h"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color_2
+	{
+		defaults
+		{
+			pos 69.7849 23.0006
+			opacity 255
+			color 0xffffdeb4
+			size 100 16
+			effect ""
+			alignment "LT"
+			sampleText "color"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
