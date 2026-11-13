@@ -1,0 +1,219 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/cursor.ma"
+//by sergey_mitryaev
+//at Fri May 16 11:06:57 2014
+
+
+animations 4
+{
+	anim empty
+	{
+		mode once
+		cycle_time 1
+	}
+	anim cross
+	{
+		mode once
+		cycle_time 1
+	}
+	anim cross_big
+	{
+		mode once
+		cycle_time 1
+	}
+	anim point
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 1
+{
+	object center
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 2 2
+			effect ""
+			alignment "LM"
+			sampleText "35"
+			font "Tiny"
+		}
+		visible_on empty
+		visible_on cross
+		visible_on cross_big
+		visible_on point
+	}
+}
+
+sprites 10
+{
+	total_vertices 40
+
+	sprite curll
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			not_align
+			vertices_nc
+			{
+				-5 -2	5 -2	-5 2	5 2	
+				0.493652 0.00878906	0.494629 0.00878906	0.493652 0.00878906	0.494629 0.00878906	
+			}
+		}
+		visible_on cross
+	}
+	sprite curllws
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			not_align
+			vertices_nc
+			{
+				-2 5	-2 -5	2 5	2 -5	
+				0.493652 0.00878906	0.494629 0.00878906	0.493652 0.00878906	0.494629 0.00878906	
+			}
+		}
+		visible_on cross
+	}
+	sprite curll2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			not_align
+			vertices_nc
+			{
+				-4 -1	4 -1	-4 1	4 1	
+				0.643555 0.106445	0.649414 0.106445	0.643555 0.106445	0.649414 0.106445	
+			}
+		}
+		visible_on cross
+	}
+	sprite curllws2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			not_align
+			vertices_nc
+			{
+				-1 4	-1 -4	1 4	1 -4	
+				0.643555 0.106445	0.649414 0.106445	0.643555 0.106445	0.649414 0.106445	
+			}
+		}
+		visible_on cross
+	}
+	sprite curll43
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			not_align
+			vertices_nc
+			{
+				-9 -2	9 -2	-9 2	9 2	
+				0.493652 0.00878906	0.494629 0.00878906	0.493652 0.00878906	0.494629 0.00878906	
+			}
+		}
+		visible_on cross_big
+	}
+	sprite curllws45
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			not_align
+			vertices_nc
+			{
+				-2 9	-2 -9	2 9	2 -9	
+				0.493652 0.00878906	0.494629 0.00878906	0.493652 0.00878906	0.494629 0.00878906	
+			}
+		}
+		visible_on cross_big
+	}
+	sprite curll2657
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			not_align
+			vertices_nc
+			{
+				-8 -1	8 -1	-8 1	8 1	
+				0.643555 0.106445	0.649414 0.106445	0.643555 0.106445	0.649414 0.106445	
+			}
+		}
+		visible_on cross_big
+	}
+	sprite curllws2678
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			not_align
+			vertices_nc
+			{
+				-1 8	-1 -8	1 8	1 -8	
+				0.643555 0.106445	0.649414 0.106445	0.643555 0.106445	0.649414 0.106445	
+			}
+		}
+		visible_on cross_big
+	}
+	sprite curllws45ff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			not_align
+			vertices_nc
+			{
+				-2 2	-2 -2	2 2	2 -2	
+				0.493652 0.00878906	0.494629 0.00878906	0.493652 0.00878906	0.494629 0.00878906	
+			}
+		}
+		visible_on point
+	}
+	sprite curllws2678f
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			not_align
+			vertices_nc
+			{
+				-1 1	-1 -1	1 1	1 -1	
+				0.643555 0.106445	0.649414 0.106445	0.643555 0.106445	0.649414 0.106445	
+			}
+		}
+		visible_on point
+	}
+}
+
