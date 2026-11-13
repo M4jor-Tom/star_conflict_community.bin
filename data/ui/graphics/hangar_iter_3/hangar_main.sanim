@@ -1,0 +1,451 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Tue Nov 19 16:24:23 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 28
+
+objects 27
+{
+	object map
+	{
+		defaults
+		{
+			anchor "LT"
+			pos -2042 -1
+			opacity 255
+			color 0xffffffff
+			size 3000 4000
+			effect "ui\graphics\map\map_fs_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object start_slot
+	{
+		defaults
+		{
+			anchor "RT"
+			pos -111 -0
+			opacity 255
+			color 0xffffffff
+			size 250 150
+			effect "ui\graphics\hangar_iter_3\info_slot_4"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object menu
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 22
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar_iter_3\menu_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object esc_menu
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 1 -0
+			opacity 255
+			color 0xffe9e9e9
+			size 76 30
+			effect "ui\graphics\hangar_iter_3\b_esc_menu_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object account
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 919.802 2.2176
+			opacity 255
+			color 0xffffffff
+			size 360 130
+			effect "ui\graphics\hangar_iter_3\account_main_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ship_list
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 3 235
+			opacity 255
+			color 0xffffffff
+			size 125 288
+			effect "ui\graphics\hangar\ship_list_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object damage_msg
+	{
+		defaults
+		{
+			anchor "C"
+			pos 654.251 497.905
+			opacity 255
+			color 0xffffffff
+			size 600 50
+			effect "ui\graphics\hangar\damage_msg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object in_battle_msg
+	{
+		defaults
+		{
+			anchor "C"
+			pos 654.251 561.635
+			opacity 255
+			color 0xffffffff
+			size 600 50
+			effect "ui\graphics\hangar\damage_msg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object repair
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 1331.62 190.58
+			opacity 255
+			color 0xffffffff
+			size 600 150
+			effect "ui\graphics\hangar_iter_3\repair_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object notice
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1446 564
+			opacity 255
+			color 0xffffffff
+			size 425 430
+			effect "ui\graphics\notice\notice_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 487.288 304.903
+			opacity 255
+			color 0xffffffff
+			size 966 576
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object sticker_2
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 1375 173
+			opacity 255
+			color 0xffffffff
+			size 480 584
+			effect "ui\graphics\sticker\n_sticker_main"
+			alignment "CM"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object name_ship
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 660.251 343.903
+			opacity 255
+			color 0xffff9100
+			size 600 50
+			effect ""
+			alignment "CM"
+			sampleText "Bujnsfn fswn kna "
+			font "Large"
+		}
+		visible_on idle
+	}
+	object help_list_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 799.907 417.296
+			opacity 255
+			color 0xffffffff
+			size 320 150
+			effect "ui\graphics\help_control\help_lst_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object castom_btn
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1646 1022
+			opacity 255
+			color 0xffffffff
+			size 142 32
+			effect "ui\graphics\hangar_iter_3\b_castom_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object fps_info
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 99
+			opacity 255
+			color 0xffffffff
+			size 320 160
+			effect "ui\graphics\hangar\fps_info_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object craft
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 82
+			opacity 255
+			color 0xffffffff
+			size 484 454
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object friend_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 660.251 343.903
+			opacity 255
+			color 0xffffffff
+			size 600 50
+			effect "ui\graphics\friend\friend_list_main---"
+			alignment "CM"
+			sampleText "Bujnsfn fswn kna "
+			font "Large"
+		}
+		visible_on idle
+	}
+	object edit_ship
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 68
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\ships_tree_3\edit_ship_2_main---"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object header
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 1 -0
+			opacity 255
+			color 0xffe9e9e9
+			size 76 30
+			effect "ui\graphics\hangar_iter_3\header_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object decor_btn3
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1776 163.278
+			opacity 255
+			color 0xffffffff
+			size 94 32
+			effect "ui\graphics\hangar_iter_3\b_shop_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object castom_btn3
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1847 1022
+			opacity 255
+			color 0xffffffff
+			size 142 32
+			effect "ui\graphics\hangar_iter_3\b_notif_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object pvp_couple_btn
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 876.417 107.22
+			opacity 255
+			color 0xffffffff
+			size 170 22
+			effect "ui\graphics\hangar_iter_3\pvp_couple_main"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object win_fsw
+	{
+		defaults
+		{
+			anchor "TC"
+			pos -1039 12
+			opacity 255
+			color 0xffffffff
+			size 2000 454
+			effect "ui\graphics\profile_2\profile_main.sanim"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 1880 163
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\quests_2\q_2_btn_x"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object quest_win
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1286 283
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\quests_2\q_map_main_2"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bp_btn
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 6 192
+			opacity 255
+			color 0xffffffff
+			size 320 32
+			effect "ui\graphics\battle_pass\bp_btn_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "C"
+			vertices
+			{
+				639.41 1176.23	640.264 1176.24	639.41 -262.174	640.264 -262.176	
+				0.435547 0.328613	0.4375 0.328613	0.435547 0.345215	0.4375 0.345215	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
