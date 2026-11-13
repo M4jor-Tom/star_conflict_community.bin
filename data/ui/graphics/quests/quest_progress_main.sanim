@@ -1,0 +1,92 @@
+﻿source_file  Y:/art/source/ui/graphics/quests/quests.ma
+//by sergey_mitryaev
+//at Wed Jun 27 17:49:49 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 196 15
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progress
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\quests\quest_progress"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object value_2
+	{
+		defaults
+		{
+			pos 90.1126 -0
+			opacity 255
+			color 0xffffffff
+			size 10 13
+			effect ""
+			alignment "CM"
+			sampleText "/"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_1
+	{
+		defaults
+		{
+			pos 40.037 1
+			opacity 255
+			color 0xffffffff
+			size 50 13
+			effect ""
+			alignment "RM"
+			sampleText "20"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_3
+	{
+		defaults
+		{
+			pos 100.402 1
+			opacity 255
+			color 0xffffffff
+			size 50 13
+			effect ""
+			alignment "LM"
+			sampleText "50"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
