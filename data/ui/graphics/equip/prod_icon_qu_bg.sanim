@@ -1,0 +1,51 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by Sergey
+//at Fri Oct 30 15:13:35 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim cross
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				30 28	36 28	47.7835 28	53.7835 28	30 36	36 36	47.7835 36	53.7835 36	30 48	36 48	47.7835 48	53.7835 48	30 56	36 56	47.7835 56	53.7835 56	
+				0.591797 0.304688	0.603516 0.304688	0.619141 0.304688	0.630859 0.304688	0.591797 0.316406	0.603516 0.316406	0.619141 0.316406	0.630859 0.316406	0.591797 0.337891	0.603516 0.337891	0.619141 0.337891	0.630859 0.337891	0.591797 0.349609	0.603516 0.349609	0.619141 0.349609	0.630859 0.349609	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on cross
+	}
+}
+
