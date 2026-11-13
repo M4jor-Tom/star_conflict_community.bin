@@ -1,0 +1,122 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Mon Dec 23 16:03:32 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 190 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progr_1
+	{
+		defaults
+		{
+			pos 33 19
+			opacity 255
+			color 0xffffffff
+			size 156 4
+			effect "ui\graphics\equip_1080\node_progr_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progr_2
+	{
+		defaults
+		{
+			pos 33 19
+			opacity 255
+			color 0xffffffff
+			size 156 4
+			effect "ui\graphics\equip_1080\node_progr_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progr_3
+	{
+		defaults
+		{
+			pos 33 19
+			opacity 255
+			color 0xffffffff
+			size 156 4
+			effect "ui\graphics\equip_1080\node_progr_3"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\ships_tree_3\node_progr_prop_ico"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object count
+	{
+		defaults
+		{
+			pos 145 -10
+			opacity 255
+			color 0xffffffff
+			size 44 40
+			effect ""
+			alignment "RM"
+			sampleText "99"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite que471
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				33 19	189 19	33 23	189 23	
+				0.25293 0.5	0.405273 0.5	0.25293 0.507813	0.405273 0.507813	
+			}
+		}
+		visible_on idle
+	}
+}
+
