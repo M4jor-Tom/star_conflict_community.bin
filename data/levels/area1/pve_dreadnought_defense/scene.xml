@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="s8256_thar_barrierdebris; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" battlefieldRadius="2000.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" useWorldLookPoint="true" />
+  <Inheritance>
+    <Scene Mark="2" Name="levels\dreadnoughtbattle\empire\empire_dreadnoughtbattle_01\scene.xml" />
+    <Scene Mark="3" Name="levels\dreadnoughtbattle\empire\empire_dreadnoughtbattle_03\scene.xml" />
+    <Scene Mark="4" Name="levels\dreadnoughtbattle\federation\fed_dreadnoughtbattle_01\scene.xml" />
+    <Scene Mark="5" Name="levels\dreadnoughtbattle\federation\fed_dreadnoughtbattle_03\scene.xml" />
+    <Scene Mark="6" Name="levels\dreadnoughtbattle\jericho\jericho_dreadnoughtbattle_01\scene.xml" />
+    <Scene Mark="7" Name="levels\dreadnoughtbattle\jericho\jericho_dreadnoughtbattle_03\scene.xml" />
+  </Inheritance>
+  <EntityContainer>
+    <Entity Name="LootPoint13" Def="Helpers_TagPoint" Pos="-170.300 425.213 71.710" type="0" />
+    <Entity Name="LootPoint6" Def="Helpers_TagPoint" Pos="300.112 54.149 -573.362" type="0" />
+    <Entity Name="LootPoint5" Def="Helpers_TagPoint" Pos="-6.042 85.123 -545.600" type="0" />
+    <Entity Name="LootPoint4" Def="Helpers_TagPoint" Pos="-382.130 33.856 -491.589" type="0" />
+    <Entity Name="LootPoint3" Def="Helpers_TagPoint" Pos="-710.604 29.930 -250.000" type="0" />
+    <Entity Name="LootPoint2" Def="Helpers_TagPoint" Pos="-239.925 3.473 -736.652" type="0" />
+    <Entity Name="LootPoint1" Def="Helpers_TagPoint" Pos="210.140 32.791 -759.844" type="0" />
+    <Entity Name="LootPoint17" Def="Helpers_TagPoint" Pos="484.717 408.441 597.352" type="0" />
+    <Entity Name="LootPoint12" Def="Helpers_TagPoint" Pos="-67.131 310.417 -76.144" type="0" />
+    <Entity Name="LootPoint11" Def="Helpers_TagPoint" Pos="-257.735 229.102 280.726" type="0" />
+    <Entity Name="LootPoint10" Def="Helpers_TagPoint" Pos="-505.943 174.573 -50.912" type="0" />
+    <Entity Name="LootPoint9" Def="Helpers_TagPoint" Pos="-844.602 137.299 -393.177" type="0" />
+    <Entity Name="LootPoint8" Def="Helpers_TagPoint" Pos="-345.798 18.306 -101.081" type="0" />
+    <Entity Name="LootPoint7" Def="Helpers_TagPoint" Pos="-34.791 105.541 -214.696" type="0" />
+    <Entity Name="LootPoint18" Def="Helpers_TagPoint" Pos="118.296 82.296 -126.018" type="0" />
+    <Entity Name="LootPoint16" Def="Helpers_TagPoint" Pos="604.603 314.881 93.567" type="0" />
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-301.137 1592.821 81.313" Rot="0.493 -0.506 0.494 0.505" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="LootPoint15" Def="Helpers_TagPoint" Pos="287.183 295.689 256.105" type="0" />
+    <Entity Name="LootPoint14" Def="Helpers_TagPoint" Pos="-716.039 369.424 447.237" type="0" />
+    <Entity Name="FreeSpaceAIAgents1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-519.976 437.865 109.578" Rot="-0.703 0.000 0.000 0.711" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Asteroids1" Def="Effects_Dreadnought_Asteroids01" Pos="-3869.987 -294.845 -4690.033" Rot="0.000 -0.707 0.000 0.707" isPlayed="1" environmental="1" env_scale="17.000" env_fog_mult="1.000" />
+    <Entity Name="Asteroids2" Def="Effects_Dreadnought_Asteroids01" Pos="-3336.194 -294.845 4000.000" Rot="0.000 -0.707 0.000 0.707" isPlayed="1" environmental="1" env_scale="17.000" env_fog_mult="1.000" />
+    <Entity Name="Asteroids6" Def="Effects_Dreadnought_Asteroids02" Pos="-2837.334 2770.716 5835.600" Rot="0.000 -0.707 0.000 0.707" isPlayed="1" environmental="1" env_scale="30.000" env_fog_mult="1.000" />
+    <Entity Name="Asteroids4" Def="Effects_Dreadnought_Asteroids02" Pos="-3873.441 -285.088 -5401.697" Rot="0.000 -0.707 0.000 0.707" isPlayed="1" environmental="1" env_scale="30.000" env_fog_mult="1.000" />
+    <Entity Name="Asteroids5" Def="Effects_Dreadnought_Asteroids02" Pos="-2837.334 -1149.379 5835.600" Rot="0.000 -0.707 0.000 0.707" isPlayed="1" environmental="1" env_scale="30.000" env_fog_mult="1.000" />
+    <Entity Name="AsteroidPath1" Def="PathObject" Pos="-2477.852 132.426 -161.366" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 132.426 -161.366" />
+      <Point p="2350.868 132.420 -182.856" />
+    </Entity>
+    <Entity Name="Asteroid22" Def="Movement_Asteroid1" Pos="-2462.723 1249.170 -26.869" path_name="AsteroidPath1" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid43" Def="Movement_Asteroid3" Pos="-2462.723 1249.170 -26.869" path_name="AsteroidPath1" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid64" Def="Movement_Asteroid4" Pos="-2462.723 1249.170 -26.869" path_name="AsteroidPath1" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath2" Def="PathObject" Pos="-2477.852 -297.000 -505.362" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 -297.000 -505.362" />
+      <Point p="2350.868 -297.000 -526.852" />
+    </Entity>
+    <Entity Name="Asteroid23" Def="Movement_Asteroid2" Pos="-2462.723 853.180 -370.865" path_name="AsteroidPath2" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid44" Def="Movement_Asteroid4" Pos="-2462.723 853.180 -370.865" path_name="AsteroidPath2" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid65" Def="Movement_Asteroid9" Pos="-2462.723 853.180 -370.865" path_name="AsteroidPath2" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath3" Def="PathObject" Pos="-2491.606 97.368 915.306" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2491.606 97.368 915.306" />
+      <Point p="2350.868 97.368 893.816" />
+    </Entity>
+    <Entity Name="Asteroid24" Def="Movement_Asteroid3" Pos="-2476.477 1187.402 1365.511" path_name="AsteroidPath3" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid45" Def="Movement_Asteroid1" Pos="-2476.477 1187.402 1365.511" path_name="AsteroidPath3" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid66" Def="Movement_Asteroid7" Pos="-2476.477 1187.402 1365.511" path_name="AsteroidPath3" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath4" Def="PathObject" Pos="-2477.852 217.442 -29.455" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 217.442 -29.455" />
+      <Point p="2350.868 217.442 -50.945" />
+    </Entity>
+    <Entity Name="Asteroid25" Def="Movement_Asteroid9" Pos="-2462.723 1246.330 127.882" path_name="AsteroidPath4" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid46" Def="Movement_Asteroid5" Pos="-2462.723 1246.330 127.882" path_name="AsteroidPath4" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid67" Def="Movement_Asteroid8" Pos="-2462.723 1246.330 127.882" path_name="AsteroidPath4" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath5" Def="PathObject" Pos="-2477.852 322.792 89.244" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 322.792 89.244" />
+      <Point p="2350.868 322.786 67.753" />
+    </Entity>
+    <Entity Name="Asteroid26" Def="Movement_Asteroid5" Pos="-2462.723 806.180 989.373" path_name="AsteroidPath5" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid47" Def="Movement_Asteroid8" Pos="-2462.723 806.180 989.373" path_name="AsteroidPath5" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid68" Def="Movement_Asteroid1" Pos="-2462.723 806.180 989.373" path_name="AsteroidPath5" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath6" Def="PathObject" Pos="-2477.852 264.559 334.953" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 264.558 334.952" />
+      <Point p="2350.868 264.552 313.463" />
+    </Entity>
+    <Entity Name="Asteroid27" Def="Movement_Asteroid7" Pos="-2462.723 1386.167 -512.270" path_name="AsteroidPath6" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid48" Def="Movement_Asteroid6" Pos="-2462.723 1386.167 -512.270" path_name="AsteroidPath6" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid69" Def="Movement_Asteroid3" Pos="-2462.723 1386.167 -512.270" path_name="AsteroidPath6" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath7" Def="PathObject" Pos="-2477.852 179.737 651.295" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 179.737 651.295" />
+      <Point p="2350.868 179.737 629.805" />
+    </Entity>
+    <Entity Name="Asteroid28" Def="Movement_Asteroid4" Pos="-2462.723 1619.338 1106.498" path_name="AsteroidPath7" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid49" Def="Movement_Asteroid7" Pos="-2462.723 1619.338 1106.498" path_name="AsteroidPath7" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid70" Def="Movement_Asteroid2" Pos="-2462.723 1619.338 1106.498" path_name="AsteroidPath7" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath8" Def="PathObject" Pos="-2477.852 77.734 399.112" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 77.733 399.112" />
+      <Point p="2350.868 77.733 377.622" />
+    </Entity>
+    <Entity Name="Asteroid29" Def="Movement_Asteroid6" Pos="-2462.723 1191.171 559.497" path_name="AsteroidPath8" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid50" Def="Movement_Asteroid2" Pos="-2462.723 1191.171 559.497" path_name="AsteroidPath8" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid71" Def="Movement_Asteroid6" Pos="-2462.723 1191.171 559.497" path_name="AsteroidPath8" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath9" Def="PathObject" Pos="-2491.606 -352.969 -188.626" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2491.606 -352.969 -188.626" />
+      <Point p="2350.868 -352.969 -210.116" />
+    </Entity>
+    <Entity Name="Asteroid30" Def="Movement_Asteroid8" Pos="-2476.477 861.180 -26.503" path_name="AsteroidPath9" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid51" Def="Movement_Asteroid2" Pos="-2476.477 861.180 -26.503" path_name="AsteroidPath9" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid72" Def="Movement_Asteroid5" Pos="-2476.477 861.180 -26.503" path_name="AsteroidPath9" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath10" Def="PathObject" Pos="-2491.606 -267.079 413.647" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2491.606 -267.079 413.647" />
+      <Point p="2350.868 -267.079 392.157" />
+    </Entity>
+    <Entity Name="Asteroid31" Def="Movement_Asteroid2" Pos="-2476.477 935.932 476.497" path_name="AsteroidPath10" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid52" Def="Movement_Asteroid9" Pos="-2476.477 935.932 476.497" path_name="AsteroidPath10" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid73" Def="Movement_Asteroid8" Pos="-2476.477 935.932 476.497" path_name="AsteroidPath10" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath11" Def="PathObject" Pos="-2477.852 295.080 -422.603" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 295.080 -422.603" />
+      <Point p="2350.868 295.080 -444.093" />
+    </Entity>
+    <Entity Name="Asteroid32" Def="Movement_Asteroid5" Pos="-2462.723 1226.023 -932.919" path_name="AsteroidPath11" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid53" Def="Movement_Asteroid6" Pos="-2462.723 1226.023 -932.919" path_name="AsteroidPath11" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid74" Def="Movement_Asteroid4" Pos="-2462.723 1226.023 -932.919" path_name="AsteroidPath11" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath12" Def="PathObject" Pos="-2477.852 -4.777 -538.877" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 -4.777 -538.877" />
+      <Point p="2350.868 -4.777 -560.367" />
+    </Entity>
+    <Entity Name="Asteroid33" Def="Movement_Asteroid7" Pos="-2462.723 994.245 -809.351" path_name="AsteroidPath12" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid54" Def="Movement_Asteroid2" Pos="-2462.723 994.245 -809.351" path_name="AsteroidPath12" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid75" Def="Movement_Asteroid6" Pos="-2462.723 994.245 -809.351" path_name="AsteroidPath12" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath13" Def="PathObject" Pos="-2491.606 -84.581 786.647" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2491.606 -84.581 786.647" />
+      <Point p="2350.868 -84.581 765.156" />
+    </Entity>
+    <Entity Name="Asteroid34" Def="Movement_Asteroid9" Pos="-2476.477 975.823 1448.782" path_name="AsteroidPath13" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid55" Def="Movement_Asteroid7" Pos="-2476.477 975.823 1448.782" path_name="AsteroidPath13" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid76" Def="Movement_Asteroid5" Pos="-2476.477 975.823 1448.782" path_name="AsteroidPath13" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath14" Def="PathObject" Pos="-2491.606 -371.000 232.000" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2491.606 -371.000 232.000" />
+      <Point p="2350.868 -371.000 210.510" />
+    </Entity>
+    <Entity Name="Asteroid35" Def="Movement_Asteroid8" Pos="-2476.477 779.180 366.497" path_name="AsteroidPath14" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid56" Def="Movement_Asteroid2" Pos="-2476.477 779.180 366.497" path_name="AsteroidPath14" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid77" Def="Movement_Asteroid3" Pos="-2476.477 779.180 366.497" path_name="AsteroidPath14" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath15" Def="PathObject" Pos="-2491.606 -290.000 603.478" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2491.606 -290.000 603.478" />
+      <Point p="2350.868 -290.000 581.988" />
+    </Entity>
+    <Entity Name="Asteroid36" Def="Movement_Asteroid2" Pos="-2476.477 860.180 707.497" path_name="AsteroidPath15" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid57" Def="Movement_Asteroid5" Pos="-2476.477 860.180 707.497" path_name="AsteroidPath15" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid78" Def="Movement_Asteroid8" Pos="-2476.477 860.180 707.497" path_name="AsteroidPath15" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath16" Def="PathObject" Pos="-2477.852 -397.618 -2.616" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 -397.618 -2.616" />
+      <Point p="2350.868 -397.618 -24.106" />
+    </Entity>
+    <Entity Name="Asteroid37" Def="Movement_Asteroid1" Pos="-2462.723 814.179 112.497" path_name="AsteroidPath16" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid58" Def="Movement_Asteroid9" Pos="-2462.723 814.179 112.497" path_name="AsteroidPath16" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid79" Def="Movement_Asteroid7" Pos="-2462.723 814.179 112.497" path_name="AsteroidPath16" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath17" Def="PathObject" Pos="-2477.852 115.000 269.000" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 115.000 269.000" />
+      <Point p="2350.868 114.994 247.510" />
+    </Entity>
+    <Entity Name="Asteroid38" Def="Movement_Asteroid5" Pos="-2462.723 1265.170 403.497" path_name="AsteroidPath17" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid59" Def="Movement_Asteroid3" Pos="-2462.723 1265.170 403.497" path_name="AsteroidPath17" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid80" Def="Movement_Asteroid6" Pos="-2462.723 1265.170 403.497" path_name="AsteroidPath17" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath18" Def="PathObject" Pos="-2477.852 -258.938 -12.469" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 -258.938 -12.469" />
+      <Point p="2350.868 -258.938 -33.959" />
+    </Entity>
+    <Entity Name="Asteroid39" Def="Movement_Asteroid4" Pos="-2462.723 973.888 122.029" path_name="AsteroidPath18" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid60" Def="Movement_Asteroid6" Pos="-2462.723 973.888 122.029" path_name="AsteroidPath18" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid81" Def="Movement_Asteroid5" Pos="-2462.723 973.888 122.029" path_name="AsteroidPath18" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath19" Def="PathObject" Pos="-2477.852 -179.146 253.058" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 -179.146 253.058" />
+      <Point p="2350.868 -179.146 231.568" />
+    </Entity>
+    <Entity Name="Asteroid40" Def="Movement_Asteroid6" Pos="-2462.723 1029.795 374.201" path_name="AsteroidPath19" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid61" Def="Movement_Asteroid2" Pos="-2462.723 1029.795 374.201" path_name="AsteroidPath19" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid82" Def="Movement_Asteroid4" Pos="-2462.723 1029.795 374.201" path_name="AsteroidPath19" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath20" Def="PathObject" Pos="-2477.852 -29.387 591.472" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 -29.387 591.472" />
+      <Point p="2350.868 -29.387 569.982" />
+    </Entity>
+    <Entity Name="Asteroid41" Def="Movement_Asteroid2" Pos="-2462.723 1093.309 234.798" path_name="AsteroidPath20" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid62" Def="Movement_Asteroid1" Pos="-2462.723 1093.309 234.798" path_name="AsteroidPath20" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid83" Def="Movement_Asteroid7" Pos="-2462.723 1093.309 234.798" path_name="AsteroidPath20" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath21" Def="PathObject" Pos="-2477.852 -172.833 -251.761" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.865 -172.833 -251.761" />
+      <Point p="2350.868 -172.833 -273.251" />
+    </Entity>
+    <Entity Name="Asteroid42" Def="Movement_Asteroid1" Pos="-2462.723 1023.175 7.719" path_name="AsteroidPath21" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid63" Def="Movement_Asteroid9" Pos="-2462.723 1023.175 7.719" path_name="AsteroidPath21" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid84" Def="Movement_Asteroid8" Pos="-2462.723 1023.175 7.719" path_name="AsteroidPath21" respawn_time="5.000" closed_path="0" />
+    <Entity Name="PlasmaCannon3" Def="ClanShip_PlasmaCannon" Pos="-214.793 -18.441 14.059" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="PlasmaCannon2" Def="ClanShip_PlasmaCannon" Pos="-387.007 -19.615 14.059" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="MapLoad1" Def="Logic_MapLoad" Pos="-446.308 433.530 115.987">
+      <ActionList Name="m_onLoad" Num="63">
+        <FireAction Target="Asteroid22" Action="FullActivate" />
+        <FireAction Target="Asteroid23" Action="FullActivate" Delay="10.00000" />
+        <FireAction Target="Asteroid24" Action="FullActivate" Delay="15.00000" />
+        <FireAction Target="Asteroid25" Action="FullActivate" Delay="30.00000" />
+        <FireAction Target="Asteroid26" Action="FullActivate" Delay="25.00000" />
+        <FireAction Target="Asteroid27" Action="FullActivate" Delay="20.00000" />
+        <FireAction Target="Asteroid28" Action="FullActivate" Delay="45.00000" />
+        <FireAction Target="Asteroid29" Action="FullActivate" Delay="55.00000" />
+        <FireAction Target="Asteroid30" Action="FullActivate" Delay="67.00000" />
+        <FireAction Target="Asteroid31" Action="FullActivate" Delay="74.00000" />
+        <FireAction Target="Asteroid32" Action="FullActivate" Delay="44.00000" />
+        <FireAction Target="Asteroid33" Action="FullActivate" Delay="38.00000" />
+        <FireAction Target="Asteroid34" Action="FullActivate" Delay="62.00000" />
+        <FireAction Target="Asteroid35" Action="FullActivate" Delay="49.00000" />
+        <FireAction Target="Asteroid36" Action="FullActivate" Delay="72.00000" />
+        <FireAction Target="Asteroid37" Action="FullActivate" Delay="43.00000" />
+        <FireAction Target="Asteroid38" Action="FullActivate" Delay="38.00000" />
+        <FireAction Target="Asteroid39" Action="FullActivate" Delay="19.00000" />
+        <FireAction Target="Asteroid40" Action="FullActivate" Delay="69.00000" />
+        <FireAction Target="Asteroid41" Action="FullActivate" Delay="42.00000" />
+        <FireAction Target="Asteroid42" Action="FullActivate" Delay="59.00000" />
+        <FireAction Target="Asteroid43" Action="FullActivate" Delay="81.00000" />
+        <FireAction Target="Asteroid44" Action="FullActivate" Delay="85.00000" />
+        <FireAction Target="Asteroid45" Action="FullActivate" Delay="100.00000" />
+        <FireAction Target="Asteroid46" Action="FullActivate" Delay="117.00000" />
+        <FireAction Target="Asteroid47" Action="FullActivate" Delay="125.00000" />
+        <FireAction Target="Asteroid48" Action="FullActivate" Delay="130.00000" />
+        <FireAction Target="Asteroid49" Action="FullActivate" Delay="135.00000" />
+        <FireAction Target="Asteroid50" Action="FullActivate" Delay="142.00000" />
+        <FireAction Target="Asteroid51" Action="FullActivate" Delay="150.00000" />
+        <FireAction Target="Asteroid52" Action="FullActivate" Delay="158.00000" />
+        <FireAction Target="Asteroid53" Action="FullActivate" Delay="124.00000" />
+        <FireAction Target="Asteroid54" Action="FullActivate" Delay="118.00000" />
+        <FireAction Target="Asteroid55" Action="FullActivate" Delay="142.00000" />
+        <FireAction Target="Asteroid56" Action="FullActivate" Delay="129.00000" />
+        <FireAction Target="Asteroid57" Action="FullActivate" Delay="152.00000" />
+        <FireAction Target="Asteroid58" Action="FullActivate" Delay="131.00000" />
+        <FireAction Target="Asteroid59" Action="FullActivate" Delay="118.00000" />
+        <FireAction Target="Asteroid60" Action="FullActivate" Delay="99.00000" />
+        <FireAction Target="Asteroid61" Action="FullActivate" Delay="149.00000" />
+        <FireAction Target="Asteroid62" Action="FullActivate" Delay="122.00000" />
+        <FireAction Target="Asteroid63" Action="FullActivate" Delay="139.00000" />
+        <FireAction Target="Asteroid64" Action="FullActivate" Delay="160.00000" />
+        <FireAction Target="Asteroid65" Action="FullActivate" Delay="170.00000" />
+        <FireAction Target="Asteroid66" Action="FullActivate" Delay="175.00000" />
+        <FireAction Target="Asteroid67" Action="FullActivate" Delay="180.00000" />
+        <FireAction Target="Asteroid68" Action="FullActivate" Delay="185.00000" />
+        <FireAction Target="Asteroid69" Action="FullActivate" Delay="190.00000" />
+        <FireAction Target="Asteroid70" Action="FullActivate" Delay="205.00000" />
+        <FireAction Target="Asteroid71" Action="FullActivate" Delay="215.00000" />
+        <FireAction Target="Asteroid72" Action="FullActivate" Delay="220.00000" />
+        <FireAction Target="Asteroid73" Action="FullActivate" Delay="234.00000" />
+        <FireAction Target="Asteroid74" Action="FullActivate" Delay="204.00000" />
+        <FireAction Target="Asteroid75" Action="FullActivate" Delay="198.00000" />
+        <FireAction Target="Asteroid76" Action="FullActivate" Delay="222.00000" />
+        <FireAction Target="Asteroid77" Action="FullActivate" Delay="209.00000" />
+        <FireAction Target="Asteroid78" Action="FullActivate" Delay="232.00000" />
+        <FireAction Target="Asteroid79" Action="FullActivate" Delay="211.00000" />
+        <FireAction Target="Asteroid80" Action="FullActivate" Delay="198.00000" />
+        <FireAction Target="Asteroid81" Action="FullActivate" Delay="179.00000" />
+        <FireAction Target="Asteroid82" Action="FullActivate" Delay="229.00000" />
+        <FireAction Target="Asteroid83" Action="FullActivate" Delay="202.00000" />
+        <FireAction Target="Asteroid84" Action="FullActivate" Delay="219.00000" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EmpDreadnought3" Def="Platform_EmpDreadnought" Pos="-386.505 -31.643 13.984" />
+    <Entity Name="EmpDreadnought2" Def="Platform_EmpDreadnought" Pos="-793.650 -50.902 13.965" />
+    <Entity Name="PlasmaCannon1" Def="ClanShip_PlasmaCannon" Pos="-793.588 -39.290 14.059" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="EmpDreadnought1" Def="Platform_EmpDreadnought" Pos="-215.041 -30.439 13.984" />
+    <Entity Name="Emp1" Def="OpenWorld_Gate_Withcollision_Emp" Pos="-422.375 -72.442 14.239" />
+    <Entity Name="01_DreadLightBlueRect2" Def="Effects_Dreadnought_DreadLightRect" relationshipGroup="1" Pos="-588.711 -114.081 -100.980" Rot="0.000 0.707 0.000 0.707" Skin="s2" />
+    <Entity Name="01_DreadLightBlueRect1" Def="Effects_Dreadnought_DreadLightRect" relationshipGroup="1" Pos="-566.069 -114.319 -100.807" Rot="0.000 0.707 0.000 0.707" Skin="s2" />
+    <Entity Name="map1_EmpDreadnought3" Def="Platform_EmpDreadnought" Pos="-388.438 -32.057 15.332" />
+    <Entity Name="01_ShieldSmallVer2" Def="ClanShip_ShieldSmallVer" relationshipGroup="1" Pos="-555.279 -94.807 63.019" Skin="s2" />
+    <Entity Name="01_AmbientSoundSpot1" Def="Sound_AmbientSoundSpot" Pos="85.486 -73.182 13.893" soundname="sound/dreadnought/engine" max_distance="10.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="01_FlakGun6" Def="ClanShip_FlakGun" relationshipGroup="1" Pos="-511.151 -42.926 54.169" Rot="0.000 0.000 1.000 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_ShieldSmallVer1" Def="ClanShip_ShieldSmallVer" relationshipGroup="1" Pos="-556.991 -95.794 -33.300" Skin="s2" />
+    <Entity Name="01_PointLight2" Def="Lights_PointLight" Pos="-588.881 -94.017 -70.429" start_off="0" rad="80.00000" color="0xFF2291FF" />
+    <Entity Name="01_ShieldSmallHor4" Def="ClanShip_ShieldSmallHor2" relationshipGroup="1" Pos="-868.949 -59.591 86.154" Rot="1.000 0.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_PlasmaHurt2" Def="PlasmaHurt" Pos="455.880 -71.927 14.510" max_damage_per_second="50000.000" min_damage_per_second="10000.000" damage_type="0" filter="" start_disabled="0" box_dimensions="318.000 48.000 56.000" />
+    <Entity Name="AverageTurret11" Def="ClanShip_AverageTurret2Double" relationshipGroup="1" Pos="-380.841 -37.573 -70.844" Skin="s2" />
+    <Entity Name="AverageTurret12" Def="ClanShip_AverageTurret2Triple" relationshipGroup="1" Pos="-179.605 -37.573 -70.844" Skin="s2" />
+    <Entity Name="AverageTurret13" Def="ClanShip_AverageTurret2" relationshipGroup="1" Pos="-280.168 -37.573 -70.844" Skin="s2" />
+    <Entity Name="AverageTurret14" Def="ClanShip_AverageTurret2" relationshipGroup="1" Pos="-179.375 -107.223 -70.814" Rot="0.000 0.000 1.000 0.001" Skin="s2" />
+    <Entity Name="AverageTurret15" Def="ClanShip_AverageTurret2Double" relationshipGroup="1" Pos="-279.980 -107.208 -70.814" Rot="0.000 0.000 1.000 0.001" Skin="s2" />
+    <Entity Name="AverageTurret16" Def="ClanShip_AverageTurret2Triple" relationshipGroup="1" Pos="-380.140 -107.194 -70.814" Rot="0.000 0.000 1.000 -0.001" Skin="s2" />
+    <Entity Name="01_ShieldSmallHor2" Def="ClanShip_ShieldSmallHor" relationshipGroup="1" Pos="-536.215 -34.610 65.409" Rot="1.000 0.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_ShieldSmallHor3" Def="ClanShip_ShieldSmallHor2" relationshipGroup="1" Pos="-869.782 -60.038 -58.107" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue3" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-969.322 -64.742 88.111" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="MarinosTarget_4" Def="Helpers_TagPoint" relationshipGroup="1" Pos="-282.793 -83.330 -71.122" type="0" />
+    <Entity Name="01_Beacon21" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-602.862 -37.688 -35.782" Rot="-0.620 0.281 0.128 0.722" Skin="s2" />
+    <Entity Name="MarinosTarget_1" Def="Helpers_TagPoint" relationshipGroup="1" Pos="-752.836 -97.482 100.657" type="0" />
+    <Entity Name="01_Beam5" Def="Lights_Beam" Pos="-821.940 -104.309 40.153" Rot="0.000 0.000 0.707 0.707" base_color="0x5CAFFF2" size="600.000" width="100.000" soft="1" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="28.860" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999786" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999786" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="01_DreadLightBlueRect3" Def="Effects_Dreadnought_DreadLightRect" relationshipGroup="1" Pos="-610.581 -114.165 -100.794" Rot="0.000 0.707 0.000 0.707" Skin="s2" />
+    <Entity Name="01_DreadLightWhiteProjector4" Def="Effects_Dreadnought_DreadLightWhiteProjector" Pos="-833.491 -104.547 -13.296" Rot="0.000 0.000 0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueRect6" Def="Effects_Dreadnought_DreadLightRect" relationshipGroup="1" Pos="-588.711 -80.466 -100.980" Rot="0.707 0.000 -0.707 0.000" Skin="s2" />
+    <Entity Name="01_DreadLightBlueRect5" Def="Effects_Dreadnought_DreadLightRect" relationshipGroup="1" Pos="-566.069 -80.489 -100.807" Rot="0.707 0.000 -0.707 0.000" Skin="s2" />
+    <Entity Name="01_DreadLightBlueRect4" Def="Effects_Dreadnought_DreadLightRect" relationshipGroup="1" Pos="-610.581 -80.531 -100.794" Rot="0.707 0.000 -0.707 0.000" Skin="s2" />
+    <Entity Name="01_Beacon19" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-895.156 -79.397 139.803" Rot="0.796 0.017 -0.013 0.605" Skin="s2" />
+    <Entity Name="01_Beam8" Def="Lights_Beam" Pos="-825.247 -104.309 -13.324" Rot="0.000 0.000 0.707 0.707" base_color="0x9CAFFF2" size="600.000" width="29.000" soft="1" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="28.860" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999794" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999794" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="01_Beam11" Def="Lights_Beam" Pos="-821.940 -92.588 -13.309" Rot="0.000 0.000 0.707 0.707" base_color="0x5CAFFF2" size="600.000" width="100.000" soft="1" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="28.860" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999771" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999771" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="01_Beam10" Def="Lights_Beam" Pos="-825.247 -92.588 -13.324" Rot="0.000 0.000 0.707 0.707" base_color="0x9CAFFF2" size="600.000" width="29.000" soft="1" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="28.860" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999786" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999786" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="01_DreadLightWhiteProjector5" Def="Effects_Dreadnought_DreadLightWhiteProjector" Pos="-833.491 -92.826 -13.296" Rot="0.000 0.000 0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Beam9" Def="Lights_Beam" Pos="-821.940 -104.309 -13.309" Rot="0.000 0.000 0.707 0.707" base_color="0x5CAFFF2" size="600.000" width="100.000" soft="1" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="28.860" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999779" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999779" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="01_DreadLightWhiteProjector3" Def="Effects_Dreadnought_DreadLightWhiteProjector" Pos="-833.491 -92.826 40.166" Rot="0.000 0.000 0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Beacon18" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-970.818 -64.377 84.936" Rot="0.613 -0.310 0.139 0.714" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue2" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-892.380 -79.421 -113.002" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_BeaconFlareBlue1" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-967.639 -64.613 -59.484" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Beacon25" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-678.356 -123.600 -106.218" Rot="-0.694 0.000 0.000 0.720" Skin="s2" />
+    <Entity Name="01_Beacon15" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-895.771 -79.166 -111.599" Rot="-0.787 0.000 0.000 0.617" Skin="s2" />
+    <Entity Name="01_FlakGun9" Def="ClanShip_FlakGun" relationshipGroup="1" Pos="-479.882 -42.925 -27.734" Rot="1.000 0.000 0.000 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_FlakGun8" Def="ClanShip_FlakGun" relationshipGroup="1" Pos="-479.850 -69.714 -27.734" Rot="0.000 1.000 0.000 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_SideTurret4" Def="ClanShip_SideTurret" relationshipGroup="1" Pos="-887.022 -83.476 100.009" Rot="0.707 0.000 0.707 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_FlakGun4" Def="ClanShip_FlakGun" relationshipGroup="1" Pos="-479.872 -69.714 54.169" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="additional_2_team1_1" Def="ClanShip_BombDispenser" relationshipGroup="1" Pos="-661.979 -56.814 13.329" Skin="s2" Activity="IDLE" />
+    <Entity Name="01_FlakGun3" Def="ClanShip_FlakGun" relationshipGroup="1" Pos="-511.119 -69.714 54.169" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_ShieldSmallHor1" Def="ClanShip_ShieldSmallHor" relationshipGroup="1" Pos="-534.878 -34.328 -36.319" Skin="s2" />
+    <Entity Name="01_PlasmaHurt1" Def="PlasmaHurt" Pos="36.278 -72.592 13.986" max_damage_per_second="100000.000" min_damage_per_second="10000.000" damage_type="3" filter="" start_disabled="0" box_dimensions="522.000 60.000 162.000" />
+    <Entity Name="01_SideTurret1" Def="ClanShip_SideTurret" relationshipGroup="1" Pos="-940.049 -67.377 -24.806" Rot="0.707 0.000 0.707 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_SideTurret2" Def="ClanShip_SideTurret" relationshipGroup="1" Pos="-940.049 -67.377 52.948" Rot="0.707 0.000 0.707 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_FlakGun5" Def="ClanShip_FlakGun" relationshipGroup="1" Pos="-479.904 -42.926 54.169" Rot="0.000 0.000 1.000 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_PointLight1a" Def="Lights_PointLight" Pos="64.299 -71.955 13.998" start_off="0" rad="100.00000" color="0xFF67BBE9" />
+    <Entity Name="01_FlakGun10" Def="ClanShip_FlakGun" relationshipGroup="1" Pos="-511.129 -42.925 -27.734" Rot="1.000 0.000 0.000 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_ShieldBlue2" Def="ClanShip_ShieldBlue" relationshipGroup="1" Pos="-426.193 -40.927 13.981" Rot="0.000 1.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_EngineBlueMid2" Def="Effects_Dreadnought_EngineBlueMid" Pos="33.626 -84.156 -28.701" Rot="0.000 0.000 -0.725 0.688" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineBlueBig1" Def="Effects_Dreadnought_EngineBlueBig" Pos="38.510 -72.025 13.941" Rot="0.000 0.000 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineBlueMid1" Def="Effects_Dreadnought_EngineBlueMid" Pos="35.741 -62.624 -29.051" Rot="0.000 0.000 -0.688 0.725" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineBlueMid4" Def="Effects_Dreadnought_EngineBlueMid" Pos="34.558 -84.089 56.369" Rot="0.000 0.000 -0.725 0.688" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineBlueSmall1" Def="Effects_Dreadnought_EngineBlueSmall" Pos="29.415 -71.766 -58.762" Rot="-0.019 0.019 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineBlueMid3" Def="Effects_Dreadnought_EngineBlueMid" Pos="35.508 -62.518 56.672" Rot="0.000 0.000 -0.688 0.725" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_SideTurret3" Def="ClanShip_SideTurret" relationshipGroup="1" Pos="-885.826 -83.489 -73.019" Rot="0.707 0.000 0.707 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_EngineBlueSmall2" Def="Effects_Dreadnought_EngineBlueSmall" Pos="31.561 -72.355 83.767" Rot="0.019 -0.019 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_FlakGun7" Def="ClanShip_FlakGun" relationshipGroup="1" Pos="-511.097 -69.714 -27.734" Rot="0.000 1.000 0.000 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_Beam2" Def="Lights_Beam" Pos="-825.247 -104.309 40.138" Rot="0.000 0.000 0.707 0.707" base_color="0x9CAFFF2" size="600.000" width="29.000" soft="1" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="28.860" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999802" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999802" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="01_Beacon14" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-970.128 -64.379 -57.037" Rot="-0.611 0.285 0.137 0.726" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue8" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-675.627 -123.053 135.838" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueProjector2" Def="Effects_Dreadnought_DreadLightBlueProjector" Pos="-847.012 -65.676 3.472" Rot="0.000 0.000 0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Beam6" Def="Lights_Beam" Pos="-826.766 -92.588 40.138" Rot="0.000 0.000 0.707 0.707" base_color="0x9CAFFF2" size="600.000" width="29.000" soft="1" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="28.860" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999794" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999794" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="01_DreadLightWhiteProjector1" Def="Effects_Dreadnought_DreadLightWhiteProjector" Pos="-833.491 -104.547 40.166" Rot="0.000 0.000 0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmall3" Def="Effects_Dreadnought_DreadLightBlueSmall" Pos="-872.563 -73.727 -33.883" Rot="0.500 0.500 0.500 0.500" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueProjector1" Def="Effects_Dreadnought_DreadLightBlueProjector" Pos="-846.973 -65.769 24.776" Rot="0.000 0.000 0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmall4" Def="Effects_Dreadnought_DreadLightBlueSmall" Pos="-872.570 -73.760 60.788" Rot="0.500 0.500 0.500 0.500" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_BeaconFlareBlue5" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-601.011 -38.498 -38.040" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmall2" Def="Effects_Dreadnought_DreadLightBlueSmall" Pos="-664.401 -61.716 33.594" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmall1" Def="Effects_Dreadnought_DreadLightBlueSmall" Pos="-664.511 -61.537 -7.848" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Beacon27" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-678.612 -123.071 134.544" Rot="0.710 0.000 0.000 0.704" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue7" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-675.298 -123.454 -107.693" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_BeaconFlareBlue6" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-601.208 -37.941 67.618" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Beam7" Def="Lights_Beam" Pos="-821.940 -92.588 40.153" Rot="0.000 0.000 0.707 0.707" base_color="0x5CAFFF2" size="600.000" width="100.000" soft="1" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="28.860" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999779" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999779" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="01_BeaconFlareBlue4" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-892.211 -79.655 140.842" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlue7" Def="Effects_Dreadnought_DreadLightBlue" Pos="-794.678 -63.926 14.030" Rot="0.000 0.000 1.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Beacon24" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-602.744 -37.651 65.148" Rot="0.617 -0.278 0.124 0.725" Skin="s2" />
+    <Entity Name="01_Beam1" Def="Lights_Beam" Pos="-662.120 -55.927 13.510" base_color="0x95FBDDC" size="80.000" width="17.000" soft="1" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999802" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999802" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="01_PointLight4" Def="Lights_PointLight" Pos="-787.029 -86.543 13.430" start_off="0" rad="60.00000" color="0xFF2291FF" />
+    <Entity Name="TransportPath1" Def="PathObject" Pos="-2477.282 -88.075 20.271" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2487.295 -88.074 20.271" />
+      <Point p="-866.654 -77.925 17.552" />
+    </Entity>
+    <Entity Name="TransportPath2" Def="PathObject" Pos="-2465.020 -84.617 -58.538" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2475.032 -84.616 -58.538" />
+      <Point p="-997.446 -80.976 -67.946" />
+    </Entity>
+    <Entity Name="TransportPath3" Def="PathObject" Pos="-2487.540 -81.862 87.822" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2497.552 -81.861 87.823" />
+      <Point p="-984.630 -75.928 63.343" />
+    </Entity>
+    <Entity Name="TransportPath4" Def="PathObject" Pos="-2450.618 -168.440 47.711" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2460.631 -168.439 47.711" />
+      <Point p="-464.804 -159.648 11.961" />
+    </Entity>
+    <Entity Name="TransportPath5" Def="PathObject" Pos="-2441.426 55.938 50.822" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2451.438 55.940 50.822" />
+      <Point p="-129.294 68.869 36.284" />
+    </Entity>
+    <Entity Name="TransportPath6" Def="PathObject" Pos="-2435.840 51.520 -3.816" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2445.852 51.522 -3.815" />
+      <Point p="-118.298 62.830 -25.275" />
+    </Entity>
+    <Entity Name="TransportPath7" Def="PathObject" Pos="-2389.964 -84.397 -150.660" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2399.975 -84.395 -150.659" />
+      <Point p="-134.245 -73.391 -177.835" />
+    </Entity>
+    <Entity Name="TransportPath8" Def="PathObject" Pos="-2450.237 -91.640 234.566" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2460.248 -91.638 234.567" />
+      <Point p="-121.607 -74.617 192.233" />
+    </Entity>
+    <Entity Name="TransportPath9" Def="PathObject" Pos="-2447.112 -26.764 -43.060" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2457.123 -26.762 -43.059" />
+      <Point p="-139.642 -22.343 -63.942" />
+    </Entity>
+    <Entity Name="TransportPath10" Def="PathObject" Pos="-2469.860 -23.743 55.863" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-2479.871 -23.741 55.864" />
+      <Point p="-815.171 -32.481 39.212" />
+    </Entity>
+    <Entity Name="Team1Group1" Def="Logic_SpawnSpot_Team1Group0" Pos="-472.981 -79.482 21.118" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group2" Def="Logic_SpawnSpot_Team1Group0" Pos="-472.981 -62.402 21.954" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group3" Def="Logic_SpawnSpot_Team1Group0" Pos="-472.981 -62.402 -3.096" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group4" Def="Logic_SpawnSpot_Team1Group0" Pos="-472.981 -80.689 -3.096" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+  </EntityContainer>
+</Scene>
