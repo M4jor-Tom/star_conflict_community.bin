@@ -1,0 +1,50 @@
+﻿source_file  Y:/art/source/ui/graphics/agreement/agreement.ma
+//by sergey_mitryaev
+//at Wed Jan 25 16:57:25 2012
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object agreement_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 332.566 20.1555
+			opacity 255
+			color 0xffffffff
+			size 625 657
+			effect "ui\graphics\agreement\agreement_win"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
