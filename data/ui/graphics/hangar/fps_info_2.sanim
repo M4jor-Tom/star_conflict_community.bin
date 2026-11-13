@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Wed Dec 13 15:09:30 2017
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim crit
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim warning
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object title
+	{
+		defaults
+		{
+			pos -7.10543e-015 -0
+			opacity 255
+			color 0xffffffff
+			size 130 30
+			effect ""
+			alignment "RM"
+			sampleText "Потеря пакетов:"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on crit
+		visible_on warning
+	}
+	object value
+	{
+		defaults
+		{
+			pos 135 -0
+			opacity 255
+			color 0xff07ff00
+			size 50 30
+			effect ""
+			alignment "LM"
+			sampleText "150"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim crit obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim warning obj_colc
+		{
+			1
+			0xffff9a00
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 184 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on crit
+		visible_on warning
+	}
+}
+
