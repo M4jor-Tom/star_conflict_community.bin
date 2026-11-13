@@ -1,0 +1,120 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by Sergey_Mitryaev
+//at Fri Feb 17 12:49:55 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object title
+	{
+		defaults
+		{
+			pos 9 3
+			opacity 255
+			color 0xffffffff
+			size 380 20
+			effect ""
+			alignment "LT"
+			sampleText "Наименование adwUIHIUOHыа"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 400 134
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 0 22
+			opacity 255
+			color 0xffffffff
+			size 400 24
+			effect "ui\graphics\tooltip\applicants_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 0 41
+			opacity 255
+			color 0xffffffff
+			size 400 24
+			effect "ui\graphics\tooltip\applicants_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 0 59
+			opacity 255
+			color 0xffffffff
+			size 400 24
+			effect "ui\graphics\tooltip\applicants_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 0 77
+			opacity 255
+			color 0xffffffff
+			size 400 24
+			effect "ui\graphics\tooltip\applicants_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 0 95
+			opacity 255
+			color 0xffffffff
+			size 400 24
+			effect "ui\graphics\tooltip\applicants_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
