@@ -1,0 +1,50 @@
+﻿source_file "Y:/art/source/ui/graphics/help_control/help.ma"
+//by sergey_mitryaev
+//at Wed Aug 30 12:53:30 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 200
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffc700
+			size 500 200
+			effect ""
+			alignment "CT"
+			sampleText "HDFfg dgjdjh;rjhrh r hr | dhjh rte jrtj rjrtyj "
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
