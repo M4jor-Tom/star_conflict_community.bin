@@ -1,0 +1,45 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Thu Apr 04 14:35:18 2013
+
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object value_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 124 20
+			effect ""
+			alignment "LM"
+			sampleText "+6000"
+			font "Tiny"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+}
+
