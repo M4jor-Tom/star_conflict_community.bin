@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+	<Templates>
+
+		<LinearLayout name="GameInfoTemplate" w="960" h="21" horizontal="true" margin="10" debug="false">
+			<TextLabel name="$parent_SessionId" text="189377" w="70" h="20" text_align="vcenter right"/>
+			<TextLabel name="$parent_Level" text="pandora_astrroid" w="260" text="Mode" h="20" text_align="vcenter left"/>
+			<TextLabel name="$parent_Mode" text="Control" w="110" h="20" text_align="vcenter left"/>
+			<TextLabel name="$parent_Players" text="24" w="50" h="20" text_align="center"/>
+			<TextLabel name="$parent_MmValue" text="18.8" w="50" h="20" text_align="center"/>
+			<TextLabel name="$parent_Region" text="EU" w="45" h="20" text_align="center"/>
+			<TextLabel name="$parent_Address" text="0.0.0.0" w="120" h="20" text_align="vcenter left"/>
+			<TextLabel name="$parent_Flags" text="" w="40" h="20" text_align="center"/>
+			<TextLabel name="$parent_Time" text="00:05" w="65" h="20" text_align="vcenter right"/>
+			<Button name="$parent_Observe" text="Observe" w="60" h="20" text_align="center"/>
+		</LinearLayout>
+
+	</Templates>
+
+
+	<Form name="GameListUI"
+		class="GameListUI" 
+		width="985" 
+		height="600"
+		resizable="false"
+		movable="true"
+		font="Tiny_outl2"
+		text="GameListUI"
+		foreground="White"
+		background="White"
+		x="200"
+		y="100"
+		alpha="1">
+
+		<LinearLayout name="Header" w="960" h="25" horizontal="true" margin="10" debug="false" >
+			<Button name="Sort_SessionId" text="SessionId" w="70" h="24" text_align="center" background="Transparent"/>
+			<Button name="Sort_LevelName" text="Level" w="260" h="24" text_align="center" background="Transparent"/>
+			<Button name="Sort_GameMode" text="Mode" w="110" h="24" text_align="center" background="Transparent"/>
+			<Button name="Sort_Players" text="Players" w="50" h="24" text_align="center" background="Transparent"/>
+			<Button name="Sort_MmValue" text="MmVal" w="50" h="24" text_align="center" background="Transparent"/>
+			<Button name="Sort_Region" text="Region" w="45" h="24" text_align="center" background="Transparent"/>
+			<Button name="Sort_Address" text="Address" w="120" h="24" text_align="center" background="Transparent"/>
+			<Button text="Flags" w="40" h="24" text_align="center" background="Transparent"/>
+			<Button text="Time" w="65" h="24" text_align="center" background="Transparent"/>
+		</LinearLayout>
+
+		<LinearLayout name="GameInfoBlock" w="963" h="1" horizontal="false" margin="1" debug="false" >
+			<anchor point="TOPLEFT" to="Header:BOTTOMLEFT" y="5" />
+			<anchor point="BOTTOM" y="-42" />
+			
+			<Widget name="Record1"  template="GameInfoTemplate" />
+			<Widget name="Record2"  template="GameInfoTemplate" />
+			<Widget name="Record3"  template="GameInfoTemplate" />
+			<Widget name="Record4"  template="GameInfoTemplate" />
+			<Widget name="Record5"  template="GameInfoTemplate" />
+			<Widget name="Record6"  template="GameInfoTemplate" />
+			<Widget name="Record7"  template="GameInfoTemplate" />
+			<Widget name="Record8"  template="GameInfoTemplate" />
+			<Widget name="Record9"  template="GameInfoTemplate" />
+			<Widget name="Record10" template="GameInfoTemplate" />
+			<Widget name="Record11" template="GameInfoTemplate" />
+			<Widget name="Record12" template="GameInfoTemplate" />
+			<Widget name="Record13" template="GameInfoTemplate" />
+			<Widget name="Record14" template="GameInfoTemplate" />
+			<Widget name="Record15" template="GameInfoTemplate" />
+			<Widget name="Record16" template="GameInfoTemplate" />
+			<Widget name="Record17" template="GameInfoTemplate" />
+			<Widget name="Record18" template="GameInfoTemplate" />
+			<Widget name="Record19" template="GameInfoTemplate" />
+			<Widget name="Record20" template="GameInfoTemplate" />
+			<Widget name="Record21" template="GameInfoTemplate" />
+			<Widget name="Record22" template="GameInfoTemplate" />
+			<Widget name="Record23" template="GameInfoTemplate" />
+			<Widget name="Record24" template="GameInfoTemplate" />
+			
+		</LinearLayout>
+
+		<ScrollBar name="Scrollbar" width="18" height="1">
+			<anchor point="TOPLEFT" to="GameInfoBlock:TOPRIGHT" x="4" />
+			<anchor point="BOTTOMLEFT" to="GameInfoBlock:BOTTOMRIGHT" x="4" />
+		</ScrollBar>
+		
+		<TextLabel name="FindUserLabel" text="Find User:" >
+			<anchor point="BOTTOMLEFT" x="10" y="-10" />
+		</TextLabel>
+		
+		<TextEntry name="FindUserEntry" hint="User NickName or #uid" width="140" height="20" >
+			<anchor point="LEFT" to="FindUserLabel:RIGHT" x="3" />
+		</TextEntry>
+
+		<TextLabel name="FindResult" text="not Found" width="450" height="20" >
+			<anchor point="LEFT" to="FindUserEntry:RIGHT" x="10" />
+		</TextLabel>
+
+		<Button name="RefreshButton" text="Refresh" w="130" h="22">
+			<anchor point="BOTTOMRIGHT" x="-10" y="-7" />
+		</Button>
+
+	</Form>
+</Ui>
