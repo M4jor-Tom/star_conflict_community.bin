@@ -1,0 +1,122 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Mon Dec 09 15:34:25 2019
+
+base_res 1920 1080
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 42
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on over
+	}
+	object text22
+	{
+		defaults
+		{
+			pos 0 5
+			opacity 255
+			color 0xff4f6e71
+			size 300 30
+			effect ""
+			alignment "CM"
+			sampleText "20asgg eh eh etrertjertjrjh"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on over
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName351
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				-6 -6	4 -6	296 -6	306 -6	-6 4	4 4	296 4	306 4	-6 38	4 38	296 38	306 38	-6 48	4 48	296 48	306 48	
+				0.339844 0.12207	0.349609 0.12207	0.796875 0.12207	0.806641 0.12207	0.339844 0.131836	0.349609 0.131836	0.796875 0.131836	0.806641 0.131836	0.339844 0.165039	0.349609 0.165039	0.796875 0.165039	0.806641 0.165039	0.339844 0.174805	0.349609 0.174805	0.796875 0.174805	0.806641 0.174805	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on over
+	}
+	sprite we118
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-34.0192 -33.9724	324.019 -33.9724	-34.0192 71.9724	324.019 71.9724	
+				0.271805 0.00422674	0.357101 0.00422674	0.271805 0.0895232	0.357101 0.0895232	
+				0x59594b00	0x59594b00	0x59594b00	0x59594b00	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xa7a77500	0xa7a77500	0xa7a77500	0xa7a77500	
+		}
+		visible_on press
+		anim over sp_colc
+		{
+			1
+			0xa7a77500	0xa7a77500	0xa7a77500	0xa7a77500	
+		}
+	}
+}
+
