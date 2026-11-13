@@ -1,0 +1,275 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Wed Jul 24 23:01:03 2019
+
+base_res 1280 720
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sale
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nomaney
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim blue
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gold
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 10
+{
+	object price
+	{
+		defaults
+		{
+			pos -24.5556 2.8989
+			opacity 255
+			color 0xffffffff
+			size 100 16
+			effect ""
+			alignment "RM"
+			sampleText "1 000 000"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim sale obj_colc
+		{
+			1
+			0xff4aff0a
+		}
+		anim nomaney obj_colc
+		{
+			1
+			0xffff2e00
+		}
+		anim blue obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+		anim gold obj_colc
+		{
+			1
+			0xffff9a00
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on sale
+		visible_on nomaney
+		visible_on blue
+		visible_on gold
+	}
+	object gold_icon
+	{
+		defaults
+		{
+			pos 76.2838 -0
+			opacity 255
+			color 0xffffffff
+			size 25 23
+			effect "ui\graphics\shop\gold_icon"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on sale
+		visible_on nomaney
+		visible_on blue
+		visible_on gold
+	}
+	object price_2
+	{
+		defaults
+		{
+			pos -20 2.8989
+			opacity 255
+			color 0xffffffff
+			size 130 16
+			effect ""
+			alignment "CM"
+			sampleText "1 000 000"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim sale obj_colc
+		{
+			1
+			0xff4aff0a
+		}
+		anim nomaney obj_colc
+		{
+			1
+			0xffff2e00
+		}
+		anim blue obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+		anim gold obj_colc
+		{
+			1
+			0xffff9a00
+		}
+	}
+	object price_sale
+	{
+		defaults
+		{
+			pos -24.5556 31.8989
+			opacity 255
+			color 0xff999999
+			size 100 16
+			effect ""
+			alignment "LM"
+			sampleText "1 000 000"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on sale
+		visible_on nomaney
+		visible_on blue
+		visible_on gold
+	}
+	object price_new
+	{
+		defaults
+		{
+			pos -24.5556 50.8989
+			opacity 255
+			color 0xff07ff00
+			size 200 30
+			effect ""
+			alignment "LM"
+			sampleText "1 000 000"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on sale
+		visible_on nomaney
+		visible_on blue
+		visible_on gold
+	}
+	object price_3
+	{
+		defaults
+		{
+			pos -80 2.8989
+			opacity 255
+			color 0xffffffff
+			size 180 16
+			effect ""
+			alignment "RM"
+			sampleText "1 000 000"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim sale obj_colc
+		{
+			1
+			0xff4aff0a
+		}
+		anim nomaney obj_colc
+		{
+			1
+			0xffff2e00
+		}
+		anim blue obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+		anim gold obj_colc
+		{
+			1
+			0xffff9a00
+		}
+	}
+	object price_tiny
+	{
+		defaults
+		{
+			pos -30 86.8989
+			opacity 255
+			color 0xffffffff
+			size 130 16
+			effect ""
+			alignment "CM"
+			sampleText "1 000 000"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on sale
+		visible_on nomaney
+		visible_on blue
+		visible_on gold
+	}
+	object price_dlc
+	{
+		defaults
+		{
+			pos -24.5556 109.899
+			opacity 255
+			color 0xff07ff00
+			size 200 30
+			effect ""
+			alignment "LM"
+			sampleText "1 000 000"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on sale
+		visible_on nomaney
+		visible_on blue
+		visible_on gold
+	}
+	object price_verytiny
+	{
+		defaults
+		{
+			pos -30 145
+			opacity 255
+			color 0xffffffff
+			size 130 16
+			effect ""
+			alignment "CM"
+			sampleText "1 000 000"
+			font "VeryTiny"
+		}
+		visible_on idle
+		visible_on sale
+		visible_on nomaney
+		visible_on blue
+		visible_on gold
+	}
+}
+
