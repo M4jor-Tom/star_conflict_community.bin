@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+	<Templates>
+
+		<Button name="KeyButton" w="230" h="22">
+			<color background="White" />
+		</Button>
+
+		<LinearLayout name="BindingTemplate" w="700" h="25" horizontal="true" margin="2" debug="false">
+			<TextLabel name="$parent.Desc" w="235" h="24" />
+			<Button name="$parent.Key1Button" template="KeyButton" />
+			<Button name="$parent.Key2Button" template="KeyButton" disabled="false"/>
+		</LinearLayout>
+
+	</Templates>
+
+
+	<Form name="BindingUI"
+		class="BindingUI" 
+		width="768" 
+		height="512"
+		resizable="false"
+		movable="true"
+		font="Tiny_outl2"
+		text="#KEY_BINDINGS"
+		foreground="White"
+		background="White"
+		alpha="1">
+
+		<anchor point="CENTER" y="-50" />
+
+		<TextLabel name="CommandLabel" text="#COMMAND_LABEL" w="235" h="24">
+			<anchor point="TOPLEFT" x="26" y="5" />
+		</TextLabel>
+
+		<TextLabel name="Key1" text="#KEY1_LABEL" w="230" h="24" text_align="center">
+			<anchor point="LEFT" to="CommandLabel:RIGHT" />
+		</TextLabel>
+
+		<TextLabel name="Key2" text="#KEY2_LABEL" w="230" h="24" text_align="center">
+			<anchor point="LEFT" to="Key1:RIGHT" />
+		</TextLabel>
+
+		<ScrollBar name="Scrollbar" width="20" height="415">
+			<anchor point="TOPRIGHT" x="-5" y="35" />
+		</ScrollBar>
+
+		<Button name="ResetButton" text="#RESET_TO_DEFAULT" w="130" h="22">
+			<anchor point="BOTTOMLEFT" x="10" y="-5" />
+		</Button>
+
+		<Button name="CancelButton" text="#cancel" w="110" h="22">
+			<anchor point="BOTTOMRIGHT" x="-10" y="-5" />
+		</Button>
+
+		<Button name="OkayButton" text="#OK" w="110" h="22">
+			<anchor point="RIGHT" to="CancelButton:LEFT" />
+		</Button>
+
+		<Button name="UnbindButton" text="#UNBIND_KEY" w="130" h="22">
+			<anchor point="RIGHT" to="OkayButton:LEFT" x="-5" />
+		</Button>
+<!-- #0099094 убрана поддержка геймпада
+		<Button name="JoySettingsButton" text="#JOYSTICK_SETTINGS" w="150" h="22">
+			<anchor point="BOTTOMLEFT" x="10" y="-30"/>
+		</Button>
+-->
+		<CheckButton name="SaveToCloud" text="#BIND_SAVE_TO_CLOUD" >
+			<anchor point="LEFT" to="ResetButton:RIGHT" x="10" />
+		</CheckButton>
+		
+		<!---------------------------------->
+		<!--       binding buttons        -->
+		<!---------------------------------->
+		<LinearLayout name="RecordsContainer" w="700" h="415" x="27" y="35" margin="-2" debug="false">
+			<Widget name="Binding1"  template="BindingTemplate" />
+			<Widget name="Binding2"  template="BindingTemplate" />
+			<Widget name="Binding3"  template="BindingTemplate" />
+			<Widget name="Binding4"  template="BindingTemplate" />
+			<Widget name="Binding5"  template="BindingTemplate" />
+			<Widget name="Binding6"  template="BindingTemplate" />
+			<Widget name="Binding7"  template="BindingTemplate" />
+			<Widget name="Binding8"  template="BindingTemplate" />
+			<Widget name="Binding9"  template="BindingTemplate" />
+			<Widget name="Binding10" template="BindingTemplate" />
+			<Widget name="Binding11" template="BindingTemplate" />
+			<Widget name="Binding12" template="BindingTemplate" />
+			<Widget name="Binding13" template="BindingTemplate" />
+			<Widget name="Binding14" template="BindingTemplate" />
+			<Widget name="Binding15" template="BindingTemplate" />
+			<Widget name="Binding16" template="BindingTemplate" />
+			<Widget name="Binding17" template="BindingTemplate" />
+			<Widget name="Binding18" template="BindingTemplate" />
+		</LinearLayout>
+	
+	</Form>
+</Ui>
