@@ -1,0 +1,178 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by Sergey
+//at Tue Oct 20 15:31:10 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 3
+	}
+}
+
+total_elements 10
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 130
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 104 40
+			opacity 255
+			color 0xfff3f3f3
+			size 300 50
+			effect ""
+			alignment "CT"
+			sampleText "Sfdf gfegg hhh rjhj jjj  |egfg b rn r j rj "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 130 102.944
+			opacity 255
+			color 0xffffffff
+			size 248 24
+			effect "ui\graphics\shop\buy_btn8"
+			alignment "RT"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 54 -2
+			opacity 255
+			color 0xffffffff
+			size 400 30
+			effect ""
+			alignment "CM"
+			sampleText "Дступно воскрешение"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 1 102.944
+			opacity 255
+			color 0xffffffff
+			size 248 24
+			effect "ui\graphics\shop\buy_btn8"
+			alignment "RT"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 250 102.944
+			opacity 255
+			color 0xffffffff
+			size 248 24
+			effect "ui\graphics\shop\buy_btn8"
+			alignment "RT"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName173
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			vertices
+			{
+				248.72 32.4422	515.119 32.4423	248.72 130.077	515.119 130.077	
+				0.380886 0.847863	0.774979 0.847863	0.380886 0.955188	0.774979 0.955188	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName176
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			vertices
+			{
+				248.72 32.4422	-4.74341 32.4423	248.72 130.077	-4.74341 130.077	
+				0.380886 0.847863	0.774979 0.847863	0.380886 0.955188	0.774979 0.955188	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName177
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices
+			{
+				-21.069 29.954	535.069 29.954	-21.069 32.954	535.069 32.954	
+				0.318874 0.803405	0.581144 0.803405	0.318874 0.809927	0.581144 0.809927	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName178
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices
+			{
+				-21.069 129.537	535.069 129.537	-21.069 132.537	535.069 132.537	
+				0.318874 0.803405	0.581144 0.803405	0.318874 0.809927	0.581144 0.809927	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
