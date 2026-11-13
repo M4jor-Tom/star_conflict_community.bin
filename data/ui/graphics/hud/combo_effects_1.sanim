@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud.ma"
+//by sergey_mitryaev
+//at Mon Mar 06 14:10:21 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object navigator2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\hud\navigator_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object quests
+	{
+		defaults
+		{
+			pos 65 202.16
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\quests\quests_hud_win_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object navigator4
+	{
+		defaults
+		{
+			pos 65 438.16
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\quests\quests_hud_win_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object gmp_info
+	{
+		defaults
+		{
+			pos 65 202.16
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\quests\gmp_info_win"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object quests_2
+	{
+		defaults
+		{
+			pos 65 407
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\quests\quests_hud_win_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
