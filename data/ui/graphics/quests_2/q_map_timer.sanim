@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Thu Nov 30 15:48:22 2017
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object timer
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffb42f11
+			size 100 24
+			effect ""
+			alignment "CM"
+			sampleText "1/8"
+			font "Medium"
+		}
+		visible_on idle
+		anim idle_2 obj_colc
+		{
+			1
+			0xfffad369
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffe10000
+			size 100 24
+			effect ""
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite objectName487
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	6 -4	94 -4	104 -4	-4 6	6 6	94 6	104 6	-4 18	6 18	94 18	104 18	-4 28	6 28	94 28	104 28	
+				0.444336 0.612305	0.454102 0.612305	0.456055 0.612305	0.46582 0.612305	0.444336 0.62207	0.454102 0.62207	0.456055 0.62207	0.46582 0.62207	0.444336 0.624023	0.454102 0.624023	0.456055 0.624023	0.46582 0.624023	0.444336 0.633789	0.454102 0.633789	0.456055 0.633789	0.46582 0.633789	
+				0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	0xffb42e0d	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	0xfffad369	
+		}
+	}
+}
+
