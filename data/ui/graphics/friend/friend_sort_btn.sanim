@@ -1,0 +1,207 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by sergey_mitryaev
+//at Mon Apr 07 15:10:47 2014
+
+
+animations 5
+{
+	anim over_deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 294 21
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on over_deselect
+		visible_on select
+		visible_on deselect
+		visible_on select_over
+		visible_on disable
+	}
+	object text
+	{
+		defaults
+		{
+			pos 6 3.08642e-014
+			opacity 255
+			color 0xffffffff
+			size 200 21
+			effect ""
+			alignment "LM"
+			sampleText "Наблюдение"
+			font "VerySmall"
+		}
+		visible_on over_deselect
+		visible_on select
+		anim deselect obj_opc
+		{
+			1 
+			127
+		}
+		visible_on select_over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object arrow
+	{
+		defaults
+		{
+			pos 272 2.5
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\friend\friend_sort_arrow"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on over_deselect
+		visible_on select
+		anim deselect obj_opc
+		{
+			1 
+			127
+		}
+		visible_on select_over
+		visible_on disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	288 -0	294 -0	0 6	6 6	288 6	294 6	0 15	6 15	288 15	294 15	0 21	6 21	288 21	294 21	
+				0.0547203 0.140619	0.0605797 0.140619	0.0732422 0.140619	0.0791016 0.140619	0.0547203 0.146479	0.0605797 0.146479	0.0732422 0.146479	0.0791016 0.146479	0.0547203 0.150391	0.0605797 0.150391	0.0732422 0.150391	0.0791016 0.150391	0.0547203 0.15625	0.0605797 0.15625	0.0732422 0.15625	0.0791016 0.15625	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on over_deselect
+		visible_on select
+		visible_on deselect
+		visible_on select_over
+		anim disable sp_colc
+		{
+			1
+			0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	0x80808080	
+		}
+	}
+	sprite over
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	288 -0	294 -0	0 6	6 6	288 6	294 6	0 15	6 15	288 15	294 15	0 21	6 21	288 21	294 21	
+				0.0734789 0.00196683	0.0793383 0.00196683	0.114334 0.00196683	0.120193 0.00196683	0.0734789 0.00782621	0.0793383 0.00782621	0.114334 0.00782621	0.120193 0.00782621	0.0734789 0.0449466	0.0793383 0.0449466	0.114334 0.0449466	0.120193 0.0449466	0.0734789 0.050806	0.0793383 0.050806	0.114334 0.050806	0.120193 0.050806	
+				0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	
+			}
+		}
+		visible_on over_deselect
+		anim select sp_colc
+		{
+			1
+			0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+		}
+		anim deselect sp_colc
+		{
+			1
+			0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+		}
+		anim select_over sp_colc
+		{
+			1
+			0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	0xcc4c4c4c	
+		}
+		anim disable sp_colc
+		{
+			1
+			0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+		}
+	}
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	288 -0	294 -0	0 6	6 6	288 6	294 6	0 15	6 15	288 15	294 15	0 21	6 21	288 21	294 21	
+				0.123001 0.00196683	0.12886 0.00196683	0.163856 0.00196683	0.169715 0.00196683	0.123001 0.00782621	0.12886 0.00782621	0.163856 0.00782621	0.169715 0.00782621	0.123001 0.0449466	0.12886 0.0449466	0.163856 0.0449466	0.169715 0.0449466	0.123001 0.050806	0.12886 0.050806	0.163856 0.050806	0.169715 0.050806	
+				0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	
+			}
+		}
+		visible_on over_deselect
+		anim select sp_colc
+		{
+			1
+			0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	
+		}
+		anim deselect sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	0x0	0x99000000	0x99000000	0x0	0x0	0x99000000	0x99000000	0x0	0x0	0x0	0x0	0x0	
+		}
+		anim select_over sp_colc
+		{
+			1
+			0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	
+		}
+		visible_on disable
+	}
+}
+
