@@ -1,0 +1,246 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by Sergey
+//at Wed Dec 23 10:54:27 2015
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 24
+			effect ""
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object name6
+	{
+		defaults
+		{
+			pos 5 2
+			opacity 255
+			color 0xffffffff
+			size 90 20
+			effect ""
+			alignment "CM"
+			sampleText "999999"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+}
+
+sprites 6
+{
+	total_vertices 24
+
+	sprite que57
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 -0	28 -0	0 24	28 24	
+				0.827148 0.734375	0.881836 0.734375	0.827148 0.78125	0.881836 0.78125	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x92ffffff	0x92ffffff	0x92ffffff	0x92ffffff	
+		}
+	}
+	sprite que223
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				72 -0	100 -0	72 24	100 24	
+				0.938477 0.734375	0.993164 0.734375	0.938477 0.78125	0.993164 0.78125	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x92ffffff	0x92ffffff	0x92ffffff	0x92ffffff	
+		}
+	}
+	sprite que226
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				28 -0	72 -0	28 24	72 24	
+				0.882813 0.734375	0.9375 0.734375	0.882813 0.78125	0.9375 0.78125	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x92ffffff	0x92ffffff	0x92ffffff	0x92ffffff	
+		}
+	}
+	sprite que58
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	28 -0	0 24	28 24	
+				0.827148 0.734375	0.881836 0.734375	0.827148 0.78125	0.881836 0.78125	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x454545	0x454545	0x454545	0x454545	
+		}
+		anim press sp_colc
+		{
+			1
+			0x151515	0x151515	0x151515	0x151515	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x151515	0x151515	0x151515	0x151515	
+		}
+	}
+	sprite over8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices
+			{
+				72 -0	100 -0	72 24	100 24	
+				0.938477 0.734375	0.993164 0.734375	0.938477 0.78125	0.993164 0.78125	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x454545	0x454545	0x454545	0x454545	
+		}
+		anim press sp_colc
+		{
+			1
+			0x151515	0x151515	0x151515	0x151515	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x151515	0x151515	0x151515	0x151515	
+		}
+	}
+	sprite over11
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices
+			{
+				28 -0	72 -0	28 24	72 24	
+				0.882813 0.734375	0.9375 0.734375	0.882813 0.78125	0.9375 0.78125	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x454545	0x454545	0x454545	0x454545	
+		}
+		anim press sp_colc
+		{
+			1
+			0x151515	0x151515	0x151515	0x151515	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x151515	0x151515	0x151515	0x151515	
+		}
+	}
+}
+
