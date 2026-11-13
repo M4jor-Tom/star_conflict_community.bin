@@ -1,0 +1,93 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/gold_buy.ma"
+//by Sergey_Mitryaev
+//at Fri Aug 25 14:54:07 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object progr
+	{
+		defaults
+		{
+			pos 0 43
+			opacity 255
+			color 0xffffffff
+			size 426 4
+			effect "ui\graphics\buy_gold\buy_gold_present_progr"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 514 60
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 0.696798 14.6888
+			opacity 255
+			color 0xffc6c6c6
+			size 400 20
+			effect ""
+			alignment "LM"
+			sampleText "Покупка лицензии пилота"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object color
+	{
+		defaults
+		{
+			pos 27.7043 -7.7541
+			opacity 255
+			color 0xffffcd3b
+			size 400 20
+			effect ""
+			alignment "CM"
+			sampleText "color"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object present_ico
+	{
+		defaults
+		{
+			pos 444.227 0.92098
+			opacity 255
+			color 0xffffffff
+			size 60 60
+			effect "ui\graphics\buy_gold\buy_gold_present_ico"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
