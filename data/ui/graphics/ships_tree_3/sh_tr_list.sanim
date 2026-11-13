@@ -1,0 +1,118 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Mon Jul 17 17:28:35 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 3
+{
+	object sh_tr_slot_1
+	{
+		defaults
+		{
+			pos 518 -0
+			opacity 255
+			color 0xffffffff
+			size 250 250
+			effect "ui\graphics\ships_tree_3\sh_tr_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1920 1837
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 1260 8
+			opacity 255
+			color 0xffffffff
+			size 14 1800
+			effect "ui\graphics\scroll_2\scroll_2_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite que459
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			anchor "TC"
+			vertices
+			{
+				0 -2	158 -2	0 -0	158 -0	
+				0.759651 0.871094	0.787224 0.871094	0.759651 0.90625	0.787224 0.90625	
+				0x13720e	0xff13720e	0x13720e	0xff13720e	
+			}
+		}
+		visible_on idle
+	}
+	sprite que460
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			anchor "TC"
+			vertices
+			{
+				158 -2	1095 -2	158 -0	1095 -0	
+				0.759651 0.871094	0.787224 0.871094	0.759651 0.90625	0.787224 0.90625	
+				0xff13720e	0xff13720e	0xff13720e	0xff13720e	
+			}
+		}
+		visible_on idle
+	}
+	sprite que461
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			anchor "TC"
+			vertices
+			{
+				1281 -2	1095 -2	1281 -0	1095 -0	
+				0.759651 0.871094	0.787224 0.871094	0.759651 0.90625	0.787224 0.90625	
+				0x13720e	0xff13720e	0x13720e	0xff13720e	
+			}
+		}
+		visible_on idle
+	}
+}
+
