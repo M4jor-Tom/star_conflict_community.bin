@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LocalServer>
+  <!-- Settings for starting and shutting down the local server and databases when the game client starts and exits. -->
+
+  <!-- MongoDB startup and shutdown settings. Missing section or empty executable skips startup.
+   Missing or empty dataPath skips directory creation. Environment variables are expanded; relative paths use the game executable directory.
+   Missing port or port="0" disables port checks.
+   shutdownOnExit controls whether the process receives a graceful shutdown request when the client exits.
+   Missing, zero, or negative timeouts disable waiting after the shutdown request. -->
+  <Mongo
+    executable="../cloud/mongodb/mongod.exe"
+    dataPath="%LOCALAPPDATA%/Targem/StarConflict/cloud/mongodb/data"
+    arguments="--config &quot;config.cfg&quot; --dbpath &quot;%LOCALAPPDATA%/Targem/StarConflict/cloud/mongodb/data&quot;"
+    port="27017"
+    startTimeoutMs="15000"
+    shutdownOnExit="true"
+    shutdownTimeoutMs="10000" />
+
+  <!-- Redis startup and shutdown settings. Special values have the same meaning as in the Mongo section. -->
+  <!--
+  <Redis
+    executable=""
+    dataPath="%LOCALAPPDATA%/Targem/StarConflict/cloud/redis/data"
+    arguments=""
+    port="6379"
+    startTimeoutMs="15000"
+    shutdownOnExit="true"
+    shutdownTimeoutMs="10000" />
+  -->
+
+  <!-- Hub startup and shutdown settings. Missing section or empty executable skips startup.
+   Environment variables are expanded; relative paths use the game executable directory.
+   Missing, zero, or negative startCheckTimeoutMs skips the early-exit check.
+   shutdownOnExit controls whether Hub receives a graceful shutdown request when the client exits.
+   Missing, zero, or negative shutdownTimeoutMs disables waiting after the shutdown request. -->
+  <Hub
+    executable="../cloud/Hub.exe"
+    arguments=""
+    startCheckTimeoutMs="1000"
+    shutdownOnExit="true"
+    shutdownTimeoutMs="15000" />
+</LocalServer>
