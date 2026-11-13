@@ -1,0 +1,68 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 07 12:46:41 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object slot
+	{
+		defaults
+		{
+			pos 224 -0
+			opacity 255
+			color 0xffffffff
+			size 70 90
+			effect "ui\graphics\quests_2\q_2_sml_pers_slot_1"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object over2
+	{
+		defaults
+		{
+			pos 0 17
+			opacity 255
+			color 0xffffffff
+			size 270 58
+			effect "ui\graphics\quests_2\q_2_sml_pers_slot_over2"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 90
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+	}
+}
+
