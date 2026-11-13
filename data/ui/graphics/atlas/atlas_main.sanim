@@ -1,0 +1,115 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Mon May 21 15:04:55 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1484 920
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object filter
+	{
+		defaults
+		{
+			pos 325 1
+			opacity 255
+			color 0xffffffff
+			size 700 60
+			effect "ui\graphics\atlas\atlas_filter_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object modules_list
+	{
+		defaults
+		{
+			pos 0 74
+			opacity 255
+			color 0xffffffff
+			size 1484 60
+			effect "ui\graphics\atlas\atlas_ship_list"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object drop_down
+	{
+		defaults
+		{
+			pos 1235 8
+			opacity 255
+			color 0xffffffff
+			size 250 44
+			effect "ui\graphics\atlas\drop_down_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object lern_progr
+	{
+		defaults
+		{
+			pos 2 837
+			opacity 255
+			color 0xffffffff
+			size 400 74
+			effect "ui\graphics\profile_2\lern_progr"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object radiobtn
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 60
+			effect "ui\graphics\atlas\atlas_filter_radiobtn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object input_text
+	{
+		defaults
+		{
+			pos 977 8
+			opacity 255
+			color 0xffffffff
+			size 250 44
+			effect "ui\graphics\atlas\drop_down_input2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
