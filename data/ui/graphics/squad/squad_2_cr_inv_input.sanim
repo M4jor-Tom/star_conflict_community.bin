@@ -1,0 +1,115 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_2.ma"
+//by sergey_mitryaev
+//at Thu Nov 10 13:37:58 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object title_2
+	{
+		defaults
+		{
+			pos 6 5
+			opacity 255
+			color 0xffffffff
+			size 558 85
+			effect ""
+			alignment "LT"
+			sampleText "Позывной"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 584 94
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 566 3
+			opacity 255
+			color 0xffffffff
+			size 10 88
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color_select
+	{
+		defaults
+		{
+			pos 87.0093 18.6865
+			opacity 255
+			color 0xff565656
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "color_select"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color_cursor
+	{
+		defaults
+		{
+			pos 87.0093 42
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "color_cursor"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	578 -0	584 -0	0 6	6 6	578 6	584 6	0 88	6 88	578 88	584 88	0 94	6 94	578 94	584 94	
+				0.00195888 0.160156	0.00781825 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195888 0.166016	0.00781825 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195888 0.178711	0.00781825 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195888 0.18457	0.00781825 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+}
+
