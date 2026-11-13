@@ -1,0 +1,90 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Tue Mar 05 18:03:43 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 380 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object on_off
+	{
+		defaults
+		{
+			pos 3 3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\arena\ar_on_off"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title45
+	{
+		defaults
+		{
+			pos 24 2
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\arena\ar_pl_name"
+			alignment "LM"
+			font "Tiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object title46
+	{
+		defaults
+		{
+			pos 179 2
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\arena\ar_pl_text"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object close_btn
+	{
+		defaults
+		{
+			pos 360 2
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\arena\ar_close_btn"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
