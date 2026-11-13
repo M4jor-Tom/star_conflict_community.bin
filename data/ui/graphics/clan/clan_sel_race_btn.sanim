@@ -1,0 +1,160 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Wed Apr 10 11:48:53 2013
+
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 56 56
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		visible_on disable
+	}
+	object fraction_ico
+	{
+		defaults
+		{
+			pos 2.45328 2.61049
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\quests\fraction_ico"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		visible_on disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.180913	6 0.180913	50.1971 0.180913	56.1971 0.180913	0 6.18091	6 6.18091	50.1971 6.18091	56.1971 6.18091	0 50.0131	6 50.0131	50.1971 50.0131	56.1971 50.0131	0 56.0131	6 56.0131	50.1971 56.0131	56.1971 56.0131	
+				0.25402 0.1143	0.25402 0.120159	0.25402 0.132659	0.25402 0.138518	0.25988 0.1143	0.25988 0.120159	0.25988 0.132659	0.25988 0.138518	0.272565 0.1143	0.272565 0.120159	0.272565 0.132659	0.272565 0.138518	0.278424 0.1143	0.278424 0.120159	0.278424 0.132659	0.278424 0.138518	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		visible_on disable
+	}
+	sprite over6
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 0.180913	6 0.180913	50.1971 0.180913	56.1971 0.180913	0 6.18091	6 6.18091	50.1971 6.18091	56.1971 6.18091	0 50.0131	6 50.0131	50.1971 50.0131	56.1971 50.0131	0 56.0131	6 56.0131	50.1971 56.0131	56.1971 56.0131	
+				0.0526365 0.114202	0.0467772 0.114202	0.0342776 0.114202	0.0284182 0.114202	0.0526366 0.120061	0.0467772 0.120061	0.0342776 0.120061	0.0284182 0.120061	0.0526366 0.132756	0.0467772 0.132756	0.0342776 0.132756	0.0284182 0.132756	0.0526366 0.138616	0.0467772 0.138616	0.0342777 0.138616	0.0284182 0.138616	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on disable
+	}
+	sprite sel
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 0.180913	6 0.180913	50.1971 0.180913	56.1971 0.180913	0 6.18091	6 6.18091	50.1971 6.18091	56.1971 6.18091	0 50.0131	6 50.0131	50.1971 50.0131	56.1971 50.0131	0 56.0131	6 56.0131	50.1971 56.0131	56.1971 56.0131	
+				0.0791014 0.114202	0.0732421 0.114202	0.0605469 0.114202	0.0546875 0.114202	0.0791015 0.120061	0.0732421 0.120061	0.0605469 0.120061	0.0546875 0.120061	0.0791015 0.132756	0.0732422 0.132756	0.0605469 0.132756	0.0546875 0.132756	0.0791016 0.138616	0.0732422 0.138616	0.0605469 0.138616	0.0546875 0.138616	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+		}
+		visible_on over
+		anim sel_over sp_colc
+		{
+			1
+			0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+		}
+		visible_on disable
+	}
+}
+
