@@ -1,0 +1,115 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Thu Jun 20 12:51:35 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\sticker\n_sticker_color_1_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object color_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\sticker\n_sticker_color_2_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object color_3
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\sticker\n_sticker_color_3_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite over10
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	46 -2	52 -2	-2 4	4 4	46 4	52 4	-2 46	4 46	46 46	52 46	-2 52	4 52	46 52	52 52	
+				0.128906 0.00683594	0.134766 0.00683594	0.160156 0.00683594	0.166016 0.00683594	0.128906 0.0126953	0.134766 0.0126953	0.160156 0.0126953	0.166016 0.0126953	0.128906 0.0400391	0.134766 0.0400391	0.160156 0.0400391	0.166016 0.0400391	0.128906 0.0458984	0.134766 0.0458984	0.160156 0.0458984	0.166016 0.0458984	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite over11
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	46 -2	52 -2	-2 4	4 4	46 4	52 4	-2 46	4 46	46 46	52 46	-2 52	4 52	46 52	52 52	
+				0.494181 0.615234	0.50004 0.615234	0.503906 0.615234	0.509766 0.615234	0.494181 0.621094	0.50004 0.621094	0.503906 0.621094	0.509766 0.621094	0.494181 0.625	0.50004 0.625	0.503906 0.625	0.509766 0.625	0.494181 0.630859	0.50004 0.630859	0.503906 0.630859	0.509766 0.630859	
+				0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+}
+
