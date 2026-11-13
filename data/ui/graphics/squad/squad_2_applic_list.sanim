@@ -1,0 +1,239 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_2.ma"
+//by sergey_mitryaev
+//at Mon Oct 31 18:10:18 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 13
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 586 306
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 568 2
+			opacity 255
+			color 0xffffffff
+			size 16 302
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_1_1
+	{
+		defaults
+		{
+			pos 0 -1.25401e-014
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_applic_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1_2
+	{
+		defaults
+		{
+			pos 0 30.478
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_applic_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1_3
+	{
+		defaults
+		{
+			pos 0 60.956
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_applic_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1_4
+	{
+		defaults
+		{
+			pos 0 91.4339
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_applic_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1_5
+	{
+		defaults
+		{
+			pos 0 121.912
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_applic_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1_6
+	{
+		defaults
+		{
+			pos 0 152.39
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_applic_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1_7
+	{
+		defaults
+		{
+			pos 0 182.868
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_applic_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1_8
+	{
+		defaults
+		{
+			pos 0 213.346
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_applic_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1_9
+	{
+		defaults
+		{
+			pos 0 243.824
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_applic_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1_10
+	{
+		defaults
+		{
+			pos 0 274.302
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_applic_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object note
+	{
+		defaults
+		{
+			pos 32 129
+			opacity 255
+			color 0xffababab
+			size 500 30
+			effect ""
+			alignment "CM"
+			sampleText "Ни одного приглашения не найдено. Создайте свое!"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp30
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	555.5 -0	561.5 -0	0 6	6 6	555.5 6	561.5 6	0 300	6 300	555.5 300	561.5 300	0 306	6 306	555.5 306	561.5 306	
+				0.00195888 0.160156	0.00781825 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195888 0.166016	0.00781825 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195888 0.178711	0.00781825 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195888 0.18457	0.00781825 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp31
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				563.5 -0	569.5 -0	580.5 -0	586.5 -0	563.5 6	569.5 6	580.5 6	586.5 6	563.5 300	569.5 300	580.5 300	586.5 300	563.5 306	569.5 306	580.5 306	586.5 306	
+				0.00195888 0.160156	0.00781825 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195888 0.166016	0.00781825 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195888 0.178711	0.00781825 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195888 0.18457	0.00781825 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+}
+
