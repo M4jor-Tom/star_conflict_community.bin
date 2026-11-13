@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Fri Nov 22 13:28:47 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 134 40
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 34 28
+			opacity 255
+			color 0xffe10000
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "2030"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				135 29	151 29	135 45	151 45	
+				0.494141 0.524414	0.509766 0.524414	0.494141 0.540039	0.509766 0.540039	
+				0xffe10000	0xffe10000	0xffe10000	0xffe10000	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	150 -0	156 -0	0 6	6 6	150 6	156 6	0 41	6 41	150 41	156 41	0 47	6 47	150 47	156 47	
+				0.223647 0.00286055	0.229506 0.00286055	0.266614 0.00286055	0.272474 0.00286055	0.223647 0.00871992	0.229506 0.00871992	0.266614 0.00871992	0.272474 0.00871992	0.223647 0.0449466	0.229506 0.0449466	0.266614 0.0449466	0.272474 0.0449466	0.223647 0.050806	0.229506 0.050806	0.266614 0.050806	0.272474 0.050806	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
