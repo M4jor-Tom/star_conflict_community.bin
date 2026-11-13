@@ -1,0 +1,60 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by Sergey_Mitryaev
+//at Tue Apr 18 13:23:25 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 250 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object seg_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 80 10
+			effect "ui\graphics\tooltip\sinergy_progr"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object seg_2
+	{
+		defaults
+		{
+			pos 254 -0
+			opacity 255
+			color 0xffffffff
+			size 80 10
+			effect "ui\graphics\tooltip\sinergy_progr"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
