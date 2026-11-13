@@ -1,0 +1,51 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by sergey_mitryaev
+//at Mon Sep 15 13:56:16 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1.5
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object win_1
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 956 186
+			opacity 255
+			color 0xffffffff
+			size 322 418
+			effect "ui\graphics\mail\mail_win_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object win_2
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 633 186
+			opacity 255
+			color 0xffffffff
+			size 323 418
+			effect "ui\graphics\mail\mail_win_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
