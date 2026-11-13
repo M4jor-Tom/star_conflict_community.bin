@@ -1,0 +1,54 @@
+﻿source_file "Y:/art/source/ui/graphics/spectate/spectate.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 17:47:15 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices_nc
+			{
+				73.0794 16.3541	402.168 16.3541	73.0794 42.5546	402.168 42.5546	
+				0.707031 0.253896	0.435449 0.253896	0.707031 0.37501	0.435449 0.37501	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName184
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices_nc
+			{
+				73.0794 16.3541	402.168 16.3541	73.0794 42.5546	402.168 42.5546	
+				0.707031 0.253896	0.435449 0.253896	0.707031 0.37501	0.435449 0.37501	
+			}
+		}
+		visible_on idle
+	}
+}
+
