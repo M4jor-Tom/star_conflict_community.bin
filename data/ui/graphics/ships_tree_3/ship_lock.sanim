@@ -1,0 +1,38 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey
+//at Fri Jul 08 13:56:42 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite que281
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3.tif"
+			vertices_nc
+			{
+				0 -0	22 -0	0 30	22 30	
+				0.947266 0.273438	0.990234 0.273438	0.947266 0.332031	0.990234 0.332031	
+			}
+		}
+		visible_on idle
+	}
+}
+
