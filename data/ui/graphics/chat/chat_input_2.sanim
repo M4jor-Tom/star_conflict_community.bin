@@ -1,0 +1,147 @@
+﻿source_file "Y:/art/source/ui/graphics/chat/chat.ma"
+//by sergey_mitryaev
+//at Mon Apr 24 10:41:03 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 6
+{
+	object self_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 422 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object login_2
+	{
+		defaults
+		{
+			pos 3 -0
+			opacity 255
+			color 0xffffffff
+			size 394 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object self
+	{
+		defaults
+		{
+			pos 32 -0
+			opacity 255
+			color 0xffffffff
+			size 356 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object select_color
+	{
+		defaults
+		{
+			pos 3.86102 27.4909
+			opacity 255
+			color 0xff6a93b5
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "COLOR"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object cursor
+	{
+		defaults
+		{
+			pos 3.86102 49.8328
+			opacity 255
+			color 0xffffffff
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "COLOR"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object login
+	{
+		defaults
+		{
+			pos 30.9522 1.60273
+			opacity 255
+			color 0xffffffff
+			size 320 20
+			effect ""
+			alignment "LM"
+			sampleText "Курсант"
+			font "Tiny"
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				5.88531 6.05277	23.8853 6.05277	5.88531 19.0528	23.8853 19.0528	
+				0.770503 0.0204562	0.788081 0.0204562	0.770503 0.0331515	0.788081 0.0331515	
+			}
+		}
+		anim select sp_pos
+		{
+			6 
+			5.88531 6.05277	23.8853 6.05277	5.88531 19.0528	23.8853 19.0528	
+			7.05985 6.90104	22.7108 6.90104	7.05985 18.2045	22.7108 18.2045	
+			7.76457 7.41001	22.0061 7.41001	7.76457 17.6955	22.0061 17.6955	
+			7.41656 7.15867	22.3541 7.15867	7.41656 17.9469	22.3541 17.9469	
+			6.65094 6.60572	23.1197 6.60572	6.65094 18.4998	23.1197 18.4998	
+			5.88531 6.05277	23.8853 6.05277	5.88531 19.0528	23.8853 19.0528	
+		}
+		visible_on deselect
+	}
+}
+
