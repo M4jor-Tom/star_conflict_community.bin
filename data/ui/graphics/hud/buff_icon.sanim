@@ -1,0 +1,211 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by sergey_mitryaev
+//at Mon Dec 05 18:14:06 2016
+
+base_res 1280 720
+
+animations 5
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim color
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim orang
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim bg_1
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 42 42
+			effect ""
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on color
+		visible_on orang
+		visible_on bg_1
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite action_type
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				1 1	41 1	1 41	41 41	
+				0 0	1 0	0 1	1 1	
+				0xff88b5ff	0xff88b5ff	0xff88b5ff	0xff88b5ff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim color sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim orang sp_posc_colc
+		{
+			1 1
+			5.50035 5.50035	36.4996 5.50035	5.50035 36.4996	36.4996 36.4996	
+			0xffff7a00	0xffff7a00	0xffff7a00	0xffff7a00	
+		}
+		anim bg_1 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite action_area
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				1 1	41 1	1 41	41 41	
+				0 0	1 0	0 1	1 1	
+				0xff88b5ff	0xff88b5ff	0xff88b5ff	0xff88b5ff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim color sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim orang sp_posc_colc
+		{
+			1 1
+			5.50035 5.50035	36.4996 5.50035	5.50035 36.4996	36.4996 36.4996	
+			0xffff7a00	0xffff7a00	0xffff7a00	0xffff7a00	
+		}
+		anim bg_1 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite action_object
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				1 1	41 1	1 41	41 41	
+				0 0	1 0	0 1	1 1	
+				0xff88b5ff	0xff88b5ff	0xff88b5ff	0xff88b5ff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim color sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim orang sp_posc_colc
+		{
+			1 1
+			5.50035 5.50035	36.4996 5.50035	5.50035 36.4996	36.4996 36.4996	
+			0xffff7a00	0xffff7a00	0xffff7a00	0xffff7a00	
+		}
+		anim bg_1 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite modification
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				20.8915 17.8789	39.8915 17.8789	20.8915 39.8789	39.8915 39.8789	
+				0 0	1 0	0 1	1 1	
+				0xff88b5ff	0xff88b5ff	0xff88b5ff	0xff88b5ff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim color sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim orang sp_colc
+		{
+			1
+			0xffff7a00	0xffff7a00	0xffff7a00	0xffff7a00	
+		}
+		anim bg_1 sp_colc
+		{
+			1
+			0xffff7a00	0xffff7a00	0xffff7a00	0xffff7a00	
+		}
+	}
+}
+
