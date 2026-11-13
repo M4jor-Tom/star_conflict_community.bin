@@ -1,0 +1,95 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing_2.ma"
+//by sergey_mitryaev
+//at Tue Sep 03 14:05:41 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 342 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 21 -0
+			opacity 255
+			color 0xffffffff
+			size 70 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_max
+	{
+		defaults
+		{
+			pos 21 -0
+			opacity 255
+			color 0xffffffff
+			size 300 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				21 0.0120754	91.5 0.0120754	0 24	112.5 24	
+				0.239866 0.0147547	0.239866 0.0399328	0.260134 0.0147547	0.260134 0.0399328	
+				0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			21 0.0120754	91.5 0.0120754	0 24	112.5 24	
+			21 0.0120754	114.5 0.0119076	0 24	135.5 23.9998	
+			21 0.0120754	137.5 0.0114479	0 24	158.5 23.9994	
+			21 0.0120754	160.5 0.0107727	0 24	181.5 23.9987	
+			21 0.0120754	183.5 0.00995445	0 24	204.5 23.9979	
+			21 0.0120754	206.5 0.00906181	0 24	227.5 23.997	
+			21 0.0120754	229.5 0.00816917	0 24	250.5 23.9961	
+			21 0.0120754	252.5 0.00735092	0 24	273.5 23.9953	
+			21 0.0120754	275.5 0.00667572	0 24	296.5 23.9946	
+			21 0.0120754	298.5 0.00621605	0 24	319.5 23.9941	
+			21 0.0120754	321.5 0.0060482	0 24	342.5 23.9939	
+		}
+	}
+}
+
