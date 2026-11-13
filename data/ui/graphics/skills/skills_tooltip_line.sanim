@@ -1,0 +1,116 @@
+﻿source_file  Y:/art/source/ui/graphics/skills/skills.ma
+//by sergey_mitryaev
+//at Fri Jun 22 13:40:47 2012
+
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lern
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object price
+	{
+		defaults
+		{
+			pos 208.358 2.71175
+			opacity 255
+			color 0xffffffff
+			size 120 15
+			effect "ui\graphics\skills\skill_price"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			76
+		}
+		visible_on lern
+	}
+	object name
+	{
+		defaults
+		{
+			pos 20.0243 1.71722
+			opacity 255
+			color 0xffcccccc
+			size 190 16
+			effect ""
+			alignment "LM"
+			sampleText "Быстрый Стрелок"
+			font "Tiny"
+		}
+		visible_on active
+		anim inactive obj_opc_colc
+		{
+			1 1
+			76
+			0xffffffff
+		}
+		anim lern obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object prod_icon
+	{
+		defaults
+		{
+			pos 2.37755 1.67901
+			opacity 255
+			color 0xffcccccc
+			size 16 16
+			effect "ui\graphics\equip\prod_sml_icon"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc_colc
+		{
+			1 1
+			76
+			0xffffffff
+		}
+		anim lern obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 335 20
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on lern
+	}
+}
+
