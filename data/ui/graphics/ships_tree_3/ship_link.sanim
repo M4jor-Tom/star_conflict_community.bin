@@ -1,0 +1,90 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey
+//at Tue Jul 26 14:26:15 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim ictive
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 2 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on ictive
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite que299
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			not_align
+			vertices
+			{
+				-7 -0	7 -0	-7 10	7 10	
+				0.878906 0.126953	0.878906 0.0996094	0.898438 0.126953	0.898438 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim ictive sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que304
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			not_align
+			vertices
+			{
+				-1 -0	1 -0	-1 10	1 10	
+				0.610338 0.331464	0.610338 0.328692	0.612318 0.331464	0.612318 0.328692	
+				0x7306c400	0x7306c400	0x7306c400	0x7306c400	
+			}
+		}
+		visible_on idle
+		anim ictive sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
