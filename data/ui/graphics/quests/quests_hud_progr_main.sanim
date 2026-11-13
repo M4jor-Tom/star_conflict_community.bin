@@ -1,0 +1,99 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Thu Mar 02 17:09:32 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim blink
+	{
+		mode looped
+		cycle_time 0.5
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 240 3
+			effect ""
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object progr_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 240 3
+			effect "ui\graphics\quests\quests_hud_progr_1"
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+		anim blink obj_op
+		{
+			11 
+			255
+			0
+			0
+			0
+			0
+			0
+			255
+			255
+			255
+			255
+			255
+		}
+	}
+	object progr_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 0
+			color 0xffffffff
+			size 240 3
+			effect "ui\graphics\quests\quests_hud_progr_2"
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+		anim blink obj_op
+		{
+			11 
+			0
+			255
+			255
+			255
+			255
+			255
+			0
+			0
+			0
+			0
+			0
+		}
+	}
+}
+
