@@ -1,0 +1,126 @@
+﻿source_file "Y:/art/source/ui/graphics/help_control/help.ma"
+//by sergey_mitryaev
+//at Wed Aug 30 12:53:28 2017
+
+base_res 1920 1080
+
+animations 4
+{
+	anim down
+	{
+		mode looped
+		cycle_time 0.6
+	}
+	anim up
+	{
+		mode looped
+		cycle_time 0.6
+	}
+	anim left
+	{
+		mode looped
+		cycle_time 0.6
+	}
+	anim right
+	{
+		mode looped
+		cycle_time 0.6
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 46 46
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on down
+		visible_on up
+		visible_on left
+		visible_on right
+	}
+	object center
+	{
+		defaults
+		{
+			pos 23 20
+			opacity 255
+			color 0xffffffff
+			size 46 46
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on down
+		visible_on up
+		visible_on left
+		visible_on right
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -6	50 -6	-4 48	50 48	
+				0.56543 0.447266	0.618164 0.447266	0.56543 0.5	0.618164 0.5	
+			}
+		}
+		anim down sp_pos
+		{
+			5 
+			-4 -6	50 -6	-4 48	50 48	
+			-4 -4.14687	50 -4.14687	-4 49.8531	50 49.8531	
+			-4 -2.225	50 -2.225	-4 51.775	50 51.775	
+			-4 -0.440625	50 -0.440625	-4 53.5594	50 53.5594	
+			-4 1	50 1	-4 55	50 55	
+		}
+		anim up sp_pos
+		{
+			5 
+			49 52	-5 52	49 -2	-5 -2	
+			49 51.7219	-5 51.7219	49 -2.27813	-5 -2.27813	
+			49 49.425	-5 49.425	49 -4.575	-5 -4.575	
+			49 46.6656	-5 46.6656	49 -7.33438	-5 -7.33438	
+			49 45	-5 45	49 -9	-5 -9	
+		}
+		anim left sp_pos
+		{
+			5 
+			52 -4	52 50	-2 -4	-2 50	
+			50.7938 -4	50.7938 50	-3.20625 -4	-3.20625 50	
+			48.8 -4	48.8 50	-5.2 -4	-5.2 50	
+			46.6563 -4	46.6563 50	-7.34375 -4	-7.34375 50	
+			45 -4	45 50	-9 -4	-9 50	
+		}
+		anim right sp_pos
+		{
+			5 
+			-6 49	-6 -5	48 49	48 -5	
+			-4.33437 49	-4.33437 -5	49.6656 49	49.6656 -5	
+			-2.575 49	-2.575 -5	51.425 49	51.425 -5	
+			-0.778126 49	-0.778126 -5	53.2219 49	53.2219 -5	
+			1 49	1 -5	55 49	55 -5	
+		}
+	}
+}
+
