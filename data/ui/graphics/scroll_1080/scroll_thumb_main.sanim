@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/scroll/scroll.ma"
+//by sergey_mitryaev
+//at Mon Nov 11 15:01:14 2019
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object scroll_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 9 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object scroll_thumb
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 10
+			effect "ui\graphics\scroll_1080\scroll_thumb"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 1160
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object scroll_thumb_over
+	{
+		defaults
+		{
+			pos 1 -0
+			opacity 255
+			color 0xff000000
+			size 16 29
+			effect "ui\graphics\scroll_1080\scroll_thumb_over"
+			alignment "LT"
+		}
+		visible_on idle
+		anim over obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+}
+
