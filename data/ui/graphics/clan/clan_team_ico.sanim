@@ -1,0 +1,37 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Wed Dec 19 12:21:17 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				-9.53674e-007 -0	50 -0	-9.53674e-007 24	50 24	
+				1.11759e-008 0	1 0	1.11759e-008 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
