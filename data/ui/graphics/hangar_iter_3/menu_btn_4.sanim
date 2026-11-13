@@ -1,0 +1,155 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 07 11:44:55 2017
+
+base_res 1920 1080
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 0.6
+	}
+	anim press
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 54 54
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 0 -1
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hangar_iter_3\menu_btn_ico_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	object over27
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 50 50
+			effect "ui\graphics\hangar_iter_3\menu_btn_over_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite we27
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				-11 -11	65 -11	-11 65	65 65	
+				0.460938 0.263672	0.609375 0.263672	0.460938 0.412109	0.609375 0.412109	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	sprite we32
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -0	54 -0	0 54	54 54	
+				0.621094 0.263672	0.726563 0.263672	0.621094 0.369141	0.726563 0.369141	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim press sp_col
+		{
+			4
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
