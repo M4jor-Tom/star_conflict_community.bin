@@ -1,0 +1,518 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Fri Dec 20 16:08:56 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 33
+
+objects 25
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 660 670
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 761.868 399.572
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 18.989 3.26914
+			opacity 255
+			color 0xffffffff
+			size 600 30
+			effect ""
+			alignment "CM"
+			sampleText "Создание карты"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object text_1_color
+	{
+		defaults
+		{
+			pos 666.226 300.271
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Dfedgg|ww fwfwf  |wffwff"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ranks
+	{
+		defaults
+		{
+			pos 0 121.341
+			opacity 255
+			color 0xffffffff
+			size 88 50
+			effect "ui\graphics\map\lobby_adv_ranks_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object pass_input
+	{
+		defaults
+		{
+			pos 52.2965 48.432
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\login_screen\login_input"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 46.6364 497
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down_1
+	{
+		defaults
+		{
+			pos 46.5782 526.9
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\shop\filt_drop_down_main"
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 342.301 497
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos 739.724 212.428
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Создание карты"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object pass
+	{
+		defaults
+		{
+			pos 341.809 48.5815
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Создание карты"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chek_box_1
+	{
+		defaults
+		{
+			pos 61.2965 76.432
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\login_screen\chek_box_nda"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chek_box_2
+	{
+		defaults
+		{
+			pos 52.2965 458.943
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\login_screen\chek_box_nda"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chek_box_3
+	{
+		defaults
+		{
+			pos 373.296 458.943
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\login_screen\chek_box_nda"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down_2
+	{
+		defaults
+		{
+			pos 341.578 526.9
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object role
+	{
+		defaults
+		{
+			pos 0 221.341
+			opacity 255
+			color 0xffffffff
+			size 88 50
+			effect "ui\graphics\map\lobby_adv_role_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 618 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 316 638.511
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_3
+	{
+		defaults
+		{
+			pos 478 638.511
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chek_box_4
+	{
+		defaults
+		{
+			pos 196 417
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\login_screen\chek_box_nda"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_49
+	{
+		defaults
+		{
+			pos 176 383
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "CM"
+			sampleText "Заплнять ботами"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object text_50
+	{
+		defaults
+		{
+			pos 46.6364 574
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down_5
+	{
+		defaults
+		{
+			pos 46.5782 603.9
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_51
+	{
+		defaults
+		{
+			pos 342.301 574
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down_6
+	{
+		defaults
+		{
+			pos 341.578 603.9
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 8
+{
+	total_vertices 44
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.180913	6 0.180913	633 0.180913	639 0.180913	0 6.18091	6 6.18091	633 6.18091	639 6.18091	0 662.525	6 662.525	633 662.525	639 662.525	0 668.525	6 668.525	633 668.525	639 668.525	
+				0.25402 0.1143	0.25402 0.120159	0.25402 0.132405	0.254021 0.125823	0.25988 0.1143	0.25988 0.120159	0.25988 0.132405	0.25988 0.125823	0.272565 0.1143	0.272565 0.120159	0.272565 0.132405	0.272565 0.125823	0.278424 0.1143	0.278424 0.120159	0.278424 0.132405	0.278424 0.125823	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName315d
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.452621 36.2071	0.452621 34.2071	638.525 36.2071	638.525 34.2071	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771485 0.152227	0.0791015 0.152227	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName315wef
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.452621 112.207	0.452621 110.207	638.525 112.207	638.525 110.207	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771485 0.152227	0.0791015 0.152227	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite r56l
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.452621 491.719	0.452621 489.719	638.525 491.719	638.525 489.719	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771485 0.152227	0.0791015 0.152227	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite gwsef
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.452621 446.719	0.452621 444.719	638.525 446.719	638.525 444.719	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771485 0.152227	0.0791015 0.152227	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName384
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.452621 375	0.452621 373	638.525 375	638.525 373	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771485 0.152227	0.0791015 0.152227	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName385
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.452621 215	0.452621 213	638.525 215	638.525 213	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771485 0.152227	0.0791015 0.152227	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName386
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.452621 568.719	0.452621 566.719	638.525 568.719	638.525 566.719	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771485 0.152227	0.0791015 0.152227	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
