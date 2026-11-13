@@ -1,0 +1,132 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_3.ma"
+//by sergey_mitryaev
+//at Mon Sep 05 13:10:35 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 230 20
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 20 7
+			opacity 255
+			color 0xffffffff
+			size 94 8
+			effect "ui\graphics\equip_3\tooltip_progr"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object fraction_icon1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\gold_icon"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite dfdf2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				105 7	144 7	105 15	144 15	
+				0.711914 0.369141	0.762695 0.369141	0.711914 0.384766	0.762695 0.384766	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite dfdf3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				20 7	105 7	20 15	105 15	
+				0.698242 0.369141	0.782227 0.369141	0.698242 0.384766	0.782227 0.384766	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite dfdf4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				144 7	231 7	144 15	231 15	
+				0.706055 0.369141	0.790039 0.369141	0.706055 0.384766	0.790039 0.384766	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite dfdf5
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-2.5 -0.999999	21.5 -0.999999	-2.5 23	21.5 23	
+				0.922852 0.0488281	0.946289 0.0488281	0.922852 0.0957031	0.946289 0.0957031	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
