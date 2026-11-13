@@ -1,0 +1,52 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by Sergey_Mitryaev
+//at Wed Aug 16 15:21:45 2017
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 25
+
+	sprite objectName328
+	{
+		defaults
+		{
+			rows 5
+			cols 5
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-1 -2	9 -2	133 -2	277 -2	287 -2	-1 8	9 8	133 8	277 8	287 8	-1 61	9 61	133 61	277 61	287 61	-1 71	9 71	133 71	277 71	287 71	-1 96	9 96	133 96	277 96	287 96	
+				0.373047 0.00585938	0.392578 0.00585938	0.541016 0.00585938	0.695313 0.00585938	0.714844 0.00585938	0.373047 0.0253906	0.392578 0.0253906	0.541016 0.0253906	0.695313 0.0253906	0.714844 0.0253906	0.373047 0.130859	0.392578 0.130859	0.541016 0.130859	0.695313 0.130859	0.714844 0.130859	0.373047 0.150391	0.392578 0.150391	0.541016 0.150391	0.695313 0.150391	0.714844 0.150391	0.373047 0.208984	0.392578 0.208984	0.541016 0.208984	0.695313 0.208984	0.714844 0.208984	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on sel
+	}
+}
+
