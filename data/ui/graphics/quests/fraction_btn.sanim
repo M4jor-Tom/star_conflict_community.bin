@@ -1,0 +1,345 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Wed Sep 18 09:56:38 2013
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 19
+
+objects 8
+{
+	object value
+	{
+		defaults
+		{
+			pos 54.6535 1.8241
+			opacity 153
+			color 0xffffffff
+			size 160 20
+			effect ""
+			alignment "LM"
+			sampleText "Фракция"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 222 51
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object reputation
+	{
+		defaults
+		{
+			pos 54.6535 25.4684
+			opacity 255
+			color 0xffc9c9c9
+			size 180 15
+			effect ""
+			alignment "LM"
+			sampleText "9. Мастер разведчик"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object num_quest
+	{
+		defaults
+		{
+			pos 181.871 3.20965
+			opacity 153
+			color 0xffbcd4f9
+			size 20 20
+			effect "ui\graphics\quests\quest_frac_num"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 153
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests\fraction_btn_over"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object passed
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 153
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests\quest_passed"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 2.66614 -0
+			opacity 153
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests\fraction_ico"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 222 51
+			effect "ui\graphics\quests\fraction_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+}
+
+sprites 11
+{
+	total_vertices 44
+
+	sprite but_091
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	10 -0	0 10	10 10	
+				0.253841 0.114271	0.263607 0.114271	0.253841 0.124036	0.263607 0.124036	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite but_092
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				211.963 -0	221.963 -0	211.963 10	221.963 10	
+				0.268681 0.114271	0.278446 0.114271	0.268681 0.124036	0.278446 0.124036	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite but_03
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				10 -0	211.963 -0	10 10	211.963 10	
+				0.262315 0.114271	0.272081 0.114271	0.262315 0.124036	0.272081 0.124036	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite but_04
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 10	10 10	0 41.0376	10 41.0376	
+				0.253841 0.120462	0.263607 0.120462	0.253841 0.130228	0.263607 0.130228	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite but_05
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				211.963 10	221.963 10	211.963 41.0376	221.963 41.0376	
+				0.268681 0.120462	0.278446 0.120462	0.268681 0.130228	0.278446 0.130228	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite but_06
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				10 10	211.963 10	10 41.0376	211.963 41.0376	
+				0.262315 0.120462	0.272081 0.120462	0.262315 0.130228	0.272081 0.130228	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite but_07
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 41.0376	10 41.0376	0 51.0376	10 51.0376	
+				0.253841 0.128929	0.263607 0.128929	0.253841 0.138694	0.263607 0.138694	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite but_08
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				211.963 41.0376	221.963 41.0376	211.963 51.0376	221.963 51.0376	
+				0.268681 0.128929	0.278446 0.128929	0.268681 0.138694	0.278446 0.138694	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite but_09
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				10 41.0376	211.963 41.0376	10 51.0376	211.963 51.0376	
+				0.262315 0.128929	0.272081 0.128929	0.262315 0.138694	0.272081 0.138694	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite select
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	222 -0	0 51.0376	222 51.0376	
+				0.232169 0.115909	0.238921 0.115909	0.232169 0.13164	0.238921 0.13164	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	
+		}
+	}
+	sprite blackout_
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				163.637 -0	222 -0	163.637 51.0376	222 51.0376	
+				0.0817908 0.115909	0.156565 0.115909	0.0817908 0.13164	0.156565 0.13164	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+}
+
