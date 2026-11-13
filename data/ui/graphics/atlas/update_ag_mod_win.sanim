@@ -1,0 +1,284 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Thu Oct 17 17:58:40 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 18
+
+objects 13
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 390 566
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title3
+	{
+		defaults
+		{
+			pos 10 1
+			opacity 255
+			color 0xffd1f0ff
+			size 300 60
+			effect ""
+			alignment "LM"
+			sampleText "Улучшения мода"
+			font "segoeuilr_25"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 75 55
+			opacity 255
+			color 0xff41cb84
+			size 240 50
+			effect ""
+			alignment "LB"
+			sampleText "Мегасильный модкль силы|wefwfeffe"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object prod_icon
+	{
+		defaults
+		{
+			pos 11 79
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 11 143
+			opacity 255
+			color 0xff737373
+			size 300 40
+			effect ""
+			alignment "LM"
+			sampleText "Улучшения мода|fhfhfhhgf"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object mod_list
+	{
+		defaults
+		{
+			pos 11 226
+			opacity 255
+			color 0xffffffff
+			size 300 250
+			effect "ui\graphics\atlas\upd_ag_mod_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 308 2
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\quests_2\q_map_btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object count2
+	{
+		defaults
+		{
+			pos 13 498
+			opacity 255
+			color 0xffd1f0ff
+			size 300 30
+			effect ""
+			alignment "CM"
+			sampleText "34241234234243"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 86 532
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progr1
+	{
+		defaults
+		{
+			pos 75 108
+			opacity 255
+			color 0xffffffff
+			size 234 3
+			effect "ui\graphics\atlas\update_ag_progr_m"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 108 241
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bookmarks
+	{
+		defaults
+		{
+			pos 13 182
+			opacity 255
+			color 0xffffffff
+			size 300 40
+			effect "ui\graphics\atlas\update_ag_bookmarks_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x3
+	{
+		defaults
+		{
+			pos 338 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\profile_2\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 56
+
+	sprite objectName349
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -0	10.6667 -0	325.333 -0	336 -0	0 10.6667	10.6667 10.6667	325.333 10.6667	336 10.6667	0 554.667	10.6667 554.667	325.333 554.667	336 554.667	0 565.333	10.6667 565.333	325.333 565.333	336 565.333	
+				0.695313 0.847656	0.716146 0.847656	0.736979 0.847656	0.757813 0.847656	0.695313 0.86849	0.716146 0.86849	0.736979 0.86849	0.757813 0.86849	0.695313 0.889323	0.716146 0.889323	0.736979 0.889323	0.757813 0.889323	0.695313 0.910156	0.716146 0.910156	0.736979 0.910156	0.757813 0.910156	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName350
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -0	10.6667 -0	325.333 -0	336 -0	0 10.6667	10.6667 10.6667	325.333 10.6667	336 10.6667	0 50.6667	10.6667 50.6667	325.333 50.6667	336 50.6667	0 61.3333	10.6667 61.3333	325.333 61.3333	336 61.3333	
+				0.695313 0.847656	0.716146 0.847656	0.736979 0.847656	0.757813 0.847656	0.695313 0.86849	0.716146 0.86849	0.736979 0.86849	0.757813 0.86849	0.695313 0.889323	0.716146 0.889323	0.736979 0.889323	0.757813 0.889323	0.695313 0.910156	0.716146 0.910156	0.736979 0.910156	0.757813 0.910156	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName351
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 68.3333	10.6667 68.3333	325.333 68.3333	336 68.3333	0 79	10.6667 79	325.333 79	336 79	0 554.667	10.6667 554.667	325.333 554.667	336 554.667	0 565.333	10.6667 565.333	325.333 565.333	336 565.333	
+				0.695313 0.847656	0.716146 0.847656	0.736979 0.847656	0.757813 0.847656	0.695313 0.86849	0.716146 0.86849	0.736979 0.86849	0.757813 0.86849	0.695313 0.889323	0.716146 0.889323	0.736979 0.889323	0.757813 0.889323	0.695313 0.910156	0.716146 0.910156	0.736979 0.910156	0.757813 0.910156	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we113
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				23.9423 140.5	311.058 140.5	23.9423 141.5	311.058 141.5	
+				0.94661 0.776688	0.947921 0.776688	0.94661 0.777999	0.947921 0.777999	
+				0x3cffffff	0x3cffffff	0x3cffffff	0x3cffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we115
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				23.9423 493.5	311.058 493.5	23.9423 494.5	311.058 494.5	
+				0.94661 0.776688	0.947921 0.776688	0.94661 0.777999	0.947921 0.777999	
+				0x3cffffff	0x3cffffff	0x3cffffff	0x3cffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
