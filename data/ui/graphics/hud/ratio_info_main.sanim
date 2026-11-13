@@ -1,0 +1,120 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud.ma
+//by sega
+//at Thu Sep 22 10:54:59 2011
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object alies
+	{
+		defaults
+		{
+			pos 3.95968 6.79505
+			opacity 255
+			color 0xff88b5ff
+			size 70 16
+			effect ""
+			alignment "RM"
+			sampleText "alies"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object ememy
+	{
+		defaults
+		{
+			pos 142.893 6.79505
+			opacity 255
+			color 0xffff0017
+			size 70 16
+			effect ""
+			alignment "LM"
+			sampleText "ememy"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object alies_value
+	{
+		defaults
+		{
+			pos 77.3978 6.79505
+			opacity 255
+			color 0xff88b5ff
+			size 20 16
+			effect ""
+			alignment "CM"
+			sampleText "17"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object ememy_value
+	{
+		defaults
+		{
+			pos 119.621 6.79505
+			opacity 255
+			color 0xffff0017
+			size 20 16
+			effect ""
+			alignment "CM"
+			sampleText "45"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object ratio
+	{
+		defaults
+		{
+			pos 100.671 6.79505
+			opacity 255
+			color 0xffffffff
+			size 15 16
+			effect ""
+			alignment "CM"
+			sampleText "<"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object ratio_info_slot
+	{
+		defaults
+		{
+			pos 27.581 23.0852
+			opacity 255
+			color 0xffffffff
+			size 70 16
+			effect "ui\graphics\hud\ratio_info_slot"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object dist
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 16
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+	}
+}
+
