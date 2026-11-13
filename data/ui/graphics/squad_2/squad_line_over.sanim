@@ -1,0 +1,61 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 28 15:51:41 2017
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -1	6 -1	275 -1	281 -1	0 5	6 5	275 5	281 5	0 21	6 21	275 21	281 21	0 27	6 27	275 27	281 27	
+				0.148483 0.66775	0.149941 0.66775	0.158653 0.66775	0.160111 0.66775	0.148483 0.669208	0.149941 0.669208	0.158653 0.669208	0.160111 0.669208	0.148483 0.678448	0.149941 0.678448	0.158653 0.678448	0.160111 0.678448	0.148483 0.679907	0.149941 0.679907	0.158653 0.679907	0.160111 0.679907	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+	sprite er16
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				-3 -4	7 -4	-3 30	7 30	
+				0.429688 0.607422	0.449219 0.607422	0.429688 0.669922	0.449219 0.669922	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
