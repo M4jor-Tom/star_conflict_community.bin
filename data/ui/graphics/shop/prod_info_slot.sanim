@@ -1,0 +1,86 @@
+﻿source_file  Y:/art/source/ui/graphics/shop/shop.ma
+//by sega
+//at Wed Nov 16 12:24:51 2011
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim green
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos 20.4209 -0.935154
+			opacity 255
+			color 0xffffffff
+			size 53 15
+			effect ""
+			alignment "LM"
+			sampleText "2030 m."
+			font "Tiny"
+		}
+		visible_on idle
+		anim green obj_colc
+		{
+			1
+			0xff07ff00
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 75 16
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on green
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				2.5 -0.172285	18.5 -0.172285	2.5 15.8277	18.5 15.8277	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim green sp_colc
+		{
+			1
+			0xff07ff00	0xff07ff00	0xff07ff00	0xff07ff00	
+		}
+	}
+}
+
