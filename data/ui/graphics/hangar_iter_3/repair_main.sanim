@@ -1,0 +1,48 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Thu Jul 20 11:51:05 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 600 150
+			effect ""
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object offer
+	{
+		defaults
+		{
+			pos 2.3919 2.89985
+			opacity 255
+			color 0xffffffff
+			size 600 150
+			effect "ui\graphics\hangar\offer_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
