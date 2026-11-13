@@ -1,0 +1,358 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Thu May 22 16:42:20 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 23
+
+objects 21
+{
+	object friend
+	{
+		defaults
+		{
+			pos -16 9
+			opacity 255
+			color 0xff00ddff
+			size 150 20
+			effect ""
+			alignment "RM"
+			sampleText "dfgdbwhnwshm"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object enemy
+	{
+		defaults
+		{
+			pos 313 9
+			opacity 255
+			color 0xffff2700
+			size 150 20
+			effect ""
+			alignment "LM"
+			sampleText "rybergnbenenann"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object friend_score
+	{
+		defaults
+		{
+			pos 179 8
+			opacity 255
+			color 0xffcccccc
+			size 20 20
+			effect ""
+			alignment "CM"
+			sampleText "20"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object indicator_1
+	{
+		defaults
+		{
+			pos 214 11
+			opacity 255
+			color 0xffffffff
+			size 20 15
+			effect "ui\graphics\hud\ratio\ratio_indicator"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 54
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object enemy_score
+	{
+		defaults
+		{
+			pos 248.448 8
+			opacity 255
+			color 0xffcccccc
+			size 20 20
+			effect ""
+			alignment "CM"
+			sampleText "20"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object captain_ico_1
+	{
+		defaults
+		{
+			pos 136 10
+			opacity 255
+			color 0xffffffff
+			size 12 17
+			effect "ui\graphics\hud\ratio\ratio_captain_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object captain_ico_2
+	{
+		defaults
+		{
+			pos 299 10
+			opacity 255
+			color 0xffffffff
+			size 12 17
+			effect "ui\graphics\hud\ratio\ratio_captain_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object captain_dead_1
+	{
+		defaults
+		{
+			pos -16 9
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hud\ratio\ratio_captain_dead"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object captain_dead_2
+	{
+		defaults
+		{
+			pos 313 9
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hud\ratio\ratio_captain_dead"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bomb_ico_1
+	{
+		defaults
+		{
+			pos 74 9
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bomb_ico_2
+	{
+		defaults
+		{
+			pos 99 9
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bomb_ico_3
+	{
+		defaults
+		{
+			pos 124 9
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bomb_ico_4
+	{
+		defaults
+		{
+			pos 299 9
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bomb_ico_5
+	{
+		defaults
+		{
+			pos 324 9
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bomb_ico_6
+	{
+		defaults
+		{
+			pos 349 9
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value
+	{
+		defaults
+		{
+			pos 74 33
+			opacity 255
+			color 0xff7fb2ff
+			size 300 30
+			effect "ui\graphics\hud\ratio\bomb_msg"
+			alignment "CT"
+			sampleText "ВЫ НЕСЕТЕ БОМБУ"
+			font "Medium_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object arm_2
+	{
+		defaults
+		{
+			pos 299 32
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ship_markers\ship_progress_arm"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object arm_1
+	{
+		defaults
+		{
+			pos 80 32
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ship_markers\ship_progress_arm"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object shild_2
+	{
+		defaults
+		{
+			pos 299 41
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ship_markers\ship_progress_shild"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object shild_1
+	{
+		defaults
+		{
+			pos 80 41
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ship_markers\ship_progress_shild"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				153 3	213 3	153 33	213 33	
+				0.708984 0.0703125	0.767578 0.0703125	0.708984 0.0996094	0.767578 0.0996094	
+				0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNameer
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				235 3	295 3	235 33	295 33	
+				0.767578 0.0703125	0.708984 0.0703125	0.767578 0.0996094	0.708984 0.0996094	
+				0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+			}
+		}
+		visible_on idle
+	}
+}
+
