@@ -1,0 +1,55 @@
+﻿source_file  Y:/art/source/ui/graphics/hangar/hangar.ma
+//by sega
+//at Mon Sep 12 15:27:20 2011
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object squad
+	{
+		defaults
+		{
+			pos 69.8921 0.782731
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\squad"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			blend color_add
+			vertices_nc
+			{
+				2.83302 1.0136	64.833 1.0136	2.83302 61.0136	64.833 61.0136	
+				1.49012e-008 0	1 0	1.49012e-008 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
