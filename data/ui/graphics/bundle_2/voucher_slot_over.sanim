@@ -1,0 +1,40 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle_2.ma"
+//by sergey_mitryaev
+//at Mon Jun 06 12:03:07 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite over4
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-2 -2	4 -2	139.5 -2	145.5 -2	-2 4	4 4	139.5 4	145.5 4	-2 106	4 106	139.5 106	145.5 106	-2 112	4 112	139.5 112	145.5 112	
+				0.491211 0.612305	0.49707 0.612305	0.506836 0.612305	0.512695 0.612305	0.491211 0.618164	0.49707 0.618164	0.506836 0.618164	0.512695 0.618164	0.491211 0.62793	0.49707 0.62793	0.506836 0.62793	0.512695 0.62793	0.491211 0.633789	0.49707 0.633789	0.506836 0.633789	0.512695 0.633789	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
