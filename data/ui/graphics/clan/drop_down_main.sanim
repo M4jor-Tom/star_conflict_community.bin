@@ -1,0 +1,76 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Jul 01 10:43:33 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object input
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 20
+			effect "ui\graphics\clan\recruit_input"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down_btn
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 20
+			effect "ui\graphics\clan\drop_down_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 20
+			effect "ui\graphics\clan\drop_down_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 20
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
