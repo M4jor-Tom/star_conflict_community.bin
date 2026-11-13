@@ -1,0 +1,154 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing_2.ma"
+//by sergey_mitryaev
+//at Tue Sep 03 11:13:22 2013
+
+
+animations 6
+{
+	anim blue
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim blue_a
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim red
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim red_a
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim orange
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim orange_a
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object text_1
+	{
+		defaults
+		{
+			pos -0.128829 7
+			opacity 255
+			color 0xff7fb2ff
+			size 18 20
+			effect ""
+			alignment "CT"
+			sampleText "10"
+			font "Tiny"
+		}
+		visible_on blue
+		anim blue_a obj_opc
+		{
+			1 
+			127
+		}
+		anim red obj_colc
+		{
+			1
+			0xffff2700
+		}
+		anim red_a obj_opc_colc
+		{
+			1 1
+			127
+			0xffff2700
+		}
+		anim orange obj_colc
+		{
+			1
+			0xffff9100
+		}
+		anim orange_a obj_opc_colc
+		{
+			1 1
+			127
+			0xffff9100
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos -0.128829 -0
+			opacity 0
+			color 0xffffffff
+			size 18 28
+			effect ""
+			alignment "CT"
+			sampleText "10"
+			font "Tiny"
+		}
+		visible_on blue
+		visible_on blue_a
+		visible_on red
+		visible_on red_a
+		visible_on orange
+		visible_on orange_a
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectNamedfdf1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	18 -0	0 6	18 6	
+				0.357066 0.111742	0.361684 0.111742	0.357066 0.114821	0.361684 0.114821	
+				0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	
+			}
+		}
+		visible_on blue
+		anim blue_a sp_colc
+		{
+			1
+			0x7f7fb2ff	0x7f7fb2ff	0x7f7fb2ff	0x7f7fb2ff	
+		}
+		anim red sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim red_a sp_colc
+		{
+			1
+			0x7fff2700	0x7fff2700	0x7fff2700	0x7fff2700	
+		}
+		anim orange sp_colc
+		{
+			1
+			0xffff9100	0xffff9100	0xffff9100	0xffff9100	
+		}
+		anim orange_a sp_colc
+		{
+			1
+			0x7fff9100	0x7fff9100	0x7fff9100	0x7fff9100	
+		}
+	}
+}
+
