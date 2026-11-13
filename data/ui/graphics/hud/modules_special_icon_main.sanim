@@ -1,0 +1,159 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by sergey_mitryaev
+//at Mon Jul 24 17:19:32 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 10
+{
+	object modules_special_icon
+	{
+		defaults
+		{
+			pos 7.10543e-015 14.9716
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\modules_special_icon"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object cooldown
+	{
+		defaults
+		{
+			pos 7.10543e-015 14.9716
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\cooldown_special"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 80
+			effect ""
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object key_3
+	{
+		defaults
+		{
+			pos 25 0.971622
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\key_2"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object buff_icon
+	{
+		defaults
+		{
+			pos 12 26
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\hud\buff_icon_special"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object inactive
+	{
+		defaults
+		{
+			pos 7.10543e-015 14.9716
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\hud\modules_special_inactive"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object namber_ship
+	{
+		defaults
+		{
+			pos 5 18.9716
+			opacity 255
+			color 0xffffffff
+			size 16 12
+			effect "ui\graphics\hud\modules_namber_ship"
+			alignment "RM"
+			font "Tiny_outl"
+		}
+		visible_on idle
+	}
+	object sel
+	{
+		defaults
+		{
+			pos 7.10543e-015 14.9716
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\hud\modules_special_sel"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object destroy_spec
+	{
+		defaults
+		{
+			pos 7.10543e-015 14.9716
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\hangar\prod_destroy_spec"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object namber_rocket
+	{
+		defaults
+		{
+			pos 24 42
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\modules_namber_rocket"
+			alignment "RM"
+			font "Medium_outl2"
+		}
+		visible_on idle
+	}
+}
+
