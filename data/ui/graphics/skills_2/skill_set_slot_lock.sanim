@@ -1,0 +1,72 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills_2.ma"
+//by sergey_mitryaev
+//at Thu Sep 04 14:00:31 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 216 142
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName336
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				91 53.9142	121 53.9142	91 83.9142	121 83.9142	
+				0.860352 0.0966797	0.889648 0.0966797	0.860352 0.125977	0.889648 0.125977	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName337
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/galaxy_map.tif"
+			vertices
+			{
+				74 36.9142	138 36.9142	74 100.914	138 100.914	
+				0.498047 0.871094	0.560547 0.871094	0.498047 0.996094	0.560547 0.996094	
+				0x80ffffff	0x80ffffff	0x80ffffff	0x80ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
