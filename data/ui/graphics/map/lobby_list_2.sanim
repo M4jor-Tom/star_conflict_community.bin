@@ -1,0 +1,140 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Wed Jun 11 11:17:51 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos -0.926541 -1
+			opacity 255
+			color 0xffffffff
+			size 440 110
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 420.073 2
+			opacity 255
+			color 0xffffffff
+			size 16 108
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_4
+	{
+		defaults
+		{
+			pos 3 79.4871
+			opacity 255
+			color 0xffffffff
+			size 500 35
+			effect "ui\graphics\spectate\new\players_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 3 -1.40034
+			opacity 255
+			color 0xffffffff
+			size 500 35
+			effect "ui\graphics\spectate\new\players_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 3 25.5621
+			opacity 255
+			color 0xffffffff
+			size 500 35
+			effect "ui\graphics\spectate\new\players_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos 3 52.5246
+			opacity 255
+			color 0xffffffff
+			size 500 35
+			effect "ui\graphics\spectate\new\players_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object in_battle
+	{
+		defaults
+		{
+			pos 0 1
+			opacity 255
+			color 0xffffffff
+			size 440 110
+			effect "ui\graphics\map\lobby_in_battle_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	8 -0	433.018 -0	439.018 -0	0 6	8 6	433.018 6	439.018 6	0 104.617	8 104.617	433.018 104.617	439.018 104.617	0 113	8 113	433.018 113	439.018 113	
+				0.00195098 0.160156	0.00977248 0.160156	0.0205078 0.160156	0.0263671 0.160156	0.00195083 0.166016	0.00977248 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195083 0.176757	0.00977242 0.176757	0.0205079 0.176757	0.0263672 0.176757	0.00195083 0.184571	0.00977245 0.184571	0.0205078 0.184571	0.0263672 0.184571	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
