@@ -1,0 +1,331 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Mon Dec 23 11:49:37 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 13
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 645 402
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 12.5271 0.944368
+			opacity 255
+			color 0xffffffff
+			size 225 20
+			effect ""
+			alignment "LM"
+			sampleText "Подтверждение выбора"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 12.5271 24.6957
+			opacity 255
+			color 0xffffffff
+			size 225 20
+			effect ""
+			alignment "LM"
+			sampleText "Паломничество какоето"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object descript_1
+	{
+		defaults
+		{
+			pos 12.5271 61.5573
+			opacity 255
+			color 0xffffdeb3
+			size 600 30
+			effect ""
+			alignment "LT"
+			sampleText "Jgbcfybt|Jgbcfyb"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object award
+	{
+		defaults
+		{
+			pos 409.278 149.379
+			opacity 255
+			color 0xffffffff
+			size 225 20
+			effect ""
+			alignment "RM"
+			sampleText "Награда"
+			font "VerySmall"
+		}
+		anim idle obj_pos
+		{
+			2 
+			409.278 149.379
+			409.278 321.736
+		}
+	}
+	object award_1
+	{
+		defaults
+		{
+			pos 389.684 174.134
+			opacity 255
+			color 0xffffffff
+			size 250 18
+			effect "ui\graphics\quests\quest_award"
+			alignment "RM"
+			font "VerySmall"
+		}
+		anim idle obj_pos_op
+		{
+			2 11 
+			389.684 174.134
+			389.684 346.49
+			255
+			255
+			127
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+		}
+	}
+	object award_2
+	{
+		defaults
+		{
+			pos 263.219 174.134
+			opacity 255
+			color 0xffffffff
+			size 130 18
+			effect "ui\graphics\quests\quest_award"
+			alignment "RM"
+			font "VerySmall"
+		}
+		anim idle obj_pos_op
+		{
+			2 11 
+			263.219 174.134
+			263.219 346.49
+			255
+			255
+			127
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+		}
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 483.694 202.317
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			2 
+			483.694 202.317
+			483.694 374.673
+		}
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 324.532 202.317
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			2 
+			324.532 202.317
+			324.532 374.673
+		}
+	}
+	object award_3
+	{
+		defaults
+		{
+			pos 136 174.134
+			opacity 255
+			color 0xffffffff
+			size 130 18
+			effect "ui\graphics\quests\quest_award"
+			alignment "RM"
+			font "VerySmall"
+		}
+		anim idle obj_pos_op
+		{
+			2 11 
+			136 174.134
+			136 346.49
+			255
+			255
+			127
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+		}
+	}
+	object reputation
+	{
+		defaults
+		{
+			pos 388.498 24.6957
+			opacity 255
+			color 0xffffffff
+			size 250 18
+			effect "ui\graphics\quests\quest_reputation"
+			alignment "RM"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			127
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+		}
+	}
+	object descript_2
+	{
+		defaults
+		{
+			pos 12.5271 98.6679
+			opacity 255
+			color 0xffffffff
+			size 600 215
+			effect ""
+			alignment "LT"
+			sampleText "Jgbcfybt|Jgbcfybt|Jgbcfybt|Jgbcfybt|Jgbcfybt"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 645 230
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 223.887	6 223.887	639 223.887	645 223.887	0 229.887	6 229.887	639 229.887	645 229.887	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 223.887	6 223.887	639 223.887	645 223.887	0 229.887	6 229.887	639 229.887	645 229.887	
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 241.122	6 241.122	639 241.122	645 241.122	0 247.122	6 247.122	639 247.122	645 247.122	
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 258.358	6 258.358	639 258.358	645 258.358	0 264.358	6 264.358	639 264.358	645 264.358	
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 275.594	6 275.594	639 275.594	645 275.594	0 281.594	6 281.594	639 281.594	645 281.594	
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 292.829	6 292.829	639 292.829	645 292.829	0 298.829	6 298.829	639 298.829	645 298.829	
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 310.065	6 310.065	639 310.065	645 310.065	0 316.065	6 316.065	639 316.065	645 316.065	
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 327.301	6 327.301	639 327.301	645 327.301	0 333.301	6 333.301	639 333.301	645 333.301	
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 344.536	6 344.536	639 344.536	645 344.536	0 350.536	6 350.536	639 350.536	645 350.536	
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 361.772	6 361.772	639 361.772	645 361.772	0 367.772	6 367.772	639 367.772	645 367.772	
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 379.008	6 379.008	639 379.008	645 379.008	0 385.008	6 385.008	639 385.008	645 385.008	
+			0 -0	6 -0	639 -0	645 -0	0 6	6 6	639 6	645 6	0 396.243	6 396.243	639 396.243	645 396.243	0 402.243	6 402.243	639 402.243	645 402.243	
+		}
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 22.6147	0 20.6147	645 22.6147	645 20.6147	
+				0.069369 0.077615	0.0713222 0.077615	0.069369 0.0942166	0.0713222 0.0942166	
+			}
+		}
+		visible_on idle
+	}
+}
+
