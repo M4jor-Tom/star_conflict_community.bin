@@ -1,0 +1,77 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Thu Nov 28 11:01:37 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object text_1
+	{
+		defaults
+		{
+			pos 1.85117 0.557831
+			opacity 255
+			color 0xffffffff
+			size 250 18
+			effect ""
+			alignment "RM"
+			sampleText "Бустер щита"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price_2
+	{
+		defaults
+		{
+			pos 151 -0.115286
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 250 18
+			effect ""
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 1.85117 0.557831
+			opacity 255
+			color 0xffffffff
+			size 250 18
+			effect ""
+			alignment "RM"
+			sampleText "Бустер щита"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
