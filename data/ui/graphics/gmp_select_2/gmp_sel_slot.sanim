@@ -1,0 +1,75 @@
+﻿source_file "Y:/art/source/ui/graphics/gmp_select/gmp_select_2.ma"
+//by Sergey_Mitryaev
+//at Fri Jan 26 13:14:26 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 348 300
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos -3.55271e-015 -0
+			opacity 255
+			color 0xffffffff
+			size 348 62
+			effect "ui\graphics\gmp_select_2\gmp_sel_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object menu
+	{
+		defaults
+		{
+			pos -3.55271e-015 61
+			opacity 255
+			color 0xffffffff
+			size 348 220
+			effect "ui\graphics\gmp_select_2\gmp_sel_menu"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object time
+	{
+		defaults
+		{
+			pos 27.5735 66.1659
+			opacity 255
+			color 0xfff9d369
+			size 320 20
+			effect ""
+			alignment "RM"
+			sampleText "32569"
+			font "segoeuilr_22"
+		}
+		visible_on idle
+	}
+}
+
