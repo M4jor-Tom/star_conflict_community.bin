@@ -1,0 +1,109 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing_2.ma"
+//by sergey_mitryaev
+//at Thu Sep 05 12:37:17 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 950 570
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object stat_1
+	{
+		defaults
+		{
+			pos 14 57
+			opacity 255
+			color 0xffffffff
+			size 460 500
+			effect "ui\graphics\debrifing_2\deb_stat_1_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 15 13
+			opacity 255
+			color 0xffffffff
+			size 300 34
+			effect ""
+			alignment "LM"
+			sampleText "q3t 3y4 5uj 4 i 4i"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object stat_2
+	{
+		defaults
+		{
+			pos 476 57
+			opacity 255
+			color 0xffffffff
+			size 460 500
+			effect "ui\graphics\debrifing_2\deb_stat_2_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object fraction
+	{
+		defaults
+		{
+			pos -69 13
+			opacity 255
+			color 0xffffffff
+			size 32 32
+			effect "ui\graphics\hangar\ship_fraction_ico"
+			alignment "LM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26iuo
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				8 -0	14 -0	937 -0	943 -0	8 6	14 6	937 6	943 6	8 564	14 564	937 564	943 564	8 570	14 570	937 570	943 570	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+}
+
