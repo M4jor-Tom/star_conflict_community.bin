@@ -1,0 +1,60 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Fri Apr 26 11:48:04 2013
+
+
+animations 2
+{
+	anim expand
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim turn
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				6.02847 0.000545502	10.0285 0.000545502	6.02847 16.0005	10.0285 16.0005	
+				0.469727 0.0712891	0.469727 0.0673828	0.485352 0.0712891	0.485352 0.0673828	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on expand
+	}
+	sprite icoguiop
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0284748 6.00055	16.0285 6.00055	0.0284748 10.0005	16.0285 10.0005	
+				0.469727 0.0673828	0.485352 0.0673828	0.469727 0.0712891	0.485352 0.0712891	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on expand
+		visible_on turn
+	}
+}
+
