@@ -1,0 +1,117 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Thu Jul 20 11:45:57 2017
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 110 128
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object timer
+	{
+		defaults
+		{
+			pos 3.94608 103.548
+			opacity 255
+			color 0xffc6c6c6
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "1 д 49 ч"
+			font "Medium"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 94 96
+			effect "ui\graphics\hangar\offer_ico"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object offer_over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 94 96
+			effect "ui\graphics\hangar\offer_over"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we50
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				1.52588e-005 -0	110 -0	1.52588e-005 128	110 128	
+				0.693359 0.59375	0.908203 0.59375	0.693359 0.84375	0.908203 0.84375	
+			}
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
