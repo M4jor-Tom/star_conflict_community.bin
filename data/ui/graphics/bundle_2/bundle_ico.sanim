@@ -1,0 +1,63 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle_2.ma"
+//by sergey_mitryaev
+//at Tue Mar 22 14:14:52 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 230 200
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-61 10	291 10	-61 190	291 190	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
