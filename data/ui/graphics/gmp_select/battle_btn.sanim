@@ -1,0 +1,97 @@
+﻿source_file "Y:/art/source/ui/graphics/gmp_select/gmp_select.ma"
+//by sergey_mitryaev
+//at Thu Aug 27 17:12:58 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self103
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 14 16
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName374
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				-3 -3	17 -3	-3 19	17 19	
+				0.539063 0.612305	0.558594 0.612305	0.539063 0.633789	0.558594 0.633789	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	sprite objectName375
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-3 -3	17 -3	-3 19	17 19	
+				0.539063 0.612305	0.558594 0.612305	0.539063 0.633789	0.558594 0.633789	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xff7a7a7a	0xff7a7a7a	0xff7a7a7a	0xff7a7a7a	
+		}
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
