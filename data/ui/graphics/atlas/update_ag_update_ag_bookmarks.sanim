@@ -1,0 +1,94 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Mon Oct 14 15:20:49 2019
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 40
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on select_over
+	}
+	object description_1
+	{
+		defaults
+		{
+			pos 0 -8.88178e-014
+			opacity 255
+			color 0xffd1f0ff
+			size 100 40
+			effect ""
+			alignment "LM"
+			sampleText "Модули"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on select_over
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we109
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				0 38	100 38	0 40	100 40	
+				0.115234 0.339844	0.435547 0.339844	0.115234 0.34375	0.435547 0.34375	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on select_over
+	}
+}
+
