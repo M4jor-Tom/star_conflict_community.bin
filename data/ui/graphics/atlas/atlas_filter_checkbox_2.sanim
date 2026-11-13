@@ -1,0 +1,177 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Mon Oct 16 17:19:31 2017
+
+base_res 1920 1080
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim check
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim check_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 160 42
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+		visible_on over
+		visible_on check
+		visible_on check_over
+	}
+	object title
+	{
+		defaults
+		{
+			pos 46.2473 5.71636
+			opacity 255
+			color 0xffc6c6c6
+			size 110 30
+			effect ""
+			alignment "LM"
+			sampleText "Модули"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on over
+		visible_on check
+		visible_on check_over
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite we12
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				-1 -2	41 -2	-1 40	41 40	
+				0.361328 0.751953	0.443359 0.751953	0.361328 0.833984	0.443359 0.833984	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on check
+		visible_on check_over
+	}
+	sprite we82
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				5 4	35 4	5 34	35 34	
+				0.912109 0.376953	0.970703 0.376953	0.912109 0.435547	0.970703 0.435547	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim check sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim check_over sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite we83
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -1	40 -1	0 39	40 39	
+				0.824219 0.382812	0.902344 0.382812	0.824219 0.460938	0.902344 0.460938	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim check sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim check_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we84
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-7.0484 -7.87575	46.4794 -7.87575	-7.0484 45.6521	46.4794 45.6521	
+				0.26899 -0.000541687	0.363823 -0.000541687	0.26899 0.0942917	0.363823 0.0942917	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x6001523	0x6001523	0x6001523	0x6001523	
+		}
+		visible_on check
+		anim check_over sp_colc
+		{
+			1
+			0x6001523	0x6001523	0x6001523	0x6001523	
+		}
+	}
+}
+
