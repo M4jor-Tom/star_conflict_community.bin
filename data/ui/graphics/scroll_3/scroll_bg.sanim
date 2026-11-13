@@ -1,0 +1,35 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Mon Nov 20 12:40:22 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 4 1400
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
