@@ -1,0 +1,242 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Tue Jul 09 17:52:53 2013
+
+
+animations 6
+{
+	anim dir
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim subdir
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim dir_select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim subdir_select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim dir_disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim subdir_disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 4
+{
+	object text
+	{
+		defaults
+		{
+			pos 26.4287 2.30071
+			opacity 255
+			color 0xffcccccc
+			size 175 20
+			effect ""
+			alignment "LM"
+			sampleText "100000"
+			font "VerySmall"
+		}
+		visible_on dir
+		anim subdir obj_posc
+		{
+			1 
+			43 2.30071
+		}
+		anim dir_select obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim subdir_select obj_posc_colc
+		{
+			1 1
+			43 2.30071
+			0xffffffff
+		}
+		anim dir_disable obj_opc_colc
+		{
+			1 1
+			76
+			0xffffffff
+		}
+		anim subdir_disable obj_posc_opc_colc
+		{
+			1 1 1
+			43 2.30071
+			76
+			0xffffffff
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 0.0159584
+			opacity 255
+			color 0xffffffff
+			size 200 26
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on dir
+		visible_on subdir
+		visible_on dir_select
+		visible_on subdir_select
+		visible_on dir_disable
+		visible_on subdir_disable
+	}
+	object prod_icon
+	{
+		defaults
+		{
+			pos 4 2
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\equip\prod_sml_icon"
+			alignment "LT"
+		}
+		visible_on dir
+		anim subdir obj_posc
+		{
+			1 
+			20.7041 2
+		}
+		visible_on dir_select
+		anim subdir_select obj_posc
+		{
+			1 
+			20.7041 2
+		}
+		anim dir_disable obj_opc
+		{
+			1 
+			76
+		}
+		anim subdir_disable obj_posc_opc
+		{
+			1 1 
+			20.7041 2
+			76
+		}
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\sticker\n_sticker_tree_line_over"
+			alignment "LT"
+		}
+		visible_on dir
+		visible_on subdir
+		visible_on dir_select
+		visible_on subdir_select
+		visible_on dir_disable
+		visible_on subdir_disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp5wsvfw
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	194 -0	200 -0	0 6	6 6	194 6	200 6	0 20.016	6 20.016	194 20.016	200 20.016	0 26.016	6 26.016	194 26.016	200 26.016	
+				0.253906 0.114258	0.259766 0.114258	0.272461 0.114258	0.27832 0.114258	0.253906 0.120117	0.259766 0.120117	0.272461 0.120117	0.27832 0.120117	0.253906 0.132813	0.259766 0.132813	0.272461 0.132812	0.27832 0.132812	0.253906 0.138672	0.259766 0.138672	0.272461 0.138672	0.27832 0.138672	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on dir
+		visible_on subdir
+		visible_on dir_select
+		visible_on subdir_select
+		anim dir_disable sp_colc
+		{
+			1
+			0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	
+		}
+		anim subdir_disable sp_colc
+		{
+			1
+			0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	0x7f999999	
+		}
+	}
+	sprite sp5
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	194 -0	200 -0	0 6	6 6	194 6	200 6	0 20.016	6 20.016	194 20.016	200 20.016	0 26.016	6 26.016	194 26.016	200 26.016	
+				0.231723 0.114935	0.237582 0.114935	0.232318 0.115635	0.238178 0.115635	0.231723 0.120794	0.237582 0.120794	0.232318 0.121494	0.238178 0.121494	0.231723 0.125782	0.237582 0.125782	0.232318 0.126482	0.238178 0.126482	0.231723 0.131642	0.237582 0.131642	0.232318 0.132342	0.238178 0.132342	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+	}
+	sprite sp59
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	194 -0	200 -0	0 6	6 6	194 6	200 6	0 20.016	6 20.016	194 20.016	200 20.016	0 26.016	6 26.016	194 26.016	200 26.016	
+				0.231734 0.131794	0.237594 0.131794	0.233492 0.132424	0.239351 0.132424	0.231734 0.125934	0.237594 0.125934	0.233492 0.126564	0.239351 0.126564	0.231734 0.120946	0.237594 0.120946	0.233492 0.121576	0.239351 0.121576	0.231734 0.115087	0.237594 0.115087	0.233492 0.115717	0.239351 0.115717	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on dir
+		visible_on subdir
+		anim dir_select sp_colc
+		{
+			1
+			0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	
+		}
+		anim subdir_select sp_colc
+		{
+			1
+			0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	
+		}
+		visible_on dir_disable
+		visible_on subdir_disable
+	}
+}
+
