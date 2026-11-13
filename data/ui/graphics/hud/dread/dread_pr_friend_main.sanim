@@ -1,0 +1,193 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/dreadnought.ma"
+//by sergey_mitryaev
+//at Tue Feb 17 11:45:18 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 0.7
+	}
+}
+
+total_elements 13
+
+objects 13
+{
+	object armor
+	{
+		defaults
+		{
+			pos 27 -7.10543e-015
+			opacity 255
+			color 0xffffffff
+			size 208 52
+			effect "ui\graphics\hud\dread\dread_pr_fr_armor"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object shield
+	{
+		defaults
+		{
+			pos 27 -7.10543e-015
+			opacity 255
+			color 0xffffffff
+			size 208 52
+			effect "ui\graphics\hud\dread\dread_pr_fr_shield"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 238 89
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object turret_4
+	{
+		defaults
+		{
+			pos 35 15
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hud\dread\turret"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object turret_3
+	{
+		defaults
+		{
+			pos 95 13
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hud\dread\turret"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object turret_2
+	{
+		defaults
+		{
+			pos 151 5
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hud\dread\turret"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object turret_1
+	{
+		defaults
+		{
+			pos 210 5
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hud\dread\turret"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text2
+	{
+		defaults
+		{
+			pos 151 21
+			opacity 255
+			color 0xffffffff
+			size 50 24
+			effect ""
+			alignment "CM"
+			sampleText "36"
+			font "MonoTiny_outl2"
+			back_color 0x3a67
+		}
+		visible_on idle
+	}
+	object vital_3
+	{
+		defaults
+		{
+			pos 55 54
+			opacity 255
+			color 0xffffffff
+			size 28 28
+			effect "ui\graphics\hud\dread\vital_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object vital_add_2
+	{
+		defaults
+		{
+			pos 146 50
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\hud\dread\vital_add"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object vital_add_1
+	{
+		defaults
+		{
+			pos 167 50
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\hud\dread\vital_add"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object vital_2
+	{
+		defaults
+		{
+			pos 86 54
+			opacity 255
+			color 0xffffffff
+			size 28 28
+			effect "ui\graphics\hud\dread\vital_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object vital_1
+	{
+		defaults
+		{
+			pos 117 54
+			opacity 255
+			color 0xffffffff
+			size 28 28
+			effect "ui\graphics\hud\dread\vital_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
