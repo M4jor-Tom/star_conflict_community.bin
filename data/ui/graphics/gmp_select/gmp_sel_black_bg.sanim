@@ -1,0 +1,57 @@
+﻿source_file "Y:/art/source/ui/graphics/gmp_select/gmp_select.ma"
+//by Sergey
+//at Wed Jun 24 10:03:49 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 5000 444
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName369
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2891.55 443.788	-2891.55 3.8147e-006	7987.79 443.788	7987.79 -3.8147e-006	
+				0.233183 0.0286523	0.235567 0.0286523	0.233183 0.0338477	0.235567 0.0338477	
+				0x85ffffff	0x85ffffff	0x85ffffff	0x85ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
