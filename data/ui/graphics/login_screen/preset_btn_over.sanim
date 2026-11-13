@@ -1,0 +1,40 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Mon Nov 25 16:34:21 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite over1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-0.208431 0.024724	3.79157 0.024724	66.0737 0.024724	70.0737 0.024724	-0.208431 4.02472	3.79157 4.02472	66.0737 4.02472	70.0737 4.02472	-0.208431 32.2587	3.79157 32.2587	66.0737 32.2587	70.0737 32.2587	-0.208431 36.2587	3.79157 36.2587	66.0737 36.2587	70.0737 36.2587	
+				0.0864378 0.645508	0.0908203 0.645508	0.103516 0.645508	0.107422 0.645508	0.0864378 0.649414	0.0908203 0.649414	0.103516 0.649414	0.107422 0.649414	0.0864378 0.663086	0.0908203 0.663086	0.103516 0.663086	0.107422 0.663086	0.0864378 0.666992	0.0908203 0.666992	0.103516 0.666992	0.107422 0.666992	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
