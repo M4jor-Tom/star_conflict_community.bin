@@ -1,0 +1,428 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by sergey_mitryaev
+//at Thu Oct 27 16:35:26 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 21
+
+objects 11
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 4000 160
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object ship_slots
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1695 50
+			opacity 255
+			color 0xffffffff
+			size 634 110
+			effect "ui\graphics\ships_tree_2\sh_tr_qu_sh_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object title
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1796 -5
+			opacity 255
+			color 0xff7fe1ff
+			size 420 40
+			effect ""
+			alignment "CM"
+			sampleText "SADwdfeweggg ffe gg wg"
+			font "Medium_outl"
+			blend color_add
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object btn_1
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1521 91
+			opacity 255
+			color 0xffffffff
+			size 150 42
+			effect "ui\graphics\arena\arena_btn_1"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object btn_2
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 2339 91
+			opacity 255
+			color 0xffffffff
+			size 150 42
+			effect "ui\graphics\arena\arena_btn_4"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object title54
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1508 26
+			opacity 255
+			color 0xffffffff
+			size 1000 20
+			effect ""
+			alignment "CM"
+			sampleText "SADwdfeweggg ffe gg wg"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object title55
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 2316 136
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "CM"
+			sampleText "Время выполнения 12 ч."
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object title56
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 2339 57
+			opacity 255
+			color 0xffffffff
+			size 150 40
+			effect ""
+			alignment "CM"
+			sampleText "НАГРАДА 8%"
+			font "VerySmall_glow"
+			back_color 0xffa7
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object btn_4
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1526 63
+			opacity 255
+			color 0xffffffff
+			size 140 24
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_btn_2"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object title57
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1526 37.7716
+			opacity 255
+			color 0xffffffff
+			size 140 30
+			effect ""
+			alignment "CM"
+			sampleText "+40%"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object color_auto
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1498.69 34.9896
+			opacity 127
+			color 0xffffffff
+			size 50 30
+			effect ""
+			alignment "CM"
+			sampleText "+40%"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
+sprites 10
+{
+	total_vertices 40
+
+	sprite objectName466
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fon_windows.tif"
+			anchor "TC"
+			vertices
+			{
+				-855.406 -0	1051.47 -0	-855.406 160.03	1051.47 160.03	
+				1.00002 0	4.071e-005 0	1.00002 0.166667	8.13603e-005 0.166667	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName467
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fon_windows.tif"
+			anchor "TC"
+			vertices
+			{
+				2971.45 -0	4878.33 -0	2971.45 160.03	4878.33 160.03	
+				1.00002 0	4.071e-005 0	1.00002 0.166667	8.13603e-005 0.166667	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName468
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fon_windows.tif"
+			anchor "TC"
+			vertices
+			{
+				1051.46 -0	2971.46 -0	1051.46 160.03	2971.46 160.03	
+				4.06895e-005 0	1.00002 0	8.13808e-005 0.166667	1.00002 0.166667	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName469
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fon_windows_3.tif"
+			anchor "TC"
+			vertices
+			{
+				-855.406 -0	1051.47 -0	-855.406 160.03	1051.47 160.03	
+				1.00002 0	4.071e-005 0	1.00002 0.166667	8.13603e-005 0.166667	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName470
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fon_windows_3.tif"
+			anchor "TC"
+			vertices
+			{
+				2971.45 -0	4878.33 -0	2971.45 160.03	4878.33 160.03	
+				1.00002 0	4.071e-005 0	1.00002 0.166667	8.13603e-005 0.166667	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName471
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fon_windows_3.tif"
+			anchor "TC"
+			vertices
+			{
+				1051.46 -0	2971.46 -0	1051.46 160.03	2971.46 160.03	
+				4.06895e-005 0	1.00002 0	8.13808e-005 0.166667	1.00002 0.166667	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_posc_colc
+		{
+			1 1
+			1051.46 -0	2971.46 -0	1051.46 161	2971.46 161	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName426
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fon_windows.tif"
+			anchor "TC"
+			vertices
+			{
+				1051.46 159.973	2971.46 159.973	1051.46 160.03	2971.46 160.03	
+				0 1	1 1	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_uvc
+		{
+			1 
+			9.76566e-005 1	1.00002 1	9.76566e-005 1	1.00002 1	
+		}
+	}
+	sprite objectName427
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fon_windows.tif"
+			anchor "TC"
+			vertices
+			{
+				2971.45 159.973	4878.33 159.973	2971.45 160.03	4878.33 160.03	
+				1 1	0 1	1 1	0 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_uvc
+		{
+			1 
+			1.00002 1	9.76324e-005 1	1.00002 1	9.76324e-005 1	
+		}
+	}
+	sprite objectName428
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fon_windows.tif"
+			anchor "TC"
+			vertices
+			{
+				-855.406 159.973	1051.47 159.973	-855.406 160.03	1051.47 160.03	
+				1 1	0 1	1 1	0 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_uvc
+		{
+			1 
+			1.00002 1	9.76324e-005 1	1.00002 1	9.76324e-005 1	
+		}
+	}
+	sprite que40
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			anchor "TC"
+			vertices_nc
+			{
+				528.075 -1.75003	3485.93 -1.74997	528.075 -0.250061	3485.93 -0.249969	
+				0.923828 0.248047	0.986328 0.248047	0.923828 0.251953	0.986328 0.251953	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
