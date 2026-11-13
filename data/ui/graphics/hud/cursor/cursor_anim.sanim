@@ -1,0 +1,60 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/cursor.ma"
+//by sergey_mitryaev
+//at Thu Oct 25 15:14:44 2012
+
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim red
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim red_blink
+	{
+		mode looped
+		cycle_time 0.3
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object anim
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 15
+			effect "ui\graphics\hud\cursor\cursor"
+			alignment "LM"
+			sampleText "anim color & alpha"
+			font "Tiny"
+		}
+		visible_on idle
+		anim red obj_colc
+		{
+			1
+			0xffff3b00
+		}
+		anim red_blink obj_op_colc
+		{
+			5 1
+			255
+			241
+			198
+			119
+			0
+			0xffff3b00
+		}
+	}
+}
+
