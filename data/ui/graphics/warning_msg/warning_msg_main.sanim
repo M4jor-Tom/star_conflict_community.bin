@@ -1,0 +1,156 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by sergey_mitryaev
+//at Fri Jan 22 15:41:45 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 9
+{
+	object lock_me
+	{
+		defaults
+		{
+			anchor "C"
+			pos 373 484.247
+			opacity 255
+			color 0xffffffff
+			size 36 32
+			effect "ui\graphics\warning_msg\warning_lock_me"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object warning_rocket_me
+	{
+		defaults
+		{
+			anchor "C"
+			pos 865 484.247
+			opacity 255
+			color 0xffffffff
+			size 36 32
+			effect "ui\graphics\warning_msg\warning_rocket_me"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object failure_modules
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 399.432 683.773
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect "ui\graphics\warning_msg\warning_failure_modules"
+			alignment "CM"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object failure_all
+	{
+		defaults
+		{
+			anchor "C"
+			pos 389.58 349.118
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect "ui\graphics\warning_msg\warning_failure_driving"
+			alignment "CM"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object base_attack
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 978.24 585.938
+			opacity 255
+			color 0xffffffff
+			size 300 18
+			effect "ui\graphics\warning_msg\warning_base_attack"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object failure_rocket
+	{
+		defaults
+		{
+			anchor "C"
+			pos 389.58 520
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect "ui\graphics\warning_msg\warning_failure_rocket"
+			alignment "CM"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object outward
+	{
+		defaults
+		{
+			anchor "C"
+			pos 389.58 304
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect "ui\graphics\warning_msg\warning_outward"
+			alignment "CM"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object msg_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 389.58 154
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect "ui\graphics\warning_msg\warning_msg_2"
+			alignment "CM"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object warning_bomb_me
+	{
+		defaults
+		{
+			anchor "C"
+			pos 903 484.247
+			opacity 255
+			color 0xffffffff
+			size 36 32
+			effect "ui\graphics\warning_msg\warning_bomb_me"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
