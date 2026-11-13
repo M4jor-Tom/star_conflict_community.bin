@@ -1,0 +1,171 @@
+﻿source_file  Y:/art/source/ui/graphics/help_control/help.ma
+//by sergey_mitryaev
+//at Mon Jun 25 18:43:08 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 560
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 282.429 520.883
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title_1
+	{
+		defaults
+		{
+			pos 85.421 12.0903
+			opacity 255
+			color 0xffffffff
+			size 800 40
+			effect ""
+			alignment "CM"
+			sampleText "Добро пожаловат ьс СтарКонфликт"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 524.172 520.883
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title_2
+	{
+		defaults
+		{
+			pos 85.421 414.432
+			opacity 255
+			color 0xffffffff
+			size 800 30
+			effect ""
+			alignment "CM"
+			sampleText "Добро пожаловат ьс СтарКонфликт"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object descript_1
+	{
+		defaults
+		{
+			pos 85.421 445.905
+			opacity 255
+			color 0xffffffff
+			size 800 40
+			effect ""
+			alignment "CM"
+			sampleText "Добро пожало|ват ьс СтарКонфликт"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object descript_2
+	{
+		defaults
+		{
+			pos 76.0854 499.896
+			opacity 255
+			color 0xffffffff
+			size 200 60
+			effect ""
+			alignment "CM"
+			sampleText "Добро пожало|ват ьс СтарКонфликт"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object descript_3
+	{
+		defaults
+		{
+			pos 690.392 499.896
+			opacity 255
+			color 0xffffffff
+			size 200 60
+			effect ""
+			alignment "CM"
+			sampleText "Добро пожало|ват ьс СтарКонфликт"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	958.697 -0	964.697 -0	0 6	6 6	958.697 6	964.697 6	0 570.667	6 570.667	958.697 570.667	964.697 570.667	0 576.667	6 576.667	958.697 576.667	964.697 576.667	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/locale/english/textures/help_img_1.tif"
+			vertices_nc
+			{
+				79.7438 63.1794	907.744 63.1794	79.7438 407.179	907.744 407.179	
+				6.75209e-009 0	1 0	6.75209e-009 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
