@@ -1,0 +1,93 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Tue Jan 14 17:55:49 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 1 2
+			opacity 255
+			color 0xffffffff
+			size 20 150
+			effect "ui\graphics\option\option_lable_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 820 464
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 1 155
+			opacity 255
+			color 0xffffffff
+			size 20 150
+			effect "ui\graphics\option\option_lable_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 1 308
+			opacity 255
+			color 0xffffffff
+			size 20 150
+			effect "ui\graphics\option\option_lable_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0.0264893 -0	6.02649 -0	813.974 -0	819.974 -0	0.0264893 6	6.02649 6	813.974 6	819.974 6	0.0264893 457	6.02649 457	813.974 457	819.974 457	0.0264893 463	6.02649 463	813.974 463	819.974 463	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+}
+
