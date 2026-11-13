@@ -1,0 +1,233 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Mon Mar 01 15:59:32 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 10
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 560 270
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 8.98898 2
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Создание карты"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos -5 94
+			opacity 255
+			color 0xffffffff
+			size 560 130
+			effect "ui\graphics\map\sel_ship_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object karma
+	{
+		defaults
+		{
+			pos 10 37
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\debrifing_2\karma_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 568 3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 428 242
+			opacity 255
+			color 0xffffffff
+			size 155 25
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 269 242
+			opacity 255
+			color 0xffffffff
+			size 155 25
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading 
+	{
+		defaults
+		{
+			pos 253 32
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\hangar\loading_small"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 283.015 219
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "RM"
+			sampleText "5645345677"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object reputation
+	{
+		defaults
+		{
+			pos 250 42
+			opacity 255
+			color 0xffffffff
+			size 330 20
+			effect "ui\graphics\debrifing_2\rep_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.180913	6 0.180913	583 0.180913	589 0.180913	0 6.18091	6 6.18091	583 6.18091	589 6.18091	0 263.5	6 264.5	583 264.5	589 264.5	0 269.5	6 270.5	583 270.5	589 270.5	
+				0.25402 0.1143	0.25402 0.120159	0.25402 0.132659	0.25402 0.138518	0.25988 0.1143	0.25988 0.120159	0.25988 0.132659	0.25988 0.138518	0.272565 0.1143	0.272565 0.120159	0.272565 0.132659	0.272565 0.138518	0.278424 0.1143	0.278424 0.120159	0.278424 0.132659	0.278424 0.138518	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName315
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.452621 24	0.452621 22	588.525 24	588.525 22	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771484 0.152344	0.0791016 0.152344	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp3
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 39	6 39	583 39	589 39	0 45	6 45	583 45	589 45	0 81	6 81	583 81	589 81	0 87	6 87	583 87	589 87	
+				0.236822 0.0171878	0.236822 0.0230471	0.236822 0.0355467	0.236822 0.041406	0.242681 0.0171877	0.242681 0.0230471	0.242681 0.0355467	0.242681 0.041406	0.255366 0.0171877	0.255366 0.0230471	0.255366 0.0355467	0.255366 0.041406	0.261225 0.0171877	0.261225 0.0230471	0.261225 0.0355467	0.261225 0.041406	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp4
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 94	6 94	583 94	589 94	0 100	6 100	583 100	589 100	0 212	6 212	583 212	589 212	0 218	6 218	583 218	589 218	
+				0.236822 0.0171878	0.236822 0.0230471	0.236822 0.0355467	0.236822 0.041406	0.242681 0.0171877	0.242681 0.0230471	0.242681 0.0355467	0.242681 0.041406	0.255366 0.0171877	0.255366 0.0230471	0.255366 0.0355467	0.255366 0.041406	0.261225 0.0171877	0.261225 0.0230471	0.261225 0.0355467	0.261225 0.041406	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
