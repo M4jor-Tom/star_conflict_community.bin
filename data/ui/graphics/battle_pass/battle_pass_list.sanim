@@ -1,0 +1,126 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Mon Jun 03 12:54:14 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1484 382
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_slot_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 328
+			effect "ui\graphics\battle_pass\battle_pass_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_slot_2
+	{
+		defaults
+		{
+			pos 255 -0
+			opacity 255
+			color 0xffffffff
+			size 210 328
+			effect "ui\graphics\battle_pass\battle_pass_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_slot_3
+	{
+		defaults
+		{
+			pos 509 -0
+			opacity 255
+			color 0xffffffff
+			size 210 328
+			effect "ui\graphics\battle_pass\battle_pass_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_slot_4
+	{
+		defaults
+		{
+			pos 767 -0
+			opacity 255
+			color 0xffffffff
+			size 210 328
+			effect "ui\graphics\battle_pass\battle_pass_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_slot_5
+	{
+		defaults
+		{
+			pos 1024 -0
+			opacity 255
+			color 0xffffffff
+			size 210 328
+			effect "ui\graphics\battle_pass\battle_pass_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_slot_6
+	{
+		defaults
+		{
+			pos 1275 -0
+			opacity 255
+			color 0xffffffff
+			size 210 328
+			effect "ui\graphics\battle_pass\battle_pass_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 0 345
+			opacity 255
+			color 0xffffffff
+			size 1484 18
+			effect "ui\graphics\scroll_h\scroll_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
