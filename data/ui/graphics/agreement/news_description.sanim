@@ -1,0 +1,136 @@
+﻿source_file "Y:/art/source/ui/graphics/agreement/agreement.ma"
+//by sergey_mitryaev
+//at Tue Jan 28 16:41:03 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 8
+{
+	object description
+	{
+		defaults
+		{
+			pos 2.65958 5
+			opacity 255
+			color 0xffffffff
+			size 360 436
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 364.314 3.06842
+			opacity 255
+			color 0xffffffff
+			size 10 442
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 380 470
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos -0.100456 5.16835
+			opacity 255
+			color 0xffffffff
+			size 280 20
+			effect ""
+			alignment "LT"
+			sampleText "Новая новость"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object date
+	{
+		defaults
+		{
+			pos -0.100456 27.3837
+			opacity 255
+			color 0xff98afd4
+			size 280 16
+			effect ""
+			alignment "LT"
+			sampleText "Новая новость"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos -0.100456 52.4224
+			opacity 255
+			color 0xffc3cad4
+			size 280 16
+			effect ""
+			alignment "LT"
+			sampleText "Содержание  новости"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object Dist
+	{
+		defaults
+		{
+			pos -0.100456 69.5917
+			opacity 255
+			color 0xffffffff
+			size 280 22
+			effect ""
+			alignment "RT"
+			sampleText "Содержание  новости"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object area
+	{
+		defaults
+		{
+			pos -0.100456 3
+			opacity 255
+			color 0xffffffff
+			size 368 440
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
