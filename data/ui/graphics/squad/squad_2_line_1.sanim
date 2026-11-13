@@ -1,0 +1,237 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_2.ma"
+//by Sergey_Mitryaev
+//at Tue Jan 24 16:26:29 2017
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim approved
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 560 50
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6 6
+			opacity 255
+			color 0xffffdeb3
+			size 500 20
+			effect ""
+			alignment "LM"
+			sampleText "wdffeegegege"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object approved
+	{
+		defaults
+		{
+			pos 333 4
+			opacity 255
+			color 0xff8aff1d
+			size 200 40
+			effect ""
+			alignment "RM"
+			sampleText "Заявка|одобрена"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object ignor_btn
+	{
+		defaults
+		{
+			pos 537 15
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\friend\friend_line_ignor_btn"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 443 20
+			effect "ui\graphics\squad\squad_2_line_1_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object nickname_color
+	{
+		defaults
+		{
+			pos 186 6
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "nickname_color"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object color_cancel
+	{
+		defaults
+		{
+			pos 333 4
+			opacity 255
+			color 0xffbb070a
+			size 200 40
+			effect ""
+			alignment "RM"
+			sampleText "Приглашение|Отменено"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object title1
+	{
+		defaults
+		{
+			pos 6 26
+			opacity 255
+			color 0xff8f8f8f
+			size 400 20
+			effect ""
+			alignment "LM"
+			sampleText "Нужны два  человека"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object sel
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 443 20
+			effect "ui\graphics\squad\squad_2_line_1_sel"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite dff11
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				2 47	2 1.99998	560 47	560 2.00002	
+				0.460205 0.294922	0.460205 0.292969	0.453857 0.294922	0.453857 0.292969	
+				0xcc100	0xcc100	0xcc100	0xcc100	
+			}
+		}
+		visible_on idle
+		anim approved sp_colc
+		{
+			1
+			0xff095f34	0xff095f34	0xff095f34	0xff095f34	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x95f34	0x95f34	0x95f34	0x95f34	
+		}
+	}
+	sprite dff12
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 52	1 48	561 52	561 48	
+				0.06958 0.148438	0.0695801 0.146484	0.0632324 0.148437	0.0632325 0.146484	
+			}
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+}
+
