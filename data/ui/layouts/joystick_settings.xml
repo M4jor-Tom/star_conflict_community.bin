@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+
+	<Templates>
+
+		<Widget name="AxisTemplate" w="500" h="25">
+			<TextLabel name="$parent.Desc" text="AxisName" w="170" h="24" x="10" y="0"/>
+			<Button name="$parent.BindButton" text="#NOT_BOUND" w="110" h="22">
+				<anchor point="LEFT" to="$parent.Desc:RIGHT" x="5" />
+			</Button>
+			<!--<Button name="$parent.ResetButton" text="#JOYWND_clearBind" w="50" h="22"/> -->
+			<Progressbar name="$parent.Porogressbar" w="150" h="12">
+				<anchor point="LEFT" to="$parent.BindButton:RIGHT" y="1" x="5" />
+			</Progressbar>
+		</Widget>
+
+	</Templates>
+	
+	
+	<Form name="JoystickSettingsUI"
+		class="JoystickSettingsUI" 
+		width="500" 
+		height="500"
+		resizable="false"
+		movable="true"
+		font="Tiny_outl2"
+		text="#JOYSTICK_SETTINGS"
+		foreground="White"
+		background="White"
+		alpha="1">
+
+		<CheckButton name="JoyEnableCheckButton" text="#JOYWND_EnableJoystick" tooltip="#JOYWND_EnableJoystickTooltip" >
+			<anchor point="TOPLEFT" x="10" y="10" />
+		</CheckButton>
+
+		<CheckButton name="XInputPresetCheckButton" text="#JOYWND_XinputPreset" tooltip="#JOYWND_XinputPresetTooltip" >
+			<anchor point="TOPLEFT"  to="JoyEnableCheckButton:BOTTOMLEFT" y="20" />
+		</CheckButton>
+
+		<TextLabel name="SelectDeviceText" text="#JOYWND_SelectDevice" >
+			<anchor point="TOPLEFT"  to="XInputPresetCheckButton:BOTTOMLEFT" y="8" />
+		</TextLabel>
+	
+		<LinearLayout name="AxisList" w="500" h="250" margin="0" debug="false">
+			<anchor point="TOPLEFT"  to="SelectDeviceText:BOTTOMLEFT" y="30" />
+			
+			<Widget name="AxisAccel" 	 	template="AxisTemplate" />
+			<Widget name="AxisStrafeX" 		template="AxisTemplate" />
+			<Widget name="AxisStrafeY" 		template="AxisTemplate" />
+			<Widget name="AxisYaw"  		template="AxisTemplate" />
+			<Widget name="AxisPitch"		template="AxisTemplate" />
+			<Widget name="AxisRoll"			template="AxisTemplate" />
+			<Widget name="AxisCursorX"		template="AxisTemplate" />
+			<Widget name="AxisCursorY"		template="AxisTemplate" />
+			<Widget name="AxisRocketYaw"	template="AxisTemplate" />
+			<Widget name="AxisRocketPitch"	template="AxisTemplate" />
+		</LinearLayout>
+
+		<TextLabel name="JoyExponentText" text="#JOYWND_Exponent" tooltip="#JOYWND_ExponentTooltip"  w="150" h="20" >
+			<anchor point="TOPLEFT"  to="AxisList:BOTTOMLEFT" y="15" />
+		</TextLabel>
+		
+		<Slider name="JoyExponentSlider" w="150" h="20" >
+			<anchor point="LEFT"  to="JoyExponentText:RIGHT" x="5" />
+		</Slider>
+
+		<TextLabel name="JoyExponentValue" text="2.50" w="40" h="20" >
+			<anchor point="LEFT"  to="JoyExponentSlider:RIGHT" x="5" />
+		</TextLabel>
+		
+		<CheckButton name="InvertYAxis" text="#JOYWND_InvertY" tooltip="#JOYWND_InvertYTooltip">
+			<anchor point="TOPLEFT"  to="JoyExponentText:BOTTOMLEFT" y="10" />
+		</CheckButton>
+
+		<CheckButton name="IgnoreMouse" text="#JOYWND_IgnoreMouse" tooltip="#JOYWND_IgnoreMouse">
+			<anchor point="TOPLEFT"  to="InvertYAxis:BOTTOMLEFT" y="10" />
+		</CheckButton>
+		
+		<Button name="ResetButton" text="#RESET_TO_DEFAULT" w="120" h="22">
+			<anchor point="BOTTOMLEFT" x="10" y="-5" />
+		</Button>
+
+		<Button name="ApplyButton" text="#options_applyBtn" w="120" h="22">
+			<anchor point="LEFT" to="ResetButton:RIGHT" />
+		</Button>
+
+		<Button name="CancelButton" text="#cancel" w="120" h="22">
+			<anchor point="BOTTOMRIGHT" x="-10" y="-5" />
+		</Button>
+
+		<Button name="OkayButton" text="#ok" w="120" h="22">
+			<anchor point="RIGHT" to="CancelButton:LEFT" />
+		</Button>
+
+		<DropList name="DeviceDropList" w="300" h="22" >
+			<anchor point="TOPLEFT"  to="SelectDeviceText:BOTTOMLEFT" y="5" />
+		</DropList>
+
+		<Button name="EnumerateDeviceButton" text="#JOYWND_Enumerate" tooltip="#JOYWND_EnumerateTooltip" w="140" h="22" >
+			<anchor point="LEFT"  to="DeviceDropList:RIGHT" x="5" />
+		</Button>
+
+	</Form>
+</Ui>
