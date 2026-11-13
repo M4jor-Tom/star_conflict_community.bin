@@ -1,0 +1,377 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by sergey_mitryaev
+//at Tue Sep 23 15:42:13 2014
+
+
+animations 2
+{
+	anim idle_activ
+	{
+		mode once
+		cycle_time 1
+	}
+	anim idle_inactiv
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 17
+
+objects 15
+{
+	object self
+	{
+		defaults
+		{
+			pos 0.67128 -0.16782
+			opacity 255
+			color 0xffffffff
+			size 698 400
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle_activ
+		visible_on idle_inactiv
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 6.67128 5.83218
+			opacity 255
+			color 0xffffffff
+			size 85 84
+			effect "ui\graphics\profile\profile_icon"
+			alignment "LT"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object title
+	{
+		defaults
+		{
+			pos 153.671 -0.435461
+			opacity 255
+			color 0xffffffff
+			size 400 21
+			effect ""
+			alignment "CM"
+			sampleText "Rhjdfdsq rjkbopajfiopehgj jkgoeg "
+			font "VerySmall"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object description
+	{
+		defaults
+		{
+			pos 105.671 23.8322
+			opacity 255
+			color 0xffffffff
+			size 550 340
+			effect ""
+			alignment "LT"
+			sampleText "efr gheh  rj65j6 jk6gfj   lilui;"
+			font "Tiny"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object progress
+	{
+		defaults
+		{
+			pos 270.637 45.8322
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect "ui\graphics\debrifing\debrif_fee_progress"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle_activ
+		visible_on idle_inactiv
+	}
+	object price
+	{
+		defaults
+		{
+			pos 585.891 68
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		anim idle_activ obj_pos
+		{
+			2 
+			585.891 68
+			585.891 371
+		}
+		anim idle_inactiv obj_pos_opc
+		{
+			2 1 
+			585.891 69
+			585.891 370.832
+			127
+		}
+	}
+	object distmin
+	{
+		defaults
+		{
+			pos 0.67128 -0.16782
+			opacity 255
+			color 0xffffffff
+			size 20 97
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle_activ
+		visible_on idle_inactiv
+	}
+	object text_min
+	{
+		defaults
+		{
+			pos 267.671 23.8322
+			opacity 255
+			color 0xffffffff
+			size 20 15
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object time
+	{
+		defaults
+		{
+			pos 573.671 2.83218
+			opacity 255
+			color 0xffffffff
+			size 80 16
+			effect "ui\graphics\profile\profile_time"
+			alignment "LT"
+		}
+		visible_on idle_activ
+		visible_on idle_inactiv
+	}
+	object decor_1
+	{
+		defaults
+		{
+			pos 0.67128 -0.16782
+			opacity 255
+			color 0xffffffff
+			size 20 97
+			effect "ui\graphics\profile\profile_decor_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle_activ
+		visible_on idle_inactiv
+	}
+	object anlock
+	{
+		defaults
+		{
+			pos 148.671 115.832
+			opacity 255
+			color 0xffffffff
+			size 400 21
+			effect "ui\graphics\profile\profile_anlock"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object string_1
+	{
+		defaults
+		{
+			pos 139.671 68.8322
+			opacity 255
+			color 0xffffffff
+			size 300 21
+			effect "ui\graphics\profile\profile_slot_string_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object string_2
+	{
+		defaults
+		{
+			pos 139.671 89.8322
+			opacity 255
+			color 0xffffffff
+			size 400 21
+			effect "ui\graphics\profile\profile_slot_string_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object string_3
+	{
+		defaults
+		{
+			pos 354.671 68.8322
+			opacity 255
+			color 0xffffffff
+			size 300 21
+			effect "ui\graphics\profile\profile_slot_string_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object price2
+	{
+		defaults
+		{
+			pos 481.671 68
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		anim idle_activ obj_pos
+		{
+			2 
+			481.671 68
+			481.671 371
+		}
+		anim idle_inactiv obj_pos_opc
+		{
+			2 1 
+			481.671 69
+			481.671 370.832
+			127
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 90	6 90	687 90	693 90	0 96	6 96	687 96	693 96	
+				0.274399 0.00196683	0.280259 0.00196683	0.317302 0.00196683	0.323162 0.00196683	0.274399 0.00782621	0.280259 0.00782621	0.317302 0.00782621	0.323162 0.00782621	0.274399 0.0449466	0.280259 0.0449466	0.317302 0.0449466	0.323162 0.0449466	0.274399 0.050806	0.280259 0.050806	0.317302 0.050806	0.323162 0.050806	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle_activ sp_pos
+		{
+			11 
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 90	6 90	687 90	693 90	0 96	6 96	687 96	693 96	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 120.4	6 120.4	687 120.4	693 120.4	0 126.4	6 126.4	687 126.4	693 126.4	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 150.8	6 150.8	687 150.8	693 150.8	0 156.8	6 156.8	687 156.8	693 156.8	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 181.2	6 181.2	687 181.2	693 181.2	0 187.2	6 187.2	687 187.2	693 187.2	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 211.6	6 211.6	687 211.6	693 211.6	0 217.6	6 217.6	687 217.6	693 217.6	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 242	6 242	687 242	693 242	0 248	6 248	687 248	693 248	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 272.4	6 272.4	687 272.4	693 272.4	0 278.4	6 278.4	687 278.4	693 278.4	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 302.8	6 302.8	687 302.8	693 302.8	0 308.8	6 308.8	687 308.8	693 308.8	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 333.2	6 333.2	687 333.2	693 333.2	0 339.2	6 339.2	687 339.2	693 339.2	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 363.6	6 363.6	687 363.6	693 363.6	0 369.6	6 369.6	687 369.6	693 369.6	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 394	6 394	687 394	693 394	0 400	6 400	687 400	693 400	
+		}
+		anim idle_inactiv sp_pos_colc
+		{
+			12 1
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 90	6 90	687 90	693 90	0 96	6 96	687 96	693 96	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 117.636	6 117.636	687 117.636	693 117.636	0 123.636	6 123.636	687 123.636	693 123.636	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 145.273	6 145.273	687 145.273	693 145.273	0 151.273	6 151.273	687 151.273	693 151.273	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 172.909	6 172.909	687 172.909	693 172.909	0 178.909	6 178.909	687 178.909	693 178.909	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 200.545	6 200.545	687 200.545	693 200.545	0 206.545	6 206.545	687 206.545	693 206.545	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 228.182	6 228.182	687 228.182	693 228.182	0 234.182	6 234.182	687 234.182	693 234.182	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 255.818	6 255.818	687 255.818	693 255.818	0 261.818	6 261.818	687 261.818	693 261.818	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 283.455	6 283.455	687 283.455	693 283.455	0 289.455	6 289.455	687 289.455	693 289.455	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 311.091	6 311.091	687 311.091	693 311.091	0 317.091	6 317.091	687 317.091	693 317.091	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 338.727	6 338.727	687 338.727	693 338.727	0 344.727	6 344.727	687 344.727	693 344.727	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 366.364	6 366.364	687 366.364	693 366.364	0 372.364	6 372.364	687 372.364	693 372.364	
+			0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 394	6 394	687 394	693 394	0 400	6 400	687 400	693 400	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite sp2ef
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	687 -0	693 -0	0 6	6 6	687 6	693 6	0 15	6 15	687 15	693 15	0 21	6 21	687 21	693 21	
+				0.0820641 0.0332031	0.0879234 0.0332031	0.101563 0.0332031	0.107422 0.0332031	0.0820641 0.0273438	0.0879234 0.0273438	0.101563 0.0273438	0.107422 0.0273438	0.0820641 0.0175781	0.0879234 0.0175781	0.101563 0.0175781	0.107422 0.0175781	0.0820641 0.0117188	0.0879234 0.0117188	0.101563 0.0117188	0.107422 0.0117188	
+				0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+			}
+		}
+		visible_on idle_activ
+		anim idle_inactiv sp_colc
+		{
+			1
+			0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	0xff333333	
+		}
+	}
+}
+
