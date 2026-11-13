@@ -1,0 +1,77 @@
+﻿source_file "Y:/art/source/ui/graphics/ny_count/ny_count.ma"
+//by Sergey
+//at Fri Nov 27 14:02:12 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 260 72
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_6_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 244 22
+			effect "ui\graphics\ny_count\ny_count_15_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_6_2
+	{
+		defaults
+		{
+			pos 0 24
+			opacity 255
+			color 0xffffffff
+			size 244 22
+			effect "ui\graphics\ny_count\ny_count_15_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_6_3
+	{
+		defaults
+		{
+			pos 0 48
+			opacity 255
+			color 0xffffffff
+			size 244 22
+			effect "ui\graphics\ny_count\ny_count_15_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
