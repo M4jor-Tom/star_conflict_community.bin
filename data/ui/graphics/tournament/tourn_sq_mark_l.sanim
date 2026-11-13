@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/bzs/bzs.ma"
+//by sergey_mitryaev
+//at Wed Dec 10 16:15:34 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName360
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.447266 0.575195	0.458984 0.575195	0.447266 0.586914	0.458984 0.586914	
+				0xff07ff00	0xff07ff00	0xff07ff00	0xff07ff00	
+			}
+		}
+		visible_on idle
+	}
+}
+
