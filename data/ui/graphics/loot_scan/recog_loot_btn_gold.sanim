@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Wed Sep 18 14:02:00 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	8 -0	120 -0	126 -0	0 6	8 6	120 6	126 6	0 135.809	8 135.809	120 135.809	126 135.809	0 144.191	8 144.191	120 144.191	126 144.191	
+				0.172847 0.00195313	0.180669 0.00195313	0.21582 0.00195313	0.22168 0.00195313	0.172847 0.00781244	0.180669 0.00781238	0.21582 0.00781244	0.22168 0.0078125	0.172847 0.0429676	0.180669 0.0429676	0.21582 0.0429677	0.22168 0.0429677	0.172847 0.0507824	0.180669 0.0507824	0.21582 0.0507824	0.22168 0.0507824	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
