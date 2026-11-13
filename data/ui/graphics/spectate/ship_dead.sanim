@@ -1,0 +1,74 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by Sergey
+//at Wed Dec 23 10:26:05 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object text_buy
+	{
+		defaults
+		{
+			pos 8 34
+			opacity 255
+			color 0xffff0000
+			size 120 15
+			effect ""
+			alignment "CM"
+			sampleText "DEAD!!!"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices_nc
+			{
+				10.7953 12.5627	126.795 12.5627	10.7953 23.5627	126.795 23.5627	
+				0.00352868 0.806779	0.181443 0.806779	0.00352868 0.830692	0.181443 0.830692	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName229
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices_nc
+			{
+				10.7953 60.4049	126.795 60.4049	10.7953 71.4049	126.795 71.4049	
+				0.00352868 0.806779	0.181443 0.806779	0.00352868 0.830692	0.181443 0.830692	
+			}
+		}
+		visible_on idle
+	}
+}
+
