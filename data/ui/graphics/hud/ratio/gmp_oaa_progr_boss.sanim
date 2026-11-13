@@ -1,0 +1,145 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Fri Dec 13 12:01:51 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 370 30
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object progr_1
+	{
+		defaults
+		{
+			pos 130 12
+			opacity 255
+			color 0xffffffff
+			size 230 6
+			effect "ui\graphics\hud\ratio\gmp_oaa_progr_1"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object progr_2
+	{
+		defaults
+		{
+			pos 130 12
+			opacity 255
+			color 0xffffffff
+			size 230 6
+			effect "ui\graphics\hud\ratio\gmp_oaa_progr_2"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object title8
+	{
+		defaults
+		{
+			pos 2 -0
+			opacity 255
+			color 0xffafc3d2
+			size 100 30
+			effect ""
+			alignment "CM"
+			sampleText "БОСС"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName71
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				91 -0	128 -0	91 29	128 29	
+				0.256836 0.606445	0.220703 0.606445	0.256836 0.634766	0.220703 0.634766	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName73
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				0 -0	91 -0	0 29	91 29	
+				0.254883 0.606445	0.256836 0.606445	0.254883 0.634766	0.256836 0.634766	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName74
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				370 -0	128 -0	370 29	128 29	
+				0.254883 0.606445	0.256836 0.606445	0.254883 0.634766	0.256836 0.634766	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName77
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				130 12	360 12	130 18	360 18	
+				0.293945 0.403076	0.290771 0.403076	0.293945 0.407471	0.290771 0.407471	
+				0x778b8b8b	0x778b8b8b	0x778b8b8b	0x778b8b8b	
+			}
+		}
+		visible_on idle
+	}
+}
+
