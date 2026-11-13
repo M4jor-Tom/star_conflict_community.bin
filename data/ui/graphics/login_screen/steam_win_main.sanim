@@ -1,0 +1,64 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Thu Dec 20 12:27:36 2012
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object blackout_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hangar\blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object steam_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 162.774 87.1002
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\steam_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object login_wait
+	{
+		defaults
+		{
+			anchor "C"
+			pos 425 271
+			opacity 255
+			color 0xffffffff
+			size 422 134
+			effect "ui\graphics\login_screen\login_wait_win"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
