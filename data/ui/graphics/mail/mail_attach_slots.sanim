@@ -1,0 +1,116 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by Sergey_Mitryaev
+//at Tue Jan 17 19:02:11 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1.5
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object prod_icon_1
+	{
+		defaults
+		{
+			pos 0.501787 1.13687e-013
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object prod_icon_2
+	{
+		defaults
+		{
+			pos 60 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object prod_icon_3
+	{
+		defaults
+		{
+			pos 119 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object prod_icon_4
+	{
+		defaults
+		{
+			pos 178 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object prod_icon_5
+	{
+		defaults
+		{
+			pos 237 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0.501787 1.13687e-013
+			opacity 255
+			color 0xffffffff
+			size 300 50
+			effect ""
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
