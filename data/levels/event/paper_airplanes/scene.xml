@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="paper_airplanes; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" additionalColorRemapAnimTime="1.000" battlefieldRadius="375.000" levelPhysLimitRadius="400.000" levelPhysLimitHeight="0.000" useWorldLookPoint="true" />
+  <EntityContainer>
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="301.750 434.751 7.630" Rot="0.338 -0.622 0.339 0.620" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="invasion1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="110.146 540.133 60.103" Rot="-0.678 0.000 0.000 0.735" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship1" Def="Logic_SpawnSpot_Team1Group0" Pos="-14.869 51.161 -323.810" Rot="0.000 0.995 0.000 -0.100" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship2" Def="Logic_SpawnSpot_Team1Group0" Pos="16.478 31.748 -315.076" Rot="0.000 0.990 0.000 0.139" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship3" Def="Logic_SpawnSpot_Team1Group0" Pos="29.075 42.045 -300.646" Rot="0.000 0.998 0.000 0.055" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship4" Def="Logic_SpawnSpot_Team1Group0" Pos="46.809 51.287 -291.962" Rot="-0.005 0.986 0.045 0.159" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship5" Def="Logic_SpawnSpot_Team1Group0" Pos="-0.254 69.962 -321.387" Rot="-0.005 0.986 0.045 0.159" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship6" Def="Logic_SpawnSpot_Team1Group0" Pos="-55.144 28.784 -326.730" Rot="-0.015 0.996 0.043 -0.075" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship7" Def="Logic_SpawnSpot_Team1Group0" Pos="-19.493 19.560 -314.189" Rot="-0.015 0.996 0.043 -0.075" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship8" Def="Logic_SpawnSpot_Team1Group0" Pos="43.889 28.665 -299.917" Rot="-0.009 0.997 0.045 0.060" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship1" Def="Logic_SpawnSpot_Team2Group0" Pos="56.713 16.388 313.366" Rot="0.000 0.135 0.000 0.991" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship2" Def="Logic_SpawnSpot_Team2Group0" Pos="36.970 21.730 317.553" Rot="0.000 0.154 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship3" Def="Logic_SpawnSpot_Team2Group0" Pos="12.423 23.295 323.870" Rot="0.000 -0.050 0.000 0.999" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship4" Def="Logic_SpawnSpot_Team2Group0" Pos="-2.125 38.351 311.801" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship5" Def="Logic_SpawnSpot_Team2Group0" Pos="44.181 56.946 317.653" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship6" Def="Logic_SpawnSpot_Team2Group0" Pos="63.284 30.745 311.239" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship7" Def="Logic_SpawnSpot_Team2Group0" Pos="-1.544 53.464 318.904" Rot="0.000 -0.045 0.000 0.999" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship8" Def="Logic_SpawnSpot_Team2Group0" Pos="-34.546 23.044 315.280" Rot="0.000 -0.045 0.000 0.999" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="LootPoint1" Def="Helpers_TagPoint" Pos="2.000 7.000 48.000" type="0" />
+    <Entity Name="LootPoint2" Def="Helpers_TagPoint" Pos="20.000 20.354 80.000" type="0" />
+    <Entity Name="LootPoint3" Def="Helpers_TagPoint" Pos="-44.649 11.223 76.437" type="0" />
+    <Entity Name="LootPoint4" Def="Helpers_TagPoint" Pos="96.856 9.384 79.358" type="0" />
+    <Entity Name="LootPoint5" Def="Helpers_TagPoint" Pos="40.620 2.324 -69.044" type="0" />
+    <Entity Name="LootPoint6" Def="Helpers_TagPoint" Pos="33.593 20.177 -108.559" type="0" />
+    <Entity Name="LootPoint7" Def="Helpers_TagPoint" Pos="-41.357 8.534 -125.414" type="0" />
+    <Entity Name="LootPoint8" Def="Helpers_TagPoint" Pos="118.908 21.981 -31.774" type="0" />
+    <Entity Name="LootPoint9" Def="Helpers_TagPoint" Pos="10.338 5.424 -6.022" type="0" />
+    <Entity Name="LootPoint10" Def="Helpers_TagPoint" Pos="31.575 88.649 -275.251" type="0" />
+    <Entity Name="LootPoint11" Def="Helpers_TagPoint" Pos="17.247 104.088 267.032" type="0" />
+    <Entity Name="LootPoint12" Def="Helpers_TagPoint" Pos="58.008 7.560 57.481" type="0" />
+    <Entity Name="LootPoint13" Def="Helpers_TagPoint" Pos="-30.398 -1.223 -4.269" type="0" />
+    <Entity Name="LootPoint14" Def="Helpers_TagPoint" Pos="55.592 1.901 130.716" type="0" />
+    <Entity Name="LootPoint15" Def="Helpers_TagPoint" Pos="-47.446 2.524 101.639" type="0" />
+    <Entity Name="AprilA1" Def="VitalPoint_April_AprilA" GameplaysMask="3221225472" Pos="-197.522 42.539 -126.867" Rot="-0.107 0.121 0.038 0.986" />
+    <Entity Name="AprilB1" Def="VitalPoint_April_AprilB" GameplaysMask="3221225472" Pos="6.740 30.049 -13.463" Rot="0.049 0.381 -0.131 0.914" />
+    <Entity Name="AprilC1" Def="VitalPoint_April_AprilC" GameplaysMask="3221225472" Pos="200.071 44.574 91.848" Rot="0.043 0.012 -0.178 0.983" />
+  </EntityContainer>
+</Scene>
