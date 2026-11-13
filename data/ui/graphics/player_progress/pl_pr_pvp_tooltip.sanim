@@ -1,0 +1,127 @@
+﻿source_file "Y:/art/source/ui/graphics/player_progress/player_progress.ma"
+//by sergey_mitryaev
+//at Tue Jul 15 15:46:37 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 430 800
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 21
+			opacity 255
+			color 0xffffffff
+			size 420 560
+			effect "ui\graphics\player_progress\pl_pr_pvp_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 80
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title8
+	{
+		defaults
+		{
+			pos 10 -0
+			opacity 255
+			color 0xffff9a00
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Wsds f geghg eh "
+			font "VerySmall"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite bg33
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 76	4 76	423 76	431 76	-4 84	4 84	423 84	431 84	
+				0.0585938 0.695313	0.0664227 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664227 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723636	0.0664227 0.723636	0.0742188 0.723636	0.0820313 0.723636	0.0585938 0.731448	0.0664227 0.731448	0.0742188 0.731448	0.0820313 0.731448	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 76	4 76	423 76	431 76	-4 84	4 84	423 84	431 84	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 147.9	4 147.9	423 147.9	431 147.9	-4 155.9	4 155.9	423 155.9	431 155.9	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 219.8	4 219.8	423 219.8	431 219.8	-4 227.8	4 227.8	423 227.8	431 227.8	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 291.7	4 291.7	423 291.7	431 291.7	-4 299.7	4 299.7	423 299.7	431 299.7	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 363.6	4 363.6	423 363.6	431 363.6	-4 371.6	4 371.6	423 371.6	431 371.6	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 435.5	4 435.5	423 435.5	431 435.5	-4 443.5	4 443.5	423 443.5	431 443.5	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 507.4	4 507.4	423 507.4	431 507.4	-4 515.4	4 515.4	423 515.4	431 515.4	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 579.3	4 579.3	423 579.3	431 579.3	-4 587.3	4 587.3	423 587.3	431 587.3	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 651.2	4 651.2	423 651.2	431 651.2	-4 659.2	4 659.2	423 659.2	431 659.2	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 723.1	4 723.1	423 723.1	431 723.1	-4 731.1	4 731.1	423 731.1	431 731.1	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 795	4 795	423 795	431 795	-4 803	4 803	423 803	431 803	
+		}
+	}
+}
+
