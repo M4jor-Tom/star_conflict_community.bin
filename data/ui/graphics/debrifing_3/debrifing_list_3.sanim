@@ -1,0 +1,221 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Wed Jul 08 12:03:58 2020
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 9
+{
+	object stat
+	{
+		defaults
+		{
+			pos 8 10
+			opacity 255
+			color 0xffffffff
+			size 220 150
+			effect "ui\graphics\debrifing_3\debrif_stat_3_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object trophy
+	{
+		defaults
+		{
+			pos -10 488
+			opacity 255
+			color 0xffffffff
+			size 440 89
+			effect "ui\graphics\debrifing_3\debrif_trophy_3_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object player_list
+	{
+		defaults
+		{
+			pos -3.49256 204
+			opacity 255
+			color 0xffffffff
+			size 850 308
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object medal
+	{
+		defaults
+		{
+			pos 430 488
+			opacity 255
+			color 0xffffffff
+			size 440 89
+			effect "ui\graphics\debrifing_3\debrif_medal_3_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object debrif_stat2
+	{
+		defaults
+		{
+			pos 4.67757 130
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\debrifing_3\debrif_stat_4_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object debrif_stat3
+	{
+		defaults
+		{
+			pos 469 122
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\debrifing_3\debrif_stat_5_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ship_list
+	{
+		defaults
+		{
+			pos 297 3
+			opacity 255
+			color 0xffffffff
+			size 572 108
+			effect "ui\graphics\debrifing_3\debrif_stat_6_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object player_list2
+	{
+		defaults
+		{
+			pos -3.49256 209
+			opacity 255
+			color 0xffffffff
+			size 850 308
+			effect "ui\graphics\debrifing_3\deb_effectiv_list_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 890 600
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 80
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-5.99998 239.601	1.52588e-005 239.601	866.591 239.601	872.591 239.601	-5.99998 245.601	1.52588e-005 245.601	866.591 245.601	872.591 245.601	-5.99998 479.316	1.52588e-005 479.316	866.591 479.316	872.591 479.316	-5.99998 485.316	1.52588e-005 485.316	866.591 485.316	872.591 485.316	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26e
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-5.99998 510.492	1.52588e-005 510.492	414.5 510.492	420.5 510.492	-5.99998 516.492	1.52588e-005 516.492	414.5 516.492	420.5 516.492	-5.99998 613	1.52588e-005 613	414.5 613	420.5 613	-5.99998 619	1.52588e-005 619	414.5 619	420.5 619	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26e9
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-5.99998 120	1.52588e-005 120	866.591 120	872.591 120	-5.99998 126	1.52588e-005 126	866.591 126	872.591 126	-5.99998 208.959	1.52588e-005 208.959	866.591 208.959	872.591 208.959	-5.99998 214.959	1.52588e-005 214.959	866.591 214.959	872.591 214.959	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp17
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				427.5 510.492	433.5 510.492	866.591 510.492	872.591 510.492	427.5 516.492	433.5 516.492	866.591 516.492	872.591 516.492	427.5 613	433.5 613	866.591 613	872.591 613	427.5 619	433.5 619	866.591 619	872.591 619	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp18
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-5.99998 5.72205e-006	1.52588e-005 5.72205e-006	866.591 5.72205e-006	872.591 5.72205e-006	-5.99998 6.00001	1.52588e-005 6.00001	866.591 6.00001	872.591 6.00001	-5.99998 110	1.52588e-005 110	866.591 110	872.591 110	-5.99998 116	1.52588e-005 116	866.591 116	872.591 116	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+}
+
