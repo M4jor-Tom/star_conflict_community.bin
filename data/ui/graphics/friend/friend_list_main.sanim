@@ -1,0 +1,323 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by sergey_mitryaev
+//at Wed Sep 17 15:59:35 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 21
+
+objects 19
+{
+	object title_1
+	{
+		defaults
+		{
+			pos 10 2
+			opacity 255
+			color 0xffffffff
+			size 225 20
+			effect ""
+			alignment "LM"
+			sampleText "Добавить друга"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 604 454
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 582 3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 6 90
+			opacity 255
+			color 0xffffffff
+			size 470 322
+			effect "ui\graphics\friend\friend_list_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object filter_btn_1
+	{
+		defaults
+		{
+			pos 5 29
+			opacity 255
+			color 0xffffffff
+			size 116 26
+			effect "ui\graphics\friend\friend_filter_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object filter_btn_2
+	{
+		defaults
+		{
+			pos 124 29
+			opacity 255
+			color 0xffffffff
+			size 116 26
+			effect "ui\graphics\friend\friend_filter_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object filter_btn_3
+	{
+		defaults
+		{
+			pos 243 29
+			opacity 255
+			color 0xffffffff
+			size 116 26
+			effect "ui\graphics\friend\friend_filter_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object filter_btn_4
+	{
+		defaults
+		{
+			pos 362 29
+			opacity 255
+			color 0xffffffff
+			size 116 26
+			effect "ui\graphics\friend\friend_filter_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sort_1
+	{
+		defaults
+		{
+			pos 6 61
+			opacity 255
+			color 0xffffffff
+			size 221 21
+			effect "ui\graphics\friend\friend_sort_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sort_2
+	{
+		defaults
+		{
+			pos 303 61
+			opacity 255
+			color 0xffffffff
+			size 221 21
+			effect "ui\graphics\friend\friend_sort_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load
+	{
+		defaults
+		{
+			pos 239 193
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object filter_btn_5
+	{
+		defaults
+		{
+			pos 481 29
+			opacity 255
+			color 0xffffffff
+			size 116 26
+			effect "ui\graphics\friend\friend_filter_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 6 400
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 6 400
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_text"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chek_box
+	{
+		defaults
+		{
+			pos 6 429
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\chek_box"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object facedook_btn
+	{
+		defaults
+		{
+			pos 574 425
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\button\facebook_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object add_friend_btn_7
+	{
+		defaults
+		{
+			pos 388 425
+			opacity 255
+			color 0xffffffff
+			size 200 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object add_friend_btn_8
+	{
+		defaults
+		{
+			pos 228 425
+			opacity 255
+			color 0xffffffff
+			size 200 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object vk_btn
+	{
+		defaults
+		{
+			pos 548 425
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\button\vk_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	596.5 -0	602.5 -0	0 6	6 6	596.5 6	602.5 6	0 448	6 448	596.5 448	602.5 448	0 454	6 454	596.5 454	602.5 454	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 26	1 24	601.5 26	601.5 24	
+				0.0566406 0.145264	0.0546875 0.145264	0.0566406 0.151611	0.0546875 0.151611	
+			}
+		}
+		visible_on idle
+	}
+}
+
