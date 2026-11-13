@@ -1,0 +1,116 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Tue Nov 19 12:05:58 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object fps_info
+	{
+		defaults
+		{
+			pos -12 -3
+			opacity 255
+			color 0xffffffff
+			size 110 30
+			effect "ui\graphics\hangar\fps_info"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ping_info
+	{
+		defaults
+		{
+			pos 155 -3
+			opacity 255
+			color 0xffffffff
+			size 110 30
+			effect "ui\graphics\hangar\fps_info"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object region_info
+	{
+		defaults
+		{
+			pos 223 -3
+			opacity 255
+			color 0xffffffff
+			size 250 30
+			effect "ui\graphics\hangar\fps_region_info"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object cam_info
+	{
+		defaults
+		{
+			pos 393 -3
+			opacity 255
+			color 0xffffffff
+			size 250 30
+			effect "ui\graphics\hangar\fps_cam_info"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 760 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object time2
+	{
+		defaults
+		{
+			pos 11 3
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "18:20"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object time3
+	{
+		defaults
+		{
+			pos 93 3
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "18:20"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
