@@ -1,0 +1,83 @@
+﻿source_file  Y:/art/source/ui/graphics/help_control/help.ma
+//by sergey_mitryaev
+//at Wed Jun 20 15:07:57 2012
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim no_reputation
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 315 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on no_reputation
+	}
+	object btn_left
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\help_control\choice_btn_left"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on no_reputation
+	}
+	object btn_right
+	{
+		defaults
+		{
+			pos 290.018 -0
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\help_control\choice_btn_right"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on no_reputation
+	}
+	object text
+	{
+		defaults
+		{
+			pos 32.6433 3.54158
+			opacity 255
+			color 0xffffffff
+			size 250 20
+			effect ""
+			alignment "CM"
+			sampleText "fdsfjmup"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on no_reputation
+	}
+}
+
