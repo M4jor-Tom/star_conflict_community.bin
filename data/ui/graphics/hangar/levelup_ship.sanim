@@ -1,0 +1,288 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Thu Sep 13 16:51:17 2018
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 3
+{
+	object lvlup_text
+	{
+		defaults
+		{
+			pos 23 2
+			opacity 255
+			color 0xffffd332
+			size 200 20
+			effect ""
+			alignment "CM"
+			sampleText "Поднять уровень"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim over obj_op_col
+		{
+			7 7
+			255
+			255
+			255
+			255
+			255
+			255
+			212
+			0xffffd332
+			0xffffd332
+			0xffffd332
+			0xffffd332
+			0xffffd332
+			0xffffd332
+			0xffedd165
+		}
+		anim disable obj_opc_colc
+		{
+			1 1
+			127
+			0xffcccccc
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 248 44
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on disable
+	}
+	object syn_lvl
+	{
+		defaults
+		{
+			pos 68 21.726
+			opacity 255
+			color 0xffffffff
+			size 101 18
+			effect ""
+			alignment "CM"
+			sampleText "sdfsdfsd"
+			font "Tiny"
+		}
+		visible_on idle
+		anim over obj_op
+		{
+			7 
+			255
+			255
+			255
+			255
+			255
+			255
+			212
+		}
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+}
+
+sprites 6
+{
+	total_vertices 72
+
+	sprite m
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	6 -4	242 -4	252 -4	-4 6	6 6	242 6	252 6	-4 38	6 38	242 38	252 38	-4 48	6 48	242 48	252 48	
+				0.0585938 0.644531	0.0683594 0.644531	0.0722656 0.644531	0.0820313 0.644531	0.0585938 0.654297	0.0683594 0.654297	0.0722656 0.654297	0.0820313 0.654297	0.0585938 0.658203	0.0683594 0.658203	0.0722656 0.658203	0.0820313 0.658203	0.0585938 0.667969	0.0683594 0.667969	0.0722656 0.667969	0.0820313 0.667969	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on disable
+	}
+	sprite over
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	10 -0	238 -0	248 -0	0 10	10 10	238 10	248 10	0 33.2347	10 33.2347	238 33.2347	248 33.2347	0 43.2347	10 43.2347	238 43.2347	248 43.2347	
+				0.0585938 0.670898	0.0683594 0.670898	0.0722656 0.670898	0.0820313 0.670898	0.0585938 0.680664	0.0683594 0.680664	0.0722656 0.680664	0.0820313 0.680664	0.0585938 0.68457	0.0683594 0.68457	0.0722656 0.68457	0.0820313 0.68457	0.0585938 0.694336	0.0683594 0.694336	0.0722656 0.694336	0.0820313 0.694336	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	
+		}
+		visible_on disable
+	}
+	sprite over20
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	10 -0	238 -0	248 -0	0 10	10 10	238 10	248 10	0 33.2347	10 33.2347	238 33.2347	248 33.2347	0 43.2347	10 43.2347	238 43.2347	248 43.2347	
+				0.0849609 0.644531	0.0947266 0.644531	0.0986328 0.644531	0.108398 0.644531	0.0849609 0.654297	0.0947266 0.654297	0.0986328 0.654297	0.108398 0.654297	0.0849609 0.658203	0.0947266 0.658203	0.0986328 0.658203	0.108398 0.658203	0.0849609 0.667969	0.0947266 0.667969	0.0986328 0.667969	0.108398 0.667969	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	0x78ff9900	
+		}
+		visible_on disable
+	}
+	sprite lvlup_ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				5.07799 8.23881	32.3073 8.23881	5.07799 35.4682	32.3073 35.4682	
+				0.0262036 0.690266	0.0499683 0.690266	0.0262036 0.714031	0.0499683 0.714031	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_col
+		{
+			7
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xd4ffffff	0xd4ffffff	0xd4ffffff	0xd4ffffff	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite lvlup_ico2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				215.385 8.23881	242.615 8.23881	215.385 35.4682	242.615 35.4682	
+				0.0262036 0.690266	0.0499683 0.690266	0.0262036 0.714031	0.0499683 0.714031	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_col
+		{
+			7
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xd4ffffff	0xd4ffffff	0xd4ffffff	0xd4ffffff	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite m45
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-4 -4	6 -4	242 -4	252 -4	-4 6	6 6	242 6	252 6	-4 38	6 38	242 38	252 38	-4 48	6 48	242 48	252 48	
+				0.00195313 0.69043	0.0117188 0.69043	0.015625 0.69043	0.0253906 0.69043	0.00195313 0.700195	0.0117188 0.700195	0.015625 0.700195	0.0253906 0.700195	0.00195313 0.704102	0.0117188 0.704102	0.015625 0.704102	0.0253906 0.704102	0.00195313 0.713867	0.0117188 0.713867	0.015625 0.713867	0.0253906 0.713867	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		anim idle sp_col
+		{
+			7
+			0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	
+			0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	
+			0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	
+			0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+		}
+		anim over sp_col
+		{
+			7
+			0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	0x42424242	
+			0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	0xbcbcbcbc	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	0xffbcbcbc	
+			0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	0xff424242	
+			0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+		}
+		visible_on disable
+	}
+}
+
