@@ -1,0 +1,128 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Mon Sep 28 14:04:06 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object title30
+	{
+		defaults
+		{
+			pos 5 128
+			opacity 255
+			color 0xffffffff
+			size 110 20
+			effect ""
+			alignment "CM"
+			sampleText "фываыфпф"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object title31
+	{
+		defaults
+		{
+			pos 5 144
+			opacity 255
+			color 0xffffffff
+			size 110 20
+			effect ""
+			alignment "CM"
+			sampleText "2355346"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object title_1
+	{
+		defaults
+		{
+			pos 5 114
+			opacity 255
+			color 0xffffe200
+			size 110 20
+			effect ""
+			alignment "CM"
+			sampleText "1 место"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 120 170
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName376
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			vertices
+			{
+				25.332 94	94.668 94	25.332 168	94.668 168	
+				0.130859 0.302734	0.267578 0.302734	0.130859 0.447266	0.267578 0.447266	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+	sprite objectName381
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			vertices
+			{
+				11 22	109 22	11 124	109 124	
+				0.494141 0.283203	0.685547 0.283203	0.494141 0.482422	0.685547 0.482422	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
