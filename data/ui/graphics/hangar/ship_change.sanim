@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by Sergey
+//at Wed Dec 23 10:24:26 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico_ship
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			not_align
+			vertices_nc
+			{
+				35 7	105 7	35 77	105 77	
+				0.143357 0.528763	0.211716 0.528763	0.143357 0.597123	0.211716 0.597123	
+			}
+		}
+		visible_on idle
+	}
+}
+
