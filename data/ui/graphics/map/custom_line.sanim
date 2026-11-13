@@ -1,0 +1,483 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Mon Jan 26 14:13:19 2015
+
+base_res 1280 720
+
+animations 8
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim dis_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim dis_sel
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim dis_sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 9
+{
+	object map_ico
+	{
+		defaults
+		{
+			pos 4 -0
+			opacity 255
+			color 0xffffffff
+			size 88 50
+			effect "ui\graphics\map\custom_map_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_over obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel_over obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object info
+	{
+		defaults
+		{
+			pos 97.9984 21.4871
+			opacity 255
+			color 0xffcccccc
+			size 320 30
+			effect ""
+			alignment "LM"
+			sampleText "Dfedgg|ww fwfwf  wffwff"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_over obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel_over obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object name
+	{
+		defaults
+		{
+			pos 97.989 3
+			opacity 255
+			color 0xffffffff
+			size 270 40
+			effect ""
+			alignment "LM"
+			sampleText "Тренеровочные бои|fghfgndfg"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_over obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel_over obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 383 15.2691
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "АПАарулдлуджппп"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_over obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel_over obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 550 15.2691
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "100/29"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_over obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel_over obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object lock
+	{
+		defaults
+		{
+			pos 907 14
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\equip\slot_lock"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_over obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel_over obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 946 52
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		visible_on disable
+		visible_on dis_over
+		visible_on dis_sel
+		visible_on dis_sel_over
+	}
+	object type_game
+	{
+		defaults
+		{
+			pos 777.989 11
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect "ui\graphics\map\custom_type_game"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_over obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel_over obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object text_39
+	{
+		defaults
+		{
+			pos 642 15.2691
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "100/29"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_over obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel obj_opc
+		{
+			1 
+			76
+		}
+		anim dis_sel_over obj_opc
+		{
+			1 
+			76
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -1	8 -1	941.018 -1	947.018 -1	0 5	8 5	941.018 5	947.018 5	0 43.6172	8 43.6172	941.018 43.6172	947.018 43.6172	0 52	8 52	941.018 52	947.018 52	
+				0.135253 0.0151361	0.143074 0.0151361	0.15381 0.0151361	0.159669 0.0151361	0.135253 0.0209954	0.143074 0.0209954	0.15381 0.0209954	0.159669 0.0209955	0.135253 0.0317366	0.143074 0.0317366	0.15381 0.0317366	0.159669 0.0317366	0.135253 0.0395513	0.143074 0.0395513	0.15381 0.0395514	0.159669 0.0395513	
+				0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on over
+		anim sel_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+		}
+		anim dis_over sp_colc
+		{
+			1
+			0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+		}
+		anim dis_sel sp_colc
+		{
+			1
+			0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	
+		}
+		anim dis_sel_over sp_colc
+		{
+			1
+			0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	0xa3ffffff	
+		}
+	}
+	sprite over
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -1	8 -1	941.018 -1	947.018 -1	0 5	8 5	941.018 5	947.018 5	0 43.6172	8 43.6172	941.018 43.6172	947.018 43.6172	0 52	8 52	941.018 52	947.018 52	
+				0.0732378 0.00195313	0.0810593 0.00195313	0.115234 0.00195313	0.121094 0.00195313	0.0732376 0.00781244	0.0810593 0.00781238	0.115234 0.00781244	0.121094 0.0078125	0.0732376 0.0429676	0.0810592 0.0429676	0.115234 0.0429677	0.121094 0.0429677	0.0732376 0.0507824	0.0810592 0.0507824	0.115234 0.0507824	0.121094 0.0507824	
+				0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	0xc2000000	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim over sp_colc
+		{
+			1
+			0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	
+		}
+		anim sel_over sp_colc
+		{
+			1
+			0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	
+		}
+		anim disable sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim dis_over sp_colc
+		{
+			1
+			0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	
+		}
+		anim dis_sel sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim dis_sel_over sp_colc
+		{
+			1
+			0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	
+		}
+	}
+}
+
