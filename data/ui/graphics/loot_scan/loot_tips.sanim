@@ -1,0 +1,58 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 15:34:41 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object tips_1
+	{
+		defaults
+		{
+			pos 1.89554 2.14699
+			opacity 255
+			color 0xffffffff
+			size 400 30
+			effect ""
+			alignment "CM"
+			sampleText "Нажмите  ESC чтоб  пропустить"
+			font "Small"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName189
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-71.3512 2.44316	467.322 2.44316	-71.3512 38.9146	467.322 38.9146	
+				0.424736 0.689355	0.44831 0.689355	0.424736 0.711036	0.44831 0.711036	
+				0x3b3b3b3b	0x3b3b3b3b	0x3b3b3b3b	0x3b3b3b3b	
+			}
+		}
+		visible_on idle
+	}
+}
+
