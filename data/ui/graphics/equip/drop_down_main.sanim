@@ -1,0 +1,95 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/drop_down.ma"
+//by sergey_mitryaev
+//at Wed May 15 14:23:08 2013
+
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object drop_down_btn
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 390 22
+			effect "ui\graphics\equip\drop_down_btn"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object list
+	{
+		defaults
+		{
+			pos -0.63286 25.0944
+			opacity 255
+			color 0xffffffff
+			size 20 22
+			effect "ui\graphics\equip\drop_down_list"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object drop_down_input
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 22
+			effect "ui\graphics\equip\drop_down_input"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 296 447
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object prod_icon
+	{
+		defaults
+		{
+			pos 2.95674 4.01704
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\equip\prod_sml_icon"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
