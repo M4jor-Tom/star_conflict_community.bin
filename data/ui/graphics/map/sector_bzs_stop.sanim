@@ -1,0 +1,59 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Wed Mar 11 15:44:40 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim zone_off
+	{
+		mode once
+		cycle_time 1
+	}
+	anim zone_on
+	{
+		mode once
+		cycle_time 1
+	}
+	anim zone_war
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dfg11
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				0 -0	20 -0	0 20	20 20	
+				0.273438 0.230469	0.351563 0.230469	0.273438 0.308594	0.351563 0.308594	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on zone_off
+		anim zone_on sp_colc
+		{
+			1
+			0xff07e800	0xff07e800	0xff07e800	0xff07e800	
+		}
+		anim zone_war sp_colc
+		{
+			1
+			0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+		}
+	}
+}
+
