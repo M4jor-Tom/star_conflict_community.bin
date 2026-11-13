@@ -1,0 +1,68 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Thu Dec 05 11:33:22 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object icon_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 580 40
+			effect "ui\graphics\equip\agen_icon_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object icon_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 580 40
+			effect "ui\graphics\equip\agen_icon_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_alpha0.tif"
+			vertices_nc
+			{
+				2.67029e-005 -0.999999	50 -0.999999	2.67029e-005 49	50 49	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
