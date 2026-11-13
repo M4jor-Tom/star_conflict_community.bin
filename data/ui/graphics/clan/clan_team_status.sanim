@@ -1,0 +1,75 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Wed Dec 19 12:21:18 2012
+
+
+animations 2
+{
+	anim online
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim offline
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 1 -1
+			opacity 255
+			color 0xffffffff
+			size 220 24
+			effect ""
+			alignment "CM"
+			font "VerySmall_outl2"
+		}
+		visible_on online
+		visible_on offline
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 1 -0
+			opacity 255
+			color 0xff00ff00
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "wdffeegegege"
+			font "Tiny"
+		}
+		visible_on online
+		anim offline obj_colc
+		{
+			1
+			0xffff2700
+		}
+	}
+	object on_off
+	{
+		defaults
+		{
+			pos 203 4
+			opacity 255
+			color 0xffffffff
+			size 12 12
+			effect "ui\graphics\friend\friend_line_on_off"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+	}
+}
+
