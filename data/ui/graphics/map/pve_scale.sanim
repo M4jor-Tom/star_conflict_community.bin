@@ -1,0 +1,364 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Tue Dec 10 15:52:42 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 23
+
+objects 17
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 100
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_1
+	{
+		defaults
+		{
+			pos 1 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_2
+	{
+		defaults
+		{
+			pos 34 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_3
+	{
+		defaults
+		{
+			pos 65 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_4
+	{
+		defaults
+		{
+			pos 95 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_5
+	{
+		defaults
+		{
+			pos 126 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_6
+	{
+		defaults
+		{
+			pos 157 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_7
+	{
+		defaults
+		{
+			pos 187 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_8
+	{
+		defaults
+		{
+			pos 219 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_9
+	{
+		defaults
+		{
+			pos 250 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_10
+	{
+		defaults
+		{
+			pos 280 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_11
+	{
+		defaults
+		{
+			pos 311 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_12
+	{
+		defaults
+		{
+			pos 342 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_13
+	{
+		defaults
+		{
+			pos 372 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_14
+	{
+		defaults
+		{
+			pos 404 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_15
+	{
+		defaults
+		{
+			pos 434 42
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect "ui\graphics\map\pve_scale_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 69 3
+			opacity 255
+			color 0xffff9a00
+			size 300 20
+			effect ""
+			alignment "CT"
+			sampleText "Fjhgsjkhf dkhdkg kjdgk j"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 6
+{
+	total_vertices 24
+
+	sprite myself5
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				0 31.25	-10 31.25	0 86.25	-10 86.25	
+				0.787109 0.0996094	0.888672 0.0996094	0.787109 0.0605469	0.888672 0.0605469	
+				0x80808080	0x80808080	0x80808080	0x80808080	
+			}
+		}
+		visible_on idle
+	}
+	sprite myself4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				456.5 31.25	447.5 31.25	456.5 86.25	447.5 86.25	
+				0.888672 0.0996094	0.787109 0.0996094	0.888672 0.0605469	0.787109 0.0605469	
+				0x80808080	0x80808080	0x80808080	0x80808080	
+			}
+		}
+		visible_on idle
+	}
+	sprite myself3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				235 31.25	447.5 31.25	235 86.25	447.5 86.25	
+				0.888672 0.0996094	0.787109 0.0996094	0.888672 0.0605469	0.787109 0.0605469	
+				0x80808080	0x80808080	0x80808080	0x80808080	
+			}
+		}
+		visible_on idle
+	}
+	sprite myself
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				0 31.25	235 31.25	0 86.25	235 86.25	
+				0.787109 0.0996094	0.888672 0.0996094	0.787109 0.0605469	0.888672 0.0605469	
+				0x80808080	0x80808080	0x80808080	0x80808080	
+			}
+		}
+		visible_on idle
+	}
+	sprite myself2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				4 58.75	444 58.75	4 86.75	444 86.75	
+				0.262695 0.992188	0.692383 0.992188	0.262695 0.953125	0.692383 0.953125	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sdsd616
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/login_screen.tif"
+			blend color_add
+			vertices
+			{
+				10.4373 -47.9743	434.984 -47.9743	10.4373 71.9743	434.984 71.9743	
+				0.263672 0.765625	0.4375 0.765625	0.263672 0.976563	0.4375 0.976563	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+}
+
