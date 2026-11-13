@@ -1,0 +1,177 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by Sergey_Mitryaev
+//at Fri Feb 16 13:55:20 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 10
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 194 138
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 194 138
+			effect "ui\graphics\atlas\atlas_module_slot_bg"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object module_ico
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 194 138
+			effect "ui\graphics\atlas\atlas_module_ico"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object lvl
+	{
+		defaults
+		{
+			pos 2.76822 3.8002
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect ""
+			alignment "CM"
+			sampleText "333"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object lvl_olor
+	{
+		defaults
+		{
+			pos 61 3.8002
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect ""
+			alignment "CM"
+			sampleText "lvl_olor"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 320
+			effect "ui\graphics\atlas\atlas_module_slot_over"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bg_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\atlas\atlas_module_slot_bg_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object decor
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 194 138
+			effect "ui\graphics\atlas\atlas_module_slot_bg_2_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object over1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 194 138
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bg_3
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\atlas\atlas_module_slot_bg_3"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -0	10.6667 -0	183.333 -0	194 -0	0 10.6667	10.6667 10.6667	183.333 10.6667	194 10.6667	0 127.333	10.6667 127.333	183.333 127.333	194 127.333	0 138	10.6667 138	183.333 138	194 138	
+				0.695313 0.847656	0.716146 0.847656	0.736979 0.847656	0.757813 0.847656	0.695313 0.86849	0.716146 0.86849	0.736979 0.86849	0.757813 0.86849	0.695313 0.889323	0.716146 0.889323	0.736979 0.889323	0.757813 0.889323	0.695313 0.910156	0.716146 0.910156	0.736979 0.910156	0.757813 0.910156	
+				0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
