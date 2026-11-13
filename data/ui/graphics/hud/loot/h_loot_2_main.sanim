@@ -1,0 +1,134 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Wed May 20 17:15:50 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 230
+			effect ""
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 0 22
+			opacity 255
+			color 0xffffffff
+			size 158 50
+			effect "ui\graphics\hud\loot\h_loot_2_line"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 0 72
+			opacity 255
+			color 0xffffffff
+			size 158 50
+			effect "ui\graphics\hud\loot\h_loot_2_line"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 0 124
+			opacity 255
+			color 0xffffffff
+			size 158 50
+			effect "ui\graphics\hud\loot\h_loot_2_line"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 0 174
+			opacity 255
+			color 0xffffffff
+			size 158 50
+			effect "ui\graphics\hud\loot\h_loot_2_line"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 0 18
+			opacity 255
+			color 0xffffffff
+			size 210 210
+			effect "ui\graphics\hud\loot\h_loot_2_bg"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object self_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 20
+			effect ""
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object title4
+	{
+		defaults
+		{
+			pos 4 -0
+			opacity 255
+			color 0xffffffff
+			size 200 18
+			effect ""
+			alignment "RM"
+			sampleText "Трюм: 0/16 (I)"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
