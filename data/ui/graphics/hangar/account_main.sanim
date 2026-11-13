@@ -1,0 +1,196 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Fri Mar 29 12:00:43 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 10
+{
+	object gold_val
+	{
+		defaults
+		{
+			pos 93.3456 23.7277
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect ""
+			alignment "RM"
+			sampleText "450"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object gold_exch_val
+	{
+		defaults
+		{
+			pos 94.1531 47.4918
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect ""
+			alignment "RM"
+			sampleText "120"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn2
+	{
+		defaults
+		{
+			pos 173.159 22.8874
+			opacity 255
+			color 0xffffffff
+			size 150 21
+			effect "ui\graphics\hangar\account_gold_buy"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn3
+	{
+		defaults
+		{
+			pos 173.159 45.8903
+			opacity 255
+			color 0xffffffff
+			size 150 21
+			effect "ui\graphics\hangar\account_gold_exch"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 360 70
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load_text_2
+	{
+		defaults
+		{
+			pos 79.327 27.8964
+			opacity 255
+			color 0xffffffff
+			size 64 8
+			effect "ui\graphics\hangar\loading_text"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object load_text_3
+	{
+		defaults
+		{
+			pos 80.1344 52
+			opacity 255
+			color 0xffffffff
+			size 64 8
+			effect "ui\graphics\hangar\loading_text"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object friend_btn
+	{
+		defaults
+		{
+			pos 150 -0
+			opacity 255
+			color 0xffffffff
+			size 55 21
+			effect "ui\graphics\friend\friend_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object voiting_btn
+	{
+		defaults
+		{
+			pos 206 -0
+			opacity 255
+			color 0xffffffff
+			size 55 21
+			effect "ui\graphics\friend\voiting_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object mail_btn
+	{
+		defaults
+		{
+			pos 94 -0
+			opacity 255
+			color 0xffffffff
+			size 55 21
+			effect "ui\graphics\friend\voiting_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName91
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				147.815 44.3019	172.815 44.3019	147.815 67.3019	172.815 67.3019	
+				0.274308 0.0803716	0.298722 0.0803716	0.274308 0.102833	0.298722 0.102833	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName92
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				147.741 21.502	172.741 21.502	147.741 44.502	172.741 44.502	
+				0.273559 0.0542923	0.297973 0.0542923	0.273559 0.0767533	0.297973 0.0767533	
+			}
+		}
+		visible_on idle
+	}
+}
+
