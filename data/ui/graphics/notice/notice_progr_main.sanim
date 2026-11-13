@@ -1,0 +1,93 @@
+﻿source_file "Y:/art/source/ui/graphics/notice/notice.ma"
+//by sergey_mitryaev
+//at Tue Apr 14 13:53:36 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object text
+	{
+		defaults
+		{
+			pos 49 5
+			opacity 255
+			color 0xffffffff
+			size 78 15
+			effect ""
+			alignment "RM"
+			sampleText "2030\2333"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 382 30
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 130 8
+			opacity 255
+			color 0xffffffff
+			size 220 15
+			effect "ui\graphics\notice\notice_progr"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object present
+	{
+		defaults
+		{
+			pos 353 -3
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\notice\notice_present"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color
+	{
+		defaults
+		{
+			pos 49 23
+			opacity 255
+			color 0xffff9a00
+			size 78 15
+			effect ""
+			alignment "LM"
+			sampleText "2030\2333"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
