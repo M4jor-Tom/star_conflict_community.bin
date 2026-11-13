@@ -1,0 +1,98 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Wed Jan 15 11:43:30 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 4 3.7
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 4 28
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_5"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 340 466
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 321 4
+			opacity 255
+			color 0xffffffff
+			size 20 460
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 4 153
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_6"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 4 192
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\login_screen\drop_down_2_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
