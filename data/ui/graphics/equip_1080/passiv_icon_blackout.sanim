@@ -1,0 +1,66 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Thu Nov 21 16:21:28 2019
+
+base_res 1920 1080
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim cross
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	55 -0	61 -0	0 6	6 6	55 6	61 6	0 54	6 54	55 54	61 54	0 60	6 60	55 60	61 60	
+				0.325195 0.0546875	0.331055 0.0546875	0.370117 0.0546875	0.375977 0.0546875	0.325195 0.0605469	0.331055 0.0605469	0.370117 0.0605469	0.375977 0.0605469	0.325195 0.0996094	0.331055 0.0996094	0.370117 0.0996094	0.375977 0.0996094	0.325195 0.105469	0.331055 0.105469	0.370117 0.105469	0.375977 0.105469	
+				0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	0x8a8a8a8a	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on cross
+	}
+	sprite cross
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				3.843 41.843	18.157 41.843	3.843 56.157	18.157 56.157	
+				0.370821 0.185276	0.382869 0.185276	0.370821 0.197324	0.382869 0.197324	
+			}
+		}
+		visible_on cross
+	}
+}
+
