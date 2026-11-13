@@ -1,0 +1,103 @@
+﻿source_file  Y:/art/source/ui/graphics/skills/skills.ma
+//by sergey_mitryaev
+//at Mon Jun 25 16:35:44 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 8.33199 14.5524
+			opacity 255
+			color 0xffffffff
+			size 660 190
+			effect "ui\graphics\skills\skills_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 8.33199 178.07
+			opacity 255
+			color 0xffffffff
+			size 660 190
+			effect "ui\graphics\skills\skills_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 8.33199 343.476
+			opacity 255
+			color 0xffffffff
+			size 660 190
+			effect "ui\graphics\skills\skills_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_h
+	{
+		defaults
+		{
+			pos 8.00353 552.769
+			opacity 255
+			color 0xffffffff
+			size 661 10
+			effect "ui\graphics\scroll\scroll_h_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0.305495 0.165477
+			opacity 255
+			color 0xffffffff
+			size 672 576
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object area_mask
+	{
+		defaults
+		{
+			pos -2.182 -0
+			opacity 255
+			color 0xffffffff
+			size 682 600
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
