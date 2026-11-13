@@ -1,0 +1,85 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud.ma
+//by sega
+//at Fri Aug 19 11:48:21 2011
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hit
+	{
+		mode once
+		cycle_time 0.5
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object progress
+	{
+		defaults
+		{
+			pos 32.7712 2.30783
+			opacity 255
+			color 0xffff0f00
+			size 112 11
+			effect "ui\graphics\hud\enemy_info_progress"
+			alignment "CM"
+		}
+		visible_on idle
+		anim hit obj_col
+		{
+			2
+			0xffffffff
+			0xffff0f00
+		}
+	}
+	object title
+	{
+		defaults
+		{
+			pos -0.504547 -0
+			opacity 255
+			color 0xffff0017
+			size 30 12
+			effect ""
+			alignment "RM"
+			sampleText "ARM"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hit obj_col
+		{
+			2
+			0xffffffff
+			0xffff0017
+		}
+	}
+	object value
+	{
+		defaults
+		{
+			pos 147.47 -0
+			opacity 255
+			color 0xffff0017
+			size 100 12
+			effect ""
+			alignment "LM"
+			sampleText "400/550"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hit obj_col
+		{
+			2
+			0xffffffff
+			0xffff0017
+		}
+	}
+}
+
