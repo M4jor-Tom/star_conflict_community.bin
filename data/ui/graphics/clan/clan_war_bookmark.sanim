@@ -1,0 +1,174 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Feb 19 17:49:43 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 950 520
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object race
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 930 74
+			effect "ui\graphics\clan\clan_race"
+			alignment "LB"
+			sampleText "HDhehjg jberjb j borwejh"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object war_list
+	{
+		defaults
+		{
+			pos 0 75
+			opacity 255
+			color 0xffffffff
+			size 950 320
+			effect "ui\graphics\clan\clan_war_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object runk_corp
+	{
+		defaults
+		{
+			pos -2 437.35
+			opacity 255
+			color 0xffffffff
+			size 350 20
+			effect ""
+			alignment "LM"
+			sampleText "Рейтинг корпорации неопределен"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_42
+	{
+		defaults
+		{
+			pos 375 435.35
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object iridium
+	{
+		defaults
+		{
+			pos 331 466.35
+			opacity 255
+			color 0xffffffff
+			size 250 20
+			effect ""
+			alignment "CM"
+			sampleText "500000000"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object durability_title
+	{
+		defaults
+		{
+			pos 331 441.35
+			opacity 255
+			color 0xffffffff
+			size 250 20
+			effect ""
+			alignment "CM"
+			sampleText "прочность"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object durability_count
+	{
+		defaults
+		{
+			pos 331 466.35
+			opacity 255
+			color 0xffffffff
+			size 250 20
+			effect ""
+			alignment "CM"
+			sampleText "500000000"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 396.773 162.124
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp213
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-5.01409 -5.5	0.985906 -5.5	919.014 -5.5	925.014 -5.5	-5.01409 0.5	0.985906 0.5	919.014 0.5	925.014 0.5	-5.01409 422	0.985906 422	919.014 422	925.014 422	-5.01409 428	0.985906 428	919.014 428	925.014 428	
+				0.272536 0.0507218	0.272536 0.0448626	0.272536 0.00890714	0.272536 0.00304788	0.266677 0.0507219	0.266677 0.0448626	0.266677 0.00890732	0.266677 0.00304776	0.229545 0.0507219	0.229545 0.0448625	0.229545 0.00890702	0.229545 0.00304776	0.223686 0.0507219	0.223686 0.0448625	0.223686 0.0089072	0.223686 0.00304776	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
