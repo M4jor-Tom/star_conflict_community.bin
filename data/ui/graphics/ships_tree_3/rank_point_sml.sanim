@@ -1,0 +1,511 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey
+//at Fri Oct 07 19:02:29 2016
+
+base_res 1280 720
+
+animations 12
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim op_14
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim cl_14
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim op_12
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim cl_12
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim op_10
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim cl_10
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim op_8
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim cl_8
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim op_6
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim cl_6
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		visible_on cl_14
+		visible_on op_12
+		visible_on cl_12
+		visible_on op_10
+		visible_on cl_10
+		visible_on op_8
+		visible_on cl_8
+		visible_on op_6
+		visible_on cl_6
+	}
+	object center
+	{
+		defaults
+		{
+			pos 11 10
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		visible_on cl_14
+		visible_on op_12
+		visible_on cl_12
+		visible_on op_10
+		visible_on cl_10
+		visible_on op_8
+		visible_on cl_8
+		visible_on op_6
+		visible_on cl_6
+	}
+}
+
+sprites 11
+{
+	total_vertices 44
+
+	sprite que259
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3.tif"
+			vertices
+			{
+				-3.00003 -3.99994	25 -3.99994	-3.00003 24.0001	25 24.0001	
+				0.945313 0.144531	1 0.144531	0.945313 0.199219	1 0.199219	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim off sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim op_14 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim cl_14 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim op_12 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim cl_12 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim op_10 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim cl_10 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim op_8 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim cl_8 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim op_6 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim cl_6 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite que314
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-3 -4	25 -4	-3 24	25 24	
+				0.0302734 0.00390625	0.0576172 0.00390625	0.0302734 0.0585938	0.0576172 0.0585938	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on off
+		anim op_14 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on cl_14
+		visible_on op_12
+		visible_on cl_12
+		visible_on op_10
+		visible_on cl_10
+		visible_on op_8
+		visible_on cl_8
+		visible_on op_6
+		visible_on cl_6
+	}
+	sprite que315
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-3 -4	25 -4	-3 24	25 24	
+				0.0546875 0.00390625	0.0820313 0.00390625	0.0546875 0.0585938	0.0820313 0.0585938	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		anim cl_14 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on op_12
+		visible_on cl_12
+		visible_on op_10
+		visible_on cl_10
+		visible_on op_8
+		visible_on cl_8
+		visible_on op_6
+		visible_on cl_6
+	}
+	sprite que316
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-2 -4	26 -4	-2 24	26 24	
+				0.146484 0.0136719	0.173828 0.0136719	0.146484 0.0683594	0.173828 0.0683594	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		visible_on cl_14
+		anim op_12 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on cl_12
+		visible_on op_10
+		visible_on cl_10
+		visible_on op_8
+		visible_on cl_8
+		visible_on op_6
+		visible_on cl_6
+	}
+	sprite que317
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-2 -4	26 -4	-2 24	26 24	
+				0.174805 0.0136719	0.202148 0.0136719	0.174805 0.0683594	0.202148 0.0683594	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		visible_on cl_14
+		visible_on op_12
+		anim cl_12 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on op_10
+		visible_on cl_10
+		visible_on op_8
+		visible_on cl_8
+		visible_on op_6
+		visible_on cl_6
+	}
+	sprite que318
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-3 -4	25 -4	-3 24	25 24	
+				0.290039 0.0078125	0.317383 0.0078125	0.290039 0.0625	0.317383 0.0625	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		visible_on cl_14
+		visible_on op_12
+		visible_on cl_12
+		visible_on op_10
+		anim cl_10 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on op_8
+		visible_on cl_8
+		visible_on op_6
+		visible_on cl_6
+	}
+	sprite que319
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-3 -4	25 -4	-3 24	25 24	
+				0.262695 0.015625	0.290039 0.015625	0.262695 0.0703125	0.290039 0.0703125	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		visible_on cl_14
+		visible_on op_12
+		visible_on cl_12
+		anim op_10 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on cl_10
+		visible_on op_8
+		visible_on cl_8
+		visible_on op_6
+		visible_on cl_6
+	}
+	sprite que320
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-3 -4	25 -4	-3 24	25 24	
+				0.40625 0.0136719	0.433594 0.0136719	0.40625 0.0683594	0.433594 0.0683594	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		visible_on cl_14
+		visible_on op_12
+		visible_on cl_12
+		visible_on op_10
+		visible_on cl_10
+		visible_on op_8
+		anim cl_8 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on op_6
+		visible_on cl_6
+	}
+	sprite que321
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-3 -4	25 -4	-3 24	25 24	
+				0.382813 0.0136719	0.410156 0.0136719	0.382813 0.0683594	0.410156 0.0683594	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		visible_on cl_14
+		visible_on op_12
+		visible_on cl_12
+		visible_on op_10
+		visible_on cl_10
+		anim op_8 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on cl_8
+		visible_on op_6
+		visible_on cl_6
+	}
+	sprite que322
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-3 -4	25 -4	-3 24	25 24	
+				0.520508 0.0195313	0.547852 0.0195313	0.520508 0.0742188	0.547852 0.0742188	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		visible_on cl_14
+		visible_on op_12
+		visible_on cl_12
+		visible_on op_10
+		visible_on cl_10
+		visible_on op_8
+		visible_on cl_8
+		visible_on op_6
+		anim cl_6 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que323
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-3 -4	25 -4	-3 24	25 24	
+				0.494141 0.0195313	0.521484 0.0195313	0.494141 0.0742188	0.521484 0.0742188	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on off
+		visible_on op_14
+		visible_on cl_14
+		visible_on op_12
+		visible_on cl_12
+		visible_on op_10
+		visible_on cl_10
+		visible_on op_8
+		visible_on cl_8
+		anim op_6 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on cl_6
+	}
+}
+
