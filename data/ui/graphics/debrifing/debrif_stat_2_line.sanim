@@ -1,0 +1,143 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Wed Mar 05 17:06:25 2014
+
+
+animations 3
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim premium
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object title
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 260 20
+			effect ""
+			alignment "LB"
+			sampleText "С премиумом вы бы получили (х2):"
+			font "Tiny"
+		}
+		visible_on idle
+		anim premium obj_colc
+		{
+			1
+			0xfffece05
+		}
+		anim sel obj_colc
+		{
+			1
+			0xff838fd4
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on premium
+		visible_on sel
+	}
+	object vol_1
+	{
+		defaults
+		{
+			pos 270 -0
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect "ui\graphics\debrifing\debrif_stat_reput"
+			alignment "RB"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim premium obj_colc
+		{
+			1
+			0xfffdce02
+		}
+		anim sel obj_colc
+		{
+			1
+			0xff828fd1
+		}
+	}
+	object vol_3
+	{
+		defaults
+		{
+			pos 467 -0
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect "ui\graphics\debrifing\debrif_stat_reput"
+			alignment "RB"
+			sampleText "10000"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim premium obj_colc
+		{
+			1
+			0xffffcf02
+		}
+		anim sel obj_colc
+		{
+			1
+			0xff8291d1
+		}
+	}
+	object vol_2
+	{
+		defaults
+		{
+			pos 413.89 -0
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect "ui\graphics\debrifing\debrif_stat_reput"
+			alignment "RB"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim premium obj_colc
+		{
+			1
+			0xfffdcf02
+		}
+		anim sel obj_colc
+		{
+			1
+			0xff828fd1
+		}
+	}
+}
+
