@@ -1,0 +1,165 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Thu Nov 16 16:30:42 2017
+
+base_res 1920 1080
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 0.6
+	}
+	anim press
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 40 30
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on select_over
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite we27
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				5.51523 1.78158	35.5152 1.78158	5.51523 31.7816	35.5152 31.7816	
+				0.482422 0.703125	0.541016 0.703125	0.482422 0.761719	0.541016 0.761719	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on select_over
+	}
+	sprite we71
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-5 -8	45 -8	-5 42	45 42	
+				0.578125 0.681641	0.675781 0.681641	0.578125 0.779297	0.675781 0.779297	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim select sp_colc
+		{
+			1
+			0xceffffff	0xceffffff	0xceffffff	0xceffffff	
+		}
+		anim select_over sp_colc
+		{
+			1
+			0xceffffff	0xceffffff	0xceffffff	0xceffffff	
+		}
+	}
+	sprite we32
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0.51523 -0.21842	40.5152 -0.21842	0.51523 29.7816	40.5152 29.7816	
+				0.912109 0.675781	0.990234 0.675781	0.912109 0.734375	0.990234 0.734375	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on select_over
+	}
+	sprite we8_24
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-10.8088 -13.757	52.5074 -13.757	-10.8088 46.6342	52.5074 46.6342	
+				0.276612 0.0106654	0.3562 0.0106654	0.276612 0.0869908	0.3562 0.0869908	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x61373e46	0x61373e46	0x61373e46	0x61373e46	
+		}
+		visible_on press
+		anim select sp_colc
+		{
+			1
+			0x180d0f11	0x180d0f11	0x180d0f11	0x180d0f11	
+		}
+		anim select_over sp_colc
+		{
+			1
+			0x61373e46	0x61373e46	0x61373e46	0x61373e46	
+		}
+	}
+}
+
