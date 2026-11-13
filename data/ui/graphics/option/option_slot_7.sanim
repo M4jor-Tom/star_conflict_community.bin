@@ -1,0 +1,61 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Wed Aug 27 13:56:48 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 600 60
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 110.74 34.8317
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\shop\buy_btn6"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 59 13
+			opacity 255
+			color 0xffff9a00
+			size 300 16
+			effect ""
+			alignment "CM"
+			sampleText "Залогиничтся"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
