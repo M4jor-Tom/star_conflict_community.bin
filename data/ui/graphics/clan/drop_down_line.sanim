@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Tue Jul 01 10:38:30 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos 3 -0
+			opacity 255
+			color 0xffcccccc
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "F00000"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim select obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 0.0159584
+			opacity 255
+			color 0xff88b5ff
+			size 290 20
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim select obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dfeee826
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.0749512 3.77954	285.196 3.77954	0.0749512 19.9762	285.196 19.9762	
+				0.0411997 0.118545	0.0411997 0.133544	0.0354965 0.118545	0.0354965 0.133544	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on select
+	}
+}
+
