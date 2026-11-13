@@ -1,0 +1,200 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Mon Jun 17 14:23:13 2013
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_inactiv
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 340 96
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 246 2
+			opacity 255
+			color 0xffffffff
+			size 94 94
+			effect "ui\graphics\shop\grid_sale"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 0 14
+			opacity 255
+			color 0xffffffff
+			size 339 69
+			effect "ui\graphics\shop\chest_icon"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object product_name
+	{
+		defaults
+		{
+			pos 6 1.77636e-014
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "АКМ Новейшая разработка"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object price
+	{
+		defaults
+		{
+			pos 236 73
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 104 129
+			effect "ui\graphics\shop\chest_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 104 129
+			effect "ui\graphics\shop\chest_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 90	6 90	334 90	340 90	0 96	6 96	334 96	340 96	
+				0.228548 0.202143	0.234408 0.202143	0.273438 0.202143	0.279297 0.202143	0.228548 0.208002	0.234408 0.208002	0.273438 0.208002	0.279297 0.208002	0.228548 0.24707	0.234408 0.24707	0.273438 0.24707	0.279297 0.24707	0.228548 0.25293	0.234408 0.25293	0.273438 0.25293	0.279297 0.25293	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 90	6 90	334 90	340 90	0 96	6 96	334 96	340 96	
+				0.123001 0.00196683	0.12886 0.00196683	0.163856 0.00196683	0.169715 0.00196683	0.123001 0.00782621	0.12886 0.00782621	0.163856 0.00782621	0.169715 0.00782621	0.123001 0.0449466	0.12886 0.0449466	0.163856 0.0449466	0.169715 0.0449466	0.123001 0.050806	0.12886 0.050806	0.163856 0.050806	0.169715 0.050806	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+}
+
