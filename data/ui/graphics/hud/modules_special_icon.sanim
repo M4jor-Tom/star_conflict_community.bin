@@ -1,0 +1,140 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by Sergey_Mitryaev
+//at Fri Jun 23 11:03:42 2017
+
+base_res 1280 720
+
+animations 7
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim empty
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim actitvity_on
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	66 -0	0 64	66 64	
+				0.126036 0.329073	0.190489 0.329073	0.126036 0.391573	0.190489 0.391573	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on active
+		visible_on inactive
+		visible_on sel_inactive
+		anim empty sp_colc
+		{
+			1
+			0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+		}
+		visible_on actitvity_on
+	}
+	sprite select
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	65 -0	0 64	65 64	
+				0.125866 0.32902	0.189342 0.32902	0.125866 0.39152	0.189342 0.39152	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on select
+		visible_on sel_inactive
+		visible_on actitvity_on
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-4.70694 22.095	37.2931 22.095	-4.70694 64.095	37.2931 64.095	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on active
+		visible_on inactive
+		visible_on sel_inactive
+		anim empty sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		visible_on actitvity_on
+	}
+	sprite inactive
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	65 -0	0 64	65 64	
+				0.125856 0.328951	0.189332 0.328951	0.125856 0.391451	0.189332 0.391451	
+				0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	
+			}
+		}
+		visible_on inactive
+		visible_on sel_inactive
+	}
+}
+
