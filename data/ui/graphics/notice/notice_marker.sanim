@@ -1,0 +1,98 @@
+﻿source_file "Y:/art/source/ui/graphics/notice/notice.ma"
+//by sergey_mitryaev
+//at Tue Sep 25 15:13:37 2012
+
+
+animations 7
+{
+	anim col_1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim col_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim col_3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim col_4
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim col_5
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim col_6
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim col_7
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite sp_12
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	280 -0	0 50	280 50	
+				0.726417 0.296011	0.999855 0.296011	0.726417 0.344839	0.999855 0.344839	
+				0xb2ff9300	0xb2ff9300	0xb2ff9300	0xb2ff9300	
+			}
+		}
+		visible_on col_1
+		anim col_2 sp_colc
+		{
+			1
+			0xb200b3ff	0xb200b3ff	0xb200b3ff	0xb200b3ff	
+		}
+		anim col_3 sp_colc
+		{
+			1
+			0xb23a3a3a	0xb23a3a3a	0xb23a3a3a	0xb23a3a3a	
+		}
+		anim col_4 sp_colc
+		{
+			1
+			0xb2000000	0xb2000000	0xb2000000	0xb2000000	
+		}
+		anim col_5 sp_colc
+		{
+			1
+			0xff6e6e6e	0xff6e6e6e	0xff6e6e6e	0xff6e6e6e	
+		}
+		anim col_6 sp_colc
+		{
+			1
+			0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+		}
+		anim col_7 sp_colc
+		{
+			1
+			0xff96ff55	0xff96ff55	0xff96ff55	0xff96ff55	
+		}
+	}
+}
+
