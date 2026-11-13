@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by sergey_mitryaev
+//at Thu Mar 27 11:41:18 2014
+
+
+animations 2
+{
+	anim idle_1
+	{
+		mode looped
+		cycle_time 1.5
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object text_1
+	{
+		defaults
+		{
+			pos 7 5
+			opacity 178
+			color 0xffffffff
+			size 266 56
+			effect ""
+			alignment "LT"
+			sampleText "DDdsfjmup|rber|REBb"
+			font "Tiny"
+		}
+		visible_on idle_1
+		visible_on idle_2
+	}
+	object text_4
+	{
+		defaults
+		{
+			pos 7 67
+			opacity 178
+			color 0xffffffff
+			size 267 320
+			effect ""
+			alignment "LT"
+			sampleText "DDdsfjmup|dtgb|tdhb|sdb|df"
+			font "Tiny"
+		}
+		visible_on idle_1
+		visible_on idle_2
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 280 394
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle_1
+		visible_on idle_2
+	}
+	object text_color_1
+	{
+		defaults
+		{
+			pos 222 22
+			opacity 255
+			color 0xffcccccc
+			size 225 18
+			effect ""
+			alignment "LM"
+			sampleText "DDdsfjmup"
+			font "Tiny"
+		}
+		visible_on idle_1
+		visible_on idle_2
+	}
+}
+
