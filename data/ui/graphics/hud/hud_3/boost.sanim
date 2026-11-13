@@ -1,0 +1,54 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by Sergey_Mitryaev
+//at Fri Apr 27 12:24:50 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				0.310978 -3.08043	63.689 -3.08043	0.310978 18.0804	63.689 18.0804	
+				0.414354 0.298001	0.429396 0.298001	0.414354 0.311374	0.429396 0.311374	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff010101	0xff010101	0xff010101	0xff010101	
+			0xff060606	0xff060606	0xff060606	0xff060606	
+			0xff0d0d0d	0xff0d0d0d	0xff0d0d0d	0xff0d0d0d	
+			0xff151515	0xff151515	0xff151515	0xff151515	
+			0xff1e1e1e	0xff1e1e1e	0xff1e1e1e	0xff1e1e1e	
+			0xff272727	0xff272727	0xff272727	0xff272727	
+			0xff2e2e2e	0xff2e2e2e	0xff2e2e2e	0xff2e2e2e	
+			0xff333333	0xff333333	0xff333333	0xff333333	
+			0xff343434	0xff343434	0xff343434	0xff343434	
+			0xff333333	0xff333333	0xff333333	0xff333333	
+		}
+	}
+}
+
