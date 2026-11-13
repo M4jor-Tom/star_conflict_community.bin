@@ -1,0 +1,81 @@
+﻿source_file "Y:/art/source/ui/graphics/chat/chat.ma"
+//by sergey_mitryaev
+//at Wed Oct 23 14:50:32 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object min_dist
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object max_dist
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 50
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectNdfame
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 20	0 -1.90735e-006	232 20	232 5.72205e-006	
+				0.189453 0.489258	0.191406 0.489258	0.189453 0.49707	0.191406 0.49707	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 20	0 -1.90735e-006	232 20	232 5.72205e-006	
+			0 23.4	0 -1.90735e-006	232 23.4	232 5.72205e-006	
+			0 26.8	0 -1.90735e-006	232 26.8	232 5.72205e-006	
+			0 30.2	0 -1.90735e-006	232 30.2	232 5.72205e-006	
+			0 33.6	0 -1.90735e-006	232 33.6	232 5.72205e-006	
+			0 37	0 -1.90735e-006	232 37	232 5.72205e-006	
+			0 40.4	0 -1.90735e-006	232 40.4	232 5.72205e-006	
+			0 43.8	0 -1.90735e-006	232 43.8	232 5.72205e-006	
+			0 47.2	0 -1.90735e-006	232 47.2	232 5.72205e-006	
+			0 50.6	0 -1.90735e-006	232 50.6	232 5.72205e-006	
+			0 54	0 -1.90735e-006	232 54	232 5.72205e-006	
+		}
+	}
+}
+
