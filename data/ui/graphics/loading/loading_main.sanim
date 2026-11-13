@@ -1,0 +1,195 @@
+﻿source_file "Y:/art/source/ui/graphics/loading_screen/loading_screen.ma"
+//by sergey_mitryaev
+//at Thu Dec 04 11:38:59 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 11
+{
+	object bg_2
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\loading\loading_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			anchor "LT"
+			keep_screen_size
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\spectate_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 589.227 504.129
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object warning
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 339.847 12.1638
+			opacity 255
+			color 0xffffffff
+			size 600 40
+			effect ""
+			alignment "CM"
+			sampleText "Пандора"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object players_slot_left
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 5.31754 6.38105
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\players_slot_main_left"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object players_slot_right
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 1072.01 6.38105
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\players_slot_main_right"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tips
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 238.73 655.267
+			opacity 255
+			color 0xffffffff
+			size 800 56
+			effect ""
+			alignment "CM"
+			sampleText "tip: dsfergwggh |fdefrvveg|frevggv|"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tips_color
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 443.129 655.267
+			opacity 255
+			color 0xff98afd4
+			size 10 10
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			anchor "LC"
+			pos 296.567 103.178
+			opacity 255
+			color 0xffffffff
+			size 600 120
+			effect ""
+			alignment "LT"
+			sampleText "Сектор:1420|Система:|Планета|Позиция"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 339.847 56.0452
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Тип Боя Захват"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 339.847 75.5157
+			opacity 255
+			color 0xffffffff
+			size 600 35
+			effect ""
+			alignment "CM"
+			sampleText "Цель уничтожить цца йцупы|йцв ЩШЩЗуцшга"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
