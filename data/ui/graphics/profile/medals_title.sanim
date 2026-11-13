@@ -1,0 +1,70 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by sergey_mitryaev
+//at Thu Feb 21 12:54:38 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos 20 1
+			opacity 255
+			color 0xffffffff
+			size 300 25
+			effect ""
+			alignment "LM"
+			sampleText "FFJKIufd jklejg glgbk ekg ;kghe"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 350 27
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				0 -0	6 -0	825 -0	831 -0	0 6	6 6	825 6	831 6	0 19	6 19	825 19	831 19	0 27	6 27	825 27	831 27	
+				0.00195289 0.785148	0.00781229 0.785148	0.102539 0.785148	0.108398 0.785148	0.00195292 0.791007	0.00781229 0.791007	0.102539 0.791007	0.108398 0.791007	0.00195292 0.837889	0.00781229 0.837889	0.102539 0.837889	0.108399 0.837889	0.00195295 0.845705	0.00781229 0.845705	0.102539 0.845705	0.108398 0.845705	
+			}
+		}
+		visible_on idle
+	}
+}
+
