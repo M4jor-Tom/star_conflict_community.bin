@@ -1,0 +1,139 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/gold_buy.ma"
+//by sergey_mitryaev
+//at Tue Nov 12 10:42:37 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 7
+{
+	object slot1
+	{
+		defaults
+		{
+			pos 9 9
+			opacity 255
+			color 0xffffffff
+			size 468 51
+			effect "ui\graphics\buy_gold_2\buy_gold_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot2
+	{
+		defaults
+		{
+			pos 9 55.2774
+			opacity 255
+			color 0xffffffff
+			size 468 51
+			effect "ui\graphics\buy_gold_2\buy_gold_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot3
+	{
+		defaults
+		{
+			pos 9 101.104
+			opacity 255
+			color 0xffffffff
+			size 468 51
+			effect "ui\graphics\buy_gold_2\buy_gold_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot4
+	{
+		defaults
+		{
+			pos 9 147.382
+			opacity 255
+			color 0xffffffff
+			size 468 51
+			effect "ui\graphics\buy_gold_2\buy_gold_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot5
+	{
+		defaults
+		{
+			pos 9 192.659
+			opacity 255
+			color 0xffffffff
+			size 468 51
+			effect "ui\graphics\buy_gold_2\buy_gold_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 440 290
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot6
+	{
+		defaults
+		{
+			pos 9 239
+			opacity 255
+			color 0xffffffff
+			size 468 51
+			effect "ui\graphics\buy_gold_2\buy_gold_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				5 5	11 5	428 5	434 5	5 11	11 11	428 11	434 11	5 280	11 280	428 280	434 280	5 286	11 286	428 286	434 286	
+				0.225586 0.03125	0.231445 0.03125	0.262695 0.03125	0.268555 0.03125	0.225586 0.0371094	0.231445 0.0371094	0.262695 0.0371094	0.268555 0.0371094	0.225586 0.0429771	0.231445 0.0429771	0.262695 0.0429771	0.268555 0.0429771	0.225586 0.0488365	0.231445 0.0488365	0.262695 0.0488365	0.268555 0.0488365	
+			}
+		}
+		visible_on idle
+	}
+}
+
