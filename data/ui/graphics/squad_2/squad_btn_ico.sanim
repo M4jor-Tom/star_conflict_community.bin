@@ -1,0 +1,48 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 28 16:10:24 2017
+
+base_res 1920 1080
+
+animations 2
+{
+	anim up
+	{
+		mode once
+		cycle_time 1
+	}
+	anim down
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite er28
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				0 -1	32 -1	0 31	32 31	
+				0.0078125 0.443359	0.0703125 0.443359	0.0078125 0.505859	0.0703125 0.505859	
+			}
+		}
+		visible_on up
+		anim down sp_uvc
+		{
+			1 
+			0.0078125 0.507813	0.0703125 0.507813	0.0078125 0.445313	0.0703125 0.445313	
+		}
+	}
+}
+
