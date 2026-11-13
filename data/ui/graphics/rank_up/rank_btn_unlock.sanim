@@ -1,0 +1,123 @@
+﻿source_file "Y:/art/source/ui/graphics/rank_up/rank_up.ma"
+//by sergey_mitryaev
+//at Mon May 27 17:35:09 2013
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 76 50
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp26ef
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	70 -0	76 -0	0 6	6 6	70 6	76 6	0 42	6 42	70 42	76 42	0 50	6 50	70 50	76 50	
+				0.325195 0.000976563	0.331055 0.000976563	0.370117 0.000976563	0.375977 0.000976563	0.325195 0.00683594	0.331055 0.00683594	0.370117 0.00683594	0.375977 0.00683594	0.325195 0.0439453	0.331055 0.0439453	0.370117 0.0439453	0.375977 0.0439453	0.325195 0.0517578	0.331055 0.0517578	0.370117 0.0517578	0.375977 0.0517578	
+				0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	sprite sp26efsf
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	70 -0	76 -0	0 6	6 6	70 6	76 6	0 44	6 44	70 44	76 44	0 50	6 50	70 50	76 50	
+				0.0732422 0.00195313	0.0791016 0.00195313	0.114258 0.00195313	0.120117 0.00195313	0.0732422 0.0078125	0.0791016 0.0078125	0.114258 0.0078125	0.120117 0.0078125	0.0732422 0.0429688	0.0791016 0.0429688	0.114258 0.0429688	0.120117 0.0429688	0.0732422 0.0507813	0.0791016 0.0507813	0.114258 0.0507813	0.120117 0.0507813	
+				0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	0xa27f7f7f	
+		}
+		visible_on press
+		visible_on disable
+	}
+	sprite sp26efw
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				16.2153 2.71593	22.2153 2.71593	54.2153 2.71593	60.2153 2.71593	16.2153 8.71593	22.2153 8.71593	54.2153 8.71593	60.2153 8.71593	16.2153 37.7159	22.2153 37.7159	54.2153 37.7159	60.2153 37.7159	16.2153 45.7159	22.2153 45.7159	54.2153 45.7159	60.2153 45.7159	
+				0.304688 0.256836	0.310547 0.256836	0.341797 0.256836	0.347656 0.256836	0.304688 0.262695	0.310547 0.262695	0.341797 0.262695	0.347656 0.262695	0.304688 0.291016	0.310547 0.291016	0.341797 0.291016	0.347656 0.291016	0.304688 0.298828	0.310547 0.298828	0.341797 0.298828	0.347656 0.298828	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+		}
+	}
+}
+
