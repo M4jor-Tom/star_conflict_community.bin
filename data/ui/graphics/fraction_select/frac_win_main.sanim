@@ -1,0 +1,114 @@
+﻿source_file  Y:/art/source/ui/graphics/fraction_select/fraction_select.ma
+//by sergey_mitryaev
+//at Fri Jun 22 11:29:30 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 960 550
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 798.317 522.407
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 228.922 4.8285
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "CM"
+			sampleText "Выбор первого контракта"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object win
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 960 530
+			effect "ui\graphics\fraction_select\frac_win_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.0418301 -0	5.95817 -0	954 -0	960 -0	-0.0418301 6	5.95817 6	954 6	960 6	-0.0418301 544	5.95817 544	954 544	960 544	-0.0418301 550	5.95817 550	954 550	960 550	
+				0.325187 0.000901282	0.331047 0.000901282	0.370158 0.000901282	0.376017 0.000901282	0.325187 0.00676066	0.331047 0.00676066	0.370158 0.00676066	0.376017 0.00676066	0.325187 0.0458738	0.331047 0.0458738	0.370158 0.0458738	0.376017 0.0458738	0.325187 0.0517332	0.331047 0.0517332	0.370158 0.0517332	0.376017 0.0517332	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName791
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				959.457 27.2896	0.499878 27.2896	959.457 25.2139	0.499878 25.2139	
+				0.0712843 0.0712743	0.0712843 0.069196	0.0693487 0.0712743	0.0693488 0.069196	
+			}
+		}
+		visible_on idle
+	}
+}
+
