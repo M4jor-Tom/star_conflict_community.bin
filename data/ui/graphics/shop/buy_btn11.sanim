@@ -1,0 +1,156 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Thu Jul 16 16:13:05 2015
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object text
+	{
+		defaults
+		{
+			pos 4.33511 4
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect ""
+			alignment "CM"
+			sampleText "Купить"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		anim press obj_posc
+		{
+			1 
+			4.33511 5
+		}
+		anim disable obj_opc
+		{
+			1 
+			153
+		}
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	154 -4	162 -4	-4 4	4 4	154 4	162 4	-4 21	4 21	154 21	162 21	-4 29	4 29	154 29	162 29	
+				0.0585938 0.644531	0.0664063 0.644531	0.0742188 0.644531	0.0820313 0.644531	0.0585938 0.652344	0.0664063 0.652344	0.0742188 0.652344	0.0820313 0.652344	0.0585938 0.660156	0.0664063 0.660156	0.0742188 0.660156	0.0820313 0.660156	0.0585938 0.667969	0.0664063 0.667969	0.0742188 0.667969	0.0820313 0.667969	
+				0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	
+		}
+	}
+	sprite over1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	4 -0	154.172 -0	158.172 -0	0 4	4 4	154.172 4	158.172 4	0 20.913	4 20.913	154.172 20.913	158.172 20.913	0 24.913	4 24.913	154.172 24.913	158.172 24.913	
+				0.0859375 0.645508	0.0898438 0.645508	0.103516 0.645508	0.107422 0.645508	0.0859375 0.649414	0.0898438 0.649414	0.103516 0.649414	0.107422 0.649414	0.0859375 0.663086	0.0898438 0.663086	0.103516 0.663086	0.107422 0.663086	0.0859375 0.666992	0.0898438 0.666992	0.103516 0.666992	0.107422 0.666992	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+		anim press sp_posc_colc
+		{
+			1 1
+			0 1.24894	4 1.24894	154.172 1.24894	158.172 1.24894	0 5.24894	4 5.24894	154.172 5.24894	158.172 5.24894	0 22.162	4 22.162	154.172 22.162	158.172 22.162	0 26.162	4 26.162	154.172 26.162	158.172 26.162	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+		visible_on disable
+	}
+	sprite sprite_52
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	8 -0	150 -0	158 -0	0 8	8 8	150 8	158 8	0 17	8 17	150 17	158 17	0 25	8 25	150 25	158 25	
+				0.201172 0.198242	0.208984 0.198242	0.217773 0.198242	0.225586 0.198242	0.201172 0.206055	0.208984 0.206055	0.217773 0.206055	0.225586 0.206055	0.201172 0.214844	0.208984 0.214844	0.217773 0.214844	0.225586 0.214844	0.201172 0.222656	0.208984 0.222656	0.217773 0.222656	0.225586 0.222656	
+				0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
