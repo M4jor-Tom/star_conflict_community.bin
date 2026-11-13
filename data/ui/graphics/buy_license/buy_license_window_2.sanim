@@ -1,0 +1,246 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Jan 13 13:58:56 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 12
+{
+	object premium
+	{
+		defaults
+		{
+			pos 2 82
+			opacity 255
+			color 0xffffffff
+			size 20 35
+			effect "ui\graphics\tooltip\tooltip_ship_premium"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 386 83
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			386 83
+			386 518
+		}
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 226.549 83
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			226.549 83
+			226.549 518
+		}
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 530 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 220 -1
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			220 -1
+			220 168
+		}
+	}
+	object title
+	{
+		defaults
+		{
+			pos 10.3215 1
+			opacity 255
+			color 0xffffcf00
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Покупка лицензии пилота"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 11.3043 29
+			opacity 255
+			color 0xffffffff
+			size 460 50
+			effect ""
+			alignment "LT"
+			sampleText "Лицензия  пилота |крометого за бой ...|опыта"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 20
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 550
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dist_min_win
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 113
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 2 121
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\buy_license\buy_license_list"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object account
+	{
+		defaults
+		{
+			pos 10.3215 59
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Ваш счет: 4000000"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			10.3215 59
+			10.3215 492
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 108	4 108	546 108	554 108	-4 116	4 116	546 116	554 116	
+				0.0585938 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585938 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 108	4 108	546 108	554 108	-4 116	4 116	546 116	554 116	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 151.4	4 151.4	546 151.4	554 151.4	-4 159.4	4 159.4	546 159.4	554 159.4	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 194.8	4 194.8	546 194.8	554 194.8	-4 202.8	4 202.8	546 202.8	554 202.8	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 238.2	4 238.2	546 238.2	554 238.2	-4 246.2	4 246.2	546 246.2	554 246.2	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 281.6	4 281.6	546 281.6	554 281.6	-4 289.6	4 289.6	546 289.6	554 289.6	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 325	4 325	546 325	554 325	-4 333	4 333	546 333	554 333	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 368.4	4 368.4	546 368.4	554 368.4	-4 376.4	4 376.4	546 376.4	554 376.4	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 411.8	4 411.8	546 411.8	554 411.8	-4 419.8	4 419.8	546 419.8	554 419.8	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 455.2	4 455.2	546 455.2	554 455.2	-4 463.2	4 463.2	546 463.2	554 463.2	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 498.6	4 498.6	546 498.6	554 498.6	-4 506.6	4 506.6	546 506.6	554 506.6	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 542	4 542	546 542	554 542	-4 550	4 550	546 550	554 550	
+		}
+	}
+}
+
