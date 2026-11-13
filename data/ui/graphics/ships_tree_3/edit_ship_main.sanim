@@ -1,0 +1,237 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Mon Jul 17 17:29:20 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 13
+{
+	object sh_tr_slot
+	{
+		defaults
+		{
+			anchor "TBC"
+			pos 339 -93
+			opacity 255
+			color 0xffffffff
+			size 300 300
+			effect "ui\graphics\ships_tree_3\sh_tr_slot"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			2 
+			339 -93
+			339 256
+		}
+	}
+	object name
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 278 1
+			opacity 255
+			color 0xffffffff
+			size 700 30
+			effect ""
+			alignment "CM"
+			sampleText "Редактор корабля"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object name4
+	{
+		defaults
+		{
+			anchor "TBC"
+			pos 278 401.484
+			opacity 255
+			color 0xffababab
+			size 700 50
+			effect ""
+			alignment "CM"
+			sampleText "fewsefrgqgerghregre|rhrfrrtbrbrtb"
+			font "Tiny_outl2"
+		}
+		anim idle obj_pos
+		{
+			2 
+			278 401.484
+			278 926.484
+		}
+	}
+	object name5
+	{
+		defaults
+		{
+			anchor "TBC"
+			pos 278 461
+			opacity 255
+			color 0xff23cf1a
+			size 700 30
+			effect ""
+			alignment "CM"
+			sampleText "Скоро в продаже"
+			font "Medium"
+		}
+		anim idle obj_pos
+		{
+			2 
+			278 461
+			278 986
+		}
+	}
+	object color_1
+	{
+		defaults
+		{
+			anchor "TBC"
+			pos 278 465
+			opacity 255
+			color 0xffff2800
+			size 700 20
+			effect ""
+			alignment "CM"
+			sampleText "color_1"
+			font "Tiny_outl2"
+		}
+		anim idle obj_pos
+		{
+			2 
+			278 465
+			278 991
+		}
+	}
+	object btn_4
+	{
+		defaults
+		{
+			anchor "TBC"
+			pos 549 449.602
+			opacity 255
+			color 0xffffffff
+			size 250 250
+			effect "ui\graphics\arena\arena_btn_4"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			2 
+			549 449.602
+			549 975.602
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1280 1024
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object min_dist
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 500
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ship_proper
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 25 267
+			opacity 255
+			color 0xffffffff
+			size 320 200
+			effect "ui\graphics\ships_tree_3\edit_ship_proper"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object ship_modules
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 878 65
+			opacity 255
+			color 0xffffffff
+			size 370 540
+			effect "ui\graphics\ships_tree_3\edit_ship_modules_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progr_prop
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 18 60
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree_3\node_progr_prop_main"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object bonus_slots
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 15.374 475
+			opacity 255
+			color 0xffffffff
+			size 270 70
+			effect "ui\graphics\ships_tree_3\bonus_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object survival
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 48 211
+			opacity 255
+			color 0xffffffff
+			size 200 24
+			effect "ui\graphics\ships_tree_3\node_prop_survival"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+}
+
