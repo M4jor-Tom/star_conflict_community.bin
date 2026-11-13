@@ -1,0 +1,74 @@
+﻿source_file "Y:/art/source/ui/graphics/notice/notice.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 07 12:46:14 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 425 430
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object notice_btn
+	{
+		defaults
+		{
+			pos 370.762 405.074
+			opacity 255
+			color 0xffffffff
+			size 55 25
+			effect "ui\graphics\notice\notice_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 -2.84217e-014
+			opacity 255
+			color 0xffffffff
+			size 55 25
+			effect "ui\graphics\notice\notice_list_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object notice_btn_2
+	{
+		defaults
+		{
+			pos 370.762 420
+			opacity 255
+			color 0xffffffff
+			size 55 25
+			effect "ui\graphics\hangar_iter_3\b_notif_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
