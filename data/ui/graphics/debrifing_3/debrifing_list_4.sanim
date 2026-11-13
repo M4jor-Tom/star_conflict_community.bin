@@ -1,0 +1,408 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Thu Aug 24 10:23:21 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 27
+
+objects 24
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 890 600
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object value_1
+	{
+		defaults
+		{
+			pos 1.88584 38.286
+			opacity 255
+			color 0xffffffff
+			size 120 20
+			effect ""
+			alignment "LB"
+			sampleText "Союзники"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object value_2
+	{
+		defaults
+		{
+			pos 297 38.286
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect ""
+			alignment "RB"
+			sampleText "Убийств"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_3
+	{
+		defaults
+		{
+			pos 246 38.286
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect ""
+			alignment "RB"
+			sampleText "Помощь"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_4
+	{
+		defaults
+		{
+			pos 198 38.286
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect ""
+			alignment "RB"
+			sampleText "Захватов"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_5
+	{
+		defaults
+		{
+			pos 349 38.286
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect ""
+			alignment "RB"
+			sampleText "Эффект."
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_7
+	{
+		defaults
+		{
+			pos 732 38.286
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect ""
+			alignment "RB"
+			sampleText "Убийств"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_8
+	{
+		defaults
+		{
+			pos 681 38.286
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect ""
+			alignment "RB"
+			sampleText "Помощь"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_9
+	{
+		defaults
+		{
+			pos 637 38.286
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect ""
+			alignment "RB"
+			sampleText "Захватов"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_10
+	{
+		defaults
+		{
+			pos 784 38.286
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect ""
+			alignment "RB"
+			sampleText "Эффект."
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_6
+	{
+		defaults
+		{
+			pos 443 38.286
+			opacity 255
+			color 0xffffffff
+			size 120 20
+			effect ""
+			alignment "LB"
+			sampleText "Враги"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 0 65
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 0 113
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos 0 161
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_4
+	{
+		defaults
+		{
+			pos 0 209
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_5
+	{
+		defaults
+		{
+			pos 0 257
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 274.039 13
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "CB"
+			sampleText "Итоги Боя"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 859 65
+			opacity 255
+			color 0xffffffff
+			size 20 530
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_6
+	{
+		defaults
+		{
+			pos 0 305
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_7
+	{
+		defaults
+		{
+			pos 0 353
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_8
+	{
+		defaults
+		{
+			pos 0 401
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_9
+	{
+		defaults
+		{
+			pos 0 449
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_10
+	{
+		defaults
+		{
+			pos 0 497
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_11
+	{
+		defaults
+		{
+			pos 0 545
+			opacity 255
+			color 0xffffffff
+			size 850 40
+			effect "ui\graphics\debrifing\debrif_player_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp19
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-3 37	3 37	869 37	875 37	-3 43	3 43	869 43	875 43	-3 591	3 591	869 591	875 591	-3 597	3 597	869 597	875 597	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName370
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.649483 38.2476	435.37 38.2476	0.649483 63.3631	435.37 63.3631	
+				0.43555 0.329698	0.437497 0.329698	0.43555 0.334365	0.437497 0.334365	
+				0x82bbd3f8	0x82bbd3f8	0x82bbd3f8	0x82bbd3f8	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName390
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				436.63 38.2476	872 38.2476	436.63 63.3631	872 63.3631	
+				0.43555 0.329698	0.437497 0.329698	0.43555 0.334365	0.437497 0.334365	
+				0x82bbd3f8	0x82bbd3f8	0x82bbd3f8	0x82bbd3f8	
+			}
+		}
+		visible_on idle
+	}
+}
+
