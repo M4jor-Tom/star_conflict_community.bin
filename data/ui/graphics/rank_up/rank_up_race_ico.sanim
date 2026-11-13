@@ -1,0 +1,66 @@
+﻿source_file "Y:/art/source/ui/graphics/rank_up/rank_up.ma"
+//by sergey_mitryaev
+//at Wed Feb 20 17:58:36 2013
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 88 68
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on lock
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	88 -0	0 68	88 68	
+				-1.49012e-008 0	1 0	-1.49012e-008 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim lock sp_colc
+		{
+			1
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+		}
+	}
+}
+
