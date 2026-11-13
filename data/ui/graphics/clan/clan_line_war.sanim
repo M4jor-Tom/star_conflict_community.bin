@@ -1,0 +1,449 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Feb 19 17:58:50 2019
+
+base_res 1280 720
+
+animations 6
+{
+	anim gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim silver
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim bronze
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim olovo
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim myself
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 922 38
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		visible_on olovo
+		visible_on idle
+		visible_on myself
+	}
+	object name
+	{
+		defaults
+		{
+			pos 65 7
+			opacity 255
+			color 0xffffffff
+			size 434 24
+			effect ""
+			alignment "LM"
+			sampleText "JKGUI lh lk h lhoIKHJ"
+			font "VerySmall_outl2"
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		visible_on olovo
+		visible_on idle
+		visible_on myself
+	}
+	object rating
+	{
+		defaults
+		{
+			pos 723 7
+			opacity 255
+			color 0xffffffff
+			size 170 24
+			effect ""
+			alignment "RM"
+			sampleText "689756908"
+			font "VerySmall_outl2"
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		visible_on olovo
+		visible_on idle
+		visible_on myself
+	}
+	object clan_ico
+	{
+		defaults
+		{
+			pos 34 19
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\map\map_clan_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		visible_on olovo
+		visible_on idle
+		visible_on myself
+	}
+	object losses
+	{
+		defaults
+		{
+			pos 594 7
+			opacity 255
+			color 0xffffffff
+			size 150 24
+			effect ""
+			alignment "RM"
+			sampleText "689756908"
+			font "VerySmall_outl2"
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		visible_on olovo
+		visible_on idle
+		visible_on myself
+	}
+	object damage
+	{
+		defaults
+		{
+			pos 434 7
+			opacity 255
+			color 0xffffffff
+			size 150 24
+			effect ""
+			alignment "RM"
+			sampleText "689756908"
+			font "VerySmall_outl2"
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		visible_on olovo
+		visible_on idle
+		visible_on myself
+	}
+	object war
+	{
+		defaults
+		{
+			pos 594 7
+			opacity 255
+			color 0xffffffff
+			size 150 24
+			effect "ui\graphics\shop\buy_btn"
+			alignment "RM"
+			sampleText "689756908"
+			font "VerySmall_outl2"
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		visible_on olovo
+		visible_on idle
+		visible_on myself
+	}
+}
+
+sprites 9
+{
+	total_vertices 36
+
+	sprite olovo
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	922 -0	0 38	922 38	
+				0.00195313 0.974609	0.902344 0.974609	0.00195313 0.998047	0.902344 0.998047	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		anim olovo sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on idle
+		visible_on myself
+	}
+	sprite bronz
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	922 -0	0 38	922 38	
+				0.00195313 0.949219	0.902344 0.949219	0.00195313 0.972656	0.902344 0.972656	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on gold
+		visible_on silver
+		anim bronze sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on olovo
+		visible_on idle
+		visible_on myself
+	}
+	sprite silver
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	922 -0	0 38	922 38	
+				0.00195313 0.923828	0.902344 0.923828	0.00195313 0.947266	0.902344 0.947266	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on gold
+		anim silver sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on bronze
+		visible_on olovo
+		visible_on idle
+		visible_on myself
+	}
+	sprite gold
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	922 -0	0 38	922 38	
+				0.00195313 0.898438	0.902344 0.898438	0.00195313 0.921875	0.902344 0.921875	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on gold
+		anim silver sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim bronze sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim olovo sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim myself sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite idle3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	922 -0	0 38	922 38	
+				0.00195313 0.873047	0.902344 0.873047	0.00195313 0.896484	0.902344 0.896484	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		visible_on olovo
+		anim idle sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on myself
+	}
+	sprite myselfiup
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-3 -0	927 -0	-3 38	927 38	
+				0.231153 0.0117188	0.259082 0.0117188	0.231153 0.0410156	0.259082 0.0410156	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		visible_on olovo
+		visible_on idle
+		anim myself sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite myself
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				2 4	924 4	2 34	924 34	
+				0.00195313 0.753906	0.902344 0.753906	0.00195313 0.783203	0.902344 0.783203	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		visible_on olovo
+		visible_on idle
+		anim myself sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite blink_1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-5 4	15 4	-5 34	15 34	
+				0.110352 0.813477	0.129883 0.813477	0.110352 0.842773	0.129883 0.842773	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		anim olovo sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim myself sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite blink_2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				906 4	926 4	906 34	926 34	
+				0.129883 0.813477	0.110352 0.813477	0.129883 0.842773	0.110352 0.842773	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on gold
+		visible_on silver
+		visible_on bronze
+		anim olovo sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim myself sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+}
+
