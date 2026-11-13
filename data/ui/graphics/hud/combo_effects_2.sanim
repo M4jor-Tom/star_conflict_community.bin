@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud.ma"
+//by Sergey_Mitryaev
+//at Tue Feb 21 14:02:12 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object resurrection
+	{
+		defaults
+		{
+			pos -41 -32
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\hud\resurrection_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object who_says
+	{
+		defaults
+		{
+			pos 26 -73
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\hud\who_says_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loot_found_1
+	{
+		defaults
+		{
+			pos 11 127
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\loot_scan\loot_found_2_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object quests_finish
+	{
+		defaults
+		{
+			pos 44 150
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\quests\quests_finish_win"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loot_found_2
+	{
+		defaults
+		{
+			pos 11 41
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\loot_scan\loot_found_2_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
