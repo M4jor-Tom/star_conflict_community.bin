@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad.ma"
+//by sergey_mitryaev
+//at Wed Jan 15 15:33:10 2014
+
+
+animations 3
+{
+	anim online
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim offline
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim waiting
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object text_2
+	{
+		defaults
+		{
+			pos 19 -0
+			opacity 255
+			color 0xff00ff00
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "Готов"
+			font "Tiny"
+		}
+		visible_on online
+		anim offline obj_colc
+		{
+			1
+			0xffff2700
+		}
+		anim waiting obj_colc
+		{
+			1
+			0xffcccccc
+		}
+	}
+	object on_off
+	{
+		defaults
+		{
+			pos 0 2
+			opacity 255
+			color 0xffffffff
+			size 15 15
+			effect "ui\graphics\squad\squad_ico_status"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+		visible_on waiting
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 120 20
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on online
+		visible_on offline
+		visible_on waiting
+	}
+}
+
