@@ -1,0 +1,476 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Thu Feb 22 10:54:32 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 27
+
+objects 24
+{
+	object self155
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 542 600
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 80
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title64
+	{
+		defaults
+		{
+			pos 19.5231 45.8488
+			opacity 255
+			color 0xffa4b6c3
+			size 100 24
+			effect ""
+			alignment "LM"
+			sampleText "300000"
+			font "segoeuilr_20"
+		}
+		anim idle obj_pos
+		{
+			2 
+			19.5231 45.8488
+			19.5231 567.297
+		}
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 514.078 1.37824
+			opacity 255
+			color 0xffffffff
+			size 26 26
+			effect "ui\graphics\quests_2\q_map_btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object item_ico
+	{
+		defaults
+		{
+			pos 468.151 37.4156
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip_1080\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object descript_1
+	{
+		defaults
+		{
+			pos 18 179.195
+			opacity 255
+			color 0xff73828c
+			size 500 200
+			effect ""
+			alignment "LT"
+			sampleText "awefwgwg |yuitkytkytktyui|tykykyku|uiyluiluil|uyliuil|"
+			font "descript"
+		}
+		visible_on idle
+	}
+	object spacer
+	{
+		defaults
+		{
+			pos 0 157
+			opacity 255
+			color 0xffffffff
+			size 540 16
+			effect "ui\graphics\quests_2\q_map_slot_spacer"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object pers_slot
+	{
+		defaults
+		{
+			pos 18.1511 18.4156
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\quests_2\q_2_sml_pers_slot_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 3 78.5514
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\quests_2\q_map_progr"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			2 
+			3 78.5514
+			3 598
+		}
+	}
+	object try_text
+	{
+		defaults
+		{
+			pos 154.051 45.8488
+			opacity 255
+			color 0xff848fa1
+			size 150 24
+			effect ""
+			alignment "RM"
+			sampleText "1/8"
+			font "segoeuilr_20"
+		}
+		anim idle obj_pos
+		{
+			2 
+			154.051 45.8488
+			154.051 567.297
+		}
+	}
+	object diffiulty
+	{
+		defaults
+		{
+			pos 188.486 22.5582
+			opacity 255
+			color 0xffffffff
+			size 170 50
+			effect "ui\graphics\quests_2\q_map_diffiulty_main_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object spacer_2
+	{
+		defaults
+		{
+			pos 0 82
+			opacity 255
+			color 0xffffffff
+			size 540 16
+			effect "ui\graphics\quests_2\q_map_slot_spacer_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 3 6
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests_2\q_map_slot_bg"
+			alignment "LT"
+			sampleText "ewfwef|rtuytyu|kyukuk|"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object status
+	{
+		defaults
+		{
+			pos 417.743 45.4486
+			opacity 255
+			color 0xffffffff
+			size 110 26
+			effect "ui\graphics\quests_2\q_map_status"
+			alignment "RM"
+			font "segoeuilr_20"
+		}
+		anim idle obj_pos
+		{
+			2 
+			417.743 45.4486
+			417.743 564.897
+		}
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests_2\q_map_slot_over"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object completed
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests_2\q_map_completed"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title_2
+	{
+		defaults
+		{
+			pos 18 21
+			opacity 255
+			color 0xff4b576c
+			size 100 50
+			effect ""
+			alignment "LM"
+			sampleText "ВЫБЕРИТЕ|НАГРАДУ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object timer2
+	{
+		defaults
+		{
+			pos 310.63 46.3971
+			opacity 255
+			color 0xffffffff
+			size 50 24
+			effect "ui\graphics\quests_2\q_map_timer"
+			alignment "LM"
+			font "Medium"
+		}
+		anim idle obj_pos
+		{
+			2 
+			310.63 46.3971
+			310.63 565.846
+		}
+	}
+	object descript_7
+	{
+		defaults
+		{
+			pos 18 105
+			opacity 255
+			color 0xff647078
+			size 480 100
+			effect ""
+			alignment "LT"
+			sampleText "ewfwef|rtuytyu|kyukuk|"
+			font "descript"
+		}
+		visible_on idle
+	}
+	object dist_min_2
+	{
+		defaults
+		{
+			pos 0 555
+			opacity 255
+			color 0xffffffff
+			size 20 44
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 106.104 19
+			opacity 255
+			color 0xff5c687e
+			size 350 30
+			effect ""
+			alignment "LT"
+			sampleText "ИСКАТЕЛЬ ПРИКЛЮЧЕНИЙ"
+			font "descript"
+		}
+		visible_on idle
+	}
+	object title_3
+	{
+		defaults
+		{
+			pos 18 19
+			opacity 255
+			color 0xff5c687e
+			size 500 30
+			effect ""
+			alignment "LT"
+			sampleText "ИСКАТЕЛЬ ПРИКЛЮЧЕНИЙ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object descript_2
+	{
+		defaults
+		{
+			pos 18.1042 54
+			opacity 255
+			color 0xffa4b6c3
+			size 480 100
+			effect ""
+			alignment "LT"
+			sampleText "ewfwef|rtuytyu|kyukuk|"
+			font "descript"
+		}
+		visible_on idle
+	}
+	object descript_3
+	{
+		defaults
+		{
+			pos 106.104 54
+			opacity 255
+			color 0xffa4b6c3
+			size 350 100
+			effect ""
+			alignment "LT"
+			sampleText "ewfwef|rtuytyu|kyukuk|"
+			font "descript"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite que76
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 6	534 6	0 80.5514	534 80.5514	
+				0.767296 0.868164	0.779579 0.868164	0.767296 0.874023	0.779579 0.874023	
+				0xb20a0f17	0xb20a0f17	0xb20a0f17	0xb20a0f17	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 6	534 6	0 80.5514	534 80.5514	
+			0 6	534 6	0 132.496	534 132.496	
+			0 6	534 6	0 184.441	534 184.441	
+			0 6	534 6	0 236.386	534 236.386	
+			0 6	534 6	0 288.331	534 288.331	
+			0 6	534 6	0 340.276	534 340.276	
+			0 6	534 6	0 392.221	534 392.221	
+			0 6	534 6	0 444.165	534 444.165	
+			0 6	534 6	0 496.11	534 496.11	
+			0 6	534 6	0 548.055	534 548.055	
+			0 6	534 6	0 600	534 600	
+		}
+	}
+	sprite objectName486
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 75.5514	5 75.5514	529 75.5514	539 75.5514	-5 85.5514	5 85.5514	529 85.5514	539 85.5514	
+				0.119141 0.292969	0.138672 0.292969	0.158203 0.292969	0.177734 0.292969	0.119141 0.3125	0.138672 0.3125	0.158203 0.3125	0.177734 0.3125	0.119141 0.332031	0.138672 0.332031	0.158203 0.332031	0.177734 0.332031	0.119141 0.351563	0.138672 0.351563	0.158203 0.351563	0.177734 0.351563	
+				0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 75.5514	5 75.5514	529 75.5514	539 75.5514	-5 85.5514	5 85.5514	529 85.5514	539 85.5514	
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 127.496	5 127.496	529 127.496	539 127.496	-5 137.496	5 137.496	529 137.496	539 137.496	
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 179.441	5 179.441	529 179.441	539 179.441	-5 189.441	5 189.441	529 189.441	539 189.441	
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 231.386	5 231.386	529 231.386	539 231.386	-5 241.386	5 241.386	529 241.386	539 241.386	
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 283.331	5 283.331	529 283.331	539 283.331	-5 293.331	5 293.331	529 293.331	539 293.331	
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 335.276	5 335.276	529 335.276	539 335.276	-5 345.276	5 345.276	529 345.276	539 345.276	
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 387.221	5 387.221	529 387.221	539 387.221	-5 397.221	5 397.221	529 397.221	539 397.221	
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 439.165	5 439.165	529 439.165	539 439.165	-5 449.165	5 449.165	529 449.165	539 449.165	
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 491.11	5 491.11	529 491.11	539 491.11	-5 501.11	5 501.11	529 501.11	539 501.11	
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 543.055	5 543.055	529 543.055	539 543.055	-5 553.055	5 553.055	529 553.055	539 553.055	
+			-5 1	5 1	529 1	539 1	-5 11	5 11	529 11	539 11	-5 595	5 595	529 595	539 595	-5 605	5 605	529 605	539 605	
+		}
+	}
+	sprite que77
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 6	2.99997 6	0 80	2.99997 80	
+				0.767296 0.868164	0.779579 0.868164	0.767296 0.874023	0.779579 0.874023	
+				0xff4f5c79	0xff4f5c79	0xff4f5c79	0xff4f5c79	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 6	2.99997 6	0 80	2.99997 80	
+			0 6	2.99997 6	0 132	2.99997 132	
+			0 6	2.99997 6	0 184	2.99997 184	
+			0 6	2.99997 6	0 236	2.99997 236	
+			0 6	2.99997 6	0 288	2.99997 288	
+			0 6	2.99997 6	0 340	2.99997 340	
+			0 6	2.99997 6	0 392	2.99997 392	
+			0 6	2.99997 6	0 444	2.99997 444	
+			0 6	2.99997 6	0 496	2.99997 496	
+			0 6	2.99997 6	0 548	2.99997 548	
+			0 6	2.99997 6	0 600	2.99997 600	
+		}
+	}
+}
+
