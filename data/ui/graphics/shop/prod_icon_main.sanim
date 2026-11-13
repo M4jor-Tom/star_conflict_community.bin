@@ -1,0 +1,152 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Wed Sep 04 16:43:32 2013
+
+
+animations 2
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 7
+{
+	object new
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 34 15
+			effect "ui\graphics\shop\prod_icon_new"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 82
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+	}
+	object buff_icon
+	{
+		defaults
+		{
+			pos 0 32.0555
+			opacity 255
+			color 0xffffffff
+			size 32 32
+			effect "ui\graphics\hud\buff_icon"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+	}
+	object tier
+	{
+		defaults
+		{
+			pos 33.9289 1.61357
+			opacity 255
+			color 0xffffffff
+			size 25 13
+			effect "ui\graphics\shop\prod_icon_tier"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+	}
+	object noskills
+	{
+		defaults
+		{
+			pos 45.4604 45.1532
+			opacity 255
+			color 0xffffffff
+			size 12 14
+			effect "ui\graphics\shop\prod_icon_noskills"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+	}
+	object in_battle
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 34 15
+			effect "ui\graphics\hangar\prod_in_battle"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+	}
+	object value
+	{
+		defaults
+		{
+			pos 41.153 54.4541
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect ""
+			alignment "CM"
+			sampleText "x2"
+			font "Medium"
+		}
+		visible_on active
+		visible_on inactive
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-10 -24	74 -24	-10 88	74 88	
+				-9.31323e-009 0	1 0	-9.31323e-009 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xa8ffffff	0xa8ffffff	0xa8ffffff	0xa8ffffff	
+		}
+	}
+}
+
