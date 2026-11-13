@@ -1,0 +1,101 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 07 14:38:54 2017
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 0.6
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object time
+	{
+		defaults
+		{
+			pos 0.0615259 -0.02008
+			opacity 255
+			color 0xffffdeb3
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "45446"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0.0615259 -0.02008
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object time_color
+	{
+		defaults
+		{
+			pos 7.9266 24.4088
+			opacity 255
+			color 0xffb8d1ff
+			size 120 20
+			effect ""
+			alignment "RM"
+			sampleText "time_color_gold"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we8_21
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-5.50223 -2.40929	137.464 -2.40929	-5.50223 21.7947	137.464 21.7947	
+				0.276612 0.00871229	0.3562 0.00871229	0.276612 0.0850377	0.3562 0.0850377	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xfe252a40	0xfe252a40	0xfe252a40	0xfe252a40	
+		}
+	}
+}
+
