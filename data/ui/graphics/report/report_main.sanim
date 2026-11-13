@@ -1,0 +1,73 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Mon Jul 18 14:29:35 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 429 239
+			opacity 255
+			color 0xffffffff
+			size 420 200
+			effect "ui\graphics\report\report_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object win_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 429 151
+			opacity 255
+			color 0xffffffff
+			size 420 400
+			effect "ui\graphics\report\report_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico_ship
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "C"
+			vertices_nc
+			{
+				-8910.13 -4868.17	10349.1 -4868.17	-8910.13 5614.17	10349.1 5614.17	
+				0.249204 0.49179	0.264468 0.49179	0.249204 0.498445	0.264468 0.498445	
+			}
+		}
+		visible_on idle
+	}
+}
+
