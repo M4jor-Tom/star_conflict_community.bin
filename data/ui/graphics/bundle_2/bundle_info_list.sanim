@@ -1,0 +1,148 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle_2.ma"
+//by Sergey_Mitryaev
+//at Tue Oct 09 12:12:27 2018
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 356 404
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object ico_bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 350 350
+			effect "ui\graphics\bundle_2\bundle_ico_bg"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object title
+	{
+		defaults
+		{
+			pos 8 6
+			opacity 255
+			color 0xffffffff
+			size 300 40
+			effect ""
+			alignment "LT"
+			sampleText "Ржавый  контейнер"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object bundle_ico
+	{
+		defaults
+		{
+			pos 58 17
+			opacity 255
+			color 0xffffffff
+			size 230 200
+			effect "ui\graphics\bundle_2\bundle_ico"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object desription
+	{
+		defaults
+		{
+			pos 25 203
+			opacity 255
+			color 0xffffffff
+			size 300 66
+			effect ""
+			alignment "LT"
+			sampleText "ASEDd|sdfsv|SDVS|sdvSDVASD|sVSDV"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object title_2
+	{
+		defaults
+		{
+			pos 25 272
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Возможные призы:"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 336 19
+			opacity 255
+			color 0xffffffff
+			size 20 384
+			effect "ui\graphics\scroll_2\scroll_2_main"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object content
+	{
+		defaults
+		{
+			pos 25 294
+			opacity 255
+			color 0xffffffff
+			size 316 104
+			effect "ui\graphics\bundle_2\bundle_info_content"
+			alignment "LM"
+			sampleText "Возможные призы:"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
