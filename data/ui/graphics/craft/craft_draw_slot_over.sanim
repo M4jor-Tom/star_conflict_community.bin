@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/craft/craft.ma"
+//by sergey_mitryaev
+//at Mon Jul 28 11:03:03 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	322 -0	328 -0	0 6	6 6	322 6	328 6	0 84	6 84	322 84	328 84	0 90	6 90	322 90	328 90	
+				0.0850412 0.644526	0.0909006 0.644526	0.102539 0.644526	0.108398 0.644526	0.0850412 0.650385	0.0909006 0.650385	0.102539 0.650385	0.108398 0.650385	0.0850412 0.662109	0.0909006 0.662109	0.102539 0.662109	0.108398 0.662109	0.0850412 0.667969	0.0909006 0.667969	0.102539 0.667969	0.108398 0.667969	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
