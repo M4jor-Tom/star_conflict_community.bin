@@ -1,0 +1,85 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Fri Dec 14 12:03:22 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+sprites 4
+{
+	total_vertices 40
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "LR"
+			vertices
+			{
+				0 0.180913	8 0.180913	1274 0.180913	1280 0.180913	0 6.18091	8 6.18091	1274 6.18091	1280 6.18091	0 570.383	8 570.383	1274 570.383	1280 570.383	0 576.383	8 576.383	1274 576.383	1280 576.383	
+				0.376108 0.0517668	0.376108 0.0439454	0.376109 0.00673008	0.376109 0.000870824	0.370249 0.0517669	0.370249 0.0439454	0.370249 0.0067302	0.370249 0.000870705	0.331114 0.0517669	0.331114 0.0439453	0.331114 0.00673002	0.331114 0.000870705	0.325255 0.0517669	0.325255 0.0439453	0.325255 0.00673014	0.325255 0.000870705	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0.89801 24.1004	0.89801 22.1004	1279.4 24.1003	1279.4 22.1004	
+				0.077202 0.144612	0.0791552 0.144612	0.077202 0.150449	0.0791552 0.150449	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp213
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				6 25	12 25	1268.6 25	1274.6 25	6 31	12 31	1268.6 31	1274.6 31	6 545	12 545	1268.6 545	1274.6 545	6 551	12 551	1268.6 551	1274.6 551	
+				0.272536 0.0507218	0.272536 0.0448626	0.272536 0.00890714	0.272536 0.00304788	0.266677 0.0507219	0.266677 0.0448626	0.266677 0.00890732	0.266677 0.00304776	0.229545 0.0507219	0.229545 0.0448625	0.229545 0.00890702	0.229545 0.00304776	0.223686 0.0507219	0.223686 0.0448625	0.223686 0.0089072	0.223686 0.00304776	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sad
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices_nc
+			{
+				87.5 60	884.5 60	87.5 544	884.5 544	
+				0.00134277 0.949219	0.779663 0.949219	0.00134277 0.00390625	0.779663 0.00390625	
+			}
+		}
+		visible_on idle
+	}
+}
+
