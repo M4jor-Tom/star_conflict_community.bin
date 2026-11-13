@@ -1,0 +1,104 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle.ma"
+//by Sergey
+//at Fri Nov 13 09:49:56 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on sel
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName380
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 -0	24 -0	0 24	24 24	
+				0.300781 0.458984	0.347656 0.458984	0.300781 0.505859	0.347656 0.505859	
+				0xfefefefe	0xfefefefe	0xfefefefe	0xfefefefe	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName379d
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 -0	24 -0	0 24	24 24	
+				0.253906 0.458984	0.300781 0.458984	0.253906 0.505859	0.300781 0.505859	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+		}
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
