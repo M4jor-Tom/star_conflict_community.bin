@@ -1,0 +1,115 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Thu May 16 11:02:55 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object vol_2
+	{
+		defaults
+		{
+			pos 246 2.84617
+			opacity 255
+			color 0xffcfcfcf
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "[sfdfwfg] asfdqwfwf"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object vol_1
+	{
+		defaults
+		{
+			pos 9.37588 2.84617
+			opacity 255
+			color 0xffcfcfcf
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "[sfdfwfg] asfdqwfwf"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 454 27
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object vol_3
+	{
+		defaults
+		{
+			pos 133 2.84617
+			opacity 255
+			color 0xffcfcfcf
+			size 200 20
+			effect ""
+			alignment "CM"
+			sampleText "[sfdfwfg] asfdqwfwf"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp16
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				6.66209 -6.2634	12.6621 -6.2634	454.662 -6.2634	460.662 -6.2634	6.66209 -6.26427	12.6621 -6.26427	454.662 -6.26427	460.662 -6.26427	6.66209 28.1031	12.6621 28.1031	454.662 28.1031	460.662 28.1031	6.66209 34.1031	12.6621 34.1031	454.662 34.1031	460.662 34.1031	
+				0.325319 0.0545987	0.331179 0.0545987	0.370192 0.0545987	0.376052 0.0545987	0.325319 0.0604581	0.331179 0.0604581	0.370192 0.0604581	0.376052 0.0604581	0.325319 0.0994994	0.331179 0.0994994	0.370192 0.0994994	0.376052 0.0994994	0.325319 0.105359	0.331179 0.105359	0.370192 0.105359	0.376052 0.105359	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -6.26224	6 -6.26224	448 -6.26224	454 -6.26224	0 -6.2631	6 -6.2631	448 -6.2631	454 -6.2631	0 21.3488	6 21.3488	448 21.3488	454 21.3488	0 27.3488	6 27.3488	448 27.3488	454 27.3488	
+				0.32521 0.000977337	0.331069 0.000977337	0.370083 0.000977337	0.375942 0.000977337	0.32521 0.00683671	0.331069 0.00683671	0.370083 0.00683671	0.375942 0.00683671	0.32521 0.0458779	0.331069 0.0458779	0.370083 0.0458779	0.375942 0.0458779	0.32521 0.0517373	0.331069 0.0517373	0.370083 0.0517373	0.375942 0.0517373	
+			}
+		}
+		visible_on idle
+	}
+}
+
