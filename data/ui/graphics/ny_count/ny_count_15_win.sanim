@@ -1,0 +1,130 @@
+﻿source_file "Y:/art/source/ui/graphics/ny_count/ny_count.ma"
+//by Sergey
+//at Tue Dec 15 11:36:36 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 6
+{
+	object self133
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 234 120
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 25
+			opacity 255
+			color 0xffffffff
+			size 260 72
+			effect "ui\graphics\ny_count\ny_count_15_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title13
+	{
+		defaults
+		{
+			pos 16 2
+			opacity 255
+			color 0xff99ffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Этап 1\4 убийство кораблей"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 42 -17
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "color_1"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title14
+	{
+		defaults
+		{
+			pos 16 99
+			opacity 255
+			color 0xff99ffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "До завершения  этапа"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title15
+	{
+		defaults
+		{
+			pos 131 99
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "000000"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName382
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_2.tif"
+			vertices_nc
+			{
+				-5 -3	237 -3	-5 147	237 147	
+				0.300781 0.185547	0.773438 0.185547	0.300781 0.478516	0.773438 0.478516	
+			}
+		}
+		visible_on idle
+	}
+}
+
