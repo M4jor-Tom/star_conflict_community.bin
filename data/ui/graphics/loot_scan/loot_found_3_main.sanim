@@ -1,0 +1,190 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Wed Apr 09 17:55:26 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 3
+	}
+}
+
+total_elements 6
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 420 130
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 65 48
+			opacity 255
+			color 0xffffffff
+			size 300 25
+			effect ""
+			alignment "CM"
+			sampleText "adsgsgh sf  asgagaggag "
+			font "VerySmall"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			0
+		}
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName173
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			vertices
+			{
+				199.626 41.9881	411.05 41.9883	199.626 79.0399	411.05 79.0397	
+				0.380886 0.847863	0.774979 0.847863	0.380886 0.955188	0.774979 0.955188	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName176
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			vertices
+			{
+				199.626 41.9881	1.32553 41.9883	199.626 79.0399	1.32553 79.0397	
+				0.380886 0.847863	0.774979 0.847863	0.380886 0.955188	0.774979 0.955188	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName177
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices
+			{
+				2.21515 39.5	417.785 39.5	2.21515 42.5	417.785 42.5	
+				0.318874 0.803405	0.581144 0.803405	0.318874 0.809927	0.581144 0.809927	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName178
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices
+			{
+				2.21515 78.5	417.785 78.5	2.21515 81.5	417.785 81.5	
+				0.318874 0.803405	0.581144 0.803405	0.318874 0.809927	0.581144 0.809927	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+}
+
