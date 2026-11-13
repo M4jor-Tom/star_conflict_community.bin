@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Mon Nov 25 15:42:19 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 60
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object prod_icon
+	{
+		defaults
+		{
+			pos 0 8
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip_1080\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object prod_icon2
+	{
+		defaults
+		{
+			pos 31.8615 37
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\map\sector_exclamatory"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object count
+	{
+		defaults
+		{
+			pos 1 8
+			opacity 255
+			color 0xffff8a00
+			size 50 30
+			effect ""
+			alignment "LM"
+			sampleText "75"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_minus
+	{
+		defaults
+		{
+			pos 38.8615 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\atlas\btn_minus_1080"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
