@@ -1,0 +1,149 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills_2.ma"
+//by sergey_mitryaev
+//at Fri Sep 05 14:06:13 2014
+
+
+animations 5
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim active_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self108
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 26 14
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on disable
+		visible_on active_over
+		visible_on inactive_over
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 9.53674e-007	2 9.53674e-007	24 9.53674e-007	26 9.53674e-007	0 2	2 2	24 2	26 2	0 12	2 12	24 12	26 12	0 14	2 14	24 14	26 14	
+				0.90625 0.0761721	0.90625 0.0781251	0.90625 0.124023	0.90625 0.125977	0.908203 0.0761719	0.908203 0.0781251	0.908203 0.124023	0.908203 0.125977	0.953125 0.0761718	0.953125 0.0781249	0.953125 0.124023	0.953125 0.125977	0.955078 0.0761718	0.955078 0.0781249	0.955078 0.124023	0.955078 0.125977	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on disable
+		visible_on active_over
+		visible_on inactive_over
+	}
+	sprite objectName338
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1 1	25 1	1 13	25 13	
+				0.30957 0.303711	0.326172 0.303711	0.30957 0.313477	0.326172 0.313477	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0x33fbfbfb	0x33fbfbfb	0x33fbfbfb	0x33fbfbfb	
+		}
+		anim disable sp_colc
+		{
+			1
+			0xfbfbfb	0xfbfbfb	0xfbfbfb	0xfbfbfb	
+		}
+		anim active_over sp_colc
+		{
+			1
+			0xfffbfbfb	0xfffbfbfb	0xfffbfbfb	0xfffbfbfb	
+		}
+		anim inactive_over sp_colc
+		{
+			1
+			0x33fbfbfb	0x33fbfbfb	0x33fbfbfb	0x33fbfbfb	
+		}
+	}
+	sprite over
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 9.53674e-007	2 9.53674e-007	24 9.53674e-007	26 9.53674e-007	0 2	2 2	24 2	26 2	0 12	2 12	24 12	26 12	0 14	2 14	24 14	26 14	
+				0.14004 0.0208098	0.14004 0.0211691	0.14004 0.0296122	0.14004 0.0299715	0.140399 0.0208098	0.1404 0.0211691	0.1404 0.0296122	0.140399 0.0299715	0.148663 0.0208098	0.148663 0.0211691	0.148663 0.0296122	0.148663 0.0299715	0.149022 0.0208098	0.149022 0.0211691	0.149022 0.0296122	0.149022 0.0299715	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on disable
+		anim active_over sp_colc
+		{
+			1
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+		}
+		anim inactive_over sp_colc
+		{
+			1
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+		}
+	}
+}
+
