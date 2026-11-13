@@ -1,0 +1,136 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Mon Nov 11 18:37:53 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 282 100
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ship_name10
+	{
+		defaults
+		{
+			pos 0 3
+			opacity 255
+			color 0xffd1f0ff
+			size 280 40
+			effect ""
+			alignment "LM"
+			sampleText "Компьютер"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object aren_slot_1
+	{
+		defaults
+		{
+			pos 0 52
+			opacity 255
+			color 0xffffffff
+			size 48 48
+			effect "ui\graphics\equip_1080\agen_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object aren_slot_2
+	{
+		defaults
+		{
+			pos 57 52
+			opacity 255
+			color 0xffffffff
+			size 48 32
+			effect "ui\graphics\equip_1080\agen_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object aren_slot_3
+	{
+		defaults
+		{
+			pos 114 52
+			opacity 255
+			color 0xffffffff
+			size 48 32
+			effect "ui\graphics\equip_1080\agen_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object aren_slot_4
+	{
+		defaults
+		{
+			pos 172 52
+			opacity 255
+			color 0xffffffff
+			size 48 32
+			effect "ui\graphics\equip_1080\agen_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object aren_slot_5
+	{
+		defaults
+		{
+			pos 230 52
+			opacity 255
+			color 0xffffffff
+			size 48 32
+			effect "ui\graphics\equip_1080\agen_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName443
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 41	278 41	0 44	278 44	
+				0.759766 0.882813	0.779297 0.882813	0.759766 0.902344	0.779297 0.902344	
+				0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
