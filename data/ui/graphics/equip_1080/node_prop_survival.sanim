@@ -1,0 +1,65 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Mon Dec 23 15:53:07 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object title_survival
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffa3b5c3
+			size 200 24
+			effect ""
+			alignment "LM"
+			sampleText "ВЫЖИВАЕМОСТЬ"
+			font "Medium_outl"
+		}
+		visible_on idle
+	}
+	object vol_survival
+	{
+		defaults
+		{
+			pos 0 25
+			opacity 255
+			color 0xffbffbba
+			size 200 24
+			effect ""
+			alignment "LM"
+			sampleText "23423423"
+			font "Large_outl2"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 50
+			effect ""
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+}
+
