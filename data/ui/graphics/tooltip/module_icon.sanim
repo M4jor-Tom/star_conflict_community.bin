@@ -1,0 +1,134 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Tue Oct 22 12:48:03 2013
+
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+	anim lock
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on lock
+	}
+	object value_1
+	{
+		defaults
+		{
+			pos 2 2
+			opacity 255
+			color 0xffffffff
+			size 30 18
+			effect ""
+			alignment "LT"
+			sampleText "x5"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on lock
+	}
+	object value_2
+	{
+		defaults
+		{
+			pos 8 20
+			opacity 255
+			color 0xffffffff
+			size 30 18
+			effect ""
+			alignment "RB"
+			sampleText "15"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on lock
+	}
+	object slot_lock
+	{
+		defaults
+		{
+			pos 8 6
+			opacity 255
+			color 0xffffffff
+			size 24 28
+			effect "ui\graphics\equip\prod_slot_lock"
+			alignment "RB"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on lock
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	40 -0	0 40	40 40	
+				0.231858 0.0101781	0.266189 0.0101781	0.231858 0.0445094	0.266189 0.0445094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim lock sp_colc
+		{
+			1
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+		}
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	40 -0	0 40	40 40	
+				-7.45058e-009 0	1 0	-7.45058e-009 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim lock sp_colc
+		{
+			1
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+		}
+	}
+}
+
