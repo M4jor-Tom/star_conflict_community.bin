@@ -1,0 +1,307 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by sergey_mitryaev
+//at Wed Jul 16 11:40:31 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 20
+
+objects 18
+{
+	object scroll_max
+	{
+		defaults
+		{
+			pos 568 2
+			opacity 255
+			color 0xffffffff
+			size 16 320
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 0 1.79968
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 0 21.9597
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 590 325
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos 0 42.2915
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_4
+	{
+		defaults
+		{
+			pos 0 62.6233
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_5
+	{
+		defaults
+		{
+			pos 0 82.9551
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_6
+	{
+		defaults
+		{
+			pos 0 103.287
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_045
+	{
+		defaults
+		{
+			pos 0 123.619
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_046
+	{
+		defaults
+		{
+			pos 0 143.951
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_047
+	{
+		defaults
+		{
+			pos 0 164.282
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_048
+	{
+		defaults
+		{
+			pos 0 184.614
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_049
+	{
+		defaults
+		{
+			pos 0 204.946
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_050
+	{
+		defaults
+		{
+			pos 0 225.278
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_051
+	{
+		defaults
+		{
+			pos 0 245.61
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_052
+	{
+		defaults
+		{
+			pos 0 265.941
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_053
+	{
+		defaults
+		{
+			pos 0 286.273
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_054
+	{
+		defaults
+		{
+			pos 0 306.605
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\friend\friend_line_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	555.5 -0	561.5 -0	0 6	6 6	555.5 6	561.5 6	0 324	6 324	555.5 324	561.5 324	0 330	6 330	555.5 330	561.5 330	
+				0.00195888 0.160156	0.00781825 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195888 0.166016	0.00781825 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195888 0.178711	0.00781825 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195888 0.18457	0.00781825 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26rty
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				563.5 -0	569.5 -0	580.5 -0	586.5 -0	563.5 6	569.5 6	580.5 6	586.5 6	563.5 324	569.5 324	580.5 324	586.5 324	563.5 330	569.5 330	580.5 330	586.5 330	
+				0.00195888 0.160156	0.00781825 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195888 0.166016	0.00781825 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195888 0.178711	0.00781825 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195888 0.18457	0.00781825 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+}
+
