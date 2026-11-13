@@ -1,0 +1,56 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Thu Apr 04 14:35:19 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object title
+	{
+		defaults
+		{
+			pos 0 3
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "WSW p[efo[f afsdw "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-6.5939 0.696686	-0.593903 0.696686	301.997 0.696686	307.997 0.696686	-6.5939 6.69669	-0.593903 6.69669	301.997 6.69669	307.997 6.69669	-6.5939 29.4122	-0.593903 29.4122	301.997 29.4122	307.997 29.4122	-6.5939 35.4122	-0.593903 35.4122	301.997 35.4122	307.997 35.4122	
+				0.00195888 0.785575	0.00781825 0.785575	0.102539 0.785575	0.108398 0.785575	0.00195888 0.791434	0.00781825 0.791434	0.102539 0.791434	0.108398 0.791434	0.00195888 0.839844	0.00781825 0.839844	0.102539 0.839844	0.108398 0.839844	0.00195888 0.845703	0.00781825 0.845703	0.102539 0.845703	0.108398 0.845703	
+			}
+		}
+		visible_on idle
+	}
+}
+
