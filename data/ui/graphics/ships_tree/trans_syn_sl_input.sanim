@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by Sergey_Mitryaev
+//at Tue Apr 18 16:04:53 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object cursor
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object select_color
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 114 20
+			effect ""
+			alignment "RM"
+			sampleText "99"
+			font "Tiny"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 114 20
+			effect ""
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
