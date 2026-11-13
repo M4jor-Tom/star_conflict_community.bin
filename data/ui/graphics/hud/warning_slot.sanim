@@ -1,0 +1,50 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud.ma
+//by sega
+//at Fri Jul 22 12:02:18 2011
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object text1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffff0f00
+			size 300 18
+			effect ""
+			alignment "CM"
+			sampleText "BASE UNDER ATTACK!"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 18
+			effect ""
+			alignment "CM"
+			sampleText "BASE UNDER ATTACK!"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
