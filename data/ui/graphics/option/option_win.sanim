@@ -1,0 +1,228 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Wed Mar 25 14:55:04 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 11
+{
+	object title
+	{
+		defaults
+		{
+			pos 7 1
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "LM"
+			sampleText "Настройки"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 576
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 642.737 548
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 804 548
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object option_btn_list
+	{
+		defaults
+		{
+			pos -1.14309 19.7333
+			opacity 255
+			color 0xffffffff
+			size 130 150
+			effect "ui\graphics\option\option_btn_list"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 946 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_3
+	{
+		defaults
+		{
+			pos 804 520
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object setting_list
+	{
+		defaults
+		{
+			pos 139 26
+			opacity 255
+			color 0xffffffff
+			size 820 460
+			effect "ui\graphics\option\option_server"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bookmarks
+	{
+		defaults
+		{
+			pos 139 28
+			opacity 255
+			color 0xffffffff
+			size 320 25
+			effect "ui\graphics\option\option_bookmarks"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_4
+	{
+		defaults
+		{
+			pos 482 548
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object setting_list_2
+	{
+		defaults
+		{
+			pos 139 55
+			opacity 255
+			color 0xffffffff
+			size 820 460
+			effect "ui\graphics\option\option_hud_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	962 -4	970 -4	-4 22	4 22	962 22	970 22	-4 572	4 572	962 572	970 572	-4 580	4 580	962 580	970 580	
+				0.0585936 0.695304	0.0664063 0.695304	0.0742188 0.695304	0.0820313 0.695304	0.0585936 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585936 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585936 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		visible_on idle
+	}
+	sprite blackout
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				74.8183 20.2287	133.182 20.2287	74.8183 575.48	133.182 575.48	
+				0.0817908 0.115909	0.156565 0.115909	0.0817908 0.13164	0.156565 0.13164	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				132 20.2336	134 20.2336	132 575.471	134 575.471	
+				0.0713222 0.077615	0.069369 0.077615	0.0713222 0.0942166	0.069369 0.0942166	
+			}
+		}
+		visible_on idle
+	}
+}
+
