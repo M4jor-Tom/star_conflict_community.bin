@@ -1,0 +1,250 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/rocket_mod.ma"
+//by sergey_mitryaev
+//at Mon Aug 23 15:05:44 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 15
+	}
+}
+
+total_elements 14
+
+objects 6
+{
+	object bg
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffff0000
+			size 20 20
+			effect "ui\graphics\hud\turret_mod\rocket_mod_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object value_1
+	{
+		defaults
+		{
+			anchor "C"
+			pos 322.602 495.743
+			opacity 255
+			color 0xffff0000
+			size 200 40
+			effect ""
+			alignment "CM"
+			sampleText "ХОД 5400 м."
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object value_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 759.676 495.743
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect ""
+			alignment "CM"
+			sampleText "Цель 12400 m."
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object value_3
+	{
+		defaults
+		{
+			anchor "C"
+			pos 415.147 611.263
+			opacity 255
+			color 0xffff0000
+			size 450 40
+			effect ""
+			alignment "CM"
+			sampleText "ХОД 5400 м."
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object value_4
+	{
+		defaults
+		{
+			anchor "C"
+			pos 736 550
+			opacity 255
+			color 0xffff9100
+			size 400 40
+			effect ""
+			alignment "LM"
+			sampleText " объектов в радиусе поражения"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object value14
+	{
+		defaults
+		{
+			anchor "C"
+			pos 151 550
+			opacity 255
+			color 0xffff9100
+			size 400 40
+			effect ""
+			alignment "RM"
+			sampleText " объектов в радиусе поражения"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 8
+{
+	total_vertices 32
+
+	sprite objectNameef
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			anchor "C"
+			vertices_nc
+			{
+				309.667 490.445	534.667 490.445	309.667 542.445	534.667 542.445	
+				0.778809 0.21582	0.998535 0.21582	0.778809 0.266602	0.998535 0.266602	
+			}
+		}
+		visible_on idle
+	}
+	sprite ob
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			anchor "C"
+			vertices_nc
+			{
+				415 599.038	865 599.038	415 665.038	865 665.038	
+				0.504883 0.271484	0.944336 0.271484	0.504883 0.335938	0.944336 0.335938	
+			}
+		}
+		visible_on idle
+	}
+	sprite obje
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			anchor "C"
+			vertices_nc
+			{
+				748.237 490.445	973.237 490.445	748.237 542.445	973.237 542.445	
+				0.998535 0.21582	0.778809 0.21582	0.998535 0.266602	0.778809 0.266602	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			anchor "C"
+			vertices_nc
+			{
+				571.983 356.604	707.983 356.604	571.983 378.604	707.983 378.604	
+				0.00235754 0.468318	0.13517 0.468318	0.00235754 0.490263	0.13517 0.490263	
+			}
+		}
+		visible_on idle
+	}
+	sprite wevwv
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			anchor "C"
+			vertices_nc
+			{
+				692.792 544	890 544	692.792 596	890 596	
+				0.998535 0.21582	0.826106 0.21582	0.998535 0.266602	0.826106 0.266602	
+			}
+		}
+		visible_on idle
+	}
+	sprite wevwvww
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			anchor "C"
+			vertices_nc
+			{
+				890 544	1087.21 544	890 596	1087.21 596	
+				0.954035 0.21582	0.778809 0.21582	0.954035 0.266602	0.778809 0.266602	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNameef5
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			anchor "C"
+			vertices_nc
+			{
+				396.208 544	593 544	396.208 596	593 596	
+				0.826106 0.21582	0.998535 0.21582	0.826106 0.266602	0.998535 0.266602	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNameef6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			anchor "C"
+			vertices_nc
+			{
+				199 544	396.208 544	199 596	396.208 596	
+				0.778809 0.21582	0.954036 0.21582	0.778809 0.266602	0.954036 0.266602	
+			}
+		}
+		visible_on idle
+	}
+}
+
