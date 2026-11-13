@@ -1,0 +1,164 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by Sergey_Mitryaev
+//at Fri Mar 16 17:27:03 2018
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 70
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 1 -0
+			opacity 255
+			color 0xffffffff
+			size 70 90
+			effect "ui\graphics\quests_2\q_2_sml_pers_slot_1_ico"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object status
+	{
+		defaults
+		{
+			pos 49.6973 42.5209
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\quests\quests_tutor_slot_status"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 90
+			effect "ui\graphics\quests_2\q_2_sml_pers_slot_over"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object modules_ico
+	{
+		defaults
+		{
+			pos 11 11
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object frac_ico
+	{
+		defaults
+		{
+			pos 3.6669 5
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\shop\gold_icon"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object modules_progr
+	{
+		defaults
+		{
+			pos 1 1
+			opacity 255
+			color 0xffffffff
+			size 70 90
+			effect "ui\graphics\quests_2\q_2_modules_progr"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite objectName489
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				1.5 1.5	11.5 1.5	59.5 1.5	69.5 1.5	1.5 11.5	11.5 11.5	59.5 11.5	69.5 11.5	1.5 58.5	11.5 58.5	59.5 58.5	69.5 58.5	1.5 68.5	11.5 68.5	59.5 68.5	69.5 68.5	
+				0.757807 0.882807	0.765623 0.882807	0.773439 0.882807	0.781255 0.882807	0.757807 0.890623	0.765623 0.890623	0.773439 0.890623	0.781255 0.890623	0.757807 0.898439	0.765623 0.898439	0.773439 0.898439	0.781255 0.898439	0.757807 0.906255	0.765623 0.906255	0.773439 0.906255	0.781255 0.906255	
+				0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	0x37000000	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+	sprite objectName490
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-3.5 -3.5	6.5 -3.5	64.5 -3.5	74.5 -3.5	-3.5 6.5	6.5 6.5	64.5 6.5	74.5 6.5	-3.5 63.5	6.5 63.5	64.5 63.5	74.5 63.5	-3.5 73.5	6.5 73.5	64.5 73.5	74.5 73.5	
+				0.119141 0.292969	0.138672 0.292969	0.158203 0.292969	0.177734 0.292969	0.119141 0.3125	0.138672 0.3125	0.158203 0.3125	0.177734 0.3125	0.119141 0.332031	0.138672 0.332031	0.158203 0.332031	0.177734 0.332031	0.119141 0.351563	0.138672 0.351563	0.158203 0.351563	0.177734 0.351563	
+				0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
