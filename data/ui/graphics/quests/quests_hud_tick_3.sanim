@@ -1,0 +1,247 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by Sergey_Mitryaev
+//at Fri Mar 03 12:31:44 2017
+
+base_res 1280 720
+
+animations 7
+{
+	anim show
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim complite
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lose
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim q_1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim q_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lose_show
+	{
+		mode once
+		cycle_time 0.2
+	}
+}
+
+total_elements 6
+
+objects 1
+{
+	object self95
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on show
+		visible_on complite
+		visible_on lose
+		visible_on q_1
+		visible_on q_2
+		visible_on idle
+		visible_on lose_show
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite dff31
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				3 -3	17 -3	3 23	17 23	
+				0.769531 0.0078125	0.824219 0.0078125	0.769531 0.109375	0.824219 0.109375	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on show
+		visible_on complite
+		visible_on lose
+		anim q_1 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on q_2
+		visible_on idle
+		visible_on lose_show
+	}
+	sprite dff34
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-124.599 -124.599	144.599 -124.599	-124.599 144.599	144.599 144.599	
+				0.515625 0.300781	0.566406 0.300781	0.515625 0.351563	0.566406 0.351563	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim show sp_pos_col
+		{
+			2 5
+			-124.599 -124.599	144.599 -124.599	-124.599 144.599	144.599 144.599	
+			-3 -3	23 -3	-3 23	23 23	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x27ffffff	0x27ffffff	0x27ffffff	0x27ffffff	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			0xd7ffffff	0xd7ffffff	0xd7ffffff	0xd7ffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim complite sp_posc_colc
+		{
+			1 1
+			-3 -3	23 -3	-3 23	23 23	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim lose sp_posc
+		{
+			1 
+			-3 -3	23 -3	-3 23	23 23	
+		}
+		anim q_1 sp_posc
+		{
+			1 
+			-3 -3	23 -3	-3 23	23 23	
+		}
+		anim q_2 sp_posc
+		{
+			1 
+			-3 -3	23 -3	-3 23	23 23	
+		}
+		anim idle sp_posc_colc
+		{
+			1 1
+			-3 -3	23 -3	-3 23	23 23	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim lose_show sp_posc
+		{
+			1 
+			-3 -3	23 -3	-3 23	23 23	
+		}
+	}
+	sprite dff47
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				3 -3	17 -3	3 23	17 23	
+				0.828125 0.0078125	0.882813 0.0078125	0.828125 0.109375	0.882813 0.109375	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on show
+		visible_on complite
+		visible_on lose
+		visible_on q_1
+		anim q_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on idle
+		visible_on lose_show
+	}
+	sprite dff48
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-3 -3	23 -3	-3 23	23 23	
+				0.248047 0.681641	0.298828 0.681641	0.248047 0.732422	0.298828 0.732422	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on show
+		visible_on complite
+		anim lose sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on q_1
+		visible_on q_2
+		visible_on idle
+		anim lose_show sp_pos_col
+		{
+			5 5
+			-114.187 -114.187	134.187 -114.187	-114.187 134.187	134.187 134.187	
+			-102.026 -102.026	122.026 -102.026	-102.026 122.026	122.026 122.026	
+			-72.4916 -72.4916	92.4916 -72.4916	-72.4916 92.4916	92.4916 92.4916	
+			-36.0085 -36.0085	56.0085 -36.0085	-36.0085 56.0085	56.0085 56.0085	
+			-3 -3	23 -3	-3 23	23 23	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x27ffffff	0x27ffffff	0x27ffffff	0x27ffffff	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			0xd7ffffff	0xd7ffffff	0xd7ffffff	0xd7ffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite dff49
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-6.46331 -6.46331	26.4633 -6.46331	-6.46331 26.4633	26.4633 26.4633	
+				0.115234 0.361328	0.205078 0.361328	0.115234 0.451172	0.205078 0.451172	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on show
+		visible_on complite
+		visible_on lose
+		visible_on q_1
+		visible_on q_2
+		visible_on idle
+		visible_on lose_show
+	}
+}
+
