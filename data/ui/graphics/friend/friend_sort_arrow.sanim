@@ -1,0 +1,48 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by sergey_mitryaev
+//at Tue Dec 04 15:19:03 2012
+
+
+animations 2
+{
+	anim up
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim down
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	20 -0	0 15	20 15	
+				0.467773 0.00341797	0.487305 0.00341797	0.467773 0.0180664	0.487305 0.0180664	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on up
+		anim down sp_uvc
+		{
+			1 
+			0.467773 0.0180664	0.487305 0.0180664	0.467773 0.00341797	0.487305 0.00341797	
+		}
+	}
+}
+
