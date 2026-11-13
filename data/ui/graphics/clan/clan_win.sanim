@@ -1,0 +1,183 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Feb 05 19:08:24 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 10
+{
+	object title
+	{
+		defaults
+		{
+			pos 10 1
+			opacity 255
+			color 0xffffffff
+			size 180 20
+			effect ""
+			alignment "LM"
+			sampleText "Легкие лазеры"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 576
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 947 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_myself
+	{
+		defaults
+		{
+			pos 15 526
+			opacity 255
+			color 0xffffffff
+			size 158 40
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_help
+	{
+		defaults
+		{
+			pos 926 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_help"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bookmark_2
+	{
+		defaults
+		{
+			pos 3 25.8279
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\clan\clan_bookmark_main_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object list3
+	{
+		defaults
+		{
+			pos 12 62
+			opacity 255
+			color 0xffffffff
+			size 920 480
+			effect "ui\graphics\clan\text_box_list_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list5
+	{
+		defaults
+		{
+			pos 2 56
+			opacity 255
+			color 0xffffffff
+			size 960 550
+			effect "ui\graphics\clan\build_dread_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading2
+	{
+		defaults
+		{
+			pos 427 243
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "y:\work_version\pc\data\ui\graphics\hangar\loading_big.sanim"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list7
+	{
+		defaults
+		{
+			pos 2 23
+			opacity 255
+			color 0xffffffff
+			size 960 550
+			effect "ui\graphics\clan\recruit_screen_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	962.009 -4	969.991 -4	-4 22	4 22	962.009 22	969.991 22	-4 571.809	4 571.809	962.009 571.809	969.991 571.809	-4 580.191	4 580.191	962.009 580.191	969.991 580.191	
+				0.0585916 0.695313	0.0664131 0.695313	0.0742188 0.695313	0.0820312 0.695313	0.0585915 0.720703	0.0664131 0.720703	0.0742187 0.720703	0.0820313 0.720703	0.0585915 0.723631	0.066413 0.723631	0.0742189 0.723631	0.0820313 0.723631	0.0585915 0.731445	0.0664131 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
