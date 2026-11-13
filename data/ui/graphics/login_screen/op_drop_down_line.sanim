@@ -1,0 +1,84 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Thu Jan 09 14:00:22 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 2 -0
+			opacity 255
+			color 0xffcccccc
+			size 40 40
+			effect "ui\graphics\login_screen\op_drop_down_slot"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 0.0159584
+			opacity 255
+			color 0xff88b5ff
+			size 88 40
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 45 -0
+			opacity 255
+			color 0xffcccccc
+			size 40 40
+			effect "ui\graphics\login_screen\op_drop_down_slot"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dfeee826
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.0749512 3.77954	285.196 3.77954	0.0749512 19.9762	285.196 19.9762	
+				0.0411997 0.118545	0.0411997 0.133544	0.0354965 0.118545	0.0354965 0.133544	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+	}
+}
+
