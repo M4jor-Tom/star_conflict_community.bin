@@ -1,0 +1,95 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_3.ma"
+//by sergey_mitryaev
+//at Mon Oct 07 17:48:15 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 430 26
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 2.27173 3
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "gsbtb bretetrgewrtrg ew"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 351 3
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect "ui\graphics\button\btn_sml_1"
+			alignment "LT"
+			sampleText "gsbtb bretetrgewrtrg ew"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 199 3
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "RM"
+			sampleText "Лучшая  цена 450"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price16
+	{
+		defaults
+		{
+			pos 123 3
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText " 450"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
