@@ -1,0 +1,151 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_3.ma"
+//by Sergey_Mitryaev
+//at Thu Aug 31 13:02:27 2017
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 64
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite ico35
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				0 1	10 1	0 65	10 65	
+				0.632813 0.240234	0.623047 0.240234	0.632813 0.369141	0.623047 0.369141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	sprite ico43
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				10 1	18 1	10 65	18 65	
+				0.625 0.240234	0.632813 0.240234	0.625 0.369141	0.632813 0.369141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	sprite ico28
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				3 21	17 21	3 45	17 45	
+				0.866211 0.138672	0.879883 0.138672	0.866211 0.185547	0.879883 0.185547	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite ico29
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				3 21	17 21	3 45	17 45	
+				0.880859 0.138672	0.894531 0.138672	0.880859 0.185547	0.894531 0.185547	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_posc
+		{
+			1 
+			1.9342 19.1729	18.0658 19.1729	1.9342 46.8271	18.0658 46.8271	
+		}
+		anim press sp_posc
+		{
+			1 
+			3.81984 22.4054	16.1802 22.4054	3.81984 43.5945	16.1802 43.5945	
+		}
+		anim disable sp_posc_colc
+		{
+			1 1
+			3.81984 22.4054	16.1802 22.4054	3.81984 43.5945	16.1802 43.5945	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
