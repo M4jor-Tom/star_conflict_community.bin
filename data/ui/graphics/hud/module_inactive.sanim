@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud.ma"
+//by sergey_mitryaev
+//at Thu Feb 15 17:56:18 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite inactive
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1 -0	49 -0	1 48	49 48	
+				0.223575 0.00197148	0.272403 0.00197148	0.223575 0.0507996	0.272403 0.0507996	
+				0xe5ffffff	0xe5ffffff	0xe5ffffff	0xe5ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
