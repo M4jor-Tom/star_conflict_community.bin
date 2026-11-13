@@ -1,0 +1,43 @@
+﻿source_file  Y:/art/source/ui/graphics/hangar/hangar.ma
+//by sega
+//at Wed Aug 24 17:54:31 2011
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 2
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 8
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 4
+			texture "ui/textures/text_loading.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	21.3333 -0	42.6667 -0	64 -0	0 8	21.3333 8	42.6667 8	64 8	
+				0.459494 0	0.640522 0	0.821549 0	1.00258 0	0.459494 1	0.640522 1	0.821549 1	1.00258 1	
+				0xff000000	0xffffffff	0xffffffff	0xff000000	0xff000000	0xffffffff	0xffffffff	0xff000000	
+			}
+		}
+		anim idle sp_uv
+		{
+			2 
+			0.459494 0	0.640522 0	0.821549 0	1.00258 0	0.459494 1	0.640522 1	0.821549 1	1.00258 1	
+			0.0187032 0	0.199731 0	0.380758 0	0.561785 0	0.0187032 1	0.199731 1	0.380758 1	0.561785 1	
+		}
+	}
+}
+
