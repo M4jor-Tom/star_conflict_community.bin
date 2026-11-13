@@ -1,0 +1,486 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Wed Apr 07 14:48:24 2021
+
+base_res 1280 720
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_inactiv
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 22
+
+objects 19
+{
+	object fraction2
+	{
+		defaults
+		{
+			pos 89.6828 -0.267642
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_fraction"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object noskills
+	{
+		defaults
+		{
+			pos 111.421 -0.267642
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_icon_noskills"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object text
+	{
+		defaults
+		{
+			pos 579.729 65.0522
+			opacity 255
+			color 0xff98afd4
+			size 100 23
+			effect ""
+			alignment "RM"
+			sampleText "КУПЛЕН"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object price_2
+	{
+		defaults
+		{
+			pos 561.515 65.569
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect ""
+			alignment "RM"
+			sampleText "9999999"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object type_2
+	{
+		defaults
+		{
+			pos 507.872 1.97056
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect "ui\graphics\shop\prod_type"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 564.729 65.0522
+			opacity 255
+			color 0xff98afd4
+			size 100 23
+			effect ""
+			alignment "RM"
+			sampleText "КУПЛЕН"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object type
+	{
+		defaults
+		{
+			pos 534.872 1.97056
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect "ui\graphics\shop\prod_type"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object price
+	{
+		defaults
+		{
+			pos 588.515 65.569
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect ""
+			alignment "RM"
+			sampleText "99999999"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 666.767 0.129518
+			opacity 255
+			color 0xffffffff
+			size 24 90
+			effect "ui\graphics\shop\prod_sale"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object over
+	{
+		defaults
+		{
+			pos 3.29502 -0
+			opacity 255
+			color 0xffffffff
+			size 710 70
+			effect "ui\graphics\shop\prod_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 3.29502 -0
+			opacity 255
+			color 0xffffffff
+			size 710 70
+			effect "ui\graphics\shop\prod_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object self
+	{
+		defaults
+		{
+			pos 3.29502 -0
+			opacity 255
+			color 0xffffffff
+			size 687 92
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 0.947241 5.73403
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\shop\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object fraction
+	{
+		defaults
+		{
+			pos 59.6636 -0.267642
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_fraction"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object product_name
+	{
+		defaults
+		{
+			pos 132.896 -0.267642
+			opacity 255
+			color 0xffffffff
+			size 400 21
+			effect ""
+			alignment "LM"
+			sampleText "Адаптивный  излучаетель щита  134 иавр48"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object description
+	{
+		defaults
+		{
+			pos 59.3129 20.301
+			opacity 255
+			color 0xffb2b2b2
+			size 480 56
+			effect ""
+			alignment "LT"
+			sampleText "Новейшая разработка |увеличивает щит"
+			font "Tiny"
+		}
+		visible_on idle
+		anim select obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim inactive obj_opc_colc
+		{
+			1 1
+			76
+			0xffffffff
+		}
+		anim sel_inactiv obj_opc_colc
+		{
+			1 1
+			76
+			0xffffffff
+		}
+		anim over obj_opc_colc
+		{
+			1 1
+			76
+			0xffffffff
+		}
+	}
+	object labe
+	{
+		defaults
+		{
+			pos 638.295 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\ships_tree\labe"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object type_3
+	{
+		defaults
+		{
+			pos 486.295 1.97056
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect "ui\graphics\shop\prod_type"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	object count
+	{
+		defaults
+		{
+			pos 2.29502 70.3297
+			opacity 255
+			color 0xffffffff
+			size 75 16
+			effect ""
+			alignment "LM"
+			sampleText "sdsds"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-9.9653 -4	-2.0347 -4	690.965 -4	699.035 -4	-9.9653 4	-2.0347 4	690.965 4	699.035 4	-9.9653 88	-2.0347 88	690.965 88	699.035 88	-9.9653 96	-2.0347 96	690.965 96	699.035 96	
+				0.0585938 0.644531	0.0664391 0.644531	0.0742188 0.644531	0.0820313 0.644531	0.0585938 0.652344	0.0664391 0.652344	0.0742188 0.652344	0.0820313 0.652344	0.0585938 0.660162	0.0664391 0.660162	0.0742188 0.660162	0.0820313 0.660162	0.0585938 0.667969	0.0664391 0.667969	0.0742188 0.667969	0.0820313 0.667969	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim inactive sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		visible_on sel_inactiv
+		visible_on over
+	}
+	sprite qwe
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/achivments.tif"
+			vertices
+			{
+				-5.07816 0.96291	174.922 0.96291	-5.07815 96.5722	174.922 96.5722	
+				0.723415 0.00342917	0.987522 0.00342917	0.723415 0.0668833	0.987522 0.0668833	
+				0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+		visible_on over
+	}
+	sprite sp2fwef
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-9 -3	-3 -3	693 -3	699 -3	-9 3	-3 3	693 3	699 3	-9 88	-3 88	693 88	699 88	-9 94	-3 94	693 94	699 94	
+				0.00195313 0.69043	0.00984588 0.69043	0.0175781 0.69043	0.0253906 0.69043	0.00195313 0.698242	0.00984588 0.698242	0.0175781 0.698242	0.0253906 0.698242	0.00195313 0.70606	0.00984588 0.70606	0.0175781 0.70606	0.0253906 0.70606	0.00195313 0.713867	0.00984588 0.713867	0.0175781 0.713867	0.0253906 0.713867	
+				0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	0x1010101	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	
+		}
+		visible_on inactive
+		anim sel_inactiv sp_colc
+		{
+			1
+			0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	
+		}
+		anim over sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+		}
+	}
+}
+
