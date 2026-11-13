@@ -1,0 +1,661 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Tue Feb 05 09:44:03 2019
+
+base_res 1280 720
+
+animations 17
+{
+	anim gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim money
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim yplay
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim achiev
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim token
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim irridium
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim synergy_g
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim synergy_s
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim loloyalty_garant
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim LEGION
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim WARDENS
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim ARMADA
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim AVANGARD
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim RAID
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim TECHNOLOGISTS
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim event_credits
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim corp_iridium
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on gold
+		visible_on money
+		visible_on yplay
+		visible_on achiev
+		visible_on token
+		visible_on irridium
+		visible_on synergy_g
+		visible_on synergy_s
+		visible_on loloyalty_garant
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		visible_on event_credits
+		visible_on corp_iridium
+	}
+}
+
+sprites 12
+{
+	total_vertices 48
+
+	sprite ico1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.301422 0.0515962	0.320954 0.0515962	0.301422 0.0711274	0.320954 0.0711274	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on gold
+		anim money sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim yplay sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim achiev sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim token sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim irridium sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim synergy_g sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim synergy_s sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim loloyalty_garant sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim LEGION sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim WARDENS sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim ARMADA sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim AVANGARD sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim RAID sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim TECHNOLOGISTS sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim event_credits sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim corp_iridium sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite ico7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.301609 0.0710279	0.321141 0.0710279	0.301609 0.0905591	0.321141 0.0905591	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		anim money sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on yplay
+		visible_on achiev
+		visible_on token
+		visible_on irridium
+		visible_on synergy_g
+		visible_on synergy_s
+		visible_on loloyalty_garant
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		visible_on event_credits
+		visible_on corp_iridium
+	}
+	sprite ico8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.302258 0.109706	0.321789 0.109706	0.302258 0.129237	0.321789 0.129237	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		visible_on money
+		anim yplay sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on achiev
+		visible_on token
+		visible_on irridium
+		visible_on synergy_g
+		visible_on synergy_s
+		visible_on loloyalty_garant
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		visible_on event_credits
+		visible_on corp_iridium
+	}
+	sprite ico10
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.280273 0.106445	0.299805 0.106445	0.280273 0.125977	0.299805 0.125977	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		visible_on money
+		visible_on yplay
+		anim achiev sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on token
+		visible_on irridium
+		visible_on synergy_g
+		visible_on synergy_s
+		visible_on loloyalty_garant
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		visible_on event_credits
+		visible_on corp_iridium
+	}
+	sprite ico12
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/item_icon.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.584961 0.757813	0.604492 0.757813	0.584961 0.777344	0.604492 0.777344	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		visible_on money
+		visible_on yplay
+		visible_on achiev
+		visible_on token
+		visible_on irridium
+		visible_on synergy_g
+		visible_on synergy_s
+		visible_on loloyalty_garant
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		visible_on event_credits
+		visible_on corp_iridium
+	}
+	sprite ico13
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/item_icon.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.610089 0.717544	0.630145 0.717544	0.610089 0.737535	0.630145 0.737535	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		visible_on money
+		visible_on yplay
+		visible_on achiev
+		anim token sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim irridium sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on synergy_g
+		visible_on synergy_s
+		visible_on loloyalty_garant
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		visible_on event_credits
+		visible_on corp_iridium
+	}
+	sprite synergy
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/item_icon.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.576886 0.699965	0.596942 0.699965	0.576886 0.719956	0.596942 0.719956	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		visible_on money
+		visible_on yplay
+		visible_on achiev
+		visible_on token
+		visible_on irridium
+		anim synergy_g sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on synergy_s
+		visible_on loloyalty_garant
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		visible_on event_credits
+		visible_on corp_iridium
+	}
+	sprite synergyfg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/item_icon.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.596417 0.699965	0.616474 0.699965	0.596417 0.719956	0.616474 0.719956	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		visible_on money
+		visible_on yplay
+		visible_on achiev
+		visible_on token
+		visible_on irridium
+		visible_on synergy_g
+		anim synergy_s sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on loloyalty_garant
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		visible_on event_credits
+		visible_on corp_iridium
+	}
+	sprite clan_flag
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fraction_ico.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.742844 0.368856	0.766921 0.368856	0.742844 0.4163	0.766921 0.4163	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		visible_on money
+		visible_on yplay
+		visible_on achiev
+		visible_on token
+		visible_on irridium
+		visible_on synergy_g
+		visible_on synergy_s
+		anim loloyalty_garant sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		visible_on event_credits
+		visible_on corp_iridium
+	}
+	sprite fraction
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/fraction_ico.tif"
+			vertices
+			{
+				-1 -4.76837e-007	21 -4.76837e-007	-1 20	21 20	
+				0.720441 0.417739	0.741211 0.417739	0.720441 0.457261	0.741211 0.457261	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		visible_on money
+		visible_on yplay
+		visible_on achiev
+		visible_on token
+		visible_on irridium
+		visible_on synergy_g
+		visible_on synergy_s
+		visible_on loloyalty_garant
+		anim LEGION sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim WARDENS sp_uvc_colc
+		{
+			1 1
+			0.743878 0.417739	0.765888 0.417739	0.743878 0.457261	0.765888 0.457261	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim ARMADA sp_uvc_colc
+		{
+			1 1
+			0.743878 0.462661	0.765888 0.462661	0.743878 0.502183	0.765888 0.502183	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim AVANGARD sp_uvc_colc
+		{
+			1 1
+			0.768555 0.464614	0.790302 0.464614	0.768555 0.504136	0.790302 0.504136	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim RAID sp_uvc_colc
+		{
+			1 1
+			0.719464 0.464614	0.741474 0.464614	0.719464 0.504136	0.741474 0.504136	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim TECHNOLOGISTS sp_uvc_colc
+		{
+			1 1
+			0.769269 0.415786	0.791278 0.415786	0.769269 0.455308	0.791278 0.455308	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim event_credits sp_uvc
+		{
+			1 
+			0.769269 0.415786	0.791278 0.415786	0.769269 0.455308	0.791278 0.455308	
+		}
+		anim corp_iridium sp_uvc
+		{
+			1 
+			0.769269 0.415786	0.791278 0.415786	0.769269 0.455308	0.791278 0.455308	
+		}
+	}
+	sprite ico25
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/textures_s2/item_icon_s2.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.1638 0.169692	0.183856 0.169692	0.1638 0.209214	0.183856 0.209214	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		visible_on money
+		visible_on yplay
+		visible_on achiev
+		visible_on token
+		visible_on irridium
+		visible_on synergy_g
+		visible_on synergy_s
+		visible_on loloyalty_garant
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		anim event_credits sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on corp_iridium
+	}
+	sprite ico33
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/item_icon.tif"
+			vertices
+			{
+				0 -4.76837e-007	20 -4.76837e-007	0 20	20 20	
+				0.914776 0.0544577	0.934833 0.0544577	0.914776 0.0744486	0.934833 0.0744486	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on gold
+		visible_on money
+		visible_on yplay
+		visible_on achiev
+		visible_on token
+		visible_on irridium
+		visible_on synergy_g
+		visible_on synergy_s
+		visible_on loloyalty_garant
+		visible_on LEGION
+		visible_on WARDENS
+		visible_on ARMADA
+		visible_on AVANGARD
+		visible_on RAID
+		visible_on TECHNOLOGISTS
+		visible_on event_credits
+		anim corp_iridium sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
