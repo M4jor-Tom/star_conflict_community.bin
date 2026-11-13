@@ -1,0 +1,470 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Thu Nov 28 13:03:51 2019
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim equiped
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim no_frame
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 24
+
+objects 21
+{
+	object name_ship
+	{
+		defaults
+		{
+			pos 4 64
+			opacity 255
+			color 0xffffffff
+			size 120 15
+			effect ""
+			alignment "CM"
+			sampleText "Strix mk-2"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object ship_type_val
+	{
+		defaults
+		{
+			pos 34 7
+			opacity 255
+			color 0xffffffff
+			size 20 15
+			effect ""
+			alignment "LM"
+			sampleText "12"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object text_buy
+	{
+		defaults
+		{
+			pos 10 64
+			opacity 255
+			color 0xffffffff
+			size 120 15
+			effect ""
+			alignment "CM"
+			sampleText "Buy battle slot"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 142 88
+			effect "ui\graphics\hangar\ship_list_slot_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect "ui\graphics\hangar\ship_list_over"
+			alignment "CM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object load_info
+	{
+		defaults
+		{
+			pos 42 17
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hangar\loading_small"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object dead
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 125 73
+			effect "ui\graphics\spectate\ship_dead"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object ship_ico
+	{
+		defaults
+		{
+			pos 6 6
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect "ui\graphics\hangar\ship_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object fraction_ico
+	{
+		defaults
+		{
+			pos 98 -1
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\ship_fraction_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object lock
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\shop\slot_lock"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object in_battle
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect "ui\graphics\hangar\ship_in_battle"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object btn_repair
+	{
+		defaults
+		{
+			pos 3 59
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\login_screen\btn_repair"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object broken
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect "ui\graphics\hangar\ship_broken"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object role_max
+	{
+		defaults
+		{
+			pos 2 1.25099
+			opacity 255
+			color 0xffffffff
+			size 20 18
+			effect "ui\graphics\ships_tree_2\sh_tr_role_max"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object lvlup
+	{
+		defaults
+		{
+			pos 114 60
+			opacity 255
+			color 0xffffffff
+			size 19 19
+			effect "ui\graphics\hangar\ship_lvlup"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object name_ship_2
+	{
+		defaults
+		{
+			pos 4 64
+			opacity 255
+			color 0xffffffff
+			size 120 15
+			effect ""
+			alignment "CM"
+			sampleText "Strix mk-2"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object gmp_icon
+	{
+		defaults
+		{
+			pos 8 6
+			opacity 255
+			color 0xffffffff
+			size 20 18
+			effect "ui\graphics\hud\ratio\gmp_icon"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object btn_change
+	{
+		defaults
+		{
+			pos 142 6
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\ship_btn_change"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 142 88
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object blink_4
+	{
+		defaults
+		{
+			pos 6 6
+			opacity 255
+			color 0xff88b5ff
+			size 142 88
+			effect "ui\graphics\hangar\custom_ship_blink_4"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+	object premium
+	{
+		defaults
+		{
+			pos 6 6
+			opacity 255
+			color 0xff88b5ff
+			size 142 88
+			effect "ui\graphics\tooltip\tooltip_ship_ico_premium"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		visible_on no_frame
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp86
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	132 -0	138 -0	0 6	6 6	132 6	138 6	0 81	6 81	132 81	138 81	0 87	6 87	132 87	138 87	
+				0.57179 0.595222	0.572472 0.595222	0.577919 0.595222	0.578601 0.595222	0.57179 0.595904	0.572472 0.595904	0.577919 0.595904	0.578601 0.595904	0.57179 0.601361	0.572472 0.601361	0.577919 0.601361	0.578601 0.601361	0.57179 0.602043	0.572472 0.602043	0.577919 0.602043	0.578601 0.602043	
+				0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	0x99000000	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	0xe5000000	
+		}
+		visible_on equiped
+		anim no_frame sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite sp87
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	132 -0	138 -0	0 6	6 6	132 6	138 6	0 81	6 81	132 81	138 81	0 87	6 87	132 87	138 87	
+				0.494181 0.615232	0.50004 0.615232	0.503906 0.615232	0.509766 0.615232	0.494181 0.621091	0.50004 0.621091	0.503906 0.621091	0.509766 0.621091	0.494181 0.625	0.50004 0.625	0.503906 0.625	0.509766 0.625	0.494181 0.630859	0.50004 0.630859	0.503906 0.630859	0.509766 0.630859	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on equiped
+		anim no_frame sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite sp88
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	132 -0	138 -0	0 6	6 6	132 6	138 6	0 81	6 81	132 81	138 81	0 87	6 87	132 87	138 87	
+				0.494181 0.615232	0.50004 0.615232	0.503906 0.615232	0.509766 0.615232	0.494181 0.621091	0.50004 0.621091	0.503906 0.621091	0.509766 0.621091	0.494181 0.625	0.50004 0.625	0.503906 0.625	0.509766 0.625	0.494181 0.630859	0.50004 0.630859	0.503906 0.630859	0.509766 0.630859	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on equiped
+		visible_on no_frame
+	}
+}
+
