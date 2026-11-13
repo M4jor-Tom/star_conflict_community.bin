@@ -1,0 +1,68 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Wed Aug 20 16:05:34 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object title_10
+	{
+		defaults
+		{
+			pos -1 -0
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "RM"
+			sampleText "10 - 20"
+			font "Tiny"
+		}
+		visible_on idle
+		anim lock obj_colc
+		{
+			1
+			0xffff2800
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp37
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.180913	19 0.180913	47 0.180913	53 0.180913	0 6.18091	19 6.18091	47 6.18091	53 6.18091	0 14	19 14	47 14	53 14	0 20	19 20	47 20	53 20	
+				0.325195 0.0546877	0.325195 0.0605469	0.325195 0.0990232	0.325195 0.104883	0.331055 0.0546876	0.331055 0.0605469	0.331055 0.0990232	0.331055 0.104883	0.369624 0.0546874	0.369624 0.0605468	0.369624 0.0990232	0.369624 0.104883	0.375483 0.0546874	0.375483 0.0605468	0.375483 0.0990232	0.375483 0.104883	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on lock
+	}
+}
+
