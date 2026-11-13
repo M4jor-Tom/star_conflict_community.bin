@@ -1,0 +1,215 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_2.ma"
+//by sergey_mitryaev
+//at Mon Dec 19 16:09:31 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 11
+{
+	object title_1
+	{
+		defaults
+		{
+			pos 10 2
+			opacity 255
+			color 0xffffffff
+			size 225 20
+			effect ""
+			alignment "LM"
+			sampleText "Добавить друга"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 604 454
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 582 3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 6 105
+			opacity 255
+			color 0xffffffff
+			size 586 364
+			effect "ui\graphics\squad\squad_2_applic_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_reload
+	{
+		defaults
+		{
+			pos 7 73
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\clan\lidboard_btn_3"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_8
+	{
+		defaults
+		{
+			pos 4 425
+			opacity 255
+			color 0xffffffff
+			size 200 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load
+	{
+		defaults
+		{
+			pos 239 193
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6 30
+			opacity 255
+			color 0xffffdeb3
+			size 590 20
+			effect ""
+			alignment "LM"
+			sampleText "wdffeegegege"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title1
+	{
+		defaults
+		{
+			pos 6 50
+			opacity 255
+			color 0xff8f8f8f
+			size 590 20
+			effect ""
+			alignment "LM"
+			sampleText "Нужны два  человека"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object nickname_color1\
+	{
+		defaults
+		{
+			pos 186 30
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "nickname_color"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_edit
+	{
+		defaults
+		{
+			pos 48 73
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\clan\lidboard_btn_5"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	596.5 -0	602.5 -0	0 6	6 6	596.5 6	602.5 6	0 448	6 448	596.5 448	602.5 448	0 454	6 454	596.5 454	602.5 454	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 26	1 24	601.5 26	601.5 24	
+				0.0566406 0.145264	0.0546875 0.145264	0.0566406 0.151611	0.0546875 0.151611	
+			}
+		}
+		visible_on idle
+	}
+}
+
