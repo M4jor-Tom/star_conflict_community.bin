@@ -1,0 +1,135 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Mon Sep 27 18:28:01 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 54
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bomb_ico_1
+	{
+		defaults
+		{
+			pos 178 11
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bomb_ico_2
+	{
+		defaults
+		{
+			pos 215 11
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bomb_ico_3
+	{
+		defaults
+		{
+			pos 252 11
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object arm_ico_1
+	{
+		defaults
+		{
+			pos 178 11
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_armor_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object arm_ico_2
+	{
+		defaults
+		{
+			pos 215 11
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_armor_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object arm_ico_3
+	{
+		defaults
+		{
+			pos 252 11
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\hud\ratio\ratio_bomb_armor_ico"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value
+	{
+		defaults
+		{
+			pos 74 45.8099
+			opacity 255
+			color 0xff7fb2ff
+			size 300 30
+			effect "ui\graphics\hud\ratio\bomb_msg"
+			alignment "CT"
+			sampleText "ВЫ НЕСЕТЕ БОМБУ"
+			font "Medium_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
