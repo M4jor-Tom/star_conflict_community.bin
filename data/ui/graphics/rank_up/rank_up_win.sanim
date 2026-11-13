@@ -1,0 +1,222 @@
+﻿source_file "Y:/art/source/ui/graphics/rank_up/rank_up.ma"
+//by sergey_mitryaev
+//at Mon May 27 19:00:35 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 11
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 576
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list_2
+	{
+		defaults
+		{
+			pos 12 63
+			opacity 255
+			color 0xffffffff
+			size 923 480
+			effect "ui\graphics\rank_up\rank_up_list_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 184 2
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Личное дело пилота"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 945 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object load_modules2
+	{
+		defaults
+		{
+			pos 417 255.741
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_help
+	{
+		defaults
+		{
+			pos 924 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_help"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 391 547
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object scroll_max_2
+	{
+		defaults
+		{
+			pos 946 61
+			opacity 255
+			color 0xffffffff
+			size 16 482
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object runk_btn
+	{
+		defaults
+		{
+			pos 7 29
+			opacity 255
+			color 0xffffffff
+			size 923 32
+			effect "ui\graphics\rank_up\rank_up_btn_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 12 28
+			opacity 255
+			color 0xffffffff
+			size 923 512
+			effect "ui\graphics\rank_up\rank_up_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 946 26
+			opacity 255
+			color 0xffffffff
+			size 16 514
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	960 -0	966 -0	0 6	6 6	960 6	966 6	0 568	6 568	960 568	966 568	0 576	6 576	960 576	966 576	
+				0.325184 0.000963449	0.331044 0.000963449	0.370107 0.00096339	0.375966 0.00096339	0.325184 0.00682282	0.331044 0.00682282	0.370107 0.00682282	0.375966 0.00682276	0.325184 0.0439453	0.331044 0.0439453	0.370107 0.0439453	0.375966 0.0439453	0.325184 0.0517613	0.331044 0.0517614	0.370107 0.0517613	0.375966 0.0517614	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				6 27	12 27	936 27	942 27	6 33	12 33	936 33	942 33	6 539	12 539	936 539	942 539	6 545	12 545	936 545	942 545	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite dffswc
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 24	1 22	965 24	965 22	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771484 0.152344	0.0791016 0.152344	
+			}
+		}
+		visible_on idle
+	}
+}
+
