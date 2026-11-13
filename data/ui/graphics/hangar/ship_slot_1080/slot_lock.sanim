@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Thu Oct 31 16:48:15 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 10 61
+			opacity 255
+			color 0xffe10000
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "2030"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				113 62	129 62	113 78	129 78	
+				0.494141 0.524414	0.509766 0.524414	0.494141 0.540039	0.509766 0.540039	
+				0xffe10000	0xffe10000	0xffe10000	0xffe10000	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				5.05094 5.20348	8 2	129 2	135 2	2 8	8 8	129 8	135 8	2 78	8 78	129 78	135 78	5.05094 81.1016	8 84	129 84	135 84	
+				0.223647 0.00286055	0.229506 0.00286055	0.266614 0.00286055	0.272474 0.00286055	0.223647 0.00871992	0.229506 0.00871992	0.266614 0.00871992	0.272474 0.00871992	0.223647 0.0449466	0.229506 0.0449466	0.266614 0.0449466	0.272474 0.0449466	0.223647 0.050806	0.229506 0.050806	0.266614 0.050806	0.272474 0.050806	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
