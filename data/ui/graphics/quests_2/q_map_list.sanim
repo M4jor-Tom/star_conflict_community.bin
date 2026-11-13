@@ -1,0 +1,73 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by Sergey_Mitryaev
+//at Wed Apr 11 11:03:10 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object q_slot_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 534 600
+			effect "ui\graphics\quests_2\q_map_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object q_slot_2
+	{
+		defaults
+		{
+			pos 0 603
+			opacity 255
+			color 0xffffffff
+			size 534 600
+			effect "ui\graphics\quests_2\q_map_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 541 -0
+			opacity 255
+			color 0xffffffff
+			size 20 660
+			effect "ui\graphics\scroll_3\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 650 668
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
