@@ -1,0 +1,105 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Fri Dec 12 13:46:26 2014
+
+base_res 1280 720
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 12 12
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on inactive_2
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite sad89
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				-1 14	-1 -1	13 14	13 -1	
+				0.818359 0.251953	0.833008 0.251953	0.818359 0.279297	0.833008 0.279297	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim inactive_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite sad90
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				-1 12	-1 -1	13 12	13 -1	
+				0.818359 0.222656	0.831055 0.222656	0.818359 0.25	0.831055 0.25	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim inactive_2 sp_colc
+		{
+			1
+			0xff535353	0xff535353	0xff535353	0xff535353	
+		}
+	}
+}
+
