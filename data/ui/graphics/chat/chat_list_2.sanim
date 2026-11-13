@@ -1,0 +1,625 @@
+﻿source_file "Y:/art/source/ui/graphics/chat/chat.ma"
+//by sergey_mitryaev
+//at Mon Jul 17 17:13:57 2017
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_1_1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_1_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 30
+
+objects 27
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 430 408
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 407 30
+			opacity 255
+			color 0xffffffff
+			size 16 340
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+		anim idle_1_1 obj_posc
+		{
+			1 
+			407 44
+		}
+		anim idle_1_2 obj_posc
+		{
+			1 
+			407 44
+		}
+	}
+	object list_area
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 356 405
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object min_dist
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 176
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_system
+	{
+		defaults
+		{
+			pos 513.877 62.6265
+			opacity 255
+			color 0xffffff00
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_system"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_ignored
+	{
+		defaults
+		{
+			pos 513.877 83.2671
+			opacity 255
+			color 0xffff0000
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_ignored"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_say
+	{
+		defaults
+		{
+			pos 513.877 104.768
+			opacity 255
+			color 0xffdcdcdc
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_say"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_party
+	{
+		defaults
+		{
+			pos 513.877 126.268
+			opacity 255
+			color 0xff8cbbff
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_party"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_enemy
+	{
+		defaults
+		{
+			pos 513.877 147.769
+			opacity 255
+			color 0xffff6967
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_enemy"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_raid
+	{
+		defaults
+		{
+			pos 513.877 170.13
+			opacity 255
+			color 0xffff8700
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_raid"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_guild
+	{
+		defaults
+		{
+			pos 513.877 191.63
+			opacity 255
+			color 0xff6ec434
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_guild"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_yell
+	{
+		defaults
+		{
+			pos 513.877 213.131
+			opacity 255
+			color 0xffffe700
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_yell"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_whisper
+	{
+		defaults
+		{
+			pos 513.877 236.352
+			opacity 255
+			color 0xffff80ff
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_whisper"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_channel_join
+	{
+		defaults
+		{
+			pos 513.877 258.712
+			opacity 255
+			color 0xffffa9a9
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_join"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_channel_leave
+	{
+		defaults
+		{
+			pos 513.877 281.933
+			opacity 255
+			color 0xffc57d80
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_leave"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_channel_list
+	{
+		defaults
+		{
+			pos 513.877 304.294
+			opacity 255
+			color 0xffc17d7d
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_list"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_channel_notice
+	{
+		defaults
+		{
+			pos 513.877 328.374
+			opacity 255
+			color 0xffbebebe
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_notice"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object text
+	{
+		defaults
+		{
+			pos 12 29
+			opacity 255
+			color 0xffffffff
+			size 374 340
+			effect ""
+			alignment "LT"
+			sampleText "dfwfwfwfw"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		anim idle_1_1 obj_posc
+		{
+			1 
+			12 43
+		}
+		anim idle_1_2 obj_posc
+		{
+			1 
+			12 43
+		}
+	}
+	object list_area_sml
+	{
+		defaults
+		{
+			pos 0 282
+			opacity 255
+			color 0xffffffff
+			size 356 124
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object cc_channel_butlog
+	{
+		defaults
+		{
+			pos 506.069 354.822
+			opacity 255
+			color 0xff009a02
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_notice"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object bookmark
+	{
+		defaults
+		{
+			pos 0 -19
+			opacity 255
+			color 0xffffffff
+			size 370 24
+			effect "ui\graphics\chat\chat_bookmark_main"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+		anim idle_1_1 obj_posc
+		{
+			1 
+			0 -0
+		}
+		anim idle_1_2 obj_posc
+		{
+			1 
+			0 -0
+		}
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 412 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object btn_x1
+	{
+		defaults
+		{
+			pos 393 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\chat\chat_btn_2"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object btn_x2
+	{
+		defaults
+		{
+			pos 374 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\chat\chat_btn_3"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object alpha
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 127
+			color 0xffffffff
+			size 430 408
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object min_dist_1_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 190
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+	object min_dist_1_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 422
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on idle_1_1
+		visible_on idle_1_2
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-3.99999 -4	4 -4	428 -4	436 -4	-3.99999 22	4 22	428 22	436 22	-3.99999 404	4 404	428 404	436 404	-3.99999 412	4 412	428 412	436 412	
+				0.0585938 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585938 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_posc
+		{
+			1 
+			-3.99999 -4	4 -4	428 -4	436 -4	-3.99999 22	4 22	428 22	436 22	-3.99999 172.375	4 172.375	428 172.375	436 172.375	-3.99999 180.375	4 180.375	428 180.375	436 180.375	
+		}
+		anim idle_1_1 sp_posc
+		{
+			1 
+			-3.99999 -4	4 -4	579.304 79.9554	587.304 79.9554	-3.99999 22	4 22	579.304 105.955	587.304 105.955	-3.99999 418	4 418	428 418	436 418	-3.99999 426	4 426	428 426	436 426	
+		}
+		anim idle_1_2 sp_posc
+		{
+			1 
+			-3.99999 -4	4 -4	579.304 79.9554	587.304 79.9554	-3.99999 22	4 22	579.304 105.955	587.304 105.955	-3.99999 186.375	4 186.375	428 186.375	436 186.375	-3.99999 194.375	4 194.375	428 194.375	436 194.375	
+		}
+	}
+	sprite sp33
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				6.00001 27	14 27	418 27	426 27	6.00001 35	14 35	418 35	426 35	6.00001 365.25	14 365.25	418 365.25	426 365.25	6.00001 373.25	14 373.25	418 373.25	426 373.25	
+				0.00195313 0.160156	0.00976563 0.160156	0.0185547 0.160156	0.0263672 0.160156	0.00195313 0.167969	0.00976563 0.167969	0.0185547 0.167969	0.0263672 0.167969	0.00195313 0.176758	0.00976563 0.176758	0.0185547 0.176758	0.0263672 0.176758	0.00195313 0.18457	0.00976563 0.18457	0.0185547 0.18457	0.0263672 0.18457	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_posc
+		{
+			1 
+			6.00001 27	14 27	418 27	426 27	6.00001 35	14 35	418 35	426 35	6.00001 133.625	14 133.625	418 133.625	426 133.625	6.00001 141.625	14 141.625	418 141.625	426 141.625	
+		}
+		anim idle_1_1 sp_posc
+		{
+			1 
+			6.00001 41	14 41	418 41	426 41	6.00001 49	14 49	418 49	426 49	6.00001 379.25	14 379.25	418 379.25	426 379.25	6.00001 387.25	14 387.25	418 387.25	426 387.25	
+		}
+		anim idle_1_2 sp_posc
+		{
+			1 
+			6.00001 41	14 41	418 41	426 41	6.00001 49	14 49	418 49	426 49	6.00001 147.625	14 147.625	418 147.625	426 147.625	6.00001 155.625	14 155.625	418 155.625	426 155.625	
+		}
+	}
+	sprite sp34
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				6.00001 378.75	14 378.75	418 378.75	426 378.75	6.00001 386.75	14 386.75	418 386.75	426 386.75	6.00001 394	14 394	418 394	426 394	6.00001 402	14 402	418 402	426 402	
+				0.0585938 0.670898	0.0664063 0.670898	0.0742188 0.670898	0.0820313 0.670898	0.0585938 0.678711	0.0664063 0.678711	0.0742188 0.678711	0.0820313 0.678711	0.0585938 0.686523	0.0664063 0.686523	0.0742188 0.686523	0.0820313 0.686523	0.0585938 0.694336	0.0664063 0.694336	0.0742188 0.694336	0.0820313 0.694336	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_posc
+		{
+			1 
+			6.00001 147.125	14 147.125	418 147.125	426 147.125	6.00001 155.125	14 155.125	418 155.125	426 155.125	6.00001 162.375	14 162.375	418 162.375	426 162.375	6.00001 170.375	14 170.375	418 170.375	426 170.375	
+		}
+		anim idle_1_1 sp_posc
+		{
+			1 
+			6.00001 392.75	14 392.75	418 392.75	426 392.75	6.00001 400.75	14 400.75	418 400.75	426 400.75	6.00001 408	14 408	418 408	426 408	6.00001 416	14 416	418 416	426 416	
+		}
+		anim idle_1_2 sp_posc
+		{
+			1 
+			6.00001 161.125	14 161.125	418 161.125	426 161.125	6.00001 169.125	14 169.125	418 169.125	426 169.125	6.00001 176.375	14 176.375	418 176.375	426 176.375	6.00001 184.375	14 184.375	418 184.375	426 184.375	
+		}
+	}
+}
+
