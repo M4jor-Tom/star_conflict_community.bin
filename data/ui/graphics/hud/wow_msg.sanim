@@ -1,0 +1,190 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by sergey_mitryaev
+//at Mon Mar 20 15:24:47 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object text_outl
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 186
+			color 0xff88b5ff
+			size 500 30
+			effect ""
+			alignment "CM"
+			sampleText "FAILURE OF ACTIVE MODULES"
+			font "Medium_outl"
+		}
+		anim friend obj_op
+		{
+			11 
+			186
+			129
+			81
+			61
+			81
+			129
+			186
+			234
+			255
+			234
+			186
+		}
+		anim enemy obj_op_col
+		{
+			11 2
+			129
+			81
+			61
+			81
+			129
+			186
+			234
+			255
+			234
+			186
+			129
+			0xfffd26ff
+			0xffff2700
+		}
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 30
+			effect ""
+			alignment "CM"
+			sampleText "FAILURE OF ACTIVE MODULES"
+			font "Medium_outl2"
+		}
+		anim friend obj_op
+		{
+			11 
+			255
+			255
+			254
+			253
+			250
+			246
+			238
+			228
+			214
+			196
+			173
+		}
+		anim enemy obj_op
+		{
+			11 
+			255
+			255
+			254
+			253
+			250
+			246
+			238
+			228
+			214
+			196
+			173
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				-210.638 -3.08881	700.638 -3.08881	-210.638 29.0887	700.638 29.0887	
+				0.692383 0.0066762	0.913086 0.0066762	0.692383 0.0343393	0.913086 0.0343393	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on friend
+		anim enemy sp_col
+		{
+			11
+			0xffa1a1a1	0xffa1a1a1	0xffa1a1a1	0xffa1a1a1	
+			0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	
+			0xff9b9b9b	0xff9b9b9b	0xff9b9b9b	0xff9b9b9b	
+			0xff949494	0xff949494	0xff949494	0xff949494	
+			0xff8b8b8b	0xff8b8b8b	0xff8b8b8b	0xff8b8b8b	
+			0xff818181	0xff818181	0xff818181	0xff818181	
+			0xff757575	0xff757575	0xff757575	0xff757575	
+			0xff696969	0xff696969	0xff696969	0xff696969	
+			0xff5c5c5c	0xff5c5c5c	0xff5c5c5c	0xff5c5c5c	
+			0xff4f4f4f	0xff4f4f4f	0xff4f4f4f	0xff4f4f4f	
+			0xff424242	0xff424242	0xff424242	0xff424242	
+		}
+	}
+	sprite objectName93
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				-210.638 -3.08881	700.638 -3.08881	-210.638 29.0887	700.638 29.0887	
+				0.777387 0.0362677	0.810503 0.0362677	0.777387 0.0692011	0.810503 0.0692011	
+				0xffa1a1a1	0xffa1a1a1	0xffa1a1a1	0xffa1a1a1	
+			}
+		}
+		anim friend sp_col
+		{
+			11
+			0xffa1a1a1	0xffa1a1a1	0xffa1a1a1	0xffa1a1a1	
+			0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	
+			0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	
+			0xff9c9c9c	0xff9c9c9c	0xff9c9c9c	0xff9c9c9c	
+			0xff979797	0xff979797	0xff979797	0xff979797	
+			0xff919191	0xff919191	0xff919191	0xff919191	
+			0xff898989	0xff898989	0xff898989	0xff898989	
+			0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+			0xff727272	0xff727272	0xff727272	0xff727272	
+			0xff626262	0xff626262	0xff626262	0xff626262	
+			0xff505050	0xff505050	0xff505050	0xff505050	
+		}
+		anim enemy sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+}
+
