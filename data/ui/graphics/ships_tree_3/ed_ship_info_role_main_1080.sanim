@@ -1,0 +1,69 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey_Mitryaev
+//at Fri Feb 09 15:16:11 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 54 54
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object role_ico
+	{
+		defaults
+		{
+			pos 17 18
+			opacity 255
+			color 0xffffffff
+			size 22 20
+			effect "ui\graphics\ships_tree_3\ed_ship_info_role_1080"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite race_ico9
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-16 -0	70 -0	-16 54	70 54	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
