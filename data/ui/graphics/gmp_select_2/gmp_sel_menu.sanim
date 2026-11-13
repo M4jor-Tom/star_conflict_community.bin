@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/gmp_select/gmp_select_2.ma"
+//by Sergey_Mitryaev
+//at Fri Jan 26 13:21:36 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 348 220
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 0 147
+			opacity 255
+			color 0xffffffff
+			size 348 60
+			effect "ui\graphics\gmp_select_2\gmp_sel_menu_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 0 97
+			opacity 255
+			color 0xffffffff
+			size 348 60
+			effect "ui\graphics\gmp_select_2\gmp_sel_menu_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 0 48
+			opacity 255
+			color 0xffffffff
+			size 348 60
+			effect "ui\graphics\gmp_select_2\gmp_sel_menu_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 348 60
+			effect "ui\graphics\gmp_select_2\gmp_sel_menu_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
