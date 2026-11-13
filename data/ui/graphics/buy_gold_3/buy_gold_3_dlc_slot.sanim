@@ -1,0 +1,85 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/gold_buy.ma"
+//by sergey_mitryaev
+//at Mon Aug 17 11:34:24 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 160 70
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 160 70
+			effect "ui\graphics\buy_gold_3\buy_gold_3_dlc_slot_over"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 160 70
+			effect "ui\graphics\buy_gold_3\buy_gold_3_dlc_slot_blackout"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				1 1	159 1	1 69	159 69	
+				-1.78814e-007 0	1 0	-1.78814e-007 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
