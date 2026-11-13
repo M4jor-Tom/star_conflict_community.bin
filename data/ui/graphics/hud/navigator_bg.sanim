@@ -1,0 +1,37 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Thu May 22 16:41:33 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				5.30304 2.5	185.303 2.5	5.30304 182.5	185.303 182.5	
+				0.820313 0.0380859	0.996094 0.0380859	0.820313 0.213867	0.996094 0.213867	
+			}
+		}
+		visible_on idle
+	}
+}
+
