@@ -1,0 +1,799 @@
+﻿source_file "Y:/art/source/ui/graphics/matchmaking_pvp/matchmaking_pvp.ma"
+//by Sergey
+//at Wed Jul 08 10:36:44 2015
+
+base_res 1280 720
+
+animations 13
+{
+	anim 0
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 4
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 5
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 6
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 7
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 8
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 9
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 10
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 11
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 12
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+sprites 14
+{
+	total_vertices 56
+
+	sprite objectName375
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices
+			{
+				0 -0	70 -0	0 32	70 32	
+				0.0764974 0.910156	0.112956 0.910156	0.0764974 0.972656	0.112956 0.972656	
+				0x33c2c2c2	0x33c2c2c2	0x33c2c2c2	0x33c2c2c2	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		visible_on 6
+		visible_on 7
+		visible_on 8
+		visible_on 9
+		visible_on 10
+		visible_on 11
+		visible_on 12
+	}
+	sprite objectName376
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices
+			{
+				0 35	70 35	0 67	70 67	
+				0.0764974 0.972656	0.112956 0.972656	0.0764974 0.910156	0.112956 0.910156	
+				0x33c2c2c2	0x33c2c2c2	0x33c2c2c2	0x33c2c2c2	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		visible_on 6
+		visible_on 7
+		visible_on 8
+		visible_on 9
+		visible_on 10
+		visible_on 11
+		visible_on 12
+	}
+	sprite objectName377
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				35 -2	53 -2	35 12	53 12	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		anim 1 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 2 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 4 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 5 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 6 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 7 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 8 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 9 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 10 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				53.4127 2.11687	68.1974 12.3839	45.4272 13.6161	60.2119 23.8831	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 4 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 5 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 6 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 7 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 8 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 9 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 10 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				65.7043 14.7264	74.5073 30.427	53.4927 21.573	62.2956 37.2736	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		anim 3 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 4 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 5 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 6 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 7 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 8 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 9 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 10 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				71.3244 32.0066	71.3075 50.0065	57.3244 31.9935	57.3074 49.9934	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		anim 4 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 5 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 6 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 7 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 8 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 9 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 10 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				67.0492 51.2535	57.3543 66.4194	55.2535 43.713	45.5585 58.879	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		anim 5 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 6 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 7 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 8 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 9 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 10 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe5
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				54.272 63.9566	38.5632 72.7449	47.4368 51.7387	31.728 60.5268	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		anim 6 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 7 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 8 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 9 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 10 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				36.1176 69.3725	18.1176 69.3725	36.1176 55.3725	18.1177 55.3725	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		visible_on 6
+		anim 7 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 8 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 9 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 10 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				17.705 65.2556	2.92025 54.9885	25.6904 53.7564	10.9057 43.4893	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		visible_on 6
+		visible_on 7
+		anim 8 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 9 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 10 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				5.41333 52.6461	-3.38963 36.9455	17.6249 45.7994	8.82202 30.0988	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		visible_on 6
+		visible_on 7
+		visible_on 8
+		anim 9 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 10 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe9
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				-0.206715 35.366	-0.18989 17.366	13.7933 35.3789	13.8102 17.379	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		visible_on 6
+		visible_on 7
+		visible_on 8
+		visible_on 9
+		anim 10 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe10
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				4.06846 16.1189	13.7633 0.953065	15.8642 23.6595	25.5592 8.4934	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		visible_on 6
+		visible_on 7
+		visible_on 8
+		visible_on 9
+		visible_on 10
+		anim 11 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+	sprite wewe11
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				16.8457 3.41589	32.5545 -5.37248	23.6808 15.6338	39.3896 6.84563	
+				0.065625 0.912109	0.0750001 0.912109	0.065625 0.939453	0.0750001 0.939453	
+				0x5a000000	0x5a000000	0x5a000000	0x5a000000	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		visible_on 6
+		visible_on 7
+		visible_on 8
+		visible_on 9
+		visible_on 10
+		visible_on 11
+		anim 12 sp_colc
+		{
+			1
+			0x5affffff	0x5affffff	0x5affffff	0x5affffff	
+		}
+	}
+}
+
