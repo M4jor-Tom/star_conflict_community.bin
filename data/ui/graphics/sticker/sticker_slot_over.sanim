@@ -1,0 +1,57 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Wed Nov 21 15:04:08 2012
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite over
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	79.2292 -0	85.2292 -0	0 6	6 6	79.2292 6	85.2292 6	0 79	6 79	79.2292 79	85.2292 79	0 85	6 85	79.2292 85	85.2292 85	
+				0.0733477 0.00196683	0.0792071 0.00196683	0.114203 0.00196683	0.120062 0.00196683	0.0733477 0.00782621	0.0792071 0.00782621	0.114203 0.00782621	0.120062 0.00782621	0.0733477 0.0449466	0.0792071 0.0449466	0.114203 0.0449466	0.120062 0.0449466	0.0733477 0.050806	0.0792071 0.050806	0.114203 0.050806	0.120062 0.050806	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+	}
+}
+
