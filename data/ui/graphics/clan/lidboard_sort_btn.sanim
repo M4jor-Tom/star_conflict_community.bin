@@ -1,0 +1,143 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Mon Jul 08 13:34:06 2013
+
+
+animations 3
+{
+	anim select
+	{
+		mode once
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object text_2
+	{
+		defaults
+		{
+			pos 29 3
+			opacity 255
+			color 0xffffffff
+			size 120 21
+			effect ""
+			alignment "LM"
+			sampleText "asfafsf"
+			font "VerySmall"
+		}
+		visible_on select
+		anim deselect obj_opc
+		{
+			1 
+			127
+		}
+		anim deselect_over obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 184 26
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+		visible_on deselect_over
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	178 -0	184 -0	0 6	6 6	178 6	184 6	0 20	6 20	178 20	184 20	0 26	6 26	178 26	184 26	
+				0.0547203 0.140619	0.0605797 0.140619	0.0732422 0.140619	0.0791016 0.140619	0.0547203 0.146479	0.0605797 0.146479	0.0732422 0.146479	0.0791016 0.146479	0.0547203 0.150391	0.0605797 0.150391	0.0732422 0.150391	0.0791016 0.150391	0.0547203 0.15625	0.0605797 0.15625	0.0732422 0.15625	0.0791016 0.15625	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on select
+		anim deselect sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+		anim deselect_over sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite over
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	178 -0	184 -0	0 6	6 6	178 6	184 6	0 20	6 20	178 20	184 20	0 26	6 26	178 26	184 26	
+				0.0734789 0.00196683	0.0793383 0.00196683	0.114334 0.00196683	0.120193 0.00196683	0.0734789 0.00782621	0.0793383 0.00782621	0.114334 0.00782621	0.120193 0.00782621	0.0734789 0.0449466	0.0793383 0.0449466	0.114334 0.0449466	0.120193 0.0449466	0.0734789 0.050806	0.0793383 0.050806	0.114334 0.050806	0.120193 0.050806	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on select
+		visible_on deselect
+		anim deselect_over sp_colc
+		{
+			1
+			0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	
+		}
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				3 3	23 3	3 23	23 23	
+				-7.45058e-009 0	1 0	-7.45058e-009 1	1 1	
+			}
+		}
+		visible_on select
+		visible_on deselect
+		visible_on deselect_over
+	}
+}
+
