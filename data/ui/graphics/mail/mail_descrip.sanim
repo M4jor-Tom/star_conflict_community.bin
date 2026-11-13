@@ -1,0 +1,147 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by sergey_mitryaev
+//at Thu Jan 26 12:56:21 2017
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle_1
+	{
+		mode looped
+		cycle_time 1.5
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_3
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 308 405
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle_1
+		visible_on idle_2
+		visible_on idle_3
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 308 331
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle_1
+		visible_on idle_2
+		visible_on idle_3
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 294 -0
+			opacity 255
+			color 0xffffffff
+			size 16 404
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle_1
+		visible_on idle_2
+		visible_on idle_3
+	}
+	object content
+	{
+		defaults
+		{
+			pos 7 5
+			opacity 178
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\mail\mail_content"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle_1
+		visible_on idle_2
+		anim idle_3 obj_opc
+		{
+			1 
+			255
+		}
+	}
+	object dist_min_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 308 314
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle_1
+		visible_on idle_2
+		visible_on idle_3
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2ss
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-3.33786e-005 -0.636467	5.99997 -0.636467	284 -0.636467	290 -0.636467	-3.33786e-005 5.36353	5.99997 5.36353	284 5.36353	290 5.36353	-3.33786e-005 397.672	5.99997 397.672	284 397.672	290 397.672	-3.33786e-005 406.218	5.99997 406.218	284 406.218	290 406.218	
+				0.226587 0.00586998	0.232446 0.00586998	0.263672 0.00586998	0.269531 0.00586998	0.226587 0.0117294	0.232446 0.0117294	0.263672 0.0117294	0.269531 0.0117294	0.226587 0.03563	0.232446 0.03563	0.263672 0.03563	0.269531 0.03563	0.226587 0.0444481	0.232446 0.0444481	0.263672 0.0444481	0.269531 0.0444481	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle_1
+		anim idle_2 sp_posc
+		{
+			1 
+			-3.33786e-005 -0.636467	5.99997 -0.636467	284 -0.636467	290 -0.636467	-3.33786e-005 5.36353	5.99997 5.36353	284 5.36353	290 5.36353	-3.33786e-005 322.309	5.99997 322.309	284 322.309	290 322.309	-3.33786e-005 330.855	5.99997 330.855	284 330.855	290 330.855	
+		}
+		anim idle_3 sp_posc
+		{
+			1 
+			-3.33786e-005 -0.636467	5.99997 -0.636467	284 -0.636467	290 -0.636467	-3.33786e-005 5.36353	5.99997 5.36353	284 5.36353	290 5.36353	-3.33786e-005 306.727	5.99997 306.727	284 306.727	290 306.727	-3.33786e-005 315.273	5.99997 315.273	284 315.273	290 315.273	
+		}
+	}
+}
+
