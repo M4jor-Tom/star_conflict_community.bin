@@ -1,0 +1,73 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by Sergey_Mitryaev
+//at Fri Apr 14 12:16:54 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1070 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object role_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 24
+			effect "ui\graphics\ships_tree_2\sh_tr_role_on"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object role_2
+	{
+		defaults
+		{
+			pos 102 -0
+			opacity 255
+			color 0xffffffff
+			size 100 24
+			effect "ui\graphics\ships_tree_2\sh_tr_role_on"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object premium_b
+	{
+		defaults
+		{
+			pos 0 22
+			opacity 255
+			color 0xffffffff
+			size 100 24
+			effect "ui\graphics\ships_tree_2\sh_tr_premium_bg"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
