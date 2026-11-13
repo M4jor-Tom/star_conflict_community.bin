@@ -1,0 +1,137 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Mon Feb 12 17:05:43 2018
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim show
+	{
+		mode once
+		cycle_time 0.2
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 6000 3000
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object loading
+	{
+		defaults
+		{
+			anchor "C"
+			pos 2961 305.089
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object win
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 2371 139
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\map\map_win_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object btn_x
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 3901 160
+			opacity 255
+			color 0xffffffff
+			size 26 26
+			effect "ui\graphics\quests_2\q_2_btn_x"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object q_map_win
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 3348 194
+			opacity 255
+			color 0xffffffff
+			size 578 580
+			effect "ui\graphics\quests_2\q_map_container"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object gmp_select
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 2471 126
+			opacity 255
+			color 0xffffffff
+			size 1100 240
+			effect "ui\graphics\gmp_select_2\gmp_select_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object current_btn
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 2048.8 130.744
+			opacity 255
+			color 0xffffffff
+			size 60 60
+			effect "ui\graphics\map\sector_current_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+}
+
