@@ -1,0 +1,197 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by sergey_mitryaev
+//at Fri Aug 22 18:21:19 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 10
+{
+	object title_1
+	{
+		defaults
+		{
+			pos 10 2
+			opacity 255
+			color 0xffffffff
+			size 225 20
+			effect ""
+			alignment "LM"
+			sampleText "Добавить друга"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load
+	{
+		defaults
+		{
+			pos 186 35
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 480 180
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 318 144
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 10 32
+			opacity 255
+			color 0xffffffff
+			size 460 60
+			effect ""
+			alignment "LT"
+			sampleText "Позывной|werbvbvb  wef |erge eb|rerbebb bgre"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title_3
+	{
+		defaults
+		{
+			pos 10 88
+			opacity 255
+			color 0xffff2700
+			size 460 20
+			effect ""
+			alignment "LM"
+			sampleText "Текст приглашения"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 156 144
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object input_1
+	{
+		defaults
+		{
+			pos 8 110
+			opacity 255
+			color 0xffffffff
+			size 460 25
+			effect "ui\graphics\mail\mail_send_input_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 459 3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn9
+	{
+		defaults
+		{
+			pos 442 110
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\shop\buy_btn9"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	474 -0	480 -0	0 6	6 6	474 6	480 6	0 167	6 167	474 167	480 167	0 173	6 173	474 173	480 173	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 26	1 24	479 26	479 24	
+				0.0566406 0.145264	0.0546875 0.145264	0.0566406 0.151611	0.0546875 0.151611	
+			}
+		}
+		visible_on idle
+	}
+}
+
