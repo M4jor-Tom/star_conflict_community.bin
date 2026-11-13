@@ -1,0 +1,281 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Fri Jun 28 11:39:27 2019
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim sel
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 28 28
+			effect ""
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		anim sel obj_colc
+		{
+			1
+			0xffff0027
+		}
+	}
+	object text2
+	{
+		defaults
+		{
+			pos -1 -1
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect ""
+			alignment "CM"
+			sampleText "4"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on sel
+	}
+	object center
+	{
+		defaults
+		{
+			pos 14 14
+			opacity 255
+			color 0xffffffff
+			size 28 28
+			effect ""
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on sel
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 28 28
+			effect "ui\graphics\hud\ship_markers\spawnspot_over"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on sel
+	}
+}
+
+sprites 9
+{
+	total_vertices 36
+
+	sprite objectName77
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				-3 -3	31 -3	-3 31	31 31	
+				0.573242 0.368164	0.606445 0.368164	0.573242 0.401367	0.606445 0.401367	
+			}
+		}
+		visible_on idle
+		visible_on sel
+	}
+	sprite objectName78
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-10 7	0 7	-10 21	0 21	
+				0.607422 0.369141	0.617188 0.369141	0.607422 0.382813	0.617188 0.382813	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName79
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-16 7	-6 7	-16 21	-6 21	
+				0.607422 0.369141	0.617188 0.369141	0.607422 0.382813	0.617188 0.382813	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName80
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				44 21	34 21	44 7	34 7	
+				0.607422 0.369141	0.617188 0.369141	0.607422 0.382813	0.617188 0.382813	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName81
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				38 21	28 21	38 7	28 7	
+				0.607422 0.369141	0.617188 0.369141	0.607422 0.382813	0.617188 0.382813	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName82
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				7 44	7 34	21 44	21 34	
+				0.607422 0.369141	0.617188 0.369141	0.607422 0.382813	0.617188 0.382813	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName83
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				7 38	7 28	21 38	21 28	
+				0.607422 0.369141	0.617188 0.369141	0.607422 0.382813	0.617188 0.382813	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName84
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				21 -10	21 4.76837e-007	7 -10	7 -0	
+				0.607422 0.369141	0.617188 0.369141	0.607422 0.382813	0.617188 0.382813	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName85
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				21 -16	21 -6	7 -16	7 -6	
+				0.607422 0.369141	0.617188 0.369141	0.607422 0.382813	0.617188 0.382813	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
