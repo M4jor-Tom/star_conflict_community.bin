@@ -1,0 +1,291 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map_2.ma"
+//by sergey_mitryaev
+//at Thu Mar 14 12:26:45 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 19
+
+objects 19
+{
+	object center
+	{
+		defaults
+		{
+			pos 30 30
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 60 60
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object title_4
+	{
+		defaults
+		{
+			pos -66.6915 101.007
+			opacity 255
+			color 0xff97afd4
+			size 200 60
+			effect ""
+			alignment "CT"
+			sampleText "Sector 4|ececcec|eccPVE"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object exclamatory
+	{
+		defaults
+		{
+			pos 43.9483 -19.6173
+			opacity 255
+			color 0xffffffff
+			size 32 32
+			effect "ui\graphics\map_2\sector_exclamatory"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bg_2
+	{
+		defaults
+		{
+			pos 30 30
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map_2\sector_bg_5"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bg_7
+	{
+		defaults
+		{
+			pos 30 30
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map_2\sector_bg_7"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object color_title_1
+	{
+		defaults
+		{
+			pos -110.968 60.2603
+			opacity 255
+			color 0xff4e4f52
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "Color Sector 4"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object color_title_2
+	{
+		defaults
+		{
+			pos -134.87 73.9848
+			opacity 255
+			color 0xffd28383
+			size 100 50
+			effect ""
+			alignment "CM"
+			sampleText "Color Sector 4"
+			font "segoeuilr_10"
+		}
+		visible_on idle
+	}
+	object color_title_3
+	{
+		defaults
+		{
+			pos -112.751 128.022
+			opacity 255
+			color 0xff92d771
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "Color Sector 4"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object dread_ico
+	{
+		defaults
+		{
+			pos -16.1306 101.288
+			opacity 255
+			color 0xffffffff
+			size 106 26
+			effect "ui\graphics\map_2\dread_ico"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object sector_point
+	{
+		defaults
+		{
+			pos 30 30
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map_2\sector_point"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object sector_point_2
+	{
+		defaults
+		{
+			pos -6 -6
+			opacity 255
+			color 0xffffffff
+			size 36 36
+			effect "ui\graphics\map_2\sector_point_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object clan_ico
+	{
+		defaults
+		{
+			pos 30 30
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map_2\sector_clan_ico"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object race_ico
+	{
+		defaults
+		{
+			pos 30 30
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map_2\sector_race_ico"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\map_2\sector_over"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bg_1
+	{
+		defaults
+		{
+			pos 31 31
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map_2\sector_bg_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object point_current
+	{
+		defaults
+		{
+			pos -16 -18
+			opacity 255
+			color 0xffffffff
+			size 94 94
+			effect "ui\graphics\map_2\sector_point_current"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object sector_point3
+	{
+		defaults
+		{
+			pos 29 31
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map_2\sector_point_3"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object blink
+	{
+		defaults
+		{
+			pos 29 31
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map_2\sector_point_blink"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+}
+
