@@ -1,0 +1,83 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Tue Mar 05 18:02:27 2019
+
+base_res 1280 720
+
+animations 4
+{
+	anim on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lider
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lider_off
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on on
+		visible_on lider
+		visible_on off
+		visible_on lider_off
+	}
+	object title45
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff7fe1ff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "WWWWWWWWW"
+			font "Tiny"
+			blend color_add
+		}
+		visible_on on
+		anim lider obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim off obj_colc
+		{
+			1
+			0xff3c5377
+		}
+		anim lider_off obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+	}
+}
+
