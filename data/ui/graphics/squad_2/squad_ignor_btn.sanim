@@ -1,0 +1,109 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 28 15:51:39 2017
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffc9e8ff
+			size 30 30
+			effect ""
+			alignment "CM"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite er17
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				0 -1	32 -1	0 31	32 31	
+				0.480469 0.701172	0.542969 0.701172	0.480469 0.763672	0.542969 0.763672	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	sprite er18
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-9 -10	41 -10	-9 40	41 40	
+				0.580078 0.683594	0.677734 0.683594	0.580078 0.78125	0.677734 0.78125	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+	}
+	sprite er19
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				1 10	31 10	1 20	31 20	
+				0.375 0.570313	0.433594 0.570313	0.375 0.589844	0.433594 0.589844	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
