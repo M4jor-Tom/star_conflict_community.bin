@@ -1,0 +1,38 @@
+﻿source_file  Y:/art/source/ui/graphics/help_control/help_control.ma
+//by sega
+//at Fri Sep 30 16:15:10 2011
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/help_control.tif"
+			vertices_nc
+			{
+				0 94.31	1280 94.31	0 610.31	1280 610.31	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
