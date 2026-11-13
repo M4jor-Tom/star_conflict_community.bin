@@ -1,0 +1,55 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Mon Sep 19 14:43:56 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName389
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				48.2639 12.8433	63.7361 12.8433	48.2639 37.1567	63.7361 37.1567	
+				0.880859 0.140625	0.894531 0.140625	0.880859 0.183594	0.894531 0.183594	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp54
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	57 -0	63 -0	0 6	6 6	57 6	63 6	0 44	6 44	57 44	63 44	0 50	6 50	57 50	63 50	
+				0.0733453 0.00196683	0.0792047 0.00196683	0.1142 0.00196683	0.12006 0.00196683	0.0733453 0.00782621	0.0792047 0.00782621	0.1142 0.00782621	0.12006 0.00782621	0.0733453 0.0449466	0.0792047 0.0449466	0.1142 0.0449466	0.12006 0.0449466	0.0733453 0.050806	0.0792047 0.050806	0.1142 0.050806	0.12006 0.050806	
+				0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+}
+
