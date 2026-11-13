@@ -1,0 +1,164 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Mon Dec 09 15:37:41 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 11
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1484 814
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bookmark
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1484 60
+			effect "ui\graphics\battle_pass\bookmark_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object banner
+	{
+		defaults
+		{
+			pos 0 74
+			opacity 255
+			color 0xffffffff
+			size 1484 264
+			effect "ui\graphics\battle_pass\battle_pass_banner"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 385
+			opacity 255
+			color 0xffffffff
+			size 1484 382
+			effect "ui\graphics\battle_pass\battle_pass_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_btn2_1
+	{
+		defaults
+		{
+			pos 0 771
+			opacity 255
+			color 0xffffffff
+			size 272 40
+			effect "ui\graphics\battle_pass\bp_btn2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_btn2_2
+	{
+		defaults
+		{
+			pos 1212 771
+			opacity 255
+			color 0xffffffff
+			size 272 40
+			effect "ui\graphics\battle_pass\bp_btn2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 1431 8
+			opacity 255
+			color 0xffffffff
+			size 50 60
+			effect "ui\graphics\profile_2\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 691 321
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_btn2_3
+	{
+		defaults
+		{
+			pos 0 771
+			opacity 255
+			color 0xffffffff
+			size 300 42
+			effect "ui\graphics\battle_pass\bp_btn6"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_btn2_4
+	{
+		defaults
+		{
+			pos 318 771
+			opacity 255
+			color 0xffffffff
+			size 300 42
+			effect "ui\graphics\battle_pass\bp_btn5"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_btn2_5
+	{
+		defaults
+		{
+			pos 894 771
+			opacity 255
+			color 0xffffffff
+			size 300 42
+			effect "ui\graphics\battle_pass\bp_btn6"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
