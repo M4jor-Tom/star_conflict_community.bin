@@ -1,0 +1,201 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/gold_buy.ma"
+//by Sergey_Mitryaev
+//at Fri Aug 25 13:31:43 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 10
+{
+	object title
+	{
+		defaults
+		{
+			pos 10.3215 -0
+			opacity 255
+			color 0xffff9000
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Покупка лицензии пилота"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 176.65 27.3185
+			opacity 255
+			color 0xffffffff
+			size 460 60
+			effect ""
+			alignment "LT"
+			sampleText "Лицензия | пилота |крометого за бой ...|опыта"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 720 462
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 172 90.7393
+			opacity 255
+			color 0xffffffff
+			size 480 340
+			effect "ui\graphics\buy_gold\buy_gold_list"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 557.986 434
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 397 434
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 700 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dlc_list
+	{
+		defaults
+		{
+			pos 7 29
+			opacity 255
+			color 0xffffffff
+			size 160 340
+			effect "ui\graphics\shop\btn_dlc"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object loading_big
+	{
+		defaults
+		{
+			pos 384 198
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object present
+	{
+		defaults
+		{
+			pos 186.036 24.4075
+			opacity 255
+			color 0xffffffff
+			size 514 60
+			effect "ui\graphics\buy_gold\buy_gold_present_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sprite_10
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-3.45709 -4.05298	4.54291 -4.05298	715.086 -4.05298	722.914 -4.05298	-3.45709 22.072	4.54291 22.072	715.086 22.072	722.914 22.072	-3.45709 457.966	4.54291 457.966	715.086 457.966	722.914 457.966	-3.45709 466.053	4.54291 466.053	715.086 466.053	722.914 466.053	
+				0.0585938 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585938 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sprite_12
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				172.5 89	176.5 89	709.5 89	713.5 89	172.5 93	176.5 93	709.5 93	713.5 93	172.5 423	176.5 423	709.5 423	713.5 423	172.5 427	176.5 427	709.5 427	713.5 427	
+				0.0585938 0.670898	0.0625 0.670898	0.078125 0.670898	0.0820313 0.670898	0.0585938 0.674805	0.0625 0.674805	0.078125 0.674805	0.0820313 0.674805	0.0585938 0.69043	0.0625 0.69043	0.078125 0.69043	0.0820313 0.69043	0.0585938 0.694336	0.0625 0.694336	0.078125 0.694336	0.0820313 0.694336	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
