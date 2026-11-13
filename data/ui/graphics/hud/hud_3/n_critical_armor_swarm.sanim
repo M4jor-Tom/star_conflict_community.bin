@@ -1,0 +1,54 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by sergey_mitryaev
+//at Tue Dec 25 09:53:11 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 0.5
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectNameqw
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				6.07955 38.48	25.9204 38.48	6.07955 143.52	25.9204 143.52	
+				0.349609 0.00195313	0.382813 0.00195313	0.349609 0.177734	0.382813 0.177734	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xc0c0c0c0	0xc0c0c0c0	0xc0c0c0c0	0xc0c0c0c0	
+			0x8c8c8c8c	0x8c8c8c8c	0x8c8c8c8c	0x8c8c8c8c	
+			0x63636363	0x63636363	0x63636363	0x63636363	
+			0x44444444	0x44444444	0x44444444	0x44444444	
+			0x2c2c2c2c	0x2c2c2c2c	0x2c2c2c2c	0x2c2c2c2c	
+			0x1a1a1a1a	0x1a1a1a1a	0x1a1a1a1a	0x1a1a1a1a	
+			0xf0f0f0f	0xf0f0f0f	0xf0f0f0f	0xf0f0f0f	
+			0x7070707	0x7070707	0x7070707	0x7070707	
+			0x2020202	0x2020202	0x2020202	0x2020202	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+}
+
