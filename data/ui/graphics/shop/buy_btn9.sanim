@@ -1,0 +1,209 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Aug 25 12:59:49 2014
+
+
+animations 6
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	19.7697 -4	27.7697 -4	-4 4	4 4	19.7697 4	27.7697 4	-4 20	4 20	19.7697 20	27.7697 20	-4 28	4 28	19.7697 28	27.7697 28	
+				0.0585938 0.644531	0.0664063 0.644531	0.0742188 0.644531	0.0820313 0.644531	0.0585938 0.652344	0.0664063 0.652344	0.0742188 0.652344	0.0820313 0.652344	0.0585938 0.660156	0.0664063 0.660156	0.0742188 0.660156	0.0820313 0.660156	0.0585938 0.667969	0.0664063 0.667969	0.0742188 0.667969	0.0820313 0.667969	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		anim disable sp_colc
+		{
+			1
+			0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	0x6affffff	
+		}
+	}
+	sprite objectName306
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "L"
+			vertices
+			{
+				2 1	22 1	2 21	22 21	
+				0.369141 0.208984	0.388672 0.208984	0.369141 0.228516	0.388672 0.228516	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		anim disable sp_colc
+		{
+			1
+			0x6affffff	0x6affffff	0x6affffff	0x6affffff	
+		}
+	}
+	sprite over1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	4 -0	19.9414 -0	23.9414 -0	0 4	4 4	19.9414 4	23.9414 4	0 19.805	4 19.805	19.9414 19.805	23.9414 19.805	0 23.805	4 23.805	19.9414 23.805	23.9414 23.805	
+				0.0859375 0.645508	0.0898438 0.645508	0.103516 0.645508	0.107422 0.645508	0.0859375 0.649414	0.0898438 0.649414	0.103516 0.649414	0.107422 0.649414	0.0859375 0.663086	0.0898438 0.663086	0.103516 0.663086	0.107422 0.663086	0.0859375 0.666992	0.0898438 0.666992	0.103516 0.666992	0.107422 0.666992	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on idle
+		anim over sp_posc_colc
+		{
+			1 1
+			0 -0	4 -0	19.9414 -0	23.9414 -0	0 4	4 4	19.9414 4	23.9414 4	0 20.913	4 20.913	19.9414 20.913	23.9414 20.913	0 24.913	4 24.913	19.9414 24.913	23.9414 24.913	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+		anim press sp_posc_colc
+		{
+			1 1
+			0 1.24894	4 1.24894	19.9414 1.24894	23.9414 1.24894	0 5.24894	4 5.24894	19.9414 5.24894	23.9414 5.24894	0 22.162	4 22.162	19.9414 22.162	23.9414 22.162	0 26.162	4 26.162	19.9414 26.162	23.9414 26.162	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+		anim select sp_posc
+		{
+			1 
+			0 -0	4 -0	19.9414 -0	23.9414 -0	0 4	4 4	19.9414 4	23.9414 4	0 20.913	4 20.913	19.9414 20.913	23.9414 20.913	0 24.913	4 24.913	19.9414 24.913	23.9414 24.913	
+		}
+		anim sel_over sp_posc_colc
+		{
+			1 1
+			0 -0	4 -0	19.9414 -0	23.9414 -0	0 4	4 4	19.9414 4	23.9414 4	0 20.913	4 20.913	19.9414 20.913	23.9414 20.913	0 24.913	4 24.913	19.9414 24.913	23.9414 24.913	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+		anim disable sp_posc
+		{
+			1 
+			0 -0	4 -0	19.9414 -0	23.9414 -0	0 4	4 4	19.9414 4	23.9414 4	0 20.913	4 20.913	19.9414 20.913	23.9414 20.913	0 24.913	4 24.913	19.9414 24.913	23.9414 24.913	
+		}
+	}
+	sprite sprite_6
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	5.46056 -0	18.2303 -0	23.9414 -0	0 5.30302	5.46056 5.30302	18.2303 5.30302	23.9414 5.30302	0 18.195	5.46056 18.195	18.2303 18.195	23.9414 18.195	0 23.805	5.46056 23.805	18.2303 23.805	23.9414 23.805	
+				0.0586356 0.670892	0.0644113 0.670892	0.0761384 0.670892	0.0820647 0.670892	0.0586356 0.676764	0.0644113 0.676764	0.0761384 0.676764	0.0820647 0.676764	0.0586356 0.688466	0.0644113 0.688466	0.0761384 0.688466	0.0820647 0.688466	0.0586356 0.694346	0.0644113 0.694346	0.0761384 0.694346	0.0820647 0.694346	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_posc
+		{
+			1 
+			0 -0	5.46056 -0	18.2303 -0	23.9414 -0	0 5.30302	5.46056 5.30302	18.2303 5.30302	23.9414 5.30302	0 19.303	5.46056 19.303	18.2303 19.303	23.9414 19.303	0 24.913	5.46056 24.913	18.2303 24.913	23.9414 24.913	
+		}
+		anim press sp_posc
+		{
+			1 
+			0 1.24894	5.46056 1.24894	18.2303 1.24894	23.9414 1.24894	0 5.30302	5.46056 5.30302	18.2303 5.30302	23.9414 5.30302	0 19.303	5.46056 19.303	18.2303 19.303	23.9414 19.303	0 26.162	5.46056 26.162	18.2303 26.162	23.9414 26.162	
+		}
+		anim select sp_posc_colc
+		{
+			1 1
+			0 -0	5.46056 -0	18.2303 -0	23.9414 -0	0 5.30302	5.46056 5.30302	18.2303 5.30302	23.9414 5.30302	0 19.303	5.46056 19.303	18.2303 19.303	23.9414 19.303	0 24.913	5.46056 24.913	18.2303 24.913	23.9414 24.913	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel_over sp_posc_colc
+		{
+			1 1
+			0 -0	5.46056 -0	18.2303 -0	23.9414 -0	0 5.30302	5.46056 5.30302	18.2303 5.30302	23.9414 5.30302	0 19.303	5.46056 19.303	18.2303 19.303	23.9414 19.303	0 24.913	5.46056 24.913	18.2303 24.913	23.9414 24.913	
+			0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	0xf5f5f5f5	
+		}
+		anim disable sp_posc
+		{
+			1 
+			0 -0	5.46056 -0	18.2303 -0	23.9414 -0	0 5.30302	5.46056 5.30302	18.2303 5.30302	23.9414 5.30302	0 19.303	5.46056 19.303	18.2303 19.303	23.9414 19.303	0 24.913	5.46056 24.913	18.2303 24.913	23.9414 24.913	
+		}
+	}
+}
+
