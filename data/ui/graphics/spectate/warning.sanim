@@ -1,0 +1,118 @@
+﻿source_file "Y:/art/source/ui/graphics/spectate/spectate.ma"
+//by sergey_mitryaev
+//at Thu May 15 17:16:31 2014
+
+
+animations 2
+{
+	anim readiness
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gameover
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff89b5ff
+			size 600 40
+			effect ""
+			alignment "CM"
+			sampleText "PRIGOTOVITSA K BITVE"
+			font "Large_outl"
+			blend color_add
+		}
+		anim readiness obj_col
+		{
+			6
+			0xff89b5ff
+			0xff5b7db7
+			0xff4a648f
+			0xff3c4f6e
+			0xff2e3c53
+			0xff242e41
+		}
+		anim gameover obj_col
+		{
+			6
+			0xffff2800
+			0xffa61700
+			0xff7e1200
+			0xff560d00
+			0xff3f0900
+			0xff270600
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName172
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				-197.816 -1.21115	798.52 -1.21115	-197.816 41.4881	798.52 41.4881	
+				0.724907 0.00889868	0.888375 0.00889868	0.724907 0.0321169	0.888375 0.0321169	
+				0xff4e4e4e	0xff4e4e4e	0xff4e4e4e	0xff4e4e4e	
+			}
+		}
+		anim gameover sp_col
+		{
+			6
+			0xff909090	0xff909090	0xff909090	0xff909090	
+			0xff555555	0xff555555	0xff555555	0xff555555	
+			0xff2e2e2e	0xff2e2e2e	0xff2e2e2e	0xff2e2e2e	
+			0xff202020	0xff202020	0xff202020	0xff202020	
+			0xff171717	0xff171717	0xff171717	0xff171717	
+			0xff0e0e0e	0xff0e0e0e	0xff0e0e0e	0xff0e0e0e	
+		}
+	}
+	sprite objectName65
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				-24.2171 -1.21115	624.922 -1.21115	-24.2171 41.4881	624.922 41.4881	
+				0.777871 0.0377683	0.808067 0.0377683	0.777871 0.0677004	0.808067 0.0677004	
+				0x288d8d8d	0x288d8d8d	0x288d8d8d	0x288d8d8d	
+			}
+		}
+		anim readiness sp_col
+		{
+			6
+			0x288d8d8d	0x288d8d8d	0x288d8d8d	0x288d8d8d	
+			0x28575757	0x28575757	0x28575757	0x28575757	
+			0x284c4c4c	0x284c4c4c	0x284c4c4c	0x284c4c4c	
+			0x28444444	0x28444444	0x28444444	0x28444444	
+			0x28313131	0x28313131	0x28313131	0x28313131	
+			0x28282828	0x28282828	0x28282828	0x28282828	
+		}
+	}
+}
+
