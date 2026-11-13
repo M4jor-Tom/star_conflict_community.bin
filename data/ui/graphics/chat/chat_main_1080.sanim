@@ -1,0 +1,204 @@
+﻿source_file "Y:/art/source/ui/graphics/chat/chat.ma"
+//by sergey_mitryaev
+//at Fri Nov 22 16:50:18 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 14
+{
+	object input3
+	{
+		defaults
+		{
+			pos 8 354
+			opacity 255
+			color 0xffffffff
+			size 356 25
+			effect "ui\graphics\chat\chat_input"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object list3
+	{
+		defaults
+		{
+			pos 0 379
+			opacity 255
+			color 0xffffffff
+			size 55 25
+			effect "ui\graphics\chat\chat_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn1
+	{
+		defaults
+		{
+			pos 48 380
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hangar\menu_btn_7"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos -2 380
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hangar\menu_btn_6"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object list2
+	{
+		defaults
+		{
+			pos 0 422
+			opacity 255
+			color 0xffffffff
+			size 55 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object input2
+	{
+		defaults
+		{
+			pos 10 397
+			opacity 255
+			color 0xffffffff
+			size 356 25
+			effect "ui\graphics\chat\chat_input"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object hide_mode
+	{
+		defaults
+		{
+			pos 9 366
+			opacity 255
+			color 0xffffffff
+			size 360 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 356 430
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chat_hide_btn
+	{
+		defaults
+		{
+			pos 0.00268756 379.707
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\chat\chat_hide_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 1
+			opacity 255
+			color 0xffffffff
+			size 55 25
+			effect "ui\graphics\chat\chat_list_3"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object input
+	{
+		defaults
+		{
+			pos 0.00268756 404.626
+			opacity 255
+			color 0xffffffff
+			size 356 25
+			effect "ui\graphics\chat\chat_input"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object chat_btn
+	{
+		defaults
+		{
+			pos 0.00268756 354.482
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\chat\chat_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn2
+	{
+		defaults
+		{
+			pos 75.1234 735.318
+			opacity 255
+			color 0xffffffff
+			size 20 46
+			effect "ui\graphics\hangar_iter_3\b_trade_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn3
+	{
+		defaults
+		{
+			pos 12 735.318
+			opacity 255
+			color 0xffffffff
+			size 52 46
+			effect "ui\graphics\hangar_iter_3\b_chat_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
