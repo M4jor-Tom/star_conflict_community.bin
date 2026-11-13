@@ -1,0 +1,99 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Fri Sep 28 11:17:23 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 8.33915 11.4708
+			opacity 255
+			color 0xffffffff
+			size 71 71
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 8.33915 61.8808
+			opacity 255
+			color 0xffffffff
+			size 71 72
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 58.7491 61.8808
+			opacity 255
+			color 0xffffffff
+			size 71 72
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 360 72
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 8.33915 113.001
+			opacity 255
+			color 0xffffffff
+			size 71 72
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 58.7491 113.001
+			opacity 255
+			color 0xffffffff
+			size 71 72
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
