@@ -1,0 +1,197 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Mon May 16 16:38:46 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 67 6
+			effect ""
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 0 17
+			opacity 255
+			color 0xffff9a00
+			size 67 6
+			effect ""
+			alignment "CM"
+			sampleText "color_1"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object color_2
+	{
+		defaults
+		{
+			pos 0 25
+			opacity 255
+			color 0xff0099ff
+			size 67 6
+			effect ""
+			alignment "CM"
+			sampleText "color_2"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectNametyj
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				-2 -2	70 -2	-2 8	70 8	
+				0.28418 0.350586	0.354492 0.350586	0.28418 0.360352	0.354492 0.360352	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	sprite objectNametyje
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	67 -0	0 6	67 6	
+				0.318359 0.353516	0.319336 0.353516	0.318359 0.357422	0.319336 0.357422	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectNametyjfsw
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	0 -0	0 6	0 6	
+				0.505927 0.375013	0.571356 0.375013	0.505927 0.380872	0.571356 0.380872	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_pos_colc
+		{
+			12 1
+			0 -0	0 -0	0 6	0 6	
+			0 -0	6.09091 -0	0 6	6.09091 6	
+			0 -0	12.1818 -0	0 6	12.1818 6	
+			0 -0	18.2727 -0	0 6	18.2727 6	
+			0 -0	24.3636 -0	0 6	24.3636 6	
+			0 -0	30.4545 -0	0 6	30.4545 6	
+			0 -0	36.5454 -0	0 6	36.5454 6	
+			0 -0	42.6364 -0	0 6	42.6364 6	
+			0 -0	48.7273 -0	0 6	48.7273 6	
+			0 -0	54.8182 -0	0 6	54.8182 6	
+			0 -0	60.9091 -0	0 6	60.9091 6	
+			0 -0	67 -0	0 6	67 6	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectNametyjfsww
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	0 -0	0 6	0 6	
+				0.505865 0.367186	0.505865 0.367186	0.505865 0.373045	0.505865 0.373045	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos_uv
+		{
+			11 11 
+			0 -0	0 -0	0 6	0 6	
+			0 -0	6.7 -0	0 6	6.7 6	
+			0 -0	13.4 -0	0 6	13.4 6	
+			0 -0	20.1 -0	0 6	20.1 6	
+			0 -0	26.8 -0	0 6	26.8 6	
+			0 -0	33.5 -0	0 6	33.5 6	
+			0 -0	40.2 -0	0 6	40.2 6	
+			0 -0	46.9 -0	0 6	46.9 6	
+			0 -0	53.6 -0	0 6	53.6 6	
+			0 -0	60.3 -0	0 6	60.3 6	
+			0 -0	67 -0	0 6	67 6	
+			0.505865 0.367186	0.505865 0.367186	0.505865 0.373045	0.505865 0.373045	
+			0.505865 0.367186	0.512408 0.367186	0.505865 0.373045	0.512408 0.373045	
+			0.505865 0.367186	0.518951 0.367186	0.505865 0.373045	0.518951 0.373045	
+			0.505865 0.367186	0.525494 0.367186	0.505865 0.373045	0.525494 0.373045	
+			0.505865 0.367186	0.532037 0.367186	0.505865 0.373045	0.532037 0.373045	
+			0.505865 0.367186	0.53858 0.367186	0.505865 0.373045	0.53858 0.373045	
+			0.505865 0.367186	0.545123 0.367186	0.505865 0.373045	0.545123 0.373045	
+			0.505865 0.367186	0.551666 0.367186	0.505865 0.373045	0.551666 0.373045	
+			0.505865 0.367186	0.558209 0.367186	0.505865 0.373045	0.558209 0.373045	
+			0.505865 0.367186	0.564752 0.367186	0.505865 0.373045	0.564752 0.373045	
+			0.505865 0.367186	0.571295 0.367186	0.505865 0.373045	0.571295 0.373045	
+		}
+		anim idle_2 sp_posc_uvc_colc
+		{
+			1 1 1
+			0 -0	67 -0	0 6	67 6	
+			0.505865 0.367186	0.571295 0.367186	0.505865 0.373045	0.571295 0.373045	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
