@@ -1,0 +1,449 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Thu Jun 29 16:30:13 2017
+
+base_res 1280 720
+
+animations 11
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim skull
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim skull_lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim raid
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim raid_lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim red
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim green
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim raid_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim unvisit
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+sprites 11
+{
+	total_vertices 44
+
+	sprite myself57
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				-8 -8	8 -8	-8 8	8 8	
+				-0.00390625 0.164063	0.0585938 0.164063	-0.00390625 0.226563	0.0585938 0.226563	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim lock sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim skull sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim skull_lock sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim raid sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim raid_lock sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim red sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim green sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim raid_over sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim unvisit sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite myself76
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				-8 -8	8 -8	-8 8	8 8	
+				-0.00390625 0.164063	0.0585938 0.164063	-0.00390625 0.226563	0.0585938 0.226563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on lock
+		anim skull sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on skull_lock
+		visible_on raid
+		visible_on raid_lock
+		visible_on red
+		visible_on green
+		visible_on raid_over
+		visible_on unvisit
+	}
+	sprite myself77
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-11 -11	11 -11	-11 11	11 11	
+				0.804688 0.381836	0.826172 0.381836	0.804688 0.40332	0.826172 0.40332	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on skull
+		visible_on skull_lock
+		visible_on raid
+		visible_on raid_lock
+		visible_on red
+		visible_on green
+		visible_on raid_over
+		visible_on unvisit
+	}
+	sprite myself78
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-11 -11	11 -11	-11 11	11 11	
+				0.396484 0.544922	0.417969 0.544922	0.396484 0.566406	0.417969 0.566406	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on lock
+		visible_on skull
+		anim skull_lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on raid
+		visible_on raid_lock
+		visible_on red
+		visible_on green
+		visible_on raid_over
+		visible_on unvisit
+	}
+	sprite myself84
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-11 -11	11 -11	-11 11	11 11	
+				0.422852 0.563477	0.444336 0.563477	0.422852 0.584961	0.444336 0.584961	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on lock
+		visible_on skull
+		visible_on skull_lock
+		visible_on raid
+		anim raid_lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on red
+		visible_on green
+		visible_on raid_over
+		visible_on unvisit
+	}
+	sprite myself85
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				-5 -5	5 -5	-5 5	5 5	
+				0.0585938 0.175781	0.0976563 0.175781	0.0585938 0.214844	0.0976563 0.214844	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on lock
+		visible_on skull
+		visible_on skull_lock
+		anim raid sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on raid_lock
+		visible_on red
+		visible_on green
+		anim raid_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on unvisit
+	}
+	sprite myself91
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				-8 -8	8 -8	-8 8	8 8	
+				-0.00390625 0.164063	0.0585938 0.164063	-0.00390625 0.226563	0.0585938 0.226563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on lock
+		visible_on skull
+		visible_on skull_lock
+		visible_on raid
+		visible_on raid_lock
+		anim red sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on green
+		visible_on raid_over
+		visible_on unvisit
+	}
+	sprite myself92
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				-8 -8	8 -8	-8 8	8 8	
+				0 0.546875	0.0625 0.546875	0 0.609375	0.0625 0.609375	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on lock
+		visible_on skull
+		visible_on skull_lock
+		visible_on raid
+		visible_on raid_lock
+		visible_on red
+		visible_on green
+		visible_on raid_over
+		anim unvisit sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite myself109
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			blend color_add
+			vertices
+			{
+				-7 -8	9 -8	-7 8	9 8	
+				0 0.164063	0.0625 0.164063	0 0.226563	0.0625 0.226563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on lock
+		visible_on skull
+		visible_on skull_lock
+		visible_on raid
+		visible_on raid_lock
+		visible_on red
+		visible_on green
+		visible_on raid_over
+		visible_on unvisit
+	}
+	sprite myself110
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			blend color_add
+			vertices
+			{
+				-12.4372 -14	14.7998 -14	-12.4372 14	14.7998 14	
+				0.632813 0.148438	0.742188 0.148438	0.632813 0.257813	0.742188 0.257813	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on lock
+		visible_on skull
+		visible_on skull_lock
+		visible_on raid
+		visible_on raid_lock
+		visible_on red
+		visible_on green
+		visible_on raid_over
+		visible_on unvisit
+	}
+	sprite myself111
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			blend color_add
+			vertices
+			{
+				-12.4372 -14	14.6883 -14	-12.4372 14	14.6883 14	
+				0.632813 0.148438	0.742188 0.148438	0.632813 0.257813	0.742188 0.257813	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on lock
+		visible_on skull
+		visible_on skull_lock
+		visible_on raid
+		visible_on raid_lock
+		visible_on red
+		visible_on green
+		anim raid_over sp_colc
+		{
+			1
+			0xffff00e1	0xffff00e1	0xffff00e1	0xffff00e1	
+		}
+		visible_on unvisit
+	}
+}
+
