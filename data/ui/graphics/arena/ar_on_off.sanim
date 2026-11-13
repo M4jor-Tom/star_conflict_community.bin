@@ -1,0 +1,114 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Mon Sep 28 15:09:22 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on on
+		visible_on off
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName376
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			vertices
+			{
+				2 2	16 2	2 16	16 16	
+				0.496094 0.228516	0.523438 0.228516	0.496094 0.255859	0.523438 0.255859	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on on
+		visible_on off
+	}
+	sprite objectName377
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			vertices
+			{
+				4 4	14 4	4 14	14 14	
+				0.496094 0.201172	0.515625 0.201172	0.496094 0.220703	0.515625 0.220703	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim on sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on off
+	}
+	sprite objectName413
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			vertices
+			{
+				4 4	14 4	4 14	14 14	
+				0.519531 0.201172	0.539063 0.201172	0.519531 0.220703	0.539063 0.220703	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on on
+		anim off sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
