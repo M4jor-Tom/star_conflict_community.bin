@@ -1,0 +1,171 @@
+﻿source_file "Y:/art/source/ui/graphics/ny_count/ny_count.ma"
+//by sergey_mitryaev
+//at Fri Nov 28 11:22:44 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 267 88
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 7 -0
+			opacity 255
+			color 0xffffffff
+			size 180 20
+			effect ""
+			alignment "LM"
+			sampleText "Легкие лазеры"
+			font "VerySmall_outl"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 0 21
+			opacity 255
+			color 0xffffffff
+			size 267 46
+			effect "ui\graphics\ny_count\ny_count_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chat_btn_2
+	{
+		defaults
+		{
+			pos 248 1
+			opacity 255
+			color 0xffc6c6c6
+			size 20 20
+			effect "ui\graphics\chat\chat_btn_2"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object count
+	{
+		defaults
+		{
+			pos 0 21
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\ny_count\ny_count_count_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title5
+	{
+		defaults
+		{
+			pos 7 68
+			opacity 255
+			color 0xffffffff
+			size 180 20
+			effect ""
+			alignment "LM"
+			sampleText "Легкие лазеры"
+			font "VerySmall_outl"
+		}
+		visible_on idle
+	}
+	object prog
+	{
+		defaults
+		{
+			pos 20 37
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\ny_count\ny_count_prog"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object threat_prog
+	{
+		defaults
+		{
+			pos 144 69
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\ny_count\ny_threat_prog"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	263 -4	271 -4	-4 22	4 22	263 22	271 22	-4 82	4 82	263 82	271 82	-4 90	4 90	263 90	271 90	
+				0.0585937 0.695313	0.066406 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.066406 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723638	0.066406 0.723638	0.0742187 0.723638	0.0820313 0.723638	0.0585938 0.731454	0.066406 0.731454	0.0742187 0.731454	0.0820312 0.731454	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp213
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 67	6 67	261 67	267 67	0 73	6 73	261 73	267 73	0 83	6 83	261 83	267 83	0 89	6 89	261 89	267 89	
+				0.253895 0.114258	0.253895 0.120117	0.253895 0.132813	0.253895 0.138672	0.259754 0.114258	0.259754 0.120117	0.259754 0.132812	0.259754 0.138672	0.272461 0.114258	0.272461 0.120117	0.272461 0.132813	0.272461 0.138672	0.27832 0.114258	0.27832 0.120117	0.27832 0.132813	0.27832 0.138672	
+				0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+}
+
