@@ -1,0 +1,288 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race_4.ma"
+//by sergey_mitryaev
+//at Thu Dec 13 13:16:09 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 17
+
+objects 11
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1920 410
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_create
+	{
+		defaults
+		{
+			anchor "C"
+			pos 371 357
+			opacity 255
+			color 0xffffffff
+			size 100 30
+			effect "ui\graphics\arena\arena_btn_4"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object center
+	{
+		defaults
+		{
+			anchor "C"
+			pos 445 -0
+			opacity 255
+			color 0xffffffff
+			size 1 360
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			anchor "C"
+			pos 203 3
+			opacity 255
+			color 0xffffffff
+			size 500 30
+			effect ""
+			alignment "CM"
+			sampleText "Нода ячейки компьютера"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object note
+	{
+		defaults
+		{
+			anchor "C"
+			pos -42 24
+			opacity 255
+			color 0xffffffff
+			size 1000 50
+			effect ""
+			alignment "CM"
+			sampleText "При прокачке открывает  дополнительную ячейку  модуля.|Еще  строка"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			anchor "C"
+			pos 371 335.228
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "CM"
+			sampleText "100000000.0000000"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 1052 3.68336
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests_2\q_2_btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			anchor "C"
+			pos 397 135.33
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object item_tree
+	{
+		defaults
+		{
+			anchor "C"
+			pos 306 154
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\ships_tree_4\study_item_tree_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object item_tree1
+	{
+		defaults
+		{
+			anchor "C"
+			pos 306 115
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\ships_tree_4\study_item_tree_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object quest
+	{
+		defaults
+		{
+			anchor "C"
+			pos -35 78
+			opacity 255
+			color 0xffffffff
+			size 300 72
+			effect "ui\graphics\ships_tree_3\study_quest_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 6
+{
+	total_vertices 36
+
+	sprite objectName442
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/quest_bg.tif"
+			anchor "C"
+			vertices
+			{
+				-1536 -1	-256 -1	-1536 410	-256 410	
+				0.998047 0	0.00292969 0	0.998047 0.722656	0.00292969 0.722656	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName441
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/quest_bg.tif"
+			anchor "C"
+			vertices
+			{
+				1024 -1	2304 -1	1024 410	2304 410	
+				1 0	0 0	1 0.722656	0 0.722656	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/quest_bg.tif"
+			anchor "C"
+			vertices
+			{
+				-256 -1	1024 -1	-256 410	1024 410	
+				0.00292969 0	0.998047 0	0.00292969 0.722656	0.998047 0.722656	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName435
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "C"
+			vertices
+			{
+				-4340.5 -0	-4330.5 -0	5042.5 -0	5052.5 -0	-4340.5 10	-4330.5 10	5042.5 10	5052.5 10	-4340.5 401	-4330.5 401	5042.5 401	5052.5 401	-4340.5 411	-4330.5 411	5042.5 411	5052.5 411	
+				0.45086 0.289727	0.456276 0.289727	0.461693 0.289727	0.467109 0.289727	0.45086 0.295143	0.456276 0.295143	0.461693 0.295143	0.467109 0.295143	0.45086 0.30056	0.456276 0.30056	0.461693 0.30056	0.467109 0.30056	0.45086 0.305976	0.456276 0.305976	0.461693 0.305976	0.467109 0.305976	
+				0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	0x68002053	
+			}
+		}
+		visible_on idle
+	}
+	sprite que25
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			anchor "C"
+			vertices_nc
+			{
+				-266.003 -3.05176e-005	1160 3.05176e-005	-266.003 0.999939	1160 1.00003	
+				0.923828 0.25	0.986328 0.25	0.923828 0.251953	0.986328 0.251953	
+			}
+		}
+		visible_on idle
+	}
+	sprite que26
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			anchor "C"
+			vertices_nc
+			{
+				-266.003 409.5	1160 409.5	-266.003 410.5	1160 410.5	
+				0.923828 0.25	0.986328 0.25	0.923828 0.251953	0.986328 0.251953	
+			}
+		}
+		visible_on idle
+	}
+}
+
