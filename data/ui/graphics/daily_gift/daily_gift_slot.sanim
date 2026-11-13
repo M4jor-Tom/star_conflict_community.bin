@@ -1,0 +1,155 @@
+﻿source_file "Y:/art/source/ui/graphics/daily_gift/daily_gift.ma"
+//by sergey_mitryaev
+//at Mon Mar 04 12:49:47 2013
+
+
+animations 3
+{
+	anim passed
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 93 93
+			effect ""
+			alignment "LT"
+		}
+		visible_on passed
+		visible_on active
+		visible_on inactive
+	}
+	object day
+	{
+		defaults
+		{
+			pos -0.272308 63.482
+			opacity 255
+			color 0xffffffff
+			size 90 20
+			effect "ui\graphics\daily_gift\daily_gift_slot_day"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on passed
+		visible_on active
+		visible_on inactive
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/daily_gift.tif"
+			vertices
+			{
+				-7 -4.75943	97 -4.75943	-7 64.7594	97 64.7594	
+				0.00292969 0.946296	0.104492 0.946296	0.00292969 0.988272	0.104492 0.988272	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on passed
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite bg_2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/daily_gift.tif"
+			vertices
+			{
+				-7 -4.75943	97 -4.75943	-7 64.7594	97 64.7594	
+				0.102539 0.946296	0.204102 0.946296	0.102539 0.988272	0.204102 0.988272	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on passed
+		anim active sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on inactive
+	}
+	sprite bg_3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/daily_gift.tif"
+			vertices
+			{
+				-7 -4.75943	97 -4.75943	-7 64.7594	97 64.7594	
+				0.203125 0.946296	0.304688 0.946296	0.203125 0.988272	0.304688 0.988272	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on passed
+		anim active sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim inactive sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				25 10	65 10	25 50	65 50	
+				-7.45058e-009 0	1 0	-7.45058e-009 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on passed
+		visible_on active
+		visible_on inactive
+	}
+}
+
