@@ -1,0 +1,111 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_2.ma"
+//by sergey_mitryaev
+//at Tue Jan 28 18:17:49 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gold
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+sprites 4
+{
+	total_vertices 28
+
+	sprite sp2d
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	4 -0	5 -0	8 -0	0 2	4 2	5 2	8 2	0 7	4 7	5 7	8 7	0 12	4 12	5 12	8 12	
+				0.25293 0.367188	0.256836 0.367188	0.257813 0.367188	0.260742 0.367188	0.25293 0.369141	0.256836 0.369141	0.257813 0.369141	0.260742 0.369141	0.25293 0.374023	0.256836 0.374023	0.257813 0.374023	0.260742 0.374023	0.25293 0.379883	0.256836 0.379883	0.257813 0.379883	0.260742 0.379883	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-1 -1.5	9 -1.5	-1 6	9 6	
+				0.513672 0.0585938	0.523438 0.0585938	0.513672 0.0654297	0.523438 0.0654297	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim gold sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite ico2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1 6	3 6	1 13	3 13	
+				0.513672 0.0947266	0.515625 0.0947266	0.513672 0.0996094	0.515625 0.0996094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim gold sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite ico3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				3 6	6 6	3 13	6 13	
+				0.520508 0.0947266	0.523438 0.0947266	0.520508 0.0996094	0.523438 0.0996094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim gold sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
