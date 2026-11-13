@@ -1,0 +1,83 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by sergey_mitryaev
+//at Fri Dec 25 15:03:40 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1280 400
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 50
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite que55
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-2247 1	3349 1	-2247 50	3349 50	
+				0.145396 0.585713	0.151479 0.585713	0.145396 0.59788	0.151479 0.59788	
+				0x7bffffff	0x7bffffff	0x7bffffff	0x7bffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-2247 1	3349 1	-2247 50	3349 50	
+			-2247 1	3349 1	-2247 85	3349 85	
+			-2247 1	3349 1	-2247 120	3349 120	
+			-2247 1	3349 1	-2247 155	3349 155	
+			-2247 1	3349 1	-2247 190	3349 190	
+			-2247 1	3349 1	-2247 225	3349 225	
+			-2247 1	3349 1	-2247 260	3349 260	
+			-2247 1	3349 1	-2247 295	3349 295	
+			-2247 1	3349 1	-2247 330	3349 330	
+			-2247 1	3349 1	-2247 365	3349 365	
+			-2247 1	3349 1	-2247 400	3349 400	
+		}
+	}
+}
+
