@@ -1,0 +1,36 @@
+﻿source_file  Y:/art/source/ui/graphics/spectate/spectate.ma
+//by sega
+//at Wed Sep 21 18:11:50 2011
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				0.276223 0.310751	8.27622 0.310751	0.276223 9.31075	8.27622 9.31075	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
