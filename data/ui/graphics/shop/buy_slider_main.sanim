@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Nov 26 17:16:47 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object buy_slider
+	{
+		defaults
+		{
+			pos 19 -0
+			opacity 255
+			color 0xffffffff
+			size 110 10
+			effect "ui\graphics\shop\buy_slider"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 180 17
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object buy_input
+	{
+		defaults
+		{
+			pos 150 0.132032
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\shop\buy_slider_input"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slider_btn_left
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\shop\buy_slider_btn_left"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slider_btn_right
+	{
+		defaults
+		{
+			pos 130 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\shop\buy_slider_btn_right"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
