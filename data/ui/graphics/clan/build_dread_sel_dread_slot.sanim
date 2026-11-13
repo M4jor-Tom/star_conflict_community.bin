@@ -1,0 +1,129 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Fri Nov 07 11:32:38 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 246 384
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title26
+	{
+		defaults
+		{
+			pos 24 184
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "CM"
+			sampleText "Создание клана"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 7 210
+			opacity 255
+			color 0xffffffff
+			size 230 160
+			effect ""
+			alignment "LT"
+			sampleText "Создание клана|yukfuyh|yum|jp/i|iklki"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 246 384
+			effect "ui\graphics\clan\build_dread_sel_dread_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sel
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 246 384
+			effect "ui\graphics\clan\build_dread_sel_dread_slot_sel"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp78
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	240 -2	246 -2	-2 4	4 4	240 4	246 4	-2 378	4 378	240 378	246 378	-2 384	4 384	240 384	246 384	
+				0.058618 0.670899	0.064429 0.670899	0.0761719 0.670898	0.0820312 0.670898	0.0586179 0.676758	0.064429 0.676758	0.0761718 0.676758	0.0820313 0.676758	0.058618 0.688477	0.064429 0.688477	0.076172 0.688477	0.0820313 0.688477	0.058618 0.694336	0.0644289 0.694336	0.0761718 0.694336	0.0820313 0.694336	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico10
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				6 5	236 5	6 179	236 179	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
