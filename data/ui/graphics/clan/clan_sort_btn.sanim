@@ -1,0 +1,202 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Dec 25 15:54:09 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 922 26
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos -176 3
+			opacity 255
+			color 0xffffffff
+			size 200 21
+			effect ""
+			alignment "RM"
+			sampleText "asfafsf"
+			font "VerySmall"
+		}
+		anim idle obj_pos_op
+		{
+			2 11 
+			-176 3
+			696 3
+			255
+			255
+			127
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+		}
+	}
+	object arrow
+	{
+		defaults
+		{
+			pos 28 5
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\friend\friend_sort_arrow"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim idle obj_pos_op
+		{
+			2 11 
+			28 5
+			900 5
+			255
+			255
+			127
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+		}
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 26
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object deselect
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 922 26
+			effect "ui\graphics\clan\clan_sort_btn_deselect"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 922 26
+			effect "ui\graphics\clan\clan_sort_btn_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 6 3
+			opacity 255
+			color 0xffffffff
+			size 200 21
+			effect ""
+			alignment "LM"
+			sampleText "asfafsf"
+			font "VerySmall"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			127
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	44 -0	50 -0	0 6	6 6	44 6	50 6	0 20	6 20	44 20	50 20	0 26	6 26	44 26	50 26	
+				0.0547203 0.140619	0.0605797 0.140619	0.0732422 0.140619	0.0791016 0.140619	0.0547203 0.146479	0.0605797 0.146479	0.0732422 0.146479	0.0791016 0.146479	0.0547203 0.150391	0.0605797 0.150391	0.0732422 0.150391	0.0791016 0.150391	0.0547203 0.15625	0.0605797 0.15625	0.0732422 0.15625	0.0791016 0.15625	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	6 -0	44 -0	50 -0	0 6	6 6	44 6	50 6	0 20	6 20	44 20	50 20	0 26	6 26	44 26	50 26	
+			0 -0	6 -0	131.2 -0	137.2 -0	0 6	6 6	131.2 6	137.2 6	0 20	6 20	131.2 20	137.2 20	0 26	6 26	131.2 26	137.2 26	
+			0 -0	6 -0	218.4 -0	224.4 -0	0 6	6 6	218.4 6	224.4 6	0 20	6 20	218.4 20	224.4 20	0 26	6 26	218.4 26	224.4 26	
+			0 -0	6 -0	305.6 -0	311.6 -0	0 6	6 6	305.6 6	311.6 6	0 20	6 20	305.6 20	311.6 20	0 26	6 26	305.6 26	311.6 26	
+			0 -0	6 -0	392.8 -0	398.8 -0	0 6	6 6	392.8 6	398.8 6	0 20	6 20	392.8 20	398.8 20	0 26	6 26	392.8 26	398.8 26	
+			0 -0	6 -0	480 -0	486 -0	0 6	6 6	480 6	486 6	0 20	6 20	480 20	486 20	0 26	6 26	480 26	486 26	
+			0 -0	6 -0	567.2 -0	573.2 -0	0 6	6 6	567.2 6	573.2 6	0 20	6 20	567.2 20	573.2 20	0 26	6 26	567.2 26	573.2 26	
+			0 -0	6 -0	654.4 -0	660.4 -0	0 6	6 6	654.4 6	660.4 6	0 20	6 20	654.4 20	660.4 20	0 26	6 26	654.4 26	660.4 26	
+			0 -0	6 -0	741.6 -0	747.6 -0	0 6	6 6	741.6 6	747.6 6	0 20	6 20	741.6 20	747.6 20	0 26	6 26	741.6 26	747.6 26	
+			0 -0	6 -0	828.8 -0	834.8 -0	0 6	6 6	828.8 6	834.8 6	0 20	6 20	828.8 20	834.8 20	0 26	6 26	828.8 26	834.8 26	
+			0 -0	6 -0	916 -0	922 -0	0 6	6 6	916 6	922 6	0 20	6 20	916 20	922 20	0 26	6 26	916 26	922 26	
+		}
+	}
+}
+
