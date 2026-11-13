@@ -1,0 +1,111 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills_2.ma"
+//by sergey_mitryaev
+//at Thu Oct 15 18:25:46 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim active
+	{
+		mode looped
+		cycle_time 20
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 152 40
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on active
+		visible_on inactive
+	}
+	object name
+	{
+		defaults
+		{
+			pos 27.144 1.88591
+			opacity 255
+			color 0xffff9100
+			size 100 16
+			effect ""
+			alignment "CM"
+			sampleText "T5"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on active
+		anim inactive obj_opc_colc
+		{
+			1 1
+			76
+			0xff714203
+		}
+	}
+	object rank_1
+	{
+		defaults
+		{
+			pos 11.8054 21.7918
+			opacity 255
+			color 0xffffffff
+			size 20 16
+			effect "ui\graphics\skills_2\subtir"
+			alignment "CM"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on active
+		visible_on inactive
+	}
+	object rank_2
+	{
+		defaults
+		{
+			pos 65.7895 21.7918
+			opacity 255
+			color 0xffffffff
+			size 20 16
+			effect "ui\graphics\skills_2\subtir"
+			alignment "CM"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on active
+		visible_on inactive
+	}
+	object rank_3
+	{
+		defaults
+		{
+			pos 120.371 21.7918
+			opacity 255
+			color 0xffffffff
+			size 20 16
+			effect "ui\graphics\skills_2\subtir"
+			alignment "CM"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on active
+		visible_on inactive
+	}
+}
+
