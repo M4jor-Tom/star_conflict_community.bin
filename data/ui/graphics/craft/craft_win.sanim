@@ -1,0 +1,312 @@
+﻿source_file "Y:/art/source/ui/graphics/craft/craft.ma"
+//by sergey_mitryaev
+//at Tue Jan 14 16:20:25 2020
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 20
+
+objects 17
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 576
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tree
+	{
+		defaults
+		{
+			pos 2.00592 18
+			opacity 255
+			color 0xffffffff
+			size 216 26
+			effect "ui\graphics\shop\shop_tree_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object filter
+	{
+		defaults
+		{
+			pos 265 15
+			opacity 255
+			color 0xffffffff
+			size 730 90
+			effect "ui\graphics\shop\filter_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object craft_draw_list
+	{
+		defaults
+		{
+			pos 233 61
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\craft\craft_black_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load_modules
+	{
+		defaults
+		{
+			pos 535.361 211
+			opacity 255
+			color 0xff88b5ff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn
+	{
+		defaults
+		{
+			pos 804 548
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 946 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 10 2
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "LT"
+			sampleText "Нет не единого товара"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_help
+	{
+		defaults
+		{
+			pos 925 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_help"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object add_slot
+	{
+		defaults
+		{
+			pos 233 548.531
+			opacity 255
+			color 0xffffffff
+			size 250 25
+			effect "ui\graphics\equip\add_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 12 414
+			opacity 255
+			color 0xffffdeb3
+			size 200 150
+			effect ""
+			alignment "LB"
+			sampleText "Нет не единого товара |WErgrg g |GWeg w |ggbfsdg|Srgsg"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object resources
+	{
+		defaults
+		{
+			pos 596 63
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\craft\craft_resources_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price_text
+	{
+		defaults
+		{
+			pos 646 550
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\craft\craft_price_text"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_not_found
+	{
+		defaults
+		{
+			pos 433 257.074
+			opacity 255
+			color 0xffffffff
+			size 300 50
+			effect ""
+			alignment "CM"
+			sampleText "Нет не единого товара"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_not_found1
+	{
+		defaults
+		{
+			pos 625.399 257.074
+			opacity 255
+			color 0xffffffff
+			size 300 50
+			effect ""
+			alignment "CM"
+			sampleText "Нет не единого товара"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn8
+	{
+		defaults
+		{
+			pos 597 548
+			opacity 255
+			color 0xffffffff
+			size 124 25
+			effect "ui\graphics\shop\buy_btn12"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object button_5
+	{
+		defaults
+		{
+			pos 851 547
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\quests_2\q_map_status_720"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	962 -4	970 -4	-4 22	4 22	962 22	970 22	-4 572	4 572	962 572	970 572	-4 580	4 580	962 580	970 580	
+				0.0585937 0.695313	0.066406 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.066406 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723638	0.066406 0.723638	0.0742187 0.723638	0.0820313 0.723638	0.0585938 0.731454	0.066406 0.731454	0.0742187 0.731454	0.0820312 0.731454	
+			}
+		}
+		visible_on idle
+	}
+	sprite blackout
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				165.499 20.9975	223.862 20.9975	165.499 576.065	223.862 576.065	
+				0.0817908 0.115909	0.156565 0.115909	0.0817908 0.13164	0.156565 0.13164	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				222.802 21.0025	224.802 21.0025	222.802 576.056	224.802 576.056	
+				0.0713222 0.077615	0.069369 0.077615	0.0713222 0.0942166	0.069369 0.0942166	
+			}
+		}
+		visible_on idle
+	}
+}
+
