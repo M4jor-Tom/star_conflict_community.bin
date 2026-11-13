@@ -1,0 +1,199 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Wed Apr 24 12:30:42 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 570 350
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 15.5363 19.9632
+			opacity 255
+			color 0xffffffff
+			size 550 270
+			effect ""
+			alignment "LT"
+			sampleText "Готовы к бою в самой динамичной космической онлайн-игре?"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 411.223 48.7055
+			opacity 255
+			color 0xffffca00
+			size 150 30
+			effect ""
+			alignment "RM"
+			sampleText "ЖМИ СЮДА"
+			font "Medium"
+		}
+		anim idle obj_pos
+		{
+			2 
+			411.223 48.7055
+			411.223 297.02
+		}
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 100
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object color_link
+	{
+		defaults
+		{
+			pos 619.701 102.713
+			opacity 255
+			color 0xffffca00
+			size 150 30
+			effect ""
+			alignment "RM"
+			sampleText "color"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object title_font
+	{
+		defaults
+		{
+			pos 619.701 60.7134
+			opacity 255
+			color 0xffffffff
+			size 150 30
+			effect ""
+			alignment "RM"
+			sampleText "Large"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object italic_font
+	{
+		defaults
+		{
+			pos 619.701 178.713
+			opacity 255
+			color 0xffffffff
+			size 150 30
+			effect ""
+			alignment "RM"
+			sampleText "italic_font"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object color_link_2
+	{
+		defaults
+		{
+			pos 619.701 139.713
+			opacity 255
+			color 0xffffdeb3
+			size 150 30
+			effect ""
+			alignment "RM"
+			sampleText "color"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 78.9829	6 78.9829	565 78.9829	571 78.9829	0 84.9829	6 84.9829	565 84.9829	571 84.9829	
+				0.32521 0.000977337	0.331069 0.000977337	0.370083 0.000977337	0.375942 0.000977337	0.32521 0.00683671	0.331069 0.00683671	0.370083 0.00683671	0.375942 0.00683671	0.32521 0.0458779	0.331069 0.0458779	0.370083 0.0458779	0.375942 0.0458779	0.32521 0.0517373	0.331069 0.0517373	0.370083 0.0517373	0.375942 0.0517373	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 78.9829	6 78.9829	565 78.9829	571 78.9829	0 84.9829	6 84.9829	565 84.9829	571 84.9829	
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 103.735	6 103.735	565 103.735	571 103.735	0 109.735	6 109.735	565 109.735	571 109.735	
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 128.487	6 128.487	565 128.487	571 128.487	0 134.487	6 134.487	565 134.487	571 134.487	
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 153.239	6 153.239	565 153.239	571 153.239	0 159.239	6 159.239	565 159.239	571 159.239	
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 177.991	6 177.991	565 177.991	571 177.991	0 183.991	6 183.991	565 183.991	571 183.991	
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 202.743	6 202.743	565 202.743	571 202.743	0 208.743	6 208.743	565 208.743	571 208.743	
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 227.495	6 227.495	565 227.495	571 227.495	0 233.495	6 233.495	565 233.495	571 233.495	
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 252.246	6 252.246	565 252.246	571 252.246	0 258.246	6 258.246	565 258.246	571 258.246	
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 276.998	6 276.998	565 276.998	571 276.998	0 282.998	6 282.998	565 282.998	571 282.998	
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 301.75	6 301.75	565 301.75	571 301.75	0 307.75	6 307.75	565 307.75	571 307.75	
+			0 -0	6 -0	565 -0	571 -0	0 6	6 6	565 6	571 6	0 326.502	6 326.502	565 326.502	571 326.502	0 332.502	6 332.502	565 332.502	571 332.502	
+		}
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				467.761 87.3996	535.761 87.3996	467.761 101.4	535.761 101.4	
+				0.422482 0.112652	0.488888 0.112652	0.422482 0.0989806	0.488888 0.0989806	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			2 
+			467.761 87.3996	535.761 87.3996	467.761 101.4	535.761 101.4	
+			467.761 335.4	535.761 335.4	467.761 349.4	535.761 349.4	
+		}
+	}
+}
+
