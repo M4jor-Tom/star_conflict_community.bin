@@ -1,0 +1,148 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Mar 24 13:52:09 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object dist_max
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 70
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object center
+	{
+		defaults
+		{
+			pos 20 20
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tir
+	{
+		defaults
+		{
+			pos 3 4
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect ""
+			alignment "CM"
+			sampleText "4"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 50
+			effect "ui\graphics\clan\fit_modul_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object frame
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 50
+			effect "ui\graphics\clan\fit_modul_frame"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 50
+			effect "ui\graphics\clan\fit_modul_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object in_battle
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 50
+			effect "ui\graphics\ships_tree\ship_in_battle_3"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object center_2
+	{
+		defaults
+		{
+			pos 20 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
