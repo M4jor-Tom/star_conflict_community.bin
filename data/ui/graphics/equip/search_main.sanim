@@ -1,0 +1,73 @@
+﻿source_file  Y:/art/source/ui/graphics/equip/equip.ma
+//by sergey_mitryaev
+//at Mon Mar 05 17:55:00 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object search
+	{
+		defaults
+		{
+			pos 175.715 -1334.44
+			opacity 255
+			color 0xffffffff
+			size 175 14
+			effect "ui\graphics\shop\search"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 283 30
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object view_btn1
+	{
+		defaults
+		{
+			pos 231.427 4.47227
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\search_view_btn1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object view_btn2
+	{
+		defaults
+		{
+			pos 254.849 4.47227
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\search_view_btn2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
