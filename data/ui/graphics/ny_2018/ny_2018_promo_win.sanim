@@ -1,0 +1,58 @@
+﻿source_file "Y:/art/source/ui/graphics/ny_count/ny_count_2018.ma"
+//by Sergey_Mitryaev
+//at Wed Jan 10 13:13:28 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object button
+	{
+		defaults
+		{
+			anchor "C"
+			pos 886 1033
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hangar_iter_3\b_quest_btn"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			anchor "C"
+			vertices_nc
+			{
+				0.483505 -1.52588e-005	1920.48 -1.52588e-005	0.483505 1080	1920.48 1080	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
