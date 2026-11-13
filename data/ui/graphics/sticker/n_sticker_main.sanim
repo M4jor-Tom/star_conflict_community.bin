@@ -1,0 +1,215 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Wed Jun 26 14:07:59 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 496 660
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sticker_list
+	{
+		defaults
+		{
+			pos 236 31
+			opacity 255
+			color 0xffffffff
+			size 283 441
+			effect "ui\graphics\sticker\n_sticker_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sort_btn1
+	{
+		defaults
+		{
+			pos 333.455 630.86
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 474.972 1
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load_modules
+	{
+		defaults
+		{
+			pos 88.4881 250.531
+			opacity 255
+			color 0xff88b5ff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 7.88798 2.0355
+			opacity 255
+			color 0xffffffff
+			size 250 21
+			effect ""
+			alignment "LT"
+			sampleText "Установить эмблему:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tree_list
+	{
+		defaults
+		{
+			pos 8 30
+			opacity 255
+			color 0xffffffff
+			size 200 446
+			effect "ui\graphics\shop\shop_tree_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object total_price
+	{
+		defaults
+		{
+			pos 1 478.426
+			opacity 255
+			color 0xffffffff
+			size 400 144
+			effect "ui\graphics\sticker\n_sticker_total_price"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 56
+
+	sprite sp2615
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				246.774 105.252	252.774 105.252	259.282 105.252	265.282 105.252	246.774 111.252	252.774 111.252	259.282 111.252	265.282 111.252	246.774 535.851	252.774 535.851	259.282 535.851	265.282 535.851	246.774 541.851	252.774 541.851	259.282 541.851	265.282 541.851	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+	}
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-0.316025 -0	5.68398 -0	490 -0	496 -0	-0.316025 6	5.68398 6	490 6	496 6	-0.316025 653	5.68398 653	490 653	496 653	-0.316025 659	5.68398 659	490 659	496 659	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				236.59 30.2517	242.59 30.2517	462.675 30.2517	468.675 30.2517	236.59 36.2517	242.59 36.2517	462.675 36.2517	468.675 36.2517	236.59 440	242.59 440	462.675 440	468.675 440	236.59 446	242.59 446	462.675 446	468.675 446	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite spac
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1 22.6822	495.059 22.6822	1 24.6822	495.059 24.6822	
+				0.07911 0.151495	0.0791099 0.145156	0.0771568 0.151495	0.0771568 0.145156	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite spac1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1 628.426	494.972 628.426	1 630.426	494.972 630.426	
+				0.0791029 0.151529	0.0791029 0.146709	0.0771498 0.151529	0.0771498 0.146709	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
