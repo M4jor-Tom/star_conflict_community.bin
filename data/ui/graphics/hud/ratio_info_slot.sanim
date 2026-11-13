@@ -1,0 +1,141 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud.ma
+//by sega
+//at Thu Sep 22 10:53:17 2011
+
+animations 4
+{
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_hit
+	{
+		mode once
+		cycle_time 0.3
+	}
+	anim friend_hit
+	{
+		mode once
+		cycle_time 0.5
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object title
+	{
+		defaults
+		{
+			pos -0.140118 0.794372
+			opacity 255
+			color 0xffff1f00
+			size 30 12
+			effect ""
+			alignment "RM"
+			sampleText "CP1"
+			font "Tiny_outl2"
+		}
+		visible_on enemy
+		anim friend obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+		anim enemy_hit obj_col
+		{
+			2
+			0xffffffff
+			0xffff1f00
+		}
+		anim friend_hit obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+	}
+	object progress
+	{
+		defaults
+		{
+			pos 32.7712 2.30783
+			opacity 255
+			color 0xffff2700
+			size 112 11
+			effect "ui\graphics\hud\ratio_progress"
+			alignment "CM"
+		}
+		visible_on enemy
+		anim friend obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+		anim enemy_hit obj_col
+		{
+			2
+			0xffffffff
+			0xffff2700
+		}
+		anim friend_hit obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+	}
+	object value
+	{
+		defaults
+		{
+			pos 147.845 0.794372
+			opacity 255
+			color 0xffff1e00
+			size 40 12
+			effect ""
+			alignment "LM"
+			sampleText "97%"
+			font "Tiny_outl2"
+		}
+		visible_on enemy
+		anim friend obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+		anim enemy_hit obj_col
+		{
+			2
+			0xffffffff
+			0xffff1e00
+		}
+		anim friend_hit obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 190 16
+			effect ""
+			alignment "RM"
+		}
+		visible_on enemy
+		visible_on friend
+		visible_on enemy_hit
+		visible_on friend_hit
+	}
+}
+
