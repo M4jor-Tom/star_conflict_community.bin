@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by Sergey_Mitryaev
+//at Wed Sep 20 15:50:50 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 1450
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn_up
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\scroll_3\scroll_btn_up"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 7 25
+			opacity 255
+			color 0xffffffff
+			size 4 1400
+			effect "ui\graphics\scroll_3\scroll_bg"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn_down
+	{
+		defaults
+		{
+			pos 0 1432
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\scroll_3\scroll_btn_down"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object thumb
+	{
+		defaults
+		{
+			pos 0 25
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\scroll_3\scroll_thumb"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
