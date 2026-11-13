@@ -1,0 +1,162 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Fri Jan 10 14:47:13 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 9
+{
+	object text_1
+	{
+		defaults
+		{
+			pos 4.99582 -0
+			opacity 255
+			color 0xffcccccc
+			size 170 16
+			effect "ui\graphics\option\chek_box_text"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 320 122
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 5 18
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\login_screen\op_drop_down_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 160.996 -0
+			opacity 255
+			color 0xffcccccc
+			size 170 16
+			effect "ui\graphics\option\chek_box_text"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 161 18
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\login_screen\op_drop_down_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_4
+	{
+		defaults
+		{
+			pos 160.996 61
+			opacity 255
+			color 0xffcccccc
+			size 170 16
+			effect "ui\graphics\option\chek_box_text"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 161 79
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\login_screen\op_drop_down_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos 4.99582 61
+			opacity 255
+			color 0xffcccccc
+			size 170 16
+			effect "ui\graphics\option\chek_box_text"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 5 79
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\login_screen\op_drop_down_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	310 -0	316 -0	0 6	6 6	310 6	316 6	0 116	6 116	310 116	316 116	0 122	6 122	310 122	316 122	
+				0.133795 0.0114398	0.139654 0.0114398	0.151367 0.0114398	0.157227 0.0114398	0.133795 0.0172992	0.139654 0.0172992	0.151367 0.0172992	0.157227 0.0172992	0.133795 0.0334821	0.139654 0.0334821	0.151367 0.0334821	0.157227 0.0334821	0.133795 0.0393414	0.139654 0.0393414	0.151367 0.0393414	0.157227 0.0393414	
+			}
+		}
+		visible_on idle
+	}
+}
+
