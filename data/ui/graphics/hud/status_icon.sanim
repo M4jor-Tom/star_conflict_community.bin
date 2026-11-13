@@ -1,0 +1,67 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud.ma
+//by sega
+//at Sat Jul 23 17:05:42 2011
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object center
+	{
+		defaults
+		{
+			pos 17.6623 17.3605
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 36 36
+			effect ""
+			alignment "CM"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				0 -0	36 -0	0 35	36 35	
+				-3.72529e-009 0	1 0	-3.72529e-009 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
