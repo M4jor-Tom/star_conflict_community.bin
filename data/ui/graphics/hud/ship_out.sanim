@@ -1,0 +1,823 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Tue Jan 14 13:15:29 2020
+
+base_res 1280 720
+
+animations 32
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_lock
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim enemy_shot_lock
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim enemy_lock_out
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim bomb
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim bomb_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim loot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim loot_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gate
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gate_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_lock
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim friend_shot_lock
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim agressiv
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim agressiv_shot
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim agressiv_lock
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim agressiv_shot_lock
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim ico_blink
+	{
+		mode looped
+		cycle_time 0.4
+	}
+	anim white
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_lock_out
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad_lock_out
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim agressiv_lock_out
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo_lock_out
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim me
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim me_lock_out
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 23
+
+objects 3
+{
+	object center
+	{
+		defaults
+		{
+			pos 18 11.9826
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on enemy_lock_out
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on bomb
+		visible_on bomb_shot
+		visible_on loot
+		visible_on loot_shot
+		visible_on gate
+		visible_on gate_shot
+		visible_on friend_shot
+		visible_on friend_lock
+		visible_on friend_shot_lock
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on agressiv_lock
+		visible_on agressiv_shot_lock
+		visible_on squad
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on ico_blink
+		visible_on white
+		visible_on friend_lock_out
+		visible_on squad_lock_out
+		visible_on agressiv_lock_out
+		visible_on nlo_lock_out
+		visible_on me
+		visible_on me_lock_out
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 35 18
+			effect ""
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on enemy_lock_out
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on bomb
+		visible_on bomb_shot
+		visible_on loot
+		visible_on loot_shot
+		visible_on gate
+		visible_on gate_shot
+		visible_on friend_shot
+		visible_on friend_lock
+		visible_on friend_shot_lock
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on agressiv_lock
+		visible_on agressiv_shot_lock
+		visible_on squad
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on ico_blink
+		visible_on white
+		visible_on friend_lock_out
+		visible_on squad_lock_out
+		visible_on agressiv_lock_out
+		visible_on nlo_lock_out
+		visible_on me
+		visible_on me_lock_out
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 18.476 22
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\ratio\indic_weakness"
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on enemy_lock_out
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on bomb
+		visible_on bomb_shot
+		visible_on loot
+		visible_on loot_shot
+		visible_on gate
+		visible_on gate_shot
+		visible_on friend_shot
+		visible_on friend_lock
+		visible_on friend_shot_lock
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on agressiv_lock
+		visible_on agressiv_shot_lock
+		visible_on squad
+		visible_on nlo
+		visible_on nlo_shot
+		anim ico_blink obj_col
+		{
+			2
+			0xffffffff
+			0xff00ddff
+		}
+		visible_on white
+		visible_on friend_lock_out
+		visible_on squad_lock_out
+		visible_on agressiv_lock_out
+		visible_on nlo_lock_out
+		visible_on me
+		visible_on me_lock_out
+	}
+}
+
+sprites 20
+{
+	total_vertices 80
+
+	sprite enemy3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.28418 0.318359	0.30957 0.318359	0.28418 0.306152	0.30957 0.306152	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on enemy
+		anim enemy_lock sp_col
+		{
+			6
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			0x5ef3f3f3	0x5ef3f3f3	0x5ef3f3f3	0x5ef3f3f3	
+			0x1ff3f3f3	0x1ff3f3f3	0x1ff3f3f3	0x1ff3f3f3	
+			0x19f3f3f3	0x19f3f3f3	0x19f3f3f3	0x19f3f3f3	
+			0x21f3f3f3	0x21f3f3f3	0x21f3f3f3	0x21f3f3f3	
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+		}
+	}
+	sprite friend3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.30957 0.318359	0.334961 0.318359	0.30957 0.305664	0.334961 0.305664	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on friend
+		anim friend_lock sp_col
+		{
+			4
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			0xbef3f3f3	0xbef3f3f3	0xbef3f3f3	0xbef3f3f3	
+			0x47f3f3f3	0x47f3f3f3	0x47f3f3f3	0x47f3f3f3	
+			0x7f3f3f3	0x7f3f3f3	0x7f3f3f3	0x7f3f3f3	
+		}
+	}
+	sprite enemy_shot2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.28418 0.330078	0.30957 0.330078	0.28418 0.317871	0.30957 0.317871	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on enemy_shot
+		anim enemy_shot_lock sp_col
+		{
+			6
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			0x5af3f3f3	0x5af3f3f3	0x5af3f3f3	0x5af3f3f3	
+			0x1bf3f3f3	0x1bf3f3f3	0x1bf3f3f3	0x1bf3f3f3	
+			0x15f3f3f3	0x15f3f3f3	0x15f3f3f3	0x15f3f3f3	
+			0x1df3f3f3	0x1df3f3f3	0x1df3f3f3	0x1df3f3f3	
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+		}
+	}
+	sprite objectName15
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5 -20.5	31 -20.5	5 8.5	31 8.5	
+				0.387695 0.293945	0.413086 0.293945	0.387695 0.323242	0.413086 0.323242	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on enemy_lock_out
+	}
+	sprite neutral
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.360352 0.330078	0.385742 0.330078	0.360352 0.317383	0.385742 0.317383	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		anim neutral sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim neutral_shot sp_colc
+		{
+			1
+			0xff999999	0xff999999	0xff999999	0xff999999	
+		}
+	}
+	sprite damage
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				8 2	30 2	8 22	30 22	
+				0.594794 0.00488281	0.616144 0.00488281	0.594794 0.0253906	0.616144 0.0253906	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on enemy_lock_out
+		visible_on neutral
+		visible_on neutral_shot
+		anim bomb sp_colc
+		{
+			1
+			0xff999999	0xff999999	0xff999999	0xff999999	
+		}
+		anim bomb_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on loot
+		visible_on loot_shot
+		visible_on gate
+		visible_on gate_shot
+		visible_on friend_shot
+		visible_on friend_lock
+		visible_on friend_shot_lock
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on agressiv_lock
+		visible_on agressiv_shot_lock
+		visible_on squad
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on ico_blink
+		visible_on white
+		visible_on friend_lock_out
+		visible_on squad_lock_out
+		visible_on agressiv_lock_out
+		visible_on nlo_lock_out
+		visible_on me
+		visible_on me_lock_out
+	}
+	sprite damagewed
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				10 3	28 3	10 21	28 21	
+				0.840887 0.0537109	0.858331 0.0537109	0.840887 0.0712891	0.858331 0.0712891	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on enemy_lock_out
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on bomb
+		visible_on bomb_shot
+		anim loot sp_colc
+		{
+			1
+			0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+		}
+		anim loot_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on gate
+		visible_on gate_shot
+		visible_on friend_shot
+		visible_on friend_lock
+		visible_on friend_shot_lock
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on agressiv_lock
+		visible_on agressiv_shot_lock
+		visible_on squad
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on ico_blink
+		visible_on white
+		visible_on friend_lock_out
+		visible_on squad_lock_out
+		visible_on agressiv_lock_out
+		visible_on nlo_lock_out
+		visible_on me
+		visible_on me_lock_out
+	}
+	sprite damage7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				7.47598 1.98258	29.476 1.98258	7.47598 21.9826	29.476 21.9826	
+				0.281317 0.194336	0.302667 0.194336	0.281317 0.213867	0.302667 0.213867	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on enemy_lock
+		visible_on enemy_shot_lock
+		visible_on enemy_lock_out
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on bomb
+		visible_on bomb_shot
+		visible_on loot
+		visible_on loot_shot
+		anim gate sp_colc
+		{
+			1
+			0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+		}
+		anim gate_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on friend_shot
+		visible_on friend_lock
+		visible_on friend_shot_lock
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on agressiv_lock
+		visible_on agressiv_shot_lock
+		visible_on squad
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on ico_blink
+		visible_on white
+		visible_on friend_lock_out
+		visible_on squad_lock_out
+		visible_on agressiv_lock_out
+		visible_on nlo_lock_out
+		visible_on me
+		visible_on me_lock_out
+	}
+	sprite friend13
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.30957 0.330566	0.334961 0.330566	0.30957 0.317871	0.334961 0.317871	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on friend_shot
+		anim friend_shot_lock sp_col
+		{
+			4
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			0xb3f3f3f3	0xb3f3f3f3	0xb3f3f3f3	0xb3f3f3f3	
+			0x5ff3f3f3	0x5ff3f3f3	0x5ff3f3f3	0x5ff3f3f3	
+			0x1bf3f3f3	0x1bf3f3f3	0x1bf3f3f3	0x1bf3f3f3	
+		}
+	}
+	sprite agressiv_shot1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.334961 0.330566	0.360352 0.330566	0.334961 0.317871	0.360352 0.317871	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on agressiv_shot
+		anim agressiv_shot_lock sp_col
+		{
+			4
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			0xb3f3f3f3	0xb3f3f3f3	0xb3f3f3f3	0xb3f3f3f3	
+			0x5ff3f3f3	0x5ff3f3f3	0x5ff3f3f3	0x5ff3f3f3	
+			0x1bf3f3f3	0x1bf3f3f3	0x1bf3f3f3	0x1bf3f3f3	
+		}
+	}
+	sprite agressiv_
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.334961 0.317871	0.360352 0.317871	0.334961 0.305176	0.360352 0.305176	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on agressiv
+		anim agressiv_lock sp_col
+		{
+			5
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			0xb3f3f3f3	0xb3f3f3f3	0xb3f3f3f3	0xb3f3f3f3	
+			0x5ff3f3f3	0x5ff3f3f3	0x5ff3f3f3	0x5ff3f3f3	
+			0x1bf3f3f3	0x1bf3f3f3	0x1bf3f3f3	0x1bf3f3f3	
+			0xf3f3f3	0xf3f3f3	0xf3f3f3	0xf3f3f3	
+		}
+	}
+	sprite squad
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.360352 0.317627	0.385742 0.317627	0.360352 0.30542	0.385742 0.30542	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on squad
+	}
+	sprite squad1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.360352 0.342041	0.385742 0.342041	0.360352 0.329834	0.385742 0.329834	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on nlo
+	}
+	sprite nlo1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.360352 0.35376	0.385742 0.35376	0.360352 0.341553	0.385742 0.341553	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on nlo_shot
+	}
+	sprite objectName66
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5 -20.5	31 -20.5	5 8.5	31 8.5	
+				0.387695 0.323242	0.413086 0.323242	0.387695 0.352539	0.413086 0.352539	
+				0xa0f8c9	0xa0f8c9	0xa0f8c9	0xa0f8c9	
+			}
+		}
+		anim friend_lock_out sp_colc
+		{
+			1
+			0xffa0f8c9	0xffa0f8c9	0xffa0f8c9	0xffa0f8c9	
+		}
+		visible_on me_lock_out
+	}
+	sprite objectName67
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5 -20.5	31 -20.5	5 8.5	31 8.5	
+				0.413086 0.349609	0.438477 0.349609	0.413086 0.378906	0.438477 0.378906	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on squad_lock_out
+	}
+	sprite objectName68
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5 -20.5	31 -20.5	5 8.5	31 8.5	
+				0.387695 0.351563	0.413086 0.351563	0.387695 0.380859	0.413086 0.380859	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on agressiv_lock_out
+	}
+	sprite objectName69
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5 -20.5	31 -20.5	5 8.5	31 8.5	
+				0.362305 0.354492	0.387695 0.354492	0.362305 0.383789	0.387695 0.383789	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on nlo_lock_out
+	}
+	sprite friend_shot1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5.48926 4.24228	31.4893 4.24228	5.48926 17.2423	31.4893 17.2423	
+				0.644531 0.379395	0.669922 0.379395	0.644531 0.366699	0.669922 0.366699	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on me
+	}
+	sprite objectName99
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				5 -20.5	31 -20.5	5 8.5	31 8.5	
+				0.620117 0.367188	0.645508 0.367188	0.620117 0.396484	0.645508 0.396484	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on me_lock_out
+	}
+}
+
