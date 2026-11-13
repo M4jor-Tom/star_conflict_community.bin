@@ -1,0 +1,67 @@
+﻿source_file "Y:/art/source/ui/graphics/ny_count/ny_count.ma"
+//by sergey_mitryaev
+//at Thu Nov 27 15:09:33 2014
+
+
+animations 2
+{
+	anim idle_1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 267 46
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle_1
+		visible_on idle_2
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite sad68
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/daily_gift.tif"
+			vertices
+			{
+				0 3.05176e-005	267 -3.05176e-005	0 46	267 46	
+				0.188477 0.313965	0.722656 0.313965	0.188477 0.34082	0.722656 0.34082	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle_1
+		anim idle_2 sp_uvc
+		{
+			1 
+			0.188477 0.687256	0.722656 0.687256	0.188477 0.714111	0.722656 0.714111	
+		}
+	}
+}
+
