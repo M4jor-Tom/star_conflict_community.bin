@@ -1,0 +1,186 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Thu May 22 14:39:21 2014
+
+
+animations 6
+{
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim loot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim loot_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gate
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gate_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object center
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "RM"
+		}
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on loot
+		visible_on loot_shot
+		visible_on gate
+		visible_on gate_shot
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 150 120
+			effect ""
+			alignment "LT"
+		}
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on loot
+		visible_on loot_shot
+		visible_on gate
+		visible_on gate_shot
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite damage
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-11 -10	11 -10	-11 10	11 10	
+				0.594794 0.00488281	0.616144 0.00488281	0.594794 0.0244141	0.616144 0.0244141	
+				0xff999999	0xff999999	0xff999999	0xff999999	
+			}
+		}
+		visible_on neutral
+		anim neutral_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim loot sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim loot_shot sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim gate sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim gate_shot sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite damage3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-8 -10	14 -10	-8 10	14 10	
+				0.840887 0.0527344	0.862238 0.0527344	0.840887 0.0722656	0.862238 0.0722656	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on neutral
+		visible_on neutral_shot
+		anim loot sp_colc
+		{
+			1
+			0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+		}
+		anim loot_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on gate
+		visible_on gate_shot
+	}
+	sprite damage7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-11 -10	11 -10	-11 10	11 10	
+				0.281317 0.194336	0.302667 0.194336	0.281317 0.213867	0.302667 0.213867	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on loot
+		visible_on loot_shot
+		anim gate sp_colc
+		{
+			1
+			0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+		}
+		anim gate_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
