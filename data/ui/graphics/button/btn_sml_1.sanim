@@ -1,0 +1,126 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Fri Jan 31 15:39:52 2014
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 80 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 4
+			opacity 255
+			color 0xffffffff
+			size 80 16
+			effect ""
+			alignment "CM"
+			sampleText "Купить"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable obj_opc
+		{
+			1 
+			119
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	76 -4	84 -4	-4 4	4 4	76 4	84 4	-4 22	4 22	76 22	84 22	-4 30	4 30	76 30	84 30	
+				0.0585938 0.644531	0.0664063 0.644531	0.0742188 0.644531	0.0820313 0.644531	0.0585938 0.652344	0.0664063 0.652344	0.0742188 0.652344	0.0820313 0.652344	0.0585938 0.660156	0.0664063 0.660156	0.0742188 0.660156	0.0820313 0.660156	0.0585938 0.667969	0.0664063 0.667969	0.0742188 0.667969	0.0820313 0.667969	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+		}
+	}
+	sprite over1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	8 -0	72 -0	80 -0	0 8	8 8	72 8	80 8	0 18	8 18	72 18	80 18	0 26	8 26	72 26	80 26	
+				0.0849609 0.644531	0.0888672 0.644531	0.104492 0.644531	0.108398 0.644531	0.0849609 0.648438	0.0888672 0.648438	0.104492 0.648438	0.108398 0.648438	0.0849609 0.664063	0.0888672 0.664063	0.104492 0.664063	0.108398 0.664063	0.0849609 0.667969	0.0888672 0.667969	0.104492 0.667969	0.108398 0.667969	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+		visible_on disable
+	}
+}
+
