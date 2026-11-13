@@ -1,0 +1,289 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Fri Apr 27 12:20:34 2018
+
+base_res 1920 1080
+
+animations 6
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 0.6
+	}
+	anim press
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 8
+{
+	object time
+	{
+		defaults
+		{
+			pos 21.7745 132.057
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect "ui\graphics\hangar_iter_3\time_license"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hangar_iter_3\menu_btn_ico_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hangar_iter_3\menu_btn_over_3"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 126 154
+			effect ""
+			alignment "CM"
+			font "Medium"
+			blend color_add
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+	object add
+	{
+		defaults
+		{
+			pos 79.5365 89.3859
+			opacity 255
+			color 0xffffffff
+			size 36 24
+			effect "ui\graphics\hangar_iter_3\b_add_2_btn"
+			alignment "CM"
+			font "Medium"
+			blend color_add
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+	object premium
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hangar_iter_3\menu_btn_5_premium"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+	object self_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 126 124
+			effect ""
+			alignment "CM"
+			font "Medium"
+			blend color_add
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+	object progr_count
+	{
+		defaults
+		{
+			pos 82.7695 6.32058
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\hangar_iter_3\level_progr_count_2"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite we28
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-0.999985 -4	125 -4	-0.999985 126	125 126	
+				0.455078 0.00195313	0.701172 0.00195313	0.455078 0.255859	0.701172 0.255859	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+	sprite we10
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				5.34061 5.11328	88.6594 5.11328	5.34061 84.8867	88.6594 84.8867	
+				0.977825 0.188958	0.987018 0.188958	0.977825 0.19776	0.987018 0.19776	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+		visible_on disable
+	}
+	sprite we13
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-0.999985 -4	125 -4	-0.999985 126	125 126	
+				0.455078 0.00195313	0.701172 0.00195313	0.455078 0.255859	0.701172 0.255859	
+				0xaeffffff	0xaeffffff	0xaeffffff	0xaeffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim press sp_col
+		{
+			4
+			0xaeffffff	0xaeffffff	0xaeffffff	0xaeffffff	
+			0xaeffffff	0xaeffffff	0xaeffffff	0xaeffffff	
+			0xaeffffff	0xaeffffff	0xaeffffff	0xaeffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim disable sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
