@@ -1,0 +1,118 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Thu Oct 23 15:00:14 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object ship_slot_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object ship_slot_2
+	{
+		defaults
+		{
+			pos 0 80
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object ship_slot_3
+	{
+		defaults
+		{
+			pos 0 160
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object ship_slot_4
+	{
+		defaults
+		{
+			pos 0 240
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object ship_slot_5
+	{
+		defaults
+		{
+			pos 0 320
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 129 -2
+			opacity 255
+			color 0xffffffff
+			size 20 398
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 150 398
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
