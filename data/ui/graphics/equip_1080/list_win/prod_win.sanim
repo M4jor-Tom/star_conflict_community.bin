@@ -1,0 +1,253 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_list_1080.ma"
+//by sergey_mitryaev
+//at Mon Nov 11 15:04:08 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 11
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 1000
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load_modules
+	{
+		defaults
+		{
+			pos 162 155
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big_1080"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6.06577 3
+			opacity 255
+			color 0xffffffff
+			size 250 21
+			effect ""
+			alignment "LT"
+			sampleText "НАзвание "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 467 3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x_1080"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 466 32
+			opacity 255
+			color 0xffffffff
+			size 18 960
+			effect "ui\graphics\scroll_1080\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 12.3942 36
+			opacity 255
+			color 0xffffffff
+			size 450 77
+			effect "ui\graphics\equip_1080\list_win\prod_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 12.3942 105.106
+			opacity 255
+			color 0xffffffff
+			size 283 77
+			effect "ui\graphics\equip_1080\list_win\prod_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 12.3942 174.06
+			opacity 255
+			color 0xffffffff
+			size 283 77
+			effect "ui\graphics\equip_1080\list_win\prod_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 12.3942 923
+			opacity 255
+			color 0xffffffff
+			size 283 64
+			effect "ui\graphics\equip_1080\list_win\prod_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_3
+	{
+		defaults
+		{
+			pos 393 3
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect "ui\graphics\button\prod_btn_3_1080"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 94	6 94	482 94	488 94	0 100	6 100	482 100	488 100	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 94	6 94	482 94	488 94	0 100	6 100	482 100	488 100	
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 184	6 184	482 184	488 184	0 190	6 190	482 190	488 190	
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 274	6 274	482 274	488 274	0 280	6 280	482 280	488 280	
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 364	6 364	482 364	488 364	0 370	6 370	482 370	488 370	
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 454	6 454	482 454	488 454	0 460	6 460	482 460	488 460	
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 544	6 544	482 544	488 544	0 550	6 550	482 550	488 550	
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 634	6 634	482 634	488 634	0 640	6 640	482 640	488 640	
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 724	6 724	482 724	488 724	0 730	6 730	482 730	488 730	
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 814	6 814	482 814	488 814	0 820	6 820	482 820	488 820	
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 904	6 904	482 904	488 904	0 910	6 910	482 910	488 910	
+			0 -0	6 -0	482 -0	488 -0	0 6	6 6	482 6	488 6	0 994	6 994	482 994	488 994	0 1000	6 1000	482 1000	488 1000	
+		}
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 26.1203	488 26.1203	0 27.8797	488 27.8797	
+				0.0566406 0.140625	0.078125 0.140625	0.0566406 0.142578	0.078125 0.142578	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 86	13 86	458 86	464 86	7 92	13 92	458 92	464 92	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 86	13 86	458 86	464 86	7 92	13 92	458 92	464 92	
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 176	13 176	458 176	464 176	7 182	13 182	458 182	464 182	
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 266	13 266	458 266	464 266	7 272	13 272	458 272	464 272	
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 356	13 356	458 356	464 356	7 362	13 362	458 362	464 362	
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 446	13 446	458 446	464 446	7 452	13 452	458 452	464 452	
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 536	13 536	458 536	464 536	7 542	13 542	458 542	464 542	
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 626	13 626	458 626	464 626	7 632	13 632	458 632	464 632	
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 716	13 716	458 716	464 716	7 722	13 722	458 722	464 722	
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 806	13 806	458 806	464 806	7 812	13 812	458 812	464 812	
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 896	13 896	458 896	464 896	7 902	13 902	458 902	464 902	
+			7 32	13 32	458 32	464 32	7 38	13 38	458 38	464 38	7 986	13 986	458 986	464 986	7 992	13 992	458 992	464 992	
+		}
+	}
+}
+
