@@ -1,0 +1,66 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 15:48:02 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim learning
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on learning
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				4.34955 3.27017	16.3496 3.27017	4.34955 17.2702	16.3496 17.2702	
+				0.426758 0.00390625	0.438477 0.00390625	0.426758 0.0175781	0.438477 0.0175781	
+				0xffca0000	0xffca0000	0xffca0000	0xffca0000	
+			}
+		}
+		visible_on idle
+		anim learning sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
