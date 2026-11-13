@@ -1,0 +1,45 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Tue Jul 09 12:29:29 2013
+
+
+animations 2
+{
+	anim red
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim green
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object text_4
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffff2700
+			size 600 60
+			effect ""
+			alignment "CM"
+			sampleText "Заплнять ботами|rwegqer"
+			font "VerySmall"
+		}
+		visible_on red
+		anim green obj_colc
+		{
+			1
+			0xff5fff00
+		}
+	}
+}
+
