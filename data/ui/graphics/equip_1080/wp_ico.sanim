@@ -1,0 +1,104 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Thu Nov 14 17:43:02 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim color
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 128 78
+			effect ""
+			alignment "LT"
+		}
+		visible_on color
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite action_area
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				3 4	124 4	3 73	124 73	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on color
+	}
+	sprite modification
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				103.891 49.8789	122.891 49.8789	103.891 71.8789	122.891 71.8789	
+				0 0	1 0	0 1	1 1	
+				0xffff7a00	0xffff7a00	0xffff7a00	0xffff7a00	
+			}
+		}
+		visible_on color
+	}
+	sprite action_object
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				3 4	124 4	3 73	124 73	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on color
+	}
+	sprite action_type
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				3 4	124 4	3 73	124 73	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on color
+	}
+}
+
