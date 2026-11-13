@@ -1,0 +1,480 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by Mitryaev
+//at Thu Jun 18 14:09:02 2026
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 15
+	}
+}
+
+total_elements 32
+
+objects 32
+{
+	object login_bg_2
+	{
+		defaults
+		{
+			anchor "L"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 120 40
+			effect "ui\graphics\login_screen\login_bg_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			anchor "L"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\login_bg"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object login_slot1
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 190.397 598.127
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\login_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object login_slot2
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 190.397 627.477
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\login_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object registr
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 780.959 598.127
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object forgot
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 780.959 627.127
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object exit
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1200.02 687
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\login_exit"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object enter
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 600.045 657.127
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\login_enter"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object remember
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 687.369 657.127
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object drop_down_main
+	{
+		defaults
+		{
+			anchor "LB"
+			pos 14.2938 587
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1142 562.072
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1142 586.715
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_3
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1142 612.357
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_4
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1142 637
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object version
+	{
+		defaults
+		{
+			anchor "LB"
+			pos 10.5531 696.188
+			opacity 255
+			color 0xffcccccc
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "v.0.25 closed"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object warning
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 347.93 688.93
+			opacity 255
+			color 0xffff9100
+			size 600 30
+			effect ""
+			alignment "CT"
+			sampleText "ssfds  |vggrkl "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object news
+	{
+		defaults
+		{
+			anchor "LB"
+			pos 5 91.1485
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\agreement\news_win"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object login_bg_3
+	{
+		defaults
+		{
+			anchor "C"
+			keep_screen_size
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 120 40
+			effect "ui\graphics\login_screen\login_bg_3"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_5
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1142 662
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object status_server
+	{
+		defaults
+		{
+			anchor "LB"
+			pos 14.5531 563
+			opacity 255
+			color 0xffcccccc
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "v.0.25 closed"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object enter_2
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 564.045 603.127
+			opacity 255
+			color 0xffffffff
+			size 150 40
+			effect "ui\graphics\login_screen\login_enter_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 339.93 572.93
+			opacity 255
+			color 0xffffffff
+			size 600 30
+			effect ""
+			alignment "CT"
+			sampleText "dgfdsgagahghadfhdah"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object version1
+	{
+		defaults
+		{
+			anchor "LB"
+			pos 10.5531 675
+			opacity 255
+			color 0xffffffff
+			size 200 24
+			effect ""
+			alignment "LM"
+			sampleText "v.0.25 closed"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2_1
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1142 562.072
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_2_2
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1142 586.715
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_2_3
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1006 562.072
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_2_4
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1006 586.715
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_2_5
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1006 612.357
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_2_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_2_6
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1006 637
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_2_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_2_7
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1006 662
+			opacity 255
+			color 0xffffffff
+			size 10 24
+			effect "ui\graphics\login_screen\login_univer_2_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object server_name
+	{
+		defaults
+		{
+			anchor "LB"
+			pos 14.2938 617
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\drop_down_input"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object server_port
+	{
+		defaults
+		{
+			anchor "LB"
+			pos 276.294 617
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\prod_input"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
