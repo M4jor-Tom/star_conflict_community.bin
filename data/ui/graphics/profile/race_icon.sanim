@@ -1,0 +1,84 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by Sergey
+//at Wed Jun 22 15:46:57 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object vol_4
+	{
+		defaults
+		{
+			pos 40 9.48468
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "LM"
+			sampleText "6"
+			font "Medium"
+		}
+		visible_on active
+		visible_on inactive
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 35
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on active
+		visible_on inactive
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				1.03926 0.0700474	37.0393 0.0700474	1.03926 36.07	37.0393 36.07	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xa8ffffff	0xa8ffffff	0xa8ffffff	0xa8ffffff	
+		}
+	}
+}
+
