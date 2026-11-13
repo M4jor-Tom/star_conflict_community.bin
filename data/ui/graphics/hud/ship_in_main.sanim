@@ -1,0 +1,321 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud_new.ma
+//by sega
+//at Mon Dec 12 12:47:09 2011
+
+
+animations 3
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 16
+{
+	object ship_type_n
+	{
+		defaults
+		{
+			pos 73.3918 43.5543
+			opacity 255
+			color 0xffffffff
+			size 8 9
+			effect "ui\graphics\hud\ship_type_n"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+	}
+	object name_outl
+	{
+		defaults
+		{
+			pos -26.9799 17.2037
+			opacity 0
+			color 0xff000000
+			size 200 11
+			effect ""
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "MonoTiny_outl"
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			255
+			0xffff2800
+		}
+	}
+	object name1
+	{
+		defaults
+		{
+			pos -26.9799 17.2037
+			opacity 0
+			color 0xfff3f3f3
+			size 200 11
+			effect ""
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "MonoTiny"
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot obj_opc
+		{
+			1 
+			255
+		}
+	}
+	object shd_progr
+	{
+		defaults
+		{
+			pos 41.7631 70.9827
+			opacity 255
+			color 0xffffffff
+			size 61 6
+			effect "ui\graphics\hud\ship_progress_main"
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+	}
+	object center
+	{
+		defaults
+		{
+			pos 70.9783 40.7953
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 150 120
+			effect ""
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+	}
+	object name_outl2
+	{
+		defaults
+		{
+			pos -26.9799 17.2037
+			opacity 255
+			color 0xff89b5ff
+			size 200 11
+			effect ""
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "MonoTiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			0
+			0xffff2800
+		}
+	}
+	object arm_progr
+	{
+		defaults
+		{
+			pos 41.7631 64.342
+			opacity 255
+			color 0xffffffff
+			size 61 6
+			effect "ui\graphics\hud\ship_progress_main"
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+	}
+	object ship_in
+	{
+		defaults
+		{
+			pos 57.8632 31.67
+			opacity 255
+			color 0xffffffff
+			size 26 20
+			effect "ui\graphics\hud\ship_in"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+	}
+	object dist_outl
+	{
+		defaults
+		{
+			pos -26.9799 53.2477
+			opacity 0
+			color 0xff000000
+			size 200 11
+			effect ""
+			alignment "CM"
+			sampleText "10300m"
+			font "MonoTiny_outl"
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			255
+			0xffff2800
+		}
+	}
+	object dist_outl2
+	{
+		defaults
+		{
+			pos -26.9799 53.2477
+			opacity 255
+			color 0xff89b5ff
+			size 200 11
+			effect ""
+			alignment "CM"
+			sampleText "10300m"
+			font "MonoTiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			0
+			0xffff2800
+		}
+	}
+	object dist
+	{
+		defaults
+		{
+			pos -26.9799 53.2477
+			opacity 0
+			color 0xfff3f3f3
+			size 200 11
+			effect ""
+			alignment "CM"
+			sampleText "10300m"
+			font "MonoTiny"
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot obj_opc
+		{
+			1 
+			255
+		}
+	}
+	object lock_me
+	{
+		defaults
+		{
+			pos 70.9783 40.7953
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hud\lock_me"
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+	}
+	object damage
+	{
+		defaults
+		{
+			pos 70.9783 40.7953
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hud\damage"
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+	}
+	object indic_damage1
+	{
+		defaults
+		{
+			pos 84.6453 47.2977
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+	}
+	object indic_damage2
+	{
+		defaults
+		{
+			pos 99.1643 76.8451
+			opacity 255
+			color 0xffeb0007
+			size 10 10
+			effect ""
+			alignment "RM"
+			font "MonoTiny"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+	}
+}
+
