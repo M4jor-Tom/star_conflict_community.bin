@@ -1,0 +1,69 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by sergey_mitryaev
+//at Wed Jun 11 14:32:56 2014
+
+
+animations 7
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim empty
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim actitvity_on
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite inactive
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	65 -0	0 64	65 64	
+				0.125856 0.328951	0.189332 0.328951	0.125856 0.391451	0.189332 0.391451	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on inactive
+		visible_on sel_inactive
+	}
+}
+
