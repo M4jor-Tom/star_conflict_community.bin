@@ -1,0 +1,55 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Tue Nov 12 10:37:45 2013
+
+
+animations 3
+{
+	anim on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff07ff00
+			size 300 20
+			effect ""
+			alignment "LT"
+			sampleText "Монокрисалы кадмия"
+			font "Tiny"
+		}
+		visible_on on
+		anim off obj_colc
+		{
+			1
+			0xffff2700
+		}
+		anim idle obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+}
+
