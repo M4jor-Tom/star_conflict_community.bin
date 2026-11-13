@@ -1,0 +1,94 @@
+﻿source_file "Y:/art/source/ui/graphics/scroll/scroll.ma"
+//by Sergey
+//at Fri Sep 18 16:45:51 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 750 16
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_top
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 16
+			effect "ui\graphics\scroll\scroll_h_btn_top"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_bottom
+	{
+		defaults
+		{
+			pos 732 -0
+			opacity 255
+			color 0xffffffff
+			size 18 16
+			effect "ui\graphics\scroll\scroll_h_btn_bottom"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object scroll_thumb
+	{
+		defaults
+		{
+			pos 18.1771 -0
+			opacity 255
+			color 0xffffffff
+			size 59 9
+			effect "ui\graphics\scroll\scroll_h_thumb_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-1 -0.201731	750 -0.201731	-1 16	750 16	
+				0.246792 0.0203072	0.252493 0.0203072	0.246792 0.0286207	0.252493 0.0286207	
+			}
+		}
+		visible_on idle
+	}
+}
+
