@@ -1,0 +1,196 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Jan 13 12:17:27 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 11
+{
+	object title
+	{
+		defaults
+		{
+			pos 10.3215 1
+			opacity 255
+			color 0xffffcf00
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Conection problen"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 431.049 62.3573
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object total
+	{
+		defaults
+		{
+			pos 476.05 45.962
+			opacity 255
+			color 0xffcccccc
+			size 50 13
+			effect ""
+			alignment "RM"
+			sampleText "Итого"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price_title
+	{
+		defaults
+		{
+			pos 104.729 46.962
+			opacity 255
+			color 0xffcccccc
+			size 100 13
+			effect ""
+			alignment "RM"
+			sampleText "Цена за одну штуку"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price_once
+	{
+		defaults
+		{
+			pos 104.852 63.3573
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object count
+	{
+		defaults
+		{
+			pos 219.2 46.962
+			opacity 255
+			color 0xffcccccc
+			size 150 13
+			effect ""
+			alignment "LM"
+			sampleText "Колличество"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object buy_slider_main
+	{
+		defaults
+		{
+			pos 219.255 63.3573
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\buy_slider_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 140
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 391.456 112.11
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 232.005 112.11
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object product_name_2
+	{
+		defaults
+		{
+			pos 84.235 27.2372
+			opacity 255
+			color 0xffffffff
+			size 400 16
+			effect ""
+			alignment "LM"
+			sampleText "Адаптивный  излучаетель щита  134 иавр48"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	549 -4	557 -4	-4 22	4 22	549 22	557 22	-4 136	4 136	549 136	557 136	-4 144	4 144	549 144	557 144	
+				0.0585936 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585936 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585936 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585936 0.731454	0.0664063 0.731454	0.0742188 0.731454	0.0820313 0.731454	
+			}
+		}
+		visible_on idle
+	}
+}
+
