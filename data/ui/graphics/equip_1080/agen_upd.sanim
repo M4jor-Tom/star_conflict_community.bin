@@ -1,0 +1,71 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Wed Nov 27 11:28:36 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object upd_btn
+	{
+		defaults
+		{
+			pos 0 46
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\equip_1080\agen_upd_btn"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				-5 -4	15 -4	32 -4	52 -4	-5 16	15 16	32 16	52 16	-5 46	15 46	32 46	52 46	-5 66	15 66	32 66	52 66	
+				0.930664 0.0693359	0.950195 0.0693359	0.969727 0.0693359	0.989258 0.0693359	0.930664 0.0888672	0.950195 0.0888672	0.969727 0.0888672	0.989258 0.0888672	0.930664 0.125	0.950195 0.125	0.969727 0.125	0.989258 0.125	0.930664 0.144531	0.950195 0.144531	0.969727 0.144531	0.989258 0.144531	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName417
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				19 50	29 50	19 64	29 64	
+				0.217773 0.417969	0.227539 0.417969	0.217773 0.431641	0.227539 0.431641	
+			}
+		}
+		visible_on idle
+	}
+}
+
