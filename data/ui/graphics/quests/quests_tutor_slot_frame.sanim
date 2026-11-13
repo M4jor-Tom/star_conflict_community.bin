@@ -1,0 +1,111 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Tue Jun 11 18:39:12 2013
+
+
+animations 2
+{
+	anim idle_1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0191402 0.0169482	86.0191 0.0169482	0.0191402 1.01695	86.0191 1.01695	
+				0.358206 0.11225	0.360544 0.11225	0.358206 0.114313	0.360544 0.114313	
+				0xffffbf00	0xffffbf00	0xffffbf00	0xffffbf00	
+			}
+		}
+		visible_on idle_1
+		anim idle_2 sp_colc
+		{
+			1
+			0xff0089d1	0xff0089d1	0xff0089d1	0xff0089d1	
+		}
+	}
+	sprite objectNamevcbbvm
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0191402 85.017	86.0191 85.017	0.0191402 86.017	86.0191 86.017	
+				0.358206 0.11225	0.360544 0.11225	0.358206 0.114313	0.360544 0.114313	
+				0xffffbf00	0xffffbf00	0xffffbf00	0xffffbf00	
+			}
+		}
+		visible_on idle_1
+		anim idle_2 sp_colc
+		{
+			1
+			0xff0089d1	0xff0089d1	0xff0089d1	0xff0089d1	
+		}
+	}
+	sprite objectName346
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0191383 86.017	0.0191383 0.0169506	1.01914 86.017	1.01914 0.0169487	
+				0.358206 0.11225	0.360544 0.11225	0.358206 0.114313	0.360544 0.114313	
+				0xffffbf00	0xffffbf00	0xffffbf00	0xffffbf00	
+			}
+		}
+		visible_on idle_1
+		anim idle_2 sp_colc
+		{
+			1
+			0xff0089d1	0xff0089d1	0xff0089d1	0xff0089d1	
+		}
+	}
+	sprite objectNamewefw
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				85.0191 86.017	85.0191 0.0169525	86.0191 86.017	86.0191 0.0169563	
+				0.358206 0.11225	0.360544 0.11225	0.358206 0.114313	0.360544 0.114313	
+				0xffffbf00	0xffffbf00	0xffffbf00	0xffffbf00	
+			}
+		}
+		visible_on idle_1
+		anim idle_2 sp_colc
+		{
+			1
+			0xff0089d1	0xff0089d1	0xff0089d1	0xff0089d1	
+		}
+	}
+}
+
