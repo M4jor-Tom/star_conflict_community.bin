@@ -1,0 +1,154 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by sergey_mitryaev
+//at Tue Mar 26 15:35:00 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1.5
+	}
+}
+
+total_elements 9
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 330 64
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_left
+	{
+		defaults
+		{
+			pos 4 24
+			opacity 255
+			color 0xffffffff
+			size 18 16
+			effect "ui\graphics\scroll\scroll_h_btn_top"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_right
+	{
+		defaults
+		{
+			pos 288 24
+			opacity 255
+			color 0xffffffff
+			size 18 16
+			effect "ui\graphics\scroll\scroll_h_btn_bottom"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 26 7
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 78 7
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 130 7
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 182 7
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 234 7
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2ss
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-3.33786e-005 -0.636467	5.99997 -0.636467	304 -0.636467	310 -0.636467	-3.33786e-005 5.36353	5.99997 5.36353	304 5.36353	310 5.36353	0 58	6 58	304 58	310 58	0 64	6 64	304 64	310 64	
+				0.226587 0.00586998	0.232446 0.00586998	0.263672 0.00586998	0.269531 0.00586998	0.226587 0.0117294	0.232446 0.0117294	0.263672 0.0117294	0.269531 0.0117294	0.226587 0.03563	0.232446 0.03563	0.263672 0.03563	0.269531 0.03563	0.226587 0.0444481	0.232446 0.0444481	0.263672 0.0444481	0.269531 0.0444481	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
