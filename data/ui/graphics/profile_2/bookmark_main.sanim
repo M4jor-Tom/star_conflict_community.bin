@@ -1,0 +1,140 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Thu Sep 21 15:46:51 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1484 60
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bookmark_btn_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 246 60
+			effect "ui\graphics\profile_2\bookmark_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bookmark_btn_2
+	{
+		defaults
+		{
+			pos 248 -0
+			opacity 255
+			color 0xffffffff
+			size 246 60
+			effect "ui\graphics\profile_2\bookmark_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bookmark_btn_3
+	{
+		defaults
+		{
+			pos 496 -0
+			opacity 255
+			color 0xffffffff
+			size 246 60
+			effect "ui\graphics\profile_2\bookmark_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bookmark_btn_4
+	{
+		defaults
+		{
+			pos 744 -0
+			opacity 255
+			color 0xffffffff
+			size 246 60
+			effect "ui\graphics\profile_2\bookmark_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bookmark_btn_5
+	{
+		defaults
+		{
+			pos 992 -0
+			opacity 255
+			color 0xffffffff
+			size 246 60
+			effect "ui\graphics\profile_2\bookmark_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bookmark_btn_6
+	{
+		defaults
+		{
+			pos 1238 -0
+			opacity 255
+			color 0xffffffff
+			size 246 60
+			effect "ui\graphics\profile_2\bookmark_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we53
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 58	1484 58	0 60	1484 60	
+				0.336895 0.682598	0.342793 0.682598	0.336895 0.688496	0.342793 0.688496	
+				0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
