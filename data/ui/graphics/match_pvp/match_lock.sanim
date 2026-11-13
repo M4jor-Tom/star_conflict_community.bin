@@ -1,0 +1,56 @@
+﻿source_file "Y:/art/source/ui/graphics/matchmaking_pvp/matchmaking_pvp.ma"
+//by sergey_mitryaev
+//at Tue Dec 18 20:57:50 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 14 20
+			effect ""
+			alignment "CM"
+			font "Small"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName374
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				0 -0	14 -0	0 20	14 20	
+				0.0539713 0.908203	0.0612629 0.908203	0.0539713 0.947266	0.0612629 0.947266	
+			}
+		}
+		visible_on idle
+	}
+}
+
