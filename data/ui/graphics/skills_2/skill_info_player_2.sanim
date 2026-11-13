@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills_2.ma"
+//by sergey_mitryaev
+//at Thu Nov 22 11:00:37 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 353 140
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 8.19714 8.6412
+			opacity 255
+			color 0xffff9100
+			size 340 70
+			effect ""
+			alignment "LT"
+			sampleText "Наемник|Высший ранг|Установлено |имплантантов"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos 8.19714 84.4635
+			opacity 255
+			color 0xffff9100
+			size 340 50
+			effect ""
+			alignment "LT"
+			sampleText "sffsfsfsfsf|sffsfgs|dgfh hgreghrh"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite sd
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices_nc
+			{
+				0 -0	353 -0	0 142	353 142	
+				0.624628 0.813009	0.992336 0.813009	0.624628 0.639839	0.992336 0.639839	
+			}
+		}
+		visible_on idle
+	}
+}
+
