@@ -1,0 +1,60 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by Sergey_Mitryaev
+//at Fri May 12 17:10:43 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 985 45
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_friend
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 460 45
+			effect "ui\graphics\hud\buff_slot_friend"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_enemy
+	{
+		defaults
+		{
+			pos 524 -0
+			opacity 255
+			color 0xffffffff
+			size 460 45
+			effect "ui\graphics\hud\buff_slot_enemy"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
