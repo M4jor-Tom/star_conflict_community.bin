@@ -1,0 +1,142 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Jan 15 14:16:05 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 7
+{
+	object title23
+	{
+		defaults
+		{
+			pos 228 12
+			opacity 255
+			color 0xffffffff
+			size 500 30
+			effect ""
+			alignment "CM"
+			sampleText "Создание клана"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 960 510
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 358 63
+			opacity 255
+			color 0xffffffff
+			size 246 20
+			effect "ui\graphics\clan\build_dread_sel_dread_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 71 63
+			opacity 255
+			color 0xffffffff
+			size 246 20
+			effect "ui\graphics\clan\build_dread_sel_dread_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 646 63
+			opacity 255
+			color 0xffffffff
+			size 246 20
+			effect "ui\graphics\clan\build_dread_sel_dread_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object start_btn
+	{
+		defaults
+		{
+			pos 378 467
+			opacity 255
+			color 0xffffffff
+			size 246 20
+			effect "ui\graphics\map\map_start_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_40
+	{
+		defaults
+		{
+			pos 781.476 473.556
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp75
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	948 -2	954 -2	-2 4	4 4	948 4	954 4	-2 507	4 507	948 507	954 507	-2 513	4 513	948 513	954 513	
+				0.0692288 0.722548	0.0698744 0.722548	0.0707452 0.722548	0.0713962 0.722548	0.0692288 0.723199	0.0698744 0.723199	0.0707452 0.723199	0.0713962 0.723199	0.0692288 0.724067	0.0698744 0.724067	0.0707452 0.724067	0.0713962 0.724067	0.0692288 0.724718	0.0698744 0.724718	0.0707452 0.724718	0.0713962 0.724718	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
