@@ -1,0 +1,35 @@
+﻿source_file  Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma
+//by sega
+//at Wed Nov 09 18:42:15 2011
+
+keep_screen_size
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 0.3
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1000 73
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
