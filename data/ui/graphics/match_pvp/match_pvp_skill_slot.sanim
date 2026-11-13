@@ -1,0 +1,203 @@
+﻿source_file "Y:/art/source/ui/graphics/matchmaking_pvp/matchmaking_pvp.ma"
+//by sergey_mitryaev
+//at Wed Mar 20 13:12:12 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 10
+{
+	object title
+	{
+		defaults
+		{
+			pos 7.02709 -55
+			opacity 255
+			color 0xffffffff
+			size 100 40
+			effect ""
+			alignment "LM"
+			sampleText "Улучшения|игрока"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object item_slot_1
+	{
+		defaults
+		{
+			pos 150.186 -53
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object item_slot_2
+	{
+		defaults
+		{
+			pos 8.25273 14.1993
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object item_slot_3
+	{
+		defaults
+		{
+			pos 228.329 14.1814
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object niver_btn_1
+	{
+		defaults
+		{
+			pos 58.9241 38.6732
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object niver_btn_2
+	{
+		defaults
+		{
+			pos 279 39
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_2
+	{
+		defaults
+		{
+			pos 58.7265 14.5342
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "efwewegwg"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_3
+	{
+		defaults
+		{
+			pos 278.802 15.4544
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "efwewegwg"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object disable
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 40
+			effect "ui\graphics\match_pvp\match_pvp_skill_slot_disable"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 420 80
+			effect ""
+			alignment "LM"
+			sampleText "Улучшения|игрока"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp56
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	418 -0	424 -0	0 6	6 6	418 6	424 6	0 71	6 71	418 71	424 71	0 77	6 77	418 77	424 77	
+				0.537109 0.453613	0.542969 0.453613	0.541016 0.453613	0.546875 0.453613	0.537109 0.459473	0.542969 0.459473	0.541016 0.459473	0.546875 0.459473	0.537109 0.458496	0.542969 0.458496	0.541016 0.458496	0.546875 0.458496	0.537109 0.464355	0.542969 0.464355	0.541016 0.464355	0.546875 0.464355	
+				0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	0x66000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp53
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	418 -0	424 -0	0 6	6 6	418 6	424 6	0 71	6 71	418 71	424 71	0 77	6 77	418 77	424 77	
+				0.494141 0.615234	0.5 0.615234	0.503906 0.615234	0.509766 0.615234	0.494141 0.621094	0.5 0.621094	0.503906 0.621094	0.509766 0.621094	0.494141 0.625	0.5 0.625	0.503906 0.625	0.509766 0.625	0.494141 0.630859	0.5 0.630859	0.503906 0.630859	0.509766 0.630859	
+				0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
