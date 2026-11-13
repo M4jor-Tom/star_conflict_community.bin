@@ -1,0 +1,414 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Mon Nov 11 15:52:50 2013
+
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 20
+
+objects 18
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 696 106
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+	}
+	object quest_taken
+	{
+		defaults
+		{
+			pos 7.15674 68
+			opacity 255
+			color 0xffffffff
+			size 27 27
+			effect "ui\graphics\quests\quest_taken"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object name
+	{
+		defaults
+		{
+			pos 25.271 8.59763
+			opacity 255
+			color 0xffffffff
+			size 400 18
+			effect ""
+			alignment "LM"
+			sampleText "Возмездие древних"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object description
+	{
+		defaults
+		{
+			pos 6.1715 29.387
+			opacity 255
+			color 0xffffffff
+			size 570 50
+			effect ""
+			alignment "LT"
+			sampleText "Новейшая разработка |увеличивает щит"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object reputation
+	{
+		defaults
+		{
+			pos 441.477 7.16035
+			opacity 255
+			color 0xffffffff
+			size 250 18
+			effect "ui\graphics\quests\quest_reputation"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object quest_passed
+	{
+		defaults
+		{
+			pos 2.15708 5.3411
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\quests\quest_passed"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object timer
+	{
+		defaults
+		{
+			pos 577 24
+			opacity 255
+			color 0xffffffff
+			size 110 18
+			effect "ui\graphics\quests\quest_timer"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object progress
+	{
+		defaults
+		{
+			pos 36.4873 74.161
+			opacity 255
+			color 0xffffffff
+			size 196 15
+			effect "ui\graphics\quests\quest_progress_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 5.3411
+			opacity 255
+			color 0xffffffff
+			size 696 95
+			effect "ui\graphics\quests\quest_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+	}
+	object award_1
+	{
+		defaults
+		{
+			pos 435 73.6169
+			opacity 255
+			color 0xffffffff
+			size 250 18
+			effect "ui\graphics\quests\quest_award"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object award_2
+	{
+		defaults
+		{
+			pos 423.319 73.6169
+			opacity 255
+			color 0xffffffff
+			size 130 18
+			effect "ui\graphics\quests\quest_award"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object award_3
+	{
+		defaults
+		{
+			pos 286.793 73.6169
+			opacity 255
+			color 0xffffffff
+			size 130 18
+			effect "ui\graphics\quests\quest_award"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 5.3411
+			opacity 255
+			color 0xffffffff
+			size 696 95
+			effect "ui\graphics\quests\quests_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+	}
+	object change_btn
+	{
+		defaults
+		{
+			pos 372.592 68.866
+			opacity 255
+			color 0xffffffff
+			size 312 25
+			effect "ui\graphics\quests\change_btn"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+	}
+	object title
+	{
+		defaults
+		{
+			pos 145.223 7.16035
+			opacity 255
+			color 0xffffffff
+			size 400 18
+			effect ""
+			alignment "CM"
+			sampleText "Возмездие древних"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object notavailable
+	{
+		defaults
+		{
+			pos 0 5.3411
+			opacity 255
+			color 0xffffffff
+			size 696 95
+			effect "ui\graphics\quests\quests_slot_notavailable"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+	}
+	object time_period
+	{
+		defaults
+		{
+			pos 5.60655 7.9282
+			opacity 255
+			color 0xffffffff
+			size 19 19
+			effect "ui\graphics\quests\quest_time_period_ico"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim inactive obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object buy_btn
+	{
+		defaults
+		{
+			pos 3.95371 72.2536
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn6"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				2.0341 5.3411	8.0341 5.3411	688.74 5.3411	694.74 5.3411	2.0341 11.3411	8.0341 11.3411	688.74 11.3411	694.74 11.3411	2.0341 94.2695	8.0341 94.2695	688.74 94.2695	694.74 94.2695	2.0341 100.27	8.0341 100.27	688.74 100.27	694.74 100.27	
+				0.274399 0.00196683	0.280259 0.00196683	0.317302 0.00196683	0.323162 0.00196683	0.274399 0.00782621	0.280259 0.00782621	0.317302 0.00782621	0.323162 0.00782621	0.274399 0.0449466	0.280259 0.0449466	0.317302 0.0449466	0.323162 0.0449466	0.274399 0.050806	0.280259 0.050806	0.317302 0.050806	0.323162 0.050806	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim inactive sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 4	6 4	681 4	687 4	0 10	6 10	681 10	687 10	0 88	6 88	681 88	687 88	0 94	6 94	681 94	687 94	
+				0.123001 0.00196683	0.12886 0.00196683	0.163856 0.00196683	0.169715 0.00196683	0.123001 0.00782621	0.12886 0.00782621	0.163856 0.00782621	0.169715 0.00782621	0.123001 0.0449466	0.12886 0.0449466	0.163856 0.0449466	0.169715 0.0449466	0.123001 0.050806	0.12886 0.050806	0.163856 0.050806	0.169715 0.050806	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim select sp_posc_colc
+		{
+			1 1
+			2.0341 4.67055	8.0341 4.67055	688.74 4.67055	694.74 4.67055	2.0341 10.6705	8.0341 10.6705	688.74 10.6705	694.74 10.6705	2.0341 94	8.0341 94	688.74 94	694.74 94	2.0341 100	8.0341 100	688.74 100	694.74 100	
+			0xffff7f00	0xffff7f00	0xffff7f00	0xffff7f00	0xffff7f00	0xff6f3700	0xff6f3700	0xffff7f00	0xffff7f00	0xff6f3700	0xff6f3700	0xffff7f00	0xffff7f00	0xffff7f00	0xffff7f00	0xffff7f00	
+		}
+		anim inactive sp_posc
+		{
+			1 
+			2.0341 5.3411	8.0341 5.3411	688.74 5.3411	694.74 5.3411	2.0341 11.3411	8.0341 11.3411	688.74 11.3411	694.74 11.3411	2.0341 94	8.0341 94	688.74 94	694.74 94	2.0341 100	8.0341 100	688.74 100	694.74 100	
+		}
+	}
+}
+
