@@ -1,0 +1,98 @@
+﻿source_file "Y:/art/source/ui/graphics/player_progress/player_progress.ma"
+//by sergey_mitryaev
+//at Tue Jul 15 18:16:37 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 420 60
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 5 5
+			opacity 255
+			color 0xffffffff
+			size 70 70
+			effect "ui\graphics\map\custom_map_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title9
+	{
+		defaults
+		{
+			pos 99 5
+			opacity 255
+			color 0xffffffff
+			size 310 20
+			effect ""
+			alignment "LM"
+			sampleText "Wsds f geghg eh "
+			font "VerySmall"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+			255
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dff26
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				3 -1	416 -1	3 1	416 1	
+				0.0673828 0.648438	0.0732422 0.648438	0.0673828 0.650391	0.0732422 0.650391	
+			}
+		}
+		visible_on idle
+	}
+}
+
