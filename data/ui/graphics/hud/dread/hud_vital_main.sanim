@@ -1,0 +1,126 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/dreadnought.ma"
+//by sergey_mitryaev
+//at Wed Mar 18 17:05:02 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 0.7
+	}
+	anim blink
+	{
+		mode looped
+		cycle_time 0.4
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object vital_progr
+	{
+		defaults
+		{
+			pos 78 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\hud\dread\hud_vital_progr"
+			alignment "LT"
+		}
+		visible_on idle
+		anim blink obj_col
+		{
+			5
+			0xffffffff
+			0xffb3f4ff
+			0xff5fe9ff
+			0xff1be0ff
+			0xff00ddff
+		}
+	}
+	object mark_name
+	{
+		defaults
+		{
+			pos 0 43
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\hud\ship_markers\mark_name_3"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object gmp_icon
+	{
+		defaults
+		{
+			pos 88 10
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\ratio\gmp_icon"
+			alignment "LT"
+		}
+		visible_on idle
+		anim blink obj_col
+		{
+			5
+			0xffffffff
+			0xff7fe1ff
+			0xff7fe1ff
+			0xff7fe1ff
+			0xff7fe1ff
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 90
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object center
+	{
+		defaults
+		{
+			pos 98 20
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object mark_name1
+	{
+		defaults
+		{
+			pos 0 60
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\hud\ship_markers\mark_name_3"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+}
+
