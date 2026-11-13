@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills_2.ma"
+//by sergey_mitryaev
+//at Thu Jan 10 18:17:30 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite sd7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				6 27	48 27	6 69	48 69	
+				0.632292 0.943902	0.675 0.943902	0.632292 0.995122	0.675 0.995122	
+				0xff7e7e7e	0xff7e7e7e	0xff7e7e7e	0xff7e7e7e	
+			}
+		}
+		visible_on idle
+	}
+}
+
