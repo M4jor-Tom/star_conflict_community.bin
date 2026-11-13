@@ -1,0 +1,117 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by Sergey
+//at Tue Dec 01 09:56:49 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1280 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite que48
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				0 -0	16 -0	0 20	16 20	
+				0.00390625 0.611328	0.0351563 0.611328	0.00390625 0.650391	0.0351563 0.650391	
+			}
+		}
+		visible_on idle
+	}
+	sprite que49
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				16 -0	48 -0	16 20	48 20	
+				0.0332031 0.611328	0.0644531 0.611328	0.0332031 0.650391	0.0644531 0.650391	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			16 -0	48 -0	16 20	48 20	
+			16 -0	169.6 -0	16 20	169.6 20	
+			16 -0	291.2 -0	16 20	291.2 20	
+			16 -0	412.8 -0	16 20	412.8 20	
+			16 -0	534.4 -0	16 20	534.4 20	
+			16 -0	656 -0	16 20	656 20	
+			16 -0	777.6 -0	16 20	777.6 20	
+			16 -0	899.2 -0	16 20	899.2 20	
+			16 -0	1020.8 -0	16 20	1020.8 20	
+			16 -0	1142.4 -0	16 20	1142.4 20	
+			16 -0	1264 -0	16 20	1264 20	
+		}
+	}
+	sprite que50
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				48 -0	64 -0	48 20	64 20	
+				0.0546875 0.611328	0.0859375 0.611328	0.0546875 0.650391	0.0859375 0.650391	
+			}
+		}
+		anim idle sp_pos
+		{
+			2 
+			48 -0	64 -0	48 20	64 20	
+			1264 -0	1280 -0	1264 20	1280 20	
+		}
+	}
+}
+
