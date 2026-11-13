@@ -1,0 +1,112 @@
+﻿source_file "Y:/art/source/ui/graphics/spectate/spectate_2.ma"
+//by sergey_mitryaev
+//at Thu Oct 21 12:21:16 2021
+
+base_res 1280 720
+
+animations 5
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1.5
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object player_name
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff00dcff
+			size 160 20
+			effect ""
+			alignment "CM"
+			sampleText "WWWWWWWWWWWW"
+			font "Tiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2700
+		}
+		anim squad obj_colc
+		{
+			1
+			0xff07ff00
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim nlo obj_colc
+		{
+			1
+			0xffbc24e4
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xfff3f3f3
+			size 160 20
+			effect ""
+			alignment "LM"
+			font "Tiny_outl2"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on squad
+		visible_on neutral
+		visible_on nlo
+	}
+	object center
+	{
+		defaults
+		{
+			pos 76 11
+			opacity 255
+			color 0xfff3f3f3
+			size 20 20
+			effect ""
+			alignment "LM"
+			font "Tiny_outl2"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on squad
+		visible_on neutral
+		visible_on nlo
+	}
+}
+
