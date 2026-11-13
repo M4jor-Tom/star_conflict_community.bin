@@ -1,0 +1,172 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle.ma"
+//by Sergey
+//at Wed Nov 18 12:46:25 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1280 480
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object description7
+	{
+		defaults
+		{
+			pos 166 399
+			opacity 255
+			color 0xffc6c6c6
+			size 700 60
+			effect ""
+			alignment "LT"
+			sampleText "В набор входят, редкая  амуниция  ..|b dczrjfz cewe  vewv "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title21
+	{
+		defaults
+		{
+			pos 297 5
+			opacity 255
+			color 0xff7fe1ff
+			size 700 40
+			effect ""
+			alignment "CM"
+			sampleText "Открытый мир"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 963 397
+			opacity 255
+			color 0xffffffff
+			size 86 30
+			effect "ui\graphics\arena\arena_btn_1"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 166 374
+			opacity 255
+			color 0xffffffff
+			size 700 20
+			effect ""
+			alignment "LM"
+			sampleText "Ржавый  контейнер"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 94 53
+			opacity 255
+			color 0xffffffff
+			size 1100 270
+			effect "ui\graphics\bundle\bundle_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 591 125
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName370
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				-316.88 -2	1483.12 -2	-316.88 464	1483.12 464	
+				0.03125 0	0.96875 0	0.03125 0.910156	0.96875 0.910156	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName371
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				6110 -2	1483.12 -2	6110 464	1483.12 464	
+				0.994629 0	0.96875 0	0.994629 0.910156	0.96875 0.910156	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName372
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				-316.88 -2	-4718 -2	-316.88 464	-4718 464	
+				0.03125 0	0.012207 0	0.03125 0.910156	0.012207 0.910156	
+			}
+		}
+		visible_on idle
+	}
+}
+
