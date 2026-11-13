@@ -1,0 +1,347 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Wed Dec 04 12:39:59 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 22
+
+objects 20
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 964 450
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 407.331 171.425
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 8.98898 3.26914
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect ""
+			alignment "LM"
+			sampleText "Создание карты"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object text_1_color
+	{
+		defaults
+		{
+			pos -199.587 64.6566
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Dfedgg|ww fwfwf  |wffwff"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 7.07346 66.5166
+			opacity 255
+			color 0xffffffff
+			size 300 380
+			effect "ui\graphics\map\create_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object map_ico
+	{
+		defaults
+		{
+			pos 335.698 44.694
+			opacity 255
+			color 0xffffffff
+			size 88 50
+			effect "ui\graphics\map\custom_map_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 440.299 45.0447
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Создание карты"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 388.442 115.165
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chek_box
+	{
+		defaults
+		{
+			pos 337.442 143.165
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\option\chek_box"
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down
+	{
+		defaults
+		{
+			pos 388.442 142.165
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\shop\filt_drop_down_main"
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 337.442 170.165
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object pass_input
+	{
+		defaults
+		{
+			pos 330.442 197.165
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect "ui\graphics\login_screen\login_input"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 386.442 187.165
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_input
+	{
+		defaults
+		{
+			pos 379.442 215.165
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect "ui\graphics\map\create_game_input"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos 440.299 74.0447
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Создание карты"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object btn_long_1
+	{
+		defaults
+		{
+			pos 386.442 319.165
+			opacity 255
+			color 0xffffffff
+			size 360 40
+			effect "ui\graphics\shop\buy_btn_long_1"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_long_2
+	{
+		defaults
+		{
+			pos 761.442 319.165
+			opacity 255
+			color 0xffffffff
+			size 150 40
+			effect "ui\graphics\shop\buy_btn_long_2"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_4
+	{
+		defaults
+		{
+			pos 338.442 362.165
+			opacity 255
+			color 0xffffffff
+			size 600 40
+			effect "ui\graphics\map\create_text"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 6 39
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_3
+	{
+		defaults
+		{
+			pos 168 39
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.180913	6 0.180913	958.197 0.180913	964.197 0.180913	0 6.18091	6 6.18091	958.197 6.18091	964.197 6.18091	0 435.013	6 436.013	958.197 436.013	964.197 436.013	0 441.013	6 442.013	958.197 442.013	964.197 442.013	
+				0.25402 0.1143	0.25402 0.120159	0.25402 0.132659	0.25402 0.138518	0.25988 0.1143	0.25988 0.120159	0.25988 0.132659	0.25988 0.138518	0.272565 0.1143	0.272565 0.120159	0.272565 0.132659	0.272565 0.138518	0.278424 0.1143	0.278424 0.120159	0.278424 0.132659	0.278424 0.138518	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName315
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.452621 36.2071	0.452621 34.2071	963.722 36.2071	963.722 34.2071	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771484 0.152344	0.0791016 0.152344	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
