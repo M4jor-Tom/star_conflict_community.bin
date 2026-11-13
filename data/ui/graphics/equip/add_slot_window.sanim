@@ -1,0 +1,223 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Feb 27 17:33:48 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 13
+{
+	object title
+	{
+		defaults
+		{
+			pos 5 1
+			opacity 255
+			color 0xffff9a00
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Увеличение склада"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 443.049 77.4064
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 130
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 105
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 391 101
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 231 101
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 5.059 23.5036
+			opacity 255
+			color 0xffffffff
+			size 530 60
+			effect ""
+			alignment "LT"
+			sampleText "Купить 5 слотов|Купить 5 слотов|Купить 5 слотов"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_3
+	{
+		defaults
+		{
+			pos 3.00527 101
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn7"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price_once_2
+	{
+		defaults
+		{
+			pos 287.049 77.4064
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 5.23498 46.2372
+			opacity 255
+			color 0xffcccccc
+			size 400 30
+			effect ""
+			alignment "LM"
+			sampleText "ad fw fqfwf gqgewg geg g|kjsfk osjf"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price_2
+	{
+		defaults
+		{
+			pos 337 78
+			opacity 255
+			color 0xffffffff
+			size 200 23
+			effect ""
+			alignment "RM"
+			sampleText "23252366"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object button_4
+	{
+		defaults
+		{
+			pos 70 101
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_x5
+	{
+		defaults
+		{
+			pos 534 1
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	549 -4	557 -4	-4 22	4 22	549 22	557 22	-4 126	4 126	549 126	557 126	-4 134	4 134	549 134	557 134	
+				0.0585936 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585936 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585936 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585936 0.731454	0.0664063 0.731454	0.0742188 0.731454	0.0820313 0.731454	
+			}
+		}
+		visible_on idle
+	}
+}
+
