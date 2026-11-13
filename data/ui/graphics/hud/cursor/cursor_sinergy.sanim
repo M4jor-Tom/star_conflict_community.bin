@@ -1,0 +1,84 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/cursor.ma"
+//by Sergey
+//at Tue Oct 20 15:16:43 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim hide
+	{
+		mode once
+		cycle_time 1
+	}
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos -5 -0
+			opacity 255
+			color 0xff7fe1ff
+			size 100 15
+			effect ""
+			alignment "CM"
+			sampleText "+200"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		anim hide obj_op_col
+		{
+			11 11
+			255
+			247
+			228
+			199
+			165
+			127
+			89
+			55
+			26
+			7
+			0
+			0xff7fe1ff
+			0xff7bdbf7
+			0xff72c9e4
+			0xff63b0c7
+			0xff5292a5
+			0xff3f707f
+			0xff2c4f59
+			0xff1b3037
+			0xff0d171a
+			0xff030607
+			0xff000000
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff000000
+			size 100 15
+			effect ""
+			alignment "CM"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on hide
+		visible_on idle
+	}
+}
+
