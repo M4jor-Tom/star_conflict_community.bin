@@ -1,0 +1,105 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Wed Oct 16 12:13:43 2013
+
+
+animations 6
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_shot
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object name_outl
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff98afd4
+			size 200 16
+			effect ""
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "Tiny_outl"
+			blend color_add
+		}
+		anim enemy_shot obj_colc
+		{
+			1
+			0xffff2800
+		}
+	}
+	object name1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff00ddff
+			size 200 16
+			effect ""
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "Tiny"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2700
+		}
+		anim enemy_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim squad obj_colc
+		{
+			1
+			0xff07ff00
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xff999999
+		}
+		anim neutral_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+}
+
