@@ -1,0 +1,283 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by Sergey_Mitryaev
+//at Tue Apr 18 12:30:19 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 14
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 180 294
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6 -0
+			opacity 255
+			color 0xffff9a00
+			size 148 20
+			effect ""
+			alignment "LM"
+			sampleText "Conection problen"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 8 28.1541
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 8 51.8848
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 8 75.6156
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 8 99.3463
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 8 123.077
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_6
+	{
+		defaults
+		{
+			pos 8 146.808
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_7
+	{
+		defaults
+		{
+			pos 8 170.539
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_8
+	{
+		defaults
+		{
+			pos 8 194.269
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_9
+	{
+		defaults
+		{
+			pos 8 218
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 180 56
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_10
+	{
+		defaults
+		{
+			pos 8 242
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_11
+	{
+		defaults
+		{
+			pos 8 266
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\hangar\tooltype_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite m
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 50.75	6 50.75	173 50.75	183 50.75	-4 60.75	6 60.75	173 60.75	183 60.75	
+				0.0585945 0.695313	0.0683601 0.695313	0.0722656 0.695313	0.0820313 0.695313	0.0585945 0.722656	0.0683601 0.722656	0.0722656 0.722656	0.0820313 0.722656	0.0585945 0.722656	0.0683601 0.722656	0.0722656 0.722656	0.0820313 0.722656	0.0585945 0.732422	0.0683601 0.732422	0.0722656 0.732422	0.0820313 0.732422	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 50.75	6 50.75	173 50.75	183 50.75	-4 60.75	6 60.75	173 60.75	183 60.75	
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 74.65	6 74.65	173 74.65	183 74.65	-4 84.65	6 84.65	173 84.65	183 84.65	
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 98.55	6 98.55	173 98.55	183 98.55	-4 108.55	6 108.55	173 108.55	183 108.55	
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 122.45	6 122.45	173 122.45	183 122.45	-4 132.45	6 132.45	173 132.45	183 132.45	
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 146.35	6 146.35	173 146.35	183 146.35	-4 156.35	6 156.35	173 156.35	183 156.35	
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 170.25	6 170.25	173 170.25	183 170.25	-4 180.25	6 180.25	173 180.25	183 180.25	
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 194.15	6 194.15	173 194.15	183 194.15	-4 204.15	6 204.15	173 204.15	183 204.15	
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 218.05	6 218.05	173 218.05	183 218.05	-4 228.05	6 228.05	173 228.05	183 228.05	
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 241.95	6 241.95	173 241.95	183 241.95	-4 251.95	6 251.95	173 251.95	183 251.95	
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 265.85	6 265.85	173 265.85	183 265.85	-4 275.85	6 275.85	173 275.85	183 275.85	
+			-4 -4	6 -4	173 -4	183 -4	-4 24	6 24	173 24	183 24	-4 289.75	6 289.75	173 289.75	183 289.75	-4 299.75	6 299.75	173 299.75	183 299.75	
+		}
+	}
+	sprite mw
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 47.25	8 47.25	171 47.25	175 47.25	4 51.25	8 51.25	171 51.25	175 51.25	
+				0.0585941 0.670898	0.0625 0.670898	0.078125 0.670898	0.0820309 0.670898	0.0585941 0.674805	0.0625 0.674805	0.078125 0.674805	0.0820309 0.674805	0.0585941 0.69043	0.0625 0.69043	0.078125 0.69043	0.0820309 0.69043	0.0585941 0.694336	0.0625 0.694336	0.078125 0.694336	0.0820309 0.694336	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 47.25	8 47.25	171 47.25	175 47.25	4 51.25	8 51.25	171 51.25	175 51.25	
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 71.15	8 71.15	171 71.15	175 71.15	4 75.15	8 75.15	171 75.15	175 75.15	
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 95.05	8 95.05	171 95.05	175 95.05	4 99.05	8 99.05	171 99.05	175 99.05	
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 118.95	8 118.95	171 118.95	175 118.95	4 122.95	8 122.95	171 122.95	175 122.95	
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 142.85	8 142.85	171 142.85	175 142.85	4 146.85	8 146.85	171 146.85	175 146.85	
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 166.75	8 166.75	171 166.75	175 166.75	4 170.75	8 170.75	171 170.75	175 170.75	
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 190.65	8 190.65	171 190.65	175 190.65	4 194.65	8 194.65	171 194.65	175 194.65	
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 214.55	8 214.55	171 214.55	175 214.55	4 218.55	8 218.55	171 218.55	175 218.55	
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 238.45	8 238.45	171 238.45	175 238.45	4 242.45	8 242.45	171 242.45	175 242.45	
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 262.35	8 262.35	171 262.35	175 262.35	4 266.35	8 266.35	171 266.35	175 266.35	
+			4 25	8 25	171 25	175 25	4 29	8 29	171 29	175 29	4 286.25	8 286.25	171 286.25	175 286.25	4 290.25	8 290.25	171 290.25	175 290.25	
+		}
+	}
+}
+
