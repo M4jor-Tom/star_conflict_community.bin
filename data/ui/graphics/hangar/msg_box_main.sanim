@@ -1,0 +1,111 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Tue Mar 17 15:37:55 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object blackout
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object window
+	{
+		defaults
+		{
+			anchor "C"
+			pos 366.84 188.614
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\msg_box_window"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object quests_tutor_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 248 167
+			opacity 255
+			color 0xffffffff
+			size 780 310
+			effect "ui\graphics\quests\quests_tutor_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loot_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 428 182
+			opacity 255
+			color 0xffffffff
+			size 420 290
+			effect "ui\graphics\loot_scan\recog_loot_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ship_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 358 204
+			opacity 255
+			color 0xffffffff
+			size 560 270
+			effect "ui\graphics\map\sel_ship_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object win_pve
+	{
+		defaults
+		{
+			anchor "C"
+			pos 160 71
+			opacity 255
+			color 0xffffffff
+			size 966 530
+			effect "ui\graphics\map\map_win_pve"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
