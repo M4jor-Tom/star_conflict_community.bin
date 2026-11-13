@@ -1,0 +1,201 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/drop_down.ma"
+//by sergey_mitryaev
+//at Tue Oct 23 16:25:19 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 10
+{
+	object dist_max
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 268 20
+			effect ""
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object value_1
+	{
+		defaults
+		{
+			pos 8 23
+			opacity 255
+			color 0xffcccccc
+			size 30 19
+			effect ""
+			alignment "CT"
+			sampleText "210"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object frac_ico_1
+	{
+		defaults
+		{
+			pos 12 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\hangar\distrib_galaxy_frac_ico"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object frac_ico_2
+	{
+		defaults
+		{
+			pos 87 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\hangar\distrib_galaxy_frac_ico"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object frac_ico_3
+	{
+		defaults
+		{
+			pos 188 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\hangar\distrib_galaxy_frac_ico"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object value_2
+	{
+		defaults
+		{
+			pos 83 23
+			opacity 255
+			color 0xffcccccc
+			size 30 19
+			effect ""
+			alignment "CT"
+			sampleText "210"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object value_3
+	{
+		defaults
+		{
+			pos 184 23
+			opacity 255
+			color 0xffcccccc
+			size 30 19
+			effect ""
+			alignment "CT"
+			sampleText "210"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object marker_1
+	{
+		defaults
+		{
+			pos 54.0233 -0
+			opacity 255
+			color 0xffffffff
+			size 2 20
+			effect "ui\graphics\hangar\distrib_galaxy_marker"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object marker_2
+	{
+		defaults
+		{
+			pos 155.317 -0
+			opacity 255
+			color 0xffffffff
+			size 2 20
+			effect "ui\graphics\hangar\distrib_galaxy_marker"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite m
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			not_align
+			vertices_nc
+			{
+				-2 -2	4.66667 -2	263.333 -2	270 -2	-2 4.66667	4.66667 4.66667	263.333 4.66667	270 4.66667	-2 15.3333	4.66667 15.3333	263.333 15.3333	270 15.3333	-2 22	4.66667 22	263.333 22	270 22	
+				0.0731864 0.0761919	0.0796969 0.0761919	0.257174 0.0761919	0.263685 0.0761919	0.0731864 0.0827023	0.0796969 0.0827023	0.257174 0.0827023	0.263685 0.0827023	0.0731864 0.0862737	0.0796969 0.0862737	0.257174 0.0862737	0.263685 0.0862737	0.0731864 0.0927842	0.0796969 0.0927842	0.257174 0.0927842	0.263685 0.0927842	
+			}
+		}
+		visible_on idle
+	}
+	sprite m3
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			not_align
+			vertices_nc
+			{
+				0 -0	6.66667 -0	261.333 -0	268 -0	0 6.66667	6.66667 6.66667	261.333 6.66667	268 6.66667	0 13.3333	6.66667 13.3333	261.333 13.3333	268 13.3333	0 20	6.66667 20	261.333 20	268 20	
+				0.0742449 0.0957236	0.0807554 0.0957236	0.256171 0.0957236	0.262682 0.0957236	0.0742449 0.102234	0.0807554 0.102234	0.256171 0.102234	0.262682 0.102234	0.0742449 0.103891	0.0807554 0.103891	0.256171 0.103891	0.262682 0.103891	0.0742449 0.110402	0.0807554 0.110402	0.256171 0.110402	0.262682 0.110402	
+			}
+		}
+		visible_on idle
+	}
+}
+
