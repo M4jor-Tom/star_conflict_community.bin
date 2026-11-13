@@ -1,0 +1,104 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Mon Dec 26 13:30:07 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 3
+{
+	object title20
+	{
+		defaults
+		{
+			pos 1 -0
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Помощь огнем"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title21
+	{
+		defaults
+		{
+			pos 93.5307 41
+			opacity 255
+			color 0xfffffd97
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "999"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title22
+	{
+		defaults
+		{
+			pos 93.5307 59
+			opacity 255
+			color 0xffababab
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "очков"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite ico48
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 21	84 21	0 105	84 105	
+				0 -1.19209e-007	1 -1.19209e-007	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite maya_sceneClipBoard_objectName304
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				87 42	89 42	87 76	89 76	
+				0.434907 0.327976	0.443999 0.327976	0.434907 0.33804	0.443999 0.33804	
+				0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+}
+
