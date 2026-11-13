@@ -1,0 +1,60 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Thu Jul 03 12:48:44 2014
+
+
+animations 2
+{
+	anim red
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim green
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object text_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffff2700
+			size 100 30
+			effect ""
+			alignment "RM"
+			sampleText "Ytxtcnyffjgmd"
+			font "Tiny"
+		}
+		visible_on red
+		anim green obj_colc
+		{
+			1
+			0xff0fff00
+		}
+	}
+	object help_btn
+	{
+		defaults
+		{
+			pos 104 4
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\custom_help_btn"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on red
+		visible_on green
+	}
+}
+
