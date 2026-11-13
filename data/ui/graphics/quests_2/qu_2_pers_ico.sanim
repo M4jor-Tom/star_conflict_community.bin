@@ -1,0 +1,118 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2-77994.ma"
+//by Sergey_Mitryaev
+//at Tue Jan 30 14:44:22 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 180 302
+			effect ""
+			alignment "LT"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 180 302
+			effect "ui\graphics\quests_2\qu_2_pers_ico_over"
+			alignment "LT"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite objectName437
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 -0	10 -0	170 -0	180 -0	0 10	10 10	170 10	180 10	0 292	10 292	170 292	180 292	0 302	10 302	170 302	180 302	
+				0.19006 0.307248	0.193359 0.307248	0.193359 0.307248	0.196659 0.307248	0.19006 0.310547	0.193359 0.310547	0.193359 0.310547	0.196659 0.310547	0.19006 0.310547	0.193359 0.310547	0.193359 0.310547	0.196659 0.310547	0.19006 0.313846	0.193359 0.313846	0.193359 0.313846	0.196659 0.313846	
+				0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	0x99606060	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName438
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 -0	10 -0	170 -0	180 -0	0 10	10 10	170 10	180 10	0 292	10 292	170 292	180 292	0 302	10 302	170 302	180 302	
+				0.128906 0.302734	0.148438 0.302734	0.148438 0.302734	0.167969 0.302734	0.128906 0.322266	0.148438 0.322266	0.148438 0.322266	0.167969 0.322266	0.128906 0.322266	0.148438 0.322266	0.148438 0.322266	0.167969 0.322266	0.128906 0.341797	0.148438 0.341797	0.148438 0.341797	0.167969 0.341797	
+				0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				11 11	169 11	11 291	169 291	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName439
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				10 10	20 10	160 10	170 10	10 20	20 20	160 20	170 20	10 282	20 282	160 282	170 282	10 292	20 292	160 292	170 292	
+				0.128906 0.302734	0.148438 0.302734	0.148438 0.302734	0.167969 0.302734	0.128906 0.322266	0.148438 0.322266	0.148438 0.322266	0.167969 0.322266	0.128906 0.322266	0.148438 0.322266	0.148438 0.322266	0.167969 0.322266	0.128906 0.341797	0.148438 0.341797	0.148438 0.341797	0.167969 0.341797	
+				0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	0xff9f9f9f	
+			}
+		}
+		visible_on idle
+	}
+}
+
