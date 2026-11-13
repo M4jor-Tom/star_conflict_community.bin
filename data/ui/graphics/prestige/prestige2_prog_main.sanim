@@ -1,0 +1,116 @@
+﻿source_file "Y:/art/source/ui/graphics/prestige/prestige.ma"
+//by sergey_mitryaev
+//at Mon Dec 07 15:00:10 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 150 40
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 24.5438 9.7337
+			opacity 255
+			color 0xff7fe1ff
+			size 150 15
+			effect ""
+			alignment "LM"
+			sampleText "МОЩЬ ФЛОТА"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object prog
+	{
+		defaults
+		{
+			pos 25 32
+			opacity 255
+			color 0xffffffff
+			size 90 2
+			effect "ui\graphics\prestige\prestige2_prog"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName341
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				0 -0	14 -0	0 40	14 40	
+				0.61342 0.179549	0.577986 0.179549	0.61342 0.285295	0.577986 0.285295	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName342
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				107.5 -0	14 -0	107.5 40	14 40	
+				0.5625 0.179549	0.577986 0.179549	0.5625 0.285295	0.577986 0.285295	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName343
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				144.5 -0	107.5 -0	144.5 40	107.5 40	
+				0.5625 0.179549	0.577986 0.179549	0.5625 0.285295	0.577986 0.285295	
+				0x7a7a7a	0xffffffff	0x7a7a7a	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
