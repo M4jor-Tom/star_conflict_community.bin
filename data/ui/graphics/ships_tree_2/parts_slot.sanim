@@ -1,0 +1,125 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by sergey_mitryaev
+//at Mon Apr 04 17:48:32 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 94 48
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object frame
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 94 48
+			effect "ui\graphics\ships_tree_2\parts_slot_frame"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object count
+	{
+		defaults
+		{
+			pos 40 26
+			opacity 255
+			color 0xffffffff
+			size 50 24
+			effect ""
+			alignment "RM"
+			sampleText "00"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object rank
+	{
+		defaults
+		{
+			pos 4 -2
+			opacity 255
+			color 0xffffffff
+			size 50 24
+			effect ""
+			alignment "LM"
+			sampleText "00"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object ship_ico
+	{
+		defaults
+		{
+			pos -16 -12
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\ship_ico"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object blink
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 94 48
+			effect "ui\graphics\hangar\custom_ship_blink_5"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite objectName441
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				1 1	15 1	79 1	93 11	1 22	15 22	79 22	93 22	1 31	15 31	79 31	93 31	1 36	15 47	79 47	93 47	
+				0.393208 0.608052	0.400601 0.608052	0.407993 0.608052	0.415386 0.608052	0.393208 0.615444	0.400601 0.615444	0.407993 0.615444	0.415386 0.615444	0.393208 0.622837	0.400601 0.622837	0.407993 0.622837	0.415386 0.622837	0.393208 0.630229	0.400601 0.630229	0.407993 0.630229	0.415386 0.630229	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
