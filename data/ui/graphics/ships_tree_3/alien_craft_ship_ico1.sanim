@@ -1,0 +1,56 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey_Mitryaev
+//at Tue Dec 27 14:55:19 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 260 260
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite target_window
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/target_window.tif"
+			anchor "LT"
+			vertices_nc
+			{
+				0 -0	260 -0	0 260	260 260	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
