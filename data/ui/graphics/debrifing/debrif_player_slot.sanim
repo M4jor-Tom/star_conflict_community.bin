@@ -1,0 +1,424 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Wed Feb 10 10:35:36 2021
+
+base_res 1280 720
+
+animations 5
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim myself
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 11
+{
+	object efficiency
+	{
+		defaults
+		{
+			pos 379 10.9816
+			opacity 255
+			color 0xffffffff
+			size 40 20
+			effect ""
+			alignment "RM"
+			sampleText "100%"
+			font "Medium"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+	object ship_ico_1
+	{
+		defaults
+		{
+			pos 30.5922 21.2391
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\spectate\players_ship_icon_left"
+			alignment "LM"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+	object ship_ico_2
+	{
+		defaults
+		{
+			pos 72.2307 21.2391
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\spectate\players_ship_icon_left"
+			alignment "LM"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+	object ship_ico_3
+	{
+		defaults
+		{
+			pos 117.029 21.2391
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\spectate\players_ship_icon_left"
+			alignment "LM"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+	object ship_ico_4
+	{
+		defaults
+		{
+			pos 163.252 21.2391
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\spectate\players_ship_icon_left"
+			alignment "LM"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+	object capture
+	{
+		defaults
+		{
+			pos 228 10.9816
+			opacity 255
+			color 0xffffffff
+			size 40 20
+			effect ""
+			alignment "RM"
+			sampleText "10"
+			font "VerySmall"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+	object help
+	{
+		defaults
+		{
+			pos 273 10.9816
+			opacity 255
+			color 0xffffffff
+			size 40 20
+			effect ""
+			alignment "RM"
+			sampleText "10"
+			font "VerySmall"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+	object kills
+	{
+		defaults
+		{
+			pos 313.237 10.9816
+			opacity 255
+			color 0xffffffff
+			size 40 20
+			effect ""
+			alignment "RM"
+			sampleText "60"
+			font "VerySmall"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+	object like
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 15 16
+			effect "ui\graphics\debrifing\debrif_like"
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 410 47
+			effect ""
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+	object |name
+	{
+		defaults
+		{
+			pos 30.5922 -1
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Имя игрока"
+			font "VerySmall"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+		visible_on enemy_2
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				30.4983 -0	435 -0	30.4983 47	435 47	
+				0.43639 0.339227	0.436657 0.339227	0.43639 0.340461	0.436657 0.340461	
+				0x644e668b	0x644e668b	0x644e668b	0x644e668b	
+			}
+		}
+		visible_on friend
+		anim squad sp_colc
+		{
+			1
+			0x53397e85	0x53397e85	0x53397e85	0x53397e85	
+		}
+		anim myself sp_colc
+		{
+			1
+			0x7f5d83d0	0x7f5d83d0	0x7f5d83d0	0x7f5d83d0	
+		}
+		anim enemy sp_colc
+		{
+			1
+			0x33fc5042	0x33fc5042	0x33fc5042	0x33fc5042	
+		}
+		anim enemy_2 sp_colc
+		{
+			1
+			0x465b00a5	0x465b00a5	0x465b00a5	0x465b00a5	
+		}
+	}
+	sprite objectName368
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	28.9539 -0	0 47	28.9539 47	
+				0.43639 0.339227	0.436657 0.339227	0.43639 0.340461	0.436657 0.340461	
+				0x644e668b	0x644e668b	0x644e668b	0x644e668b	
+			}
+		}
+		visible_on friend
+		anim squad sp_colc
+		{
+			1
+			0x53397e85	0x53397e85	0x53397e85	0x53397e85	
+		}
+		anim myself sp_colc
+		{
+			1
+			0x7f5d83d0	0x7f5d83d0	0x7f5d83d0	0x7f5d83d0	
+		}
+		anim enemy sp_colc
+		{
+			1
+			0x33fc5042	0x33fc5042	0x33fc5042	0x33fc5042	
+		}
+		anim enemy_2 sp_colc
+		{
+			1
+			0x33fc5042	0x33fc5042	0x33fc5042	0x33fc5042	
+		}
+	}
+	sprite objectName369
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				232.38 -0.0323563	244.782 -0.0323563	232.38 19	244.782 19	
+				0.504883 0.288236	0.518555 0.288236	0.504883 0.308594	0.518555 0.308594	
+				0xa94e668b	0xa94e668b	0xa94e668b	0xa94e668b	
+			}
+		}
+		visible_on friend
+		anim squad sp_colc
+		{
+			1
+			0x48397e85	0x48397e85	0x48397e85	0x48397e85	
+		}
+		anim myself sp_colc
+		{
+			1
+			0xaab8d0ff	0xaab8d0ff	0xaab8d0ff	0xaab8d0ff	
+		}
+		anim enemy sp_colc
+		{
+			1
+			0x5aff5547	0x5aff5547	0x5aff5547	0x5aff5547	
+		}
+		anim enemy_2 sp_colc
+		{
+			1
+			0x3e5b00a5	0x3e5b00a5	0x3e5b00a5	0x3e5b00a5	
+		}
+	}
+	sprite objectName370
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				30.4983 -0.0323563	232.38 -0.0323563	30.4983 19	232.38 19	
+				0.437074 0.33355	0.439879 0.33355	0.437074 0.340278	0.439879 0.340278	
+				0xa94e668b	0xa94e668b	0xa94e668b	0xa94e668b	
+			}
+		}
+		visible_on friend
+		anim squad sp_colc
+		{
+			1
+			0x48397e85	0x48397e85	0x48397e85	0x48397e85	
+		}
+		anim myself sp_colc
+		{
+			1
+			0xaab8d0ff	0xaab8d0ff	0xaab8d0ff	0xaab8d0ff	
+		}
+		anim enemy sp_colc
+		{
+			1
+			0x5aff5547	0x5aff5547	0x5aff5547	0x5aff5547	
+		}
+		anim enemy_2 sp_colc
+		{
+			1
+			0x3e5b00a5	0x3e5b00a5	0x3e5b00a5	0x3e5b00a5	
+		}
+	}
+	sprite objectName371
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0.0323563	28.9539 -0.0323563	0 47	28.9539 47	
+				0.436739 0.328842	0.440214 0.328842	0.436739 0.337174	0.440214 0.337174	
+				0xa94e668b	0xa94e668b	0xa94e668b	0xa94e668b	
+			}
+		}
+		visible_on friend
+		anim squad sp_colc
+		{
+			1
+			0x48397e85	0x48397e85	0x48397e85	0x48397e85	
+		}
+		anim myself sp_colc
+		{
+			1
+			0xaab8d0ff	0xaab8d0ff	0xaab8d0ff	0xaab8d0ff	
+		}
+		anim enemy sp_colc
+		{
+			1
+			0x5aff5547	0x5aff5547	0x5aff5547	0x5aff5547	
+		}
+		anim enemy_2 sp_colc
+		{
+			1
+			0x7e5b00a5	0x7e5b00a5	0x7e5b00a5	0x7e5b00a5	
+		}
+	}
+}
+
