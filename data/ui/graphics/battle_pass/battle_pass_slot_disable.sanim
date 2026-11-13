@@ -1,0 +1,55 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Wed Jun 19 11:11:48 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName357
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				1 1	208 1	1 282	208 282	
+				0.109775 0.420737	0.148038 0.420737	0.109775 0.460123	0.148038 0.460123	
+				0x6e000000	0x6e000000	0x6e000000	0x6e000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName358
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				1 289	11 289	198 289	208 289	1 299	11 299	198 299	208 299	1 317	11 317	198 317	208 317	1 327	11 327	198 327	208 327	
+				0.077842 0.43604	0.0805609 0.43604	0.0854548 0.43604	0.0881736 0.43604	0.077842 0.439794	0.0805609 0.439794	0.0854548 0.439794	0.0881736 0.439794	0.077842 0.446925	0.0805609 0.446925	0.0854548 0.446925	0.0881736 0.446925	0.077842 0.450678	0.0805609 0.450678	0.0854548 0.450678	0.0881736 0.450678	
+				0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	0x6e000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
