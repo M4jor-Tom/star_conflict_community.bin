@@ -1,0 +1,195 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Wed May 14 16:15:42 2014
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_inactiv
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 346 234
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 319 -0
+			opacity 255
+			color 0xffffffff
+			size 24 94
+			effect "ui\graphics\shop\grid_sale"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object description
+	{
+		defaults
+		{
+			pos 12 73
+			opacity 255
+			color 0xffffffff
+			size 250 120
+			effect ""
+			alignment "LB"
+			sampleText "АКМ|Новейшая разработка |увеличивает щит|dsfsdfsd"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object price
+	{
+		defaults
+		{
+			pos 78 210
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object buy_btn4
+	{
+		defaults
+		{
+			pos 186 207
+			opacity 255
+			color 0xffffffff
+			size 136 21
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object title
+	{
+		defaults
+		{
+			pos 10 -0
+			opacity 255
+			color 0xffffffff
+			size 270 20
+			effect ""
+			alignment "LM"
+			sampleText "SDd gfgg rhhh "
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 346 234
+			effect "ui\graphics\shop\bundle_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	342 -4	350 -4	-4 22	4 22	342 22	350 22	-4 230	4 230	342 230	350 230	-4 238	4 238	342 238	350 238	
+				0.0585938 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585938 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				1 24	345 24	1 202	345 202	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+}
+
