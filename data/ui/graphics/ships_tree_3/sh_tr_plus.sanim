@@ -1,0 +1,79 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey
+//at Fri Jul 22 16:01:41 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim red
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim green
+	{
+		mode looped
+		cycle_time 0.7
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite que253
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3.tif"
+			vertices
+			{
+				0 1.90735e-006	16 1.90735e-006	0 16	16 16	
+				0.957031 0.335938	0.988281 0.335938	0.957031 0.367188	0.988281 0.367188	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on red
+		anim green sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite que336
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3.tif"
+			vertices
+			{
+				0 1.90735e-006	16 1.90735e-006	0 16	16 16	
+				0.957031 0.373047	0.988281 0.373047	0.957031 0.404297	0.988281 0.404297	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on red
+		anim green sp_col
+		{
+			10
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xf8f8f8f8	0xf8f8f8f8	0xf8f8f8f8	0xf8f8f8f8	
+			0xe7e7e7e7	0xe7e7e7e7	0xe7e7e7e7	0xe7e7e7e7	
+			0xd2d2d2d2	0xd2d2d2d2	0xd2d2d2d2	0xd2d2d2d2	
+			0xbbbbbbbb	0xbbbbbbbb	0xbbbbbbbb	0xbbbbbbbb	
+			0xa5a5a5a5	0xa5a5a5a5	0xa5a5a5a5	0xa5a5a5a5	
+			0x90909090	0x90909090	0x90909090	0x90909090	
+			0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+		}
+	}
+}
+
