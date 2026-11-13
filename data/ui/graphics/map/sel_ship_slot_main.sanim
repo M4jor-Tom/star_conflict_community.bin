@@ -1,0 +1,121 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by Sergey
+//at Tue Sep 27 09:08:46 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 560 130
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ship_slot_1
+	{
+		defaults
+		{
+			pos 14 25
+			opacity 255
+			color 0xffffffff
+			size 124 72
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ship_slot_2
+	{
+		defaults
+		{
+			pos 158 25
+			opacity 255
+			color 0xffffffff
+			size 124 72
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ship_slot_3
+	{
+		defaults
+		{
+			pos 302 25
+			opacity 255
+			color 0xffffffff
+			size 124 72
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ship_slot_4
+	{
+		defaults
+		{
+			pos 447 25
+			opacity 255
+			color 0xffffffff
+			size 124 72
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 47 2
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "CM"
+			sampleText "Создание карты"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 44 103
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "CM"
+			sampleText "Создание карты"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
