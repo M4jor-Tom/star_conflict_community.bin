@@ -1,0 +1,153 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Feb 19 16:19:33 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 9
+{
+	object text
+	{
+		defaults
+		{
+			pos 48 -0
+			opacity 255
+			color 0xffffdeb3
+			size 500 30
+			effect ""
+			alignment "LB"
+			sampleText "HDhehjg jberjb j borwejh"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object title_2
+	{
+		defaults
+		{
+			pos 48 31
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect ""
+			alignment "LT"
+			sampleText "asffa f  wqf:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_3
+	{
+		defaults
+		{
+			pos 48 31
+			opacity 255
+			color 0xffffdeb3
+			size 400 30
+			effect ""
+			alignment "LT"
+			sampleText "WWWWWWWWWWWWWWWWWWWW"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_4
+	{
+		defaults
+		{
+			pos 48 31
+			opacity 255
+			color 0xffffffff
+			size 400 30
+			effect ""
+			alignment "LT"
+			sampleText "WWWWWWWWWWWWWWWWWWWW"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 930 74
+			effect ""
+			alignment "LB"
+			sampleText "HDhehjg jberjb j borwejh"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object clan_ico
+	{
+		defaults
+		{
+			pos 23 30
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\map\map_clan_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 48 50
+			opacity 255
+			color 0xffffffff
+			size 400 20
+			effect "ui\graphics\clan\clan_text_2"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_41
+	{
+		defaults
+		{
+			pos 758.941 35.3647
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object iridium
+	{
+		defaults
+		{
+			pos 516.056 2.55269
+			opacity 255
+			color 0xffffffff
+			size 400 30
+			effect ""
+			alignment "RM"
+			sampleText "Запас иридиума 34455\54656576"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
