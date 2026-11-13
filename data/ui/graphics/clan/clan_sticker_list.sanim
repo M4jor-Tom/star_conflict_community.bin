@@ -1,0 +1,111 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Fri Feb 07 15:17:59 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 408 156
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 6 11.2607
+			opacity 255
+			color 0xffffffff
+			size 396 40
+			effect "ui\graphics\clan\clan_sticker_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 6 57
+			opacity 255
+			color 0xffffffff
+			size 396 40
+			effect "ui\graphics\clan\clan_sticker_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos 6 103
+			opacity 255
+			color 0xffffffff
+			size 396 40
+			effect "ui\graphics\clan\clan_sticker_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 390 3
+			opacity 255
+			color 0xffffffff
+			size 16 150
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.180913	8 0.180913	402 0.180913	408 0.180913	0 6.18091	8 6.18091	402 6.18091	408 6.18091	0 150	8 150	402 150	408 150	0 156	8 156	402 156	408 156	
+				0.272461 0.0507857	0.272461 0.0429642	0.272461 0.008789	0.272461 0.00292975	0.266602 0.0507858	0.266602 0.0429642	0.266602 0.00878912	0.266602 0.00292963	0.229456 0.0507857	0.229456 0.0429642	0.229456 0.00878894	0.229456 0.00292963	0.223597 0.0507857	0.223597 0.0429642	0.223597 0.00878906	0.223597 0.00292963	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
