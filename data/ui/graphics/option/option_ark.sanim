@@ -1,0 +1,108 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Mon Apr 06 12:34:33 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim sample
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim video
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim audio
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object text_1
+	{
+		defaults
+		{
+			pos 219 2
+			opacity 255
+			color 0xffffffff
+			size 400 16
+			effect ""
+			alignment "CM"
+			sampleText "Синронизировать покупки с гайдзинами"
+			font "VerySmall"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object btn2
+	{
+		defaults
+		{
+			pos 290 33
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\shop\buy_btn8"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 820 70
+			effect ""
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 802 2
+			opacity 255
+			color 0xffffffff
+			size 20 487
+			effect "ui\graphics\login_screen\scroll_main"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object btn5
+	{
+		defaults
+		{
+			pos 359.146 -12
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+}
+
