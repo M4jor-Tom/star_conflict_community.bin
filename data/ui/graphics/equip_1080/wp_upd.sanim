@@ -1,0 +1,71 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Wed Nov 27 11:25:23 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object upd_btn
+	{
+		defaults
+		{
+			pos 0 76
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\equip_1080\wp_upd_btn"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				-5 -4	15 -4	112 -4	132 -4	-5 16	15 16	112 16	132 16	-5 76	15 76	112 76	132 76	-5 102	15 102	112 102	132 102	
+				0.930664 0.0693359	0.950195 0.0693359	0.969727 0.0693359	0.989258 0.0693359	0.930664 0.0888672	0.950195 0.0888672	0.969727 0.0888672	0.989258 0.0888672	0.930664 0.125	0.950195 0.125	0.969727 0.125	0.989258 0.125	0.930664 0.150391	0.950195 0.150391	0.969727 0.150391	0.989258 0.150391	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName416
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				58 81	68 81	58 95	68 95	
+				0.217773 0.416992	0.227539 0.416992	0.217773 0.430664	0.227539 0.430664	
+			}
+		}
+		visible_on idle
+	}
+}
+
