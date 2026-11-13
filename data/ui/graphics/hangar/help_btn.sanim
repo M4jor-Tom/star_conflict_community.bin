@@ -1,0 +1,160 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Fri Dec 13 14:11:18 2013
+
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 0.6
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 0.2
+	}
+	anim chek
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim chek_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 25 25
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on chek
+		visible_on chek_over
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite m
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				5.72205e-006 -0	10 -0	15.0481 -0	25.0481 -0	5.72205e-006 10	10 10	15.0481 10	25.0481 10	5.72205e-006 14.6443	10 14.6443	15.0481 14.6443	25.0481 14.6443	5.72205e-006 24.6443	10 24.6443	15.0481 24.6443	25.0481 24.6443	
+				0.00190821 0.0634684	0.0116738 0.0634684	0.0409484 0.0634684	0.050714 0.0634684	0.00190821 0.073234	0.0116738 0.073234	0.0409484 0.073234	0.050714 0.073234	0.00190821 0.102838	0.0116738 0.102838	0.0409484 0.102838	0.050714 0.102838	0.00190821 0.112604	0.0116738 0.112604	0.0409484 0.112604	0.050714 0.112604	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on chek
+		visible_on chek_over
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0.499996 -0.5	25.5 -0.499998	0.499996 24.5	25.5 24.5	
+				0.885254 0.371582	0.909668 0.371582	0.885254 0.395996	0.909668 0.395996	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on chek
+		visible_on chek_over
+	}
+	sprite over1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.433232 0.753453	10.1228 0.753453	14.9519 0.753453	24.4345 0.753453	0.433232 10.0292	10.1228 10.0292	14.9519 10.0292	24.4345 10.0292	0.433232 13.3557	10.1228 13.3557	14.9519 13.3557	24.4345 13.3557	0.433232 23.3557	10.1228 23.3557	14.9519 23.3557	24.4345 23.3557	
+				0.0733617 0.00188553	0.0824032 0.00188553	0.112031 0.00188553	0.119977 0.00188553	0.0733617 0.0100076	0.0824032 0.0100076	0.112031 0.0100076	0.119977 0.0100076	0.0733617 0.039614	0.0824032 0.039614	0.112031 0.039614	0.119977 0.039614	0.0733617 0.0493796	0.0824032 0.0493796	0.112031 0.0493796	0.119977 0.0493796	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	
+		}
+		visible_on press
+		visible_on chek
+		anim chek_over sp_colc
+		{
+			1
+			0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	0xcc9c9c9c	
+		}
+	}
+	sprite sel
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				5.72205e-006 -0	10 -0	15.0481 -0	25.0481 -0	5.72205e-006 10	10 10	15.0481 10	25.0481 10	5.72205e-006 14.6443	10 14.6443	15.0481 14.6443	25.0481 14.6443	5.72205e-006 24.6443	10 24.6443	15.0481 24.6443	25.0481 24.6443	
+				0.228516 0.202148	0.238281 0.202148	0.26952 0.202148	0.279286 0.202148	0.228516 0.211914	0.238281 0.211914	0.26952 0.211914	0.279286 0.211914	0.228516 0.243164	0.238281 0.243164	0.26952 0.243164	0.279286 0.243164	0.228516 0.25293	0.238281 0.25293	0.26952 0.25293	0.279286 0.25293	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim chek sp_colc
+		{
+			1
+			0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	
+		}
+		anim chek_over sp_colc
+		{
+			1
+			0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	
+		}
+	}
+}
+
