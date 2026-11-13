@@ -1,0 +1,81 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Tue Dec 03 14:01:29 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 64
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object lock
+	{
+		defaults
+		{
+			pos -10 44
+			opacity 255
+			color 0xffcccccc
+			size 30 20
+			effect ""
+			alignment "CM"
+			sampleText "30"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite myself2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				0 44	10 44	0 44	10 44	
+				0.139648 0.953125	0.139648 0.972656	0.178711 0.953125	0.178711 0.972656	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			6 
+			0 44	10 44	0 44	10 44	
+			0 35.2	10 35.2	0 44	10 44	
+			0 26.4	10 26.4	0 44	10 44	
+			0 17.6	10 17.6	0 44	10 44	
+			0 8.8	10 8.8	0 44	10 44	
+			0 -0	10 -0	0 44	10 44	
+		}
+	}
+}
+
