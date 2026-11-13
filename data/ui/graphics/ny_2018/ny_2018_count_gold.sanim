@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/ny_count/ny_count_2018.ma"
+//by sergey_mitryaev
+//at Mon Nov 27 11:34:44 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object gold_count
+	{
+		defaults
+		{
+			pos -1 58
+			opacity 255
+			color 0xffeeba00
+			size 100 30
+			effect ""
+			alignment "CM"
+			sampleText "0000"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object gold_icon
+	{
+		defaults
+		{
+			pos 38 36
+			opacity 255
+			color 0xffeeba00
+			size 20 30
+			effect "ui\graphics\shop\gold_icon"
+			alignment "LM"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite we92
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				32.3182 29.5136	64.4864 29.5136	32.3182 61.6818	64.4864 61.6818	
+				0.619141 0.261719	0.728516 0.261719	0.619141 0.371094	0.728516 0.371094	
+			}
+		}
+		visible_on idle
+	}
+	sprite we91
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				32.3182 28.3182	65.6818 28.3182	32.3182 61.6818	65.6818 61.6818	
+				0.482422 0.701172	0.541016 0.701172	0.482422 0.759766	0.541016 0.759766	
+			}
+		}
+		visible_on idle
+	}
+}
+
