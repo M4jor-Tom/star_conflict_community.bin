@@ -1,0 +1,240 @@
+﻿source_file "Y:/art/source/ui/graphics/prestige/prestige.ma"
+//by Sergey_Mitryaev
+//at Fri Jan 12 16:04:38 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 9
+{
+	object title
+	{
+		defaults
+		{
+			pos 9 1
+			opacity 255
+			color 0xffcccccc
+			size 350 54
+			effect ""
+			alignment "LM"
+			sampleText "Легкие лазеры|deghfrn  wg "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 380 190
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object vol_1color_1
+	{
+		defaults
+		{
+			pos 402 16
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LT"
+			sampleText "vol_1color_1"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 9 163
+			opacity 255
+			color 0xffcccccc
+			size 170 20
+			effect ""
+			alignment "LM"
+			sampleText "Sasf  gr rehrt j"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_1_vol_1
+	{
+		defaults
+		{
+			pos 190 163
+			opacity 255
+			color 0xfffff561
+			size 170 20
+			effect ""
+			alignment "RM"
+			sampleText "100000"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_1_vol_1_color
+	{
+		defaults
+		{
+			pos 371 159
+			opacity 255
+			color 0xffff9100
+			size 100 20
+			effect ""
+			alignment "LT"
+			sampleText "text_1_vol_1_color"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object prog_slot_1
+	{
+		defaults
+		{
+			pos 24 73
+			opacity 255
+			color 0xffffffff
+			size 350 16
+			effect "ui\graphics\prestige\prestige_prog_main"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object prog_slot_2
+	{
+		defaults
+		{
+			pos 24 98
+			opacity 255
+			color 0xffffffff
+			size 350 16
+			effect "ui\graphics\prestige\prestige_prog_main"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object prog_slot_3
+	{
+		defaults
+		{
+			pos 24 123
+			opacity 255
+			color 0xffffffff
+			size 350 16
+			effect "ui\graphics\prestige\prestige_prog_main"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 56
+
+	sprite sp2qsxqw
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-7 -5	2 -5	381 -5	384.143 -0.790444	-7 3	2 3	381 3	389 3	-7 189	2 189	381 189	389 189	-2.46663 193.467	2 198	381 198	389 198	
+				0.324712 0.0542973	0.324712 0.0601565	0.324712 0.0996094	0.324712 0.105469	0.330572 0.0542971	0.330572 0.0601565	0.330572 0.0996094	0.330572 0.105469	0.370117 0.054297	0.370117 0.0601564	0.370117 0.0996094	0.370117 0.105469	0.375977 0.054297	0.375977 0.0601564	0.375977 0.0996093	0.375977 0.105469	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2qsxq
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.180913	6 0.180913	374 0.180913	380 0.180913	0 6.18091	6 6.18091	374 6.18091	380 6.18091	0 183	6 183	374 183	380 183	0 189	6 189	374 189	380 189	
+				0.25402 0.1143	0.25402 0.120159	0.25402 0.132659	0.25402 0.138518	0.25988 0.1143	0.25988 0.120159	0.25988 0.132659	0.25988 0.138518	0.272565 0.1143	0.272565 0.120159	0.272565 0.132659	0.272565 0.138518	0.278424 0.1143	0.278424 0.120159	0.278424 0.132659	0.278424 0.138518	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp213
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 57.6914	6 57.6914	374 57.6914	380 57.6914	0 63.6914	6 63.6914	374 63.6914	380 63.6914	0 150	6 150	374 150	380 150	0 156	6 156	374 156	380 156	
+				0.148926 0.0380858	0.148926 0.0322266	0.148926 0.0283202	0.148926 0.0224609	0.143066 0.0380859	0.143066 0.0322267	0.143066 0.0283206	0.143066 0.0224608	0.140137 0.0380859	0.140137 0.0322266	0.140137 0.0283202	0.140137 0.0224609	0.134277 0.0380859	0.134277 0.0322266	0.134277 0.0283204	0.134277 0.0224609	
+				0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	0xdbc7c7c7	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.89801 59	0.89801 56	379.4 59	379.4 56	
+				0.0019643 0.751953	0.00196427 0.749023	0.237305 0.751953	0.237305 0.749023	
+				0xffcfcfcf	0xffcfcfcf	0xffcfcfcf	0xffcfcfcf	
+			}
+		}
+		visible_on idle
+	}
+	sprite dffwf
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.89801 157.5	0.89801 154.5	379.4 157.5	379.4 154.5	
+				0.0019643 0.751953	0.00196427 0.749023	0.237305 0.751953	0.237305 0.749023	
+				0xffcfcfcf	0xffcfcfcf	0xffcfcfcf	0xffcfcfcf	
+			}
+		}
+		visible_on idle
+	}
+}
+
