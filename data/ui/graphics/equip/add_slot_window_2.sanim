@@ -1,0 +1,311 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Feb 27 17:34:07 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 17
+
+objects 16
+{
+	object title
+	{
+		defaults
+		{
+			pos 10 2
+			opacity 255
+			color 0xffff9a00
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Увеличение склада"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 443.049 63.4064
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			2 
+			443.049 63.4064
+			443.049 346.297
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 400
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 105
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 388 88.1096
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			388 88.1096
+			388 371
+		}
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 228.422 88.1096
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			228.422 88.1096
+			228.422 371
+		}
+	}
+	object description
+	{
+		defaults
+		{
+			pos 10 25
+			opacity 255
+			color 0xffffffff
+			size 530 320
+			effect ""
+			alignment "LT"
+			sampleText "Купить 5 слотов|Купить 5 слотов|Купить 5 слотов"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_3
+	{
+		defaults
+		{
+			pos 3.00527 88.1096
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn7"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			3.00527 88.1096
+			3.00527 371
+		}
+	}
+	object price_once_2
+	{
+		defaults
+		{
+			pos 287.049 63.4064
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			2 
+			287.049 63.4064
+			287.049 346.297
+		}
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 115
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_max
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 400
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_min
+	{
+		defaults
+		{
+			pos 0 25
+			opacity 255
+			color 0xffffffff
+			size 550 40
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object button_4
+	{
+		defaults
+		{
+			pos 68 88.1096
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			68 88.1096
+			68 371
+		}
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 44 63.4064
+			opacity 255
+			color 0xffffffff
+			size 500 23
+			effect ""
+			alignment "RM"
+			sampleText "qfwetewtwqtwetqwetqwert"
+			font "VerySmall"
+		}
+		anim idle obj_pos
+		{
+			2 
+			44 63.4064
+			44 346.297
+		}
+	}
+	object description_2
+	{
+		defaults
+		{
+			pos 10 25
+			opacity 255
+			color 0xffffffff
+			size 530 320
+			effect ""
+			alignment "LT"
+			sampleText "Купить 5 слотов|Купить 5 слотов|Купить 5 слотов"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x6
+	{
+		defaults
+		{
+			pos 531 1
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 113	4 113	546 113	554 113	-4 121	4 121	546 121	554 121	
+				0.0585938 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585938 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 113	4 113	546 113	554 113	-4 121	4 121	546 121	554 121	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 141.3	4 141.3	546 141.3	554 141.3	-4 149.3	4 149.3	546 149.3	554 149.3	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 169.6	4 169.6	546 169.6	554 169.6	-4 177.6	4 177.6	546 177.6	554 177.6	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 197.9	4 197.9	546 197.9	554 197.9	-4 205.9	4 205.9	546 205.9	554 205.9	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 226.2	4 226.2	546 226.2	554 226.2	-4 234.2	4 234.2	546 234.2	554 234.2	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 254.5	4 254.5	546 254.5	554 254.5	-4 262.5	4 262.5	546 262.5	554 262.5	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 282.8	4 282.8	546 282.8	554 282.8	-4 290.8	4 290.8	546 290.8	554 290.8	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 311.1	4 311.1	546 311.1	554 311.1	-4 319.1	4 319.1	546 319.1	554 319.1	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 339.4	4 339.4	546 339.4	554 339.4	-4 347.4	4 347.4	546 347.4	554 347.4	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 367.7	4 367.7	546 367.7	554 367.7	-4 375.7	4 375.7	546 375.7	554 375.7	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 396	4 396	546 396	554 396	-4 404	4 404	546 404	554 404	
+		}
+	}
+}
+
