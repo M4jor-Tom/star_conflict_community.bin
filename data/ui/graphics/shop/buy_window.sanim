@@ -1,0 +1,513 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Feb 27 17:31:33 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 26
+
+objects 24
+{
+	object title
+	{
+		defaults
+		{
+			pos 10.3215 1
+			opacity 255
+			color 0xffffcf00
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Conection problen"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 168
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 7.49099 27.4403
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\shop\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			7.49099 56.4403
+		}
+	}
+	object fraction
+	{
+		defaults
+		{
+			pos 68.9552 27.8543
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_fraction"
+			alignment "LT"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			68.9552 56.8543
+		}
+	}
+	object product_name
+	{
+		defaults
+		{
+			pos 137.6 27
+			opacity 255
+			color 0xffffffff
+			size 400 16
+			effect ""
+			alignment "LM"
+			sampleText "Адаптивный  излучаетель щита  134 иавр48"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			137.6 55
+		}
+	}
+	object price
+	{
+		defaults
+		{
+			pos 443.049 85.3573
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			443.049 118.357
+		}
+	}
+	object total
+	{
+		defaults
+		{
+			pos 488.05 67.962
+			opacity 255
+			color 0xffcccccc
+			size 50 13
+			effect ""
+			alignment "RM"
+			sampleText "Итого"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			488.05 100.962
+		}
+	}
+	object price_title
+	{
+		defaults
+		{
+			pos 116.729 69.962
+			opacity 255
+			color 0xffcccccc
+			size 100 13
+			effect ""
+			alignment "RM"
+			sampleText "Цена за одну штуку"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			116.729 102.962
+		}
+	}
+	object price_once
+	{
+		defaults
+		{
+			pos 116.852 86.3573
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			116.852 119.357
+		}
+	}
+	object count
+	{
+		defaults
+		{
+			pos 231.2 69.962
+			opacity 255
+			color 0xffcccccc
+			size 150 13
+			effect ""
+			alignment "LM"
+			sampleText "Колличество"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			231.2 102.962
+		}
+	}
+	object buy_slider_main
+	{
+		defaults
+		{
+			pos 231.255 86.3573
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\buy_slider_main"
+			alignment "LT"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			231.255 119.357
+		}
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 105
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object noskills
+	{
+		defaults
+		{
+			pos 91.6601 27.8543
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_icon_noskills"
+			alignment "LT"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			91.6601 56.8543
+		}
+	}
+	object icon_license
+	{
+		defaults
+		{
+			pos 7.63065 27.449
+			opacity 255
+			color 0xffffffff
+			size 55 52
+			effect "ui\graphics\buy_license\buy_license_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			7.63065 56.449
+		}
+	}
+	object ico2
+	{
+		defaults
+		{
+			pos 114.832 27.8543
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_icon_noskills"
+			alignment "LT"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			114.832 56.8543
+		}
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 389 114
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			389 147
+		}
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 228 114
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			230.005 147
+		}
+	}
+	object icon_sticker
+	{
+		defaults
+		{
+			pos 5.74965 26.0038
+			opacity 255
+			color 0xffffffff
+			size 85 85
+			effect "ui\graphics\sticker\sticker_slot_main"
+			alignment "LT"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			5.74965 55.0038
+		}
+	}
+	object product_name_2
+	{
+		defaults
+		{
+			pos 69.235 26
+			opacity 255
+			color 0xffffffff
+			size 400 16
+			effect ""
+			alignment "LM"
+			sampleText "Адаптивный  излучаетель щита  134 иавр48"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			69.235 55
+		}
+	}
+	object button_3
+	{
+		defaults
+		{
+			pos 3.00527 114
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn7"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			3.00527 147
+		}
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 69.235 49
+			opacity 255
+			color 0xffcccccc
+			size 400 40
+			effect ""
+			alignment "LT"
+			sampleText "ad fw fqfwf gqgewg geg g "
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			69.235 78
+		}
+	}
+	object text_info
+	{
+		defaults
+		{
+			pos 10.3215 27
+			opacity 0
+			color 0xffffffff
+			size 530 40
+			effect ""
+			alignment "LT"
+			sampleText "Conection problen|safsfsfsffss"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc_opc
+		{
+			1 1 
+			10.3215 24
+			255
+		}
+	}
+	object price10
+	{
+		defaults
+		{
+			pos 11.1229 85.3573
+			opacity 255
+			color 0xffffffff
+			size 200 23
+			effect ""
+			alignment "LM"
+			sampleText "saagsdg fjsfj kk "
+			font "VerySmall"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			12.7297 118.357
+		}
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 531 1
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite dffad
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				550.052 53	550.056 51	0.13246 53	0.129963 51.0001	
+				0.0771698 0.146603	0.079123 0.146603	0.0771698 0.153088	0.079123 0.153088	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_posc_colc
+		{
+			1 1
+			550.052 54	550.056 52	0.13246 54	0.129963 52.0001	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 136.85	4 136.85	546 136.85	554 136.85	-4 144.85	4 144.85	546 144.85	554 144.85	
+				0.0585938 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585938 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_posc
+		{
+			1 
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 171.003	4 171.003	546 171.003	554 171.003	-4 179.003	4 179.003	546 179.003	554 179.003	
+		}
+	}
+}
+
