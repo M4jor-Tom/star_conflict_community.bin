@@ -1,0 +1,74 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle_2.ma"
+//by sergey_mitryaev
+//at Mon Jun 06 12:03:08 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite over3
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-10 -9	0 -9	143 -9	153 -9	-10 1	0 1	143 1	153 1	-10 109	0 109	143 109	153 109	-10 119	0 119	143 119	153 119	
+				0.512695 0.586914	0.518555 0.586914	0.532227 0.586914	0.538086 0.586914	0.512695 0.592773	0.518555 0.592773	0.532227 0.592773	0.538086 0.592773	0.512695 0.606445	0.518555 0.606445	0.532227 0.606445	0.538086 0.606445	0.512695 0.612305	0.518555 0.612305	0.532227 0.612305	0.538086 0.612305	
+				0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	0xff003ca1	
+			}
+		}
+		visible_on idle
+	}
+	sprite over4
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-1 -1	5 -1	139 -1	145 -1	-1 5	5 5	139 5	145 5	-1 105	5 105	139 105	145 105	-1 111	5 111	139 111	145 111	
+				0.491211 0.612305	0.49707 0.612305	0.506836 0.612305	0.512695 0.612305	0.491211 0.618164	0.49707 0.618164	0.506836 0.618164	0.512695 0.618164	0.491211 0.62793	0.49707 0.62793	0.506836 0.62793	0.512695 0.62793	0.491211 0.633789	0.49707 0.633789	0.506836 0.633789	0.512695 0.633789	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName391
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices
+			{
+				4 4	140 4	4 106.5	140 106.5	
+				0.39561 0.612407	0.412983 0.612407	0.39561 0.62978	0.412983 0.62978	
+				0xff0c0c0c	0xff0c0c0c	0xff0c0c0c	0xff0c0c0c	
+			}
+		}
+		visible_on idle
+	}
+}
+
