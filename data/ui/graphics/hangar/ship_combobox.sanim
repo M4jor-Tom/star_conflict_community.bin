@@ -1,0 +1,469 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by Sergey
+//at Tue Jan 12 15:33:55 2016
+
+base_res 1280 720
+
+animations 5
+{
+	anim show
+	{
+		mode once
+		cycle_time 0.3
+	}
+	anim show_btn
+	{
+		mode once
+		cycle_time 0.1
+	}
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hide
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim hiden
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 16
+{
+	object arrow_left
+	{
+		defaults
+		{
+			pos 126.564 -0
+			opacity 255
+			color 0xffffffff
+			size 24 73
+			effect "ui\graphics\hangar\ship_arrow_left"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			1441.79 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			1441.79 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			1013.66 -0
+		}
+		visible_on hiden
+	}
+	object btn_change
+	{
+		defaults
+		{
+			pos 140 6
+			opacity 1
+			color 0xffffffff
+			size 24 73
+			effect "ui\graphics\hangar\ship_btn_change"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		visible_on show_btn
+		visible_on idle
+		visible_on hide
+		visible_on hiden
+	}
+	object arrow_right
+	{
+		defaults
+		{
+			pos 155 5
+			opacity 2
+			color 0xffffffff
+			size 24 73
+			effect "ui\graphics\hangar\ship_arrow_right"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_opc
+		{
+			1 
+			129
+		}
+		anim idle obj_opc
+		{
+			1 
+			129
+		}
+		visible_on hide
+		visible_on hiden
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1460 73
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		visible_on show_btn
+		visible_on idle
+		visible_on hide
+		visible_on hiden
+	}
+	object min_4x3
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 5 10
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		visible_on show_btn
+		visible_on idle
+		visible_on hide
+		visible_on hiden
+	}
+	object max_16x9
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 7 10
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		visible_on show_btn
+		visible_on idle
+		visible_on hide
+		visible_on hiden
+	}
+	object slot_7
+	{
+		defaults
+		{
+			pos -0.194564 -0
+			opacity 255
+			color 0xffffffff
+			size 123 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			935.555 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			935.555 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			935.555 -0
+		}
+		visible_on hiden
+	}
+	object slot_6
+	{
+		defaults
+		{
+			pos -0.194564 -0
+			opacity 255
+			color 0xffffffff
+			size 123 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			808.538 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			808.538 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			808.538 -0
+		}
+		visible_on hiden
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos -0.194564 -0
+			opacity 255
+			color 0xffffffff
+			size 123 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			681.857 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			681.857 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			681.857 -0
+		}
+		visible_on hiden
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos -0.194564 -0
+			opacity 255
+			color 0xffffffff
+			size 123 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			554.57 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			554.57 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			554.57 -0
+		}
+		visible_on hiden
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos -0.194564 -0
+			opacity 255
+			color 0xffffffff
+			size 123 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			428.01 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			428.01 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			428.01 -0
+		}
+		visible_on hiden
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos -0.194564 -0
+			opacity 255
+			color 0xffffffff
+			size 123 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			301.451 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			301.451 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			301.451 -0
+		}
+		visible_on hiden
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos -0.160394 -0
+			opacity 255
+			color 0xffffffff
+			size 123 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			174.8 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			174.8 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			174.8 -0
+		}
+		visible_on hiden
+	}
+	object slot_8
+	{
+		defaults
+		{
+			pos 0.0183756 -0
+			opacity 255
+			color 0xffffffff
+			size 123 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			1062.81 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			1062.81 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			935.768 -0
+		}
+		visible_on hiden
+	}
+	object slot_9
+	{
+		defaults
+		{
+			pos -0.174238 -0
+			opacity 255
+			color 0xffffffff
+			size 123 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			1189.45 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			1189.45 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			935.575 -0
+		}
+		visible_on hiden
+	}
+	object slot_10
+	{
+		defaults
+		{
+			pos 0.0195501 -0
+			opacity 255
+			color 0xffffffff
+			size 123 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on show
+		anim show_btn obj_posc
+		{
+			1 
+			1317.31 -0
+		}
+		anim idle obj_posc
+		{
+			1 
+			1317.31 -0
+		}
+		anim hide obj_posc
+		{
+			1 
+			935.769 -0
+		}
+		visible_on hiden
+	}
+}
+
