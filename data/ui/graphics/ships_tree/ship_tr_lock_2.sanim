@@ -1,0 +1,70 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Wed Aug 14 18:42:01 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object center
+	{
+		defaults
+		{
+			pos 8.1832 7.90067
+			opacity 255
+			color 0xffffffff
+			size 30 20
+			effect ""
+			alignment "CT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 12
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite blackout__
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1.83936 0.0359287	12.1606 0.0359287	1.83936 11.9811	12.1606 11.9811	
+				0.233398 0.333984	0.249023 0.333984	0.233398 0.353516	0.249023 0.353516	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
