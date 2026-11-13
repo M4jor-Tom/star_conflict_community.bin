@@ -1,0 +1,158 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/gold_buy.ma"
+//by sergey_mitryaev
+//at Thu Dec 17 17:08:17 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 8
+{
+	object title
+	{
+		defaults
+		{
+			pos 87 -0
+			opacity 255
+			color 0xffff9000
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "Покупка лицензии пилота"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 5 35
+			opacity 255
+			color 0xffffffff
+			size 460 130
+			effect ""
+			alignment "CM"
+			sampleText "Лицензия | пилота |кромет|ого з|sdfgd|jhа бой ...|опыта"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 470 210
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 232.986 183
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 72 183
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 451 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object loading_big
+	{
+		defaults
+		{
+			pos 182 54
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title10
+	{
+		defaults
+		{
+			pos 87 160
+			opacity 255
+			color 0xffff9a00
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "Покупка лицензии пилота"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sprite_10
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-3.45709 -4.05298	4.54291 -4.05298	466.086 -4.05298	473.914 -4.05298	-3.45709 22.072	4.54291 22.072	466.086 22.072	473.914 22.072	-3.45709 205.957	4.54291 205.957	466.086 205.957	473.914 205.957	-3.45709 214.043	4.54291 214.043	466.086 214.043	473.914 214.043	
+				0.0585938 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585938 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
