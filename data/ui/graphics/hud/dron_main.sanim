@@ -1,0 +1,147 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud_new.ma
+//by sega
+//at Wed Sep 28 10:52:24 2011
+
+animations 5
+{
+	anim 0
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 4
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object dron_4
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 0
+			color 0xffffffff
+			size 9 9
+			effect "ui\graphics\hud\dron"
+			alignment "RM"
+		}
+		visible_on 0
+		anim 1 obj_opc
+		{
+			1 
+			255
+		}
+		anim 2 obj_opc
+		{
+			1 
+			255
+		}
+		anim 3 obj_opc
+		{
+			1 
+			255
+		}
+		anim 4 obj_opc
+		{
+			1 
+			255
+		}
+	}
+	object dron_3
+	{
+		defaults
+		{
+			pos 9.14404 -0
+			opacity 0
+			color 0xffffffff
+			size 9 9
+			effect "ui\graphics\hud\dron"
+			alignment "RM"
+		}
+		visible_on 0
+		visible_on 1
+		anim 2 obj_opc
+		{
+			1 
+			255
+		}
+		anim 3 obj_opc
+		{
+			1 
+			255
+		}
+		anim 4 obj_opc
+		{
+			1 
+			255
+		}
+	}
+	object dron_2
+	{
+		defaults
+		{
+			pos 18.144 -0
+			opacity 0
+			color 0xffffffff
+			size 9 9
+			effect "ui\graphics\hud\dron"
+			alignment "RM"
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		anim 3 obj_opc
+		{
+			1 
+			255
+		}
+		anim 4 obj_opc
+		{
+			1 
+			255
+		}
+	}
+	object dron_1
+	{
+		defaults
+		{
+			pos 27.144 -0
+			opacity 0
+			color 0xffffffff
+			size 9 9
+			effect "ui\graphics\hud\dron"
+			alignment "RM"
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		anim 4 obj_opc
+		{
+			1 
+			255
+		}
+	}
+}
+
