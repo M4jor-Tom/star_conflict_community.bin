@@ -1,0 +1,125 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Wed May 21 11:51:49 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 240 230
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object value28
+	{
+		defaults
+		{
+			pos 9.84617 4
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Wsds f geghg eh "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 213 4
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests\quests_hud_btn"
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 10 37
+			opacity 255
+			color 0xffffffff
+			size 220 90
+			effect "ui\graphics\quests\quests_hud_slot_2"
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 10 131
+			opacity 255
+			color 0xffffffff
+			size 220 90
+			effect "ui\graphics\quests\quests_hud_slot_2"
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+	}
+	object self_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 240 28
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite bg22
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -3	8 -3	232 -3	240 -3	0 5	8 5	232 5	240 5	0 23	8 23	232 23	240 23	0 31	8 31	232 31	240 31	
+				0.0849609 0.670898	0.0927734 0.670898	0.100586 0.670898	0.108398 0.670898	0.0849609 0.678711	0.0927734 0.678711	0.100586 0.678711	0.108398 0.678711	0.0849609 0.686523	0.0927734 0.686523	0.100586 0.686523	0.108398 0.686523	0.0849609 0.694336	0.0927734 0.694336	0.100586 0.694336	0.108398 0.694336	
+				0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	0x61616161	
+			}
+		}
+		visible_on idle
+	}
+}
+
