@@ -1,0 +1,138 @@
+﻿source_file "Y:/art/source/ui/graphics/craft/craft.ma"
+//by sergey_mitryaev
+//at Wed Aug 20 10:50:23 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 355 484
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 3 5
+			opacity 255
+			color 0xffffffff
+			size 723 77
+			effect "ui\graphics\craft\craft_draw_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 3 101.25
+			opacity 255
+			color 0xffffffff
+			size 723 77
+			effect "ui\graphics\craft\craft_draw_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 3 197.5
+			opacity 255
+			color 0xffffffff
+			size 723 77
+			effect "ui\graphics\craft\craft_draw_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 3 293.75
+			opacity 255
+			color 0xffffffff
+			size 723 77
+			effect "ui\graphics\craft\craft_draw_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 3 390
+			opacity 255
+			color 0xffffffff
+			size 723 77
+			effect "ui\graphics\craft\craft_draw_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 338 2
+			opacity 255
+			color 0xffffffff
+			size 16 481
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0.0187492 1.8573	6.01875 1.8573	328.279 1.8573	334.279 1.8573	0.0187492 7.8573	6.01875 7.8573	328.279 7.8573	334.279 7.8573	0.0187492 477.124	6.01875 477.124	328.279 477.124	334.279 477.124	0.0187492 483.124	6.01875 483.124	328.279 483.124	334.279 483.124	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+}
+
