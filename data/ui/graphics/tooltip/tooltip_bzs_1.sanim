@@ -1,0 +1,224 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Thu Nov 05 12:47:36 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+}
+
+total_elements 13
+
+objects 12
+{
+	object text_ship_1
+	{
+		defaults
+		{
+			pos 106 31.8809
+			opacity 255
+			color 0xffffffff
+			size 280 50
+			effect ""
+			alignment "LT"
+			sampleText "Наименование adwUIHIUOH|h;hj;|o"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object map_ico
+	{
+		defaults
+		{
+			pos 9 33
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\map\pve_scenario_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 400 800
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 90
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 8 -0
+			opacity 255
+			color 0xffff9a00
+			size 380 20
+			effect ""
+			alignment "LM"
+			sampleText "Наименование"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object spacer_2
+	{
+		defaults
+		{
+			pos 0 88
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer_4"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object spacer_3
+	{
+		defaults
+		{
+			pos 0 170
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer_4"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object clan_ico
+	{
+		defaults
+		{
+			pos 24 110
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\map\map_clan_ico"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_13
+	{
+		defaults
+		{
+			pos 46 95
+			opacity 255
+			color 0xffffffff
+			size 300 40
+			effect ""
+			alignment "LT"
+			sampleText "Наименование adwUIHIUOH|h;hj"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_14
+	{
+		defaults
+		{
+			pos 9 132
+			opacity 255
+			color 0xffffffff
+			size 380 36
+			effect ""
+			alignment "LT"
+			sampleText "Наименование adwUIHIUOH|h;hj"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_15
+	{
+		defaults
+		{
+			pos 9 182
+			opacity 255
+			color 0xffffffff
+			size 380 610
+			effect ""
+			alignment "LT"
+			sampleText "Наименование adwUIHIUOH|h;hj"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object loading_small
+	{
+		defaults
+		{
+			pos 174 102
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\hangar\loading_small"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 86.4268	4 86.4268	396 86.4268	404 86.4268	-4 93.5732	4 93.5732	396 93.5732	404 93.5732	
+				0.0585936 0.695304	0.0664063 0.695304	0.0742188 0.695304	0.0820313 0.695304	0.0585936 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585936 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585936 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 86.4268	4 86.4268	396 86.4268	404 86.4268	-4 93.5732	4 93.5732	396 93.5732	404 93.5732	
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 157.384	4 157.384	396 157.384	404 157.384	-4 164.616	4 164.616	396 164.616	404 164.616	
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 228.341	4 228.341	396 228.341	404 228.341	-4 235.659	4 235.659	396 235.659	404 235.659	
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 299.299	4 299.299	396 299.299	404 299.299	-4 306.701	4 306.701	396 306.701	404 306.701	
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 370.256	4 370.256	396 370.256	404 370.256	-4 377.744	4 377.744	396 377.744	404 377.744	
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 441.213	4 441.213	396 441.213	404 441.213	-4 448.787	4 448.787	396 448.787	404 448.787	
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 512.171	4 512.171	396 512.171	404 512.171	-4 519.829	4 519.829	396 519.829	404 519.829	
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 583.128	4 583.128	396 583.128	404 583.128	-4 590.872	4 590.872	396 590.872	404 590.872	
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 654.085	4 654.085	396 654.085	404 654.085	-4 661.915	4 661.915	396 661.915	404 661.915	
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 725.043	4 725.043	396 725.043	404 725.043	-4 732.957	4 732.957	396 732.957	404 732.957	
+			-4 -4	4 -4	396 -4	404 -4	-4 22	4 22	396 22	404 22	-4 796	4 796	396 796	404 796	-4 804	4 804	396 804	404 804	
+		}
+	}
+}
+
