@@ -1,0 +1,322 @@
+﻿source_file "Y:/art/source/ui/graphics/matchmaking_pvp/matchmaking_pvp.ma"
+//by Sergey
+//at Tue May 31 16:53:20 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 20
+
+objects 17
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 5000 480
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text123
+	{
+		defaults
+		{
+			pos 2141.15 54
+			opacity 255
+			color 0xffc6c6c6
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Быстрый бой"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title21
+	{
+		defaults
+		{
+			pos 2141.15 6
+			opacity 255
+			color 0xff7fe1ff
+			size 608 40
+			effect ""
+			alignment "CM"
+			sampleText "Открытый мир"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text124
+	{
+		defaults
+		{
+			pos 2141.15 74
+			opacity 255
+			color 0xffc6c6c6
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Быстрый бой"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text125
+	{
+		defaults
+		{
+			pos 2506.15 54
+			opacity 255
+			color 0xffc6c6c6
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "Быстрый бой:"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text127
+	{
+		defaults
+		{
+			pos 2710.15 54
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "99:99"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object maps
+	{
+		defaults
+		{
+			pos 2141.15 109
+			opacity 255
+			color 0xffffffff
+			size 608 190
+			effect "ui\graphics\match_pvp\match_pvp_maps"
+			alignment "CM"
+			font "Large_outl"
+		}
+		visible_on idle
+	}
+	object gmp_ico
+	{
+		defaults
+		{
+			pos 2265.15 385
+			opacity 255
+			color 0xffffffff
+			size 360 190
+			effect "ui\graphics\match_pvp\match_pvp_gmp_ico_main"
+			alignment "CM"
+			font "Large_outl"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 2665.55 398
+			opacity 255
+			color 0xffffffff
+			size 86 30
+			effect "ui\graphics\gmp_select\sel_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn1
+	{
+		defaults
+		{
+			pos 2400 463.217
+			opacity 255
+			color 0xffffffff
+			size 86 30
+			effect "ui\graphics\match_pvp\match_close_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object timer_progr
+	{
+		defaults
+		{
+			pos 2143 379
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\match_pvp\match_timer_progr"
+			alignment "CM"
+			font "Large_outl"
+		}
+		visible_on idle
+	}
+	object title25
+	{
+		defaults
+		{
+			pos 2128 398
+			opacity 255
+			color 0xff7fe1ff
+			size 100 30
+			effect ""
+			alignment "CM"
+			sampleText "00:00"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text131
+	{
+		defaults
+		{
+			pos 2141.15 54
+			opacity 255
+			color 0xffababab
+			size 608 20
+			effect ""
+			alignment "CM"
+			sampleText "Необходимо выбрать миссию"
+			font "Tiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text132
+	{
+		defaults
+		{
+			pos 2141.15 394.448
+			opacity 255
+			color 0xffababab
+			size 500 40
+			effect ""
+			alignment "LM"
+			sampleText "Необходимо выбрать миссию|dghdvgndn fg fg"
+			font "Tiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object history
+	{
+		defaults
+		{
+			pos 2137 26
+			opacity 255
+			color 0xffffffff
+			size 360 190
+			effect "ui\graphics\map\pve_history_main"
+			alignment "CM"
+			font "Large_outl"
+		}
+		visible_on idle
+	}
+	object text135
+	{
+		defaults
+		{
+			pos 2576 58
+			opacity 255
+			color 0xffc6c6c6
+			size 300 40
+			effect ""
+			alignment "LT"
+			sampleText "Середнее ожидание: 01:30|Время ожидания в сотаве сквада увеличено"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color_text_1
+	{
+		defaults
+		{
+			pos 2585.09 28.679
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LM"
+			sampleText "color_text_99:99"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName370
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				1536.12 -2	3336.12 -2	1536.12 464	3336.12 464	
+				0.03125 0	0.96875 0	0.03125 0.910156	0.96875 0.910156	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName371
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				4111.24 -2	3336.12 -2	4111.24 464	3336.12 464	
+				0.994629 0	0.96875 0	0.994629 0.910156	0.96875 0.910156	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName372
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				1536.12 -2	797.859 -2	1536.12 464	797.859 464	
+				0.03125 0	0.012207 0	0.03125 0.910156	0.012207 0.910156	
+			}
+		}
+		visible_on idle
+	}
+}
+
