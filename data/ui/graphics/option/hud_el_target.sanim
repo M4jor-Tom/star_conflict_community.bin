@@ -1,0 +1,37 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Fri Jan 10 11:46:19 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices_nc
+			{
+				5 3	119 3	5 69	119 69	
+				0.00585938 0.669922	0.228516 0.669922	0.00585938 0.798828	0.228516 0.798828	
+			}
+		}
+		visible_on idle
+	}
+}
+
