@@ -1,0 +1,93 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Mon Sep 04 13:52:32 2017
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite we56
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				-9 -9	27 -9	-9 27	27 27	
+				0.0078125 0.808594	0.078125 0.808594	0.0078125 0.878906	0.078125 0.878906	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	sprite we57
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-14.5667 -14.5667	32.5667 -14.5667	-14.5667 32.5667	32.5667 32.5667	
+				0.449171 0.716749	0.484423 0.716749	0.449171 0.752001	0.484423 0.752001	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x16292929	0x16292929	0x16292929	0x16292929	
+		}
+		visible_on press
+	}
+}
+
