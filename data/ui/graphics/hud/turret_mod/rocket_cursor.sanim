@@ -1,0 +1,54 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/rocket_mod.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 14:34:02 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4.31868 -4.0512	3.78373 -4.0512	-4.31868 4.0512	3.78373 4.0512	
+				0.165064 0.627541	0.182592 0.627541	0.165064 0.645897	0.182592 0.645897	
+			}
+		}
+		visible_on idle
+	}
+}
+
