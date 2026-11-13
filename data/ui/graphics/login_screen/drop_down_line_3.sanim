@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by Sergey_Mitryaev
+//at Fri Dec 07 14:47:54 2018
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 0.0159584
+			opacity 255
+			color 0xff88b5ff
+			size 200 24
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim select obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object text
+	{
+		defaults
+		{
+			pos 3 2
+			opacity 255
+			color 0xffc5fbfb
+			size 180 20
+			effect ""
+			alignment "LM"
+			sampleText "F00000"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim select obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp84
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.0539999 -0	5.946 -0	194 -0	200 -0	-0.0539999 6	5.946 6	194 6	200 6	-0.0539999 18.8594	5.946 18.8594	194 18.8594	200 18.8594	-0.0539999 24.8594	5.946 24.8594	194 24.8594	200 24.8594	
+				0.430156 0.324641	0.434168 0.324641	0.442785 0.324641	0.446797 0.324641	0.430156 0.328652	0.434168 0.328652	0.442785 0.328652	0.446797 0.328652	0.430156 0.337363	0.434168 0.337363	0.442785 0.337363	0.446797 0.337363	0.430156 0.341375	0.434168 0.341375	0.442785 0.341375	0.446797 0.341375	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+}
+
