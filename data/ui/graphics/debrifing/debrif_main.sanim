@@ -1,0 +1,116 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Thu Aug 21 13:48:37 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object debrifing_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 130.324 56.9994
+			opacity 255
+			color 0xffffffff
+			size 964 625
+			effect "ui\graphics\debrifing\debrifing_win"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object product_name
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 339.985 5.63675
+			opacity 255
+			color 0xffffffff
+			size 600 35
+			effect ""
+			alignment "CB"
+			sampleText "Поражение Все точки  потеряны"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 339.847 46.454
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Тип Боя Захват"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 339.847 67.2366
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Цель уничтожить цца йцупыйцв ЩШЩЗуцшга"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object debrifing_win2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 165 56.9994
+			opacity 255
+			color 0xffffffff
+			size 950 660
+			effect "ui\graphics\debrifing_2\debrifing_win"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
