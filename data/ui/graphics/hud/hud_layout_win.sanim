@@ -1,0 +1,51 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Mon Mar 05 13:59:47 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object title4
+	{
+		defaults
+		{
+			pos 10 1
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "HUD Layout"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title_color
+	{
+		defaults
+		{
+			pos 10.4933 26.1584
+			opacity 255
+			color 0xffababab
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "HUD Layout"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
