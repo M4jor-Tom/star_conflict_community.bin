@@ -1,0 +1,287 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by Sergey
+//at Tue Dec 01 18:11:36 2015
+
+base_res 1280 720
+
+animations 7
+{
+	anim 0
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 4
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 5
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 6
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 1
+{
+	object self151
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 32 84
+			effect ""
+			alignment "LT"
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		visible_on 6
+	}
+}
+
+sprites 6
+{
+	total_vertices 24
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_2.tif"
+			vertices_nc
+			{
+				0 -0	32 -0	0 84	32 84	
+				0.289063 0.00390625	0.351563 0.00390625	0.289063 0.167969	0.351563 0.167969	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		visible_on 5
+		visible_on 6
+	}
+	sprite que73
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_2.tif"
+			vertices
+			{
+				8 64	30 64	8 86	30 86	
+				0.234375 0.789063	0.277344 0.789063	0.234375 0.832031	0.277344 0.832031	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on 0
+		anim 1 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 4 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 5 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 6 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que72
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_2.tif"
+			vertices
+			{
+				-4 46	18 46	-4 68	18 68	
+				0.234375 0.740234	0.277344 0.740234	0.234375 0.783203	0.277344 0.783203	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 4 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 5 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 6 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que71
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_2.tif"
+			vertices
+			{
+				-7 29	15 29	-7 51	15 51	
+				0.234375 0.693359	0.277344 0.693359	0.234375 0.736328	0.277344 0.736328	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 4 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 5 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 6 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que70
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_2.tif"
+			vertices
+			{
+				-3 12	19 12	-3 34	19 34	
+				0.232422 0.648438	0.275391 0.648438	0.232422 0.691406	0.275391 0.691406	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		anim 4 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 5 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 6 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que69
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_2.tif"
+			vertices
+			{
+				10 -3	32 -3	10 17	32 17	
+				0.232422 0.609375	0.275391 0.609375	0.232422 0.648438	0.275391 0.648438	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on 0
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+		anim 5 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 6 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
