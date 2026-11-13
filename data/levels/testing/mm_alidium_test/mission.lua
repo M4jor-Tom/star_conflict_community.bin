@@ -1,0 +1,1 @@
+sys.execscript( 'levels/testing/mission.lua' )
