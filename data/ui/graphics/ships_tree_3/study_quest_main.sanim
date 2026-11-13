@@ -1,0 +1,82 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Thu Nov 10 18:17:46 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim completed
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object quest_slot_1
+	{
+		defaults
+		{
+			pos 0 -8.88178e-015
+			opacity 255
+			color 0xffffffff
+			size 300 72
+			effect "ui\graphics\ships_tree_3\study_quest_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on completed
+	}
+	object quest_slot_2
+	{
+		defaults
+		{
+			pos 333 -8.88178e-015
+			opacity 255
+			color 0xffffffff
+			size 300 72
+			effect "ui\graphics\ships_tree_3\study_quest_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on completed
+	}
+	object quest_slot_3
+	{
+		defaults
+		{
+			pos 666 -8.88178e-015
+			opacity 255
+			color 0xffffffff
+			size 300 72
+			effect "ui\graphics\ships_tree_3\study_quest_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on completed
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -8.88178e-015
+			opacity 255
+			color 0xffffffff
+			size 1050 72
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on completed
+	}
+}
+
