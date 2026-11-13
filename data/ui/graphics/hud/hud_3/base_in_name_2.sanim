@@ -1,0 +1,206 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by Sergey_Mitryaev
+//at Tue Apr 10 16:44:23 2018
+
+base_res 1280 720
+
+animations 7
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_interac
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_interac
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim alien
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim alien_interac
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object val
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff00ddff
+			size 20 20
+			effect ""
+			alignment "CM"
+			sampleText "B"
+			font "MonoTiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim enemy_interac obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xffb2b2b2
+		}
+		anim neutral_interac obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim alien obj_colc
+		{
+			1
+			0xffbc24e4
+		}
+		anim alien_interac obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object color_intaraction
+	{
+		defaults
+		{
+			pos 4.40367 46.818
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "WWewgghghsh"
+			font "MonoTiny_outl2"
+			back_color 0xff2800
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_interac
+		visible_on neutral
+		visible_on neutral_interac
+		visible_on alien
+		visible_on alien_interac
+	}
+	object color_intaraction_2
+	{
+		defaults
+		{
+			pos 4.40367 72
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "WWewgghghsh"
+			font "MonoTiny_outl2"
+			back_color 0x6c7d
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_interac
+		visible_on neutral
+		visible_on neutral_interac
+		visible_on alien
+		visible_on alien_interac
+	}
+	object color_intaraction_3
+	{
+		defaults
+		{
+			pos 4.40367 98
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "WWewgghghsh"
+			font "MonoTiny_outl2"
+			back_color 0xbd25e5
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_interac
+		visible_on neutral
+		visible_on neutral_interac
+		visible_on alien
+		visible_on alien_interac
+	}
+	object frame_area
+	{
+		defaults
+		{
+			pos -63 -19
+			opacity 255
+			color 0xff00ddff
+			size 150 60
+			effect ""
+			alignment "CM"
+			font "MonoTiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim enemy_interac obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xffb2b2b2
+		}
+		anim neutral_interac obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim alien obj_colc
+		{
+			1
+			0xffbc24e4
+		}
+		anim alien_interac obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+}
+
