@@ -1,0 +1,50 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race_4.ma"
+//by Sergey_Mitryaev
+//at Wed Nov 29 11:06:29 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object prop_text
+	{
+		defaults
+		{
+			pos 7 4
+			opacity 255
+			color 0xff99ffff
+			size 307 190
+			effect ""
+			alignment "LT"
+			sampleText "Сопротивление корпуса 50|Сопротивление корпуса 50|Сопротивление корпуса 50|Сопротивление корпуса 50|"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 320 200
+			effect ""
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+}
+
