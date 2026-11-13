@@ -1,0 +1,478 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Tue May 21 15:40:13 2013
+
+
+animations 8
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim damage
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim damage_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim damage_press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim damage_disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 10
+{
+	object value
+	{
+		defaults
+		{
+			pos 44.5374 4.71072
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect ""
+			alignment "LM"
+			sampleText "Починится"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		anim disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+		visible_on damage_over
+		visible_on damage_press
+		anim damage_disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 206 43
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		visible_on disable
+		visible_on damage_over
+		visible_on damage_press
+		visible_on damage_disable
+	}
+	object price
+	{
+		defaults
+		{
+			pos 107.358 22.6811
+			opacity 255
+			color 0xffffffff
+			size 105 15
+			effect "ui\graphics\shop\prod_price"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		anim disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+		visible_on damage_over
+		visible_on damage_press
+		anim damage_disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+	}
+	object price2
+	{
+		defaults
+		{
+			pos 54 22.6811
+			opacity 255
+			color 0xffffffff
+			size 105 15
+			effect "ui\graphics\shop\prod_price"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		anim disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+		visible_on damage_over
+		visible_on damage_press
+		anim damage_disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+	}
+	object value_01
+	{
+		defaults
+		{
+			pos 44.0659 4.5906
+			opacity 255
+			color 0xffffffff
+			size 200 15
+			effect ""
+			alignment "CM"
+			sampleText "Недостаточно средств"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		anim disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+		visible_on damage_over
+		visible_on damage_press
+		anim damage_disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+	}
+	object free_progr_1
+	{
+		defaults
+		{
+			pos 186.423 46.4836
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\hangar\repair_free_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		visible_on disable
+		visible_on damage_over
+		visible_on damage_press
+		visible_on damage_disable
+	}
+	object free_progr_2
+	{
+		defaults
+		{
+			pos 168.248 46.4836
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\hangar\repair_free_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		visible_on disable
+		visible_on damage_over
+		visible_on damage_press
+		visible_on damage_disable
+	}
+	object free_progr_3
+	{
+		defaults
+		{
+			pos 150.065 46.4836
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\hangar\repair_free_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		visible_on disable
+		visible_on damage_over
+		visible_on damage_press
+		visible_on damage_disable
+	}
+	object free_progr_4
+	{
+		defaults
+		{
+			pos 131.882 46.4836
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\hangar\repair_free_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		visible_on disable
+		visible_on damage_over
+		visible_on damage_press
+		visible_on damage_disable
+	}
+	object value_price
+	{
+		defaults
+		{
+			pos 44.5374 24.7107
+			opacity 255
+			color 0xffffffff
+			size 156 15
+			effect ""
+			alignment "RM"
+			sampleText "Починится"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		anim disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+		visible_on damage_over
+		visible_on damage_press
+		anim damage_disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+	}
+}
+
+sprites 6
+{
+	total_vertices 84
+
+	sprite black
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0239325 21.0023	10.0239 21.0023	196.012 21.0023	206.012 21.0023	0.0239325 31.0023	10.0239 31.0023	196.012 31.0023	206.012 31.0023	0.0121527 56.1173	10.0122 56.1173	196 56.1173	206 56.1173	0.0121527 66.1173	10.0122 66.1173	196 66.1173	206 66.1173	
+				0.223675 0.00294983	0.233441 0.00294983	0.262778 0.00294983	0.272543 0.00294983	0.223675 0.0127155	0.233441 0.0127155	0.262778 0.0127155	0.272543 0.0127155	0.223675 0.0410054	0.233441 0.0410054	0.262778 0.0410054	0.272543 0.0410054	0.223675 0.050771	0.233441 0.050771	0.262778 0.050771	0.272543 0.050771	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		visible_on disable
+		visible_on damage_over
+		visible_on damage_press
+		visible_on damage_disable
+	}
+	sprite m
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0239325 -0.115014	10.0239 -0.115014	196.012 -0.115014	206.012 -0.115014	0.0239325 9.88499	10.0239 9.88499	196.012 9.88499	206.012 9.88499	0.0121527 33	10.0122 33	196 33	206 33	0.0121527 43	10.0122 43	196 43	206 43	
+				0.0020557 0.114243	0.0118213 0.114243	0.0165421 0.114243	0.0263078 0.114243	0.0020557 0.124009	0.0118213 0.124009	0.0165421 0.124009	0.0263078 0.124009	0.0020557 0.128866	0.0118213 0.128866	0.0165421 0.128866	0.0263078 0.128866	0.0020557 0.138632	0.0118213 0.138632	0.0165421 0.138632	0.0263078 0.138632	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		visible_on disable
+		visible_on damage_over
+		visible_on damage_press
+		visible_on damage_disable
+	}
+	sprite m5
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.0239325 -0.115014	10.0239 -0.115014	196.012 -0.115014	206.012 -0.115014	0.0239325 9.88499	10.0239 9.88499	196.012 9.88499	206.012 9.88499	0.0121527 33	10.0122 33	196 33	206 33	0.0121527 43	10.0122 43	196 43	206 43	
+				0.054787 0.114243	0.0645527 0.114243	0.0692735 0.114243	0.0790391 0.114243	0.054787 0.124009	0.0645527 0.124009	0.0692735 0.124009	0.0790391 0.124009	0.054787 0.128866	0.0645527 0.128866	0.0692735 0.128866	0.0790391 0.128866	0.054787 0.138632	0.0645527 0.138632	0.0692735 0.138632	0.0790391 0.138632	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on over
+		visible_on damage
+		visible_on disable
+		visible_on damage_over
+		visible_on damage_press
+		visible_on damage_disable
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				5.30827 4.4599	37.3083 4.4599	5.30827 36.4599	37.3083 36.4599	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on damage
+		visible_on disable
+		visible_on damage_over
+		visible_on damage_press
+		visible_on damage_disable
+	}
+	sprite m4
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.0239325 -0.115014	10.0239 -0.115014	196.012 -0.115014	206.012 -0.115014	0.0239325 9.88499	10.0239 9.88499	196.012 9.88499	206.012 9.88499	0.0121527 33	10.0122 33	196 33	206 33	0.0121527 43	10.0122 43	196 43	206 43	
+				0.0284823 0.114243	0.0382479 0.114243	0.0429687 0.114243	0.0527343 0.114243	0.0284823 0.124009	0.0382479 0.124009	0.0429687 0.124009	0.0527343 0.124009	0.0284823 0.128866	0.0382479 0.128866	0.0429687 0.128866	0.0527343 0.128866	0.0284823 0.138632	0.0382479 0.138632	0.0429687 0.138632	0.0527343 0.138632	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		visible_on press
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on damage
+		visible_on disable
+		visible_on damage_over
+		visible_on damage_press
+		visible_on damage_disable
+	}
+	sprite m6
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.0239325 -0.115014	10.0239 -0.115014	196.012 -0.115014	206.012 -0.115014	0.0239325 9.88499	10.0239 9.88499	196.012 9.88499	206.012 9.88499	0.0121527 33	10.0122 33	196 33	206 33	0.0121527 43	10.0122 43	196 43	206 43	
+				0.201186 0.198169	0.210951 0.198169	0.215672 0.198169	0.225438 0.198169	0.201186 0.207934	0.210951 0.207934	0.215672 0.207934	0.225438 0.207934	0.201186 0.212792	0.210951 0.212792	0.215672 0.212792	0.225438 0.212792	0.201186 0.222557	0.210951 0.222557	0.215672 0.222557	0.225438 0.222557	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		anim damage sp_colc
+		{
+			1
+			0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	0xffa0a0a0	
+		}
+		visible_on disable
+		anim damage_over sp_colc
+		{
+			1
+			0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	0xffcacaca	
+		}
+		anim damage_press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim damage_disable sp_colc
+		{
+			1
+			0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	0x5a5a5a	
+		}
+	}
+}
+
