@@ -1,0 +1,166 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Wed Nov 20 16:11:36 2013
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 85 85
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object price
+	{
+		defaults
+		{
+			pos -14.7708 61.3622
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object select
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 85 110
+			effect "ui\graphics\sticker\sticker_slot_select"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 85 110
+			effect "ui\graphics\sticker\sticker_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object eneble
+	{
+		defaults
+		{
+			pos 64.8743 3.04892
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\sticker\sticker_eneble"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object color
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\sticker\n_sticker_color_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object purchased
+	{
+		defaults
+		{
+			pos 0.77535 63.217
+			opacity 255
+			color 0xffffffff
+			size 83 20
+			effect ""
+			alignment "CM"
+			sampleText "jgkjghlhh"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\sticker\n_sticker_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	79 -0	85 -0	0 6	6 6	79 6	85 6	0 79	6 79	79 79	85 79	0 85	6 85	79 85	85 85	
+				0.28126 0.17196	0.28712 0.17196	0.359405 0.17196	0.365264 0.17196	0.28126 0.177819	0.28712 0.177819	0.359405 0.177819	0.365264 0.177819	0.28126 0.24893	0.28712 0.24893	0.359405 0.24893	0.365264 0.24893	0.28126 0.254789	0.28712 0.254789	0.359405 0.254789	0.365264 0.254789	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+}
+
