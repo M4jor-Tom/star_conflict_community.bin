@@ -1,0 +1,137 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Fri May 17 15:55:11 2013
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object value
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffff9100
+			size 150 40
+			effect ""
+			alignment "CM"
+			sampleText "Вход"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+		anim over obj_colc
+		{
+			1
+			0xffffda02
+		}
+		anim press obj_colc
+		{
+			1
+			0xffffda02
+		}
+		anim disable obj_opc_colc
+		{
+			1 1
+			127
+			0xff935604
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 150 40
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.0707016 -0	5.9293 -0	144 -0	150 -0	-0.0707016 6	5.9293 6	144 6	150 6	-0.0707016 34	5.9293 34	144 34	150 34	-0.0707016 40	5.9293 40	144 40	150 40	
+				0.00195313 0.186523	0.0078125 0.186523	0.192383 0.186523	0.198242 0.186523	0.00195313 0.192383	0.0078125 0.192383	0.192383 0.192383	0.198242 0.192383	0.00195313 0.216797	0.0078125 0.216797	0.192383 0.216797	0.198242 0.216797	0.00195313 0.222656	0.0078125 0.222656	0.192383 0.222656	0.198242 0.222656	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite sp219
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-0.0707016 -0	5.9293 -0	144 -0	150 -0	-0.0707016 6	5.9293 6	144 6	150 6	-0.0707016 34	5.9293 34	144 34	150 34	-0.0707016 40	5.9293 40	144 40	150 40	
+				0.00195313 0.186523	0.0078125 0.186523	0.192383 0.186523	0.198242 0.186523	0.00195313 0.192383	0.0078125 0.192383	0.192383 0.192383	0.198242 0.192383	0.00195313 0.216797	0.0078125 0.216797	0.192383 0.216797	0.198242 0.216797	0.00195313 0.222656	0.0078125 0.222656	0.192383 0.222656	0.198242 0.222656	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+		visible_on disable
+	}
+}
+
