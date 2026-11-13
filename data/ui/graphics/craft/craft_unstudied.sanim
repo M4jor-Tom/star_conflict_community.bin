@@ -1,0 +1,122 @@
+﻿source_file "Y:/art/source/ui/graphics/craft/craft.ma"
+//by Sergey
+//at Tue Nov 10 16:16:11 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 2
+{
+	object self90
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 150 22
+			effect ""
+			alignment "RM"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object etext_text
+	{
+		defaults
+		{
+			pos 0 -1
+			opacity 255
+			color 0xffe40000
+			size 150 23
+			effect ""
+			alignment "CM"
+			sampleText "не изучено"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite sp48
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-5.15573 45.9578	2.50465 43.9052	139.666 7.15293	147.461 5.06439	-3.08518 53.6852	4.57519 51.6326	141.737 14.8803	149.531 12.7918	0.538303 67.2082	8.19867 65.1556	145.36 28.4033	153.155 26.3148	2.60885 74.9356	10.2692 72.883	147.431 36.1307	155.225 34.0422	
+				0.466797 0.611328	0.474642 0.611328	0.482422 0.611328	0.490234 0.611328	0.466797 0.619141	0.474642 0.619141	0.482422 0.619141	0.490234 0.619141	0.466797 0.626959	0.474642 0.626959	0.482422 0.626959	0.490234 0.626959	0.466797 0.634766	0.474642 0.634766	0.482422 0.634766	0.490234 0.634766	
+				0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp49
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-8.82996 43.8365	-1.16959 41.7839	141.787 3.4787	149.582 1.39016	-6.7594 51.5639	0.90096 49.5113	143.858 11.2061	151.652 9.11756	-1.58303 70.8824	6.07734 68.8298	149.034 30.5246	156.829 28.4361	0.487521 78.6098	8.1479 76.5572	151.105 38.252	158.899 36.1635	
+				0.443359 0.611328	0.451205 0.611328	0.458984 0.611328	0.466797 0.611328	0.443359 0.619141	0.451205 0.619141	0.458984 0.619141	0.466797 0.619141	0.443359 0.626959	0.451205 0.626959	0.458984 0.626959	0.466797 0.626959	0.443359 0.634766	0.451205 0.634766	0.458984 0.634766	0.466797 0.634766	
+				0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	0xa2ab0000	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp50
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-5.15573 45.9578	2.50465 43.9052	139.666 7.15293	147.461 5.06439	-3.08518 53.6852	4.57519 51.6326	141.737 14.8803	149.531 12.7918	0.538303 67.2082	8.19867 65.1556	145.36 28.4033	153.155 26.3148	2.60885 74.9356	10.2692 72.883	147.431 36.1307	155.225 34.0422	
+				0.0263672 0.714844	0.0342125 0.714844	0.0419922 0.714844	0.0498047 0.714844	0.0263672 0.722656	0.0342125 0.722656	0.0419922 0.722656	0.0498047 0.722656	0.0263672 0.730474	0.0342125 0.730474	0.0419922 0.730474	0.0498047 0.730474	0.0263672 0.738281	0.0342125 0.738281	0.0419922 0.738281	0.0498047 0.738281	
+				0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	0xffab0000	
+			}
+		}
+		visible_on idle
+	}
+	sprite etext_text_sprite
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-0.290258 48.7952	144.599 9.97237	5.40375 70.0456	150.293 31.2227	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
