@@ -1,0 +1,187 @@
+﻿source_file "Y:/art/source/ui/graphics/spectate/spectate_2.ma"
+//by sergey_mitryaev
+//at Tue Dec 11 16:43:52 2012
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 11
+{
+	object ship_change
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 392.197 504.198
+			opacity 255
+			color 0xffffffff
+			size 500 76
+			effect "ui\graphics\spectate\ship_change"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object modules
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 356.378 590.159
+			opacity 255
+			color 0xff000000
+			size 568 130
+			effect "ui\graphics\hud\modules_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 589.227 80.5096
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object warning
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 339.847 32.6211
+			opacity 255
+			color 0xffffffff
+			size 600 40
+			effect "ui\graphics\spectate\warning"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object players_slot_left
+	{
+		defaults
+		{
+			anchor "LC"
+			pos 1.20986 114.992
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\new\players_slot_main_left"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object players_slot_right
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 808.688 114.992
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\new\players_slot_main_left"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_left
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 575.258 445.808
+			opacity 255
+			color 0xffffffff
+			size 144 23
+			effect "ui\graphics\spectate\spect_btn_left"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_right
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 574.93 445.808
+			opacity 255
+			color 0xffffffff
+			size 144 23
+			effect "ui\graphics\spectate\spect_btn_right"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			anchor "LT"
+			keep_screen_size
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\spectate_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object choise_ship
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 497.813 476.444
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect "ui\graphics\spectate\choise_ship"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object pve_msg
+	{
+		defaults
+		{
+			anchor "C"
+			pos 339.847 207
+			opacity 255
+			color 0xffffffff
+			size 600 40
+			effect "ui\graphics\spectate\pve_msg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
