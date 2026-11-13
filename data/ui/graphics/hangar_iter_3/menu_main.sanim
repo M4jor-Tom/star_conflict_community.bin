@@ -1,0 +1,239 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Mon Jan 14 13:45:42 2019
+
+base_res 1920 1080
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim selekt
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 900 78
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+	object menu_btn_1
+	{
+		defaults
+		{
+			pos -1 -0
+			opacity 255
+			color 0xffffffff
+			size 172 44
+			effect "ui\graphics\hangar_iter_3\menu_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+	object menu_btn_2
+	{
+		defaults
+		{
+			pos 167 -0
+			opacity 255
+			color 0xffffffff
+			size 172 44
+			effect "ui\graphics\hangar_iter_3\menu_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+	object menu_btn_3
+	{
+		defaults
+		{
+			pos 335 -0
+			opacity 255
+			color 0xffffffff
+			size 172 44
+			effect "ui\graphics\hangar_iter_3\menu_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+	object menu_btn_4
+	{
+		defaults
+		{
+			pos 503 -0
+			opacity 255
+			color 0xffffffff
+			size 172 44
+			effect "ui\graphics\hangar_iter_3\menu_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+	object menu_btn_5
+	{
+		defaults
+		{
+			pos 671 -0
+			opacity 255
+			color 0xffffffff
+			size 172 44
+			effect "ui\graphics\hangar_iter_3\menu_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite we26
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				671 -0	673 -0	671 72	673 72	
+				0.568359 0.429688	0.568359 0.425781	0.587891 0.429687	0.587891 0.425781	
+				0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+	sprite we39
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				503 -0	505 -0	503 72	505 72	
+				0.568359 0.429688	0.568359 0.425781	0.587891 0.429687	0.587891 0.425781	
+				0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+	sprite we40
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				335 -0	337 -0	335 72	337 72	
+				0.568359 0.429688	0.568359 0.425781	0.587891 0.429687	0.587891 0.425781	
+				0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+	sprite we41
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				839 -0	841 -0	839 72	841 72	
+				0.568359 0.429688	0.568359 0.425781	0.587891 0.429687	0.587891 0.425781	
+				0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+	sprite we42
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				167 -0	169 -0	167 72	169 72	
+				0.568359 0.429688	0.568359 0.425781	0.587891 0.429687	0.587891 0.425781	
+				0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on selekt
+	}
+}
+
