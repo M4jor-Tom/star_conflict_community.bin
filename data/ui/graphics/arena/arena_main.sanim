@@ -1,0 +1,210 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Wed Mar 27 17:57:54 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 10
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 5000 480
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object noteam
+	{
+		defaults
+		{
+			pos 2058.12 5
+			opacity 255
+			color 0xffffffff
+			size 700 40
+			effect "ui\graphics\arena\arena_team_main"
+			alignment "CM"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 2341 392.247
+			opacity 255
+			color 0xffffffff
+			size 200 54
+			effect "ui\graphics\arena\arena_btn_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 2168 398.453
+			opacity 255
+			color 0xffffffff
+			size 150 42
+			effect "ui\graphics\arena\arena_btn_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_3
+	{
+		defaults
+		{
+			pos 2562 398.453
+			opacity 255
+			color 0xffffffff
+			size 150 42
+			effect "ui\graphics\arena\arena_btn_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object close_btn
+	{
+		defaults
+		{
+			pos 2403 462
+			opacity 255
+			color 0xffffffff
+			size 200 54
+			effect "ui\graphics\match_pvp\match_close_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title38
+	{
+		defaults
+		{
+			pos 2071.12 5
+			opacity 255
+			color 0xff7fe1ff
+			size 700 40
+			effect ""
+			alignment "CM"
+			sampleText "Боевая  арена"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object timer
+	{
+		defaults
+		{
+			pos 2390 373
+			opacity 255
+			color 0xffffffff
+			size 200 54
+			effect "ui\graphics\arena\ar_pl_timer"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object info_btn
+	{
+		defaults
+		{
+			pos 2574 13
+			opacity 255
+			color 0xff7fe1ff
+			size 18 18
+			effect "ui\graphics\arena\ar_info_btn"
+			alignment "CM"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 2390 165
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName370
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				1483 -2	3283 -2	1483 464	3283 464	
+				0.03125 0	0.96875 0	0.03125 0.910156	0.96875 0.910156	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName371
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				5015 -2	3283 -2	5015 464	3283 464	
+				0.994629 0	0.96875 0	0.994629 0.910156	0.96875 0.910156	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName372
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				1483 -2	-14 -2	1483 464	-14 464	
+				0.03125 0	0.012207 0	0.03125 0.910156	0.012207 0.910156	
+			}
+		}
+		visible_on idle
+	}
+}
+
