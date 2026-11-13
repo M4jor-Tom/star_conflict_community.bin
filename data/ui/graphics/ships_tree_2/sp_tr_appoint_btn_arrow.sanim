@@ -1,0 +1,50 @@
+﻿source_file "Y:/art/source/ui/graphics/matchmaking_pvp/matchmaking_pvp.ma"
+//by Sergey
+//at Wed Dec 30 14:56:47 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim up
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim down
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName373
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				-0.209051 0.209052	21.7909 0.209052	-0.209051 14.2091	21.7909 14.2091	
+				0.0416341 0.9375	0.0530924 0.9375	0.0416341 0.910156	0.0530924 0.910156	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on up
+		anim down sp_uvc
+		{
+			1 
+			0.0416341 0.910156	0.0530924 0.910156	0.0416341 0.9375	0.0530924 0.9375	
+		}
+	}
+}
+
