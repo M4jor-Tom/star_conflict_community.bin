@@ -1,0 +1,114 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Mon Sep 23 13:05:52 2013
+
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_over
+		visible_on press
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.175797 -0.0699205	6.1758 -0.0699205	18.9482 -0.0699205	24.9482 -0.0699205	0.175797 5.93008	6.1758 5.93008	18.9482 5.93008	24.9482 5.93008	0.175797 19	6.1758 19	18.9482 19	24.9482 19	0.175797 25	6.1758 25	18.9482 25	24.9482 25	
+				0.0323294 0.140667	0.0381887 0.140667	0.0439838 0.140667	0.0498432 0.140667	0.0323294 0.146527	0.0381887 0.146527	0.0439838 0.146527	0.0498432 0.146527	0.0323294 0.152416	0.0381887 0.152416	0.0439838 0.152416	0.0498432 0.152416	0.0323294 0.158276	0.0381887 0.158276	0.0439838 0.158276	0.0498432 0.158276	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on idle_over
+		visible_on press
+	}
+	sprite objectName198
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				4 4	22 4	4 22	22 22	
+				0.469213 0.0604002	0.486791 0.0604002	0.469213 0.0779757	0.486791 0.0779757	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on idle_over
+		anim press sp_posc
+		{
+			1 
+			4 3	22 3	4 21	22 21	
+		}
+	}
+	sprite objectName665
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				25.0518 24.9553	0.146257 24.9553	25.0518 -0.04599	0.146257 -0.04599	
+				0.0284811 0.138381	0.0526546 0.138381	0.0284811 0.114321	0.0526546 0.114321	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim idle_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+	}
+}
+
