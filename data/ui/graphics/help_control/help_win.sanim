@@ -1,0 +1,138 @@
+﻿source_file "Y:/art/source/ui/graphics/help_control/help.ma"
+//by sergey_mitryaev
+//at Mon Jan 28 14:26:02 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 560
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn
+	{
+		defaults
+		{
+			pos 798.91 547.217
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 180.405 3.70223
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Справка:Экран ангара"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object choice_main
+	{
+		defaults
+		{
+			pos 318.403 546.753
+			opacity 255
+			color 0xffffffff
+			size 315 25
+			effect "ui\graphics\help_control\choice_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object check_box
+	{
+		defaults
+		{
+			pos 9.03518 550.02
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\login_screen\chek_box_nda"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 945 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	958.697 -0	964.697 -0	0 6	6 6	958.697 6	964.697 6	0 570.667	6 570.667	958.697 570.667	964.697 570.667	0 576.667	6 576.667	958.697 576.667	964.697 576.667	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				25.748 23.2195	937.748 23.2195	25.748 543.219	937.748 543.219	
+				-3.72529e-009 0	1 0	-3.72529e-009 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
