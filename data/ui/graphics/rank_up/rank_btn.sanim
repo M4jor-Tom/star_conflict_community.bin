@@ -1,0 +1,251 @@
+﻿source_file "Y:/art/source/ui/graphics/rank_up/rank_up.ma"
+//by sergey_mitryaev
+//at Tue May 28 16:15:42 2013
+
+
+animations 5
+{
+	anim off
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off_sel
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim on_sel
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 62 32
+			effect ""
+			alignment "LT"
+		}
+		visible_on off
+		visible_on off_sel
+		visible_on on
+		visible_on on_sel
+		visible_on disable
+	}
+	object text
+	{
+		defaults
+		{
+			pos 16 1
+			opacity 255
+			color 0xffcccccc
+			size 30 30
+			effect ""
+			alignment "CM"
+			sampleText "12"
+			font "Medium"
+		}
+		visible_on off
+		visible_on off_sel
+		anim on obj_colc
+		{
+			1
+			0xffff9100
+		}
+		anim on_sel obj_colc
+		{
+			1
+			0xffff9100
+		}
+		anim disable obj_posc_colc
+		{
+			1 1
+			15 1
+			0xff7f7f7f
+		}
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 62 32
+			effect "ui\graphics\rank_up\rank_btn_over"
+			alignment "LT"
+		}
+		visible_on off
+		visible_on off_sel
+		visible_on on
+		visible_on on_sel
+		visible_on disable
+	}
+}
+
+sprites 5
+{
+	total_vertices 80
+
+	sprite sp26ef
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	56 -0	62 -0	0 6	6 6	56 6	62 6	0 24	6 24	56 24	62 24	0 32	6 32	56 32	62 32	
+				0.325195 0.000976563	0.331055 0.000976563	0.370117 0.000976563	0.375977 0.000976563	0.325195 0.00683594	0.331055 0.00683594	0.370117 0.00683594	0.375977 0.00683594	0.325195 0.0439453	0.331055 0.0439453	0.370117 0.0439453	0.375977 0.0439453	0.325195 0.0517578	0.331055 0.0517578	0.370117 0.0517578	0.375977 0.0517578	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on off
+		visible_on off_sel
+		visible_on on
+		visible_on on_sel
+		anim disable sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite sp26efsf
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	56 -0	62 -0	0 6	6 6	56 6	62 6	0 26	6 26	56 26	62 26	0 32	6 32	56 32	62 32	
+				0.123047 0.00195313	0.128906 0.00195313	0.164063 0.00195313	0.169922 0.00195313	0.123047 0.0078125	0.128906 0.0078125	0.164063 0.0078125	0.169922 0.0078125	0.123047 0.0429688	0.128906 0.0429688	0.164063 0.0429688	0.169922 0.0429688	0.123047 0.0507813	0.128906 0.0507813	0.164063 0.0507813	0.169922 0.0507813	
+				0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	0xa2000000	
+			}
+		}
+		visible_on off
+		anim off_sel sp_colc
+		{
+			1
+			0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	0xa24c4c4c	
+		}
+		visible_on on
+		visible_on on_sel
+		visible_on disable
+	}
+	sprite sp26efwsdf
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	56 -0	62 -0	0 6	6 6	56 6	62 6	0 26	6 26	56 26	62 26	0 32	6 32	56 32	62 32	
+				0.228516 0.202148	0.234375 0.202148	0.273438 0.202148	0.279297 0.202148	0.228516 0.208008	0.234375 0.208008	0.273438 0.208008	0.279297 0.208008	0.228516 0.245117	0.234375 0.245117	0.273438 0.245117	0.279297 0.245117	0.228516 0.25293	0.234375 0.25293	0.273438 0.25293	0.279297 0.25293	
+				0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	0xff9100	
+			}
+		}
+		visible_on off
+		visible_on off_sel
+		anim on sp_colc
+		{
+			1
+			0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	
+		}
+		anim on_sel sp_colc
+		{
+			1
+			0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	0xffff9100	
+		}
+		visible_on disable
+	}
+	sprite sp26efsfsvv
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	56 -0	62 -0	0 6	6 6	56 6	62 6	0 26	6 26	56 26	62 26	0 32	6 32	56 32	62 32	
+				0.123047 0.00195313	0.128906 0.00195313	0.164063 0.00195313	0.169922 0.00195313	0.123047 0.0078125	0.128906 0.0078125	0.164063 0.0078125	0.169922 0.0078125	0.123047 0.0429688	0.128906 0.0429688	0.164063 0.0429688	0.169922 0.0429688	0.123047 0.0507813	0.128906 0.0507813	0.164063 0.0507813	0.169922 0.0507813	
+				0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	0xc3000000	
+			}
+		}
+		visible_on off
+		visible_on off_sel
+		visible_on on
+		anim on_sel sp_colc
+		{
+			1
+			0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	0xc3c37208	
+		}
+		visible_on disable
+	}
+	sprite sp26efeewge
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	56 -0	62 -0	0 6	6 6	56 6	62 6	0 24	6 24	56 24	62 24	0 32	6 32	56 32	62 32	
+				0.227539 0.253906	0.233398 0.253906	0.239258 0.253906	0.245117 0.253906	0.227539 0.259766	0.233398 0.259766	0.239258 0.259766	0.245117 0.259766	0.227539 0.266602	0.233398 0.266602	0.239258 0.266602	0.245117 0.266602	0.227539 0.274414	0.233398 0.274414	0.239258 0.274414	0.245117 0.274414	
+				0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on off
+		anim off_sel sp_posc
+		{
+			1 
+			10.75 2.5	16.75 2.5	55.75 2.5	61.75 2.5	10.75 8.5	16.75 8.5	55.75 8.5	61.75 8.5	10.75 23.75	16.75 23.75	55.75 23.75	61.75 23.75	10.75 31.75	16.75 31.75	55.75 31.75	61.75 31.75	
+		}
+		anim on sp_posc
+		{
+			1 
+			21.5 5	27.5 5	55.5 5	61.5 5	21.5 11	27.5 11	55.5 11	61.5 11	21.5 23.5	27.5 23.5	55.5 23.5	61.5 23.5	21.5 31.5	27.5 31.5	55.5 31.5	61.5 31.5	
+		}
+		anim on_sel sp_posc
+		{
+			1 
+			32.25 7.5	38.25 7.5	55.25 7.5	61.25 7.5	32.25 13.5	38.25 13.5	55.25 13.5	61.25 13.5	32.25 23.25	38.25 23.25	55.25 23.25	61.25 23.25	32.25 31.25	38.25 31.25	55.25 31.25	61.25 31.25	
+		}
+		anim disable sp_posc_colc
+		{
+			1 1
+			43 10	49 10	55 10	61 10	43 16	49 16	55 16	61 16	43 23	49 23	55 23	61 23	43 31	49 31	55 31	61 31	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
