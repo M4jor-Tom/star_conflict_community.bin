@@ -1,0 +1,56 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Fri May 31 15:24:19 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	80 -0	86 -0	0 6	6 6	80 6	86 6	0 80	6 80	80 80	86 80	0 86	6 86	80 86	86 86	
+				0.0733224 0.00196683	0.0791818 0.00196683	0.114178 0.00196683	0.120037 0.00196683	0.0733224 0.00782621	0.0791818 0.00782621	0.114178 0.00782621	0.120037 0.00782621	0.0733224 0.0449466	0.0791818 0.0449466	0.114178 0.0449466	0.120037 0.0449466	0.0733224 0.050806	0.0791818 0.050806	0.114178 0.050806	0.120037 0.050806	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite |bg
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	80 -0	86 -0	0 6	6 6	80 6	86 6	0 78	6 78	80 78	86 78	0 86	6 86	80 86	86 86	
+				0.00196952 0.160153	0.00782889 0.160153	0.0205078 0.160153	0.0263672 0.160153	0.00196952 0.166013	0.00782889 0.166013	0.0205078 0.166013	0.0263672 0.166013	0.00196952 0.176758	0.00782889 0.176758	0.0205078 0.176758	0.0263672 0.176758	0.00196952 0.18457	0.00782889 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
