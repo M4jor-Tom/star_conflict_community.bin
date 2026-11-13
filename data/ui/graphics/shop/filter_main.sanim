@@ -1,0 +1,90 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by Sergey_Mitryaev
+//at Wed Apr 18 17:55:29 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 730 90
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos -32 6
+			opacity 255
+			color 0xffffffff
+			size 200 65
+			effect "ui\graphics\shop\filter_slot_4"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 332 20
+			opacity 255
+			color 0xffffffff
+			size 80 24
+			effect "ui\graphics\shop\filt_drop_down_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_6
+	{
+		defaults
+		{
+			pos 412 20
+			opacity 255
+			color 0xffffffff
+			size 80 24
+			effect "ui\graphics\shop\filt_drop_down_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_18
+	{
+		defaults
+		{
+			pos 138 26
+			opacity 255
+			color 0xffffffff
+			size 175 10
+			effect "ui\graphics\shop\filter_chek_box"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+}
+
