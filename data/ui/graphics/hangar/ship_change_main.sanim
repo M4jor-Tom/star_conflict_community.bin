@@ -1,0 +1,50 @@
+﻿source_file  Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma
+//by sergey_mitryaev
+//at Thu Jul 05 18:27:01 2012
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 493.881 211.094
+			opacity 255
+			color 0xffffffff
+			size 300 200
+			effect "ui\graphics\hangar\ship_change_win"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object blackout
+	{
+		defaults
+		{
+			anchor "L"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
