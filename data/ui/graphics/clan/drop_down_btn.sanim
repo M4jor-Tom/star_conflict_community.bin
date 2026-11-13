@@ -1,0 +1,97 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Wed May 28 11:05:38 2014
+
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self128
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 20
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on disable
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName344
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				187 7	207 7	187 17	207 17	
+				0.44627 0.0283203	0.465801 0.0283203	0.44627 0.0380859	0.465801 0.0380859	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim disable sp_colc
+		{
+			1
+			0x7affffff	0x7affffff	0x7affffff	0x7affffff	
+		}
+	}
+	sprite sp63
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	204 -0	210 -0	0 6	6 6	204 6	210 6	0 14	6 14	204 14	210 14	0 20	6 20	204 20	210 20	
+				0.0849609 0.644531	0.084961 0.650391	0.0849609 0.662109	0.0849609 0.667969	0.0908203 0.644531	0.0908203 0.650391	0.0908203 0.662109	0.0908203 0.667969	0.102539 0.644531	0.102539 0.650391	0.102539 0.662109	0.102539 0.667969	0.108398 0.644531	0.108398 0.650391	0.108398 0.662109	0.108398 0.667969	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on disable
+	}
+}
+
