@@ -1,0 +1,413 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Mon Jun 20 14:27:31 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 23
+
+objects 18
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 900 470
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 89 18
+			opacity 255
+			color 0xffffffff
+			size 406 24
+			effect ""
+			alignment "LT"
+			sampleText "Рутинная  работа"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object title50
+	{
+		defaults
+		{
+			pos 89 57
+			opacity 255
+			color 0xffababab
+			size 406 20
+			effect ""
+			alignment "LT"
+			sampleText "SAdf d dg  dhdhdjgj fgj "
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 89 93
+			opacity 255
+			color 0xff99cccc
+			size 570 300
+			effect ""
+			alignment "LT"
+			sampleText "Sdfde gg fhg dh d |df  dfdf b|DFHdbh |D DH D|DXFGHDSG|D ghfggf |FGNng "
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 366 409
+			opacity 255
+			color 0xffffffff
+			size 158 50
+			effect "ui\graphics\arena\arena_btn_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 466 91
+			opacity 255
+			color 0xff0099ff
+			size 406 18
+			effect ""
+			alignment "RM"
+			sampleText "Расблокируется  через два  дня"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object status
+	{
+		defaults
+		{
+			pos 18 12
+			opacity 255
+			color 0xffffffff
+			size 62 78
+			effect "ui\graphics\quests_2\q_2_status_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object color_finish
+	{
+		defaults
+		{
+			pos 303 14
+			opacity 255
+			color 0xff9f9f9f
+			size 100 30
+			effect ""
+			alignment "LM"
+			sampleText "Color_finish"
+			font "Medium_outl2"
+		}
+		visible_on idle
+	}
+	object color_not_done
+	{
+		defaults
+		{
+			pos 303 40
+			opacity 255
+			color 0xffffdeb3
+			size 100 30
+			effect ""
+			alignment "LM"
+			sampleText "Color_not_done"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object Color_intro
+	{
+		defaults
+		{
+			pos 303 73
+			opacity 255
+			color 0xffffffff
+			size 100 30
+			effect ""
+			alignment "LM"
+			sampleText "Color_intro"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object awards
+	{
+		defaults
+		{
+			pos 695 37
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\quests_2\q_2_awards"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 530 409
+			opacity 255
+			color 0xffffffff
+			size 158 50
+			effect "ui\graphics\arena\arena_btn_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title58
+	{
+		defaults
+		{
+			pos 681 13
+			opacity 255
+			color 0xfffffd97
+			size 200 18
+			effect ""
+			alignment "RT"
+			sampleText "SAdf d dg  dhdhdjgj fgj "
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object color_price1
+	{
+		defaults
+		{
+			pos 495 -32
+			opacity 255
+			color 0xffffffff
+			size 200 18
+			effect ""
+			alignment "RT"
+			sampleText "color_price"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 393 96
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object task_2
+	{
+		defaults
+		{
+			pos 89 78
+			opacity 255
+			color 0xffffffff
+			size 406 20
+			effect "ui\graphics\quests_2\q_2_task"
+			alignment "LT"
+			sampleText "SAdf d dg  dhdhdjgj fgj "
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object task_1
+	{
+		defaults
+		{
+			pos 89 57
+			opacity 255
+			color 0xffffffff
+			size 406 20
+			effect "ui\graphics\quests_2\q_2_task"
+			alignment "LT"
+			sampleText "SAdf d dg  dhdhdjgj fgj "
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite que37
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				-573 -1.00015	1347 -0.999847	-573 101.25	1347 101.25	
+				0 0.324909	1 0.324909	0 0.542279	1 0.542279	
+			}
+		}
+		anim idle sp_pos_uv
+		{
+			11 2 
+			-573 -1.00015	1347 -0.999847	-573 101.25	1347 101.25	
+			-573 -1.00015	1347 -0.999847	-573 138.15	1347 138.15	
+			-573 -1.00015	1347 -0.999847	-573 175.05	1347 175.05	
+			-573 -1.00015	1347 -0.999847	-573 211.95	1347 211.95	
+			-573 -1.00015	1347 -0.999847	-573 248.85	1347 248.85	
+			-573 -1.00015	1347 -0.999847	-573 285.75	1347 285.75	
+			-573 -1.00015	1347 -0.999847	-573 322.65	1347 322.65	
+			-573 -1.00015	1347 -0.999847	-573 359.55	1347 359.55	
+			-573 -1.00015	1347 -0.999847	-573 396.45	1347 396.45	
+			-573 -1.00015	1347 -0.999847	-573 433.35	1347 433.35	
+			-573 -1.00015	1347 -0.999847	-573 470.25	1347 470.25	
+			0 0.324909	1 0.324909	0 0.542279	1 0.542279	
+			-2.98023e-008 0.0078125	1 0.0078125	-2.98023e-008 0.890625	1 0.890625	
+		}
+	}
+	sprite que35
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices_nc
+			{
+				-352.004 -3.05176e-005	1074 3.05176e-005	-352.004 0.999939	1074 1.00003	
+				0.923828 0.25	0.986328 0.25	0.923828 0.251953	0.986328 0.251953	
+			}
+		}
+		visible_on idle
+	}
+	sprite que36
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices_nc
+			{
+				-352.004 98.7499	1074 98.75	-352.004 99.7498	1074 99.7499	
+				0.923828 0.25	0.986328 0.25	0.923828 0.251953	0.986328 0.251953	
+			}
+		}
+		anim idle sp_pos
+		{
+			2 
+			-352.004 98.7499	1074 98.75	-352.004 99.7498	1074 99.7499	
+			-352.004 467.75	1074 467.75	-352.004 468.75	1074 468.75	
+		}
+	}
+	sprite que38
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				1347 -1.00015	3307 -0.999847	1347 101.25	3307 101.25	
+				0 0.324909	1 0.324909	0 0.542279	1 0.542279	
+			}
+		}
+		anim idle sp_pos_uv
+		{
+			11 2 
+			1347 -1.00015	3307 -0.999847	1347 101.25	3307 101.25	
+			1347 -1.00015	3307 -0.999847	1347 138.15	3307 138.15	
+			1347 -1.00015	3307 -0.999847	1347 175.05	3307 175.05	
+			1347 -1.00015	3307 -0.999847	1347 211.95	3307 211.95	
+			1347 -1.00015	3307 -0.999847	1347 248.85	3307 248.85	
+			1347 -1.00015	3307 -0.999847	1347 285.75	3307 285.75	
+			1347 -1.00015	3307 -0.999847	1347 322.65	3307 322.65	
+			1347 -1.00015	3307 -0.999847	1347 359.55	3307 359.55	
+			1347 -1.00015	3307 -0.999847	1347 396.45	3307 396.45	
+			1347 -1.00015	3307 -0.999847	1347 433.35	3307 433.35	
+			1347 -1.00015	3307 -0.999847	1347 470.25	3307 470.25	
+			0 0.324909	1 0.324909	0 0.542279	1 0.542279	
+			-2.98023e-008 0.0078125	1 0.0078125	-2.98023e-008 0.890625	1 0.890625	
+		}
+	}
+	sprite que39
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				-2543 -1.00015	-573 -0.999847	-2543 101.25	-573 101.25	
+				0 0.324909	1 0.324909	0 0.542279	1 0.542279	
+			}
+		}
+		anim idle sp_pos_uv
+		{
+			11 2 
+			-2543 -1.00015	-573 -0.999847	-2543 101.25	-573 101.25	
+			-2543 -1.00015	-573 -0.999847	-2543 138.15	-573 138.15	
+			-2543 -1.00015	-573 -0.999847	-2543 175.05	-573 175.05	
+			-2543 -1.00015	-573 -0.999847	-2543 211.95	-573 211.95	
+			-2543 -1.00015	-573 -0.999847	-2543 248.85	-573 248.85	
+			-2543 -1.00015	-573 -0.999847	-2543 285.75	-573 285.75	
+			-2543 -1.00015	-573 -0.999847	-2543 322.65	-573 322.65	
+			-2543 -1.00015	-573 -0.999847	-2543 359.55	-573 359.55	
+			-2543 -1.00015	-573 -0.999847	-2543 396.45	-573 396.45	
+			-2543 -1.00015	-573 -0.999847	-2543 433.35	-573 433.35	
+			-2543 -1.00015	-573 -0.999847	-2543 470.25	-573 470.25	
+			0 0.324909	1 0.324909	0 0.542279	1 0.542279	
+			-2.98023e-008 0.0078125	1 0.0078125	-2.98023e-008 0.890625	1 0.890625	
+		}
+	}
+}
+
