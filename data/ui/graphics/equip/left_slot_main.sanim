@@ -1,0 +1,167 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Wed May 22 17:01:52 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 312 584
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object product_list
+	{
+		defaults
+		{
+			pos 0 32
+			opacity 255
+			color 0xffffffff
+			size 283 494
+			effect "ui\graphics\equip\product_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load_modules
+	{
+		defaults
+		{
+			pos 88.4881 231.516
+			opacity 255
+			color 0xff88b5ff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 9.06577 4.89886
+			opacity 255
+			color 0xffffffff
+			size 250 21
+			effect ""
+			alignment "LT"
+			sampleText "НАзвание "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down
+	{
+		defaults
+		{
+			pos 7.77871 23.743
+			opacity 255
+			color 0xffffffff
+			size 283 83
+			effect "ui\graphics\equip\drop_down_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object add_slot
+	{
+		defaults
+		{
+			pos 3.95627 530.531
+			opacity 255
+			color 0xffffffff
+			size 250 25
+			effect "ui\graphics\equip\add_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sort_btn1
+	{
+		defaults
+		{
+			pos 228.612 526.434
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\sort_view_btn1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sort_btn2
+	{
+		defaults
+		{
+			pos 257.423 526.434
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\sort_view_btn2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-1.31602 -0	4.68398 -0	306.028 -0	312.028 -0	-1.31602 6	4.68398 6	306.028 6	312.028 6	-1.31602 548.574	4.68398 548.574	306.028 548.574	312.028 548.574	-1.31602 554.574	4.68398 554.574	306.028 554.574	312.028 554.574	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				7.59029 29.2369	13.5903 29.2369	279.703 29.2369	285.703 29.2369	7.59029 35.2369	13.5903 35.2369	279.703 35.2369	285.703 35.2369	7.59029 521.899	13.5903 521.899	279.703 521.899	285.703 521.899	7.59029 527.899	13.5903 527.899	279.703 527.899	285.703 527.899	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+}
+
