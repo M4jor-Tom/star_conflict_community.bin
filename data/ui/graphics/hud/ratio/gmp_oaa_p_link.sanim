@@ -1,0 +1,38 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Fri Dec 13 12:54:18 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName98
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				-2 -0	23 -0	-2 2	23 2	
+				0.0791016 0.68457	0.0791016 0.68457	0.0791016 0.686523	0.0791016 0.686523	
+			}
+		}
+		visible_on idle
+	}
+}
+
