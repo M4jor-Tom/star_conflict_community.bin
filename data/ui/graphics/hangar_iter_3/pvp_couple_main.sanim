@@ -1,0 +1,63 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Thu Sep 07 18:36:12 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 22
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object couple_btn
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 170 22
+			effect "ui\graphics\hangar_iter_3\pvp_couple_btn"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object wait_btn
+	{
+		defaults
+		{
+			pos 181 3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\hangar_iter_3\pvp_couple_wait_btn"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
