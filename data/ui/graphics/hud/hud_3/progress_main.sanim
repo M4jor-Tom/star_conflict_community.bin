@@ -1,0 +1,521 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by sergey_mitryaev
+//at Wed Aug 26 15:37:26 2020
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 0.6
+	}
+}
+
+total_elements 35
+
+objects 24
+{
+	object energy_progress
+	{
+		defaults
+		{
+			pos 8 196
+			opacity 255
+			color 0xffffffff
+			size 24 180
+			effect "ui\graphics\hud\hud_3\energy_progress"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object armor_progress
+	{
+		defaults
+		{
+			pos 548 196
+			opacity 255
+			color 0xffffffff
+			size 24 180
+			effect "ui\graphics\hud\hud_3\armor_progress_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 572 572
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object default_speed
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 400 320
+			effect "ui\graphics\hud\hud_3\default_speed"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object energy_value
+	{
+		defaults
+		{
+			pos 28 376
+			opacity 255
+			color 0xff98afd4
+			size 50 15
+			effect ""
+			alignment "LM"
+			sampleText "5400"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object armor_value
+	{
+		defaults
+		{
+			pos 482 393
+			opacity 255
+			color 0xffff9100
+			size 50 15
+			effect ""
+			alignment "RM"
+			sampleText "450"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object health_value
+	{
+		defaults
+		{
+			pos 493 376
+			opacity 255
+			color 0xff98afd4
+			size 50 15
+			effect ""
+			alignment "RM"
+			sampleText "450"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object critical_armor
+	{
+		defaults
+		{
+			pos 548 196
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\hud_3\critical_armor"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object horizont_line
+	{
+		defaults
+		{
+			pos 250 274
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\horizont_line"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object speed
+	{
+		defaults
+		{
+			pos 28 393
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\hud\hud_3\speed"
+			alignment "LM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object damage
+	{
+		defaults
+		{
+			pos 286 286
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\hud_3\damage_2"
+			alignment "LM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object armor_progress_2
+	{
+		defaults
+		{
+			pos 540 196
+			opacity 255
+			color 0xffffffff
+			size 24 180
+			effect "ui\graphics\hud\hud_3\armor_progress_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object critical_armor_2
+	{
+		defaults
+		{
+			pos 540 196
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\hud_3\critical_armor"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object speed_progress
+	{
+		defaults
+		{
+			pos 2 196
+			opacity 255
+			color 0xffffffff
+			size 24 180
+			effect "ui\graphics\hud\hud_3\speed_progress"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object boost_progress
+	{
+		defaults
+		{
+			pos 2 196
+			opacity 255
+			color 0xffffffff
+			size 24 180
+			effect "ui\graphics\hud\hud_3\boost_progress"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object boost
+	{
+		defaults
+		{
+			pos 28 393
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\hud\hud_3\boost"
+			alignment "LM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object progress_swarm_bg
+	{
+		defaults
+		{
+			pos 523 196
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\hud_3\armor_progress_swarm_bg"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object armor_value3
+	{
+		defaults
+		{
+			pos 477 337
+			opacity 255
+			color 0xffff9100
+			size 50 15
+			effect ""
+			alignment "RM"
+			sampleText "450"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object progress_swarm
+	{
+		defaults
+		{
+			pos 523 196
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\hud_3\armor_progress_swarm_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object critical_armor_swarm
+	{
+		defaults
+		{
+			pos 523 196
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\hud_3\n_critical_armor_swarm"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progress_module_shield_bg
+	{
+		defaults
+		{
+			pos 531 196
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\hud_3\armor_progress_module_shield_bg"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progress_module_shield
+	{
+		defaults
+		{
+			pos 531 196
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\hud_3\armor_progress_module_shield_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object critical_armor_swarm1
+	{
+		defaults
+		{
+			pos 531 196
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\hud_3\n_critical_armor_swarm"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object armor_value4
+	{
+		defaults
+		{
+			pos 477 353
+			opacity 255
+			color 0xff98afd4
+			size 50 15
+			effect ""
+			alignment "RM"
+			sampleText "450"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+}
+
+sprites 11
+{
+	total_vertices 44
+
+	sprite objectName4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				534.203 394.848	544.203 394.848	534.203 404.848	544.203 404.848	
+				0.282227 0.180664	0.291992 0.180664	0.282227 0.19043	0.291992 0.19043	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName5
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				544.577 376.688	554.577 376.688	544.577 389.688	554.577 389.688	
+				0.320313 0.179688	0.328125 0.179688	0.320313 0.19043	0.328125 0.19043	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				17.1621 376.804	26.1621 376.804	17.1621 389.804	26.1621 389.804	
+				0.29541 0.179199	0.304199 0.179199	0.29541 0.191895	0.304199 0.191895	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				0 -0	286 -0	0 286	286 286	
+				0 0	0.279297 0	0 0.279297	0.279297 0.279297	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName754
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				286 -0	572 -0	286 286	572 286	
+				0.279297 0	0 0	0.279297 0.279297	0 0.279297	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNamewfw
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				286 286	572 286	286 572	572 572	
+				0.279297 0.279297	0 0.279297	0.279297 0	0 0	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNamejsr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				0 286	286 286	0 572	286 572	
+				0 0.279297	0.279297 0.279297	0 0	0.279297 0	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNameuiopkl;
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				1 196	24 196	1 376	24 376	
+				0.50293 0.00195313	0.525391 0.00195313	0.50293 0.177734	0.525391 0.177734	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNameuiogtuo
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				548 196	572 196	548 376	572 376	
+				0.301758 0.00195313	0.27832 0.00195313	0.301758 0.177734	0.27832 0.177734	
+				0x6b252525	0x6b252525	0x6b252525	0x6b252525	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNameuiogtuoqwd
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				540 196	564 196	540 376	564 376	
+				0.301758 0.00195313	0.27832 0.00195313	0.301758 0.177734	0.27832 0.177734	
+				0x6b252525	0x6b252525	0x6b252525	0x6b252525	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNameuioadsytb
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				8 196	32 196	8 376	32 376	
+				0.27832 0.00195313	0.301758 0.00195313	0.27832 0.177734	0.301758 0.177734	
+				0x6b252525	0x6b252525	0x6b252525	0x6b252525	
+			}
+		}
+		visible_on idle
+	}
+}
+
