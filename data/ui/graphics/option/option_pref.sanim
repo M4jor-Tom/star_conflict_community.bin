@@ -1,0 +1,424 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Mon Apr 06 12:37:14 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim sample
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim video
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim audio
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 19
+
+objects 18
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 176 26.5263
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_1"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 25.4843
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 25.4843
+		}
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 176 65.8263
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 28.3211
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 88.1642
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 820 490
+			effect ""
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 176 105.126
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 67.6211
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 127.464
+		}
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 176 144.426
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 106.826
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 168.788
+		}
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 176 183.726
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 146.126
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 208.088
+		}
+	}
+	object slot_6
+	{
+		defaults
+		{
+			pos 176 223.026
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 231.386
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 231.386
+		}
+	}
+	object slot_7
+	{
+		defaults
+		{
+			pos 176 262.326
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 270.686
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 270.686
+		}
+	}
+	object slot_8
+	{
+		defaults
+		{
+			pos 176 301.626
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 309.986
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 309.986
+		}
+	}
+	object slot_9
+	{
+		defaults
+		{
+			pos 176 340.926
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 349.286
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 349.286
+		}
+	}
+	object slot_10
+	{
+		defaults
+		{
+			pos 176 380.226
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 389
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 389
+		}
+	}
+	object title_1
+	{
+		defaults
+		{
+			pos 219.931 -29
+			opacity 0
+			color 0xffffcf00
+			size 400 26
+			effect ""
+			alignment "LM"
+			sampleText "Дополнительные настройки"
+			font "Medium"
+		}
+		visible_on sample
+		anim video obj_posc_opc
+		{
+			1 1 
+			219.931 189
+			255
+		}
+		anim audio obj_posc_opc
+		{
+			1 1 
+			219.931 56.9992
+			255
+		}
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 802 2
+			opacity 255
+			color 0xffffffff
+			size 20 487
+			effect "ui\graphics\login_screen\scroll_main"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object slot_11
+	{
+		defaults
+		{
+			pos 176 420
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on sample
+		anim video obj_posc
+		{
+			1 
+			176 428
+		}
+		anim audio obj_posc
+		{
+			1 
+			176 428
+		}
+	}
+	object slot_1_12
+	{
+		defaults
+		{
+			pos 203 183.726
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_7"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object slot_2_1
+	{
+		defaults
+		{
+			pos 0 25
+			opacity 255
+			color 0xffffffff
+			size 820 70
+			effect "ui\graphics\option\option_ark"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object slot_2_2
+	{
+		defaults
+		{
+			pos 0 123
+			opacity 255
+			color 0xffffffff
+			size 820 200
+			effect "ui\graphics\option\option_server"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object slot_2_3
+	{
+		defaults
+		{
+			pos 0 252
+			opacity 255
+			color 0xffffffff
+			size 820 200
+			effect "ui\graphics\option\option_facebook"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0.0264893 -0	6.02649 -0	813.974 -0	819.974 -0	0.0264893 6	6.02649 6	813.974 6	819.974 6	0.0264893 486	6.02649 486	813.974 486	819.974 486	0.0264893 492	6.02649 492	813.974 492	819.974 492	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+}
+
