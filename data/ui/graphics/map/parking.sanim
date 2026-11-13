@@ -1,0 +1,67 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Fri Mar 13 12:36:48 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite dfg8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				0 -0	30 -0	0 30	30 30	
+				0.136719 0.230469	0.253906 0.230469	0.136719 0.347656	0.253906 0.347656	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+	sprite dfg10
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	30 -0	0 30	30 30	
+				0.0078125 0.230469	0.125 0.230469	0.0078125 0.347656	0.125 0.347656	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
