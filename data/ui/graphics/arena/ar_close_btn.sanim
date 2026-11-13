@@ -1,0 +1,98 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by Sergey
+//at Tue Sep 29 10:13:25 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName377
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	20 -0	0 20	20 20	
+				0.404297 0.230469	0.443359 0.230469	0.404297 0.269531	0.443359 0.269531	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press sp_colc
+		{
+			1
+			0x99999999	0x99999999	0x99999999	0x99999999	
+		}
+	}
+	sprite objectName376
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	20 -0	0 20	20 20	
+				0.404297 0.230469	0.443359 0.230469	0.404297 0.269531	0.443359 0.269531	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
