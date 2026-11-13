@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by Sergey
+//at Tue Sep 27 12:00:38 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				-3 -6	130 -6	-3 -4	130 -4	
+				0.0107422 0.785156	0.0341797 0.785156	0.0107422 0.787109	0.0341797 0.787109	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				-3 76	130 76	-3 78	130 78	
+				0.0107422 0.787109	0.0341797 0.787109	0.0107422 0.785156	0.0341797 0.785156	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				131 -5	131 77	129 -5	129 77	
+				0.0107422 0.785156	0.0341797 0.785156	0.0107422 0.787109	0.0341797 0.787109	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				-2 -5	-2 77	-4 -5	-4 77	
+				0.0107422 0.787109	0.0341797 0.787109	0.0107422 0.785156	0.0341797 0.785156	
+			}
+		}
+		visible_on idle
+	}
+}
+
