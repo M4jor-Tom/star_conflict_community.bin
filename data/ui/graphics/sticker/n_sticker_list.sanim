@@ -1,0 +1,104 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Thu Oct 26 18:15:34 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 260 416
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 238 -0
+			opacity 255
+			color 0xffffffff
+			size 9 415
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 2.60579 11.301
+			opacity 255
+			color 0xffffffff
+			size 283 77
+			effect "ui\graphics\sticker\n_sticker_list_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 2.60579 112.976
+			opacity 255
+			color 0xffffffff
+			size 283 77
+			effect "ui\graphics\sticker\n_sticker_list_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 2.60579 214.488
+			opacity 255
+			color 0xffffffff
+			size 283 77
+			effect "ui\graphics\sticker\n_sticker_list_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 2.60579 316
+			opacity 255
+			color 0xffffffff
+			size 283 77
+			effect "ui\graphics\sticker\n_sticker_list_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
