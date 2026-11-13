@@ -1,0 +1,55 @@
+﻿source_file  Y:/art/source/ui/graphics/quests/quests.ma
+//by sergey_mitryaev
+//at Thu Aug 30 14:53:09 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object current_fract
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 312 25
+			effect "ui\graphics\quests\quests_current_fract"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0.758364 0.383071	50.7584 0.383071	0.758364 50.3831	50.7584 50.3831	
+				1.11759e-008 0	1 0	1.11759e-008 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
