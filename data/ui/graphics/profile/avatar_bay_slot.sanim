@@ -1,0 +1,119 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/avatar.ma"
+//by sergey_mitryaev
+//at Wed Feb 18 09:52:38 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object avatar_icon
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\hud\avatar_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 88 88
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object select
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\profile\avatar_bay_select"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\profile\avatar_bay_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos -15 66
+			opacity 255
+			color 0xffcccccc
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "99999"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sticker_eneble
+	{
+		defaults
+		{
+			pos 4 4
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\sticker\sticker_eneble"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 27 -1
+			opacity 255
+			color 0xffffffff
+			size 25 43
+			effect "ui\graphics\equip\prod_slot_sale"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
