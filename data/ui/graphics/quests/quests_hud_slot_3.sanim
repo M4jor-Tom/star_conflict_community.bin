@@ -1,0 +1,268 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Mon Mar 06 15:12:30 2017
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hide
+	{
+		mode once
+		cycle_time 1
+	}
+	anim show
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 220 220
+			effect ""
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+		visible_on hide
+		visible_on show
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests\quests_hud_slot_3_bg"
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			227
+			195
+			162
+			128
+			95
+			65
+			39
+			18
+			4
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			4
+			18
+			39
+			65
+			95
+			128
+			162
+			195
+			227
+			255
+		}
+	}
+	object desript_1
+	{
+		defaults
+		{
+			pos 11 7
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect "ui\graphics\quests\quests_hud_desript_3"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+	object desript_2
+	{
+		defaults
+		{
+			pos 11 69
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect "ui\graphics\quests\quests_hud_desript_3"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 246.997 70.2332
+			opacity 255
+			color 0xffff9000
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "erhahjtrkaskk"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+	object desript_3
+	{
+		defaults
+		{
+			pos 11 144
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect "ui\graphics\quests\quests_hud_desript_3"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+}
+
