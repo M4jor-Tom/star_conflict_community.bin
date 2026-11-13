@@ -1,0 +1,84 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Tue Apr 08 17:09:56 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 22
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 156 1
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Dg.Djamper"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 125 1
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\who_says_icon"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite damage9
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-114.12 -0.749999	435.88 -0.749999	-114.12 22.75	435.88 22.75	
+				0.0841813 0.141602	0.228319 0.141602	0.0841813 0.116211	0.228319 0.116211	
+				0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+			}
+		}
+		visible_on idle
+	}
+}
+
