@@ -1,0 +1,162 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by Sergey
+//at Tue Dec 01 18:18:53 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1280 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 266 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object count3
+	{
+		defaults
+		{
+			pos 22 -1
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "ADdf sger rhh tj j"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite que50
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				231 2	258 2	231 18	258 18	
+				0.195313 0.576172	0.210938 0.576172	0.195313 0.607422	0.210938 0.607422	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			231 2	258 2	231 18	258 18	
+			231 2	359.4 2	231 18	359.4 18	
+			231 2	460.8 2	231 18	460.8 18	
+			231 2	562.2 2	231 18	562.2 18	
+			231 2	663.6 2	231 18	663.6 18	
+			231 2	765 2	231 18	765 18	
+			231 2	866.4 2	231 18	866.4 18	
+			231 2	967.8 2	231 18	967.8 18	
+			231 2	1069.2 2	231 18	1069.2 18	
+			231 2	1170.6 2	231 18	1170.6 18	
+			231 2	1272 2	231 18	1272 18	
+		}
+	}
+	sprite que49
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				215.5 2	231 2	215.5 18	231 18	
+				0.162109 0.576172	0.193359 0.576172	0.162109 0.607422	0.193359 0.607422	
+			}
+		}
+		visible_on idle
+	}
+	sprite que48
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				0.5 2	215.5 2	0.5 18	215.5 18	
+				0.138672 0.576172	0.160156 0.576172	0.138672 0.607422	0.160156 0.607422	
+			}
+		}
+		visible_on idle
+	}
+	sprite que54
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				258 2	266 2	258 18	266 18	
+				0.216797 0.576172	0.232422 0.576172	0.216797 0.607422	0.232422 0.607422	
+			}
+		}
+		anim idle sp_pos
+		{
+			2 
+			258 2	266 2	258 18	266 18	
+			1272 2	1280 2	1272 18	1280 18	
+		}
+	}
+	sprite que209
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				0.959459 1	20.9595 1	0.959459 19	20.9595 19	
+				0.927734 0.255859	0.966797 0.255859	0.927734 0.291016	0.966797 0.291016	
+			}
+		}
+		visible_on idle
+	}
+}
+
