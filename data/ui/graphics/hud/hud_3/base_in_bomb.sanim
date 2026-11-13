@@ -1,0 +1,99 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by sergey_mitryaev
+//at Thu Aug 28 14:44:50 2014
+
+
+animations 6
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_interac
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_interac
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim alien
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite sprt2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	34 -0	0 34	34 34	
+				0.214844 0.282227	0.248047 0.282227	0.214844 0.31543	0.248047 0.31543	
+				0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2800	0xffff2800	0xffff2800	0xffff2800	
+		}
+		anim neutral sp_colc
+		{
+			1
+			0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	
+		}
+		anim neutral_interac sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim alien sp_colc
+		{
+			1
+			0xffbd25e4	0xffbd25e4	0xffbd25e4	0xffbd25e4	
+		}
+	}
+	sprite sprt3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	34 -0	0 34	34 34	
+				0.248047 0.282227	0.28125 0.282227	0.248047 0.31543	0.28125 0.31543	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on enemy_interac
+	}
+}
+
