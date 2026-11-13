@@ -1,0 +1,140 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Thu May 15 15:57:08 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 9
+{
+	object text
+	{
+		defaults
+		{
+			pos 0.99582 11.1683
+			opacity 255
+			color 0xffcccccc
+			size 200 16
+			effect ""
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chek_box
+	{
+		defaults
+		{
+			pos 207.662 9.61205
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slider
+	{
+		defaults
+		{
+			pos 207.662 11.4653
+			opacity 255
+			color 0xffffffff
+			size 380 10
+			effect "ui\graphics\option\option_slider_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object drop_down
+	{
+		defaults
+		{
+			pos 207.662 8.7622
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 600 45
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 52.2604 11.1683
+			opacity 255
+			color 0xffcccccc
+			size 300 16
+			effect "ui\graphics\option\option_slot_text"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_over
+	{
+		defaults
+		{
+			pos 0 8.84911
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\option\text_over"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 213 9
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\shop\buy_btn8"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object volume_ind
+	{
+		defaults
+		{
+			pos 213 10
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_volume_ind"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
