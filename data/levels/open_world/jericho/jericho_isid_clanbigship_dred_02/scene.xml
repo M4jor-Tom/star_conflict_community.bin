@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="empire_ilay_station; default; default; default; default; default; default; default; " battlefieldRadius="1500.000" />
+  <EntityContainer>
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-64.779 2428.327 -15.886" Rot="0.609 -0.344 0.331 0.633" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="alien_spawn_spot2" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="210.345 1142.998 -2.229" Rot="-0.707 0.000 0.000 0.707" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral4_spawn_spot2" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="739.984 266.105 175.618" Rot="0.000 0.707 0.000 0.707" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral4_path3" Def="PathObject" Pos="421.000 -174.214 952.205" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="421.000 -174.214 952.205" />
+      <Point p="294.766 -188.364 869.303" />
+      <Point p="245.107 -187.157 808.475" />
+      <Point p="175.498 -192.278 675.966" />
+      <Point p="144.820 -215.562 529.313" />
+      <Point p="154.233 -245.742 365.025" />
+      <Point p="289.999 -281.083 282.283" />
+      <Point p="464.045 -314.314 248.335" />
+      <Point p="545.528 -326.816 254.625" />
+      <Point p="677.479 -308.096 329.275" />
+      <Point p="741.809 -263.654 414.806" />
+      <Point p="803.922 -208.126 655.679" />
+      <Point p="710.649 -164.858 894.694" />
+      <Point p="619.134 -160.730 970.017" />
+      <Point p="517.817 -168.512 958.944" />
+    </Entity>
+    <Entity Name="neutral4_path2" Def="PathObject" Pos="678.000 264.235 173.526" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="678.000 264.235 173.526" />
+      <Point p="583.640 257.391 175.314" />
+      <Point p="478.690 245.468 190.270" />
+      <Point p="331.596 221.860 192.219" />
+      <Point p="201.863 180.854 208.304" />
+      <Point p="-46.996 73.619 295.825" />
+      <Point p="-216.625 -46.254 370.334" />
+      <Point p="-345.988 -172.556 426.274" />
+      <Point p="-507.579 -278.754 488.113" />
+      <Point p="-735.933 -326.908 508.984" />
+      <Point p="-862.567 -342.821 302.443" />
+      <Point p="-870.871 -347.558 42.812" />
+      <Point p="-875.892 -344.855 -225.615" />
+      <Point p="-764.376 -323.816 -487.937" />
+      <Point p="-572.622 -291.544 -672.070" />
+      <Point p="-343.832 -221.481 -726.975" />
+      <Point p="-212.426 -129.204 -641.412" />
+      <Point p="-31.758 -23.055 -565.107" />
+      <Point p="231.864 63.150 -482.001" />
+      <Point p="420.856 117.168 -425.042" />
+      <Point p="632.885 184.654 -276.278" />
+      <Point p="763.338 231.097 -87.939" />
+      <Point p="764.156 259.753 131.329" />
+    </Entity>
+    <Entity Name="neutral4_spawn_spot3" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="470.996 -168.177 951.279" Rot="0.000 0.707 0.000 0.707" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral4_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="540.000 -358.621 -760.000" Rot="0.000 0.707 0.000 0.707" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral4_path1" Def="PathObject" Pos="497.000 -361.096 -759.015" Rot="-0.125 0.000 0.000 0.992" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="497.000 -361.096 -759.015" />
+      <Point p="420.200 -356.439 -752.479" />
+      <Point p="220.970 -348.795 -707.563" />
+      <Point p="68.900 -355.956 -612.131" />
+      <Point p="10.600 -355.152 -467.144" />
+      <Point p="29.404 -351.359 -217.015" />
+      <Point p="174.098 -350.956 6.734" />
+      <Point p="316.950 -344.107 120.166" />
+      <Point p="555.251 -324.233 165.965" />
+      <Point p="716.382 -298.558 144.852" />
+      <Point p="824.712 -271.542 77.255" />
+      <Point p="913.302 -273.332 -64.760" />
+      <Point p="821.043 -286.696 -470.472" />
+      <Point p="725.599 -327.729 -641.572" />
+      <Point p="596.309 -358.352 -760.006" />
+    </Entity>	
+    <Entity Name="AmbientSoundSpot2" Def="Sound_AmbientSoundSpot" Pos="372.404 -135.937 -24.092" soundname="sound/dreadnought/shipyard_building" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+  </EntityContainer>
+</Scene>
