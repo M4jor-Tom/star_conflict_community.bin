@@ -1,0 +1,82 @@
+﻿source_file "Y:/art/source/ui/graphics/scroll/scroll_2.ma"
+//by sergey_mitryaev
+//at Wed Oct 30 18:45:58 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object scroll_thumb
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 29
+			effect "ui\graphics\scroll_1080\scroll_2_thumb"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 14 1840
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 14 720
+			effect "ui\graphics\scroll_1080\scroll_2_bg"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName175
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				4 -0	9 -0	4 1840	9 1840	
+				0.607422 0.318359	0.615234 0.318359	0.607422 0.337891	0.615234 0.337891	
+				0x4cb2b2b2	0x4cb2b2b2	0x4cb2b2b2	0x4cb2b2b2	
+			}
+		}
+		visible_on idle
+	}
+}
+
