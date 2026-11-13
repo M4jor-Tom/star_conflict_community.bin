@@ -1,0 +1,107 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Thu Nov 21 16:27:10 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object self92
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_buy
+	{
+		defaults
+		{
+			pos 0.133187 6.07445
+			opacity 255
+			color 0xffed1e00
+			size 50 40
+			effect ""
+			alignment "CM"
+			sampleText "В БОЮ!!"
+			font "Tiny_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.022913 0.123477	6.02291 0.123477	44 0.123477	50 0.123477	0.022913 6.12348	6.02291 6.12348	44 6.12348	50 6.12348	0.022913 43.8539	6.02291 43.8539	44 43.8539	50 43.8539	0.022913 49.8539	6.02291 49.8539	44 49.8539	50 49.8539	
+				0.201219 0.198266	0.207079 0.198266	0.219843 0.198266	0.225703 0.198266	0.201219 0.204125	0.207079 0.204125	0.219843 0.204125	0.225703 0.204125	0.201219 0.216781	0.207079 0.216781	0.219843 0.216781	0.225703 0.216781	0.201219 0.222641	0.207079 0.222641	0.219843 0.222641	0.225703 0.222641	
+				0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	0x1e4c4c4c	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName247
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				49.6872 9.88986	0.0753937 9.88986	49.6873 0.12318	0.0754242 0.123096	
+				0.198405 0.158641	0.0811239 0.158641	0.198405 0.144446	0.0811239 0.144446	
+				0xffa6a6a6	0xffa6a6a6	0xffa6a6a6	0xffa6a6a6	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName248
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				49.9602 50.1897	0.0753937 50.1897	49.9603 39.8104	0.0754242 39.8103	
+				0.199219 0.174456	0.0812363 0.174456	0.199219 0.159417	0.0812363 0.159417	
+				0xffa6a6a6	0xffa6a6a6	0xffa6a6a6	0xffa6a6a6	
+			}
+		}
+		visible_on idle
+	}
+}
+
