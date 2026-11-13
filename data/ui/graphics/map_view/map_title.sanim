@@ -1,0 +1,126 @@
+﻿source_file "Y:/art/source/ui/graphics/map_view/map_view.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 14:53:08 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object text
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 345.507 17.4769
+			opacity 255
+			color 0xffffffff
+			size 600 40
+			effect ""
+			alignment "CM"
+			sampleText "Тактический вид"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object tips
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 449.457 640
+			opacity 255
+			color 0xffffffff
+			size 400 40
+			effect ""
+			alignment "CM"
+			sampleText "Нажмите  TAB чтоб выйти"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 344.577 64.2713
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Тип Боя Захват"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 344.577 85.0538
+			opacity 255
+			color 0xffffffff
+			size 600 60
+			effect ""
+			alignment "CT"
+			sampleText "Цель уничтожить цца йцупый|цв ЩШЩЗуцшга"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 525 685
+			opacity 255
+			color 0xffffffff
+			size 400 40
+			effect "ui\graphics\shop\buy_btn8"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName189
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			anchor "BC"
+			vertices
+			{
+				264.612 633.209	1026.48 633.209	264.612 684.791	1026.48 684.791	
+				0.776953 0.0356795	0.812891 0.0356795	0.776953 0.0678362	0.812891 0.0678362	
+				0x91919191	0x91919191	0x91919191	0x91919191	
+			}
+		}
+		visible_on idle
+	}
+}
+
