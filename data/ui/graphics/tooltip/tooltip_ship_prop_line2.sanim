@@ -1,0 +1,115 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Mon Feb 04 14:11:00 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object color_font
+	{
+		defaults
+		{
+			pos 5.81453 37.7122
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "color_font"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 254 20
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 19 -0
+			opacity 255
+			color 0xffcccccc
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "КОРПУС"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value
+	{
+		defaults
+		{
+			pos 151 -0
+			opacity 255
+			color 0xffffdeb3
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "1000"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 5.6714 22
+			opacity 255
+			color 0xffcccccc
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "color_data"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				3.5 3.5	16.5 3.5	3.5 16.5	16.5 16.5	
+				-1.86265e-008 0	1 0	-1.86265e-008 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
