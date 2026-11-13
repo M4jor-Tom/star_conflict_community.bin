@@ -1,0 +1,77 @@
+﻿source_file "Y:/art/source/ui/graphics/notice/notice.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 07 12:03:42 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 8 8.61244
+			opacity 255
+			color 0xffffffff
+			size 50 700
+			effect "ui\graphics\notice\notice_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 8 709
+			opacity 255
+			color 0xffffffff
+			size 50 700
+			effect "ui\graphics\notice\notice_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object area
+	{
+		defaults
+		{
+			pos 6.00002 6
+			opacity 255
+			color 0xffffffff
+			size 412 393
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 422 405
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
