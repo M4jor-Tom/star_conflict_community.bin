@@ -1,0 +1,149 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Thu Feb 01 17:06:05 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 194 138
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos -5 -0
+			opacity 255
+			color 0xffffffff
+			size 40 30
+			effect ""
+			alignment "CM"
+			sampleText "20"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos -5 -0
+			opacity 255
+			color 0xff1f1f1f
+			size 40 30
+			effect ""
+			alignment "CM"
+			sampleText "20"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite we86
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-1.52588e-005 136.167	194 136.167	-1.52588e-005 137.833	194 137.833	
+				0.338322 0.684025	0.345272 0.684025	0.338322 0.690975	0.345272 0.690975	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we88
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 0.166656	194 0.166656	0 1.83334	194 1.83334	
+				0.338322 0.684025	0.345272 0.684025	0.338322 0.690975	0.345272 0.690975	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we89
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				192.167 138	192.167 -0	193.833 138	193.833 -0	
+				0.338322 0.684025	0.345272 0.684025	0.338322 0.690975	0.345272 0.690975	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we90
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0.166687 138	0.166656 -0	1.83334 138	1.83334 -0	
+				0.338322 0.684025	0.345272 0.684025	0.338322 0.690975	0.345272 0.690975	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we91
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				0 -0	30 -0	0 44	30 44	
+				0.912109 0.738281	0.970703 0.738281	0.912109 0.824219	0.970703 0.824219	
+			}
+		}
+		visible_on idle
+	}
+}
+
