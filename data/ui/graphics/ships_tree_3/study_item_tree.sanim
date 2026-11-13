@@ -1,0 +1,539 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey
+//at Tue Nov 15 16:37:48 2016
+
+base_res 1280 720
+
+animations 3
+{
+	anim 1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 3
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 21
+
+objects 4
+{
+	object item_2
+	{
+		defaults
+		{
+			pos 4 120
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on 1
+		anim 2 obj_posc
+		{
+			1 
+			237 120
+		}
+		anim 3 obj_posc
+		{
+			1 
+			118 120
+		}
+	}
+	object item_1
+	{
+		defaults
+		{
+			pos 118 120
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on 1
+		anim 2 obj_posc
+		{
+			1 
+			4 120
+		}
+		anim 3 obj_posc
+		{
+			1 
+			4 120
+		}
+	}
+	object item_3
+	{
+		defaults
+		{
+			pos 237 120
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on 1
+		anim 2 obj_posc
+		{
+			1 
+			255.237 211.183
+		}
+		visible_on 3
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 180
+			effect ""
+			alignment "LT"
+		}
+		visible_on 1
+		visible_on 2
+		visible_on 3
+	}
+}
+
+sprites 17
+{
+	total_vertices 68
+
+	sprite que406
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				143.528 104	143.528 118	141.528 104	141.528 118	
+				0.195313 0.0957031	0.255859 0.0957031	0.195313 0.0996094	0.255859 0.0996094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on 3
+	}
+	sprite que407
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				28.5 102	142 102	28.5 104	142 104	
+				0.195313 0.0957031	0.255859 0.0957031	0.195313 0.0996094	0.255859 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que408
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				263.5 104	263.5 118	261.5 104	261.5 118	
+				0.195313 0.0957031	0.255859 0.0957031	0.195313 0.0996094	0.255859 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que409
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				30.5 104	30.5 118	28.5 104	28.5 118	
+				0.195313 0.0957031	0.255859 0.0957031	0.195313 0.0996094	0.255859 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que410
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				54.0002 171	53.9999 119	56.0001 171	56.0001 119	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que411
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				3.00005 118	54.9999 118	3.00005 120	54.9999 120	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que412
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				1.99988 171	2 119	4.00012 171	4.00012 119	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que413
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				3.00005 170	54.9999 170	3.00005 172	54.9999 172	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que414
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				287 171	287 119	289 171	289 119	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que415
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				236 118	288 118	236 120	288 120	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que416
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				235 171	235 119	237 171	237 119	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que417
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				236 170	288 170	236 172	288 172	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que418
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				168 171	168 119	170 171	170 119	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on 3
+	}
+	sprite que419
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				117 118	169 118	117 120	169 120	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on 3
+	}
+	sprite que420
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				116 171	116 119	118 171	118 119	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on 3
+	}
+	sprite que421
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				117 170	169 170	117 172	169 172	
+				0.191406 0.0957031	0.236328 0.0957031	0.191406 0.0996094	0.236328 0.0996094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on 3
+	}
+	sprite que422
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				143.25 102	263 102	143.25 104	263 104	
+				0.195313 0.0957031	0.255859 0.0957031	0.195313 0.0996094	0.255859 0.0996094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
