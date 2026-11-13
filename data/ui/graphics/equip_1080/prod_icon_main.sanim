@@ -1,0 +1,688 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_1080.ma"
+//by sergey_mitryaev
+//at Tue Nov 26 18:15:55 2019
+
+base_res 1920 1080
+
+animations 4
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim drop
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim no_bg
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 33
+
+objects 32
+{
+	object blink_flash
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip_1080\blink_flash_q"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object ico_frame
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip\ico_frame"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object prod_icon
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip_1080\prod_icon"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object slot_select
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip_1080\slot_select"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object slot_lock
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip_1080\slot_lock"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip_1080\prod_icon_blackout_2"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object in_battle
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 34 15
+			effect "ui\graphics\equip_1080\prod_in_battle"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object indic_sml
+	{
+		defaults
+		{
+			pos 25 25
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\shop\chest_box_indic_sml"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object center
+	{
+		defaults
+		{
+			pos 25 25
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object lock
+	{
+		defaults
+		{
+			pos 13 12
+			opacity 255
+			color 0xffffffff
+			size 24 28
+			effect "ui\graphics\equip\prod_slot_lock"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object gold
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip\prod_icon_gold"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object token_ico_1
+	{
+		defaults
+		{
+			pos 37 38
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\equip\token_ico"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object token_ico_2
+	{
+		defaults
+		{
+			pos 26 38
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\equip\token_ico"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object token_ico_3
+	{
+		defaults
+		{
+			pos 15 38
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\equip\token_ico"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object upd_arrow
+	{
+		defaults
+		{
+			pos 39 31
+			opacity 255
+			color 0xffffffff
+			size 10 18
+			effect "ui\graphics\equip_1080\eq_upd_arrow"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object exclamatory
+	{
+		defaults
+		{
+			pos 0.995999 17.7954
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\map\sector_exclamatory_1080"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object link
+	{
+		defaults
+		{
+			pos 24 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object empty
+	{
+		defaults
+		{
+			pos 17 16
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\eq_empty"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object frame
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip_1080\eq_prod_icon_frame"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object qu_bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_qu_bg"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object qu_star
+	{
+		defaults
+		{
+			pos 33 -3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\equip_1080\prod_icon_qu_star"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object count
+	{
+		defaults
+		{
+			pos -2 35
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect ""
+			alignment "RM"
+			sampleText "99999"
+			font "Tiny_outl2"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object blink
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\hangar\custom_ship_blink_3"
+			alignment "RM"
+			sampleText "99999"
+			font "Tiny_outl2"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object mark_clickable
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\mark_clickable"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object off_text
+	{
+		defaults
+		{
+			pos 0 17
+			opacity 255
+			color 0xff8f8f8f
+			size 50 15
+			effect ""
+			alignment "CM"
+			sampleText "выкл"
+			font "Tiny_outl2"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object exclamatory1
+	{
+		defaults
+		{
+			pos 28 -3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\map\sector_exclamatory"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object add
+	{
+		defaults
+		{
+			pos 15 14
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\equip\prod_slot_add"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object hierarchy
+	{
+		defaults
+		{
+			pos -8 11
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\equip\prod_hierarchy"
+			alignment "RM"
+			font "Tiny_outl2"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object bg_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip_1080\eq_prod_icon_bg_2"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object upd
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 34 15
+			effect "ui\graphics\equip_1080\eq_prod_icon_upd"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object self_upd
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 70
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.200111 -2.86102e-006	6.20011 -2.86102e-006	43.7322 -0	49.7322 -0	0.200111 6	6.20011 6	43.7322 6	49.7322 6	0.200111 44.1026	6.20011 44.1026	43.7322 44.1026	49.7322 44.1026	0.200111 50.1026	6.20011 50.1026	43.7322 50.1026	49.7322 50.1026	
+				0.00182828 0.160174	0.00768766 0.160174	0.0205834 0.160174	0.0264428 0.160174	0.00182828 0.166033	0.00768766 0.166033	0.0205834 0.166033	0.0264428 0.166033	0.00182828 0.178509	0.00768766 0.178509	0.0205834 0.178509	0.0264428 0.178509	0.00182828 0.184369	0.00768766 0.184369	0.0205834 0.184369	0.0264428 0.184369	
+				0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	0x79797979	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	
+		}
+		anim drop sp_colc
+		{
+			1
+			0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	0x74797979	
+		}
+		anim no_bg sp_colc
+		{
+			1
+			0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	0x797979	
+		}
+	}
+}
+
