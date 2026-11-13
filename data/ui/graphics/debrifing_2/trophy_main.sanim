@@ -1,0 +1,102 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing_2.ma"
+//by sergey_mitryaev
+//at Tue Nov 26 15:17:23 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 930 150
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 86 33
+			opacity 255
+			color 0xffffffff
+			size 600 50
+			effect "ui\graphics\debrifing_2\trophy_line"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 86 95
+			opacity 255
+			color 0xffffffff
+			size 600 50
+			effect "ui\graphics\debrifing_2\trophy_line"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 910 29
+			opacity 255
+			color 0xffffffff
+			size 16 120
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 158 5
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Www wegg ghgh hrh  rt "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object msg_text
+	{
+		defaults
+		{
+			pos 160 59
+			opacity 255
+			color 0xffffffff
+			size 600 30
+			effect ""
+			alignment "CM"
+			sampleText "Djfe ;lgeg;  hker;lhkerhkerhkljdj hedg  "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
