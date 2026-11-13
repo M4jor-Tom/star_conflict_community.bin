@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="dreadnoughtbattle; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" battlefieldRadius="1800.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" useWorldLookPoint="true" />
+  <EntityContainer>
+    <Entity Name="turret_1_team2_3" Def="ClanShip_SideTurretSpawn" Pos="-798.332 -93.291 612.977" Rot="0.000 0.000 1.000 0.000" />
+    <Entity Name="MainTurret5" Def="ClanShip_MainTurret" relationshipGroup="2" Pos="-275.543 -121.078 662.029" Rot="0.000 0.000 1.000 0.000" Skin="s2" />
+    <Entity Name="turret_2_team2_4" Def="ClanShip_SideTurretSpawn" Pos="-587.832 -86.143 720.933" Rot="0.989 0.000 0.000 0.145" />
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-80.151 2425.396 27.348" Rot="0.693 0.052 -0.050 0.718" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="turret_1_team2_2" Def="ClanShip_SideTurretSpawn" Pos="-800.928 -47.052 602.002" Rot="-0.133 0.007 -0.011 0.991" />
+    <Entity Name="AimPoint1" Def="ClanShip_AimPoint" relationshipGroup="2" Pos="-994.978 -83.000 581.193" type="0" />
+    <Entity Name="AimPoint3" Def="ClanShip_AimPoint" relationshipGroup="2" Pos="-178.108 -98.713 494.965" type="0" />
+    <Entity Name="SpawnTeam2Ship11" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-852.560 -50.136 671.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship3" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-852.560 -70.145 671.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship2" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-832.571 -70.145 651.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="turret_1_team2_1" Def="ClanShip_SideTurretSpawn" Pos="-800.892 -46.836 723.892" Rot="0.000 0.991 0.131 0.000" />
+    <Entity Name="AimPoint2" Def="ClanShip_AimPoint" relationshipGroup="2" Pos="-432.703 -83.000 526.081" type="0" />
+    <Entity Name="SpawnTeam2Ship10" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-832.571 -90.136 651.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="01_DreadLightBlueSmallLight9" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy6" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmallLight8" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy7" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="additional_1_team2_1" Def="ClanShip_Accelerator" relationshipGroup="2" Pos="-561.247 -54.306 608.693" Rot="0.000 0.005 0.000 1.000" Skin="s2" warp_distance="2000.000" />
+    <Entity Name="turret_3_team2_2" Def="ClanShip_SideTurretSpawn" Pos="-298.000 -45.412 586.815" Rot="-0.130 0.000 0.000 0.992" />
+    <Entity Name="turret_2_team2_2" Def="ClanShip_SideTurretSpawn" Pos="-590.471 -58.651 602.562" Rot="-0.144 0.003 0.002 0.990" />
+    <Entity Name="turret_2_team2_3" Def="ClanShip_SideTurretSpawn" Pos="-587.264 -86.284 605.236" Rot="0.000 -0.144 0.990 0.000" />
+    <Entity Name="01_PlasmaCannon6" Def="ClanShip_PlasmaCannon" relationshipGroup="2" Pos="-478.327 -48.930 703.874" Rot="0.000 1.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_CameraEntity1" Def="CameraEntity" Pos="-677.245 -45.182 657.317" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="turret_3_team2_4" Def="ClanShip_SideTurretSpawn" Pos="-298.091 -98.406 739.296" Rot="0.991 -0.005 0.005 0.130" />
+    <Entity Name="drone_right_end" Def="PathObject" Pos="-673.695 -116.202 467.425" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-673.695 -116.202 467.425" />
+      <Point p="-1008.167 -116.202 467.425" />
+      <Point p="-1113.102 -116.202 589.138" />
+      <Point p="-1113.102 -116.202 712.411" />
+      <Point p="-1005.395 -116.202 835.153" />
+      <Point p="-112.964 -116.202 935.153" />
+      <Point p="150.468 -116.202 712.411" />
+      <Point p="150.468 -116.202 589.138" />
+      <Point p="-104.254 -116.202 367.425" />
+      <Point p="-644.008 -116.202 467.425" />
+    </Entity>
+    <Entity Name="turret_3_team2_1" Def="ClanShip_SideTurretSpawn" Pos="-297.412 -45.161 738.041" Rot="-0.001 0.991 0.130 -0.009" />
+    <Entity Name="SpawnTeam2Ship9" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-832.571 -90.136 671.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship1" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-832.571 -70.145 671.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship13" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-872.560 -90.136 671.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship15" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-872.560 -50.136 671.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship14" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-872.560 -70.145 671.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship12" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-852.560 -90.136 671.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship17" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-872.560 -70.145 651.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship16" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-872.560 -90.136 651.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="MainTurret4" Def="ClanShip_MainTurret" relationshipGroup="2" Pos="-679.608 -37.276 662.968" Skin="s2" />
+    <Entity Name="turret_3_team2_3" Def="ClanShip_SideTurretSpawn" Pos="-297.750 -98.404 586.050" Rot="0.006 -0.130 0.991 -0.001" />
+    <Entity Name="Jer1" Def="OpenWorld_Gate_Withcollision_Jer" relationshipGroup="2" Pos="-803.462 -64.117 662.841" />
+    <Entity Name="map1_JerDreadnought4" Def="Platform_JerDreadnought" Pos="-561.750 -61.642 629.041" Rot="0.000 1.000 0.000 0.000" />
+    <Entity Name="01_map1_JerDreadnought11" Def="Platform_JerDreadnought" Pos="-479.556 -61.642 695.849" />
+    <Entity Name="map1_JerDreadnought2" Def="Platform_JerDreadnought" Pos="-275.609 -109.165 662.277" Rot="0.707 0.000 -0.707 0.000" />
+    <Entity Name="map1_JerDreadnought1" Def="Platform_JerDreadnought" Pos="-677.360 -49.288 662.863" Rot="0.000 -0.707 0.000 0.707" />
+    <Entity Name="turret_2_team2_1" Def="ClanShip_SideTurretSpawn" Pos="-590.394 -58.529 723.303" Rot="0.002 0.989 0.150 0.018" />
+    <Entity Name="turret_4_team2_2" Def="ClanShip_SideTurretSpawn" Pos="-162.570 -53.590 552.010" Rot="-0.125 0.000 0.000 0.992" />
+    <Entity Name="SpawnTeam2Ship5" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-852.560 -90.136 651.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="turret_1_team2_4" Def="ClanShip_SideTurretSpawn" Pos="-798.341 -93.300 713.434" Rot="1.000 0.000 0.000 0.000" />
+    <Entity Name="SpawnTeam2Ship4" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-852.560 -70.145 651.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="turret_4_team2_1" Def="ClanShip_SideTurretSpawn" Pos="-162.554 -53.640 773.242" Rot="0.000 0.992 0.130 0.000" />
+    <Entity Name="SpawnTeam2Ship18" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-872.560 -50.111 651.509" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship6" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-852.560 -50.136 651.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship7" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-832.571 -50.136 651.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship8" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294960388" Pos="-832.571 -50.136 671.131" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="turret_4_team2_3" Def="ClanShip_SideTurretSpawn" Pos="-162.632 -90.375 552.119" Rot="0.007 -0.130 0.991 -0.006" />
+    <Entity Name="turret_4_team2_4" Def="ClanShip_SideTurretSpawn" Pos="-162.587 -90.521 772.822" Rot="0.992 0.000 -0.002 0.130" />
+    <Entity Name="map1_JerDreadnought5" Def="Platform_JerDreadnought" Pos="-379.152 -61.710 627.230" Rot="0.000 1.000 0.000 0.000" />
+    <Entity Name="additional_1_team2_2" Def="ClanShip_Accelerator" relationshipGroup="2" Pos="-378.982 -53.402 608.664" Rot="0.000 0.005 0.000 1.000" Skin="s2" warp_distance="2000.000" />
+    <Entity Name="01_EngineRedC1" Def="Effects_Dreadnought_EngineRedC1" Pos="-95.065 -70.953 607.895" Rot="0.000 0.000 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="main_1_team2_1" Def="ClanShip_BaseGen" Pos="-435.791 -105.067 662.659" Rot="0.707 0.000 0.707 0.000" />
+    <Entity Name="main_2_team2_1" Def="ClanShip_BaseGen" Pos="-765.499 -36.382 662.311" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="AimPoint4" Def="ClanShip_AimPoint" relationshipGroup="2" Pos="-754.159 -83.000 563.571" type="0" />
+    <Entity Name="AimPoint5" Def="ClanShip_AimPoint" relationshipGroup="2" Pos="-610.896 -106.581 558.541" type="0" />
+    <Entity Name="AimPoint6" Def="ClanShip_AimPoint" relationshipGroup="2" Pos="-316.121 -83.000 536.910" type="0" />
+    <Entity Name="AimPoint7" Def="ClanShip_AimPoint" relationshipGroup="2" Pos="-199.130 -43.641 488.758" type="0" />
+    <Entity Name="AimPoint8" Def="ClanShip_AimPoint" relationshipGroup="2" Pos="-543.875 -65.158 528.479" type="0" />
+    <Entity Name="AimPoint9" Def="ClanShip_AimPoint" relationshipGroup="2" Pos="-849.920 -110.871 581.193" type="0" />
+    <Entity Name="01_EngineRedC9" Def="Effects_Dreadnought_EngineRedC2" Pos="-72.599 -68.813 662.467" Rot="0.000 0.000 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineRedC2" Def="Effects_Dreadnought_EngineRedC1" Pos="-95.081 -70.953 716.992" Rot="0.000 0.000 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineRedC3" Def="Effects_Dreadnought_EngineRedC3" Pos="-143.240 -72.097 561.944" Rot="0.000 0.000 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineRedC4" Def="Effects_Dreadnought_EngineRedC3" Pos="-143.299 -71.722 763.502" Rot="0.000 0.000 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineRedC5" Def="Effects_Dreadnought_EngineRedC4" Pos="-154.548 -58.500 579.883" Rot="0.000 0.000 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineRedC6" Def="Effects_Dreadnought_EngineRedC4" Pos="-154.716 -84.976 579.883" Rot="0.000 0.000 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineRedC7" Def="Effects_Dreadnought_EngineRedC4" Pos="-154.625 -58.500 745.665" Rot="0.000 0.000 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_EngineRedC8" Def="Effects_Dreadnought_EngineRedC4" Pos="-154.657 -84.941 745.665" Rot="0.000 0.000 -0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_PointLightFlickeringOdd1" Def="Lights_PointLightFlickeringOdd" Pos="-56.422 -66.304 661.461" start_off="0" rad="100.00000" color="0xFFBF4D40" />
+    <Entity Name="01_Beacon1" Def="ClanShip_Stuff_Jer_Beacon" relationshipGroup="2" Pos="-1064.461 -91.413 632.762" Rot="-0.434 -0.438 0.559 0.554" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue1" Def="Effects_Dreadnought_BeaconFlareBlue" relationshipGroup="2" bindTo="01_Beacon1" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmallLight10" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy11" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmallLight11" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy12" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Beacon3" Def="ClanShip_Stuff_Jer_Beacon" relationshipGroup="2" Pos="-803.937 -48.556 599.546" Rot="-0.357 -0.194 0.672 0.620" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue3" Def="Effects_Dreadnought_BeaconFlareBlue" relationshipGroup="2" bindTo="01_Beacon3" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Lightroads1" Def="ClanShip_Lightobject_Lightroads" relationshipGroup="2" Pos="-806.980 -90.525 662.506" Skin="s2" />
+    <Entity Name="01_Kolpachki2" Def="ClanShip_Lightobject_Kolpachki" relationshipGroup="2" Pos="-776.597 -33.758 631.104" Rot="-0.276 0.000 0.000 0.961" Skin="s2" />
+    <Entity Name="01_Beacon5" Def="ClanShip_Stuff_Jer_Beacon" relationshipGroup="2" Pos="-160.533 4.051 648.962" Rot="-0.197 -0.690 0.207 0.666" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue5" Def="Effects_Dreadnought_BeaconFlareBlue" relationshipGroup="2" bindTo="01_Beacon5" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Beacon6" Def="ClanShip_Stuff_Jer_Beacon" relationshipGroup="2" Pos="-293.169 -79.556 530.261" Rot="-0.497 -0.502 0.503 0.498" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue6" Def="Effects_Dreadnought_BeaconFlareBlue" relationshipGroup="2" bindTo="01_Beacon6" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Kolpachki1" Def="ClanShip_Lightobject_Kolpachki" relationshipGroup="2" Pos="-776.551 -33.807 692.765" Skin="s2" />
+    <Entity Name="01_AmbientSoundSpot2" Def="Sound_AmbientSoundSpot" Pos="-53.531 -72.072 660.116" soundname="sound/dreadnought/engine" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="01_Beacon8" Def="ClanShip_Stuff_Jer_Beacon" relationshipGroup="2" Pos="-1064.428 -91.397 691.629" Rot="0.562 -0.554 -0.439 0.430" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue8" Def="Effects_Dreadnought_BeaconFlareBlue" relationshipGroup="2" bindTo="01_Beacon8" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Tubes4" Def="ClanShip_Lightobject_Tubes" relationshipGroup="2" Pos="-217.568 -93.858 579.122" Rot="1.000 0.003 0.000 0.000" Skin="s2" />
+    <Entity Name="01_Beacon10" Def="ClanShip_Stuff_Jer_Beacon" relationshipGroup="2" Pos="-803.746 -48.629 726.153" Rot="0.366 0.202 0.682 0.600" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue10" Def="Effects_Dreadnought_BeaconFlareBlue" relationshipGroup="2" bindTo="01_Beacon10" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Tubes3" Def="ClanShip_Lightobject_Tubes" relationshipGroup="2" Pos="-217.435 -93.708 746.113" Rot="0.001 0.000 1.000 0.002" Skin="s2" />
+    <Entity Name="01_Tubes2" Def="ClanShip_Lightobject_Tubes" relationshipGroup="2" Pos="-217.569 -50.231 578.979" Rot="0.001 1.000 0.000 -0.001" Skin="s2" />
+    <Entity Name="01_Beacon12" Def="ClanShip_Stuff_Jer_Beacon" relationshipGroup="2" Pos="-292.984 -82.150 794.740" Rot="0.498 0.503 0.502 0.497" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue12" Def="Effects_Dreadnought_BeaconFlareBlue" relationshipGroup="2" bindTo="01_Beacon12" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Tubes1" Def="ClanShip_Lightobject_Tubes" relationshipGroup="2" Pos="-217.713 -50.075 745.942" Rot="0.000 0.002 -0.002 1.000" Skin="s2" />
+    <Entity Name="01_Rings4" Def="ClanShip_Lightobject_Rings" relationshipGroup="2" Pos="-216.008 -97.046 744.549" Rot="0.966 0.000 0.000 0.258" Skin="s2" />
+    <Entity Name="01_Beacon14" Def="ClanShip_Stuff_Jer_Beacon" relationshipGroup="2" Pos="-160.441 4.118 672.458" Rot="0.175 -0.692 -0.168 0.680" Skin="s2" />
+    <Entity Name="01_BeaconFlareBlue14" Def="Effects_Dreadnought_BeaconFlareBlue" relationshipGroup="2" bindTo="01_Beacon14" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_CilinderHor1" Def="ClanShip_Lightobject_CilinderHor" relationshipGroup="2" Pos="-243.055 -54.092 819.481" Skin="s2" />
+    <Entity Name="01_CilinderHor2" Def="ClanShip_Lightobject_CilinderHor" relationshipGroup="2" Pos="-244.302 -106.335 813.578" Skin="s2" />
+    <Entity Name="01_CilinderHor3" Def="ClanShip_Lightobject_CilinderHor" relationshipGroup="2" Pos="-243.100 -55.093 501.633" Skin="s2" />
+    <Entity Name="01_CilinderHor4" Def="ClanShip_Lightobject_CilinderHor" relationshipGroup="2" Pos="-244.497 -106.139 514.114" Skin="s2" />
+    <Entity Name="01_Rings1" Def="ClanShip_Lightobject_Rings" relationshipGroup="2" Pos="-216.104 -47.264 745.945" Skin="s2" />
+    <Entity Name="01_Rings2" Def="ClanShip_Lightobject_Rings" relationshipGroup="2" Pos="-215.957 -46.969 580.354" Rot="-0.262 0.000 0.000 0.965" Skin="s2" />
+    <Entity Name="01_Rings3" Def="ClanShip_Lightobject_Rings" relationshipGroup="2" Pos="-216.062 -96.939 579.066" Rot="1.000 0.000 0.000 0.001" Skin="s2" />
+    <Entity Name="01_PlasmaHurt9" Def="PlasmaHurt" Pos="573.257 -71.389 662.604" max_damage_per_second="100000.000" min_damage_per_second="10000.000" damage_type="0" filter="" start_disabled="0" box_dimensions="1330.000 56.000 72.000" />
+    <Entity Name="01_PlasmaHurt8" Def="PlasmaHurt" Pos="448.124 -71.389 716.536" max_damage_per_second="100000.000" min_damage_per_second="10000.000" damage_type="0" filter="" start_disabled="0" box_dimensions="1088.000 22.000 38.000" />
+    <Entity Name="01_PlasmaHurt7" Def="PlasmaHurt" Pos="448.124 -71.389 608.184" max_damage_per_second="100000.000" min_damage_per_second="10000.000" damage_type="0" filter="" start_disabled="0" box_dimensions="1088.000 22.000 38.000" />
+    <Entity Name="01_AmbientSoundSpot3" Def="Sound_AmbientSoundSpot" Pos="-126.163 -72.072 568.563" soundname="sound/dreadnought/engine_add" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="01_DreadLightBlueSmallLight1" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy1" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmallLight2" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy2" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmallLight3" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy3" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmallLight4" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy4" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmallLight5" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy5" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmallLight6" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy10" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlueSmallLight7" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy9" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_drone_left_start1" Def="PathObject" Pos="-515.878 -61.952 448.535" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-515.878 -61.952 448.535" />
+      <Point p="-459.090 -61.952 249.020" />
+      <Point p="-459.091 -61.952 -487.740" />
+    </Entity>
+    <Entity Name="01_drone_left_start2" Def="PathObject" Pos="-498.098 -61.952 448.535" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-498.098 -61.952 448.535" />
+      <Point p="-441.310 -61.952 249.020" />
+      <Point p="-441.311 -61.952 -487.740" />
+    </Entity>
+    <Entity Name="01_drone_left_start3" Def="PathObject" Pos="-472.592 -61.952 448.535" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-472.591 -61.952 448.535" />
+      <Point p="-415.803 -61.952 249.020" />
+      <Point p="-415.804 -61.952 -487.740" />
+    </Entity>
+    <Entity Name="01_drone_left_start4" Def="PathObject" Pos="-455.708 -61.952 448.535" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-455.707 -61.952 448.535" />
+      <Point p="-398.919 -61.952 249.020" />
+      <Point p="-398.920 -61.952 -487.740" />
+    </Entity>
+    <Entity Name="01_Group1" Def="Logic_SpawnAreaAgentWave_Group0" Pos="-512.261 -62.333 506.494" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="01_Group2" Def="Logic_SpawnAreaAgentWave_Group0" Pos="-492.719 -62.333 506.494" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="01_Group3" Def="Logic_SpawnAreaAgentWave_Group0" Pos="-467.920 -62.333 506.494" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="01_Group4" Def="Logic_SpawnAreaAgentWave_Group0" Pos="-452.638 -62.333 506.494" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="main_3_team2_1" Def="ClanShip_BaseGen" Pos="-168.921 4.684 660.786" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="01_SGen1" Def="ClanShip_Stuff_Emp_SGen" relationshipGroup="2" Pos="-161.863 -2.365 680.884" Skin="s2" />
+    <Entity Name="01_SGen2" Def="ClanShip_Stuff_Emp_SGen" relationshipGroup="2" Pos="-161.863 -2.365 640.668" Skin="s2" />
+    <Entity Name="01_Radar1" Def="ClanShip_Stuff_Emp_Radar" relationshipGroup="2" Pos="-158.600 -12.055 704.735" Rot="0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_Radar2" Def="ClanShip_Stuff_Emp_Radar" relationshipGroup="2" Pos="-158.600 -11.852 616.708" Rot="-0.707 0.000 -0.000 0.707" Skin="s2" />
+    <Entity Name="01_PlasmaHurt1" Def="PlasmaHurt" Pos="-42.321 -72.244 763.345" max_damage_per_second="100000.000" min_damage_per_second="10000.000" damage_type="0" filter="" start_disabled="0" box_dimensions="202.000 16.000 16.000" />
+    <Entity Name="01_PlasmaHurt2" Def="PlasmaHurt" Pos="-94.435 -58.417 745.869" max_damage_per_second="100000.000" min_damage_per_second="10000.000" damage_type="0" filter="" start_disabled="0" box_dimensions="120.000 8.000 8.000" />
+    <Entity Name="01_PlasmaHurt3" Def="PlasmaHurt" Pos="-94.435 -85.145 745.869" max_damage_per_second="100000.000" min_damage_per_second="10000.000" damage_type="0" filter="" start_disabled="0" box_dimensions="120.000 8.000 8.000" />
+    <Entity Name="01_PlasmaHurt4" Def="PlasmaHurt" Pos="-42.321 -72.244 561.992" max_damage_per_second="100000.000" min_damage_per_second="10000.000" damage_type="0" filter="" start_disabled="0" box_dimensions="202.000 16.000 16.000" />
+    <Entity Name="01_PlasmaHurt5" Def="PlasmaHurt" Pos="-94.435 -58.417 579.854" max_damage_per_second="100000.000" min_damage_per_second="10000.000" damage_type="0" filter="" start_disabled="0" box_dimensions="120.000 8.000 8.000" />
+    <Entity Name="01_PlasmaHurt6" Def="PlasmaHurt" Pos="-94.435 -85.145 579.775" max_damage_per_second="100000.000" min_damage_per_second="10000.000" damage_type="0" filter="" start_disabled="0" box_dimensions="120.000 8.000 8.000" />
+    <Entity Name="01_SideTurret1" Def="ClanShip_SideTurret" relationshipGroup="2" Pos="-764.534 -38.486 651.653" Rot="0.000 -0.707 0.000 0.707" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_SideTurret2" Def="ClanShip_SideTurret" relationshipGroup="2" Pos="-764.496 -38.486 673.215" Rot="0.000 -0.707 0.000 0.707" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_SideTurret3" Def="ClanShip_SideTurret" relationshipGroup="2" Pos="-435.234 -98.166 653.243" Rot="0.000 0.000 1.000 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_SideTurret4" Def="ClanShip_SideTurret" relationshipGroup="2" Pos="-435.201 -98.166 672.384" Rot="1.000 0.000 0.000 0.000" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_SideTurret5" Def="ClanShip_SideTurret" relationshipGroup="2" Pos="-188.946 4.919 652.821" Rot="0.000 0.707 0.000 0.707" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="01_SideTurret6" Def="ClanShip_SideTurret" relationshipGroup="2" Pos="-188.911 4.919 668.888" Rot="0.000 0.707 0.000 0.707" Skin="s2" do_attack_cargoship="0" />
+    <Entity Name="additional_2_team2_1" Def="ClanShip_BombDispenser" relationshipGroup="2" Pos="-615.424 -42.139 662.796" Skin="s2" Activity="IDLE" />
+    <Entity Name="01_Dummy1" Def="Helpers_Dummy" relationshipGroup="2" Pos="-756.811 -53.505 555.768" Skin="s2" />
+    <Entity Name="01_Dummy2" Def="Helpers_Dummy" relationshipGroup="2" Pos="-716.611 -54.049 563.033" Skin="s2" />
+    <Entity Name="01_Dummy3" Def="Helpers_Dummy" relationshipGroup="2" Pos="-674.331 -51.925 571.939" Skin="s2" />
+    <Entity Name="01_Dummy4" Def="Helpers_Dummy" relationshipGroup="2" Pos="-601.627 -60.400 573.839" Skin="s2" />
+    <Entity Name="01_Dummy5" Def="Helpers_Dummy" relationshipGroup="2" Pos="-401.350 -60.437 573.848" Skin="s2" />
+    <Entity Name="01_Dummy6" Def="Helpers_Dummy" relationshipGroup="2" Pos="-756.007 -53.536 770.142" Skin="s2" />
+    <Entity Name="01_Dummy7" Def="Helpers_Dummy" relationshipGroup="2" Pos="-715.630 -54.042 761.854" Skin="s2" />
+    <Entity Name="01_Dummy8" Def="Helpers_Dummy" relationshipGroup="2" Pos="-673.313 -51.915 752.919" Skin="s2" />
+    <Entity Name="01_DreadLightBlueSmallLight12" Def="Effects_Dreadnought_DreadLightBlueSmallLight2" relationshipGroup="2" bindTo="01_Dummy8" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Dummy9" Def="Helpers_Dummy" relationshipGroup="2" Pos="-600.725 -60.440 750.735" Skin="s2" />
+    <Entity Name="01_Dummy10" Def="Helpers_Dummy" relationshipGroup="2" Pos="-400.296 -60.391 750.748" Skin="s2" />
+    <Entity Name="01_Dummy11" Def="Helpers_Dummy" relationshipGroup="2" Pos="-178.960 17.760 697.826" Skin="s2" />
+    <Entity Name="01_Dummy12" Def="Helpers_Dummy" relationshipGroup="2" Pos="-178.763 17.551 624.549" Skin="s2" />
+    <Entity Name="01_AverageTurret1" Def="ClanShip_AverageTurret" relationshipGroup="2" Pos="-860.431 -79.952 614.655" Skin="s2" />
+    <Entity Name="01_map1_JerDreadnought2" Def="Platform_JerDreadnought" Pos="-179.940 -108.076 687.668" Rot="0.707 0.000 -0.707 0.000" />
+    <Entity Name="01_AverageTurret3" Def="ClanShip_AverageTurret" relationshipGroup="2" Pos="-178.119 -120.752 636.558" Rot="0.000 0.000 1.000 -0.004" Skin="s2" />
+    <Entity Name="01_AverageTurret5" Def="ClanShip_AverageTurret" relationshipGroup="2" Pos="-776.462 -93.751 623.542" Rot="0.000 0.000 1.000 0.001" Skin="s2" />
+    <Entity Name="01_map1_JerDreadnought1" Def="Platform_JerDreadnought" Pos="-179.940 -108.076 638.813" Rot="0.707 0.000 -0.707 0.000" />
+    <Entity Name="01_AverageTurret4" Def="ClanShip_AverageTurret" relationshipGroup="2" Pos="-478.544 -48.981 620.556" Skin="s2" />
+    <Entity Name="01_map1_JerDreadnought3" Def="Platform_JerDreadnought" Pos="-380.634 -87.391 638.813" Rot="0.707 0.000 -0.707 0.000" />
+    <Entity Name="01_map1_JerDreadnought4" Def="Platform_JerDreadnought" Pos="-380.634 -87.391 687.668" Rot="0.707 0.000 -0.707 0.000" />
+    <Entity Name="01_AverageTurret2" Def="ClanShip_AverageTurret" relationshipGroup="2" Pos="-379.804 -100.090 636.926" Rot="0.000 0.000 1.000 0.001" Skin="s2" />
+    <Entity Name="01_AverageTurret6" Def="ClanShip_AverageTurret" relationshipGroup="2" Pos="-717.535 -106.366 634.368" Rot="0.000 0.000 1.000 0.001" Skin="s2" />
+    <Entity Name="01_map1_JerDreadnought5" Def="Platform_JerDreadnought" Pos="-718.372 -93.702 638.813" Rot="0.707 0.000 -0.707 0.000" />
+    <Entity Name="01_map1_JerDreadnought6" Def="Platform_JerDreadnought" Pos="-718.372 -93.702 687.668" Rot="0.707 0.000 -0.707 0.000" />
+    <Entity Name="01_PlasmaCannon1" Def="ClanShip_PlasmaCannon" relationshipGroup="2" Pos="-717.859 -106.412 691.325" Rot="1.000 0.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_PlasmaCannon2" Def="ClanShip_PlasmaCannon" relationshipGroup="2" Pos="-773.939 -93.833 701.645" Rot="1.000 0.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_PlasmaCannon3" Def="ClanShip_PlasmaCannon" relationshipGroup="2" Pos="-379.882 -100.271 690.797" Rot="1.000 0.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_PlasmaCannon4" Def="ClanShip_PlasmaCannon" relationshipGroup="2" Pos="-180.331 -120.804 690.130" Rot="1.000 0.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_PlasmaCannon5" Def="ClanShip_PlasmaCannon" relationshipGroup="2" Pos="-860.977 -79.901 709.783" Rot="0.000 1.000 0.000 0.000" Skin="s2" />
+    <Entity Name="MainTurret6" Def="ClanShip_MainTurret" relationshipGroup="2" Pos="-443.609 -41.455 662.968" Skin="s2" />
+    <Entity Name="01_map1_JerDreadnought7" Def="Platform_JerDreadnought" Pos="-441.361 -53.467 662.863" Rot="0.000 -0.707 0.000 0.707" />
+    <Entity Name="01_map1_JerDreadnought8" Def="Platform_JerDreadnought" Pos="-379.065 -61.710 694.038" />
+    <Entity Name="01_map1_JerDreadnought9" Def="Platform_JerDreadnought" Pos="-561.663 -61.642 695.849" />
+    <Entity Name="01_map1_JerDreadnought10" Def="Platform_JerDreadnought" Pos="-479.643 -61.642 629.041" Rot="0.000 1.000 0.000 0.000" />
+    <Entity Name="01_ElementA1" Def="ClanShip_Stuff_Jer_ElementA" relationshipGroup="2" Pos="-672.267 -68.873 599.721" Rot="-0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementA2" Def="ClanShip_Stuff_Jer_ElementA" relationshipGroup="2" Pos="-634.780 -68.873 599.721" Rot="-0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementA3" Def="ClanShip_Stuff_Jer_ElementA" relationshipGroup="2" Pos="-634.746 -68.921 725.661" Rot="0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementA4" Def="ClanShip_Stuff_Jer_ElementA" relationshipGroup="2" Pos="-672.222 -68.921 725.661" Rot="0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementA5" Def="ClanShip_Stuff_Jer_ElementA1" relationshipGroup="2" Pos="-860.945 -78.088 685.045" Rot="0.000 1.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_ElementA6" Def="ClanShip_Stuff_Jer_ElementA1" relationshipGroup="2" Pos="-999.526 -77.922 685.045" Rot="0.000 1.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_ElementA7" Def="ClanShip_Stuff_Jer_ElementA1" relationshipGroup="2" Pos="-999.526 -77.922 639.328" Skin="s2" />
+    <Entity Name="01_ElementA8" Def="ClanShip_Stuff_Jer_ElementA1" relationshipGroup="2" Pos="-860.945 -78.088 639.328" Skin="s2" />
+    <Entity Name="01_ElementA9" Def="ClanShip_Stuff_Jer_ElementA1" relationshipGroup="2" Pos="-893.882 -95.057 686.753" Rot="1.000 0.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_ElementA10" Def="ClanShip_Stuff_Jer_ElementA1" relationshipGroup="2" Pos="-463.940 -100.819 671.349" Rot="1.000 0.000 0.000 0.000" Skin="s2" />
+    <Entity Name="01_ElementA11" Def="ClanShip_Stuff_Jer_ElementA1" relationshipGroup="2" Pos="-463.764 -100.545 653.879" Rot="0.000 0.000 1.000 0.000" Skin="s2" />
+    <Entity Name="01_ElementA12" Def="ClanShip_Stuff_Jer_ElementA1" relationshipGroup="2" Pos="-894.235 -94.783 638.025" Rot="0.000 0.000 1.000 0.000" Skin="s2" />
+    <Entity Name="01_ElementB1" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-689.066 -58.925 724.001" Rot="0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementB2" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-654.977 -58.925 724.001" Rot="0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementB3" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-654.733 -76.707 720.531" Rot="0.000 0.707 0.707 0.000" Skin="s2" />
+    <Entity Name="01_ElementB4" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-688.906 -76.707 720.531" Rot="0.000 0.707 0.707 0.000" Skin="s2" />
+    <Entity Name="01_ElementB5" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-654.888 -76.715 601.993" Rot="-0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementB6" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-689.061 -76.715 601.993" Rot="-0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementB7" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-688.731 -58.932 602.447" Rot="0.000 0.707 -0.707 0.000" Skin="s2" />
+    <Entity Name="01_ElementB8" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-654.642 -58.932 602.447" Rot="0.000 0.707 -0.707 0.000" Skin="s2" />
+    <Entity Name="01_ElementB9" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-282.210 -35.075 699.402" Rot="0.000 0.991 0.131 0.000" Skin="s2" />
+    <Entity Name="01_ElementB10" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-265.755 -35.075 699.402" Rot="0.000 0.991 0.131 0.000" Skin="s2" />
+    <Entity Name="01_ElementB11" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-330.840 -35.075 699.402" Rot="0.000 0.991 0.131 0.000" Skin="s2" />
+    <Entity Name="01_ElementB12" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-314.385 -35.075 699.402" Rot="0.000 0.991 0.131 0.000" Skin="s2" />
+    <Entity Name="01_ElementB13" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-330.840 -35.075 624.646" Rot="-0.130 0.000 0.000 0.992" Skin="s2" />
+    <Entity Name="01_ElementB14" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-314.385 -35.075 624.646" Rot="-0.130 0.000 0.000 0.992" Skin="s2" />
+    <Entity Name="01_ElementB15" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-282.210 -35.075 624.646" Rot="-0.130 0.000 0.000 0.992" Skin="s2" />
+    <Entity Name="01_ElementB16" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-265.755 -35.075 624.646" Rot="-0.130 0.000 0.000 0.992" Skin="s2" />
+    <Entity Name="01_ElementB17" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-793.181 -73.275 604.532" Rot="-0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementB18" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-793.635 -58.243 604.490" Rot="0.000 0.707 -0.707 0.000" Skin="s2" />
+    <Entity Name="01_ElementB19" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-793.026 -73.024 721.016" Rot="0.000 0.707 0.707 0.000" Skin="s2" />
+    <Entity Name="01_ElementB20" Def="ClanShip_Stuff_Jer_ElementB" relationshipGroup="2" Pos="-793.851 -58.417 721.081" Rot="0.707 0.000 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementC1" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-561.879 -43.933 652.751" Rot="0.000 0.707 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementC2" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-561.864 -43.960 672.947" Rot="0.000 0.707 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementC3" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-817.630 -86.331 607.525" Rot="0.500 0.500 -0.500 -0.500" Skin="s2" />
+    <Entity Name="01_ElementC4" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-818.204 -86.285 716.853" Rot="0.500 0.500 0.500 0.500" Skin="s2" />
+    <Entity Name="01_ElementC11" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-109.422 -26.772 695.006" Rot="0.129 0.010 0.001 0.992" Skin="s2" />
+    <Entity Name="01_ElementF2" Def="ClanShip_Stuff_Jer_ElementF" relationshipGroup="2" Pos="-500.874 -46.389 662.398" Rot="0.000 0.707 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementC9" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-95.690 -26.710 694.738" Rot="0.129 0.010 0.001 0.992" Skin="s2" />
+    <Entity Name="01_ElementC10" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-102.557 -26.741 694.872" Rot="0.129 0.010 0.001 0.992" Skin="s2" />
+    <Entity Name="01_ElementF5" Def="ClanShip_Stuff_Jer_ElementF" relationshipGroup="2" Pos="-511.125 -46.612 662.335" Rot="0.000 0.707 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementF4" Def="ClanShip_Stuff_Jer_ElementF" relationshipGroup="2" Pos="-301.734 -41.714 599.202" Rot="-0.130 0.000 0.000 0.992" Skin="s2" />
+    <Entity Name="01_ElementF3" Def="ClanShip_Stuff_Jer_ElementF" relationshipGroup="2" Pos="-303.313 -41.879 725.129" Rot="0.000 0.993 0.120 0.000" Skin="s2" />
+    <Entity Name="01_ElementC12" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-116.273 -26.803 695.140" Rot="0.129 0.010 0.001 0.992" Skin="s2" />
+    <Entity Name="01_ElementD1" Def="ClanShip_Stuff_Jer_ElementD" relationshipGroup="2" Pos="-374.301 -45.356 655.664" Rot="0.000 -0.802 0.000 0.598" Skin="s2" />
+    <Entity Name="01_ElementD2" Def="ClanShip_Stuff_Jer_ElementD" relationshipGroup="2" Pos="-344.362 -45.356 655.664" Rot="0.000 -0.802 0.000 0.598" Skin="s2" />
+    <Entity Name="01_ElementD3" Def="ClanShip_Stuff_Jer_ElementD" relationshipGroup="2" Pos="-344.401 -45.356 669.757" Rot="0.000 0.598 0.000 0.802" Skin="s2" />
+    <Entity Name="01_ElementD4" Def="ClanShip_Stuff_Jer_ElementD" relationshipGroup="2" Pos="-374.328 -45.356 669.757" Rot="0.000 0.598 0.000 0.802" Skin="s2" />
+    <Entity Name="01_ElementD5" Def="ClanShip_Stuff_Jer_ElementD" relationshipGroup="2" Pos="-534.652 -45.839 656.176" Rot="0.000 -0.802 0.000 0.597" Skin="s2" />
+    <Entity Name="01_ElementD6" Def="ClanShip_Stuff_Jer_ElementD" relationshipGroup="2" Pos="-534.702 -45.839 669.220" Rot="0.000 0.597 0.000 0.802" Skin="s2" />
+    <Entity Name="01_ElementD7" Def="ClanShip_Stuff_Jer_ElementD" relationshipGroup="2" Pos="-712.447 -72.663 723.391" Rot="0.565 0.425 0.425 0.565" Skin="s2" />
+    <Entity Name="01_ElementD8" Def="ClanShip_Stuff_Jer_ElementD" relationshipGroup="2" Pos="-712.204 -72.880 602.309" Rot="0.428 0.563 -0.563 -0.428" Skin="s2" />
+    <Entity Name="01_ElementE1" Def="ClanShip_Stuff_Jer_ElementE" relationshipGroup="2" Pos="-258.305 -58.266 536.391" Rot="-0.131 0.000 0.000 0.991" Skin="s2" />
+    <Entity Name="01_ElementE2" Def="ClanShip_Stuff_Jer_ElementE" relationshipGroup="2" Pos="-258.217 -58.472 788.431" Rot="0.000 0.991 0.131 0.000" Skin="s2" />
+    <Entity Name="01_ElementE3" Def="ClanShip_Stuff_Jer_ElementE" relationshipGroup="2" Pos="-193.394 -35.513 629.585" Rot="-0.131 0.000 0.000 0.991" Skin="s2" />
+    <Entity Name="01_ElementE4" Def="ClanShip_Stuff_Jer_ElementE" relationshipGroup="2" Pos="-193.327 -35.323 694.926" Rot="0.131 0.000 0.000 0.991" Skin="s2" />
+    <Entity Name="01_ElementF1" Def="ClanShip_Stuff_Jer_ElementF" relationshipGroup="2" Pos="-394.231 -46.389 662.501" Rot="0.000 0.707 0.000 0.707" Skin="s2" />
+    <Entity Name="01_ElementC13" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-95.669 -26.814 628.504" Rot="0.000 0.992 -0.129 0.000" Skin="s2" />
+    <Entity Name="01_ElementC14" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-102.536 -26.845 628.638" Rot="0.000 0.992 -0.129 0.000" Skin="s2" />
+    <Entity Name="01_ElementC15" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-109.401 -26.876 628.772" Rot="0.000 0.992 -0.129 0.000" Skin="s2" />
+    <Entity Name="01_ElementC16" Def="ClanShip_Stuff_Jer_ElementC" relationshipGroup="2" Pos="-116.252 -26.907 628.906" Rot="0.000 0.992 -0.129 0.000" Skin="s2" />
+    <Entity Name="decoration_7_team2_1" Def="Helpers_TagPoint" Pos="-916.072 -81.257 623.192" Rot="0.000 0.999 0.000 -0.039" relationshipGroup="2" Skin="s2" />
+    <Entity Name="decoration_7_team2_2" Def="Helpers_TagPoint" Pos="-916.301 -81.257 701.119" Rot="0.000 0.999 0.000 0.046" relationshipGroup="2" Skin="s2" />
+  </EntityContainer>
+</Scene>
