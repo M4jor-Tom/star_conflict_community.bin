@@ -1,0 +1,155 @@
+﻿source_file  Y:/art/source/ui/graphics/login_screen/login_screen.ma
+//by sega
+//at Mon Dec 05 15:04:12 2011
+
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 80 14
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object select_color
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object cursor
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff98afd4
+			size 80 13
+			effect ""
+			alignment "LM"
+			sampleText "10000000"
+			font "Tiny"
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite dfeee10
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/login_screen.tif"
+			blend color_add
+			vertices_nc
+			{
+				79.5306 0.611542	1.60986 0.611542	79.5306 1.47781	1.60986 1.47781	
+				0.396459 0.249849	0.400568 0.249849	0.396459 0.23874	0.400568 0.23874	
+			}
+		}
+		visible_on select
+	}
+	sprite dfeee65
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/login_screen.tif"
+			blend color_add
+			vertices_nc
+			{
+				79.5306 14.7354	1.60986 14.7354	79.5306 15.6016	1.60986 15.6016	
+				0.396459 0.249849	0.400568 0.249849	0.396459 0.23874	0.400568 0.23874	
+			}
+		}
+		visible_on select
+	}
+	sprite dfeee66
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/login_screen.tif"
+			blend color_add
+			vertices_nc
+			{
+				0.743591 0.611572	0.743591 15.6016	1.60986 0.611572	1.60986 15.6016	
+				0.396459 0.249849	0.400568 0.249849	0.396459 0.23874	0.400568 0.23874	
+			}
+		}
+		visible_on select
+	}
+	sprite dfeee67
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/login_screen.tif"
+			blend color_add
+			vertices_nc
+			{
+				79.5306 0.611511	79.5306 15.6016	80.3969 0.611511	80.3969 15.6016	
+				0.396459 0.249849	0.400568 0.249849	0.396459 0.23874	0.400568 0.23874	
+			}
+		}
+		visible_on select
+	}
+}
+
