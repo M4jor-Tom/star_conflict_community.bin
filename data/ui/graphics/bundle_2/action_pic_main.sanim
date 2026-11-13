@@ -1,0 +1,148 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle_2.ma"
+//by sergey_mitryaev
+//at Mon May 23 12:21:38 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 854 456
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 25 394
+			opacity 255
+			color 0xffffffff
+			size 120 20
+			effect "ui\graphics\arena\arena_btn_1"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title28
+	{
+		defaults
+		{
+			pos 25 302
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "LM"
+			sampleText "ВЫходные в месте с СтаркоВывывЫ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 25 328
+			opacity 255
+			color 0xff99ffff
+			size 500 50
+			effect ""
+			alignment "LT"
+			sampleText "ВЫходные в месте с СтаркоВывывЫ|dgff yjrt y ym my tdtt hjdgh dddddd djk hj|fgfrfrf rthh h rth  "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite sp41
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				4.00005 4.00002	10 4.00002	844 4.00002	850 4.00002	4.00005 10	10 10	844 10	850 10	4.00005 446	10 446	844 446	850 446	4.00005 452	10 452	844 452	850 452	
+				0.450195 0.289063	0.456055 0.289063	0.459961 0.289063	0.46582 0.289063	0.450195 0.294922	0.456055 0.294922	0.459961 0.294922	0.46582 0.294922	0.450195 0.298828	0.456055 0.298828	0.459961 0.298828	0.46582 0.298828	0.450195 0.304688	0.456055 0.304688	0.459961 0.304688	0.46582 0.304688	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite pasted__sp21
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	8 -0	846 -0	854 -0	0 8	8 8	846 8	854 8	0 448	8 448	846 448	854 448	0 456	8 456	846 456	854 456	
+				0.451172 0.29492	0.458985 0.29492	0.455078 0.29492	0.462891 0.29492	0.451172 0.302732	0.458985 0.302732	0.455078 0.302732	0.462891 0.302732	0.451172 0.298822	0.458985 0.298822	0.455078 0.298822	0.462891 0.298822	0.451172 0.306643	0.458985 0.306643	0.455078 0.306643	0.462891 0.306643	
+				0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite pasted__sp22
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	8 -0	846 -0	854 -0	0 8	8 8	846 8	854 8	0 448	8 448	846 448	854 448	0 456	8 456	846 456	854 456	
+				0.494141 0.615234	0.501953 0.615234	0.501953 0.615234	0.509766 0.615234	0.494141 0.623047	0.501953 0.623047	0.501953 0.623047	0.509766 0.623047	0.494141 0.623043	0.501953 0.623043	0.501953 0.623043	0.509766 0.623043	0.494141 0.630864	0.501953 0.630864	0.501953 0.630864	0.509766 0.630864	
+				0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				4 4	850 4	4 452	850 452	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
