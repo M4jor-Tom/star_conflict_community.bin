@@ -1,0 +1,197 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_2.ma"
+//by Sergey_Mitryaev
+//at Fri Feb 10 12:33:09 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 10
+{
+	object line_1
+	{
+		defaults
+		{
+			pos 0 -2.13163e-014
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_line_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 568 2
+			opacity 255
+			color 0xffffffff
+			size 16 350
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 586 364
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 0 51.8081
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_line_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos 0 103.616
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_line_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_4
+	{
+		defaults
+		{
+			pos 0 155.424
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_line_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_5
+	{
+		defaults
+		{
+			pos 0 207.233
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_line_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_6
+	{
+		defaults
+		{
+			pos 0 259.041
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_line_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_7
+	{
+		defaults
+		{
+			pos 0 310.849
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\squad\squad_2_line_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object note
+	{
+		defaults
+		{
+			pos 32 162
+			opacity 255
+			color 0xffababab
+			size 500 30
+			effect ""
+			alignment "CM"
+			sampleText "Ни одного приглашения не найдено. Создайте свое!"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp30
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -1	6 -1	555.5 -1	561.5 -1	0 5	6 5	555.5 5	561.5 5	0 358	6 358	555.5 358	561.5 358	0 364	6 364	555.5 364	561.5 364	
+				0.00195888 0.160156	0.00781825 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195888 0.166016	0.00781825 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195888 0.178711	0.00781825 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195888 0.18457	0.00781825 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp31
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				563.5 -2	569.5 -2	580.5 -2	586.5 -2	563.5 4	569.5 4	580.5 4	586.5 4	563.5 358	569.5 358	580.5 358	586.5 358	563.5 364	569.5 364	580.5 364	586.5 364	
+				0.00195888 0.160156	0.00781825 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195888 0.166016	0.00781825 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195888 0.178711	0.00781825 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195888 0.18457	0.00781825 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+}
+
