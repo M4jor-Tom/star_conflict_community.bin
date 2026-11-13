@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="dreadnoughtbattle_map_01; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" battlefieldRadius="1800.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" useWorldLookPoint="true" />
+  <EntityContainer>
+    <Entity Name="01_FedDreadLights2" Def="Effects_Dreadnought_FedDreadLights5" Pos="-682.834 -175.781 721.645" Rot="-0.004 0.703 0.004 0.711" />
+    <Entity Name="MainTurret6" Def="ClanShip_Yard_BigPlasmaCannon" relationshipGroup="1" Pos="-680.794 -240.560 101.145" Rot="1.000 0.000 0.016 0.000" Skin="s1" />
+    <Entity Name="01_SideTurret2" Def="ClanShip_Yard_RailGun" relationshipGroup="1" Pos="-670.582 -204.353 626.799" Rot="-0.693 0.000 0.721 0.000" Skin="s1" />
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-1314.174 2311.227 -85.801" Rot="0.444 0.553 -0.534 0.460" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="01_ElementI1" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-664.470 -199.972 458.091" Rot="0.707 0.000 0.707 0.000" Skin="s1" />
+    <Entity Name="01_ElementG2" Def="ClanShip_Yard_Stuff_Fed_ElementG" relationshipGroup="1" Pos="-713.390 -225.558 274.107" Rot="0.505 0.505 0.495 0.495" Skin="s1" />
+    <Entity Name="01_DreadLightBlueSmallLight1" Def="Effects_Dreadnought_DreadLightBlueSmallLight" Pos="-661.289 -55.919 25.593" Rot="0.000 0.721 0.000 0.693" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="PlasmaCannon12" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-631.231 -143.372 483.952" Rot="0.000 -0.704 0.000 0.710" />
+    <Entity Name="PlasmaCannon3" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-739.784 -201.332 547.615" Rot="0.748 0.001 0.664 0.001" />
+    <Entity Name="PlasmaCannon4" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-731.038 -201.427 611.132" Rot="0.767 0.001 0.641 0.001" />
+    <Entity Name="01_DreadLightBlueSmallLight2" Def="Effects_Dreadnought_DreadLightBlueSmallLight" Pos="-684.399 -115.196 631.754" Rot="0.000 0.721 0.000 0.693" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="map1_FedDreadnought7" Def="Platform_FedDreadnought" relationshipGroup="1" Pos="-676.416 -151.926 515.800" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="01_FedDreadLights6" Def="Effects_Dreadnought_FedDreadLights6" Pos="-685.514 -175.732 723.152" Rot="0.000 0.721 0.000 0.693" />
+    <Entity Name="01_FedDreadLights5" Def="Effects_Dreadnought_FedDreadLights2" Pos="-683.002 -175.525 722.199" Rot="0.000 0.721 0.000 0.693" />
+    <Entity Name="neutral4_path1" Def="PathObject" Pos="497.000 -168.000 -759.015" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="497.000 -168.000 -759.015" />
+      <Point p="420.200 -165.105 -751.530" />
+      <Point p="220.970 -168.811 -706.119" />
+      <Point p="68.900 -199.359 -615.426" />
+      <Point p="10.600 -234.451 -474.747" />
+      <Point p="29.404 -292.659 -231.456" />
+      <Point p="174.098 -347.625 -14.563" />
+      <Point p="316.950 -369.052 97.037" />
+      <Point p="555.251 -361.127 146.329" />
+      <Point p="716.382 -331.027 132.225" />
+      <Point p="875.254 -295.824 154.271" />
+      <Point p="993.802 -239.416 -30.788" />
+      <Point p="821.043 -167.300 -461.036" />
+      <Point p="725.599 -164.726 -636.968" />
+      <Point p="596.309 -165.096 -759.296" />
+    </Entity>
+    <Entity Name="AmbientSoundSpot2" Def="Sound_AmbientSoundSpot" Pos="-687.597 -182.680 238.575" soundname="sound/dreadnought/shipyard_done" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="neutral4_spawn_spot3" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="470.996 -168.177 951.279" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral4_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="540.000 -166.000 -760.000" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral4_path3" Def="PathObject" Pos="421.000 -174.214 952.205" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="421.000 -174.214 952.205" />
+      <Point p="294.766 -188.364 869.303" />
+      <Point p="245.107 -187.157 808.475" />
+      <Point p="175.498 -192.278 675.966" />
+      <Point p="144.820 -215.562 529.313" />
+      <Point p="154.233 -245.742 365.025" />
+      <Point p="289.999 -281.083 282.283" />
+      <Point p="464.045 -314.314 248.335" />
+      <Point p="514.755 -315.212 288.490" />
+      <Point p="583.632 -307.356 344.855" />
+      <Point p="654.051 -278.767 439.541" />
+      <Point p="729.668 -204.251 699.947" />
+      <Point p="710.649 -164.858 894.694" />
+      <Point p="619.134 -160.730 970.017" />
+      <Point p="517.817 -168.512 958.944" />
+    </Entity>
+    <Entity Name="01_ElementG1" Def="ClanShip_Yard_Stuff_Fed_ElementG" relationshipGroup="1" Pos="-652.307 -225.558 273.883" Rot="0.505 0.505 0.495 0.495" Skin="s1" />
+    <Entity Name="01_ElementI2" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-703.378 -199.099 458.288" Rot="0.707 0.000 0.707 0.000" Skin="s1" />
+    <Entity Name="MainTurret8" Def="ClanShip_Yard_BigPlasmaCannon" relationshipGroup="1" Pos="-675.052 -139.773 516.202" Rot="0.000 1.000 0.000 0.016" />
+    <Entity Name="01_ElementK1" Def="ClanShip_Yard_Stuff_Fed_ElementK" relationshipGroup="1" Pos="-683.111 -227.092 274.477" Rot="0.000 1.000 0.000 -0.020" Skin="s1" />
+    <Entity Name="main_3_1" Def="ClanShip_Yard_TicketTower" relationshipGroup="1" Pos="-658.050 -118.213 -12.020" Rot="0.000 1.000 0.000 0.000" />
+    <Entity Name="01_SideTurret4" Def="ClanShip_Yard_RailGun" relationshipGroup="1" Pos="-711.843 -210.546 298.939" Rot="0.721 0.000 0.693 0.000" Skin="s1" />
+    <Entity Name="map1_FedDreadnought8" Def="Platform_FedDreadnought" relationshipGroup="1" Pos="-627.821 -173.956 359.429" Rot="0.000 -0.707 0.000 0.707" />
+    <Entity Name="PlasmaCannon10" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-626.509 -201.332 548.933" Rot="0.746 0.001 -0.666 -0.001" />
+    <Entity Name="PlasmaCannon13" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-617.423 -209.684 139.045" Rot="-0.700 0.001 0.715 -0.001" />
+    <Entity Name="PlasmaCannon9" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-624.043 -201.440 484.104" Rot="-0.704 -0.001 0.710 0.001" />
+    <Entity Name="PlasmaCannon11" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-634.830 -201.375 610.079" Rot="0.769 0.001 -0.640 -0.001" />
+    <Entity Name="PlasmaCannon6" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-750.395 -209.850 69.659" Rot="0.714 0.001 0.700 0.001" />
+    <Entity Name="PlasmaCannon14" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-615.456 -209.466 67.205" Rot="-0.692 0.001 0.722 -0.001" />
+    <Entity Name="MainTurret7" Def="ClanShip_Yard_BigPlasmaCannon" relationshipGroup="1" Pos="-675.052 -130.281 252.520" Rot="0.000 1.000 0.000 0.016" Skin="s1" />
+    <Entity Name="01_Beacon1" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-801.953 -175.315 -17.747" Rot="0.450 -0.559 0.469 0.515" Skin="s1" />
+    <Entity Name="01_BeaconFlareBlue1" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-803.561 -175.342 -14.300" Rot="-0.457 0.529 0.440 0.563" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="map1_FedDreadnought4" Def="Platform_FedDreadnought" Pos="-741.957 -173.956 359.206" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="01_Fed2" Def="OpenWorld_Gate_Withcollision_Fed" Pos="-773.086 -183.036 237.774" Rot="0.005 1.000 -0.001 -0.019" />
+    <Entity Name="01_ElementI9" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-694.734 -143.749 102.487" Rot="0.000 1.000 0.000 -0.004" Skin="s1" />
+    <Entity Name="01_ElementI8" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-700.132 -201.991 590.716" Rot="0.000 0.000 1.000 0.000" Skin="s1" />
+    <Entity Name="01_ShieldGen2" Def="ClanShip_Yard_Stuff_Emp_SGen" relationshipGroup="1" Pos="-732.752 -145.548 547.374" Rot="0.007 0.721 0.007 0.693" Skin="s1" />
+    <Entity Name="01_ElementI12" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-694.734 -143.758 54.991" Rot="0.000 1.000 0.000 -0.004" Skin="s1" />
+    <Entity Name="PlasmaCannon1" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-734.769 -143.372 483.953" Rot="0.000 0.714 0.000 0.700" />
+    <Entity Name="01_FedDreadLights4" Def="Effects_Dreadnought_FedDreadLights3" Pos="-683.580 -175.785 721.862" Rot="0.000 0.721 0.000 0.693" />
+    <Entity Name="PlasmaCannon2" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-742.187 -201.440 484.078" Rot="0.714 0.001 0.700 0.001" />
+    <Entity Name="PlasmaCannon5" Def="ClanShip_Yard_PlasmaCannon" relationshipGroup="1" Pos="-748.973 -209.647 141.459" Rot="0.714 0.001 0.700 0.001" />
+    <Entity Name="ShieldFederationSmall1" Def="Effects_Dreadnought_ShieldFederationSmall" Pos="-682.448 -240.669 237.827" Rot="0.500 0.500 0.500 0.500" />
+    <Entity Name="01_ElementG5" Def="ClanShip_Yard_Stuff_Fed_ElementG" relationshipGroup="1" Pos="-681.256 -228.597 5.315" Rot="0.706 0.049 -0.705 -0.049" Skin="s1" />
+    <Entity Name="map1_FedDreadnought3" Def="Platform_FedDreadnought" Pos="-737.056 -166.241 139.150" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="neutral4_spawn_spot2" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="739.984 266.105 175.618" Rot="0.000 0.707 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral4_path2" Def="PathObject" Pos="678.000 248.000 173.526" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="678.000 248.000 173.526" />
+      <Point p="583.640 241.156 175.314" />
+      <Point p="478.690 229.233 190.270" />
+      <Point p="332.370 204.820 220.316" />
+      <Point p="205.511 159.748 252.997" />
+      <Point p="-29.491 24.787 372.700" />
+      <Point p="-213.061 -79.157 445.765" />
+      <Point p="-341.179 -209.418 502.601" />
+      <Point p="-510.192 -293.427 537.969" />
+      <Point p="-735.933 -343.143 508.984" />
+      <Point p="-862.567 -359.056 302.443" />
+      <Point p="-870.871 -363.793 42.812" />
+      <Point p="-875.892 -361.090 -225.615" />
+      <Point p="-764.376 -340.051 -487.937" />
+      <Point p="-572.622 -307.779 -672.070" />
+      <Point p="-349.026 -258.510 -723.242" />
+      <Point p="-204.832 -181.220 -638.515" />
+      <Point p="-15.516 -89.268 -554.595" />
+      <Point p="237.742 27.175 -476.855" />
+      <Point p="420.856 100.933 -425.042" />
+      <Point p="632.885 168.419 -276.278" />
+      <Point p="763.338 214.862 -87.939" />
+      <Point p="764.156 243.518 131.329" />
+    </Entity>
+    <Entity Name="alien_spawn_spot2" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="210.345 1142.998 -2.229" Rot="-0.707 0.000 0.000 0.707" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="01_FedDreadLights1" Def="Effects_Dreadnought_FedDreadLights1" Pos="-682.747 -176.045 721.850" Rot="0.000 0.710 0.000 0.704" />
+    <Entity Name="map1_FedDreadnought5" Def="Platform_FedDreadnought" Pos="-681.430 -228.504 100.495" Rot="0.721 0.000 0.693 0.000" />
+    <Entity Name="main_1_1" Def="ClanShip_Yard_Stuff_ShieldGenerator" relationshipGroup="1" Pos="-682.739 -217.683 299.309" Rot="0.703 0.000 0.711 0.000" Skin="s1" />
+    <Entity Name="01_DreadLightBlue3" Def="Effects_Dreadnought_DreadLightBlue" Pos="-673.898 -242.348 246.305" Rot="0.707 0.000 -0.707 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlue2" Def="Effects_Dreadnought_DreadLightBlue" Pos="-692.253 -242.318 229.262" Rot="0.707 0.000 -0.707 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlue1" Def="Effects_Dreadnought_DreadLightBlue" Pos="-674.177 -242.305 229.255" Rot="0.707 0.000 -0.707 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_DreadLightBlue4" Def="Effects_Dreadnought_DreadLightBlue" Pos="-692.253 -242.318 246.230" Rot="0.707 0.000 -0.707 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_BeaconFlareBlue2" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-755.916 -173.872 652.722" Rot="-0.363 0.618 0.529 0.455" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_Beacon2" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-753.440 -174.331 655.270" Rot="-0.387 0.599 0.531 0.457" Skin="s1" />
+    <Entity Name="01_DreadLightBlueSmallLightBlink1" Def="Effects_Dreadnought_DreadLightBlueSmallLightBlink" Pos="-641.497 -111.175 196.655" Rot="0.000 0.721 0.000 0.693" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_ElementA1" Def="ClanShip_Yard_Stuff_Fed_ElementA" relationshipGroup="1" Pos="-742.695 -161.176 265.813" Rot="0.000 -0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementA2" Def="ClanShip_Yard_Stuff_Fed_ElementA" relationshipGroup="1" Pos="-742.694 -161.135 238.464" Rot="0.000 -0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementA3" Def="ClanShip_Yard_Stuff_Fed_ElementA" relationshipGroup="1" Pos="-742.776 -161.218 210.829" Rot="0.000 -0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementA4" Def="ClanShip_Yard_Stuff_Fed_ElementA" relationshipGroup="1" Pos="-624.534 -161.338 210.919" Rot="0.000 0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementA5" Def="ClanShip_Yard_Stuff_Fed_ElementA" relationshipGroup="1" Pos="-624.534 -161.338 238.587" Rot="0.000 0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementA6" Def="ClanShip_Yard_Stuff_Fed_ElementA" relationshipGroup="1" Pos="-624.534 -161.338 266.042" Rot="0.000 0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementA7" Def="ClanShip_Yard_Stuff_Fed_ElementA" relationshipGroup="1" Pos="-683.083 -160.154 422.018" Rot="0.867 -0.003 -0.003 -0.498" Skin="s1" />
+    <Entity Name="01_ElementD1" Def="ClanShip_Yard_Stuff_Fed_ElementD" relationshipGroup="1" Pos="-679.250 -206.748 512.845" Rot="0.000 -0.135 0.000 0.991" Skin="s1" />
+    <Entity Name="01_ElementD2" Def="ClanShip_Yard_Stuff_Fed_ElementD" relationshipGroup="1" Pos="-677.461 -210.760 -53.715" Rot="0.000 -0.135 0.000 0.991" Skin="s1" />
+    <Entity Name="01_ElementB1" Def="ClanShip_Yard_Stuff_Fed_ElementB" relationshipGroup="1" Pos="-680.765 -161.636 389.599" Rot="0.000 -0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementB2" Def="ClanShip_Yard_Stuff_Fed_ElementB" relationshipGroup="1" Pos="-680.686 -161.636 358.588" Rot="0.000 -0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementB3" Def="ClanShip_Yard_Stuff_Fed_ElementB" relationshipGroup="1" Pos="-680.759 -161.636 327.969" Rot="0.000 -0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementC1" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-643.597 -224.253 57.450" Rot="0.636 0.310 -0.636 0.310" Skin="s1" />
+    <Entity Name="01_ElementC2" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-643.581 -224.480 78.542" Rot="0.636 0.310 -0.636 0.310" Skin="s1" />
+    <Entity Name="01_ElementC3" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-643.699 -224.854 124.633" Rot="0.636 0.310 -0.636 0.310" Skin="s1" />
+    <Entity Name="01_ElementC4" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-643.807 -224.982 145.649" Rot="0.636 0.310 -0.636 0.310" Skin="s1" />
+    <Entity Name="01_ElementC5" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-719.948 -223.865 61.852" Rot="0.636 -0.310 0.636 0.310" Skin="s1" />
+    <Entity Name="01_ElementC6" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-719.948 -223.865 82.963" Rot="0.636 -0.310 0.636 0.310" Skin="s1" />
+    <Entity Name="01_ElementC7" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-719.336 -223.500 129.133" Rot="0.636 -0.310 0.636 0.310" Skin="s1" />
+    <Entity Name="01_ElementC8" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-719.336 -223.500 149.761" Rot="0.636 -0.310 0.636 0.310" Skin="s1" />
+    <Entity Name="01_ElementC9" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-750.180 -172.547 392.466" Rot="-0.183 0.683 0.183 0.683" Skin="s1" />
+    <Entity Name="01_ElementC10" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-618.710 -172.575 397.095" Rot="-0.183 -0.683 -0.183 0.683" Skin="s1" />
+    <Entity Name="01_ElementC11" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-750.180 -172.547 321.760" Rot="-0.183 0.683 0.183 0.683" Skin="s1" />
+    <Entity Name="01_ElementC12" Def="ClanShip_Yard_Stuff_Fed_ElementC" relationshipGroup="1" Pos="-617.968 -172.575 326.201" Rot="-0.183 -0.683 -0.183 0.683" Skin="s1" />
+    <Entity Name="01_ElementA8" Def="ClanShip_Yard_Stuff_Fed_ElementA" relationshipGroup="1" Pos="-670.900 -146.034 5.837" Rot="-0.014 -0.707 0.014 0.707" Skin="s1" />
+    <Entity Name="map1_FedDreadnought6" Def="Platform_FedDreadnought" Pos="-676.416 -142.434 251.613" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="01_ElementK4" Def="ClanShip_Yard_Stuff_Fed_ElementK" relationshipGroup="1" Pos="-765.722 -196.523 513.418" Rot="-0.369 0.620 0.414 0.555" Skin="s1" />
+    <Entity Name="01_ElementG4" Def="ClanShip_Yard_Stuff_Fed_ElementG" relationshipGroup="1" Pos="-574.731 -181.609 170.443" Rot="0.510 0.510 0.490 0.490" Skin="s1" />
+    <Entity Name="01_ElementG3" Def="ClanShip_Yard_Stuff_Fed_ElementG" relationshipGroup="1" Pos="-787.973 -182.372 169.688" Rot="0.510 0.510 0.490 0.490" Skin="s1" />
+    <Entity Name="01_ElementK7" Def="ClanShip_Yard_Stuff_Fed_ElementK" relationshipGroup="1" Pos="-598.375 -195.442 517.257" Rot="-0.384 -0.598 -0.403 0.577" Skin="s1" />
+    <Entity Name="01_ElementK2" Def="ClanShip_Yard_Stuff_Fed_ElementK" relationshipGroup="1" Pos="-606.878 -195.436 582.256" Rot="-0.335 -0.653 -0.423 0.532" Skin="s1" />
+    <Entity Name="01_ElementK3" Def="ClanShip_Yard_Stuff_Fed_ElementK" relationshipGroup="1" Pos="-621.994 -195.978 644.949" Rot="-0.323 -0.662 -0.422 0.529" Skin="s1" />
+    <Entity Name="01_ElementK6" Def="ClanShip_Yard_Stuff_Fed_ElementK" relationshipGroup="1" Pos="-758.172 -196.113 578.115" Rot="-0.335 0.651 0.442 0.519" Skin="s1" />
+    <Entity Name="01_ElementK5" Def="ClanShip_Yard_Stuff_Fed_ElementK" relationshipGroup="1" Pos="-743.985 -196.274 642.232" Rot="-0.319 0.669 0.415 0.527" Skin="s1" />
+    <Entity Name="01_ElementH2" Def="ClanShip_Yard_Stuff_Fed_ElementH" relationshipGroup="1" Pos="-606.011 -202.772 210.573" Rot="-0.692 -0.131 0.698 -0.130" Skin="s1" />
+    <Entity Name="01_ElementH3" Def="ClanShip_Yard_Stuff_Fed_ElementH" relationshipGroup="1" Pos="-759.347 -203.659 208.948" Rot="-0.682 0.127 0.708 0.132" Skin="s1" />
+    <Entity Name="01_ElementF1" Def="ClanShip_Yard_Stuff_Fed_ElementJ" relationshipGroup="1" Pos="-749.984 -162.065 64.758" Rot="0.000 1.000 0.000 0.000" Skin="s1" />
+    <Entity Name="01_ElementF2" Def="ClanShip_Yard_Stuff_Fed_ElementJ" relationshipGroup="1" Pos="-609.648 -162.065 67.566" Rot="0.000 1.000 0.000 0.000" Skin="s1" />
+    <Entity Name="01_ElementI3" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-730.069 -232.573 224.627" Rot="-0.656 0.233 0.682 0.224" Skin="s1" />
+    <Entity Name="01_ElementI4" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-730.069 -232.573 195.562" Rot="-0.656 0.233 0.682 0.224" Skin="s1" />
+    <Entity Name="01_ElementI5" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-636.602 -231.936 196.314" Rot="-0.667 -0.228 0.673 -0.225" Skin="s1" />
+    <Entity Name="01_ElementI6" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-636.602 -231.936 225.379" Rot="-0.667 -0.228 0.673 -0.225" Skin="s1" />
+    <Entity Name="01_ElementH4" Def="ClanShip_Yard_Stuff_Fed_ElementH" relationshipGroup="1" Pos="-606.378 -202.775 266.740" Rot="0.712 0.133 0.678 -0.128" Skin="s1" />
+    <Entity Name="01_ElementH1" Def="ClanShip_Yard_Stuff_Fed_ElementH" relationshipGroup="1" Pos="-759.725 -203.651 264.738" Rot="0.719 -0.133 0.671 0.125" Skin="s1" />
+    <Entity Name="01_ElementI7" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-665.905 -201.991 590.716" Rot="0.000 0.000 1.000 0.000" Skin="s1" />
+    <Entity Name="01_ElementG6" Def="ClanShip_Yard_Stuff_Fed_ElementG" relationshipGroup="1" Pos="-628.333 -163.905 181.890" Rot="0.140 0.990 -0.001 -0.004" Skin="s1" />
+    <Entity Name="01_FlakGun1" Def="ClanShip_Yard_FlakGun" relationshipGroup="1" Pos="-676.125 -134.250 -14.112" Rot="0.093 0.701 -0.091 0.702" Skin="s1" />
+    <Entity Name="01_SideTurret1" Def="ClanShip_Yard_RailGun" relationshipGroup="1" Pos="-695.348 -204.294 626.815" Rot="0.721 0.000 0.693 0.000" Skin="s1" />
+    <Entity Name="01_Radar2" Def="ClanShip_Yard_Stuff_Emp_Radar" relationshipGroup="1" Pos="-721.372 -153.132 635.663" Rot="0.047 0.719 0.045 0.692" Skin="s1" />
+    <Entity Name="01_Radar1" Def="ClanShip_Yard_Stuff_Emp_Radar" relationshipGroup="1" Pos="-647.881 -153.365 637.042" Rot="0.047 0.719 0.045 0.692" Skin="s1" />
+    <Entity Name="01_ElementI10" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-785.893 -170.426 108.979" Rot="0.092 -0.701 0.092 0.701" Skin="s1" />
+    <Entity Name="01_FlakGun2" Def="ClanShip_Yard_FlakGun" relationshipGroup="1" Pos="-650.702 -132.742 -11.111" Rot="-0.011 -0.697 0.005 0.717" Skin="s1" />
+    <Entity Name="01_ShieldGen1" Def="ClanShip_Yard_Stuff_Emp_SGen" relationshipGroup="1" Pos="-632.977 -145.608 547.374" Rot="0.007 0.721 0.007 0.693" Skin="s1" />
+    <Entity Name="01_ElementE1" Def="ClanShip_Yard_Stuff_Fed_ElementE" relationshipGroup="1" Pos="-650.861 -133.681 206.327" Skin="s1" />
+    <Entity Name="01_ElementE2" Def="ClanShip_Yard_Stuff_Fed_ElementE" relationshipGroup="1" Pos="-647.760 -109.284 45.422" Rot="0.000 0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementE3" Def="ClanShip_Yard_Stuff_Fed_ElementE" relationshipGroup="1" Pos="-664.365 -158.182 389.376" Rot="0.000 -0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementF3" Def="ClanShip_Yard_Stuff_Fed_ElementF" relationshipGroup="1" Pos="-628.620 -145.382 49.858" Rot="0.000 0.707 0.000 0.707" Skin="s1" />
+    <Entity Name="01_ElementI11" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-785.218 -203.478 118.328" Rot="0.709 -0.127 0.681 0.132" Skin="s1" />
+    <Entity Name="01_Fed1" Def="OpenWorld_Gate_Withcollision_Fed" Pos="-592.773 -182.833 237.794" Rot="0.005 1.000 -0.001 -0.019" />
+    <Entity Name="01_ElementI13" Def="ClanShip_Yard_Stuff_Fed_ElementI" relationshipGroup="1" Pos="-680.916 -224.228 -13.662" Rot="0.005 -0.183 0.983 0.002" Skin="s1" />
+    <Entity Name="main_2_1" Def="ClanShip_Yard_Stuff_TurretPower" relationshipGroup="1" Pos="-682.763 -141.911 590.704" Rot="0.051 -0.005 0.000 0.999" />
+    <Entity Name="Beacon1" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-612.672 -173.532 655.722" Rot="0.510 0.482 -0.416 0.579" Skin="s1" />
+    <Entity Name="BeaconFlareBlue1" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-610.306 -173.163 652.348" Rot="0.574 -0.434 -0.489 -0.494" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beacon2" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-561.087 -175.750 -19.102" Rot="-0.487 -0.487 -0.435 0.579" Skin="s1" />
+    <Entity Name="BeaconFlareBlue2" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-558.997 -175.426 -15.523" Rot="-0.476 0.521 0.579 0.408" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beacon3" Def="ClanShip_Flat_Beacon" relationshipGroup="1" Pos="-633.352 -126.077 83.681" Rot="0.390 0.601 -0.417 0.560" Skin="s1" />
+    <Entity Name="BeaconFlareBlue3" Def="Effects_Dreadnought_BeaconFlareBlue" Pos="-632.044 -125.690 80.013" Rot="-0.557 0.402 0.614 0.390" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_SideTurret3" Def="ClanShip_Yard_RailGun" relationshipGroup="1" Pos="-653.026 -210.482 300.814" Rot="-0.693 0.000 0.721 0.000" Skin="s1" />
+    <Entity Name="01_DreadLightBlueSmallLightBlink2" Def="Effects_Dreadnought_DreadLightBlueSmallLightBlink" Pos="-660.145 -83.390 13.592" Rot="0.000 0.721 0.000 0.693" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="01_SideTurret5" Def="ClanShip_Yard_RailGun" relationshipGroup="1" Pos="-666.043 -150.738 609.382" Rot="0.042 -0.706 -0.042 0.706" />
+    <Entity Name="01_SideTurret6" Def="ClanShip_Yard_RailGun" relationshipGroup="1" Pos="-699.616 -150.747 609.637" Rot="0.049 0.701 0.043 0.711" />
+    <Entity Name="additional_2_1" Def="ClanShip_BombDispenser" Pos="-682.601 -152.858 436.567" Rot="-0.050 0.000 0.000 0.999" />
+    <Entity Name="turret_2_2" Def="ClanShip_SideTurretSpawn" Pos="-774.466 -169.691 275.949" Rot="-0.092 0.701 0.092 0.701" />
+    <Entity Name="turret_2_3" Def="ClanShip_SideTurretSpawn" Pos="-773.500 -198.067 275.586" Rot="0.671 -0.118 0.718 0.141" />
+    <Entity Name="turret_2_4" Def="ClanShip_SideTurretSpawn" Pos="-591.319 -197.591 275.466" Rot="0.716 0.124 -0.674 0.136" />
+    <Entity Name="turret_2_1" Def="ClanShip_SideTurretSpawn" Pos="-592.020 -169.579 275.947" Rot="-0.092 -0.702 -0.092 0.701" />
+    <Entity Name="turret_1_2" Def="ClanShip_SideTurretSpawn" Pos="-756.181 -166.745 611.984" Rot="-0.092 0.766 0.112 0.626" />
+    <Entity Name="turret_1_3" Def="ClanShip_SideTurretSpawn" Pos="-757.245 -192.989 611.460" Rot="0.759 -0.115 0.625 0.140" />
+    <Entity Name="turret_1_4" Def="ClanShip_SideTurretSpawn" Pos="-611.162 -194.035 611.401" Rot="0.773 0.112 -0.608 0.142" />
+    <Entity Name="turret_1_1" Def="ClanShip_SideTurretSpawn" Pos="-609.923 -166.745 611.944" Rot="-0.090 -0.776 -0.114 0.614" />
+    <Entity Name="turret_3_4" Def="ClanShip_SideTurretSpawn" Pos="-591.319 -197.591 203.050" Rot="0.716 0.124 -0.674 0.136" />
+    <Entity Name="turret_3_1" Def="ClanShip_SideTurretSpawn" Pos="-592.020 -169.579 203.531" Rot="-0.092 -0.702 -0.092 0.701" />
+    <Entity Name="turret_3_2" Def="ClanShip_SideTurretSpawn" Pos="-774.466 -169.691 203.533" Rot="-0.092 0.701 0.092 0.701" />
+    <Entity Name="turret_3_3" Def="ClanShip_SideTurretSpawn" Pos="-773.500 -198.067 203.170" Rot="0.671 -0.118 0.718 0.141" />
+    <Entity Name="turret_4_1" Def="ClanShip_SideTurretSpawn" Pos="-608.128 -161.867 110.598" Rot="0.000 -0.708 0.000 0.707" />
+    <Entity Name="turret_4_4" Def="ClanShip_SideTurretSpawn" Pos="-572.134 -198.985 53.212" Rot="0.700 0.099 -0.700 0.099" />
+    <Entity Name="turret_4_2" Def="ClanShip_SideTurretSpawn" Pos="-757.120 -161.867 91.682" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="turret_4_3" Def="ClanShip_SideTurretSpawn" Pos="-789.529 -199.216 52.927" Rot="0.699 -0.109 0.699 0.109" />
+    <Entity Name="additional_1_2" Def="ClanShip_Accelerator" Pos="-759.594 -166.038 359.279" Rot="0.000 0.707 0.000 0.707" warp_distance="1000.000" />
+    <Entity Name="additional_1_3" Def="ClanShip_Accelerator" Pos="-754.958 -158.257 138.957" Rot="0.000 0.707 0.000 0.707" warp_distance="1000.000" />
+    <Entity Name="additional_1_4" Def="ClanShip_Accelerator" Pos="-603.061 -158.793 139.111" Rot="0.000 -0.704 0.000 0.710" warp_distance="1000.000" />
+    <Entity Name="map1_FedDreadnought9" Def="Platform_FedDreadnought" Pos="-620.678 -166.526 139.372" Rot="0.000 -0.707 0.000 0.707" />
+    <Entity Name="additional_1_1" Def="ClanShip_Accelerator" Pos="-610.233 -166.054 359.134" Rot="0.000 -0.707 0.000 0.707" warp_distance="1000.000" />
+    <Entity Name="decoration_7_1" Def="Helpers_TagPoint" relationshipGroup="1" Pos="-598.436 -166.881 -0.233" Rot="-0.054 -0.687 -0.052 0.723" type="0" />
+    <Entity Name="decoration_7_2" Def="Helpers_TagPoint" relationshipGroup="1" Pos="-762.698 -166.418 -0.463" Rot="0.032 -0.729 0.025 0.683" type="0" />
+  </EntityContainer>
+</Scene>
