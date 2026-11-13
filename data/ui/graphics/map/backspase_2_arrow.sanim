@@ -1,0 +1,68 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Fri Mar 07 10:42:49 2014
+
+
+animations 4
+{
+	anim t
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim b
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim l
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim r
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite myself63
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	20 -0	0 20	20 20	
+				0.263672 0.728516	0.263672 0.748047	0.244141 0.728516	0.244141 0.748047	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on t
+		anim b sp_uvc
+		{
+			1 
+			0.244141 0.728516	0.244141 0.748047	0.263672 0.728516	0.263672 0.748047	
+		}
+		anim l sp_uvc
+		{
+			1 
+			0.263672 0.748047	0.244141 0.748047	0.263672 0.728516	0.244141 0.728516	
+		}
+		anim r sp_uvc
+		{
+			1 
+			0.244141 0.748047	0.263672 0.748047	0.244141 0.728516	0.263672 0.728516	
+		}
+	}
+}
+
