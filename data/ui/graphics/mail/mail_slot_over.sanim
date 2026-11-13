@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by sergey_mitryaev
+//at Mon Sep 15 13:52:13 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1.5
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite over
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				1 1	7 1	297 1	303 1	1 7	7 7	297 7	303 7	1 52	7 52	297 52	303 52	1 58	7 58	297 58	303 58	
+				0.0283203 0.114263	0.0341797 0.114263	0.046875 0.114263	0.0527344 0.114263	0.0283203 0.120123	0.0341797 0.120123	0.046875 0.120123	0.0527344 0.120123	0.0283203 0.130859	0.0341797 0.130859	0.046875 0.130859	0.0527344 0.130859	0.0283203 0.138672	0.0341797 0.138672	0.046875 0.138672	0.0527344 0.138672	
+				0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	
+			}
+		}
+		visible_on idle
+	}
+}
+
