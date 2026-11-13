@@ -1,0 +1,109 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Nov 26 17:23:17 2012
+
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object select_color
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object cursor
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object text
+	{
+		defaults
+		{
+			pos 2 1
+			opacity 255
+			color 0xffffffff
+			size 20 13
+			effect ""
+			alignment "CM"
+			sampleText "99"
+			font "Tiny"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 16
+			effect ""
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	4 -0	20 -0	24 -0	0 4	4 4	20 4	24 4	0 13	4 13	20 13	24 13	0 17	4 17	20 17	24 17	
+				0.00194812 0.160028	0.00585437 0.160028	0.0224393 0.160028	0.0263455 0.160028	0.00194812 0.163934	0.00585437 0.163934	0.0224393 0.163934	0.0263455 0.163934	0.00194812 0.18057	0.00585437 0.18057	0.0224393 0.18057	0.0263455 0.18057	0.00194812 0.184476	0.00585437 0.184476	0.0224393 0.184476	0.0263455 0.184476	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
