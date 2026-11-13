@@ -1,0 +1,447 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by Sergey
+//at Wed Jun 24 13:47:36 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim show
+	{
+		mode once
+		cycle_time 0.2
+	}
+}
+
+total_elements 21
+
+objects 20
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 964 510
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 429 83
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object hangar_slot_1
+	{
+		defaults
+		{
+			pos 89.5602 107.694
+			opacity 255
+			color 0xffffffff
+			size 62 60
+			effect "ui\graphics\map\pve_hangar_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object hangar_slot_2
+	{
+		defaults
+		{
+			pos 410.089 284.954
+			opacity 255
+			color 0xffffffff
+			size 62 60
+			effect "ui\graphics\map\pve_hangar_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object hangar_slot_3
+	{
+		defaults
+		{
+			pos 701.214 150.174
+			opacity 255
+			color 0xffffffff
+			size 250 60
+			effect "ui\graphics\map\pve_hangar_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object mission_slot_1
+	{
+		defaults
+		{
+			pos 140.251 268.828
+			opacity 255
+			color 0xffffffff
+			size 62 60
+			effect "ui\graphics\map\pve_mission_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object mission_slot_2
+	{
+		defaults
+		{
+			pos 518.03 183.043
+			opacity 255
+			color 0xffffffff
+			size 62 60
+			effect "ui\graphics\map\pve_mission_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object mission_slot_3
+	{
+		defaults
+		{
+			pos 676.758 288.986
+			opacity 255
+			color 0xffffffff
+			size 95 60
+			effect "ui\graphics\map\pve_mission_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object sector_slot
+	{
+		defaults
+		{
+			pos 413.511 -10.05
+			opacity 255
+			color 0xffffffff
+			size 146 100
+			effect "ui\graphics\map\pve_sector_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_col
+		{
+			2
+			0xffffffff
+			0xff646464
+		}
+	}
+	object mission_slot_4
+	{
+		defaults
+		{
+			pos 341.227 147.252
+			opacity 255
+			color 0xffffffff
+			size 95 54
+			effect "ui\graphics\map\pve_mission_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object mission_slot_5
+	{
+		defaults
+		{
+			pos 733.508 52.7718
+			opacity 255
+			color 0xffffffff
+			size 95 54
+			effect "ui\graphics\map\pve_mission_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object info_decor
+	{
+		defaults
+		{
+			pos 15 14
+			opacity 255
+			color 0xff000000
+			size 930 200
+			effect "ui\graphics\map\pve_info_decor"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_col
+		{
+			2
+			0xff000000
+			0xffffffff
+		}
+	}
+	object mission_slot_6
+	{
+		defaults
+		{
+			pos 524.545 316.359
+			opacity 255
+			color 0xffffffff
+			size 95 54
+			effect "ui\graphics\map\pve_mission_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 867 13
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\map\backspase_1_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object start_btn2
+	{
+		defaults
+		{
+			pos 867 297
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\map\backspase_2_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object scenario
+	{
+		defaults
+		{
+			pos 22.7413 208
+			opacity 255
+			color 0xffffffff
+			size 62 60
+			effect "ui\graphics\map\pve_scenario_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object history
+	{
+		defaults
+		{
+			pos 204 25
+			opacity 255
+			color 0xffffffff
+			size 62 60
+			effect "ui\graphics\map\pve_history_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_pos_op_col
+		{
+			6 2 2
+			204 25
+			204 29.872
+			204 35.416
+			204 40.624
+			204 44.488
+			204 46
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object biomorf
+	{
+		defaults
+		{
+			pos 558 258
+			opacity 255
+			color 0xffffffff
+			size 95 60
+			effect "ui\graphics\map\biomorf_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_op_col
+		{
+			2 2
+			255
+			0
+			0xffffffff
+			0xff000000
+		}
+	}
+	object text
+	{
+		defaults
+		{
+			pos 8 2
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "WER eff egeg eghheh eh"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object pve_raid_2
+	{
+		defaults
+		{
+			pos 812 361
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\map\pve_raid_2_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on show
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	960 -0	0 514	960 514	
+				0 0	1 0	0 1	1 1	
+				0xffa9a9a9	0xffa9a9a9	0xffa9a9a9	0xffa9a9a9	
+			}
+		}
+		visible_on idle
+		visible_on show
+	}
+}
+
