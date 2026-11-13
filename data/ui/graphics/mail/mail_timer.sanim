@@ -1,0 +1,49 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by sergey_mitryaev
+//at Tue Jul 23 18:49:39 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1.5
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object timer
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 178
+			color 0xffff0000
+			size 50 18
+			effect ""
+			alignment "RM"
+			sampleText "24lfg"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 178
+			color 0xffffffff
+			size 50 18
+			effect ""
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
