@@ -1,0 +1,193 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by sergey_mitryaev
+//at Thu Aug 17 11:58:23 2017
+
+base_res 1920 1080
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 274 44
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object text_5
+	{
+		defaults
+		{
+			pos 40.3774 7.88206
+			opacity 255
+			color 0xffa3b5c3
+			size 230 30
+			effect ""
+			alignment "LM"
+			sampleText "НАЙТИ ПИЛОТОВ"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		anim over obj_colc
+		{
+			1
+			0xffc9e8ff
+		}
+		anim press obj_colc
+		{
+			1
+			0xffc9e8ff
+		}
+		anim disable obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+	}
+	object count
+	{
+		defaults
+		{
+			pos 236.56 6.77203
+			opacity 255
+			color 0xffc9e8ff
+			size 30 30
+			effect "ui\graphics\squad_2\squad_find_count"
+			alignment "CM"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 4
+{
+	total_vertices 28
+
+	sprite er1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				0 -0	10 -0	264 -0	274 -0	0 10	10 10	264 10	274 10	0 34	10 34	264 34	274 34	0 44	10 44	264 44	274 44	
+				0.693359 0.789063	0.712891 0.789063	0.886719 0.789063	0.90625 0.789063	0.693359 0.808594	0.712891 0.808594	0.886719 0.808594	0.90625 0.808594	0.693359 0.824219	0.712891 0.824219	0.886719 0.824219	0.90625 0.824219	0.693359 0.84375	0.712891 0.84375	0.886719 0.84375	0.90625 0.84375	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	sprite er4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				5.83771 6.86495	37.8377 6.86495	5.83771 38.8649	37.8377 38.8649	
+				0.0078125 0.208984	0.0703125 0.208984	0.0078125 0.271484	0.0703125 0.271484	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x74ffffff	0x74ffffff	0x74ffffff	0x74ffffff	
+		}
+	}
+	sprite er9
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				236 1	262 1	236 43	262 43	
+				0.302734 0.644531	0.353516 0.644531	0.302734 0.726563	0.353516 0.726563	
+				0xce1e1ff	0xce1e1ff	0xce1e1ff	0xce1e1ff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	sprite er20
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-2.16229 -1.13505	45.8377 -1.13505	-2.16229 46.8649	45.8377 46.8649	
+				0.746094 0.267578	0.839844 0.267578	0.746094 0.361328	0.839844 0.361328	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on disable
+	}
+}
+
