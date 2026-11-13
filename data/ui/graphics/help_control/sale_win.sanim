@@ -1,0 +1,446 @@
+﻿source_file "Y:/art/source/ui/graphics/help_control/help.ma"
+//by sergey_mitryaev
+//at Thu Apr 02 18:17:10 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 22
+
+objects 16
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 860 524
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 280 483
+			opacity 255
+			color 0xffffffff
+			size 270 30
+			effect "ui\graphics\login_screen\btn_sale"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 8.83064 1.69992
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "LM"
+			sampleText "Обучение завершено"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 22.8306 71.1925
+			opacity 255
+			color 0xffffdeb3
+			size 780 400
+			effect ""
+			alignment "LB"
+			sampleText "Добро пожаловать в строй новобранец |fgjg|gyukk|uj,,|yurj"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_x
+	{
+		defaults
+		{
+			pos 835 3.6332
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 0 26.348
+			opacity 255
+			color 0xffffffff
+			size 850 453
+			effect "ui\graphics\help_control\sale_ico"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 375 193
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object map_ico_1
+	{
+		defaults
+		{
+			pos 26.8446 45
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\help_control\sale_map_ico_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ico12
+	{
+		defaults
+		{
+			pos 140 45
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\help_control\sale_map_ico_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 692 488
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 530 488
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object input_1
+	{
+		defaults
+		{
+			pos -3 487
+			opacity 255
+			color 0xffffffff
+			size 460 25
+			effect "ui\graphics\mail\mail_send_input_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_copy
+	{
+		defaults
+		{
+			pos 422 488
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\shop\buy_btn9"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object fb_btn
+	{
+		defaults
+		{
+			pos 667 488
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\button\facebook_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object vk_btn
+	{
+		defaults
+		{
+			pos 641 488
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\button\vk_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_1_2
+	{
+		defaults
+		{
+			pos 479 488
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect ""
+			alignment "RM"
+			sampleText "sagadhadfdhad djh"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 6
+{
+	total_vertices 60
+
+	sprite sp2v
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-1.88265 0.192471	4.11735 0.192471	849.5 0.192471	855.5 0.192471	-1.88265 6.19247	4.11735 6.19247	849.5 6.19247	855.5 6.19247	-1.88265 511.922	4.11735 511.922	849.5 511.922	855.5 511.922	-1.88265 517.922	4.11735 517.922	849.5 517.922	855.5 517.922	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2cvv
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-1.88265 480.922	4.11735 480.922	849.5 480.922	855.5 480.922	-1.88265 486.922	4.11735 486.922	849.5 486.922	855.5 486.922	-1.88265 511.922	4.11735 511.922	849.5 511.922	855.5 511.922	-1.88265 517.922	4.11735 517.922	849.5 517.922	855.5 517.922	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2df
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.117352 24.6999	6.11735 24.6999	848.5 24.6999	854.5 24.6999	0.117352 30.6999	6.11735 30.6999	848.5 30.6999	854.5 30.6999	0.117352 473.922	6.11735 473.922	848.5 473.922	854.5 473.922	0.117352 480.922	6.11735 480.922	848.5 480.922	854.5 480.922	
+				0.00195304 0.160156	0.00781241 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195304 0.166016	0.00781241 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195304 0.17749	0.00781241 0.17749	0.0205078 0.17749	0.0263672 0.17749	0.00195304 0.18457	0.00781241 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				854.338 22.6999	854.338 24.6999	-2.11734 22.7	-2.11735 24.6999	
+				0.0713222 0.077615	0.069369 0.077615	0.0713222 0.0942166	0.069369 0.0942166	
+			}
+		}
+		visible_on idle
+	}
+	sprite adffa
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				1.73588 24.348	853.5 24.348	1.73588 462.078	853.5 462.078	
+				0.0483446 0.0134146	0.902511 0.0134146	0.0483446 0.623171	0.902511 0.623171	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			51
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	
+			0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	
+			0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	
+			0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	
+			0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	
+			0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	
+			0xe0e0e0e0	0xe0e0e0e0	0xe0e0e0e0	0xe0e0e0e0	
+			0x5f5f5f5f	0x5f5f5f5f	0x5f5f5f5f	0x5f5f5f5f	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	
+			0x78787878	0x78787878	0x78787878	0x78787878	
+			0x78787878	0x78787878	0x78787878	0x78787878	
+			0x78787878	0x78787878	0x78787878	0x78787878	
+			0x12121212	0x12121212	0x12121212	0x12121212	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	0x9a9a9a9a	
+			0xc2c2c2c2	0xc2c2c2c2	0xc2c2c2c2	0xc2c2c2c2	
+			0xdededede	0xdededede	0xdededede	0xdededede	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite fqccwf
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				62.7359 44.348	792.5 44.348	62.7359 438.078	792.5 438.078	
+				0.0532134 0.870521	0.736807 0.870521	0.0532134 0.0892706	0.736807 0.0892706	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			51
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xd5d5d5d5	0xd5d5d5d5	0xd5d5d5d5	0xd5d5d5d5	
+			0xd5d5d5d5	0xd5d5d5d5	0xd5d5d5d5	0xd5d5d5d5	
+			0xd5d5d5d5	0xd5d5d5d5	0xd5d5d5d5	0xd5d5d5d5	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xaaaaaaaa	0xaaaaaaaa	0xaaaaaaaa	0xaaaaaaaa	
+			0x23232323	0x23232323	0x23232323	0x23232323	
+			0xb9b9b9b9	0xb9b9b9b9	0xb9b9b9b9	0xb9b9b9b9	
+			0xd0d0d0d	0xd0d0d0d	0xd0d0d0d	0xd0d0d0d	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xaaaaaaaa	0xaaaaaaaa	0xaaaaaaaa	0xaaaaaaaa	
+			0xaaaaaaaa	0xaaaaaaaa	0xaaaaaaaa	0xaaaaaaaa	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x95959595	0x95959595	0x95959595	0x95959595	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xb9b9b9b9	0xb9b9b9b9	0xb9b9b9b9	0xb9b9b9b9	
+			0x50505050	0x50505050	0x50505050	0x50505050	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xd6d6d6d6	0xd6d6d6d6	0xd6d6d6d6	0xd6d6d6d6	
+			0xd6d6d6d6	0xd6d6d6d6	0xd6d6d6d6	0xd6d6d6d6	
+		}
+	}
+}
+
