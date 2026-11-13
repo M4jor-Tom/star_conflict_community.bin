@@ -1,0 +1,187 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by sergey_mitryaev
+//at Thu Apr 11 17:21:56 2019
+
+base_res 1280 720
+
+animations 3
+{
+	anim online
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim offline
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gold
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 560 20
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on online
+		visible_on offline
+		visible_on gold
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 6 -0
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "wdffeegegege"
+			font "VerySmall"
+		}
+		visible_on online
+		visible_on offline
+		visible_on gold
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 321 -0
+			opacity 255
+			color 0xff00ff00
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "wdffeegegege"
+			font "Tiny"
+		}
+		visible_on online
+		anim offline obj_colc
+		{
+			1
+			0xffff2700
+		}
+		anim gold obj_colc
+		{
+			1
+			0xffffcf00
+		}
+	}
+	object on_off
+	{
+		defaults
+		{
+			pos 523 2
+			opacity 255
+			color 0xffffffff
+			size 15 15
+			effect "ui\graphics\friend\friend_line_on_off"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+		visible_on gold
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 443 20
+			effect "ui\graphics\friend\friend_line_1_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on online
+		visible_on offline
+		visible_on gold
+	}
+	object text_1_color
+	{
+		defaults
+		{
+			pos -69 -0
+			opacity 255
+			color 0xffff9100
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "цвет"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+		visible_on gold
+	}
+	object text_2_color
+	{
+		defaults
+		{
+			pos -140 -1
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "цвет"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+		visible_on gold
+	}
+	object facebook_btn
+	{
+		defaults
+		{
+			pos 209 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\button\facebook_3_btn"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+		visible_on gold
+	}
+	object edit
+	{
+		defaults
+		{
+			pos 542 3
+			opacity 255
+			color 0xffffffff
+			size 15 15
+			effect "ui\graphics\friend\friend_edit_mark"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on online
+		visible_on offline
+		visible_on gold
+	}
+}
+
