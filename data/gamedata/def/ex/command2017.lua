@@ -1,0 +1,33 @@
+-- файл открывает к покупке все коммандные модули НГ 2017
+
+Def.Module_MacheteFury_T2_Mk1.cant_be_bought =  false
+Def.Module_FastShootAxe_T1_Mk1.cant_be_bought =  false
+Def.Module_FastShootAxe_T4_Mk1.cant_be_bought =  false
+Def.Weapon_PrometheusFire_T3_Mk1.cant_be_bought =  false
+Def.Weapon_PrometheusFire_T5_Mk1.cant_be_bought =  false
+Def.Module_KatanaEnergy_T3_Mk1.cant_be_bought =  false
+Def.Module_KatanaEnergy_T5_Mk1.cant_be_bought =  false
+Def.Module_RangeMasterPlus_T2_Mk1.cant_be_bought =  false
+Def.Module_RangeMasterPlus_T4_Mk1.cant_be_bought =  false
+Def.Module_BushidoCall_T3_Mk1.cant_be_bought =  false
+Def.Weapon_AxeShot_T1_Mk1.cant_be_bought =  false
+Def.Weapon_AxeShot_T4_Mk1.cant_be_bought =  false
+Def.Module_ShieldThermoGuard_T2_Mk1.cant_be_bought =  false
+Def.Module_ShieldThermoGuard_T5_Mk1.cant_be_bought =  false
+Def.Module_SupportReinforce_T3_Mk1.cant_be_bought =  false
+Def.Module_FireStealingPot_T3_Mk1.cant_be_bought =  false
+Def.Module_KatanaSPush_T3_Mk1.cant_be_bought =  false
+Def.Weapon_MacheteCuttingEdge_T2_Mk1.cant_be_bought =  false
+Def.Weapon_MacheteCuttingEdge_T5_Mk1.cant_be_bought =  false
+Def.Module_PrometheusPot_T3_Mk1.cant_be_bought =  false
+Def.Module_PrometheusPot_T5_Mk1.cant_be_bought =  false
+Def.Module_EnergyOptimus_T2_Mk1.cant_be_bought =  false
+Def.Module_EnergyOptimus_T4_Mk1.cant_be_bought =  false
+Def.Module_MacheteBox_T2_Mk1.cant_be_bought =  false
+Def.Module_MacheteBox_T5_Mk1.cant_be_bought =  false
+Def.ModulePassive_PrometeusCunning_T3_Mk1.cant_be_bought =  false
+Def.ModulePassive_PrometeusCunning_T5_Mk1.cant_be_bought =  false
+Def.Module_HerculesGust_T2_Mk1.cant_be_bought =  false
+Def.Module_HerculesGust_T4_Mk1.cant_be_bought =  false
+Def.Module_KatanaRiposte_T3_Mk1.cant_be_bought =  false
+Def.Module_KatanaRiposte_T5_Mk1 .cant_be_bought =  false
