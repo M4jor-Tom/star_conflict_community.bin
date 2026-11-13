@@ -1,0 +1,186 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills_2.ma"
+//by Sergey_Mitryaev
+//at Tue Dec 19 15:42:38 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 216 142
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price_btn
+	{
+		defaults
+		{
+			pos 98 122
+			opacity 255
+			color 0xffffffff
+			size 100 16
+			effect "ui\graphics\ships_tree\ship_tr_price_btn"
+			alignment "LT"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object name7
+	{
+		defaults
+		{
+			pos 7 3
+			opacity 255
+			color 0xffffffff
+			size 200 16
+			effect ""
+			alignment "LT"
+			sampleText "Быстрый Стрелок"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object name8
+	{
+		defaults
+		{
+			pos 7 19
+			opacity 255
+			color 0xffff2800
+			size 200 16
+			effect ""
+			alignment "LT"
+			sampleText "Быстрый Стрелок"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 216 142
+			effect "ui\graphics\skills_2\skill_set_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object select
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 216 142
+			effect "ui\graphics\skills_2\skill_set_slot_select"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object disable
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 216 142
+			effect "ui\graphics\skills_2\skill_set_slot_disable"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object indic
+	{
+		defaults
+		{
+			pos 14 75
+			opacity 255
+			color 0xffffffff
+			size 18 16
+			effect "ui\graphics\skills_2\skill_set_indic_main"
+			alignment "LT"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object blink
+	{
+		defaults
+		{
+			pos 182.968 5.28898
+			opacity 255
+			color 0xffffffff
+			size 18 16
+			effect "y:\work_version\pc\data\ui\graphics\hangar_iter_3\menu_btn_blink_720"
+			alignment "LT"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp22
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-1 -1	5 -1	211 -1	217 -1	-1 5	5 5	211 5	217 5	-1 137	5 137	211 137	217 137	-1 143	5 143	211 143	217 143	
+				0.0615236 0.647461	0.0673829 0.647461	0.0732423 0.647461	0.0791016 0.647461	0.0615235 0.65332	0.0673829 0.65332	0.0732422 0.65332	0.0791016 0.65332	0.0615234 0.65918	0.0673828 0.65918	0.0732422 0.65918	0.0791016 0.65918	0.0615234 0.665039	0.0673828 0.665039	0.0732421 0.665039	0.0791016 0.665039	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				5 3	211 3	5 137	211 137	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
