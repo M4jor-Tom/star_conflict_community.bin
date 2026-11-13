@@ -1,0 +1,53 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 14:26:53 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.118246 -0.305518	18.8818 -0.305518	-0.118246 18.6945	18.8818 18.6945	
+				0.501953 0.287109	0.518066 0.287109	0.501953 0.308594	0.518066 0.308594	
+				0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName277
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-1.5 -1.5	17.5 -1.5	-1.5 17.5	17.5 17.5	
+				0.418457 0.245605	0.437012 0.245605	0.418457 0.26416	0.437012 0.26416	
+			}
+		}
+		visible_on idle
+	}
+}
+
