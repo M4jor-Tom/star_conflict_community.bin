@@ -1,0 +1,186 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Fri Dec 13 14:48:18 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 240 70
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object p_progr_3
+	{
+		defaults
+		{
+			pos 170 3.55271e-015
+			opacity 255
+			color 0xffffffff
+			size 46 46
+			effect "ui\graphics\hud\ratio\gmp_oaa_p_gen_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object p_progr_1
+	{
+		defaults
+		{
+			pos 0 3.55271e-015
+			opacity 255
+			color 0xffffffff
+			size 46 46
+			effect "ui\graphics\hud\ratio\gmp_oaa_p_gen_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object p_progr_2
+	{
+		defaults
+		{
+			pos 85 3.55271e-015
+			opacity 255
+			color 0xffffffff
+			size 46 46
+			effect "ui\graphics\hud\ratio\gmp_oaa_p_gen_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object p_link_1
+	{
+		defaults
+		{
+			pos 66 33
+			opacity 255
+			color 0xffffffff
+			size 46 46
+			effect "ui\graphics\hud\ratio\gmp_oaa_p_link"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object p_link_2
+	{
+		defaults
+		{
+			pos 151 33
+			opacity 255
+			color 0xffffffff
+			size 46 46
+			effect "ui\graphics\hud\ratio\gmp_oaa_p_link"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite objectName82
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				1 1	67 1	1 67	67 67	
+				0.00390625 0.65332	0.0683594 0.65332	0.00390625 0.717773	0.0683594 0.717773	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName83
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				86 1	152 1	86 67	152 67	
+				0.00390625 0.65332	0.0683594 0.65332	0.00390625 0.717773	0.0683594 0.717773	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName84
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				171 1	237 1	171 67	237 67	
+				0.00390625 0.65332	0.0683594 0.65332	0.00390625 0.717773	0.0683594 0.717773	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName85
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				66 33	87 33	66 35	87 35	
+				0.0234375 0.68457	0.0507813 0.68457	0.0234375 0.686523	0.0507813 0.686523	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName86
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				151 33	172 33	151 35	172 35	
+				0.0234375 0.68457	0.0507813 0.68457	0.0234375 0.686523	0.0507813 0.686523	
+			}
+		}
+		visible_on idle
+	}
+}
+
