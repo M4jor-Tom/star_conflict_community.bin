@@ -1,0 +1,122 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Mon Oct 26 14:10:52 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim start
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim made
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim finish
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on start
+		visible_on made
+		visible_on finish
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite que11
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-3 -4	33 -4	-3 32	33 32	
+				0.287109 0.292969	0.357422 0.292969	0.287109 0.363281	0.357422 0.363281	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on start
+		anim made sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim finish sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite que17
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-3 -4	33 -4	-3 32	33 32	
+				0.503906 0.292969	0.574219 0.292969	0.503906 0.363281	0.574219 0.363281	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on start
+		anim made sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on finish
+	}
+	sprite que18
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-3 -4	33 -4	-3 32	33 32	
+				0.791016 0.292969	0.861328 0.292969	0.791016 0.363281	0.861328 0.363281	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on start
+		visible_on made
+		anim finish sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
