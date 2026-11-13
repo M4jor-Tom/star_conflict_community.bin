@@ -1,0 +1,303 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Fri Jun 29 16:25:04 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 18
+
+objects 14
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 4000 150
+			effect ""
+			alignment "CM"
+			font "Medium"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object menu
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 0 31
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar_iter_3\menu_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object esc_menu
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 3 4
+			opacity 255
+			color 0xffe9e9e9
+			size 76 30
+			effect "ui\graphics\hangar_iter_3\b_esc_menu_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object account
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1526 3
+			opacity 255
+			color 0xffffffff
+			size 360 45
+			effect "ui\graphics\hangar_iter_3\account_main_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object start_button
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 847 43
+			opacity 255
+			color 0xffffffff
+			size 220 46
+			effect "ui\graphics\hangar_iter_3\start_button"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object start_slot
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 486 -0
+			opacity 255
+			color 0xffffffff
+			size 250 150
+			effect "ui\graphics\hangar_iter_3\info_slot_4"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 39.7993 -0.314992
+			opacity 112
+			color 0xffffffff
+			size 400 30
+			effect ""
+			alignment "LM"
+			sampleText "Bujnsfn fswn kna "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object squad_btn
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1073.21 31.5629
+			opacity 255
+			color 0xffffffff
+			size 220 46
+			effect "ui\graphics\squad_2\squad_btn_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object squad_list
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1073.21 101.563
+			opacity 255
+			color 0xffffffff
+			size 220 46
+			effect "ui\graphics\squad_2\squad_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object self_2
+	{
+		defaults
+		{
+			pos 0.891643 -0
+			opacity 255
+			color 0xffffffff
+			size 4000 103
+			effect ""
+			alignment "CM"
+			font "Medium"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object level_progr
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1521.06 104.363
+			opacity 255
+			color 0xffffffff
+			size 270 30
+			effect "ui\graphics\hangar_iter_3\level_progr_main"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object start_btn_atern
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1073 44
+			opacity 255
+			color 0xffffffff
+			size 44 44
+			effect "ui\graphics\squad_2\start_btn_atern"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object squad_btn1
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1125.21 31.5629
+			opacity 255
+			color 0xffffffff
+			size 220 46
+			effect "ui\graphics\squad_2\squad_btn_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object squad_list1
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 1125.21 101.563
+			opacity 255
+			color 0xffffffff
+			size 220 46
+			effect "ui\graphics\squad_2\squad_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite we33
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-2608.04 -0	3888.04 -0	-2608.04 31.5	3888.04 31.5	
+				0.64644 0.394487	0.660201 0.394487	0.64644 0.408248	0.660201 0.408248	
+				0xff0a0f17	0xff0a0f17	0xff0a0f17	0xff0a0f17	
+			}
+		}
+		visible_on idle
+	}
+	sprite we34
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				3888.04 30.5	3888.04 31.5	-2608.04 30.5	-2608.04 31.5001	
+				0.55957 0.428711	0.55957 0.426758	0.581055 0.428711	0.581055 0.426758	
+			}
+		}
+		visible_on idle
+	}
+	sprite we35
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			anchor "TC"
+			vertices
+			{
+				-35.5 31.5	1962.04 31.5	-0.5 103	1922.04 103	
+				0.636674 0.404252	0.650435 0.404252	0.636674 0.418013	0.650435 0.418013	
+				0x66000000	0x66000000	0x66000000	0x66000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite we43
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			anchor "TC"
+			vertices
+			{
+				-0.500244 103	-0.500031 101	1922.04 103	1922.04 101	
+				0.572266 0.429687	0.572266 0.425781	0.591797 0.429687	0.591797 0.425781	
+				0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
