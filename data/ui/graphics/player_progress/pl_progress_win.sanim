@@ -1,0 +1,282 @@
+﻿source_file "Y:/art/source/ui/graphics/player_progress/player_progress.ma"
+//by sergey_mitryaev
+//at Tue Sep 16 14:10:15 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 18
+
+objects 15
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 880 580
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 860 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn_2
+	{
+		defaults
+		{
+			pos 360 551
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 182 0.494095
+			opacity 255
+			color 0xffff9a00
+			size 500 20
+			effect ""
+			alignment "CM"
+			sampleText "Достигнут новый  ранг"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1_2
+	{
+		defaults
+		{
+			pos 39 101
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Достигнут новый  ранг"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 426 95
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_1_1
+	{
+		defaults
+		{
+			pos 39 43
+			opacity 255
+			color 0xffffffff
+			size 300 50
+			effect ""
+			alignment "LM"
+			sampleText "ПОЗДРАВЛЯЕМ"
+			font "Large_outl2"
+		}
+		visible_on idle
+	}
+	object award
+	{
+		defaults
+		{
+			pos 39 147
+			opacity 255
+			color 0xffffffff
+			size 382 82
+			effect "ui\graphics\player_progress\pl_prog_award"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_1_3
+	{
+		defaults
+		{
+			pos 39 238
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "Теперь доступно"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 39 279
+			opacity 255
+			color 0xffffffff
+			size 382 82
+			effect "ui\graphics\player_progress\pl_prog_list"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object buy_btn_3
+	{
+		defaults
+		{
+			pos 279 551
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object buy_btn_4
+	{
+		defaults
+		{
+			pos 440 551
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 551
+			opacity 255
+			color 0xffffffff
+			size 150 25
+			effect ""
+			alignment "RM"
+			sampleText "Скриншот:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object fb_btn
+	{
+		defaults
+		{
+			pos 153 551
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\button\facebook_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object vk_btn
+	{
+		defaults
+		{
+			pos 180 551
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\button\vk_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite |bg
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	876 -4	884 -4	-4 22	4 22	876 22	884 22	-4 576	4 576	876 576	884 576	-4 584	4 584	876 584	884 584	
+				0.0585938 0.695313	0.0664227 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664227 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723636	0.0664227 0.723636	0.0742188 0.723636	0.0820313 0.723636	0.0585938 0.731448	0.0664227 0.731448	0.0742188 0.731448	0.0820313 0.731448	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				10 28	870 28	10 548	870 548	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+	sprite bg29
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 98.125	6 98.125	234 98.125	261 98.125	0 104	6 104	234 104	261 104	0 121	6 121	234 121	261 121	0 125.875	6 125.875	234 125.875	261 125.875	
+				0.174805 0.819336	0.180664 0.819336	0.229492 0.819336	0.255859 0.819336	0.174805 0.825195	0.180664 0.825195	0.229492 0.825195	0.255859 0.825195	0.174805 0.842773	0.180664 0.842773	0.229492 0.842773	0.255859 0.842773	0.174805 0.84668	0.180664 0.84668	0.229492 0.84668	0.255859 0.84668	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
