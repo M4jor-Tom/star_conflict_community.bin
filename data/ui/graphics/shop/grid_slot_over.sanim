@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Thu Jan 30 16:31:04 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	166 -0	172 -0	0 6	6 6	166 6	172 6	0 148	6 148	166 149	172 149	0 154	6 154	166 155	172 155	
+				0.0733469 0.00196683	0.0792063 0.00196683	0.114202 0.00196683	0.120061 0.00196683	0.0733469 0.00782621	0.0792063 0.00782621	0.114202 0.00782621	0.120061 0.00782621	0.0733469 0.0449466	0.0792063 0.0449466	0.114202 0.0449466	0.120061 0.0449466	0.0733469 0.050806	0.0792063 0.050806	0.114202 0.050806	0.120061 0.050806	
+				0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	
+			}
+		}
+		visible_on idle
+	}
+}
+
