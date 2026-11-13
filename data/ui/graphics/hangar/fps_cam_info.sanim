@@ -1,0 +1,94 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Tue Dec 12 13:03:06 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object title
+	{
+		defaults
+		{
+			pos -28 -0
+			opacity 255
+			color 0xffffffff
+			size 100 30
+			effect ""
+			alignment "RM"
+			sampleText "CAMERA:"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_1
+	{
+		defaults
+		{
+			pos 82 -0
+			opacity 255
+			color 0xffffffff
+			size 70 30
+			effect ""
+			alignment "LM"
+			sampleText "6582.2"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 250 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object value_2
+	{
+		defaults
+		{
+			pos 142 -0
+			opacity 255
+			color 0xffffffff
+			size 70 30
+			effect ""
+			alignment "LM"
+			sampleText "235"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value_3
+	{
+		defaults
+		{
+			pos 203 -0
+			opacity 255
+			color 0xffffffff
+			size 70 30
+			effect ""
+			alignment "LM"
+			sampleText "456"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
