@@ -1,0 +1,77 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Mon Oct 08 10:22:43 2012
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object login_input
+	{
+		defaults
+		{
+			pos 305.196 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\login_input"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object name
+	{
+		defaults
+		{
+			pos 2.2585 1.26718
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "RM"
+			sampleText "Курсант"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 600 23
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
