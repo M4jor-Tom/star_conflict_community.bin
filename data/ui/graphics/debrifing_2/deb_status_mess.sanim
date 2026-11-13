@@ -1,0 +1,130 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing_2.ma"
+//by sergey_mitryaev
+//at Wed Apr 09 14:21:45 2014
+
+
+animations 2
+{
+	anim win
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim defeat
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 680 80
+			effect ""
+			alignment "LT"
+		}
+		visible_on win
+		visible_on defeat
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 11 -0
+			opacity 255
+			color 0xffffffff
+			size 660 30
+			effect ""
+			alignment "CM"
+			sampleText "afae g werhwh  h hrewh "
+			font "Medium"
+		}
+		visible_on win
+		anim defeat obj_colc
+		{
+			1
+			0xffff2700
+		}
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 11 30
+			opacity 255
+			color 0xffffffff
+			size 660 18
+			effect ""
+			alignment "CT"
+			sampleText "afae g werhwh  h hrewh fbr reher "
+			font "Tiny"
+		}
+		visible_on win
+		visible_on defeat
+	}
+	object text_10
+	{
+		defaults
+		{
+			pos 11 46
+			opacity 255
+			color 0xffffffff
+			size 660 18
+			effect ""
+			alignment "CT"
+			sampleText "afae g werhwh  h hrewh fbr reher "
+			font "Tiny"
+		}
+		visible_on win
+		visible_on defeat
+	}
+	object text_11
+	{
+		defaults
+		{
+			pos 11 61
+			opacity 255
+			color 0xffffcf00
+			size 660 18
+			effect ""
+			alignment "CT"
+			sampleText "afae g werhwh  h hrewh fbr reher "
+			font "Tiny"
+		}
+		visible_on win
+		visible_on defeat
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				0 -0	203.782 -0	417.277 -0	680 -0	0 6	203.782 6	417.277 6	680 6	0 25	203.782 25	417.277 25	680 25	0 31	203.782 31	417.277 31	680 31	
+				0.108398 0.785148	0.0156248 0.785148	0.0214844 0.785148	0.108398 0.785148	0.108398 0.791007	0.0156248 0.791007	0.0214844 0.791007	0.108398 0.791007	0.108398 0.839844	0.0156248 0.839844	0.0214844 0.839844	0.108398 0.839844	0.108398 0.845703	0.0156248 0.845703	0.0214844 0.845703	0.108398 0.845703	
+			}
+		}
+		visible_on win
+		visible_on defeat
+	}
+}
+
