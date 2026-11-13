@@ -1,0 +1,78 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Apr 08 12:27:39 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self113
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 950 480
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 216 24
+			opacity 255
+			color 0xffff2800
+			size 500 30
+			effect ""
+			alignment "CM"
+			sampleText "Вы  не состоите в корпорации"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title21
+	{
+		defaults
+		{
+			pos 117 67
+			opacity 255
+			color 0xffffffff
+			size 700 100
+			effect ""
+			alignment "CT"
+			sampleText "dfdf  dgdg ghdghdhdh|wewefwefwf|dqwqwdw"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_19
+	{
+		defaults
+		{
+			pos 367 308
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\shop\buy_btn6"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
