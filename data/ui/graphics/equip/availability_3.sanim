@@ -1,0 +1,72 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Thu Sep 15 12:11:31 2016
+
+base_res 1280 720
+
+animations 5
+{
+	anim set
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim another_ship
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim in_shop
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim in_warehouse
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim set_another_slot
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 190 20
+			effect ""
+			alignment "LM"
+			sampleText "УСТАНОВЛЕН"
+			font "Tiny"
+		}
+		visible_on set
+		anim another_ship obj_colc
+		{
+			1
+			0xfffcfa01
+		}
+		anim in_shop obj_colc
+		{
+			1
+			0xff04bcfc
+		}
+		anim in_warehouse obj_colc
+		{
+			1
+			0xff00ac07
+		}
+		visible_on set_another_slot
+	}
+}
+
