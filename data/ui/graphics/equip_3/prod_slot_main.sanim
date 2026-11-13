@@ -1,0 +1,499 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_3.ma"
+//by Sergey_Mitryaev
+//at Thu Aug 31 12:59:21 2017
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 26
+
+objects 22
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 448 64
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\equip_3\prod_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object select
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 394 90
+			effect "ui\graphics\equip_3\prod_slot_select"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object gold
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 394 90
+			effect "ui\graphics\equip_3\prod_slot_gold"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\equip_3\prod_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 6 8
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object product_name
+	{
+		defaults
+		{
+			pos 62 7
+			opacity 255
+			color 0xffffffff
+			size 360 20
+			effect ""
+			alignment "LT"
+			sampleText "Адаптивный излучаетель MK2 hg gsbtb bretetrgewrtrg ew"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object count_1
+	{
+		defaults
+		{
+			pos 6 71
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "LM"
+			sampleText "2in"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object price
+	{
+		defaults
+		{
+			pos 154 41
+			opacity 255
+			color 0xffffffff
+			size 150 22
+			effect ""
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 306 38
+			opacity 255
+			color 0xffffffff
+			size 120 22
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 430 -0
+			opacity 255
+			color 0xffffffff
+			size 18 64
+			effect "ui\graphics\button\prod_btn_4"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object count_2
+	{
+		defaults
+		{
+			pos 27 71
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "LM"
+			sampleText "2in"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object sale
+	{
+		defaults
+		{
+			pos -33 1
+			opacity 255
+			color 0xffffffff
+			size 56 20
+			effect "ui\graphics\equip_2\prod_slot_sale"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_6
+	{
+		defaults
+		{
+			pos 406.654 40.6394
+			opacity 255
+			color 0xffffffff
+			size 22 22
+			effect "ui\graphics\button\prod_btn_gold"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_7
+	{
+		defaults
+		{
+			pos 306 38
+			opacity 255
+			color 0xffffffff
+			size 120 22
+			effect "ui\graphics\button\prod_btn_5"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object price4
+	{
+		defaults
+		{
+			pos 154 41
+			opacity 255
+			color 0xffffffff
+			size 150 22
+			effect ""
+			alignment "RM"
+			sampleText "100000000"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object labe
+	{
+		defaults
+		{
+			pos 377 1
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\ships_tree\labe"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 59 41
+			opacity 255
+			color 0xffffffff
+			size 114 20
+			effect "ui\graphics\equip_3\prod_progr_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object price8
+	{
+		defaults
+		{
+			pos 276 41
+			opacity 255
+			color 0xffffffff
+			size 150 22
+			effect ""
+			alignment "RM"
+			sampleText "awsafafafaf wwf wf"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_11
+	{
+		defaults
+		{
+			pos 387 40.6394
+			opacity 255
+			color 0xffffffff
+			size 22 22
+			effect "ui\graphics\button\prod_btn_6"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object price9
+	{
+		defaults
+		{
+			pos 234 41
+			opacity 255
+			color 0xffffffff
+			size 150 22
+			effect ""
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object progr11
+	{
+		defaults
+		{
+			pos 277 21
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "RM"
+			sampleText "fgsdgfdsg"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite ico26
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-1 -0	199 -0	-1 66	199 66	
+				0.24707 0.240234	0.442383 0.240234	0.24707 0.369141	0.442383 0.369141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim disable sp_colc
+		{
+			1
+			0xff666666	0xff666666	0xff666666	0xff666666	
+		}
+	}
+	sprite ico30
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				199 -0	250 -0	199 66	250 66	
+				0.442383 0.240234	0.491211 0.240234	0.442383 0.369141	0.491211 0.369141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim disable sp_colc
+		{
+			1
+			0xff666666	0xff666666	0xff666666	0xff666666	
+		}
+	}
+	sprite ico31
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				250 -0	450 -0	250 66	450 66	
+				0.438477 0.240234	0.633789 0.240234	0.438477 0.369141	0.633789 0.369141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim disable sp_colc
+		{
+			1
+			0xff666666	0xff666666	0xff666666	0xff666666	
+		}
+	}
+	sprite ico42
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				429 1	430 1	429 64	430 64	
+				0.721707 0.373816	0.727512 0.373816	0.721707 0.38009	0.727512 0.38009	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim disable sp_colc
+		{
+			1
+			0xff666666	0xff666666	0xff666666	0xff666666	
+		}
+	}
+}
+
