@@ -1,0 +1,404 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Mon Sep 05 13:23:50 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+}
+
+total_elements 25
+
+objects 23
+{
+	object price
+	{
+		defaults
+		{
+			pos 246 494.118
+			opacity 255
+			color 0xff98b0d5
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "Цена продажи: 500"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object tooltip_color
+	{
+		defaults
+		{
+			pos 471 97.2003
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\tooltip\tooltip_color"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object premium
+	{
+		defaults
+		{
+			pos 4 179
+			opacity 255
+			color 0xffffffff
+			size 454 54
+			effect "ui\graphics\tooltip\tooltip_ship_premium"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 454 520
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 8 74.2003
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 9.68649 438
+			opacity 255
+			color 0xffffffff
+			size 430 46
+			effect ""
+			alignment "LT"
+			sampleText "Нове|йшая раз|рабо|тка |увел|ичив|ает щит"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 44.2003
+			opacity 255
+			color 0xffffffff
+			size 10 90
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object notice
+	{
+		defaults
+		{
+			pos 2.84217e-014 90.405
+			opacity 255
+			color 0xffffffff
+			size 55 25
+			effect "ui\graphics\tooltip\tooltip_notice"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			2 
+			2.84217e-014 90.405
+			2.84217e-014 519.191
+		}
+	}
+	object title
+	{
+		defaults
+		{
+			pos 7.49459 3.36692
+			opacity 255
+			color 0xffffffff
+			size 435 60
+			effect ""
+			alignment "LT"
+			sampleText "Наименование"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object spacer_1
+	{
+		defaults
+		{
+			pos 0 67.2003
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object type_descript
+	{
+		defaults
+		{
+			pos 65 74.2003
+			opacity 255
+			color 0xffffffff
+			size 370 100
+			effect ""
+			alignment "LT"
+			sampleText "ТипЖtyututyuы|айфyhyuirцп|оцtrutyuпо|eueuо|67j5j6yjk56jk|65j556k56k|ty,rt,.,toli"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object spacer_2
+	{
+		defaults
+		{
+			pos 0 237.082
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object spacer_4
+	{
+		defaults
+		{
+			pos 0 432.2
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object spacer_5
+	{
+		defaults
+		{
+			pos 0 487.653
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object properties_line_1
+	{
+		defaults
+		{
+			pos 7 280.282
+			opacity 255
+			color 0xffffffff
+			size 430 50
+			effect "ui\graphics\tooltip\tooltip_properties_line2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object properties_line_2
+	{
+		defaults
+		{
+			pos 7 333.2
+			opacity 255
+			color 0xffffffff
+			size 430 20
+			effect "ui\graphics\tooltip\tooltip_properties_line"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object properties_line_3
+	{
+		defaults
+		{
+			pos 7 352.2
+			opacity 255
+			color 0xffffffff
+			size 430 20
+			effect "ui\graphics\tooltip\tooltip_properties_line"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object properties_line_4
+	{
+		defaults
+		{
+			pos 7 371.2
+			opacity 255
+			color 0xffffffff
+			size 430 20
+			effect "ui\graphics\tooltip\tooltip_properties_line"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object properties_line_5
+	{
+		defaults
+		{
+			pos 7 390.2
+			opacity 255
+			color 0xffffffff
+			size 430 20
+			effect "ui\graphics\tooltip\tooltip_properties_line"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object properties_line_6
+	{
+		defaults
+		{
+			pos 7 409.2
+			opacity 255
+			color 0xffffffff
+			size 430 20
+			effect "ui\graphics\tooltip\tooltip_properties_line"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object durability
+	{
+		defaults
+		{
+			pos 9.37588 493.918
+			opacity 255
+			color 0xff8c98ac
+			size 200 20
+			effect ""
+			alignment "LT"
+			sampleText "Прочность: 100\100"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object spacer_3
+	{
+		defaults
+		{
+			pos 0 274.2
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object prop_line4
+	{
+		defaults
+		{
+			pos 9.68649 247
+			opacity 255
+			color 0xffffffff
+			size 30 20
+			effect "ui\graphics\tooltip\tooltip_ship_prop_line4"
+			alignment "LM"
+			sampleText "MK1"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp16
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 90.7884	2.26214 90.7884	453.849 90.7884	464.605 90.7884	-8.42617 102.866	2.53888 102.866	453.572 102.866	464.605 102.866	
+				0.325319 0.0545987	0.331179 0.0545987	0.370192 0.0545987	0.376052 0.0545987	0.325319 0.0604581	0.331179 0.0604581	0.370192 0.0604581	0.376052 0.0604581	0.325319 0.0994994	0.331179 0.0994994	0.370192 0.0994994	0.376052 0.0994994	0.325319 0.105359	0.331179 0.105359	0.370192 0.105359	0.376052 0.105359	
+				0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xffffffff	0xffffffff	0xc9ffffff	0xc9ffffff	0xffffffff	0xffffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 90.7884	2.26214 90.7884	453.849 90.7884	464.605 90.7884	-8.42617 102.866	2.53888 102.866	453.572 102.866	464.605 102.866	
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 133.39	2.26214 133.479	453.849 133.479	464.605 133.39	-8.42617 145.432	2.53888 145.432	453.572 145.432	464.605 145.432	
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 175.991	2.26214 176.17	453.849 176.17	464.605 175.991	-8.42617 187.997	2.53888 187.997	453.572 187.997	464.605 187.997	
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 218.592	2.26214 218.861	453.849 218.861	464.605 218.592	-8.42617 230.562	2.53888 230.562	453.572 230.562	464.605 230.562	
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 261.194	2.26214 261.551	453.849 261.551	464.605 261.194	-8.42617 273.127	2.53888 273.127	453.572 273.127	464.605 273.127	
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 303.795	2.26214 304.242	453.849 304.242	464.605 303.795	-8.42617 315.692	2.53888 315.692	453.572 315.692	464.605 315.692	
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 346.396	2.26214 346.933	453.849 346.933	464.605 346.396	-8.42617 358.258	2.53888 358.258	453.572 358.258	464.605 358.258	
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 388.998	2.26214 389.624	453.849 389.624	464.605 388.998	-8.42617 400.823	2.53888 400.823	453.572 400.823	464.605 400.823	
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 431.599	2.26214 432.314	453.849 432.314	464.605 431.599	-8.42617 443.388	2.53888 443.388	453.572 443.388	464.605 443.388	
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 474.2	2.26214 475.005	453.849 475.005	464.605 474.2	-8.42617 485.953	2.53888 485.953	453.572 485.953	464.605 485.953	
+			-8.42617 -7.21268	2.53888 -7.21268	453.572 -7.21268	464.605 -7.21268	-8.42617 1.95985	2.26214 1.05138	453.849 1.05138	464.605 1.95985	-8.42617 516.802	2.26214 517.696	453.849 517.696	464.605 516.802	-8.42617 528.518	2.53888 528.518	453.572 528.518	464.605 528.518	
+		}
+	}
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 81.4882	6 81.4882	448 81.4882	454 81.4882	0 90.0342	6 90.0342	448 90.0342	454 90.0342	
+				0.228518 0.202199	0.234378 0.202199	0.273391 0.202199	0.27925 0.202199	0.228518 0.208058	0.234378 0.208058	0.273391 0.208058	0.27925 0.208058	0.228518 0.244141	0.234378 0.244141	0.273391 0.244141	0.27925 0.244141	0.228518 0.252959	0.234378 0.252959	0.273391 0.252959	0.27925 0.252959	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 81.4882	6 81.4882	448 81.4882	454 81.4882	0 90.0342	6 90.0342	448 90.0342	454 90.0342	
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 124.388	6 124.388	448 124.388	454 124.388	0 132.94	6 132.94	448 132.94	454 132.94	
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 167.288	6 167.288	448 167.288	454 167.288	0 175.846	6 175.846	448 175.846	454 175.846	
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 210.188	6 210.188	448 210.188	454 210.188	0 218.753	6 218.753	448 218.753	454 218.753	
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 253.088	6 253.088	448 253.088	454 253.088	0 261.659	6 261.659	448 261.659	454 261.659	
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 295.988	6 295.988	448 295.988	454 295.988	0 304.565	6 304.565	448 304.565	454 304.565	
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 338.888	6 338.888	448 338.888	454 338.888	0 347.471	6 347.471	448 347.471	454 347.471	
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 381.788	6 381.788	448 381.788	454 381.788	0 390.377	6 390.377	448 390.377	454 390.377	
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 424.688	6 424.688	448 424.688	454 424.688	0 433.283	6 433.283	448 433.283	454 433.283	
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 467.588	6 467.588	448 467.588	454 467.588	0 476.189	6 476.189	448 476.189	454 476.189	
+			0 -0	6 -0	448 -0	454 -0	0 6	6 6	448 6	454 6	0 510.488	6 510.488	448 510.488	454 510.488	0 519.096	6 519.096	448 519.096	454 519.096	
+		}
+	}
+}
+
