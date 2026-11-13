@@ -1,0 +1,267 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by sergey_mitryaev
+//at Mon Apr 20 13:44:32 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 2
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object text_outl
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 0
+			color 0xffff2700
+			size 500 20
+			effect ""
+			alignment "CM"
+			sampleText "РАКЕТА СБИТА"
+			font "VerySmall_outl"
+		}
+		anim idle obj_op
+		{
+			61 
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+		}
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 0
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "CM"
+			sampleText "РАКЕТА СБИТА"
+			font "VerySmall_outl"
+			back_color 0xff0000
+		}
+		anim idle obj_op
+		{
+			61 
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+			26
+			89
+			165
+			228
+			255
+			228
+			165
+			89
+			26
+			0
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				42.0434 -7.70229	462.31 -7.70229	42.0434 28.3241	462.31 28.3241	
+				0.701172 0.00683594	0.899414 0.00683594	0.701172 0.0332031	0.899414 0.0332031	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		anim idle sp_col
+		{
+			61
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	0xffe4e4e4	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xff595959	0xff595959	0xff595959	0xff595959	
+			0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	0xff1a1a1a	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+}
+
