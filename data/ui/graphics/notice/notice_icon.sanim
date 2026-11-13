@@ -1,0 +1,85 @@
+﻿source_file "Y:/art/source/ui/graphics/notice/notice.ma"
+//by Sergey_Mitryaev
+//at Fri Feb 03 13:10:05 2017
+
+base_res 1280 720
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim blink
+	{
+		mode looped
+		cycle_time 0.5
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite flash
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-14.817 -14.817	46.817 -14.817	-14.817 46.817	46.817 46.817	
+				0.44946 0.717038	0.484134 0.717038	0.44946 0.751712	0.484134 0.751712	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		anim blink sp_col
+		{
+			6
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xe4e4e4	0xe4e4e4	0xe4e4e4	0xe4e4e4	
+			0xa5a5a5	0xa5a5a5	0xa5a5a5	0xa5a5a5	
+			0x595959	0x595959	0x595959	0x595959	
+			0x1a1a1a	0x1a1a1a	0x1a1a1a	0x1a1a1a	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	32 -0	0 32	32 32	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xa8ffffff	0xa8ffffff	0xa8ffffff	0xa8ffffff	
+		}
+		anim blink sp_colc
+		{
+			1
+			0xa8ffffff	0xa8ffffff	0xa8ffffff	0xa8ffffff	
+		}
+	}
+}
+
