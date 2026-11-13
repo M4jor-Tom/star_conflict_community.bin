@@ -1,0 +1,146 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing_2.ma"
+//by sergey_mitryaev
+//at Fri Aug 30 17:40:10 2013
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 160 26
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on disable
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 10 3
+			opacity 255
+			color 0xffffffff
+			size 140 20
+			effect ""
+			alignment "CM"
+			sampleText "wfdqwfwqgher"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		anim disable obj_opc
+		{
+			1 
+			120
+		}
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 160 26
+			effect "ui\graphics\debrifing_2\bookmarks_btn_over"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite qwe
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	154 -0	160 -0	0 6	6 6	154 6	160 6	0 20	6 20	154 20	160 20	0 26	6 26	154 26	160 26	
+				0.228516 0.202148	0.234375 0.202148	0.273438 0.202148	0.279297 0.202148	0.228516 0.208008	0.234375 0.208008	0.273438 0.208008	0.279297 0.208008	0.228516 0.245117	0.234375 0.245117	0.273438 0.245117	0.279297 0.245117	0.228516 0.25293	0.234375 0.25293	0.273438 0.25293	0.279297 0.25293	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite sel
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	154 -0	160 -0	0 6	6 6	154 6	160 6	0 20	6 20	154 20	160 20	0 26	6 26	154 26	160 26	
+				0.123047 0.00194478	0.128906 0.00194478	0.164063 0.00194478	0.169922 0.00194478	0.123047 0.00780416	0.128906 0.00780416	0.164063 0.00780416	0.169922 0.00780416	0.123047 0.0449219	0.128906 0.0449219	0.164063 0.0449219	0.169922 0.0449219	0.123047 0.0507813	0.128906 0.0507813	0.164063 0.0507813	0.169922 0.0507813	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	
+		}
+		anim press sp_colc
+		{
+			1
+			0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	
+		}
+		visible_on disable
+	}
+}
+
