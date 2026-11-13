@@ -1,0 +1,71 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Mon Jun 03 14:57:17 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1430 4
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we63
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 4	0 -6.10352e-005	4 4	4 5.14984e-005	
+				0.335785 0.681488	0.343903 0.681488	0.335785 0.689606	0.343903 0.689606	
+				0x26d1f1ff	0x26d1f1ff	0x26d1f1ff	0x26d1f1ff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 4	0 -6.10352e-005	4 4	4 5.14984e-005	
+			0 4	0 -6.10352e-005	146.6 4	146.6 4.95911e-005	
+			0 4	0 -6.10352e-005	289.2 4.00001	289.2 4.57764e-005	
+			0 4	0 -6.10352e-005	431.8 4.00001	431.8 4.00543e-005	
+			0 4	0 -6.10352e-005	574.4 4.00002	574.4 3.33786e-005	
+			0 4	0 -6.10352e-005	717 4.00003	717 2.57492e-005	
+			0 4	0 -6.10352e-005	859.6 4.00004	859.6 1.81198e-005	
+			0 4	0 -6.10352e-005	1002.2 4.00005	1002.2 1.14441e-005	
+			0 4	0 -6.10352e-005	1144.8 4.00005	1144.8 5.72205e-006	
+			0 4	0 -6.10352e-005	1287.4 4.00006	1287.4 1.90735e-006	
+			0 4	0 -6.10352e-005	1430 4.00006	1430 -0	
+		}
+	}
+}
+
