@@ -1,0 +1,83 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Mon Dec 02 13:31:28 2013
+
+
+animations 4
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim myself
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 850 47
+			effect ""
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 410 40
+			effect "ui\graphics\debrifing\debrif_player_slot"
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 437 -0
+			opacity 255
+			color 0xffffffff
+			size 410 40
+			effect "ui\graphics\debrifing\debrif_player_slot"
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on squad
+		visible_on myself
+		visible_on enemy
+	}
+}
+
