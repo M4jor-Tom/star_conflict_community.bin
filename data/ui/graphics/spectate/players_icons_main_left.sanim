@@ -1,0 +1,209 @@
+﻿source_file  Y:/art/source/ui/graphics/spectate/spectate.ma
+//by sergey_mitryaev
+//at Wed Apr 18 12:24:33 2012
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 8
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 143.764 16.4706
+			opacity 255
+			color 0xffffffff
+			size 50 25
+			effect "ui\graphics\spectate\players_ship_icon_left"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_opc_colc
+		{
+			1 1
+			90
+			0xff5a5a5a
+		}
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 191.428 16.4706
+			opacity 255
+			color 0xffffffff
+			size 50 25
+			effect "ui\graphics\spectate\players_ship_icon_left"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_opc_colc
+		{
+			1 1
+			90
+			0xff5a5a5a
+		}
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 238.898 16.4706
+			opacity 255
+			color 0xffffffff
+			size 50 25
+			effect "ui\graphics\spectate\players_ship_icon_left"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_opc_colc
+		{
+			1 1
+			90
+			0xff5a5a5a
+		}
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 286.368 16.4706
+			opacity 255
+			color 0xffffffff
+			size 50 25
+			effect "ui\graphics\spectate\players_ship_icon_left"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_opc_colc
+		{
+			1 1
+			90
+			0xff5a5a5a
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 350 48
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object player_name
+	{
+		defaults
+		{
+			pos -0.0454688 22.9919
+			opacity 255
+			color 0xfff3f3f3
+			size 120 13
+			effect ""
+			alignment "LM"
+			sampleText "Player Name"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			90
+		}
+	}
+	object frags
+	{
+		defaults
+		{
+			pos 121.482 22.4822
+			opacity 255
+			color 0xfff3f3f3
+			size 20 13
+			effect ""
+			alignment "LM"
+			sampleText "23"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			90
+		}
+	}
+	object current_player
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 48
+			effect "ui\graphics\spectate\current_player_left"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName173
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			vertices
+			{
+				51.7561 16.2283	409.169 16.2285	51.7561 42.244	409.169 42.2439	
+				0.423105 0.847863	0.774441 0.847863	0.423105 0.955188	0.774441 0.955188	
+				0x8c000000	0x8c000000	0x8c000000	0x8c000000	
+			}
+		}
+		visible_on idle
+		visible_on disable
+	}
+	sprite objectName176
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			vertices
+			{
+				51.7561 16.2283	-41.7077 16.2285	51.7561 42.244	-41.7077 42.2439	
+				0.423105 0.847863	0.541571 0.847863	0.423105 0.955188	0.541571 0.955188	
+				0x8c000000	0x8c000000	0x8c000000	0x8c000000	
+			}
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
