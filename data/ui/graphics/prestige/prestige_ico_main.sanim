@@ -1,0 +1,92 @@
+﻿source_file "Y:/art/source/ui/graphics/prestige/prestige.ma"
+//by Sergey_Mitryaev
+//at Tue Apr 18 17:25:14 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object vol_1
+	{
+		defaults
+		{
+			pos 0 76
+			opacity 255
+			color 0xffff9a00
+			size 80 40
+			effect ""
+			alignment "CT"
+			sampleText "Престиж"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 80 80
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object prog2
+	{
+		defaults
+		{
+			pos 49 20
+			opacity 255
+			color 0xffffffff
+			size 76 100
+			effect "ui\graphics\prestige\prestige2_prog_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 3 -0
+			opacity 255
+			color 0xffffffff
+			size 76 100
+			effect "ui\graphics\prestige\prestige_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 3 -0
+			opacity 255
+			color 0xffffffff
+			size 76 78
+			effect "ui\graphics\prestige\prestige_ico_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
