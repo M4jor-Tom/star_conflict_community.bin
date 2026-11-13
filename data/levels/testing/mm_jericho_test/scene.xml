@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="mm_jericho; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" battlefieldRadius="1800.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" />
+  <EntityContainer>
+    <Entity Name="WorldLookPoint" Def="Helpers_TagPoint" Pos="0.000 21.000 0.000" Rot="0.000 0.707 0.000 0.707" type="0" />
+    <Entity Name="JerichoRamp1" Def="Effects_hng_JerichoRamp" Pos="-27.765 16.128 -25.931" Rot="0.000 1.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="AmbientSoundSpot14" Def="Sound_AmbientSoundSpot" Pos="36.710 -1.828 -7.826" soundname="sound/ambient/hangar/hum_jericho" max_distance="20.000" volume="1.000" flags="0" start_silent="0" />
+    <Entity Name="SpawnSpot1" Def="Logic_SpawnSpot_Team1Group1" Pos="-27.879 16.909 -14.319" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnSpot2" Def="Logic_SpawnSpot_Team1Group1" Pos="-14.284 16.909 -14.221" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnSpot3" Def="Logic_SpawnSpot_Team1Group1" Pos="-0.643 16.909 -14.250" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnSpot4" Def="Logic_SpawnSpot_Team1Group1" Pos="12.975 16.909 -14.399" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="OnActivateSlot1" Def="Logic_Relay" Pos="-28.027 22.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="4">
+        <FireAction Target="EnableSlot1" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot2" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot3" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot4" Action="Trigger" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EnableSlot1" Def="Logic_Relay" Pos="-28.027 23.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="3">
+        <FireAction Target="Beam39" Action="EnableDrawing" TimesToFire="-1" />
+        <FireAction Target="Projector7" Action="TurnOnLight" TimesToFire="-1" />
+        <FireAction Target="ModelEntity2" Action="EnableDrawing" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="DisableSlot1" Def="Logic_Relay" Pos="-28.027 24.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="3">
+        <FireAction Target="Beam39" Action="DisableDrawing" TimesToFire="-1" />
+        <FireAction Target="Projector7" Action="TurnOffLight" TimesToFire="-1" />
+        <FireAction Target="ModelEntity2" Action="DisableDrawing" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="OnActivateSlot2" Def="Logic_Relay" Pos="-14.162 22.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="4">
+        <FireAction Target="EnableSlot2" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot1" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot3" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot4" Action="Trigger" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EnableSlot2" Def="Logic_Relay" Pos="-14.162 23.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="3">
+        <FireAction Target="Projector9" Action="TurnOnLight" TimesToFire="-1" />
+        <FireAction Target="Beam38" Action="EnableDrawing" TimesToFire="-1" />
+        <FireAction Target="ModelEntity3" Action="EnableDrawing" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="DisableSlot2" Def="Logic_Relay" Pos="-14.162 24.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="3">
+        <FireAction Target="Projector9" Action="TurnOffLight" TimesToFire="-1" />
+        <FireAction Target="Beam38" Action="DisableDrawing" TimesToFire="-1" />
+        <FireAction Target="ModelEntity3" Action="DisableDrawing" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="OnActivateSlot3" Def="Logic_Relay" Pos="-0.099 22.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="4">
+        <FireAction Target="EnableSlot3" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot1" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot2" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot4" Action="Trigger" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EnableSlot3" Def="Logic_Relay" Pos="-0.099 23.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="3">
+        <FireAction Target="Projector6" Action="TurnOnLight" TimesToFire="-1" />
+        <FireAction Target="Beam37" Action="EnableDrawing" TimesToFire="-1" />
+        <FireAction Target="ModelEntity4" Action="EnableDrawing" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="DisableSlot3" Def="Logic_Relay" Pos="-0.099 24.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="3">
+        <FireAction Target="Projector6" Action="TurnOffLight" TimesToFire="-1" />
+        <FireAction Target="Beam37" Action="DisableDrawing" TimesToFire="-1" />
+        <FireAction Target="ModelEntity4" Action="DisableDrawing" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="OnActivateSlot4" Def="Logic_Relay" Pos="10.584 22.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="4">
+        <FireAction Target="EnableSlot4" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot1" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot2" Action="Trigger" TimesToFire="-1" />
+        <FireAction Target="DisableSlot3" Action="Trigger" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EnableSlot4" Def="Logic_Relay" Pos="10.584 23.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="3">
+        <FireAction Target="Beam40" Action="EnableDrawing" TimesToFire="-1" />
+        <FireAction Target="Projector8" Action="TurnOnLight" TimesToFire="-1" />
+        <FireAction Target="ModelEntity5" Action="EnableDrawing" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="DisableSlot4" Def="Logic_Relay" Pos="10.584 24.973 -23.738" disabled="0" remove_on_fire="0">
+      <ActionList Name="m_onTrigger" Num="3">
+        <FireAction Target="Beam40" Action="DisableDrawing" TimesToFire="-1" />
+        <FireAction Target="Projector8" Action="TurnOffLight" TimesToFire="-1" />
+        <FireAction Target="ModelEntity5" Action="DisableDrawing" TimesToFire="-1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="woman9" Def="Menu_model_hangar_woman" Pos="7.116 14.340 -23.992" Rot="0.000 0.462 0.000 0.887" Activity="IDLE" />
+    <Entity Name="woman7" Def="Menu_model_hangar_woman" Pos="-20.598 14.338 -23.795" Rot="0.000 0.070 0.000 0.998" Activity="IDLE" />
+    <Entity Name="human34" Def="Menu_model_hangar_human" Pos="12.694 16.133 -17.565" Rot="0.000 -0.758 0.000 0.653" Activity="IDLE" />
+    <Entity Name="woman10" Def="Menu_model_hangar_woman" Pos="7.027 14.340 -24.880" Rot="0.000 0.898 0.000 0.440" Activity="IDLE" />
+    <Entity Name="woman5" Def="Menu_model_hangar_woman" Pos="-14.221 16.112 -23.125" Rot="0.000 0.247 0.000 0.969" Activity="IDLE" />
+    <Entity Name="woman16" Def="Menu_model_hangar_woman" Pos="13.213 16.112 -26.608" Rot="0.000 0.552 0.000 0.834" Activity="IDLE" />
+    <Entity Name="woman8" Def="Menu_model_hangar_woman" Pos="7.154 14.340 -24.624" Rot="0.000 0.671 0.000 0.742" Activity="IDLE" />
+    <Entity Name="human33" Def="Menu_model_hangar_human" Pos="13.064 16.129 -26.862" Rot="0.000 -0.718 0.000 0.696" Activity="IDLE" />
+    <Entity Name="Beam82" Def="Lights_Beam" Pos="34.259 41.287 0.098" Rot="-0.393 0.023 0.919 -0.013" base_color="0x37451F10" size="30.000" width="30.000" soft="0" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="human36" Def="Menu_model_hangar_human" Pos="13.164 16.133 -17.570" Rot="0.000 0.678 0.000 0.735" Activity="IDLE" />
+    <Entity Name="Beam105" Def="Lights_Beam" Pos="-15.693 28.950 -28.064" Rot="-0.003 0.398 0.917 0.008" base_color="0x371D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0x1914181B" />
+    <Entity Name="ModelEntity4" Def="ModelEntity" Pos="-0.235 27.605 -29.017" Rot="0.286 0.000 0.000 0.958" Model="mapskit\mainmenu\models\illuminator\illuminator01" />
+    <Entity Name="ModelEntity5" Def="ModelEntity" Pos="13.002 27.682 -29.018" Rot="0.267 0.000 0.000 0.964" Model="mapskit\mainmenu\models\illuminator\illuminator01" />
+    <Entity Name="woman6" Def="Menu_model_hangar_woman" Pos="-20.511 14.338 -24.408" Rot="0.000 -0.310 0.000 0.951" Activity="IDLE" />
+    <Entity Name="human32" Def="Menu_model_hangar_human" Pos="13.218 16.112 -27.069" Rot="0.000 0.944 0.000 -0.329" Activity="IDLE" />
+    <Entity Name="JerichoRamp4" Def="Effects_hng_JerichoRamp" Pos="13.104 16.128 -25.931" Rot="0.000 1.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="woman11" Def="Menu_model_hangar_woman" Pos="-0.092 16.113 -27.190" Rot="0.000 0.540 0.000 0.842" Activity="IDLE" />
+    <Entity Name="JerichoRamp3" Def="Effects_hng_JerichoRamp" Pos="-0.530 16.128 -25.931" Rot="0.000 1.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Projector6" Def="Lights_Projector" Pos="-0.592 31.175 -13.013" Rot="1.000 0.000 0.000 -0.004" fov="1.000" far_dist="16.000" near_dist="7.000" width="0.600" height="1.000" enabled="0" shadows="1" base_color="0x84B8A592" texture="textures\misc\no_texture" />
+    <Entity Name="Beam18" Def="Lights_Beam" Pos="-44.567 25.874 -36.209" base_color="0xFF556271" size="3.000" width="1.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="179.999985" halo1_base_color="0xFFFFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="179.999985" halo2_base_color="0xFFFFFFFF" />
+    <Entity Name="PointLight10" Def="Lights_PointLight" Pos="5.682 9.717 -13.931" start_off="0" rad="40.00000" color="0xD02869D" />
+    <Entity Name="Beam37" Def="Lights_Beam" Pos="-0.442 27.485 -28.957" Rot="0.916 0.020 -0.030 0.399" base_color="0xFF38271D" size="15.000" width="6.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="179.999985" halo1_base_color="0xFFFFFFFF" halo2_size="1.600000" halo2_nebulosity="0.400000" halo2_vis_angle="179.999985" halo2_base_color="0x6A86D4A" />
+    <Entity Name="PointLight6" Def="Lights_PointLight" Pos="19.558 25.238 2.551" start_off="0" rad="30.00000" color="0x489B2E04" />
+    <Entity Name="JerichoShipHook10" Def="Effects_hng_JerichoShipHook" Pos="10.948 16.298 -15.752" Rot="0.211 0.223 -0.182 0.934" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="JerichoShipHook9" Def="Effects_hng_JerichoShipHook" Pos="-0.670 16.284 -12.255" Rot="-0.065 0.923 -0.271 0.265" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="JerichoShipHook12" Def="Effects_hng_JerichoShipHook" Pos="12.951 16.284 -12.273" Rot="-0.065 0.923 -0.271 0.265" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam70" Def="Lights_Beam" Pos="-14.631 28.026 28.105" Rot="-0.093 -0.301 0.949 -0.015" base_color="0xFF38271D" size="10.000" width="6.000" soft="0" has_halo_1="1" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="0.860000" halo1_vis_angle="179.999985" halo1_base_color="0x3140901" halo2_size="1.200000" halo2_nebulosity="0.810000" halo2_vis_angle="179.999985" halo2_base_color="0xA86D4A" />
+    <Entity Name="Beam65" Def="Lights_Beam" Pos="-30.446 41.192 0.120" Rot="-0.393 0.023 0.919 -0.013" base_color="0x37451F10" size="30.000" width="30.000" soft="0" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="JerichoShipHook11" Def="Effects_hng_JerichoShipHook" Pos="14.984 16.259 -15.771" Rot="0.265 -0.689 0.086 0.669" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="JerichoRamp2" Def="Effects_hng_JerichoRamp" Pos="-14.142 16.128 -25.931" Rot="0.000 1.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam117" Def="Lights_Beam" Pos="14.297 28.950 27.596" Rot="0.917 0.010 0.008 -0.398" base_color="0xE1D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0xD14181B" />
+    <Entity Name="woman15" Def="Menu_model_hangar_woman" Pos="-0.476 16.129 -17.599" Rot="0.000 0.637 0.000 0.771" Activity="IDLE" />
+    <Entity Name="JerichoShipHook8" Def="Effects_hng_JerichoShipHook" Pos="1.363 16.259 -15.753" Rot="0.265 -0.689 0.086 0.669" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="woman14" Def="Menu_model_hangar_woman" Pos="-6.577 14.337 -24.439" Rot="0.000 0.044 0.000 0.999" Activity="IDLE" />
+    <Entity Name="woman12" Def="Menu_model_hangar_woman" Pos="-0.437 16.113 -26.786" Rot="0.000 -0.553 0.000 0.833" Activity="IDLE" />
+    <Entity Name="human30" Def="Menu_model_hangar_human" Pos="-0.938 16.134 -17.582" Rot="0.000 -0.727 0.000 0.686" Activity="IDLE" />
+    <Entity Name="sfincter1" Def="Menu_model_hangar_sfincter_jericho" Pos="0.000 0.000 0.000" Activity="IDLE" />
+    <Entity Name="Beam38" Def="Lights_Beam" Pos="-14.294 27.420 -28.773" Rot="0.930 0.021 -0.029 0.366" base_color="0xFF38271D" size="15.000" width="6.000" soft="0" has_halo_1="1" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="0.100000" halo1_nebulosity="1.000000" halo1_vis_angle="179.999985" halo1_base_color="0xBFFFFFF" halo2_size="1.600000" halo2_nebulosity="0.400000" halo2_vis_angle="179.999985" halo2_base_color="0x6A86D4A" />
+    <Entity Name="Projector7" Def="Lights_Projector" Pos="-27.390 31.194 -13.004" Rot="1.000 0.000 0.000 -0.004" fov="1.000" far_dist="16.000" near_dist="7.000" width="0.600" height="1.000" enabled="0" shadows="1" base_color="0x84B8A592" texture="textures\misc\no_texture" />
+    <Entity Name="Beam39" Def="Lights_Beam" Pos="-27.809 27.692 -28.792" Rot="0.926 0.021 -0.029 0.376" base_color="0xFF38271D" size="15.000" width="6.000" soft="0" has_halo_1="1" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="0.400000" halo1_nebulosity="1.000000" halo1_vis_angle="179.999985" halo1_base_color="0x8FFFFFF" halo2_size="1.200000" halo2_nebulosity="0.430000" halo2_vis_angle="179.999985" halo2_base_color="0x6A86D4A" />
+    <Entity Name="Beam40" Def="Lights_Beam" Pos="13.237 27.449 -28.611" Rot="0.935 0.021 -0.028 0.353" base_color="0xFF38271D" size="15.000" width="6.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="179.999985" halo1_base_color="0xFFFFFFFF" halo2_size="1.600000" halo2_nebulosity="0.400000" halo2_vis_angle="179.999985" halo2_base_color="0x6A86D4A" />
+    <Entity Name="Projector8" Def="Lights_Projector" Pos="13.094 31.222 -13.086" Rot="1.000 0.000 0.000 -0.004" fov="1.000" far_dist="16.000" near_dist="7.000" width="0.600" height="1.000" enabled="1" shadows="1" base_color="0x84B8A592" texture="textures\misc\no_texture" />
+    <Entity Name="Projector9" Def="Lights_Projector" Pos="-14.626 31.272 -13.134" Rot="1.000 0.000 0.000 -0.004" fov="1.000" far_dist="16.000" near_dist="7.000" width="0.600" height="1.000" enabled="1" shadows="1" base_color="0x84B8A592" texture="textures\misc\no_texture" />
+    <Entity Name="ModelEntity2" Def="ModelEntity" Pos="-27.901 27.756 -29.069" Rot="0.267 0.000 0.000 0.964" Model="mapskit\mainmenu\models\illuminator\illuminator01" />
+    <Entity Name="ModelEntity3" Def="ModelEntity" Pos="-14.350 27.682 -29.009" Rot="0.247 0.000 0.000 0.969" Model="mapskit\mainmenu\models\illuminator\illuminator01" />
+    <Entity Name="human1" Def="Menu_model_hangar_human" Pos="-27.739 16.112 -26.841" Rot="0.000 -0.514 0.000 0.858" Activity="IDLE" />
+    <Entity Name="human2" Def="Menu_model_hangar_human" Pos="-27.323 16.112 -27.146" Rot="0.000 0.479 0.000 0.878" Activity="IDLE" />
+    <Entity Name="JerichoShipHook3" Def="Effects_hng_JerichoShipHook" Pos="-27.907 16.284 -12.260" Rot="-0.065 0.923 -0.271 0.265" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="human4" Def="Menu_model_hangar_human" Pos="-28.166 16.135 -17.590" Rot="0.000 -0.700 0.000 0.714" Activity="IDLE" />
+    <Entity Name="AmbientSoundSpot13" Def="Sound_AmbientSoundSpot" Pos="-10.823 9.759 -31.735" soundname="sound/ambient/hangar/random1" max_distance="20.000" volume="1.000" flags="0" start_silent="0" />
+    <Entity Name="woman1" Def="Menu_model_hangar_woman" Pos="-27.673 16.131 -17.611" Rot="0.000 0.741 0.000 0.671" Activity="IDLE" />
+    <Entity Name="woman2" Def="Menu_model_hangar_woman" Pos="-27.663 16.115 -27.019" Rot="0.000 0.932 0.000 -0.362" Activity="IDLE" />
+    <Entity Name="AmbientSoundSpot12" Def="Sound_AmbientSoundSpot" Pos="-57.106 11.350 1.000" soundname="sound/ambient/hangar/ships" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="human9" Def="Menu_model_hangar_human" Pos="-14.377 16.111 -23.688" Rot="0.000 -0.758 0.000 0.652" Activity="IDLE" />
+    <Entity Name="human10" Def="Menu_model_hangar_human" Pos="-14.003 16.131 -17.621" Rot="0.000 0.699 0.000 0.715" Activity="IDLE" />
+    <Entity Name="JerichoShipHook5" Def="Effects_hng_JerichoShipHook" Pos="-12.264 16.259 -15.769" Rot="0.265 -0.689 0.086 0.669" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="JerichoShipHook4" Def="Effects_hng_JerichoShipHook" Pos="-16.300 16.298 -15.750" Rot="0.211 0.223 -0.182 0.934" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="human13" Def="Menu_model_hangar_human" Pos="-14.313 16.113 -23.207" Rot="0.000 0.870 0.000 -0.492" Activity="IDLE" />
+    <Entity Name="human14" Def="Menu_model_hangar_human" Pos="-20.078 14.339 -24.502" Rot="0.000 0.148 0.000 0.989" Activity="IDLE" />
+    <Entity Name="human15" Def="Menu_model_hangar_human" Pos="-20.391 14.339 -24.333" Rot="0.000 -0.111 0.000 0.994" Activity="IDLE" />
+    <Entity Name="human16" Def="Menu_model_hangar_human" Pos="-20.713 14.339 -23.842" Rot="0.000 -0.306 0.000 0.952" Activity="IDLE" />
+    <Entity Name="human17" Def="Menu_model_hangar_human" Pos="-0.432 16.114 -26.988" Rot="0.000 0.868 0.000 -0.497" Activity="IDLE" />
+    <Entity Name="JerichoShipHook7" Def="Effects_hng_JerichoShipHook" Pos="-2.673 16.298 -15.734" Rot="0.211 0.223 -0.182 0.934" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="JerichoShipHook6" Def="Effects_hng_JerichoShipHook" Pos="-14.297 16.284 -12.271" Rot="-0.065 0.923 -0.271 0.265" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="human20" Def="Menu_model_hangar_human" Pos="7.162 14.341 -24.082" Rot="0.000 0.590 0.000 0.807" Activity="IDLE" />
+    <Entity Name="human21" Def="Menu_model_hangar_human" Pos="7.144 14.341 -24.224" Rot="0.000 0.690 0.000 0.724" Activity="IDLE" />
+    <Entity Name="human22" Def="Menu_model_hangar_human" Pos="7.169 14.341 -24.398" Rot="0.000 0.729 0.000 0.685" Activity="IDLE" />
+    <Entity Name="human23" Def="Menu_model_hangar_human" Pos="-0.411 16.114 -26.562" Rot="0.000 0.467 0.000 0.884" Activity="IDLE" />
+    <Entity Name="human24" Def="Menu_model_hangar_human" Pos="7.124 14.341 -24.738" Rot="0.000 0.823 0.000 0.568" Activity="IDLE" />
+    <Entity Name="human25" Def="Menu_model_hangar_human" Pos="6.736 14.341 -24.466" Rot="0.000 -0.777 0.000 0.629" Activity="IDLE" />
+    <Entity Name="human26" Def="Menu_model_hangar_human" Pos="-6.723 14.338 -24.800" Rot="0.000 0.982 0.000 -0.190" Activity="IDLE" />
+    <Entity Name="woman4" Def="Menu_model_hangar_woman" Pos="-14.521 16.132 -17.601" Rot="0.000 -0.678 0.000 0.735" Activity="IDLE" />
+    <Entity Name="human28" Def="Menu_model_hangar_human" Pos="-6.485 14.338 -24.534" Rot="0.000 0.249 0.000 0.968" Activity="IDLE" />
+    <Entity Name="human29" Def="Menu_model_hangar_human" Pos="6.783 14.340 -26.363" Rot="0.000 0.847 0.000 0.531" Activity="IDLE" />
+    <Entity Name="JerichoShipHook1" Def="Effects_hng_JerichoShipHook" Pos="-29.910 16.298 -15.739" Rot="0.211 0.223 -0.182 0.934" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="JerichoShipHook2" Def="Effects_hng_JerichoShipHook" Pos="-25.874 16.259 -15.758" Rot="0.265 -0.689 0.086 0.669" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="MonitorBig1" Def="MonitorBig" Pos="28.292 23.851 17.680" Rot="-0.692 0.165 0.169 0.682" Activity="IDLE" />
+    <Entity Name="ModelEntity7" Def="ModelEntity" Pos="-0.263 21.051 -30.492" Rot="0.003 0.707 0.707 0.003" Model="models\objects\illuminate\monitor\jer_monitor_little_01" />
+    <Entity Name="ModelEntity35" Def="ModelEntity" Pos="-33.712 19.116 -32.092" Rot="-0.001 0.707 0.707 0.000" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity32" Def="ModelEntity" Pos="41.393 19.326 -17.431" Rot="0.564 -0.433 0.429 0.558" Model="models\objects\illuminate\monitor\jer_monitor_little_04" />
+    <Entity Name="ModelEntity10" Def="ModelEntity" Pos="-27.894 20.790 -30.538" Rot="-0.001 0.707 0.707 -0.001" Model="models\objects\illuminate\monitor\jer_monitor_little_01" />
+    <Entity Name="Beam78" Def="Lights_Beam" Pos="1.865 41.287 0.098" Rot="-0.393 0.023 0.919 -0.013" base_color="0x37451F10" size="30.000" width="30.000" soft="0" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="ModelEntity24" Def="ModelEntity" Pos="41.525 22.275 -17.438" Rot="0.564 -0.433 0.429 0.558" Model="models\objects\illuminate\monitor\jer_monitor_little_04" />
+    <Entity Name="ModelEntity13" Def="ModelEntity" Pos="39.363 20.261 -21.140" Rot="0.620 -0.339 0.339 0.620" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity37" Def="ModelEntity" Pos="-14.273 21.281 -30.527" Rot="-0.001 0.704 0.710 -0.001" Model="models\objects\illuminate\monitor\jer_monitor_little_05" />
+    <Entity Name="ModelEntity15" Def="ModelEntity" Pos="-27.930 22.053 30.318" Rot="-0.707 0.000 0.002 0.707" Model="models\objects\illuminate\monitor\jer_monitor_little_01" />
+    <Entity Name="ModelEntity22" Def="ModelEntity" Pos="-0.231 10.459 -29.747" Rot="-0.707 0.000 0.000 0.707" Model="models\objects\illuminate\monitor\jer_monitor_little_03" />
+    <Entity Name="ModelEntity36" Def="ModelEntity" Pos="-7.242 19.150 -32.120" Rot="-0.001 0.707 0.707 0.000" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity18" Def="ModelEntity" Pos="-0.245 21.992 30.230" Rot="-0.707 0.014 0.008 0.707" Model="models\objects\illuminate\monitor\jer_monitor_little_01" />
+    <Entity Name="ModelEntity33" Def="ModelEntity" Pos="6.561 19.134 -32.179" Rot="-0.001 0.707 0.707 0.000" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity20" Def="ModelEntity" Pos="-27.926 9.927 -29.759" Rot="-0.707 0.000 0.000 0.707" Model="models\objects\illuminate\monitor\jer_monitor_little_03" />
+    <Entity Name="ModelEntity34" Def="ModelEntity" Pos="-21.154 19.078 -32.169" Rot="-0.001 0.707 0.707 0.000" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity26" Def="ModelEntity" Pos="-27.937 10.397 30.291" Rot="-0.707 0.000 0.000 0.707" Model="models\objects\illuminate\monitor\jer_monitor_little_03" />
+    <Entity Name="ModelEntity30" Def="ModelEntity" Pos="39.283 22.592 -21.044" Rot="0.620 -0.339 0.339 0.620" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity28" Def="ModelEntity" Pos="-0.272 10.696 30.317" Rot="-0.707 0.000 0.000 0.707" Model="models\objects\illuminate\monitor\jer_monitor_little_03" />
+    <Entity Name="ModelEntity38" Def="ModelEntity" Pos="-21.197 19.121 32.044" Rot="-0.707 -0.002 -0.001 0.707" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity39" Def="ModelEntity" Pos="-33.577 19.075 32.151" Rot="-0.707 -0.002 -0.001 0.707" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity40" Def="ModelEntity" Pos="-7.273 19.099 32.152" Rot="-0.707 -0.002 -0.001 0.707" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity41" Def="ModelEntity" Pos="6.388 19.090 32.111" Rot="-0.707 -0.002 -0.001 0.707" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity42" Def="ModelEntity" Pos="-14.304 21.913 30.221" Rot="-0.001 0.704 0.710 -0.001" Model="models\objects\illuminate\monitor\jer_monitor_little_05" />
+    <Entity Name="ModelEntity43" Def="ModelEntity" Pos="-21.155 19.119 -32.063" Rot="0.707 0.000 0.000 0.707" Model="models\objects\illuminate\monitor\jer_text_01" />
+    <Entity Name="ModelEntity44" Def="ModelEntity" Pos="6.583 19.178 -32.077" Rot="0.707 0.000 0.000 0.707" Model="models\objects\illuminate\monitor\jer_text_01" />
+    <Entity Name="Beam79" Def="Lights_Beam" Pos="25.014 41.287 0.098" Rot="-0.393 0.023 0.919 -0.013" base_color="0x37451F10" size="30.000" width="30.000" soft="0" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="ModelEntity31" Def="ModelEntity" Pos="39.206 17.956 -21.092" Rot="0.620 -0.339 0.339 0.620" Model="models\objects\illuminate\monitor\jer_monitor_little_02" />
+    <Entity Name="ModelEntity47" Def="ModelEntity" Pos="-7.203 19.114 -32.085" Rot="0.701 0.008 -0.012 0.713" Model="models\objects\illuminate\monitor\jer_text_02" />
+    <Entity Name="ModelEntity48" Def="ModelEntity" Pos="-33.727 19.091 -32.107" Rot="0.715 0.008 -0.012 0.699" Model="models\objects\illuminate\monitor\jer_text_02" />
+    <Entity Name="Beam80" Def="Lights_Beam" Pos="18.229 41.287 0.098" Rot="-0.393 0.023 0.919 -0.013" base_color="0x37451F10" size="30.000" width="30.000" soft="0" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="ModelEntity50" Def="ModelEntity" Pos="-21.241 19.086 31.982" Rot="0.008 0.707 -0.707 0.008" Model="models\objects\illuminate\monitor\jer_text_01" />
+    <Entity Name="ModelEntity53" Def="ModelEntity" Pos="-33.760 19.121 32.120" Rot="0.000 -0.701 0.713 0.004" Model="models\objects\illuminate\monitor\jer_text_02" />
+    <Entity Name="ModelEntity52" Def="ModelEntity" Pos="6.419 19.132 32.145" Rot="0.000 -0.701 0.713 0.004" Model="models\objects\illuminate\monitor\jer_text_02" />
+    <Entity Name="ModelEntity51" Def="ModelEntity" Pos="-7.148 19.117 32.018" Rot="0.008 0.707 -0.707 0.008" Model="models\objects\illuminate\monitor\jer_text_01" />
+    <Entity Name="jericho1" Def="Menu_model_hangar_FlyingAnim_jericho" Pos="0.000 -22.646 15.134" Activity="IDLE" />
+    <Entity Name="Beam81" Def="Lights_Beam" Pos="41.044 41.287 0.098" Rot="-0.393 0.023 0.919 -0.013" base_color="0x37451F10" size="30.000" width="30.000" soft="0" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam111" Def="Lights_Beam" Pos="-29.277 28.950 27.596" Rot="0.917 0.010 0.008 -0.398" base_color="0xE1D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0xD14181B" />
+    <Entity Name="Beam116" Def="Lights_Beam" Pos="11.684 28.950 27.596" Rot="0.917 0.010 0.008 -0.398" base_color="0xE1D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0xD14181B" />
+    <Entity Name="Beam115" Def="Lights_Beam" Pos="1.117 28.950 27.596" Rot="0.917 0.010 0.008 -0.398" base_color="0xE1D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0xD14181B" />
+    <Entity Name="Beam112" Def="Lights_Beam" Pos="-13.036 28.950 27.596" Rot="0.917 0.010 0.008 -0.398" base_color="0xE1D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0xD14181B" />
+    <Entity Name="Beam114" Def="Lights_Beam" Pos="-1.566 28.950 27.596" Rot="0.917 0.010 0.008 -0.398" base_color="0xE1D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0xD14181B" />
+    <Entity Name="Beam113" Def="Lights_Beam" Pos="-15.693 28.950 27.596" Rot="0.917 0.010 0.008 -0.398" base_color="0xE1D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0xD14181B" />
+    <Entity Name="Beam89" Def="Lights_Beam" Pos="25.599 36.916 -14.428" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam110" Def="Lights_Beam" Pos="14.297 28.950 -28.064" Rot="-0.003 0.398 0.917 0.008" base_color="0x371D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0x1914181B" />
+    <Entity Name="Beam109" Def="Lights_Beam" Pos="11.684 28.950 -28.064" Rot="-0.003 0.398 0.917 0.008" base_color="0x371D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0x1914181B" />
+    <Entity Name="Beam106" Def="Lights_Beam" Pos="-13.036 28.950 -28.064" Rot="-0.003 0.398 0.917 0.008" base_color="0x371D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0x1914181B" />
+    <Entity Name="Beam107" Def="Lights_Beam" Pos="-1.566 28.950 -28.064" Rot="-0.003 0.398 0.917 0.008" base_color="0x371D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0x1914181B" />
+    <Entity Name="Beam90" Def="Lights_Beam" Pos="-28.235 36.916 14.892" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam108" Def="Lights_Beam" Pos="1.117 28.950 -28.064" Rot="-0.003 0.398 0.917 0.008" base_color="0x371D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0x1914181B" />
+    <Entity Name="Beam104" Def="Lights_Beam" Pos="-26.653 28.950 -28.064" Rot="-0.003 0.398 0.917 0.008" base_color="0x371D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0x1914181B" />
+    <Entity Name="Beam83" Def="Lights_Beam" Pos="-28.235 36.916 -14.428" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam88" Def="Lights_Beam" Pos="16.688 36.916 -14.428" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam87" Def="Lights_Beam" Pos="8.211 36.916 -14.428" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam84" Def="Lights_Beam" Pos="-18.807 36.916 -14.428" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam86" Def="Lights_Beam" Pos="-0.809 36.916 -14.428" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam85" Def="Lights_Beam" Pos="-9.821 36.916 -14.428" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Fuzz2" Def="Effects_hng_Fuzz" Pos="13.189 19.547 -23.933" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="PointLight5" Def="Lights_PointLight" Pos="-25.434 -0.965 -0.392" start_off="0" rad="40.00000" color="0x1902869D" />
+    <Entity Name="Beam96" Def="Lights_Beam" Pos="25.832 36.916 14.892" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam8" Def="Lights_Beam" Pos="-29.277 28.950 -28.064" Rot="-0.003 0.398 0.917 0.008" base_color="0x371D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0x1914181B" />
+    <Entity Name="Beam95" Def="Lights_Beam" Pos="17.090 36.916 14.892" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam94" Def="Lights_Beam" Pos="8.378 36.916 14.892" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam93" Def="Lights_Beam" Pos="-0.660 36.916 14.892" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam92" Def="Lights_Beam" Pos="-9.787 36.916 14.892" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam91" Def="Lights_Beam" Pos="-18.767 36.916 14.892" Rot="-0.393 -0.005 0.919 -0.001" base_color="0x2F3FBFE" size="10.000" width="3.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="ModelEntity54" Def="ModelEntity" Pos="45.759 32.388 -0.104" Rot="0.187 -0.688 0.191 0.675" Model="mapskit\mainmenu\models\illuminator\illuminator01" collision="0" />
+    <Entity Name="Beam72" Def="Lights_Beam" Pos="12.790 28.026 28.105" Rot="-0.093 -0.301 0.949 -0.015" base_color="0xFF38271D" size="10.000" width="6.000" soft="0" has_halo_1="1" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="0.860000" halo1_vis_angle="179.999985" halo1_base_color="0x3140901" halo2_size="1.200000" halo2_nebulosity="0.810000" halo2_vis_angle="179.999985" halo2_base_color="0xA86D4A" />
+    <Entity Name="Beam50" Def="Lights_Beam" Pos="45.434 14.900 -0.304" Rot="-0.193 0.713 0.200 0.644" base_color="0xFF38271D" size="10.000" width="8.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="179.999985" halo1_base_color="0xFFFFFFFF" halo2_size="1.200000" halo2_nebulosity="0.740000" halo2_vis_angle="179.999985" halo2_base_color="0x4241009" />
+    <Entity Name="ModelEntity55" Def="ModelEntity" Pos="46.207 15.316 -0.104" Rot="0.707 -0.002 -0.707 0.000" Model="mapskit\mainmenu\models\illuminator\illuminator01" collision="0" />
+    <Entity Name="PointLight8" Def="Lights_PointLight" Pos="-45.139 34.463 -0.224" start_off="0" rad="20.00000" color="0x1111758E" />
+    <Entity Name="Beam51" Def="Lights_Beam" Pos="-28.006 28.026 28.105" Rot="-0.093 -0.301 0.949 -0.015" base_color="0xFF38271D" size="10.000" width="6.000" soft="0" has_halo_1="1" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="0.860000" halo1_vis_angle="179.999985" halo1_base_color="0x3140901" halo2_size="1.200000" halo2_nebulosity="0.810000" halo2_vis_angle="179.999985" halo2_base_color="0xA86D4A" />
+    <Entity Name="PointLight9" Def="Lights_PointLight" Pos="-19.402 41.390 1.331" start_off="0" rad="30.00000" color="0x489B2E04" />
+    <Entity Name="Fuzz3" Def="Effects_hng_Fuzz" Pos="-7.119 19.624 -22.001" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam118" Def="Lights_Beam" Pos="-26.653 28.950 27.596" Rot="0.917 0.010 0.008 -0.398" base_color="0xE1D3347" size="3.000" width="2.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="3.200000" halo1_nebulosity="0.100000" halo1_vis_angle="179.999985" halo1_base_color="0x4FFFFFF" halo2_size="0.010000" halo2_nebulosity="0.200000" halo2_vis_angle="179.999985" halo2_base_color="0xD14181B" />
+    <Entity Name="Fuzz1" Def="Effects_hng_Fuzz" Pos="-27.341 19.724 -24.323" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam73" Def="Lights_Beam" Pos="45.434 32.444 -0.304" Rot="0.662 -0.281 0.685 0.117" base_color="0xFF38271D" size="10.000" width="8.000" soft="0" has_halo_1="0" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="179.999985" halo1_base_color="0xFFFFFFFF" halo2_size="1.200000" halo2_nebulosity="0.740000" halo2_vis_angle="179.999985" halo2_base_color="0x4241009" />
+    <Entity Name="Beam71" Def="Lights_Beam" Pos="-0.336 28.026 28.105" Rot="-0.093 -0.301 0.949 -0.015" base_color="0xFF38271D" size="10.000" width="6.000" soft="0" has_halo_1="1" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="0.860000" halo1_vis_angle="179.999985" halo1_base_color="0x3140901" halo2_size="1.200000" halo2_nebulosity="0.810000" halo2_vis_angle="179.999985" halo2_base_color="0xA86D4A" />
+    <Entity Name="Beam74" Def="Lights_Beam" Pos="-23.590 41.287 0.098" Rot="-0.393 0.023 0.919 -0.013" base_color="0x37451F10" size="30.000" width="30.000" soft="0" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam75" Def="Lights_Beam" Pos="-14.019 40.966 0.098" Rot="-0.393 0.023 0.919 -0.013" base_color="0x44451F10" size="20.000" width="13.000" soft="0" has_halo_1="1" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="2.400000" halo1_nebulosity="0.860000" halo1_vis_angle="179.999985" halo1_base_color="0x6140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam76" Def="Lights_Beam" Pos="-7.234 40.966 0.098" Rot="-0.393 0.023 0.919 -0.013" base_color="0x44451F10" size="20.000" width="13.000" soft="0" has_halo_1="1" has_halo_2="1" flicker="" flicker_fps="30.000" halo1_size="2.400000" halo1_nebulosity="0.860000" halo1_vis_angle="179.999985" halo1_base_color="0x6140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+    <Entity Name="Beam77" Def="Lights_Beam" Pos="8.650 41.287 0.098" Rot="-0.393 0.023 0.919 -0.013" base_color="0x37451F10" size="30.000" width="30.000" soft="0" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.620000" halo1_vis_angle="179.999985" halo1_base_color="0x4140901" halo2_size="0.200000" halo2_nebulosity="0.100000" halo2_vis_angle="179.999985" halo2_base_color="0xFA86D4A" />
+  </EntityContainer>
+</Scene>
