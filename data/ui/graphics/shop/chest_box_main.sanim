@@ -1,0 +1,255 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Tue Jun 11 17:11:51 2013
+
+
+animations 4
+{
+	anim open
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim close
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim fade_in
+	{
+		mode once
+		cycle_time 0.7
+	}
+	anim fade_out
+	{
+		mode once
+		cycle_time 0.7
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 730 180
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on open
+		visible_on close
+		visible_on fade_in
+		visible_on fade_out
+	}
+	object box_bg
+	{
+		defaults
+		{
+			pos 0 13
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\shop\chest_box_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on open
+		visible_on close
+		visible_on fade_in
+		visible_on fade_out
+	}
+	object modules
+	{
+		defaults
+		{
+			pos 0 68
+			opacity 255
+			color 0xffffffff
+			size 730 50
+			effect "ui\graphics\shop\chest_box_modules"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on open
+		anim close obj_posc
+		{
+			1 
+			0 110.397
+		}
+		anim fade_in obj_posc_op_col
+		{
+			1 11 11
+			0 110.397
+			255
+			214
+			167
+			118
+			73
+			35
+			9
+			0
+			0
+			0
+			0
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffdedede
+			0xffb2b2b2
+			0xff818181
+			0xff515151
+			0xff282828
+			0xff0b0b0b
+			0xff000000
+		}
+		anim fade_out obj_op_col
+		{
+			10 10
+			0
+			0
+			0
+			0
+			12
+			47
+			95
+			151
+			206
+			255
+			0xff000000
+			0xff000000
+			0xff000000
+			0xff000000
+			0xff121212
+			0xff414141
+			0xff808080
+			0xffc3c3c3
+			0xffffffff
+			0xffffffff
+		}
+	}
+	object module
+	{
+		defaults
+		{
+			pos 337 45
+			opacity 0
+			color 0xff000000
+			size 50 50
+			effect "ui\graphics\shop\chest_box_module"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on open
+		anim close obj_opc_colc
+		{
+			1 1
+			255
+			0xffffffff
+		}
+		anim fade_in obj_op_col
+		{
+			11 11
+			255
+			214
+			167
+			118
+			73
+			35
+			9
+			0
+			0
+			0
+			0
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffdedede
+			0xffb2b2b2
+			0xff818181
+			0xff515151
+			0xff282828
+			0xff0b0b0b
+			0xff000000
+		}
+		visible_on fade_out
+	}
+	object title
+	{
+		defaults
+		{
+			pos 114 -1.77636e-015
+			opacity 255
+			color 0xffffffff
+			size 500 30
+			effect ""
+			alignment "CM"
+			sampleText "fdsfjmup"
+			font "Medium"
+		}
+		visible_on open
+		visible_on close
+		anim fade_in obj_op
+		{
+			11 
+			255
+			229
+			201
+			171
+			140
+			110
+			81
+			55
+			32
+			15
+			4
+		}
+		anim fade_out obj_op
+		{
+			10 
+			0
+			5
+			22
+			47
+			78
+			113
+			151
+			188
+			223
+			255
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0.0187492 -0	6.01875 -0	718 -0	724 -0	0.0187492 6	6.01875 6	718 6	724 6	0.0187492 177	6.01875 177	718 177	724 177	0.0187492 183	6.01875 183	718 183	724 183	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on open
+		visible_on close
+		visible_on fade_in
+		visible_on fade_out
+	}
+}
+
