@@ -1,0 +1,155 @@
+﻿source_file "Y:/art/source/ui/graphics/craft/craft.ma"
+//by sergey_mitryaev
+//at Tue Jan 14 16:02:29 2020
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 362 480
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object craft_resources
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 362 480
+			effect "ui\graphics\craft\craft_resources_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 343 1
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 201 481
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos -6 484
+			opacity 255
+			color 0xffffffff
+			size 200 21
+			effect ""
+			alignment "RM"
+			sampleText "99009009"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 127.017 184.957
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn8
+	{
+		defaults
+		{
+			pos 2.79889 481.661
+			opacity 255
+			color 0xffffffff
+			size 124 25
+			effect "ui\graphics\shop\buy_btn12"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object button_5
+	{
+		defaults
+		{
+			pos 248 481
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\quests_2\q_map_status_720"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp52
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	356 -0	362 -0	0 6	6 6	356 6	362 6	0 504	6 504	356 504	362 504	0 510	6 510	356 510	362 510	
+				0.0585966 0.670898	0.064456 0.670898	0.0761719 0.670898	0.0820313 0.670898	0.0585966 0.676758	0.064456 0.676758	0.0761719 0.676758	0.0820313 0.676758	0.0585966 0.688477	0.064456 0.688477	0.0761719 0.688477	0.0820313 0.688477	0.0585966 0.694336	0.064456 0.694336	0.0761719 0.694336	0.0820313 0.694336	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
