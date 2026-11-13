@@ -1,0 +1,51 @@
+﻿source_file  Y:/art/source/ui/graphics/help_control/help.ma
+//by sergey_mitryaev
+//at Wed Jul 18 17:38:11 2012
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object blackout
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 319.595 326.863
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\help_control\help_msg_text_2"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
