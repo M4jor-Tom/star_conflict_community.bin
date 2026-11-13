@@ -1,0 +1,147 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Wed Mar 06 15:39:30 2019
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 3
+{
+	object title_1
+	{
+		defaults
+		{
+			pos 0.0849992 1
+			opacity 255
+			color 0xffffffff
+			size 150 40
+			effect ""
+			alignment "CM"
+			sampleText "Открытый мир"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 150 42
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 128 1
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hangar\sale_syn"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName376
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			vertices
+			{
+				-3 -4	153 -4	-3 46	153 46	
+				0.6875 0.384766	0.992188 0.384766	0.6875 0.482422	0.992188 0.482422	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim press sp_posc
+		{
+			1 
+			-3 -3	153 -3	-3 47	153 47	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite objectName377
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			blend color_add
+			vertices
+			{
+				-3 -4	153 -4	-3 46	153 46	
+				0.6875 0.384766	0.992188 0.384766	0.6875 0.482422	0.992188 0.482422	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	
+		}
+		visible_on press
+		visible_on disable
+	}
+}
+
