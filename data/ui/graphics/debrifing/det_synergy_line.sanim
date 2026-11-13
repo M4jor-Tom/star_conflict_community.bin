@@ -1,0 +1,142 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Thu Apr 04 14:35:17 2013
+
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim idle_black
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0.52538 0.344561
+			opacity 255
+			color 0xffffffff
+			size 454 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_black
+	}
+	object text
+	{
+		defaults
+		{
+			pos 5 2
+			opacity 255
+			color 0xffffffff
+			size 204 20
+			effect ""
+			alignment "LM"
+			sampleText "WSW p[efo[f afsdw "
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_black
+	}
+	object value_1
+	{
+		defaults
+		{
+			pos 200 2
+			opacity 255
+			color 0xffffffff
+			size 124 20
+			effect "ui\graphics\debrifing\det_synergy_value"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_black
+	}
+	object value_2
+	{
+		defaults
+		{
+			pos 327 2
+			opacity 255
+			color 0xffffffff
+			size 124 20
+			effect "ui\graphics\debrifing\det_synergy_value"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_black
+	}
+	object price_1
+	{
+		defaults
+		{
+			pos 200 2
+			opacity 255
+			color 0xffffffff
+			size 124 20
+			effect "ui\graphics\shop\prod_price"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_black
+	}
+	object price_2
+	{
+		defaults
+		{
+			pos 327 2
+			opacity 255
+			color 0xffffffff
+			size 124 20
+			effect "ui\graphics\shop\prod_price"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_black
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.494072 0.0364494	454.899 0.0364494	-0.494072 23.8762	454.899 23.8762	
+				0.280243 0.00943506	0.306641 0.00943506	0.280243 0.0390625	0.306641 0.0390625	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_black sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+}
+
