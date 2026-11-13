@@ -1,0 +1,543 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Mon Jun 24 13:59:11 2019
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim idle_shot
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 25
+
+objects 25
+{
+	object ship_type_n
+	{
+		defaults
+		{
+			pos 67 80
+			opacity 255
+			color 0xffffffff
+			size 8 9
+			effect "ui\graphics\hud\ship_markers\ship_type_n"
+			alignment "LT"
+			blend color_add
+		}
+		anim idle obj_pos
+		{
+			2 
+			67 80
+			108 120
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			75 88
+			117 126
+		}
+	}
+	object shd_progr
+	{
+		defaults
+		{
+			pos 27 116
+			opacity 255
+			color 0xffffffff
+			size 67 12
+			effect "ui\graphics\hud\ship_markers\ship_progress_shild"
+			alignment "RM"
+		}
+		anim idle obj_pos
+		{
+			2 
+			27 116
+			27 137
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			27 126
+			27 137
+		}
+	}
+	object center
+	{
+		defaults
+		{
+			pos 60 73
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on idle_shot
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 120 146
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_shot
+	}
+	object arm_progr
+	{
+		defaults
+		{
+			pos 27 108
+			opacity 255
+			color 0xffffffff
+			size 67 12
+			effect "ui\graphics\hud\ship_markers\ship_progress_arm"
+			alignment "RM"
+		}
+		anim idle obj_pos
+		{
+			2 
+			27 108
+			27 129
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			27 118
+			27 129
+		}
+	}
+	object angle_1
+	{
+		defaults
+		{
+			pos 51 65
+			opacity 255
+			color 0xffffffff
+			size 12 12
+			effect "ui\graphics\hud\ship_markers\mark_angle_1"
+			alignment "RM"
+			font "MonoTiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			51 65
+			10 23
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			51 65
+			10 23
+		}
+	}
+	object angle_2
+	{
+		defaults
+		{
+			pos 57 65
+			opacity 255
+			color 0xffffffff
+			size 12 12
+			effect "ui\graphics\hud\ship_markers\mark_angle_2"
+			alignment "RM"
+			font "MonoTiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			57 65
+			98 23
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			57 65
+			98 23
+		}
+	}
+	object angle_3
+	{
+		defaults
+		{
+			pos 57 71
+			opacity 255
+			color 0xffffffff
+			size 12 12
+			effect "ui\graphics\hud\ship_markers\mark_angle_3"
+			alignment "RM"
+			font "MonoTiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			57 71
+			98 111
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			57 71
+			98 111
+		}
+	}
+	object angle_4
+	{
+		defaults
+		{
+			pos 51 71
+			opacity 255
+			color 0xffffffff
+			size 12 12
+			effect "ui\graphics\hud\ship_markers\mark_angle_4"
+			alignment "RM"
+			font "MonoTiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			51 71
+			10 111
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			51 71
+			10 111
+		}
+	}
+	object name
+	{
+		defaults
+		{
+			pos -40 45
+			opacity 255
+			color 0xffffffff
+			size 200 16
+			effect "ui\graphics\hud\ship_markers\mark_name"
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			-40 45
+			-40 9.85839
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			-40 36
+			-40 9.90413
+		}
+	}
+	object dist
+	{
+		defaults
+		{
+			pos -38 92
+			opacity 255
+			color 0xffffffff
+			size 200 16
+			effect "ui\graphics\hud\ship_markers\mark_name"
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			-38 92
+			-38 112.078
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			-38 102
+			-38 112
+		}
+	}
+	object ship_hiden
+	{
+		defaults
+		{
+			pos -49 -42
+			opacity 255
+			color 0xffffffff
+			size 196 196
+			effect "ui\graphics\hud\ship_markers\mark_ship_hide_anim"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_shot
+	}
+	object ang_lock_1
+	{
+		defaults
+		{
+			pos 41 55
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\ship_markers\mark_ang_lock_1"
+			alignment "RM"
+			font "MonoTiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			41 55
+			0 13
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			41 55
+			0 13
+		}
+	}
+	object ang_lock_2
+	{
+		defaults
+		{
+			pos 59 55
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\ship_markers\mark_ang_lock_2"
+			alignment "RM"
+			font "MonoTiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			59 55
+			100 13
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			59 55
+			100 13
+		}
+	}
+	object ang_lock_3
+	{
+		defaults
+		{
+			pos 59 73
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\ship_markers\mark_ang_lock_3"
+			alignment "RM"
+			font "MonoTiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			59 73
+			100 113
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			59 73
+			100 113
+		}
+	}
+	object ang_lock_4
+	{
+		defaults
+		{
+			pos 41 73
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\ship_markers\mark_ang_lock_4"
+			alignment "RM"
+			font "MonoTiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			41 73
+			0 113
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			41 73
+			0 113
+		}
+	}
+	object min_dist
+	{
+		defaults
+		{
+			pos 53 66
+			opacity 255
+			color 0xffffffff
+			size 14 14
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_shot
+	}
+	object max_dist
+	{
+		defaults
+		{
+			pos 11 24
+			opacity 255
+			color 0xffffffff
+			size 98 98
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_shot
+	}
+	object damage
+	{
+		defaults
+		{
+			pos 59 57
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hud\ship_markers\damage"
+			alignment "CM"
+			font "MonoTiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			59 57
+			59 14
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			59 48
+			59 15
+		}
+	}
+	object radar
+	{
+		defaults
+		{
+			pos 60 73
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hud\enemy_radar"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on idle_shot
+	}
+	object dmg_indic
+	{
+		defaults
+		{
+			pos 13 62
+			opacity 255
+			color 0xffffffff
+			size 100 11
+			effect "ui\graphics\hud\ship_markers\dmg_indic"
+			alignment "CM"
+			font "MonoTiny"
+		}
+		visible_on idle
+		visible_on idle_shot
+	}
+	object arm_progr_2
+	{
+		defaults
+		{
+			pos 27 108
+			opacity 255
+			color 0xffffffff
+			size 84 12
+			effect "ui\graphics\hud\ship_markers\ship_progress_shild"
+			alignment "RM"
+		}
+		anim idle obj_pos
+		{
+			2 
+			27 108
+			27 129
+		}
+		anim idle_shot obj_pos
+		{
+			2 
+			27 118
+			27 129
+		}
+	}
+	object gmp_icon_1
+	{
+		defaults
+		{
+			pos 49 63
+			opacity 255
+			color 0xffffffff
+			size 22 20
+			effect "ui\graphics\hud\ratio\gmp_icon"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on idle_shot
+	}
+	object gmp_icon_2
+	{
+		defaults
+		{
+			pos 25 63
+			opacity 255
+			color 0xffffffff
+			size 22 20
+			effect "ui\graphics\hud\ratio\gmp_icon"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on idle_shot
+	}
+	object timer
+	{
+		defaults
+		{
+			pos -38 38
+			opacity 255
+			color 0xffff0000
+			size 200 16
+			effect ""
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_shot
+	}
+}
+
