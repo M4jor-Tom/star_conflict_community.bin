@@ -1,0 +1,414 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Tue Nov 26 18:04:04 2019
+
+base_res 1920 1080
+
+animations 4
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim drop
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim no_bg
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 20
+
+objects 19
+{
+	object in_battle
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 34 15
+			effect "ui\graphics\equip_1080\sp_in_battle"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object center
+	{
+		defaults
+		{
+			pos 55 52
+			opacity 255
+			color 0xffffffff
+			size 32 32
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object lock
+	{
+		defaults
+		{
+			pos 38.9054 34.1735
+			opacity 255
+			color 0xffffffff
+			size 24 28
+			effect "ui\graphics\equip\prod_slot_lock"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object upd_arrow
+	{
+		defaults
+		{
+			pos 90.7383 82.9822
+			opacity 255
+			color 0xffffffff
+			size 10 18
+			effect "ui\graphics\equip_1080\eq_upd_arrow"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object blink_flash
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip_1080\blink_flash"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object prod_icon
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip_1080\sp_icon"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object slot_select
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip_1080\sp_select"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object slot_lock
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip_1080\slot_lock"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip_1080\sp_icon_blackout_2"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			204
+		}
+		anim drop obj_opc
+		{
+			1 
+			51
+		}
+		anim no_bg obj_opc
+		{
+			1 
+			51
+		}
+	}
+	object link
+	{
+		defaults
+		{
+			pos 24 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object frame
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip_1080\sp_icon_frame"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object qu_star
+	{
+		defaults
+		{
+			pos 87 -3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\equip_1080\prod_icon_qu_star"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 106 106
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object off_text
+	{
+		defaults
+		{
+			pos 28 43
+			opacity 255
+			color 0xff8f8f8f
+			size 50 15
+			effect ""
+			alignment "CM"
+			sampleText "выкл"
+			font "Tiny_outl2"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object bg_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip_1080\sp_icon_bg_2"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object upd
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 34 15
+			effect "ui\graphics\equip_1080\sp_upd"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object self_big
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 130 106
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object in_battle_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 34 15
+			effect "ui\graphics\equip_1080\sp_in_battle_2"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+	object self_upd
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 106 126
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite objectName447
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				0 -0	20 -0	86 -0	106 -0	0 20	20 20	86 20	106 20	0 86	20 86	86 86	106 86	0 106	20 106	86 106	106 106	
+				0.21582 0.483398	0.235352 0.483398	0.24707 0.483398	0.266602 0.483398	0.21582 0.50293	0.235352 0.50293	0.24707 0.50293	0.266602 0.50293	0.21582 0.514648	0.235352 0.514648	0.24707 0.514648	0.266602 0.514648	0.21582 0.53418	0.235352 0.53418	0.24707 0.53418	0.266602 0.53418	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+		visible_on no_bg
+	}
+}
+
