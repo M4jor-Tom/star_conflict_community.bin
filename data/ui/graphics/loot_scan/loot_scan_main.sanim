@@ -1,0 +1,151 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Wed Sep 04 17:26:48 2013
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 9
+{
+	object bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\map_view\map_view_grid"
+			alignment "LM"
+		}
+		visible_on idle
+	}
+	object tips_1
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 449.457 679.124
+			opacity 255
+			color 0xffffffff
+			size 400 30
+			effect "ui\graphics\loot_scan\loot_tips"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object tips_2
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 449.457 644.96
+			opacity 255
+			color 0xffffffff
+			size 400 30
+			effect ""
+			alignment "CM"
+			sampleText "3 попытки"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object timer
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 539.04 39.4705
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\loot_scan\loot_scan_timer"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object loot_found
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 435.467 488.5
+			opacity 255
+			color 0xffffffff
+			size 420 120
+			effect "ui\graphics\loot_scan\loot_found_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object scan_finish
+	{
+		defaults
+		{
+			pos 0 266.55
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\loot_scan\loot_scan_finish"
+			alignment "LM"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 345.507 3.72198
+			opacity 255
+			color 0xffffffff
+			size 600 30
+			effect "ui\graphics\loot_scan\loot_title"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object recognition_loot
+	{
+		defaults
+		{
+			anchor "C"
+			pos 429.275 235.384
+			opacity 255
+			color 0xffffffff
+			size 420 280
+			effect "ui\graphics\loot_scan\recognition_loot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tips_3
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 442 88
+			opacity 255
+			color 0xffffffff
+			size 400 30
+			effect ""
+			alignment "CM"
+			sampleText "3 попытки"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
