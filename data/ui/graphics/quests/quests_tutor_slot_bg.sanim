@@ -1,0 +1,168 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Tue Jan 21 10:30:03 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 5
+{
+	object dist_max
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 478
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 50
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_up
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 96 22
+			effect "ui\graphics\quests\quest_btn_up"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_down
+	{
+		defaults
+		{
+			pos 0 38
+			opacity 255
+			color 0xffffffff
+			size 96 22
+			effect "ui\graphics\quests\quest_btn_down"
+			alignment "LT"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			0 38
+			0 464
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 96 486
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite |bg
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 42	6 42	90 42	96 42	0 50	6 50	90 50	96 50	
+				0.253906 0.114258	0.259766 0.114258	0.272461 0.114258	0.27832 0.114258	0.253906 0.120117	0.259766 0.120117	0.272461 0.120117	0.27832 0.120117	0.253906 0.130859	0.259766 0.130859	0.272461 0.130859	0.27832 0.130859	0.253906 0.138672	0.259766 0.138672	0.272461 0.138672	0.27832 0.138672	
+				0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 42	6 42	90 42	96 42	0 50	6 50	90 50	96 50	
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 84.7	6 84.7	90 84.7	96 84.7	0 92.7	6 92.7	90 92.7	96 92.7	
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 127.4	6 127.4	90 127.4	96 127.4	0 135.4	6 135.4	90 135.4	96 135.4	
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 170.1	6 170.1	90 170.1	96 170.1	0 178.1	6 178.1	90 178.1	96 178.1	
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 212.8	6 212.8	90 212.8	96 212.8	0 220.8	6 220.8	90 220.8	96 220.8	
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 255.5	6 255.5	90 255.5	96 255.5	0 263.5	6 263.5	90 263.5	96 263.5	
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 298.2	6 298.2	90 298.2	96 298.2	0 306.2	6 306.2	90 306.2	96 306.2	
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 340.9	6 340.9	90 340.9	96 340.9	0 348.9	6 348.9	90 348.9	96 348.9	
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 383.6	6 383.6	90 383.6	96 383.6	0 391.6	6 391.6	90 391.6	96 391.6	
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 426.3	6 426.3	90 426.3	96 426.3	0 434.3	6 434.3	90 434.3	96 434.3	
+			0 21	6 21	90 21	96 21	0 27	6 27	90 27	96 27	0 469	6 469	90 469	96 469	0 477	6 477	90 477	96 477	
+		}
+	}
+	sprite |bgwdf
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 38	6 38	90 38	96 38	0 44	6 44	90 44	96 44	0 45	6 45	90 45	96 45	0 50	6 50	90 50	96 50	
+				0.253906 0.114258	0.259766 0.114258	0.272461 0.114258	0.27832 0.114258	0.253906 0.120117	0.259766 0.120117	0.272461 0.120117	0.27832 0.120117	0.253906 0.133789	0.259766 0.133789	0.272461 0.133789	0.27832 0.133789	0.253906 0.138672	0.259766 0.138672	0.272461 0.138672	0.27832 0.138672	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			2 
+			0 38	6 38	90 38	96 38	0 44	6 44	90 44	96 44	0 45	6 45	90 45	96 45	0 50	6 50	90 50	96 50	
+			0 465	6 465	90 465	96 465	0 471	6 471	90 471	96 471	0 472	6 472	90 472	96 472	0 477	6 477	90 477	96 477	
+		}
+	}
+	sprite |bgwdfwfc
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 22.5	6 22.5	90 22.5	96 22.5	0 28.5	6 28.5	90 28.5	96 28.5	0 35.5	6 35.5	90 35.5	96 35.5	0 43.5	6 43.5	90 43.5	96 43.5	
+				0.253906 0.114258	0.259766 0.114258	0.272461 0.114258	0.27832 0.114258	0.253906 0.120117	0.259766 0.120117	0.272461 0.120117	0.27832 0.120117	0.253906 0.130859	0.259766 0.130859	0.272461 0.130859	0.27832 0.130859	0.253906 0.138672	0.259766 0.138672	0.272461 0.138672	0.27832 0.138672	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
