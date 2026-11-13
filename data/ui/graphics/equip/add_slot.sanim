@@ -1,0 +1,103 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by Sergey
+//at Wed Apr 06 17:50:12 2016
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object value
+	{
+		defaults
+		{
+			pos -0.278322 1.88108
+			opacity 255
+			color 0xffffffff
+			size 250 16
+			effect ""
+			alignment "LM"
+			sampleText "Складских слотов 30\55"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_over
+		anim disable obj_colc
+		{
+			1
+			0xff727272
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 220 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_over
+		visible_on disable
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 184 -0
+			opacity 255
+			color 0xffffffff
+			size 22 22
+			effect "ui\graphics\equip\add_slot_btn"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_over
+		visible_on disable
+	}
+	object value_left
+	{
+		defaults
+		{
+			pos 0 1.88108
+			opacity 255
+			color 0xffffffff
+			size 250 16
+			effect ""
+			alignment "LM"
+			sampleText "Складских слотов 30\55"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_over
+		anim disable obj_colc
+		{
+			1
+			0xff727272
+		}
+	}
+}
+
