@@ -1,0 +1,53 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud.ma"
+//by sergey_mitryaev
+//at Tue Jun 10 17:40:01 2014
+
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim activity_on
+	{
+		mode looped
+		cycle_time 0.8
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite select
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	50 -0	0 50	50 50	
+				0.122179 0.00199378	0.171007 0.00199378	0.122179 0.0508219	0.171007 0.0508219	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on select
+		anim activity_on sp_col
+		{
+			5
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xa5a5a5a5	0xa5a5a5a5	0xa5a5a5a5	0xa5a5a5a5	
+			0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	
+			0x8f8f8f8f	0x8f8f8f8f	0x8f8f8f8f	0x8f8f8f8f	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
