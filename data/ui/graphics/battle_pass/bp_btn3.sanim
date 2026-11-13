@@ -1,0 +1,122 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Tue Dec 14 18:00:42 2021
+
+base_res 1920 1080
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 34
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on over
+	}
+	object text22
+	{
+		defaults
+		{
+			pos -20 2
+			opacity 255
+			color 0xff3a3a3a
+			size 240 30
+			effect ""
+			alignment "CM"
+			sampleText "20asgg eh "
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on over
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName351
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				-26 -6	-16 -6	216 -6	226 -6	-26 4	-16 4	216 4	226 4	-26 30	-16 30	216 30	226 30	-26 40	-16 40	216 40	226 40	
+				0.339844 0.177734	0.349609 0.177734	0.381836 0.177734	0.391602 0.177734	0.339844 0.1875	0.349609 0.1875	0.381836 0.1875	0.391602 0.1875	0.339844 0.220703	0.349609 0.220703	0.381836 0.220703	0.391602 0.220703	0.339844 0.230469	0.349609 0.230469	0.381836 0.230469	0.391602 0.230469	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on over
+	}
+	sprite we106
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-122 -59	330 -59	-122 83	330 83	
+				-0.0078125 0.216797	0.992188 0.216797	-0.0078125 0.509766	0.992188 0.509766	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
