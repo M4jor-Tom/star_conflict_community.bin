@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Wed Jan 20 14:24:24 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self41
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 158 96
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object prog_1_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 158 22
+			effect "ui\graphics\hud\ratio\bomb_prog"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object prog_1_2
+	{
+		defaults
+		{
+			pos 0 24
+			opacity 255
+			color 0xffffffff
+			size 158 22
+			effect "ui\graphics\hud\ratio\bomb_prog"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object prog_1_3
+	{
+		defaults
+		{
+			pos 0 48
+			opacity 255
+			color 0xffffffff
+			size 158 22
+			effect "ui\graphics\hud\ratio\bomb_prog"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object prog_1_4
+	{
+		defaults
+		{
+			pos 0 72
+			opacity 255
+			color 0xffffffff
+			size 158 22
+			effect "ui\graphics\hud\ratio\bomb_prog"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
