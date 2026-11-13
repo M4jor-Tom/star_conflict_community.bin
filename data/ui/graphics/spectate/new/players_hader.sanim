@@ -1,0 +1,265 @@
+﻿source_file "Y:/art/source/ui/graphics/spectate/spectate_2.ma"
+//by sergey_mitryaev
+//at Wed Sep 25 14:16:54 2013
+
+
+animations 7
+{
+	anim long_4
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim long_3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim mid_4
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim mid_3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim short_4_name
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim s_long_4
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim s_long_3
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 35
+			effect ""
+			alignment "LT"
+		}
+		visible_on long_4
+		visible_on long_3
+		visible_on mid_4
+		visible_on mid_3
+		visible_on short_4_name
+		visible_on s_long_4
+		visible_on s_long_3
+	}
+	object vol_1
+	{
+		defaults
+		{
+			pos 6.38475 7.23184
+			opacity 255
+			color 0xfff3f3f3
+			size 160 20
+			effect ""
+			alignment "LM"
+			sampleText "Игроки"
+			font "Tiny_outl2"
+		}
+		visible_on long_4
+		visible_on long_3
+		visible_on mid_4
+		visible_on mid_3
+		anim short_4_name obj_posc
+		{
+			1 
+			6 7.23184
+		}
+		visible_on s_long_4
+		visible_on s_long_3
+	}
+	object vol_2
+	{
+		defaults
+		{
+			pos 188.802 7.23184
+			opacity 255
+			color 0xfff3f3f3
+			size 160 20
+			effect ""
+			alignment "CM"
+			sampleText "Корабли"
+			font "Tiny_outl2"
+		}
+		visible_on long_4
+		anim long_3 obj_posc
+		{
+			1 
+			153 7.23184
+		}
+		visible_on mid_4
+		anim mid_3 obj_posc
+		{
+			1 
+			167 7.23184
+		}
+		anim short_4_name obj_posc
+		{
+			1 
+			119 7.23184
+		}
+		anim s_long_4 obj_posc
+		{
+			1 
+			182 7.23184
+		}
+		anim s_long_3 obj_posc
+		{
+			1 
+			155 7.23184
+		}
+	}
+	object vol_4
+	{
+		defaults
+		{
+			pos 344.893 7.23184
+			opacity 255
+			color 0xfff3f3f3
+			size 40 20
+			effect ""
+			alignment "CM"
+			sampleText "Счет"
+			font "Tiny_outl2"
+		}
+		visible_on long_4
+		anim long_3 obj_posc
+		{
+			1 
+			300 7.23184
+		}
+		visible_on s_long_4
+		anim s_long_3 obj_posc
+		{
+			1 
+			301 7.23184
+		}
+	}
+	object vol_5
+	{
+		defaults
+		{
+			pos 399 7.23184
+			opacity 255
+			color 0xfff3f3f3
+			size 40 20
+			effect ""
+			alignment "CM"
+			sampleText "Счет"
+			font "Tiny_outl2"
+		}
+		visible_on long_4
+		anim long_3 obj_posc
+		{
+			1 
+			352 7.23184
+		}
+		visible_on s_long_4
+		anim s_long_3 obj_posc
+		{
+			1 
+			353 7.23184
+		}
+	}
+	object vol_6
+	{
+		defaults
+		{
+			pos 452 7.23184
+			opacity 255
+			color 0xfff3f3f3
+			size 40 20
+			effect ""
+			alignment "CM"
+			sampleText "Счет"
+			font "Tiny_outl2"
+		}
+		visible_on long_4
+		anim long_3 obj_posc
+		{
+			1 
+			405 7.23184
+		}
+		visible_on s_long_4
+		anim s_long_3 obj_posc
+		{
+			1 
+			405 7.23184
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.022913 2.29061	6.02291 2.29061	419 2.29061	425 2.29061	0.022913 8.29061	6.02291 8.29061	419 8.29061	425 8.29061	0.022913 26.2438	6.02291 26.2438	419 26.2438	425 26.2438	0.022913 32.2438	6.02291 32.2438	419 32.2438	425 32.2438	
+				0.325097 0.0546062	0.330956 0.0546062	0.370072 0.0546062	0.375931 0.0546062	0.325097 0.0604656	0.330956 0.0604656	0.370072 0.0604656	0.375931 0.0604656	0.325097 0.0995071	0.330956 0.0995071	0.370072 0.0995071	0.375931 0.0995071	0.325097 0.105366	0.330956 0.105366	0.370072 0.105366	0.375931 0.105366	
+				0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	0x66666666	
+			}
+		}
+		visible_on long_4
+		anim long_3 sp_posc
+		{
+			1 
+			0.022913 2.29061	6.02291 2.29061	374 2.29061	380 2.29061	0.022913 8.29061	6.02291 8.29061	374 8.29061	380 8.29061	0.022913 26.2438	6.02291 26.2438	374 26.2438	380 26.2438	0.022913 32.2438	6.02291 32.2438	374 32.2438	380 32.2438	
+		}
+		anim mid_4 sp_posc
+		{
+			1 
+			0.022913 2.29061	6.02291 2.29061	361 2.29061	367 2.29061	0.022913 8.29061	6.02291 8.29061	361 8.29061	367 8.29061	0.022913 26.2438	6.02291 26.2438	361 26.2438	367 26.2438	0.022913 32.2438	6.02291 32.2438	361 32.2438	367 32.2438	
+		}
+		anim mid_3 sp_posc
+		{
+			1 
+			0.022913 2.29061	6.02291 2.29061	297 2.29061	303 2.29061	0.022913 8.29061	6.02291 8.29061	297 8.29061	303 8.29061	0.022913 26.2438	6.02291 26.2438	297 26.2438	303 26.2438	0.022913 32.2438	6.02291 32.2438	297 32.2438	303 32.2438	
+		}
+		anim short_4_name sp_posc
+		{
+			1 
+			0.022913 2.29061	6.02291 2.29061	256.815 2.29061	262.815 2.29061	0.022913 8.29061	6.02291 8.29061	256.815 8.29061	262.815 8.29061	0.022913 26.2438	6.02291 26.2438	256.815 26.2438	262.815 26.2438	0.022913 32.2438	6.02291 32.2438	256.815 32.2438	262.815 32.2438	
+		}
+		anim s_long_4 sp_posc
+		{
+			1 
+			0.022913 2.29061	6.02291 2.29061	495 2.29061	501 2.29061	0.022913 8.29061	6.02291 8.29061	495 8.29061	501 8.29061	0.022913 26.2438	6.02291 26.2438	495 26.2438	501 26.2438	0.022913 32.2438	6.02291 32.2438	495 32.2438	501 32.2438	
+		}
+		anim s_long_3 sp_posc
+		{
+			1 
+			0.022913 2.29061	6.02291 2.29061	459 2.29061	465 2.29061	0.022913 8.29061	6.02291 8.29061	459 8.29061	465 8.29061	0.022913 26.2438	6.02291 26.2438	459 26.2438	465 26.2438	0.022913 32.2438	6.02291 32.2438	459 32.2438	465 32.2438	
+		}
+	}
+}
+
