@@ -1,0 +1,93 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Mon Jan 22 17:22:01 2018
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim comleted
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self155
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 542 600
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on comleted
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite que76
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices
+			{
+				0 6	534 6	0 79.8308	534 79.8308	
+				0.767296 0.868164	0.779579 0.868164	0.767296 0.874023	0.779579 0.874023	
+				0xb20a0f17	0xb20a0f17	0xb20a0f17	0xb20a0f17	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 6	534 6	0 79.8308	534 79.8308	
+			0 6	534 6	0 131.848	534 131.848	
+			0 6	534 6	0 183.865	534 183.865	
+			0 6	534 6	0 235.882	534 235.882	
+			0 6	534 6	0 287.898	534 287.898	
+			0 6	534 6	0 339.915	534 339.915	
+			0 6	534 6	0 391.932	534 391.932	
+			0 6	534 6	0 443.949	534 443.949	
+			0 6	534 6	0 495.966	534 495.966	
+			0 6	534 6	0 547.983	534 547.983	
+			0 6	534 6	0 600	534 600	
+		}
+		anim comleted sp_pos_colc
+		{
+			11 1
+			0 6	534 6	0 79.8308	534 79.8308	
+			0 6	534 6	0 131.848	534 131.848	
+			0 6	534 6	0 183.865	534 183.865	
+			0 6	534 6	0 235.882	534 235.882	
+			0 6	534 6	0 287.898	534 287.898	
+			0 6	534 6	0 339.915	534 339.915	
+			0 6	534 6	0 391.932	534 391.932	
+			0 6	534 6	0 443.949	534 443.949	
+			0 6	534 6	0 495.966	534 495.966	
+			0 6	534 6	0 547.983	534 547.983	
+			0 6	534 6	0 600	534 600	
+			0xff110e00	0xff110e00	0xff110e00	0xff110e00	
+		}
+	}
+}
+
