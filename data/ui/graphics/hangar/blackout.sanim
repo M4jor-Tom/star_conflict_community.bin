@@ -1,0 +1,61 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar.ma"
+//by sergey_mitryaev
+//at Thu Sep 22 14:27:57 2016
+
+base_res 1280 720
+keep_screen_size
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object timer
+	{
+		defaults
+		{
+			anchor "C"
+			pos 392 97
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "CM"
+			sampleText "fdsfjmup"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName264
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "LT"
+			vertices
+			{
+				-43.5585 -34.8195	1311.56 -34.8195	-43.5585 759.051	1311.56 759.051	
+				0.224199 0.516979	0.22502 0.516979	0.224199 0.518177	0.22502 0.518177	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
