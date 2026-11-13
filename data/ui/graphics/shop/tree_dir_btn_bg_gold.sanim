@@ -1,0 +1,89 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Mon Sep 15 14:10:05 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+sprites 4
+{
+	total_vertices 28
+
+	sprite qwe7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				1.00001 1	141 1	1 21	141 21	
+				0.399414 0.84375	0.261719 0.84375	0.399414 0.823242	0.261719 0.823242	
+				0xff565656	0xff565656	0xff565656	0xff565656	
+			}
+		}
+		visible_on idle
+	}
+	sprite qwe8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				99 1	221 1	99 21	221 21	
+				0.399414 0.84375	0.261719 0.84375	0.399414 0.823242	0.261719 0.823242	
+			}
+		}
+		visible_on idle
+	}
+	sprite qwe9
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				27 1	221 1	27 21	221 21	
+				0.42041 0.737305	0.282715 0.737305	0.42041 0.741211	0.282715 0.741211	
+				0xff393939	0xff393939	0xff393939	0xff393939	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp35
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	8 -0	214.078 -0	221.922 -0	0 8	8 8	214.078 8	221.922 8	0 14	8 14	214.078 14	221.922 14	0 22	8 22	214.078 22	221.922 22	
+				0.0888672 0.726563	0.0966797 0.726563	0.0966797 0.726563	0.104492 0.726563	0.0888672 0.734375	0.0966797 0.734375	0.0966797 0.734375	0.104492 0.734375	0.0888672 0.734375	0.0966797 0.734375	0.0966797 0.734375	0.104492 0.734375	0.0888672 0.742188	0.0966797 0.742188	0.0966797 0.742188	0.104492 0.742188	
+				0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	0xff474747	
+			}
+		}
+		visible_on idle
+	}
+}
+
