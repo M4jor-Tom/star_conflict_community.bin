@@ -1,0 +1,40 @@
+﻿source_file "Y:/art/source/ui/graphics/matchmaking_pvp/matchmaking_pvp.ma"
+//by sergey_mitryaev
+//at Mon Mar 18 18:32:32 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp49
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-3 -3	3 -3	76 -3	82 -3	-3 3	3 3	76 3	82 3	-3 43	3 43	76 43	82 43	-3 49	3 49	76 49	82 49	
+				0.514648 0.588867	0.520508 0.588867	0.530273 0.588867	0.536133 0.588867	0.514648 0.594727	0.520508 0.594727	0.530273 0.594727	0.536133 0.594727	0.514648 0.604492	0.520508 0.604492	0.530273 0.604492	0.536133 0.604492	0.514648 0.610352	0.520508 0.610352	0.530273 0.610352	0.536133 0.610352	
+				0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	0xff004ba0	
+			}
+		}
+		visible_on idle
+	}
+}
+
