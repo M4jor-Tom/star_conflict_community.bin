@@ -1,0 +1,76 @@
+﻿source_file "Y:/art/source/ui/graphics/notice/notice.ma"
+//by sergey_mitryaev
+//at Thu Sep 27 16:11:06 2012
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 330 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 0
+			color 0xff000000
+			size 330 20
+			effect ""
+			alignment "LT"
+			sampleText "Новейшая разработка "
+			font "Tiny_outl"
+			blend color_add
+		}
+		visible_on idle
+		anim over obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object text2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 330 20
+			effect ""
+			alignment "LT"
+			sampleText "Новейшая разработка "
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
