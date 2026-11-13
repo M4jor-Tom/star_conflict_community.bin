@@ -1,0 +1,365 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Mon Jan 26 14:14:57 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 23
+
+objects 21
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 964 424
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 407.331 171.425
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list_1
+	{
+		defaults
+		{
+			pos 18.0735 95.5166
+			opacity 255
+			color 0xffffffff
+			size 374 200
+			effect "ui\graphics\map\lobby_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object map_ico
+	{
+		defaults
+		{
+			pos 9.31021 10.9768
+			opacity 255
+			color 0xffffffff
+			size 88 50
+			effect "ui\graphics\map\custom_map_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object team_1
+	{
+		defaults
+		{
+			pos 19.6772 75.053
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Клманда 1"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 801 42
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 104.989 9.26914
+			opacity 255
+			color 0xffffffff
+			size 360 46
+			effect ""
+			alignment "LT"
+			sampleText "Тренеровочные бои"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object info
+	{
+		defaults
+		{
+			pos 403.436 299.527
+			opacity 255
+			color 0xffcccccc
+			size 400 40
+			effect ""
+			alignment "LT"
+			sampleText "Dfedgg|ww fwfwf  wffwff"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object list_2
+	{
+		defaults
+		{
+			pos 471.073 95.5166
+			opacity 255
+			color 0xffffffff
+			size 374 200
+			effect "ui\graphics\map\lobby_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object team_2
+	{
+		defaults
+		{
+			pos 471.677 75.053
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Клманда 1"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object team_3
+	{
+		defaults
+		{
+			pos 19.6772 288.053
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Нераспределенные  игроки"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list_3
+	{
+		defaults
+		{
+			pos 18.0735 307.517
+			opacity 255
+			color 0xffffffff
+			size 374 110
+			effect "ui\graphics\map\lobby_list_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object map_info
+	{
+		defaults
+		{
+			pos 105.455 28.8979
+			opacity 255
+			color 0xffcccccc
+			size 350 30
+			effect ""
+			alignment "LT"
+			sampleText "Dfedgg|ww fwfwf  wffwff"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object name_cap
+	{
+		defaults
+		{
+			pos 471.677 6.52946
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Командир:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object count_player
+	{
+		defaults
+		{
+			pos 471.677 28.5295
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Всего игроков:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object count_player_value
+	{
+		defaults
+		{
+			pos 677.272 28.5295
+			opacity 255
+			color 0xffcccccc
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "100/20"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object name_cap_value
+	{
+		defaults
+		{
+			pos 677.272 6.52946
+			opacity 255
+			color 0xffcccccc
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "KAJFju:F jgwserj jp;jk"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 471.677 49.5295
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Всего игроков:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object type_game
+	{
+		defaults
+		{
+			pos 589.989 48.2691
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect "ui\graphics\map\custom_type_game"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list_1_4
+	{
+		defaults
+		{
+			pos 471 307.517
+			opacity 255
+			color 0xffffffff
+			size 374 110
+			effect "ui\graphics\map\lobby_list_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object team_4
+	{
+		defaults
+		{
+			pos 474 288.053
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Нераспределенные  игроки"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.180913	6 0.180913	958.197 0.180913	964.197 0.180913	0 6.18091	6 6.18091	958.197 6.18091	964.197 6.18091	0 436.013	6 436.013	958.197 436.013	964.197 436.013	0 442.013	6 442.013	958.197 442.013	964.197 442.013	
+				0.25402 0.1143	0.25402 0.120159	0.25402 0.132659	0.25402 0.138518	0.25988 0.1143	0.25988 0.120159	0.25988 0.132659	0.25988 0.138518	0.272565 0.1143	0.272565 0.120159	0.272565 0.132659	0.272565 0.138518	0.278424 0.1143	0.278424 0.120159	0.278424 0.132659	0.278424 0.138518	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName315
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.452621 71.2071	0.452621 69.2071	963.722 71.2071	963.722 69.2071	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771484 0.152344	0.0791016 0.152344	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
