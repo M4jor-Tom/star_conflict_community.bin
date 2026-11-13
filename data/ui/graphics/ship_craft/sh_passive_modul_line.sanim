@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/ship_craft/ship_craft.ma"
+//by Sergey
+//at Fri Nov 20 15:13:44 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 308 50
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_1_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\ship_craft\sh_passive_2_icon_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 101 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\ship_craft\sh_passive_icon_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 160 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\ship_craft\sh_passive_icon_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 218 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\ship_craft\sh_passive_icon_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
