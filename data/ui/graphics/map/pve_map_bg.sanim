@@ -1,0 +1,105 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Mon Jun 15 15:38:10 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 964 510
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite ico_1_1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	484 -0	0 256	484 256	
+				0 0	1 0	0 1	1 1	
+				0xffa9a9a9	0xffa9a9a9	0xffa9a9a9	0xffa9a9a9	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico_1_2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				484 -0	968 -0	484 256	968 256	
+				0 0	1 0	0 1	1 1	
+				0xffa9a9a9	0xffa9a9a9	0xffa9a9a9	0xffa9a9a9	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico_2_1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 256	484 256	0 512	484 512	
+				0 0	1 0	0 1	1 1	
+				0xffa9a9a9	0xffa9a9a9	0xffa9a9a9	0xffa9a9a9	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico_2_2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				484 256	968 256	484 512	968 512	
+				0 0	1 0	0 1	1 1	
+				0xffa9a9a9	0xffa9a9a9	0xffa9a9a9	0xffa9a9a9	
+			}
+		}
+		visible_on idle
+	}
+}
+
