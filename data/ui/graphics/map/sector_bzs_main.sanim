@@ -1,0 +1,305 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Thu Mar 17 17:04:07 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 20
+
+objects 20
+{
+	object center8
+	{
+		defaults
+		{
+			pos 11.5484 12.3273
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object title_11
+	{
+		defaults
+		{
+			pos -28.4516 30.3273
+			opacity 255
+			color 0xffc6c6c6
+			size 80 30
+			effect ""
+			alignment "CT"
+			sampleText "Sector 4|dyjhj"
+			font "VeryTiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bzs_bg
+	{
+		defaults
+		{
+			pos 11.5484 12.3273
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\map\sector_bzs_bg"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object title_14
+	{
+		defaults
+		{
+			pos -38.4516 30.3273
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "Sector 4"
+			font "VeryTiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object fraction_ico_1
+	{
+		defaults
+		{
+			pos -27.4516 -36.6727
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\map\map_clan_ico_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object fraction_ico_2
+	{
+		defaults
+		{
+			pos -3.45159 -36.6727
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\map\map_clan_ico_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object fraction_ico_3
+	{
+		defaults
+		{
+			pos 22.5484 -36.6727
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\map\map_clan_ico_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object marker1
+	{
+		defaults
+		{
+			pos 13 12.3273
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_sector_marker"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bzs_bg_over
+	{
+		defaults
+		{
+			pos 11.5484 12.3273
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\map\sector_bzs_bg_over"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object lock3
+	{
+		defaults
+		{
+			pos 4.54841 -31.6727
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree\ship_tr_lock"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bzs_bg_progr
+	{
+		defaults
+		{
+			pos 12.5484 12.3273
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\map\sector_bzs_bg_progr"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object clan_ico_2
+	{
+		defaults
+		{
+			pos -4.45159 -3.67267
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\map\map_clan_ico_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object sector_bg_1
+	{
+		defaults
+		{
+			pos 11.5484 12.3273
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\map\sector_bg_1"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object parking
+	{
+		defaults
+		{
+			pos -3.45159 -2
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\map\parking"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object stop
+	{
+		defaults
+		{
+			pos 0.548413 2.32733
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\map\sector_bzs_stop"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object dread_ico
+	{
+		defaults
+		{
+			pos -10.4516 -18
+			opacity 255
+			color 0xffffffff
+			size 44 18
+			effect "ui\graphics\map\dread_ico"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bzs_bg1
+	{
+		defaults
+		{
+			pos 11.5484 12.3273
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\map\sector_bg_5"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object current_zone
+	{
+		defaults
+		{
+			pos 11.5484 12.3273
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\map\current_zone"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object token_progr
+	{
+		defaults
+		{
+			pos 11.5484 12.3273
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\map\token_progr"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+}
+
