@@ -1,0 +1,95 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Wed Oct 16 18:48:25 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 24
+			effect ""
+			alignment "CM"
+			sampleText "12879"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 0 -15
+			opacity 255
+			color 0xffff2b00
+			size 100 11
+			effect ""
+			alignment "CM"
+			sampleText "12879"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color_2
+	{
+		defaults
+		{
+			pos 0 -27
+			opacity 255
+			color 0xfffeff68
+			size 100 11
+			effect ""
+			alignment "CM"
+			sampleText "12879"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color_3
+	{
+		defaults
+		{
+			pos 0 -39
+			opacity 255
+			color 0xff00e0ff
+			size 100 11
+			effect ""
+			alignment "CM"
+			sampleText "12879"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_size
+	{
+		defaults
+		{
+			pos 0 -64
+			opacity 255
+			color 0xffffffff
+			size 100 24
+			effect ""
+			alignment "CM"
+			sampleText "12879"
+			font "Medium_outl2"
+		}
+		visible_on idle
+	}
+}
+
