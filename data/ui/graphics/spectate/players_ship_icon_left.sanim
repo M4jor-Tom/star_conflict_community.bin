@@ -1,0 +1,228 @@
+﻿source_file "Y:/art/source/ui/graphics/spectate/spectate_2.ma"
+//by sergey_mitryaev
+//at Tue Oct 16 16:18:21 2012
+
+
+animations 7
+{
+	anim live
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim dead
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_live
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_dead
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_live
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_dead
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim white
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object value
+	{
+		defaults
+		{
+			pos 19.0931 14.9669
+			opacity 255
+			color 0xfff3f3f3
+			size 20 11
+			effect ""
+			alignment "LM"
+			sampleText "III "
+			font "Tiny_outl2"
+		}
+		visible_on live
+		anim dead obj_colc
+		{
+			1
+			0xff990001
+		}
+		visible_on friend_live
+		anim friend_dead obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+		visible_on enemy_live
+		anim enemy_dead obj_colc
+		{
+			1
+			0xff945455
+		}
+		anim white obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object ship_type
+	{
+		defaults
+		{
+			pos 8.93533 16.483
+			opacity 255
+			color 0xfff3f3f3
+			size 10 10
+			effect "ui\graphics\spectate\ship_type_spect"
+			alignment "RM"
+		}
+		visible_on live
+		anim dead obj_colc
+		{
+			1
+			0xffa40002
+		}
+		visible_on friend_live
+		anim friend_dead obj_colc
+		{
+			1
+			0xff7f81bd
+		}
+		visible_on enemy_live
+		anim enemy_dead obj_colc
+		{
+			1
+			0xff8f5052
+		}
+		anim white obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on live
+		visible_on dead
+		visible_on friend_live
+		visible_on friend_dead
+		visible_on enemy_live
+		visible_on enemy_dead
+		visible_on white
+	}
+	object ship_status
+	{
+		defaults
+		{
+			pos 33.7028 12.7097
+			opacity 255
+			color 0xfff3f3f3
+			size 10 10
+			effect "ui\graphics\spectate\new\ship_status"
+			alignment "RM"
+		}
+		visible_on live
+		anim dead obj_colc
+		{
+			1
+			0xffa40002
+		}
+		visible_on friend_live
+		anim friend_dead obj_colc
+		{
+			1
+			0xff7f81bd
+		}
+		visible_on enemy_live
+		anim enemy_dead obj_colc
+		{
+			1
+			0xff8f5052
+		}
+		anim white obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				16.4943 -0.76153	49.4943 -0.76153	16.4943 25.2385	49.4943 25.2385	
+				-1.49012e-008 0	1 0	-1.49012e-008 1	1 1	
+				0xff5a87d0	0xff5a87d0	0xff5a87d0	0xff5a87d0	
+			}
+		}
+		visible_on live
+		anim dead sp_colc
+		{
+			1
+			0xffd00000	0xffd00000	0xffd00000	0xffd00000	
+		}
+		anim friend_live sp_colc
+		{
+			1
+			0xff9abefa	0xff9abefa	0xff9abefa	0xff9abefa	
+		}
+		anim friend_dead sp_colc
+		{
+			1
+			0x66b2b2b2	0x66b2b2b2	0x66b2b2b2	0x66b2b2b2	
+		}
+		anim enemy_live sp_colc
+		{
+			1
+			0xfffc7e7e	0xfffc7e7e	0xfffc7e7e	0xfffc7e7e	
+		}
+		anim enemy_dead sp_colc
+		{
+			1
+			0x66fcbcbc	0x66fcbcbc	0x66fcbcbc	0x66fcbcbc	
+		}
+		anim white sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
