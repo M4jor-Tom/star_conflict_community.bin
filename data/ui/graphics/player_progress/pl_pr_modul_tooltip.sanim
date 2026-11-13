@@ -1,0 +1,132 @@
+﻿source_file "Y:/art/source/ui/graphics/player_progress/player_progress.ma"
+//by sergey_mitryaev
+//at Mon Aug 11 14:44:57 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 430 500
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 21
+			opacity 255
+			color 0xffffffff
+			size 420 560
+			effect "ui\graphics\player_progress\pl_pr_modul_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title8
+	{
+		defaults
+		{
+			pos 10 -0
+			opacity 255
+			color 0xffff9a00
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Wsds f geghg eh "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 79
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object hint_1
+	{
+		defaults
+		{
+			pos 0 83
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\player_progress\pl_pr_map_hint"
+			alignment "LM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			0 83
+			0 497
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite bg33
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 75	4 75	423 75	431 75	-4 83	4 83	423 83	431 83	
+				0.0585938 0.695313	0.0664227 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664227 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723636	0.0664227 0.723636	0.0742188 0.723636	0.0820313 0.723636	0.0585938 0.731448	0.0664227 0.731448	0.0742188 0.731448	0.0820313 0.731448	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 75	4 75	423 75	431 75	-4 83	4 83	423 83	431 83	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 116.8	4 116.8	423 116.8	431 116.8	-4 124.8	4 124.8	423 124.8	431 124.8	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 158.6	4 158.6	423 158.6	431 158.6	-4 166.6	4 166.6	423 166.6	431 166.6	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 200.4	4 200.4	423 200.4	431 200.4	-4 208.4	4 208.4	423 208.4	431 208.4	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 242.2	4 242.2	423 242.2	431 242.2	-4 250.2	4 250.2	423 250.2	431 250.2	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 284	4 284	423 284	431 284	-4 292	4 292	423 292	431 292	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 325.8	4 325.8	423 325.8	431 325.8	-4 333.8	4 333.8	423 333.8	431 333.8	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 367.6	4 367.6	423 367.6	431 367.6	-4 375.6	4 375.6	423 375.6	431 375.6	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 409.4	4 409.4	423 409.4	431 409.4	-4 417.4	4 417.4	423 417.4	431 417.4	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 451.2	4 451.2	423 451.2	431 451.2	-4 459.2	4 459.2	423 459.2	431 459.2	
+			-4 -4	4 -4	423 -4	431 -4	-4 22	4 22	423 22	431 22	-4 493	4 493	423 493	431 493	-4 501	4 501	423 501	431 501	
+		}
+	}
+}
+
