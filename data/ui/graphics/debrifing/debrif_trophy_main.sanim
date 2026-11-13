@@ -1,0 +1,78 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Sat Feb 14 11:58:49 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 825 130
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 247.372 5
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "Добыча"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 146 69.0951
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "CB"
+			sampleText "Трофев   не обнаружено "
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object trophy_slots
+	{
+		defaults
+		{
+			pos 0 59
+			opacity 255
+			color 0xffffffff
+			size 835 64
+			effect "ui\graphics\debrifing\debrif_trophy_slots"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
