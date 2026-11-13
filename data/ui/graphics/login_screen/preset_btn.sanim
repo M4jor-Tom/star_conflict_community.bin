@@ -1,0 +1,173 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Mon Nov 25 16:35:07 2019
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 4
+{
+	object value
+	{
+		defaults
+		{
+			pos 0 -2
+			opacity 255
+			color 0xffffffff
+			size 70 40
+			effect ""
+			alignment "CM"
+			sampleText "1"
+			font "Medium"
+		}
+		visible_on idle
+		anim select obj_colc
+		{
+			1
+			0xffffd700
+		}
+		anim press obj_colc
+		{
+			1
+			0xffffd700
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 36
+			effect ""
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+	}
+	object on_off
+	{
+		defaults
+		{
+			pos 54 -0
+			opacity 255
+			color 0xffffffff
+			size 50 24
+			effect "ui\graphics\friend\friend_line_on_off"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 36
+			effect "ui\graphics\login_screen\preset_btn_over"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	66 -4	74 -4	-4 4	4 4	66 4	74 4	-4 33	4 33	66 33	74 33	-4 41	4 41	66 41	74 41	
+				0.0585938 0.644531	0.0664063 0.644531	0.0742118 0.644531	0.0820243 0.644531	0.0585938 0.652344	0.0664063 0.652344	0.0742118 0.652344	0.0820243 0.652344	0.0585938 0.660156	0.0664063 0.660156	0.0742118 0.660156	0.0820243 0.660156	0.0585938 0.667969	0.0664063 0.667969	0.0742118 0.667969	0.0820243 0.667969	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+	}
+	sprite sprite_6
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-0.208431 0.024724	7.79157 0.024724	62.0737 0.024724	70.0737 0.024724	-0.208431 8.02472	7.79157 8.02472	62.0737 8.02472	70.0737 8.02472	-0.208431 28.2587	7.79157 28.2587	62.0737 28.2587	70.0737 28.2587	-0.208431 36.2587	7.79157 36.2587	62.0737 36.2587	70.0737 36.2587	
+				0.349609 0.655273	0.357422 0.655273	0.379883 0.655273	0.387695 0.655273	0.349609 0.663086	0.357422 0.663086	0.379883 0.663086	0.387695 0.663086	0.349609 0.685547	0.357422 0.685547	0.379883 0.685547	0.387695 0.685547	0.349609 0.693359	0.357422 0.693359	0.379883 0.693359	0.387695 0.693359	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	0xffff9000	
+		}
+		visible_on press
+	}
+	sprite sel9
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.208431 0.024724	7.79157 0.024724	62.0737 0.024724	70.0737 0.024724	-0.208431 8.02472	7.79157 8.02472	62.0737 8.02472	70.0737 8.02472	-0.208431 28.2587	7.79157 28.2587	62.0737 28.2587	70.0737 28.2587	-0.208431 36.2587	7.79157 36.2587	62.0737 36.2587	70.0737 36.2587	
+				0.455664 0.288672	0.458228 0.288672	0.4656 0.288672	0.468164 0.288672	0.455664 0.291236	0.458228 0.291236	0.4656 0.291236	0.468164 0.291236	0.455664 0.298608	0.458228 0.298608	0.4656 0.298608	0.468164 0.298608	0.455664 0.301172	0.458228 0.301172	0.4656 0.301172	0.468164 0.301172	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	0x4ccb7401	
+		}
+		visible_on press
+	}
+}
+
