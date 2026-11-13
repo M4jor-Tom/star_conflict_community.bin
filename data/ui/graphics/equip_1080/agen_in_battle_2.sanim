@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Mon Nov 11 18:23:29 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object text_buy
+	{
+		defaults
+		{
+			pos 9.13319 9
+			opacity 255
+			color 0xffda2200
+			size 30 30
+			effect ""
+			alignment "CM"
+			sampleText "В БОЮ!!"
+			font "Tiny_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.022913 0.123477	6.02291 0.123477	42 0.123477	48 0.123477	0.022913 6.12348	6.02291 6.12348	42 6.12348	48 6.12348	0.022913 41.8321	6.02291 41.8321	42 41.8321	48 41.8321	0.022913 47.8321	6.02291 47.8321	42 47.8321	48 47.8321	
+				0.13754 0.793803	0.139016 0.793803	0.142234 0.793803	0.14371 0.793803	0.13754 0.79528	0.139016 0.79528	0.142234 0.79528	0.14371 0.79528	0.13754 0.79847	0.139016 0.79847	0.142234 0.79847	0.14371 0.79847	0.13754 0.799947	0.139016 0.799947	0.142234 0.799947	0.14371 0.799947	
+				0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName247
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				47.6872 5.37179	0.0753937 5.37179	47.6873 0.12318	0.0754242 0.123096	
+				0.228562 0.803972	0.111281 0.803972	0.228562 0.789778	0.111281 0.789778	
+				0xff343434	0xff343434	0xff343434	0xff343434	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName248
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				47.9602 48.1679	0.0753937 48.1679	47.9603 42.3067	0.0754242 42.3065	
+				0.228969 0.804067	0.110987 0.804067	0.228969 0.789029	0.110987 0.789029	
+				0xff343434	0xff343434	0xff343434	0xff343434	
+			}
+		}
+		visible_on idle
+	}
+}
+
