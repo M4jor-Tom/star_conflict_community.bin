@@ -1,0 +1,164 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Mon Nov 25 14:59:12 2013
+
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 67 6
+			effect ""
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectNametyj
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				-2 -2	70 -2	-2 8	70 8	
+				0.28418 0.350586	0.354492 0.350586	0.28418 0.360352	0.354492 0.360352	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	sprite objectNametyje
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	67 -0	0 6	67 6	
+				0.318359 0.353516	0.319336 0.353516	0.318359 0.357422	0.319336 0.357422	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectNametyjfsww
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -1	0 -1	0 6	0 6	
+				0.286133 0.342773	0.286133 0.342773	0.286133 0.348633	0.286133 0.348633	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos_uv
+		{
+			11 11 
+			0 -1	0 -1	0 6	0 6	
+			0 -1	6.7 -1	0 6	6.7 6	
+			0 -1	13.4 -1	0 6	13.4 6	
+			0 -1	20.1 -1	0 6	20.1 6	
+			0 -1	26.8 -1	0 6	26.8 6	
+			0 -1	33.5 -1	0 6	33.5 6	
+			0 -1	40.2 -1	0 6	40.2 6	
+			0 -1	46.9 -1	0 6	46.9 6	
+			0 -1	53.6 -1	0 6	53.6 6	
+			0 -1	60.3 -1	0 6	60.3 6	
+			0 -1	67 -1	0 6	67 6	
+			0.286133 0.342773	0.286133 0.342773	0.286133 0.348633	0.286133 0.348633	
+			0.286133 0.342773	0.292676 0.342773	0.286133 0.348633	0.292676 0.348633	
+			0.286133 0.342773	0.299219 0.342773	0.286133 0.348633	0.299219 0.348633	
+			0.286133 0.342773	0.305762 0.342773	0.286133 0.348633	0.305762 0.348633	
+			0.286133 0.342773	0.312305 0.342773	0.286133 0.348633	0.312305 0.348633	
+			0.286133 0.342773	0.318848 0.342773	0.286133 0.348633	0.318848 0.348633	
+			0.286133 0.342773	0.325391 0.342773	0.286133 0.348633	0.325391 0.348633	
+			0.286133 0.342773	0.331934 0.342773	0.286133 0.348633	0.331934 0.348633	
+			0.286133 0.342773	0.338477 0.342773	0.286133 0.348633	0.338477 0.348633	
+			0.286133 0.342773	0.34502 0.342773	0.286133 0.348633	0.34502 0.348633	
+			0.286133 0.342773	0.351563 0.342773	0.286133 0.348633	0.351563 0.348633	
+		}
+		anim idle_2 sp_posc_uvc_colc
+		{
+			1 1 1
+			0 -1	67 -1	0 6	67 6	
+			0.286133 0.342773	0.351563 0.342773	0.286133 0.348633	0.351563 0.348633	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectNametyjfsw
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	0 -0	0 6	0 6	
+				0.286133 0.37207	0.351563 0.37207	0.286133 0.37793	0.351563 0.37793	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_pos_colc
+		{
+			12 1
+			0 -0	0 -0	0 6	0 6	
+			0 -0	6.09091 -0	0 6	6.09091 6	
+			0 -0	12.1818 -0	0 6	12.1818 6	
+			0 -0	18.2727 -0	0 6	18.2727 6	
+			0 -0	24.3636 -0	0 6	24.3636 6	
+			0 -0	30.4545 -0	0 6	30.4545 6	
+			0 -0	36.5454 -0	0 6	36.5454 6	
+			0 -0	42.6364 -0	0 6	42.6364 6	
+			0 -0	48.7273 -0	0 6	48.7273 6	
+			0 -0	54.8182 -0	0 6	54.8182 6	
+			0 -0	60.9091 -0	0 6	60.9091 6	
+			0 -0	67 -0	0 6	67 6	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
