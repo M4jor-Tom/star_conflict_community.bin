@@ -1,0 +1,111 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Fri Feb 05 17:49:11 2021
+
+base_res 1280 720
+
+animations 7
+{
+	anim less
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim more
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim equally
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim less_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim more_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim less_3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim more_3
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite df
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	20 -0	0 15	20 15	
+				0.362305 0.262695	0.381836 0.262695	0.362305 0.27832	0.381836 0.27832	
+				0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+			}
+		}
+		visible_on less
+		anim more sp_uvc_colc
+		{
+			1 1
+			0.381836 0.262695	0.362305 0.262695	0.381836 0.27832	0.362305 0.27832	
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+		anim less_2 sp_uvc
+		{
+			1 
+			0.381836 0.262695	0.362305 0.262695	0.381836 0.27832	0.362305 0.27832	
+		}
+		anim more_2 sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+		anim less_3 sp_colc
+		{
+			1
+			0xff7c00e1	0xff7c00e1	0xff7c00e1	0xff7c00e1	
+		}
+		anim more_3 sp_uvc_colc
+		{
+			1 1
+			0.381836 0.262695	0.362305 0.262695	0.381836 0.27832	0.362305 0.27832	
+			0xff7c00e1	0xff7c00e1	0xff7c00e1	0xff7c00e1	
+		}
+	}
+	sprite df2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				4.5 2.5	17.5 2.5	4.5 11.5	17.5 11.5	
+				0.215332 0.329102	0.228027 0.329102	0.215332 0.337891	0.228027 0.337891	
+			}
+		}
+		visible_on equally
+	}
+}
+
