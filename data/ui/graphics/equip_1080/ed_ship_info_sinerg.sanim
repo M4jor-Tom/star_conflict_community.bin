@@ -1,0 +1,149 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Wed Apr 29 16:51:01 2020
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 110 66
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object name7
+	{
+		defaults
+		{
+			pos 12 -2
+			opacity 255
+			color 0xffffffff
+			size 44 44
+			effect ""
+			alignment "CM"
+			sampleText "1"
+			font "segoeuilr_44"
+		}
+		visible_on idle
+	}
+	object role_title1
+	{
+		defaults
+		{
+			pos 4 41
+			opacity 178
+			color 0xffa3b5c3
+			size 60 30
+			effect ""
+			alignment "CM"
+			sampleText "УРОВЕНЬ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object role_title2
+	{
+		defaults
+		{
+			pos 81 19
+			opacity 178
+			color 0xffa3b5c3
+			size 30 30
+			effect ""
+			alignment "LM"
+			sampleText "99"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite que479
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				62 24.6828	78 24.6828	62 40.6828	78 40.6828	
+				0.4375 0.00585938	0.46875 0.00585938	0.4375 0.0371094	0.46875 0.0371094	
+				0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite que480
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				69 7	70 7	69 23	70 23	
+				0.175781 0.246094	0.207031 0.246094	0.175781 0.277344	0.207031 0.277344	
+				0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite que481
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				69 43	70 43	69 59	70 59	
+				0.175781 0.246094	0.207031 0.246094	0.175781 0.277344	0.207031 0.277344	
+				0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite que482
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-1.40807 -16.4084	73.408 -16.4084	-1.40807 58.4084	73.408 58.4084	
+				0.438078 0.594328	0.483797 0.594328	0.438078 0.640047	0.483797 0.640047	
+				0x3effffff	0x3effffff	0x3effffff	0x3effffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
