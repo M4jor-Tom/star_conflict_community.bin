@@ -1,0 +1,61 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Thu May 22 15:51:49 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 60 8
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite wqe1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	1 -0	0 8	1 8	
+				0.27002 0.378906	0.269043 0.378906	0.27002 0.376953	0.269043 0.376953	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		anim idle sp_pos
+		{
+			2 
+			0 -0	1 -0	0 8	1 8	
+			59 -0	60 -0	59 8	60 8	
+		}
+	}
+}
+
