@@ -1,0 +1,101 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Mon Sep 28 12:35:02 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object title_1
+	{
+		defaults
+		{
+			pos 0.0849992 -0
+			opacity 255
+			color 0xffffffff
+			size 150 40
+			effect ""
+			alignment "CM"
+			sampleText "Открытый мир"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 54
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName376
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			vertices
+			{
+				-7 -10	205 -10	-7 60	205 60	
+				0.583984 0.138672	0.998047 0.138672	0.583984 0.275391	0.998047 0.275391	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+	sprite objectName377
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			blend color_add
+			vertices
+			{
+				-7 -10	205 -10	-7 60	205 60	
+				0.582031 0.00195313	0.996094 0.00195313	0.582031 0.138672	0.996094 0.138672	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
