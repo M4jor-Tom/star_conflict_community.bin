@@ -1,0 +1,284 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Thu Mar 12 15:05:23 2015
+
+base_res 1280 720
+
+animations 7
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim tick
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim tick_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_3
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 1
+{
+	object self137
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 32
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_3
+		visible_on tick
+		visible_on tick_over
+		visible_on idle_3
+	}
+}
+
+sprites 7
+{
+	total_vertices 28
+
+	sprite myself57
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				4 6	16 6	4 28	16 28	
+				0.773438 0.015625	0.820313 0.015625	0.773438 0.101563	0.820313 0.101563	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim over_3 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim tick sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim tick_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim idle_3 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite myself67
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				4 6	16 6	4 28	16 28	
+				0.773438 0.015625	0.820313 0.015625	0.773438 0.101563	0.820313 0.101563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on idle_2
+		visible_on over_3
+		visible_on tick
+		visible_on tick_over
+		visible_on idle_3
+	}
+	sprite myself70
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				4 6	16 6	4 28	16 28	
+				0.832031 0.015625	0.878906 0.015625	0.832031 0.101563	0.878906 0.101563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim over_3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on tick
+		visible_on tick_over
+		visible_on idle_3
+	}
+	sprite myself71
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				4 6	16 6	4 28	16 28	
+				0.832031 0.015625	0.878906 0.015625	0.832031 0.101563	0.878906 0.101563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		anim over_3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on tick
+		visible_on tick_over
+		visible_on idle_3
+	}
+	sprite myself73
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-3.92527 3.34668	21.9253 3.34668	-3.92527 28.6371	21.9253 28.6371	
+				0.96875 0.62207	0.994141 0.62207	0.96875 0.647461	0.994141 0.647461	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_3
+		anim tick sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim tick_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on idle_3
+	}
+	sprite myself74
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-3.92527 3.34668	21.9253 3.34668	-3.92527 28.6371	21.9253 28.6371	
+				0.96875 0.62207	0.994141 0.62207	0.96875 0.647461	0.994141 0.647461	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_3
+		visible_on tick
+		anim tick_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on idle_3
+	}
+	sprite myself86
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				4 6	16 6	4 28	16 28	
+				0.832031 0.015625	0.878906 0.015625	0.832031 0.101563	0.878906 0.101563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_3
+		visible_on tick
+		visible_on tick_over
+		anim idle_3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
