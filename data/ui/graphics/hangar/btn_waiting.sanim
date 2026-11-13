@@ -1,0 +1,132 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Mon May 26 14:26:57 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName242
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	158 -0	0 25	158 25	
+				0.22998 0.0126953	0.253906 0.0126953	0.22998 0.0419922	0.253906 0.0419922	
+				0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			0x4cfdfdfd	0x4cfdfdfd	0x4cfdfdfd	0x4cfdfdfd	
+			0x4cf8f8f8	0x4cf8f8f8	0x4cf8f8f8	0x4cf8f8f8	
+			0x4cf0f0f0	0x4cf0f0f0	0x4cf0f0f0	0x4cf0f0f0	
+			0x4ce1e1e1	0x4ce1e1e1	0x4ce1e1e1	0x4ce1e1e1	
+			0x4ccccccc	0x4ccccccc	0x4ccccccc	0x4ccccccc	
+			0x4cafafaf	0x4cafafaf	0x4cafafaf	0x4cafafaf	
+			0x4c888888	0x4c888888	0x4c888888	0x4c888888	
+			0x4c565656	0x4c565656	0x4c565656	0x4c565656	
+			0x4c171717	0x4c171717	0x4c171717	0x4c171717	
+		}
+	}
+	sprite objectName247
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				158 12	-1.52588e-005 12	158 4.19617e-005	1.52588e-005 -4.19617e-005	
+				0.406134 0.858887	0.283319 0.858887	0.406134 0.847656	0.283319 0.847656	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	
+			0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	
+			0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	
+			0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	
+			0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	
+			0xffababab	0xffababab	0xffababab	0xffababab	
+			0xff919191	0xff919191	0xff919191	0xff919191	
+			0xff767676	0xff767676	0xff767676	0xff767676	
+			0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	
+			0xff414141	0xff414141	0xff414141	0xff414141	
+		}
+	}
+	sprite objectName248
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				158 25	-1.52588e-005 25	158 12	1.52588e-005 12	
+				0.406134 0.871094	0.283319 0.871094	0.406134 0.858887	0.283319 0.858887	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	
+			0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	
+			0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	
+			0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	
+			0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	
+			0xffababab	0xffababab	0xffababab	0xffababab	
+			0xff919191	0xff919191	0xff919191	0xff919191	
+			0xff767676	0xff767676	0xff767676	0xff767676	
+			0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	
+			0xff414141	0xff414141	0xff414141	0xff414141	
+		}
+	}
+}
+
