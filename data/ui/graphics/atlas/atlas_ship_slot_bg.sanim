@@ -1,0 +1,56 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by Sergey_Mitryaev
+//at Wed Feb 14 13:11:16 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 194 138
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				1 1	11.6667 1	437.833 1	448.5 1	1 11.6667	11.6667 11.6667	437.833 11.6667	448.5 11.6667	1 308.333	11.6667 308.333	437.833 308.333	448.5 308.333	1 319	11.6667 319	437.833 319	448.5 319	
+				0.337092 0.684748	0.338926 0.684748	0.340761 0.684748	0.342596 0.684748	0.337092 0.686583	0.338926 0.686583	0.340761 0.686583	0.342596 0.686583	0.337092 0.688417	0.338926 0.688417	0.340761 0.688417	0.342596 0.688417	0.337092 0.690252	0.338926 0.690252	0.340761 0.690252	0.342596 0.690252	
+				0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	0x4d77560a	
+			}
+		}
+		visible_on idle
+	}
+}
+
