@@ -1,0 +1,185 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Mon Mar 25 13:45:04 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos -0.926541 -0
+			opacity 255
+			color 0xffffffff
+			size 950 420
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object hader
+	{
+		defaults
+		{
+			pos 2 7
+			opacity 255
+			color 0xffffffff
+			size 925 20
+			effect "ui\graphics\map\custom_hader"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_5
+	{
+		defaults
+		{
+			pos 2 288.737
+			opacity 255
+			color 0xffffffff
+			size 925 52
+			effect "ui\graphics\map\custom_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_4
+	{
+		defaults
+		{
+			pos 2 226.803
+			opacity 255
+			color 0xffffffff
+			size 925 52
+			effect "ui\graphics\map\custom_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos 2 164.869
+			opacity 255
+			color 0xffffffff
+			size 925 52
+			effect "ui\graphics\map\custom_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 2 102.934
+			opacity 255
+			color 0xffffffff
+			size 925 52
+			effect "ui\graphics\map\custom_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 2 41
+			opacity 255
+			color 0xffffffff
+			size 925 52
+			effect "ui\graphics\map\custom_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 933.073 40
+			opacity 255
+			color 0xffffffff
+			size 16 370
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_6
+	{
+		defaults
+		{
+			pos 2 352.33
+			opacity 255
+			color 0xffffffff
+			size 925 52
+			effect "ui\graphics\map\custom_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	8 -0	946.018 -0	952.018 -0	0 6	8 6	946.018 6	952.018 6	0 409.809	8 409.809	946.018 409.809	952.018 409.809	0 418.191	8 418.191	946.018 418.191	952.018 418.191	
+				0.00195098 0.160156	0.00977248 0.160156	0.0205078 0.160156	0.0263671 0.160156	0.00195083 0.166016	0.00977248 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195083 0.176757	0.00977242 0.176757	0.0205079 0.176757	0.0263672 0.176757	0.00195083 0.184571	0.00977245 0.184571	0.0205078 0.184571	0.0263672 0.184571	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2ewf
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	8 -0	946.018 -0	952.018 -0	0 6	8 6	946.018 6	952.018 6	0 29.6172	8 29.6172	946.018 29.6172	952.018 29.6172	0 38	8 38	946.018 38	952.018 38	
+				0.00195098 0.160156	0.00977248 0.160156	0.0205078 0.160156	0.0263671 0.160156	0.00195083 0.166016	0.00977248 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195083 0.176757	0.00977242 0.176757	0.0205079 0.176757	0.0263672 0.176757	0.00195083 0.184571	0.00977245 0.184571	0.0205078 0.184571	0.0263672 0.184571	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
