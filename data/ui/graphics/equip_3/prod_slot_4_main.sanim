@@ -1,0 +1,266 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_3.ma"
+//by Sergey_Mitryaev
+//at Tue May 23 19:03:13 2017
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 10
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 496 64
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 6 8
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object product_name
+	{
+		defaults
+		{
+			pos 62 7
+			opacity 255
+			color 0xffffffff
+			size 250 40
+			effect ""
+			alignment "LT"
+			sampleText "Адаптивный излучаетель MK2 hg gsb|b bretetrgewrtrg ew"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 371 38
+			opacity 255
+			color 0xffffffff
+			size 120 22
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_7
+	{
+		defaults
+		{
+			pos 371 38
+			opacity 255
+			color 0xffffffff
+			size 120 22
+			effect "ui\graphics\button\prod_btn_5"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_21
+	{
+		defaults
+		{
+			pos 371 9
+			opacity 255
+			color 0xffffffff
+			size 120 22
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object btn_22
+	{
+		defaults
+		{
+			pos 371 9
+			opacity 255
+			color 0xffffffff
+			size 120 22
+			effect "ui\graphics\button\prod_btn_5"
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object count
+	{
+		defaults
+		{
+			pos 62 39
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LM"
+			sampleText "На складе 6  шт"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object price
+	{
+		defaults
+		{
+			pos 213 39
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "RM"
+			sampleText "Лучшая  цена 450"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+	object timer
+	{
+		defaults
+		{
+			pos 315 12
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "RM"
+			sampleText "3434"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite ico26
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-1 -0	199 -0	-1 66	199 66	
+				0.24707 0.240234	0.442383 0.240234	0.24707 0.369141	0.442383 0.369141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim disable sp_colc
+		{
+			1
+			0xff666666	0xff666666	0xff666666	0xff666666	
+		}
+	}
+	sprite ico30
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				199 -0	313 -0	199 66	313 66	
+				0.442383 0.240234	0.491211 0.240234	0.442383 0.369141	0.491211 0.369141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim disable sp_colc
+		{
+			1
+			0xff666666	0xff666666	0xff666666	0xff666666	
+		}
+	}
+	sprite ico31
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				313 -0	495 -0	313 66	495 66	
+				0.4375 0.240234	0.615234 0.240234	0.4375 0.369141	0.615234 0.369141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim disable sp_colc
+		{
+			1
+			0xff666666	0xff666666	0xff666666	0xff666666	
+		}
+	}
+}
+
