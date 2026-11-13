@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+
+	<Templates>
+
+		<LinearLayout name="ReplayFileTemplate" w="600" h="25" horizontal="true" margin="2" debug="false">
+			<TextLabel name="Filename" w="410" h="24" text="-----" />
+			<TextLabel name="Availability" w="180" h="24" text="#INVALID_VERSION" foreground="Red">
+				<anchor point="RIGHT" x="-2" />
+			</TextLabel>
+			<Button name="LoadButton" w="120" h="24" text="#LOAD">
+				<anchor point="RIGHT" x="-2" />
+			</Button>
+		</LinearLayout>
+
+	</Templates>
+
+	<Form name="ReplaySelectUI"
+		class="Window" 
+		width="630"
+		height="250"
+		resizable="false"
+		movable="false"
+		font="Tiny_outl2"
+		text="#REPLAY_SELECT_UI"
+		foreground="White"
+		background="White"
+		alpha="1">
+
+		<anchor point="BOTTOMRIGHT" to="ReplayUI:TOPRIGHT" y="-5"/>
+
+		<LinearLayout name="FilesContainer" w="600" h="250" debug="false" >
+			<Widget name="RepFile1"  template="ReplayFileTemplate" />
+			<Widget name="RepFile2"  template="ReplayFileTemplate" />
+			<Widget name="RepFile3"  template="ReplayFileTemplate" />
+			<Widget name="RepFile4"  template="ReplayFileTemplate" />
+			<Widget name="RepFile5"  template="ReplayFileTemplate" />
+			<Widget name="RepFile6"  template="ReplayFileTemplate" />
+			<Widget name="RepFile7"  template="ReplayFileTemplate" />
+			<Widget name="RepFile8"  template="ReplayFileTemplate" />
+			<Widget name="RepFile9"  template="ReplayFileTemplate" />
+			<Widget name="RepFile10" template="ReplayFileTemplate" />
+			<anchor point="TOPLEFT" x="5" />
+		</LinearLayout>
+
+		<ScrollBar name="Scrollbar" width="20" height="246">
+			<anchor point="TOPRIGHT" x="-2" y="2" />
+		</ScrollBar>
+	
+	</Form>
+</Ui>
