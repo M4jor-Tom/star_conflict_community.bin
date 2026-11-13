@@ -1,0 +1,100 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_3.ma"
+//by Sergey
+//at Fri Sep 02 13:56:40 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 114 20
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 21 6
+			opacity 255
+			color 0xffffffff
+			size 94 8
+			effect "ui\graphics\equip_3\prod_progr"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object fraction_icon
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\gold_icon"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite dfdf
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				20.5 6	114.5 6	20.5 14	114.5 14	
+				0.698242 0.369141	0.790039 0.369141	0.698242 0.384766	0.790039 0.384766	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite dfdf1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-2.5 -0.999999	21.5 -0.999999	-2.5 23	21.5 23	
+				0.922852 0.0488281	0.946289 0.0488281	0.922852 0.0957031	0.946289 0.0957031	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
