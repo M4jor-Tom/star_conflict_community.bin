@@ -1,0 +1,101 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Thu May 22 17:17:01 2014
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_locking
+	{
+		mode looped
+		cycle_time 0.5
+	}
+	anim shot_locking
+	{
+		mode looped
+		cycle_time 0.5
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite friend
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	20 -0	0 20	20 20	
+				0.116278 0.335842	0.135675 0.335842	0.116278 0.316502	0.135675 0.316502	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on idle_locking
+		anim shot_locking sp_col
+		{
+			4
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xb4ffffff	0xb4ffffff	0xb4ffffff	0xb4ffffff	
+			0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite enemy
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	20 -0	0 20	20 20	
+				0.116278 0.335842	0.135675 0.335842	0.116278 0.316502	0.135675 0.316502	
+				0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			}
+		}
+		visible_on idle
+		anim shot sp_colc
+		{
+			1
+			0xff0000	0xff0000	0xff0000	0xff0000	
+		}
+		anim idle_locking sp_col
+		{
+			4
+			0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			0xb3ff0000	0xb3ff0000	0xb3ff0000	0xb3ff0000	
+			0x60ff0000	0x60ff0000	0x60ff0000	0x60ff0000	
+			0xff0000	0xff0000	0xff0000	0xff0000	
+		}
+		anim shot_locking sp_colc
+		{
+			1
+			0xff0000	0xff0000	0xff0000	0xff0000	
+		}
+	}
+}
+
