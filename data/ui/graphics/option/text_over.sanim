@@ -1,0 +1,48 @@
+﻿source_file  Y:/art/source/ui/graphics/option/option.ma
+//by sergey_mitryaev
+//at Fri Jul 20 11:31:41 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos 0.99582 2.31921
+			opacity 255
+			color 0xffcccccc
+			size 200 16
+			effect ""
+			alignment "RM"
+			sampleText "Вертикал. синхронизация"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 21
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
