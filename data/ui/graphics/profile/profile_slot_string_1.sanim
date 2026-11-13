@@ -1,0 +1,130 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by sergey_mitryaev
+//at Thu Oct 17 11:48:27 2013
+
+
+animations 2
+{
+	anim idle_activ
+	{
+		mode once
+		cycle_time 1
+	}
+	anim idle_inactiv
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object description
+	{
+		defaults
+		{
+			pos 19 -0
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "efr gheh  rj65j6 jk6gfj   lilui;"
+			font "Tiny"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_colc
+		{
+			1
+			0xff999999
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos -1.42109e-014 -0
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_colc
+		{
+			1
+			0xff999999
+		}
+	}
+	object description_2
+	{
+		defaults
+		{
+			pos 40 -0
+			opacity 255
+			color 0xffffffff
+			size 280 20
+			effect ""
+			alignment "LM"
+			sampleText "efr gheh  rj65j6 jk6gfj   lilui;"
+			font "Tiny"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_colc
+		{
+			1
+			0xff999999
+		}
+	}
+	object acheiv
+	{
+		defaults
+		{
+			pos 19 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\profile\profile_slot_acheiv"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle_activ
+		anim idle_inactiv obj_colc
+		{
+			1
+			0xff999999
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0191402 0.516949	20.0191 0.516949	0.0191402 20.5169	20.0191 20.5169	
+				0.446289 0.000976563	0.46582 0.000976563	0.446289 0.0205078	0.46582 0.0205078	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle_activ
+		anim idle_inactiv sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
