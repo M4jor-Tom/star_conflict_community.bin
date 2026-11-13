@@ -1,0 +1,241 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by sergey_mitryaev
+//at Mon Mar 01 15:09:47 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 13
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 600
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tree
+	{
+		defaults
+		{
+			pos 2.00592 62
+			opacity 255
+			color 0xffffffff
+			size 216 26
+			effect "ui\graphics\shop\shop_tree_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 225 60
+			opacity 255
+			color 0xffffffff
+			size 698 494
+			effect "ui\graphics\profile\profile_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load_modules
+	{
+		defaults
+		{
+			pos 535.361 295.892
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object empty
+	{
+		defaults
+		{
+			pos 296.02 136.357
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Нет не единого товара"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 10 3
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "LT"
+			sampleText "Личное дело пилота"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 3 25.8279
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\clan\clan_bookmark_main_3"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 947 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object achievpint
+	{
+		defaults
+		{
+			pos 728 30
+			opacity 255
+			color 0xffffffff
+			size 230 20
+			effect "ui\graphics\profile\achievpoint"
+			alignment "RM"
+			sampleText "5000"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object subwin
+	{
+		defaults
+		{
+			pos 0 53
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\profile\medals_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load_modules2
+	{
+		defaults
+		{
+			pos 417 255.741
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_help
+	{
+		defaults
+		{
+			pos 926 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_help"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title8
+	{
+		defaults
+		{
+			pos 7 469
+			opacity 255
+			color 0xffffdeb3
+			size 210 100
+			effect ""
+			alignment "LB"
+			sampleText "Личное дело пилота|efeevev |wegeg e|GWEG"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	962 -4	970 -4	-4 22	4 22	962 22	970 22	-4 601	4 601	962 601	970 601	-4 609	4 609	962 609	970 609	
+				0.0585937 0.695313	0.066406 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.066406 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723638	0.066406 0.723638	0.0742187 0.723638	0.0820313 0.723638	0.0585938 0.731454	0.066406 0.731454	0.0742187 0.731454	0.0820312 0.731454	
+			}
+		}
+		visible_on idle
+	}
+	sprite dffswceebb
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 55	1 53	965 55	965 53	
+				0.0771484 0.146484	0.0791016 0.146484	0.0771484 0.152344	0.0791016 0.152344	
+			}
+		}
+		visible_on idle
+	}
+}
+
