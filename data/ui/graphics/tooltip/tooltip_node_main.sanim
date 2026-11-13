@@ -1,0 +1,307 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by Sergey
+//at Fri Jul 29 10:37:08 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+}
+
+total_elements 18
+
+objects 16
+{
+	object spacer_4
+	{
+		defaults
+		{
+			pos 0 367
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 9.68649 376
+			opacity 255
+			color 0xffffffff
+			size 510 20
+			effect ""
+			alignment "RM"
+			sampleText "Цена изучения 4345345654"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 530 404
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 9.68649 119
+			opacity 255
+			color 0xffffffff
+			size 510 244
+			effect ""
+			alignment "LT"
+			sampleText "Нове|йшая раз|рабо|тка |увел|ичив|ает щит"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 90
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 44 6
+			opacity 255
+			color 0xffffffff
+			size 435 26
+			effect ""
+			alignment "LM"
+			sampleText "Наименование"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object spacer_1
+	{
+		defaults
+		{
+			pos 0 38
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object node_ico
+	{
+		defaults
+		{
+			pos 9 7
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\ships_tree_3\node_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object if
+	{
+		defaults
+		{
+			pos 9.68649 44
+			opacity 255
+			color 0xffd50000
+			size 510 34
+			effect ""
+			alignment "LT"
+			sampleText "Для изучения  требуеьтся   мощь флота|Для изучения требуется  изучить"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object spacer_2
+	{
+		defaults
+		{
+			pos 0 80
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object count
+	{
+		defaults
+		{
+			pos 9.68649 87
+			opacity 255
+			color 0xffffffff
+			size 510 18
+			effect ""
+			alignment "LM"
+			sampleText "Очки развития при активации 430"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object spacer_3
+	{
+		defaults
+		{
+			pos 0 110
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect "ui\graphics\tooltip\tooltip_spacer_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object count_color
+	{
+		defaults
+		{
+			pos 297 87
+			opacity 255
+			color 0xff8fff00
+			size 100 18
+			effect ""
+			alignment "LT"
+			sampleText "color_430"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object descript_color1
+	{
+		defaults
+		{
+			pos 188.625 218.288
+			opacity 255
+			color 0xffffdeb3
+			size 100 18
+			effect ""
+			alignment "LT"
+			sampleText "color"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price_color2
+	{
+		defaults
+		{
+			pos 130.051 378.282
+			opacity 255
+			color 0xff97afd4
+			size 100 18
+			effect ""
+			alignment "LT"
+			sampleText "color"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object node_ico_2
+	{
+		defaults
+		{
+			pos 11 9
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\ships_tree_3\node_slot_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp16
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-8.42617 -7.21268	2.53888 -7.21268	530.483 -7.21268	541.517 -7.21268	-8.42617 1.95985	2.26214 1.05138	530.76 1.05138	541.517 1.95985	-8.42617 90.7884	2.26214 90.7884	530.76 90.7884	541.517 90.7884	-8.42617 102.866	2.53888 102.866	530.483 102.866	541.517 102.866	
+				0.325319 0.0545987	0.331179 0.0545987	0.370192 0.0545987	0.376052 0.0545987	0.325319 0.0604581	0.331179 0.0604581	0.370192 0.0604581	0.376052 0.0604581	0.325319 0.0994994	0.331179 0.0994994	0.370192 0.0994994	0.376052 0.0994994	0.325319 0.105359	0.331179 0.105359	0.370192 0.105359	0.376052 0.105359	
+				0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xffffffff	0xffffffff	0xc9ffffff	0xc9ffffff	0xffffffff	0xffffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			8 
+			-8.42617 -7.21268	2.53888 -7.21268	530.483 -7.21268	541.517 -7.21268	-8.42617 1.95985	2.26214 1.05138	530.76 1.05138	541.517 1.95985	-8.42617 90.7884	2.26214 90.7884	530.76 90.7884	541.517 90.7884	-8.42617 102.866	2.53888 102.866	530.483 102.866	541.517 102.866	
+			-8.42617 -7.21268	2.53888 -7.21268	530.483 -7.21268	541.517 -7.21268	-8.42617 1.95985	2.26214 1.05138	530.76 1.05138	541.517 1.95985	-8.42617 135.339	2.26214 135.429	530.76 135.429	541.517 135.339	-8.42617 147.381	2.53888 147.381	530.483 147.381	541.517 147.381	
+			-8.42617 -7.21268	2.53888 -7.21268	530.483 -7.21268	541.517 -7.21268	-8.42617 1.95985	2.26214 1.05138	530.76 1.05138	541.517 1.95985	-8.42617 179.89	2.26214 180.069	530.76 180.069	541.517 179.89	-8.42617 191.896	2.53888 191.896	530.483 191.896	541.517 191.896	
+			-8.42617 -7.21268	2.53888 -7.21268	530.483 -7.21268	541.517 -7.21268	-8.42617 1.95985	2.26214 1.05138	530.76 1.05138	541.517 1.95985	-8.42617 224.441	2.26214 224.71	530.76 224.71	541.517 224.441	-8.42617 236.411	2.53888 236.411	530.483 236.411	541.517 236.411	
+			-8.42617 -7.21268	2.53888 -7.21268	530.483 -7.21268	541.517 -7.21268	-8.42617 1.95985	2.26214 1.05138	530.76 1.05138	541.517 1.95985	-8.42617 268.992	2.26214 269.35	530.76 269.35	541.517 268.992	-8.42617 280.926	2.53888 280.926	530.483 280.926	541.517 280.926	
+			-8.42617 -7.21268	2.53888 -7.21268	530.483 -7.21268	541.517 -7.21268	-8.42617 1.95985	2.26214 1.05138	530.76 1.05138	541.517 1.95985	-8.42617 313.543	2.26214 313.991	530.76 313.991	541.517 313.543	-8.42617 325.441	2.53888 325.441	530.483 325.441	541.517 325.441	
+			-8.42617 -7.21268	2.53888 -7.21268	530.483 -7.21268	541.517 -7.21268	-8.42617 1.95985	2.26214 1.05138	530.76 1.05138	541.517 1.95985	-8.42617 358.094	2.26214 358.631	530.76 358.631	541.517 358.094	-8.42617 369.956	2.53888 369.956	530.483 369.956	541.517 369.956	
+			-8.42617 -7.21268	2.53888 -7.21268	530.483 -7.21268	541.517 -7.21268	-8.42617 1.95985	2.26214 1.05138	530.76 1.05138	541.517 1.95985	-8.42617 402.645	2.26214 403.271	530.76 403.271	541.517 402.645	-8.42617 414.47	2.53888 414.47	530.483 414.47	541.517 414.47	
+		}
+	}
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	524 -0	530 -0	0 6	6 6	524 6	530 6	0 81.4882	6 81.4882	524 81.4882	530 81.4882	0 90.0342	6 90.0342	524 90.0342	530 90.0342	
+				0.228518 0.202199	0.234378 0.202199	0.273391 0.202199	0.27925 0.202199	0.228518 0.208058	0.234378 0.208058	0.273391 0.208058	0.27925 0.208058	0.228518 0.244141	0.234378 0.244141	0.273391 0.244141	0.27925 0.244141	0.228518 0.252959	0.234378 0.252959	0.273391 0.252959	0.27925 0.252959	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			8 
+			0 -0	6 -0	524 -0	530 -0	0 6	6 6	524 6	530 6	0 81.4882	6 81.4882	524 81.4882	530 81.4882	0 90.0342	6 90.0342	524 90.0342	530 90.0342	
+			0 -0	6 -0	524 -0	530 -0	0 6	6 6	524 6	530 6	0 126.338	6 126.338	524 126.338	530 126.338	0 134.89	6 134.89	524 134.89	530 134.89	
+			0 -0	6 -0	524 -0	530 -0	0 6	6 6	524 6	530 6	0 171.188	6 171.188	524 171.188	530 171.188	0 179.746	6 179.746	524 179.746	530 179.746	
+			0 -0	6 -0	524 -0	530 -0	0 6	6 6	524 6	530 6	0 216.037	6 216.037	524 216.037	530 216.037	0 224.602	6 224.602	524 224.602	530 224.602	
+			0 -0	6 -0	524 -0	530 -0	0 6	6 6	524 6	530 6	0 260.887	6 260.887	524 260.887	530 260.887	0 269.457	6 269.457	524 269.457	530 269.457	
+			0 -0	6 -0	524 -0	530 -0	0 6	6 6	524 6	530 6	0 305.737	6 305.737	524 305.737	530 305.737	0 314.313	6 314.313	524 314.313	530 314.313	
+			0 -0	6 -0	524 -0	530 -0	0 6	6 6	524 6	530 6	0 350.586	6 350.586	524 350.586	530 350.586	0 359.169	6 359.169	524 359.169	530 359.169	
+			0 -0	6 -0	524 -0	530 -0	0 6	6 6	524 6	530 6	0 395.436	6 395.436	524 395.436	530 395.436	0 404.025	6 404.025	524 404.025	530 404.025	
+		}
+	}
+}
+
