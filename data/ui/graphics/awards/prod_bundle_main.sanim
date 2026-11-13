@@ -1,0 +1,51 @@
+﻿source_file "Y:/art/source/ui/graphics/awards/awards.ma"
+//by sergey_mitryaev
+//at Thu Jan 29 12:26:52 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 3
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object blackout
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 710 70
+			effect "ui\graphics\awards\prod_bundle_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bundle
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 383 43
+			opacity 255
+			color 0xffffffff
+			size 710 70
+			effect "ui\graphics\awards\prod_bundle"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
