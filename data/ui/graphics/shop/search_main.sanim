@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Tue Jun 10 14:21:54 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 730 30
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object view_btn1
+	{
+		defaults
+		{
+			pos 654.704 9.1424
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\search_view_btn1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object view_btn2
+	{
+		defaults
+		{
+			pos 684.065 9.1424
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\search_view_btn2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object buy_btn
+	{
+		defaults
+		{
+			pos 2.63694 9
+			opacity 255
+			color 0xffffffff
+			size 136 21
+			effect "ui\graphics\shop\buy_btn2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sell_btn
+	{
+		defaults
+		{
+			pos 161.951 9
+			opacity 255
+			color 0xffffffff
+			size 136 21
+			effect "ui\graphics\shop\sell_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
