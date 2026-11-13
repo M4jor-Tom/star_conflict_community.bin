@@ -1,0 +1,73 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Thu Dec 27 14:08:06 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 232 496
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp12
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				231 5	231 11	231 485	231 491	225 5	225 11	225 485	225 491	7 5	7.00002 11	6.99998 485	7 491	0.999985 4.99999	0.999985 11	0.999985 485	0.999985 491	
+				0.996094 0.938476	0.99783 0.931641	0.99783 0.0078125	0.99783 0.00195313	0.990234 0.938477	0.991971 0.931641	0.991971 0.0078125	0.991971 0.00195313	0.982855 0.938477	0.984592 0.931641	0.984592 0.00781244	0.984592 0.00195318	0.976996 0.938477	0.978732 0.931641	0.978732 0.00781256	0.978732 0.00195307	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+	}
+	sprite sp12wd
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				231 5	231 11	231 485	231 491	225 5	225 11	225 485	225 491	7 5	7.00002 11	6.99998 485	7 491	0.999985 4.99999	0.999985 11	0.999985 485	0.999985 491	
+				0.996094 0.938476	0.99783 0.931641	0.99783 0.0078125	0.99783 0.00195313	0.990234 0.938477	0.991971 0.931641	0.991971 0.0078125	0.991971 0.00195313	0.982855 0.938477	0.984592 0.931641	0.984592 0.00781244	0.984592 0.00195318	0.976996 0.938477	0.978732 0.931641	0.978732 0.00781256	0.978732 0.00195307	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
