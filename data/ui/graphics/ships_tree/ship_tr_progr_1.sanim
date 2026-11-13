@@ -1,0 +1,102 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Fri Dec 14 11:09:00 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 102 16
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos -4 -0
+			opacity 255
+			color 0xffff9100
+			size 20 15
+			effect ""
+			alignment "RM"
+			sampleText "5"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp12
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				16 3	20 3	98.5 3	102 3	16 7	20 7	98.5 7	102 7	16 9	20 9	98.5 9	102 9	16 13	20 13	98.5 13	102 13	
+				0.216797 0.0624999	0.216797 0.0585938	0.216797 0.0566406	0.216797 0.0527344	0.212891 0.0625001	0.212891 0.0585938	0.212891 0.0566406	0.212891 0.0527344	0.0771484 0.0625001	0.0771484 0.0585937	0.0771484 0.0566405	0.0771484 0.0527345	0.0732422 0.0625001	0.0732422 0.0585938	0.0732422 0.0566407	0.0732422 0.0527343	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				17 4	17 4	17 12	17 12	
+				0.07235 0.0627384	0.0725293 0.0627384	0.07235 0.0744571	0.0725293 0.0744571	
+			}
+		}
+		anim idle sp_pos_uv
+		{
+			11 2 
+			17 4	17 4	17 12	17 12	
+			17 4	25.4 4	17 12	25.4 12	
+			17 4	33.8 4	17 12	33.8 12	
+			17 4	42.2 4	17 12	42.2 12	
+			17 4	50.6 4	17 12	50.6 12	
+			17 4	59 4	17 12	59 12	
+			17 4	67.4 4	17 12	67.4 12	
+			17 4	75.8 4	17 12	75.8 12	
+			17 4	84.2 4	17 12	84.2 12	
+			17 4	92.6 4	17 12	92.6 12	
+			17 4	101 4	17 12	101 12	
+			0.07235 0.0627384	0.0725293 0.0627384	0.07235 0.0744571	0.0725293 0.0744571	
+			0.078125 0.0654297	0.211914 0.0654297	0.078125 0.0732422	0.211914 0.0732422	
+		}
+	}
+}
+
