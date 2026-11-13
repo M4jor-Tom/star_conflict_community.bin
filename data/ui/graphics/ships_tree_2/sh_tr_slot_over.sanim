@@ -1,0 +1,40 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by sergey_mitryaev
+//at Mon Jan 11 18:05:56 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite que234
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices
+			{
+				19.233 9.23302	96.767 9.23302	19.233 86.767	96.767 86.767	
+				0.378971 0.591862	0.429622 0.591862	0.378971 0.642513	0.429622 0.642513	
+				0xff001518	0xff001518	0xff001518	0xff001518	
+			}
+		}
+		visible_on idle
+	}
+}
+
