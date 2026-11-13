@@ -1,0 +1,77 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Jun 18 10:28:42 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 950 480
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 34
+			opacity 255
+			color 0xffffffff
+			size 950 440
+			effect "ui\graphics\clan\text_box_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading8
+	{
+		defaults
+		{
+			pos 417.049 174.328
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "y:\work_version\pc\data\ui\graphics\hangar\loading_big.sanim"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down
+	{
+		defaults
+		{
+			pos 10.2908 7.00399
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
