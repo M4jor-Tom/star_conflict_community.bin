@@ -1,0 +1,62 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Thu Nov 05 12:19:44 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object title48
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff00bb57
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "Поиск: Стандартный"
+			font "Tiny"
+			blend color_add
+		}
+		visible_on on
+		anim off obj_colc
+		{
+			1
+			0xffff2800
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on on
+		visible_on off
+	}
+}
+
