@@ -1,0 +1,283 @@
+﻿source_file "Y:/art/source/ui/graphics/bzs/bzs_tourn.ma"
+//by sergey_mitryaev
+//at Mon Jan 25 11:39:51 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 18
+
+objects 16
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 704 318
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 5 4
+			opacity 255
+			color 0xffc6c6c6
+			size 150 20
+			effect ""
+			alignment "LM"
+			sampleText "Победы"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object text20
+	{
+		defaults
+		{
+			pos 526 4
+			opacity 255
+			color 0xffc6c6c6
+			size 150 20
+			effect ""
+			alignment "RM"
+			sampleText "Участники"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object slot_5_1
+	{
+		defaults
+		{
+			pos 2 30
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_2
+	{
+		defaults
+		{
+			pos 2 53.8135
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_3
+	{
+		defaults
+		{
+			pos 2 77.627
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_4
+	{
+		defaults
+		{
+			pos 2 101.44
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_5
+	{
+		defaults
+		{
+			pos 2 125.254
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_6
+	{
+		defaults
+		{
+			pos 2 149.067
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_7
+	{
+		defaults
+		{
+			pos 2 172.881
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_8
+	{
+		defaults
+		{
+			pos 2 196.694
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_9
+	{
+		defaults
+		{
+			pos 2 220.508
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_10
+	{
+		defaults
+		{
+			pos 2 244.321
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_11
+	{
+		defaults
+		{
+			pos 2 268.135
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5_12
+	{
+		defaults
+		{
+			pos 2 291.948
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect "ui\graphics\tournament\tourn_line_slot_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object scrol
+	{
+		defaults
+		{
+			pos 686 1
+			opacity 255
+			color 0xffc6c6c6
+			size 16 316
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "RM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName356
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	685 1.52588e-005	0 318	685 318	
+				0.234507 0.0108743	0.261587 0.0108743	0.234507 0.0379538	0.261587 0.0379538	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName354
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				2 2.48007	168.958 2.48007	515.52 2.48007	682.48 2.48007	2 10.16	168.958 10.16	515.52 10.16	682.48 10.16	2 17.84	168.958 17.84	515.52 17.84	682.48 17.84	2 25.5199	168.958 25.5199	515.52 25.5199	682.48 25.5199	
+				0.00488281 0.753906	0.198242 0.753906	0.610352 0.753906	0.899414 0.753906	0.00488281 0.763672	0.198242 0.763672	0.610352 0.763672	0.899414 0.763672	0.00488281 0.773438	0.198242 0.773438	0.610352 0.773438	0.899414 0.773438	0.00488281 0.783203	0.198242 0.783203	0.610352 0.783203	0.899414 0.783203	
+			}
+		}
+		visible_on idle
+	}
+}
+
