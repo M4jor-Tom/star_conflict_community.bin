@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="s1550_tutorial; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" battlefieldRadius="1800.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" />
+  <EntityContainer>
+    <Entity Name="SpawnTeam1Ship1" Def="Logic_SpawnSpot_Team1Group0" Pos="273.729 -130.961 792.067" Rot="0.164 0.006 0.986 0.013" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Jumpgate1" Def="PvE_Tutorial_Jumpgate" Pos="189.576 -124.363 579.420" Rot="0.054 0.154 -0.009 0.987" />
+    <Entity Name="Jumpgate3" Def="PvE_Tutorial_Jumpgate" Pos="-26.205 -43.039 74.300" Rot="0.000 0.115 0.000 0.993" />
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="1000.581 2821.030 275.569" Rot="0.459 -0.539 0.467 0.530" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="Team1CP1" Def="VitalPoint_Team1_TutorialB" GameplaysMask="4294966117" Pos="494.745 -155.248 420.216" Skin="s2" />
+    <Entity Name="Jumpgate2" Def="PvE_Tutorial_Jumpgate" Pos="0.585 -124.574 344.686" Rot="0.054 0.154 -0.009 0.987" />
+    <Entity Name="CinematicView_1" Def="Helpers_TagPoint" Pos="-68.874 125.799 -675.650" type="0" />
+    <Entity Name="Team1CP2" Def="VitalPoint_Team1_TutorialA" GameplaysMask="4294966117" Pos="-56.034 -115.248 653.028" Skin="s2" />
+    <Entity Name="Team2CP1" Def="VitalPoint_Team2_Tutorial" Pos="-80.166 40.507 -1540.059" Skin="s2" />
+    <Entity Name="SpawnAgentWave1" Def="Logic_SpawnAgentWave_Group0" Pos="-68.876 33.926 -724.536" Rot="0.000 0.999 0.000 0.044" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave2" Def="Logic_SpawnAgentWave_Group1" Pos="-77.733 42.556 -1236.715" Rot="0.000 1.000 0.000 0.009" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="PlasmaGun1" Def="Turret_Tutorial_RailGun" Pos="-136.526 7.449 -884.436" Rot="0.000 1.000 0.000 0.015" do_attack_cargoship="0" />
+    <Entity Name="PlasmaGun2" Def="Turret_Tutorial_RailGun" Pos="-136.970 7.616 -931.275" Rot="0.000 1.000 0.000 0.015" do_attack_cargoship="0" />
+    <Entity Name="Holder3" Def="Turret_Holder" Pos="-136.540 6.420 -884.475" />
+    <Entity Name="Holder4" Def="Turret_Holder" Pos="-136.980 6.607 -931.385" />
+    <Entity Name="PathObject1" Def="PathObject" Pos="-171.371 1.118 -569.026" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-171.371 1.118 -569.026" />
+      <Point p="-114.835 1.118 -596.371" />
+      <Point p="-52.899 1.118 -605.526" />
+      <Point p="8.949 1.118 -593.873" />
+      <Point p="64.238 1.118 -565.428" />
+      <Point p="107.152 1.118 -519.783" />
+      <Point p="135.315 1.118 -463.821" />
+      <Point p="143.652 1.118 -401.311" />
+      <Point p="132.818 1.118 -340.036" />
+      <Point p="102.982 1.118 -284.993" />
+      <Point p="57.910 1.118 -241.261" />
+      <Point p="2.194 1.118 -214.489" />
+      <Point p="-59.743 1.118 -205.334" />
+      <Point p="-121.018 1.118 -216.167" />
+      <Point p="-176.880 1.118 -245.431" />
+      <Point p="-220.613 1.118 -290.503" />
+      <Point p="-247.957 1.118 -347.038" />
+      <Point p="-255.721 1.118 -408.729" />
+      <Point p="-245.461 1.118 -470.824" />
+      <Point p="-215.623 1.118 -525.867" />
+    </Entity>
+    <Entity Name="Jumpgate4" Def="PvE_Tutorial_Jumpgate" Pos="-62.183 -46.541 -35.698" Rot="0.000 0.105 0.000 0.994" />
+    <Entity Name="RocketGun1" Def="Turret_Tutorial_RocketGun" Pos="-137.316 7.340 -884.950" Rot="0.000 1.000 0.000 -0.006" do_attack_cargoship="0" />
+    <Entity Name="EngineHeat1" Def="Effects_Dreadnought_EngineHeat" Pos="-151.006 -46.755 -1365.745" Rot="-0.703 0.000 0.000 0.711" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="EngineHeatSmall1" Def="Effects_Dreadnought_EngineHeatSmall" Pos="-193.626 -58.637 -1367.545" Rot="-0.710 0.000 0.000 0.704" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="EngineHeatSmall2" Def="Effects_Dreadnought_EngineHeatSmall" Pos="-193.626 -37.012 -1367.082" Rot="-0.710 0.000 0.000 0.704" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="EngineHeatSmall3" Def="Effects_Dreadnought_EngineHeatSmall" Pos="-223.477 -46.406 -1362.593" Rot="-0.710 0.000 0.000 0.704" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="EngineHeatSmall4" Def="Effects_Dreadnought_EngineHeatSmall" Pos="-107.973 -37.012 -1367.082" Rot="-0.710 0.000 0.000 0.704" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="EngineHeatSmall5" Def="Effects_Dreadnought_EngineHeatSmall" Pos="-107.973 -58.575 -1367.082" Rot="-0.710 0.000 0.000 0.704" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="EngineHeatSmall6" Def="Effects_Dreadnought_EngineHeatSmall" Pos="-79.670 -46.733 -1362.614" Rot="-0.710 0.000 0.000 0.704" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="s1550Debris1" Def="Effects_s1550Debris" Pos="-228.616 -100.202 -622.276" Rot="0.000 0.685 0.000 0.728" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="s1550Debris2" Def="Effects_s1550Debris" Pos="-313.989 -126.698 -289.724" Rot="0.000 0.685 0.000 0.728" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="s1550Debris3" Def="Effects_s1550Debris" Pos="-51.525 -46.673 -384.909" Rot="0.000 0.685 0.000 0.728" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Smoke1" Def="Effects_Smoke" Pos="-150.760 1.423 -1078.352" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Smoke2" Def="Effects_Smoke" Pos="-150.760 1.423 -1136.057" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Smoke3" Def="Effects_Smoke" Pos="-103.197 -48.195 -444.550" Rot="0.000 0.000 0.707 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Smoke4" Def="Effects_Smoke" Pos="-91.121 -53.389 -601.212" Rot="-0.195 -0.195 0.680 0.680" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="s1550Debris4" Def="Effects_s1550Debris" Pos="3.527 -50.727 -1263.274" Rot="0.000 0.685 0.000 0.728" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="s1550Debris5" Def="Effects_s1550Debris" Pos="-291.337 -27.538 -844.437" Rot="0.000 0.685 0.000 0.728" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static1" Def="Effects_Tutorial_Static1" Pos="-123.731 95.310 -1210.125" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static2" Def="Effects_Tutorial_Static1" Pos="-177.462 95.243 -1210.080" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static3" Def="Effects_Tutorial_Static1" Pos="-104.645 -62.713 -892.340" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static4" Def="Effects_Tutorial_Static1" Pos="-197.924 -62.713 -892.187" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static7" Def="Effects_Tutorial_Static1" Pos="-114.818 113.082 -1282.599" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static8" Def="Effects_Tutorial_Static1" Pos="-185.336 113.082 -1282.599" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Periodic3" Def="Effects_Tutorial_Periodic1" Pos="33.449 -3.991 -804.834" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static1Small1" Def="Effects_Tutorial_Static1Small" Pos="59.581 -39.917 -1253.177" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static1Small2" Def="Effects_Tutorial_Static1Small" Pos="59.581 -53.804 -1253.177" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static1Small3" Def="Effects_Tutorial_Static1Small" Pos="-361.167 -39.917 -1253.177" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static1Small4" Def="Effects_Tutorial_Static1Small" Pos="-361.167 -53.804 -1253.177" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static1Small5" Def="Effects_Tutorial_Static1Small" Pos="-156.980 17.260 -1409.168" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static1Small6" Def="Effects_Tutorial_Static1Small" Pos="-144.271 17.260 -1409.168" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static5" Def="Effects_Tutorial_Static1" Pos="566.597 322.910 297.588" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Periodic4" Def="Effects_Tutorial_Periodic1" Pos="10.901 -3.991 -663.219" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static1Small7" Def="Effects_Tutorial_Static1Small" Pos="134.200 84.911 423.831" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static9" Def="Effects_Tutorial_Static1" Pos="116.086 291.591 363.342" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static1Small8" Def="Effects_Tutorial_Static1Small" Pos="-506.652 56.322 -1197.204" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static1Small9" Def="Effects_Tutorial_Static1Small" Pos="-478.423 54.045 -1374.807" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Dark1" Def="Effects_Smoke_Dark2" Pos="-44.371 -45.930 -575.666" Rot="0.000 0.000 -0.199 0.980" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Smoke5" Def="Effects_Smoke" Pos="-30.452 -70.838 -878.132" Rot="0.000 0.000 -0.728 0.686" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Static10" Def="Effects_Tutorial_Static1" Pos="468.903 209.982 402.460" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+  </EntityContainer>
+</Scene>
