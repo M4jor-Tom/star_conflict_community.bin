@@ -1,0 +1,74 @@
+﻿source_file  Y:/art/source/ui/graphics/equip/drop_down.ma
+//by sega
+//at Wed Nov 16 12:25:54 2011
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object info_slot_1
+	{
+		defaults
+		{
+			pos 1.36473 1.46373
+			opacity 255
+			color 0xff999999
+			size 10 10
+			effect "ui\graphics\shop\prod_info_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object info_slot_2
+	{
+		defaults
+		{
+			pos 94.7615 1.46373
+			opacity 255
+			color 0xff999999
+			size 10 10
+			effect "ui\graphics\shop\prod_info_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object upgr_ico
+	{
+		defaults
+		{
+			pos 73.072 1.64824
+			opacity 255
+			color 0xffffffff
+			size 21 14
+			effect "ui\graphics\equip\upgr_ico"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 180 16
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
