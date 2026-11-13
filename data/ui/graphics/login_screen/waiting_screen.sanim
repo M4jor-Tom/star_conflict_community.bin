@@ -1,0 +1,60 @@
+﻿source_file "Y:/art/source/ui/graphics/spectate/spectate.ma"
+//by sergey_mitryaev
+//at Mon Feb 18 13:01:19 2019
+
+base_res 1280 720
+keep_screen_size
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object loading
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 605 619.668
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dfeee1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "BC"
+			vertices
+			{
+				0 247.268	1280 247.268	0 720	1280 720	
+				0.228516 0.128292	0.228516 0.139286	0.15625 0.128292	0.15625 0.139286	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
