@@ -1,0 +1,162 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by sergey_mitryaev
+//at Tue Mar 26 15:35:03 2013
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1.5
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object t_1
+	{
+		defaults
+		{
+			pos -6 2
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "Swfew "
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 120 24
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				96 -0	102 -0	114 -0	120 -0	96 6	102 6	114 6	120 6	96 18	102 18	114 18	120 18	96 24	102 24	114 24	120 24	
+				0.054712 0.140636	0.0605713 0.140636	0.0732422 0.140636	0.0791016 0.140636	0.054712 0.146495	0.0605713 0.146495	0.0732422 0.146495	0.0791016 0.146495	0.054712 0.148438	0.0605713 0.148438	0.0732422 0.148438	0.0791016 0.148438	0.054712 0.15625	0.0605713 0.15625	0.0732422 0.15625	0.0791016 0.15625	
+				0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim press sp_posc
+		{
+			1 
+			96 1	102 1	114 1	120 1	96 7	102 7	114 7	120 7	96 19	102 19	114 19	120 19	96 25	102 25	114 25	120 25	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	
+		}
+	}
+	sprite sp2wq
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				102 4	107 4	108 4	114 4	102 10	107 10	108 10	114 10	102 12	107 12	108 12	114 12	102 20	107 20	108 20	114 20	
+				0.469727 0.0166016	0.469727 0.0117187	0.469727 0.0107421	0.469727 0.00488281	0.475586 0.0166016	0.475586 0.0117188	0.475586 0.0107421	0.475586 0.00488281	0.477539 0.0166016	0.477539 0.0117187	0.477539 0.0107422	0.477539 0.00488281	0.485352 0.0166016	0.485352 0.0117188	0.485352 0.0107422	0.485352 0.00488281	
+				0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim press sp_posc
+		{
+			1 
+			102 5	107 5	108 5	114 5	102 11	107 11	108 11	114 11	102 13	107 13	108 13	114 13	102 21	107 21	108 21	114 21	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	0x60f6f6f6	
+		}
+	}
+	sprite over
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				96 -0	102 -0	114 -0	120 -0	96 6	102 6	114 6	120 6	96 18	102 18	114 18	120 18	96 24	102 24	114 24	120 24	
+				0.0283203 0.114263	0.0341797 0.114263	0.046875 0.114263	0.0527344 0.114263	0.0283203 0.120123	0.0341797 0.120123	0.046875 0.120123	0.0527344 0.120123	0.0283203 0.130859	0.0341797 0.130859	0.046875 0.130859	0.0527344 0.130859	0.0283203 0.138672	0.0341797 0.138672	0.046875 0.138672	0.0527344 0.138672	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	0xfff7f7f7	
+		}
+		anim press sp_posc
+		{
+			1 
+			96 1	102 1	114 1	120 1	96 7	102 7	114 7	120 7	96 19	102 19	114 19	120 19	96 25	102 25	114 25	120 25	
+		}
+		visible_on disable
+	}
+}
+
