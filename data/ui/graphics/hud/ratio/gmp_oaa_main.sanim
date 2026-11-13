@@ -1,0 +1,77 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Fri Dec 13 16:39:28 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object progr_boss
+	{
+		defaults
+		{
+			pos 38 12
+			opacity 255
+			color 0xffffffff
+			size 370 30
+			effect "ui\graphics\hud\ratio\gmp_oaa_progr_boss"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 370 120
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object progr_players
+	{
+		defaults
+		{
+			pos 38 12
+			opacity 255
+			color 0xffffffff
+			size 370 30
+			effect "ui\graphics\hud\ratio\gmp_oaa_progr_players"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object p_progr
+	{
+		defaults
+		{
+			pos 105 50
+			opacity 255
+			color 0xffffffff
+			size 240 70
+			effect "ui\graphics\hud\ratio\gmp_oaa_p_progr_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
