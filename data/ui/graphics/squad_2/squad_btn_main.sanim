@@ -1,0 +1,203 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by sergey_mitryaev
+//at Mon May 21 16:02:45 2018
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 284 70
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on sel
+	}
+	object text_8
+	{
+		defaults
+		{
+			pos 59.3221 18.2206
+			opacity 255
+			color 0xffc3d6ff
+			size 180 30
+			effect ""
+			alignment "LM"
+			sampleText "Преобразовать"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on over
+		visible_on sel
+	}
+	object btn_ico
+	{
+		defaults
+		{
+			pos 249.511 18.2928
+			opacity 255
+			color 0xffc9e8ff
+			size 24 24
+			effect "ui\graphics\squad_2\squad_btn_ico"
+			alignment "CM"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on over
+		visible_on sel
+	}
+	object blink
+	{
+		defaults
+		{
+			pos 84.1284 -2.71421
+			opacity 255
+			color 0xffc9e8ff
+			size 40 40
+			effect "ui\graphics\hangar_iter_3\menu_btn_blink"
+			alignment "CM"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on over
+		visible_on sel
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 284 70
+			effect "ui\graphics\squad_2\squad_btn_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on sel
+	}
+}
+
+sprites 4
+{
+	total_vertices 70
+
+	sprite er22
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 60	10 60	274 60	284 60	0 70	10 70	274 70	284 70	
+				0.693359 0.789063	0.712891 0.789063	0.886719 0.789063	0.90625 0.789063	0.693359 0.808594	0.712891 0.808594	0.886719 0.808594	0.90625 0.808594	0.693359 0.824219	0.712891 0.824219	0.886719 0.824219	0.90625 0.824219	0.693359 0.84375	0.712891 0.84375	0.886719 0.84375	0.90625 0.84375	
+				0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite er21
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				11.2711 11.8889	55.2711 11.8889	11.2711 55.8889	55.2711 55.8889	
+				0.908203 0.494141	0.994141 0.494141	0.908203 0.580078	0.994141 0.580078	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on sel
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 5
+			cols 5
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-1 -2	9 -2	133 -2	277 -2	287 -2	-1 8	9 8	133 8	277 8	287 8	-1 61	9 61	133 61	277 61	287 61	-1 71	9 71	133 71	277 71	287 71	-1 96	9 96	133 96	277 96	287 96	
+				0.373047 0.00585938	0.392578 0.00585938	0.541016 0.00585938	0.695313 0.00585938	0.714844 0.00585938	0.373047 0.0253906	0.392578 0.0253906	0.541016 0.0253906	0.695313 0.0253906	0.714844 0.0253906	0.373047 0.130859	0.392578 0.130859	0.541016 0.130859	0.695313 0.130859	0.714844 0.130859	0.373047 0.150391	0.392578 0.150391	0.541016 0.150391	0.695313 0.150391	0.714844 0.150391	0.373047 0.208984	0.392578 0.208984	0.541016 0.208984	0.695313 0.208984	0.714844 0.208984	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on sel
+	}
+	sprite objectName327
+	{
+		defaults
+		{
+			rows 5
+			cols 5
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-1 -2	9 -2	133 -2	277 -2	287 -2	-1 8	9 8	133 8	277 8	287 8	-1 61	9 61	133 61	277 61	287 61	-1 71	9 71	133 71	277 71	287 71	-1 96	9 96	133 96	277 96	287 96	
+				0.373047 0.00585938	0.392578 0.00585938	0.541016 0.00585938	0.695313 0.00585938	0.714844 0.00585938	0.373047 0.0253906	0.392578 0.0253906	0.541016 0.0253906	0.695313 0.0253906	0.714844 0.0253906	0.373047 0.130859	0.392578 0.130859	0.541016 0.130859	0.695313 0.130859	0.714844 0.130859	0.373047 0.150391	0.392578 0.150391	0.541016 0.150391	0.695313 0.150391	0.714844 0.150391	0.373047 0.208984	0.392578 0.208984	0.541016 0.208984	0.695313 0.208984	0.714844 0.208984	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim sel sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
