@@ -1,0 +1,319 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Wed Jun 26 14:02:33 2019
+
+base_res 1280 720
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 0.6
+	}
+	anim press
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 7
+{
+	object value
+	{
+		defaults
+		{
+			pos 24.1306 0.441361
+			opacity 255
+			color 0xffb2b2b2
+			size 160 20
+			effect ""
+			alignment "LM"
+			sampleText "Спец. предложения"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim select obj_colc
+		{
+			1
+			0xffe9e9e9
+		}
+		anim sel_over obj_colc
+		{
+			1
+			0xffe9e9e9
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 222 22
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim select obj_colc
+		{
+			1
+			0xffe9e9e9
+		}
+		anim sel_over obj_colc
+		{
+			1
+			0xffe9e9e9
+		}
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 211.092 0.791078
+			opacity 255
+			color 0xffffffff
+			size 8 20
+			effect "ui\graphics\shop\tree_dir_sale"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	object new
+	{
+		defaults
+		{
+			pos 191.763 2.59977
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\shop\tree_dir_new"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	object red_bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 222 22
+			effect "ui\graphics\shop\tree_dir_btn_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	object gold
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 222 22
+			effect "ui\graphics\shop\tree_dir_btn_bg_gold"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	object disable
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 222 22
+			effect "ui\graphics\shop\tree_dir_btn_disable"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim select obj_colc
+		{
+			1
+			0xffe9e9e9
+		}
+		anim sel_over obj_colc
+		{
+			1
+			0xffe9e9e9
+		}
+	}
+}
+
+sprites 5
+{
+	total_vertices 56
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	215.844 -0	221.844 -0	0 6	6 6	215.844 6	221.844 6	0 16	6 16	215.844 16	221.844 16	0 22	6 22	215.844 22	221.844 22	
+				0.253946 0.114272	0.259806 0.114272	0.272492 0.114272	0.278352 0.114272	0.253946 0.120131	0.259806 0.120131	0.272492 0.120131	0.278352 0.120131	0.253946 0.132834	0.259806 0.132834	0.272492 0.132834	0.278352 0.132834	0.253946 0.138694	0.259806 0.138694	0.272492 0.138694	0.278352 0.138694	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				4.35556 2.19434	20.3556 2.19434	4.35556 18.1943	20.3556 18.1943	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	sprite blackout
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				163.637 -0	222 -0	163.637 22	222 22	
+				0.0817908 0.115909	0.156565 0.115909	0.0817908 0.13164	0.156565 0.13164	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	sprite sel
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	215.844 -0	221.844 -0	0 6	6 6	215.844 6	221.844 6	0 16	6 16	215.844 16	221.844 16	0 22	6 22	215.844 22	221.844 22	
+				0.447266 0.591797	0.453125 0.591797	0.457031 0.591797	0.462891 0.591797	0.447266 0.597656	0.453125 0.597656	0.457031 0.597656	0.462891 0.597656	0.447266 0.601563	0.453125 0.601563	0.457031 0.601563	0.462891 0.601563	0.447266 0.607422	0.453125 0.607422	0.457031 0.607422	0.462891 0.607422	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite sel6
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	215.844 -0	221.844 -0	0 6	6 6	215.844 6	221.844 6	0 16	6 16	215.844 16	221.844 16	0 22	6 22	215.844 22	221.844 22	
+				0.470703 0.591797	0.476563 0.591797	0.480469 0.591797	0.486328 0.591797	0.470703 0.597656	0.476563 0.597656	0.480469 0.597656	0.486328 0.597656	0.470703 0.601563	0.476563 0.601563	0.480469 0.601563	0.486328 0.601563	0.470703 0.607422	0.476563 0.607422	0.480469 0.607422	0.486328 0.607422	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	
+		}
+		visible_on press
+		anim select sp_colc
+		{
+			1
+			0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	
+		}
+		anim sel_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
