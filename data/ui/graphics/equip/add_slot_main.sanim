@@ -1,0 +1,51 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Jan 13 14:06:13 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object blackout
+	{
+		defaults
+		{
+			anchor "L"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object window
+	{
+		defaults
+		{
+			anchor "C"
+			pos 366.392 198
+			opacity 255
+			color 0xffffffff
+			size 550 105
+			effect "ui\graphics\equip\add_slot_window"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
