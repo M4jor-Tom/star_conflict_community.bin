@@ -1,0 +1,195 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Tue Oct 29 18:09:30 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 12
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 110 18.4151
+			opacity 255
+			color 0xffffffff
+			size 73 30
+			effect "ui\graphics\hud\ratio\ratio_ctrl_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object friend
+	{
+		defaults
+		{
+			pos 77.2557 -0
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "Наши"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object enemy
+	{
+		defaults
+		{
+			pos 269.484 -0
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "Наши"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object enemy_ship
+	{
+		defaults
+		{
+			pos 341 17.6908
+			opacity 255
+			color 0xffffffff
+			size 40 20
+			effect ""
+			alignment "LM"
+			sampleText "99"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object friend_score
+	{
+		defaults
+		{
+			pos 171.794 -0
+			opacity 255
+			color 0xff00ddff
+			size 40 20
+			effect ""
+			alignment "RM"
+			sampleText "999"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object indicator_1
+	{
+		defaults
+		{
+			pos 214 2
+			opacity 255
+			color 0xffffffff
+			size 20 15
+			effect "ui\graphics\hud\ratio\ratio_indicator"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 188.037 18.4151
+			opacity 255
+			color 0xffffffff
+			size 73 30
+			effect "ui\graphics\hud\ratio\ratio_ctrl_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 265.996 18.4151
+			opacity 255
+			color 0xffffffff
+			size 73 30
+			effect "ui\graphics\hud\ratio\ratio_ctrl_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 70
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object enemy_score
+	{
+		defaults
+		{
+			pos 237.242 -0
+			opacity 255
+			color 0xffff2700
+			size 40 20
+			effect ""
+			alignment "LM"
+			sampleText "999"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object friend_ship
+	{
+		defaults
+		{
+			pos 68.5281 17.6908
+			opacity 255
+			color 0xffffffff
+			size 40 20
+			effect ""
+			alignment "RM"
+			sampleText "99"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object timer
+	{
+		defaults
+		{
+			pos 175.256 48
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "80 сек."
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+}
+
