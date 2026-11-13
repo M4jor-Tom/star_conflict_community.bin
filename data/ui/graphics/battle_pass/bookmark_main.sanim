@@ -1,0 +1,98 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Fri May 31 17:42:07 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1484 60
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bookmark_btn_1
+	{
+		defaults
+		{
+			pos 350 -0
+			opacity 255
+			color 0xffffffff
+			size 256 60
+			effect "ui\graphics\battle_pass\bookmark_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bookmark_btn_2
+	{
+		defaults
+		{
+			pos 606 -0
+			opacity 255
+			color 0xffffffff
+			size 256 60
+			effect "ui\graphics\battle_pass\bookmark_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bookmark_btn_3
+	{
+		defaults
+		{
+			pos 862 -0
+			opacity 255
+			color 0xffffffff
+			size 256 60
+			effect "ui\graphics\battle_pass\bookmark_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we53
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 64	1484 64	0 66	1484 66	
+				0.336895 0.682598	0.342793 0.682598	0.336895 0.688496	0.342793 0.688496	
+				0x26ffffff	0x26ffffff	0x26ffffff	0x26ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
