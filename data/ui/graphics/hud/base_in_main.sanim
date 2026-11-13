@@ -1,0 +1,422 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Wed Feb 19 11:27:44 2014
+
+
+animations 5
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 13
+{
+	object center
+	{
+		defaults
+		{
+			pos 48.8266 36.4851
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 84
+			effect ""
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	object dist_outl
+	{
+		defaults
+		{
+			pos -48.8431 57.5028
+			opacity 0
+			color 0xff000000
+			size 200 11
+			effect ""
+			alignment "CM"
+			sampleText "10300m"
+			font "MonoTiny_outl"
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			255
+			0xffff2800
+		}
+		anim neutral obj_opc_colc
+		{
+			1 1
+			254
+			0xffb2b2b2
+		}
+		anim neutral_shot obj_opc_colc
+		{
+			1 1
+			250
+			0xffffffff
+		}
+	}
+	object dist_outl2
+	{
+		defaults
+		{
+			pos -48.8431 57.7074
+			opacity 255
+			color 0xff00dcff
+			size 200 11
+			effect ""
+			alignment "CM"
+			sampleText "10300m"
+			font "MonoTiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			0
+			0xffff2800
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xffcccccc
+		}
+		anim neutral_shot obj_opc_colc
+		{
+			1 1
+			249
+			0xffffffff
+		}
+	}
+	object dist
+	{
+		defaults
+		{
+			pos -48.8431 57.7074
+			opacity 0
+			color 0xfff3f3f3
+			size 200 11
+			effect ""
+			alignment "CM"
+			sampleText "10300m"
+			font "MonoTiny"
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot obj_opc
+		{
+			1 
+			255
+		}
+		anim neutral obj_opc_colc
+		{
+			1 1
+			255
+			0xff999999
+		}
+		anim neutral_shot obj_opc_colc
+		{
+			1 1
+			252
+			0xffffffff
+		}
+	}
+	object name_outl
+	{
+		defaults
+		{
+			pos -48.8431 0.545887
+			opacity 0
+			color 0xff000000
+			size 200 15
+			effect ""
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "MonoTiny_outl"
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			255
+			0xffff2800
+		}
+		anim neutral obj_opc_colc
+		{
+			1 1
+			254
+			0xffb2b2b2
+		}
+		anim neutral_shot obj_opc_colc
+		{
+			1 1
+			250
+			0xffffffff
+		}
+	}
+	object name_outl2
+	{
+		defaults
+		{
+			pos -48.8431 0.750458
+			opacity 255
+			color 0xff00dcff
+			size 200 15
+			effect ""
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "MonoTiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			0
+			0xffff2800
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xffcccccc
+		}
+		anim neutral_shot obj_opc_colc
+		{
+			1 1
+			249
+			0xffffffff
+		}
+	}
+	object name1
+	{
+		defaults
+		{
+			pos -48.8431 0.750458
+			opacity 0
+			color 0xfff3f3f3
+			size 200 15
+			effect ""
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "MonoTiny"
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot obj_opc
+		{
+			1 
+			255
+		}
+		anim neutral obj_opc_colc
+		{
+			1 1
+			255
+			0xff999999
+		}
+		anim neutral_shot obj_opc_colc
+		{
+			1 1
+			252
+			0xffffffff
+		}
+	}
+	object base_in
+	{
+		defaults
+		{
+			pos 36 26.67
+			opacity 255
+			color 0xffffffff
+			size 26 20
+			effect "ui\graphics\hud\base_in"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	object progr_outl
+	{
+		defaults
+		{
+			pos 50.6125 69.5704
+			opacity 0
+			color 0xff000000
+			size 200 11
+			effect ""
+			alignment "LM"
+			sampleText "100%"
+			font "Tiny_outl"
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			255
+			0xffff2800
+		}
+		anim neutral obj_opc_colc
+		{
+			1 1
+			254
+			0xffb2b2b2
+		}
+		anim neutral_shot obj_opc_colc
+		{
+			1 1
+			250
+			0xffffffff
+		}
+	}
+	object progr_outl2
+	{
+		defaults
+		{
+			pos 50.6125 69.7749
+			opacity 255
+			color 0xff00ddff
+			size 200 11
+			effect ""
+			alignment "LM"
+			sampleText "100%"
+			font "Tiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim enemy_shot obj_opc_colc
+		{
+			1 1
+			0
+			0xffff2800
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xffcccccc
+		}
+		anim neutral_shot obj_opc_colc
+		{
+			1 1
+			249
+			0xffffffff
+		}
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 50.6125 69.7749
+			opacity 0
+			color 0xfff3f3f3
+			size 200 11
+			effect ""
+			alignment "LM"
+			sampleText "100%"
+			font "Tiny"
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot obj_opc
+		{
+			1 
+			255
+		}
+		anim neutral obj_opc_colc
+		{
+			1 1
+			255
+			0xff999999
+		}
+		anim neutral_shot obj_opc_colc
+		{
+			1 1
+			252
+			0xffffffff
+		}
+	}
+	object base_in_bomb
+	{
+		defaults
+		{
+			pos 36 28
+			opacity 255
+			color 0xffffffff
+			size 26 20
+			effect "ui\graphics\hud\base_in_bomb"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on neutral
+		visible_on neutral_shot
+	}
+}
+
