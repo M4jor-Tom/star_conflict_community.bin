@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="test_ai; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" battlefieldRadius="1800.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" />
+  <EntityContainer>
+    <Entity Name="FlagBase_2" Def="CtF_Base" GameplaysMask="4294966271" Pos="-222.000 -69.391 -590.000" />
+    <Entity Name="TowerStation1" Def="Turret_Tutorial_TowerStation" Pos="-380.046 209.972 -459.454">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="TowerStation2" Action="FullActivate" />
+      </ActionList>
+    </Entity>
+    <Entity Name="TowerStation2" Def="Turret_Tutorial_TowerStation" Pos="-451.339 207.910 -392.339">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="TowerStation3" Action="FullActivate" />
+      </ActionList>
+    </Entity>
+    <Entity Name="TowerStation3" Def="Turret_Tutorial_TowerStation" Pos="-338.496 202.874 -548.379" />
+    <Entity Name="RocketGun1111" Def="Turret_Team1_Pve_Jericho" Pos="-314.209 104.761 -382.519" Rot="0.000 0.877 0.000 -0.480" do_attack_cargoship="0" />
+    <Entity Name="MapLoad1" Def="Logic_MapLoad" Pos="-418.351 233.566 -443.688">
+      <ActionList Name="m_onLoad" Num="2">
+        <FireAction Target="TowerStation2" Action="FullDeactivate" />
+        <FireAction Target="TowerStation3" Action="FullDeactivate" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EntityBuilderTrigger1" Def="Logic_EntityBuilderTrigger" Pos="-321.000 109.520 -388.000" Rot="0.000 -0.257 0.000 0.966" buildEntityName="RocketGun1111" start_disabled="0" box_dimensions="15.253 10.000 16.887" />
+    <Entity Name="DockingBay1" Def="PvE_DockingBay" Pos="-347.132 80.795 -407.386" Rot="0.000 0.899 0.000 -0.439" />
+    <Entity Name="FlagBase_1" Def="CtF_Base" GameplaysMask="4294966271" Pos="-209.417 -68.000 -680.000" />
+    <Entity Name="ControlStationC1" Def="VitalPoint_PVE_Ai_ControlStationC" GameplaysMask="4294965312" Pos="2.076 219.927 288.430" Skin="s2" />
+    <Entity Name="ControlStationA1" Def="VitalPoint_PVE_Ai_ControlStationA" GameplaysMask="4294965312" Pos="46.463 234.492 -5.973" Skin="s2" />
+    <Entity Name="FlakGun6" Def="Turret_Team1_FlakGun" Pos="-32.081 45.033 -140.813" Rot="0.098 0.853 -0.208 0.468" do_attack_cargoship="1" />
+    <Entity Name="CinematicView_1" Def="Helpers_TagPoint" Pos="-69.133 125.799 95.249" type="0" />
+    <Entity Name="FlakGun5" Def="Turret_FlakGun" Pos="-307.902 269.455 110.081" do_attack_cargoship="0" />
+    <Entity Name="FlakGun4" Def="Turret_FlakGun" Pos="-396.127 249.670 82.266" do_attack_cargoship="0" />
+    <Entity Name="FlakGun3" Def="Turret_FlakGun" Pos="-412.547 238.426 92.354" do_attack_cargoship="0" />
+    <Entity Name="FlakGun2" Def="Turret_FlakGun" Pos="-411.474 220.899 85.400" do_attack_cargoship="0" />
+    <Entity Name="FlakGun1" Def="Turret_FlakGun" Pos="-410.935 165.077 -55.013" do_attack_cargoship="0" />
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-475.540 2578.156 265.071" Rot="0.649 -0.335 0.387 0.563" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="Team1CP1" Def="VitalPoint_Team1_BeaconB" GameplaysMask="4294966133" Pos="-68.177 47.589 -233.005" Skin="s2" />
+    <Entity Name="Team2CP1" Def="VitalPoint_Team2_BeaconA" GameplaysMask="4294966069" Pos="291.135 251.589 -126.115" Skin="s2" />
+    <Entity Name="Droid1" Def="VitalPoint_Team2_BeaconB" GameplaysMask="4294966069" Pos="-209.501 231.952 30.470" Skin="s2" />
+    <Entity Name="Droid2" Def="VitalPoint_Team1_BeaconA" GameplaysMask="4294966069" Pos="-239.240 225.973 -150.283" Skin="s2" />
+    <Entity Name="L2" Def="Dummy_R1_L" Pos="-692.999 153.254 -228.753" />
+    <Entity Name="Team2Group2" Def="Logic_SpawnSpot_Team2Group3" Pos="-715.432 86.053 -96.403" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group15" Def="Logic_SpawnSpot_Team1Group2" Pos="-662.953 124.367 -68.945" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group16" Def="Logic_SpawnSpot_Team1Group2" Pos="-651.498 124.091 -66.560" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="BeaconC1" Def="VitalPoint_Team1_BeaconC" GameplaysMask="4294966080" Pos="97.601 19.613 -95.237" Skin="s2" />
+    <Entity Name="SideTurretSpawn2" Def="ClanShip_SideTurretSpawn" relationshipGroup="1" Pos="-235.088 151.384 -499.679" Rot="-0.004 0.993 -0.110 -0.034" />
+    <Entity Name="SideTurretSpawn1" Def="ClanShip_SideTurretSpawn" relationshipGroup="2" Pos="-453.048 176.531 -286.720" Rot="0.397 -0.030 0.069 0.915" />
+    <Entity Name="Team2Group3" Def="Logic_SpawnSpot_Team2Group3" Pos="-697.010 86.468 -96.622" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group14" Def="Logic_SpawnSpot_Team1Group2" Pos="-671.532 125.328 -65.077" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnWave1" Def="Logic_SpawnAgentWave_Group0" Pos="285.502 -35.072 -737.635" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group9" Def="Logic_SpawnSpot_Team1Group2" Pos="-733.999 126.332 -69.635" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group13" Def="Logic_SpawnSpot_Team1Group2" Pos="-681.071 126.276 -62.663" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group12" Def="Logic_SpawnSpot_Team1Group2" Pos="-692.975 127.167 -62.131" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group11" Def="Logic_SpawnSpot_Team1Group2" Pos="-706.700 127.934 -64.798" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group10" Def="Logic_SpawnSpot_Team1Group2" Pos="-716.758 128.875 -69.175" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group4" Def="Logic_SpawnSpot_Team1Group2" Pos="-683.459 115.365 -67.107" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group8" Def="Logic_SpawnSpot_Team1Group2" Pos="-734.105 116.738 -69.812" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group7" Def="Logic_SpawnSpot_Team1Group2" Pos="-717.071 117.919 -70.941" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group6" Def="Logic_SpawnSpot_Team1Group2" Pos="-705.976 117.497 -70.228" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group5" Def="Logic_SpawnSpot_Team1Group2" Pos="-693.071 116.716 -69.083" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="default_path" Def="PathObject" Pos="-728.307 394.693 -513.630" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-728.307 394.693 -513.630" />
+      <Point p="-622.611 377.647 -534.557" />
+      <Point p="-531.053 358.958 -555.786" />
+      <Point p="-408.986 307.470 -664.523" />
+      <Point p="-772.271 295.666 -548.713" />
+    </Entity>
+    <Entity Name="Team1Group3" Def="Logic_SpawnSpot_Team1Group2" Pos="-674.071 115.176 -67.236" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group2" Def="Logic_SpawnSpot_Team1Group2" Pos="-663.426 113.826 -65.676" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group1" Def="Logic_SpawnSpot_Team1Group2" Pos="-651.349 113.222 -65.540" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="spawn_spot_1" Def="Logic_SpawnArea_Team2Group0" Pos="-750.220 136.438 -246.669" Rot="0.000 0.999 0.000 0.046" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Jumpgate1" Def="PvE_Jumpgate" Pos="-96.087 -0.539 235.288" Rot="0.054 0.174 -0.010 0.983" />
+    <Entity Name="Spawn_AI_1" Def="Helpers_TagPoint" Pos="-873.188 111.844 -484.138" type="0" />
+    <Entity Name="Spawn_AI_2" Def="Helpers_TagPoint" Pos="-987.000 172.000 -431.000" type="0" />
+    <Entity Name="Spawn_AI_3" Def="Helpers_TagPoint" Pos="-1036.000 262.000 -193.000" type="0" />
+    <Entity Name="Spawn_AI_4" Def="Helpers_TagPoint" Pos="-970.000 114.000 -809.000" type="0" />
+    <Entity Name="Spawn_AI_5" Def="Helpers_TagPoint" Pos="-887.038 163.563 -717.737" type="0" />
+    <Entity Name="Spawn_AI_6" Def="Helpers_TagPoint" Pos="-576.000 207.000 -853.000" type="0" />
+    <Entity Name="Spawn_AI_7" Def="Helpers_TagPoint" Pos="-504.000 87.000 -743.000" type="0" />
+    <Entity Name="Spawn_AI_8" Def="Helpers_TagPoint" Pos="-671.000 100.000 -795.000" type="0" />
+    <Entity Name="Spawn_AI_9" Def="Helpers_TagPoint" Pos="-257.000 203.000 -814.000" type="0" />
+    <Entity Name="Spawn_AI_10" Def="Helpers_TagPoint" Pos="-64.000 -199.000 -806.000" type="0" />
+    <Entity Name="Spawn_AI_11" Def="Helpers_TagPoint" Pos="-194.000 130.000 -481.000" type="0" />
+    <Entity Name="Spawn_AI_12" Def="Helpers_TagPoint" Pos="-267.000 68.229 -343.000" type="0" />
+    <Entity Name="Spawn_AI_13" Def="Helpers_TagPoint" Pos="-391.000 144.000 -246.000" type="0" />
+    <Entity Name="Spawn_AI_14" Def="Helpers_TagPoint" Pos="-360.000 154.000 -4.000" type="0" />
+    <Entity Name="Spawn_AI_15" Def="Helpers_TagPoint" Pos="-567.000 137.000 -57.000" type="0" />
+    <Entity Name="Spawn_AI_16" Def="Helpers_TagPoint" Pos="-874.000 -106.000 -133.000" type="0" />
+    <Entity Name="Spawn_AI_17" Def="Helpers_TagPoint" Pos="-348.000 -57.000 258.000" type="0" />
+  </EntityContainer>
+</Scene>
