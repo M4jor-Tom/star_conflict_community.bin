@@ -1,0 +1,59 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by Sergey
+//at Wed Dec 30 13:50:50 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object text_buy
+	{
+		defaults
+		{
+			pos 7 35
+			opacity 255
+			color 0xffffffff
+			size 120 15
+			effect ""
+			alignment "CM"
+			sampleText "+99%"
+			font "VerySmall_glow"
+			back_color 0xffa7
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName291
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				42.8732 18.8332	89.7506 18.8332	42.8732 65.7104	89.7506 65.7104	
+				0.376953 0.589844	0.431641 0.589844	0.376953 0.644531	0.431641 0.644531	
+				0x86000000	0x86000000	0x86000000	0x86000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
