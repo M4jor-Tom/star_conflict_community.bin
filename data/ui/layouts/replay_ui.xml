@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+
+	<Form name="ReplayUI"
+		class="ReplayUI" 
+		width="800" 
+		height="80"
+		resizable="false"
+		movable="false"
+		font="Tiny_outl2"
+		text="#REPLAY_UI"
+		foreground="White"
+		background="White"
+		alpha="1">
+
+		<anchor point="BOTTOMRIGHT" x="-30" y="-30" />
+
+		<Button name="SelectButton" text="#SELECT" w="120" h="22">
+			<anchor point="TOPLEFT" x="5" y="5" />
+		</Button>
+
+		<Button name="StopReplay" text="#STOP_REPLAY" w="120" h="22">
+			<anchor point="TOPLEFT" x="5" y="5" />
+		</Button>
+
+		<Button name="SpeedUpButton" text="+" w="22" h="22">
+			<anchor point="TOPRIGHT" x="-5" y="5" />
+		</Button>
+
+		<Button name="SpeedDownButton" text="-" w="22" h="22">
+			<anchor point="RIGHT" x="-2" to="SpeedUpButton:LEFT" />
+		</Button>
+
+		<Button name="PlayPauseButton" text="[generated from code]" w="100" h="22">
+			<anchor point="RIGHT" x="-2" to="SpeedDownButton:LEFT" />
+		</Button>
+
+		<Button name="FixedCamMode" text="#FIXED_CAM_MODE" w="180" h="22">
+			<anchor point="RIGHT" x="-5" to="PlayPauseButton:LEFT" />
+		</Button>
+
+		<ProgressSlider name="Progress" text="#PROGRESS" h="16" w="790">
+			<anchor point="BOTTOM" y="-5" />
+		</ProgressSlider>
+
+		<TextLabel name="PressToUnlock" text="#PRESS_C_TO_UNLOCK_CURSOR" h="16" w="290">
+			<anchor point="BOTTOM" y="-2" to="Progress:TOP" />
+		</TextLabel>
+	
+	</Form>
+</Ui>
