@@ -1,0 +1,119 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by Sergey
+//at Tue Jan 12 10:22:18 2016
+
+base_res 1280 720
+
+animations 6
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_d
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim craft
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim craft_d
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gold_d
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object self151
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 120 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		anim idle_d obj_opc
+		{
+			1 
+			127
+		}
+		visible_on craft
+		anim craft_d obj_opc
+		{
+			1 
+			127
+		}
+		visible_on gold
+		anim gold_d obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object name
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff00ddff
+			size 120 30
+			effect ""
+			alignment "CT"
+			sampleText "Wwefwfgwge|afsdffdgdg"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim idle_d obj_opc_colc
+		{
+			1 1
+			127
+			0xff00b2cd
+		}
+		anim craft obj_colc
+		{
+			1
+			0xffb87aff
+		}
+		anim craft_d obj_opc_colc
+		{
+			1 1
+			127
+			0xff9462cd
+		}
+		anim gold obj_colc
+		{
+			1
+			0xffffcf00
+		}
+		anim gold_d obj_opc_colc
+		{
+			1 1
+			127
+			0xffcd7c00
+		}
+	}
+}
+
