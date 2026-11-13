@@ -1,0 +1,73 @@
+﻿source_file "Y:/art/source/ui/graphics/matchmaking_pvp/matchmaking_pvp.ma"
+//by sergey_mitryaev
+//at Mon Mar 18 14:49:40 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object title26
+	{
+		defaults
+		{
+			pos -0.161637 0.0907736
+			opacity 255
+			color 0xffff0000
+			size 206 194
+			effect ""
+			alignment "CM"
+			sampleText "Недоступно"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 206 194
+			effect ""
+			alignment "LM"
+			sampleText "Улучшения|игрока"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp57
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	418 -0	424 -0	0 6	6 6	418 6	424 6	0 71	6 71	418 71	424 71	0 77	6 77	418 77	424 77	
+				0.537109 0.453613	0.542969 0.453613	0.541016 0.453613	0.546875 0.453613	0.537109 0.459473	0.542969 0.459473	0.541016 0.459473	0.546875 0.459473	0.537109 0.458496	0.542969 0.458496	0.541016 0.458496	0.546875 0.458496	0.537109 0.464355	0.542969 0.464355	0.541016 0.464355	0.546875 0.464355	
+				0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
