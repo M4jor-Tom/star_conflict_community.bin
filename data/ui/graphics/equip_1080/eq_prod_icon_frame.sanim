@@ -1,0 +1,69 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_1080.ma"
+//by Sergey_Mitryaev
+//at Tue Feb 20 11:35:30 2018
+
+base_res 1920 1080
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim cross
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.022871 -0	5.97713 -0	43.567 -0	49.567 -0	-0.022871 6	5.97713 6	43.567 6	49.567 6	-0.022871 43.9902	5.97713 43.9902	43.567 43.9902	49.567 43.9902	-0.022871 49.9902	5.97713 49.9902	43.567 49.9902	49.567 49.9902	
+				0.494144 0.615234	0.500003 0.615234	0.503906 0.615234	0.509766 0.615234	0.494144 0.621094	0.500003 0.621094	0.503906 0.621094	0.509766 0.621094	0.494144 0.625	0.500003 0.625	0.503906 0.625	0.509766 0.625	0.494144 0.630859	0.500003 0.630859	0.503906 0.630859	0.509766 0.630859	
+				0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on cross
+	}
+	sprite ico25
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 47	49.567 47	0 50	49.567 50	
+				0.433669 0.329177	0.445237 0.329177	0.433669 0.340745	0.445237 0.340745	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on cross
+	}
+}
+
