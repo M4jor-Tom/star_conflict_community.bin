@@ -1,0 +1,267 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Mon Sep 23 10:50:44 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 730 515
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 3.9896 1.01099
+			opacity 255
+			color 0xffffffff
+			size 723 77
+			effect "ui\graphics\quests\quest_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 3.9896 101.111
+			opacity 255
+			color 0xffffffff
+			size 723 77
+			effect "ui\graphics\quests\quest_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 3.9896 207.418
+			opacity 255
+			color 0xffffffff
+			size 723 77
+			effect "ui\graphics\quests\quest_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 3.9896 307.518
+			opacity 255
+			color 0xffffffff
+			size 723 77
+			effect "ui\graphics\quests\quest_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 712 1
+			opacity 255
+			color 0xffffffff
+			size 16 504
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 3.9896 407
+			opacity 255
+			color 0xffffffff
+			size 723 77
+			effect "ui\graphics\quests\quest_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 9
+{
+	total_vertices 36
+
+	sprite but_091
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	10 -0	0 10	10 10	
+				0.223536 0.00279999	0.233301 0.00279999	0.223536 0.0125656	0.233301 0.0125656	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite but_092
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				698 -0	708 -0	698 10	708 10	
+				0.262784 0.00279999	0.27255 0.00279999	0.262784 0.0125656	0.27255 0.0125656	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite but_03
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				10 -0	698 -0	10 10	698 10	
+				0.241989 0.00279999	0.251755 0.00279999	0.241989 0.0125656	0.251755 0.0125656	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite but_04
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 10	10 10	0 498	10 498	
+				0.223536 0.0260223	0.233301 0.0260223	0.223536 0.0357879	0.233301 0.0357879	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite but_05
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				698 10	708 10	698 498	708 498	
+				0.262784 0.0260223	0.27255 0.0260223	0.262784 0.0357879	0.27255 0.0357879	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite but_06
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				10 10	698 10	10 498	698 498	
+				0.241989 0.0260223	0.251755 0.0260223	0.241989 0.0357879	0.251755 0.0357879	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite but_07
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 498	10 498	0 508	10 508	
+				0.223536 0.0411637	0.233301 0.0411637	0.223536 0.0509293	0.233301 0.0509293	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite but_08
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				698 498	708 498	698 508	708 508	
+				0.262784 0.0411637	0.27255 0.0411637	0.262784 0.0509293	0.27255 0.0509293	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite but_09
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				10 498	698 498	10 508	698 508	
+				0.241989 0.0411637	0.251755 0.0411637	0.241989 0.0509293	0.251755 0.0509293	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
