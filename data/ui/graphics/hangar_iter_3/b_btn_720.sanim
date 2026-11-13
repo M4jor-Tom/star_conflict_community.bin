@@ -1,0 +1,163 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Tue Mar 05 17:52:55 2019
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 150 32
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object value43
+	{
+		defaults
+		{
+			pos -1 -0
+			opacity 255
+			color 0xff99cee6
+			size 140 32
+			effect ""
+			alignment "CM"
+			sampleText "Торговля"
+			font "Medium"
+		}
+		visible_on idle
+		anim over obj_colc
+		{
+			1
+			0xfff2ffff
+		}
+		visible_on press
+		anim disable obj_opc_colc
+		{
+			1 1
+			76
+			0xffffffff
+		}
+	}
+	object blink5
+	{
+		defaults
+		{
+			pos 118 -10
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\hangar_iter_3\menu_btn_blink_720"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite wewd
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices_nc
+			{
+				9.53674e-007 -0	10 -0	128 -0	138 -0	9.53674e-007 10	10 10	128 10	138 10	9.53674e-007 22	10 22	128 22	138 22	9.53674e-007 32	10 32	128 32	138 32	
+				0.25 0.181641	0.269531 0.181641	0.302734 0.181641	0.322266 0.181641	0.25 0.201172	0.269531 0.201172	0.302734 0.201172	0.322266 0.201172	0.25 0.224609	0.269531 0.224609	0.302734 0.224609	0.322266 0.224609	0.25 0.244141	0.269531 0.244141	0.302734 0.244141	0.322266 0.244141	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	sprite wewd3_4
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				-22 -5	24 -5	117 -5	163 -5	-22 8.33333	24 8.33333	117 8.33333	163 8.33333	-22 23.6667	24 23.6667	117 23.6667	163 23.6667	-22 37	24 37	117 37	163 37	
+				0.00325522 0.173828	0.094401 0.173828	0.145833 0.173828	0.236979 0.173828	0.00325522 0.19987	0.094401 0.19987	0.145833 0.19987	0.236979 0.19987	0.00325522 0.229818	0.094401 0.229818	0.145833 0.229818	0.236979 0.229818	0.00325522 0.255859	0.094401 0.255859	0.145833 0.255859	0.236979 0.255859	
+				0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+		visible_on disable
+	}
+	sprite wewd4_9
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				9.53674e-007 -0	10 -0	128.167 -0	138.167 -0	9.53674e-007 10	10 10	128.167 10	138.167 10	9.53674e-007 22	10 22	128.167 22	138.167 22	9.53674e-007 32	10 32	128.167 32	138.167 32	
+				0.162109 0.419922	0.181641 0.419922	0.240234 0.419922	0.259766 0.419922	0.162109 0.439453	0.181641 0.439453	0.240234 0.439453	0.259766 0.439453	0.162109 0.498047	0.181641 0.498047	0.240234 0.498047	0.259766 0.498047	0.162109 0.517578	0.181641 0.517578	0.240234 0.517578	0.259766 0.517578	
+				0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
