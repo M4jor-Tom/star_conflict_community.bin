@@ -1,0 +1,166 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Mon Jan 15 14:27:19 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 578 70
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object tab_btn_1
+	{
+		defaults
+		{
+			pos 102 -2
+			opacity 255
+			color 0xffffffff
+			size 62 70
+			effect "ui\graphics\quests_2\q_map_tab_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object tab_btn_2
+	{
+		defaults
+		{
+			pos 178 -2
+			opacity 255
+			color 0xffffffff
+			size 62 70
+			effect "ui\graphics\quests_2\q_map_tab_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object tab_btn_3
+	{
+		defaults
+		{
+			pos 254 -2
+			opacity 255
+			color 0xffffffff
+			size 62 70
+			effect "ui\graphics\quests_2\q_map_tab_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object tab_btn_4
+	{
+		defaults
+		{
+			pos 331 -2
+			opacity 255
+			color 0xffffffff
+			size 62 70
+			effect "ui\graphics\quests_2\q_map_tab_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object tab_btn_5
+	{
+		defaults
+		{
+			pos 408 -2
+			opacity 255
+			color 0xffffffff
+			size 62 70
+			effect "ui\graphics\quests_2\q_map_tab_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object turn_btn
+	{
+		defaults
+		{
+			pos 538 16.3855
+			opacity 255
+			color 0xffffffff
+			size 62 70
+			effect "ui\graphics\hangar_iter_3\b_turn_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite que66
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 57	578 57	0 59	578 59	
+				0.607166 0.321204	0.619396 0.321204	0.607166 0.335046	0.619396 0.335046	
+				0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite que90
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 58	578 58	0 -0	578 -0	
+				0.767296 0.868164	0.779579 0.868164	0.767296 0.874023	0.779579 0.874023	
+				0xe50a0f17	0xe50a0f17	0xe50a0f17	0xe50a0f17	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName494
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-5 -5	5 -5	573 -5	583 -5	-5 5	5 5	573 5	583 5	-5 54	5 54	573 54	583 54	-5 64	5 64	573 64	583 64	
+				0.119141 0.292969	0.138672 0.292969	0.158203 0.292969	0.177734 0.292969	0.119141 0.3125	0.138672 0.3125	0.158203 0.3125	0.177734 0.3125	0.119141 0.332031	0.138672 0.332031	0.158203 0.332031	0.177734 0.332031	0.119141 0.351563	0.138672 0.351563	0.158203 0.351563	0.177734 0.351563	
+				0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	0xff292f38	
+			}
+		}
+		visible_on idle
+	}
+}
+
