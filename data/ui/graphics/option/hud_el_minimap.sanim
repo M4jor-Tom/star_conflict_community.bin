@@ -1,0 +1,57 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Thu Mar 13 12:30:22 2014
+
+
+animations 2
+{
+	anim radar
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim map
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices_nc
+			{
+				379 13	475 13	379 69	475 69	
+				0.439453 0.708984	0.626953 0.708984	0.439453 0.818359	0.626953 0.818359	
+			}
+		}
+		visible_on map
+	}
+	sprite bg71
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices_nc
+			{
+				407 13	475 13	407 81	475 81	
+				0.304688 0.705078	0.4375 0.705078	0.304688 0.837891	0.4375 0.837891	
+			}
+		}
+		visible_on radar
+	}
+}
+
