@@ -1,0 +1,103 @@
+﻿source_file  Y:/art/source/ui/graphics/spectate/spectate.ma
+//by sega
+//at Thu Sep 29 15:10:43 2011
+
+animations 2
+{
+	anim live
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim dead
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object value
+	{
+		defaults
+		{
+			pos 15.6341 14.9669
+			opacity 255
+			color 0xfff3f3f3
+			size 20 11
+			effect ""
+			alignment "RM"
+			sampleText "III "
+			font "Tiny_outl2"
+		}
+		visible_on live
+		anim dead obj_colc
+		{
+			1
+			0xff990001
+		}
+	}
+	object ship_type
+	{
+		defaults
+		{
+			pos 37.6834 16.483
+			opacity 255
+			color 0xfff3f3f3
+			size 10 10
+			effect "ui\graphics\spectate\ship_type_spect"
+			alignment "RM"
+		}
+		visible_on live
+		anim dead obj_colc
+		{
+			1
+			0xffa40002
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on live
+		visible_on dead
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				1.08501 -0.223472	34.085 -0.223472	1.08501 25.7765	34.085 25.7765	
+				1 0	0 0	1 1	0 1	
+				0xd05a87d0	0xd05a87d0	0xd05a87d0	0xd05a87d0	
+			}
+		}
+		visible_on live
+		anim dead sp_colc
+		{
+			1
+			0xd0d00000	0xd0d00000	0xd0d00000	0xd0d00000	
+		}
+	}
+}
+
