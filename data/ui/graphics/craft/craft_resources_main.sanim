@@ -1,0 +1,336 @@
+﻿source_file "Y:/art/source/ui/graphics/craft/craft.ma"
+//by sergey_mitryaev
+//at Thu Apr 19 12:43:47 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 21
+
+objects 18
+{
+	object title
+	{
+		defaults
+		{
+			pos 14.1549 70.1403
+			opacity 255
+			color 0xffffffff
+			size 280 20
+			effect ""
+			alignment "LM"
+			sampleText "Адаптивный  излучаетель"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 14 90
+			opacity 255
+			color 0xffc6c6c6
+			size 330 54
+			effect ""
+			alignment "LT"
+			sampleText "SDdsff ff  sf |fee g gegg g| gegg gegg| eg ewwg we|erge|rthth"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object resource
+	{
+		defaults
+		{
+			pos 14 180
+			opacity 255
+			color 0xffffffff
+			size 240 21
+			effect ""
+			alignment "LM"
+			sampleText "Адаптивный  излучаетель"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object res_item
+	{
+		defaults
+		{
+			pos 15 209
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\craft\craft_res_item_main"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object additional
+	{
+		defaults
+		{
+			pos 15 288
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\craft\craft_additional_resource"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 362 480
+			effect "ui\graphics\craft\craft_resources_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object resource1
+	{
+		defaults
+		{
+			pos 14 161.051
+			opacity 255
+			color 0xffffffff
+			size 240 21
+			effect ""
+			alignment "LM"
+			sampleText "Количество:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object input
+	{
+		defaults
+		{
+			pos 130 164.242
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\shop\buy_slider_input"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object resource2
+	{
+		defaults
+		{
+			pos 179 161.051
+			opacity 255
+			color 0xffffffff
+			size 50 21
+			effect ""
+			alignment "LM"
+			sampleText "2+7"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_left
+	{
+		defaults
+		{
+			pos 110 163
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\shop\buy_slider_btn_left"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_left1
+	{
+		defaults
+		{
+			pos 155 163
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\shop\buy_slider_btn_right"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 14 161.051
+			opacity 255
+			color 0xffffcf00
+			size 240 21
+			effect ""
+			alignment "LM"
+			sampleText "Создается для корабля Блабла"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_not_found1
+	{
+		defaults
+		{
+			pos 32 222
+			opacity 255
+			color 0xffffffff
+			size 300 50
+			effect ""
+			alignment "CM"
+			sampleText "Нет не единого товара"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 13.9576 9.78812
+			opacity 255
+			color 0xffffffff
+			size 76 20
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object resource4
+	{
+		defaults
+		{
+			pos 114.882 135
+			opacity 255
+			color 0xffffffff
+			size 240 21
+			effect ""
+			alignment "RM"
+			sampleText "На складе 0 шт"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object note
+	{
+		defaults
+		{
+			pos 13.658 161.674
+			opacity 255
+			color 0xffffffff
+			size 340 120
+			effect ""
+			alignment "LT"
+			sampleText "Не создается||Можно найти в открытом  мире"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object resources_ico
+	{
+		defaults
+		{
+			pos 13.9576 9.78812
+			opacity 255
+			color 0xffffffff
+			size 76 20
+			effect "ui\graphics\craft\resources_ico"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 362 480
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp39
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	356 -0	362 -0	0 6	6 6	356 6	362 6	0 474	6 474	356 474	362 474	0 480	6 480	356 480	362 480	
+				0.0585966 0.670898	0.064456 0.670898	0.0761719 0.670898	0.0820313 0.670898	0.0585966 0.676758	0.064456 0.676758	0.0761719 0.676758	0.0820313 0.676758	0.0585966 0.688477	0.064456 0.688477	0.0761719 0.688477	0.0820313 0.688477	0.0585966 0.694336	0.064456 0.694336	0.0761719 0.694336	0.0820313 0.694336	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite qwe7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/chest_shop.tif"
+			vertices
+			{
+				5.00002 291	357.781 291	5 474	357.781 474	
+				0.670898 0.507003	1 0.507003	0.670898 0.996094	1 0.996094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite qwe8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				7.00001 155.974	355 155.974	7 158.026	355 158.026	
+				0.360352 0.657227	0.370117 0.657227	0.360352 0.655273	0.370117 0.655273	
+				0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
