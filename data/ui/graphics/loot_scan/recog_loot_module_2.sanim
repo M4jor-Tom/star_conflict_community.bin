@@ -1,0 +1,77 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Mon Oct 21 14:05:16 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object icon
+	{
+		defaults
+		{
+			pos 6 4
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loot_name
+	{
+		defaults
+		{
+			pos 64 5
+			opacity 255
+			color 0xffffffff
+			size 350 50
+			effect ""
+			alignment "LT"
+			sampleText "Монокристалы кадмasdfvsdv"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object string
+	{
+		defaults
+		{
+			pos 64 43
+			opacity 255
+			color 0xffffffff
+			size 350 20
+			effect "ui\graphics\loot_scan\recog_loot_string"
+			alignment "LB"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 64 21
+			opacity 255
+			color 0xffffffff
+			size 300 22
+			effect ""
+			alignment "LM"
+			sampleText "Монокристалы кадмияdfvsdv"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
