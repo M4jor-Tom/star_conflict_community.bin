@@ -1,0 +1,75 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by anton_hudyakov
+//at Fri Jul 19 14:33:59 2013
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim free
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on free
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite lvlup_exp_ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/item_icon.tif"
+			vertices_nc
+			{
+				0 -0	17.9749 -0	0 17.9749	17.9749 17.9749	
+				0.59778 0.701275	0.614 0.701275	0.59778 0.717495	0.614 0.717495	
+			}
+		}
+		visible_on idle
+	}
+	sprite lvlup_exp_ico_free
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/item_icon.tif"
+			vertices_nc
+			{
+				0 -0	17.9749 -0	0 17.9749	17.9749 17.9749	
+				0.578195 0.701275	0.594415 0.701275	0.578195 0.717495	0.594415 0.717495	
+			}
+		}
+		visible_on free
+	}
+}
+
