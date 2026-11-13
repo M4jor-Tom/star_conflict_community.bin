@@ -1,0 +1,222 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by Sergey_Mitryaev
+//at Tue Apr 18 12:37:55 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 14
+{
+	object lvlup_ship_name
+	{
+		defaults
+		{
+			pos 0 2
+			opacity 255
+			color 0xffffffff
+			size 140 22
+			effect ""
+			alignment "LM"
+			sampleText "Lynx"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object lvlup_ship_lvl
+	{
+		defaults
+		{
+			pos 140 2
+			opacity 255
+			color 0xffffd332
+			size 108 22
+			effect ""
+			alignment "RM"
+			sampleText "Уровень: 9/10"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object lvlup_ship
+	{
+		defaults
+		{
+			pos 0 40.1191
+			opacity 255
+			color 0xffffffff
+			size 248 38
+			effect "ui\graphics\hangar\levelup_ship"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object lvlup_syn
+	{
+		defaults
+		{
+			pos 0 85.1191
+			opacity 255
+			color 0xffffffff
+			size 248 38
+			effect "ui\graphics\hangar\levelup_synergy"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 248 180
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object syn_btn
+	{
+		defaults
+		{
+			pos 0 148.569
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\ships_tree\trans_syn_btn"
+			alignment "RM"
+			sampleText "1234235"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object syn_btn_2
+	{
+		defaults
+		{
+			pos 0 103.569
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\ships_tree\trans_syn_btn"
+			alignment "RM"
+			sampleText "1234235"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos -26 124
+			opacity 255
+			color 0xffffdf00
+			size 300 22
+			effect ""
+			alignment "CM"
+			sampleText "Lynx"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos -26 80
+			opacity 255
+			color 0xffffdf00
+			size 300 22
+			effect ""
+			alignment "CM"
+			sampleText "Lynx"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object syn_btn_3
+	{
+		defaults
+		{
+			pos 0 128.569
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\ships_tree\trans_syn_btn"
+			alignment "RM"
+			sampleText "1234235"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object syn_btn_4
+	{
+		defaults
+		{
+			pos 0 82.569
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\ships_tree\trans_syn_btn"
+			alignment "RM"
+			sampleText "1234235"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object sinergy_progr
+	{
+		defaults
+		{
+			pos 0 25
+			opacity 255
+			color 0xffffffff
+			size 140 22
+			effect "ui\graphics\tooltip\sinergy_progr_main"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object transf
+	{
+		defaults
+		{
+			pos 0 130
+			opacity 255
+			color 0xffffffff
+			size 248 38
+			effect "ui\graphics\hangar\levelup_synergy_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos -26 39
+			opacity 255
+			color 0xffababab
+			size 300 22
+			effect ""
+			alignment "CM"
+			sampleText "Lynx"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
