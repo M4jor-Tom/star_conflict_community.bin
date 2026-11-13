@@ -1,0 +1,100 @@
+﻿source_file "Y:/art/source/ui/graphics/ny_count/ny_count.ma"
+//by sergey_mitryaev
+//at Fri Nov 28 13:48:17 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object vol2
+	{
+		defaults
+		{
+			pos 3 2
+			opacity 255
+			color 0xffffffff
+			size 20 30
+			effect ""
+			alignment "CM"
+			sampleText "0"
+			font "Large_outl2"
+		}
+		visible_on idle
+		anim idle_2 obj_opc
+		{
+			1 
+			100
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 26 34
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp57
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	20 -0	26 -0	0 6	6 6	20 6	26 6	0 28	6 28	20 28	26 28	0 34	6 34	20 34	26 34	
+				0.470703 0.591797	0.470703 0.597656	0.470703 0.601563	0.470703 0.607422	0.476563 0.591797	0.476563 0.597656	0.476563 0.601562	0.476562 0.607422	0.480469 0.591797	0.480469 0.597656	0.480469 0.601563	0.480469 0.607422	0.486328 0.591797	0.486328 0.597656	0.486328 0.601563	0.486328 0.607422	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	sprite sp58
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	20 -0	26 -0	0 6	6 6	20 6	26 6	0 28	6 28	20 28	26 28	0 34	6 34	20 34	26 34	
+				0.470703 0.591797	0.470703 0.597656	0.470703 0.601563	0.470703 0.607422	0.476563 0.591797	0.476563 0.597656	0.476563 0.601562	0.476562 0.607422	0.480469 0.591797	0.480469 0.597656	0.480469 0.601563	0.480469 0.607422	0.486328 0.591797	0.486328 0.597656	0.486328 0.601563	0.486328 0.607422	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
