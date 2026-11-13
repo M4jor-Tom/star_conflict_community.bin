@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/spectate/spectate_2.ma"
+//by sergey_mitryaev
+//at Mon Oct 01 17:37:41 2012
+
+
+animations 5
+{
+	anim 1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 4
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim close
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName198
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1.94186 1.64827	23.9419 1.64826	1.94186 23.6483	23.9419 23.6483	
+				0.405251 0.115426	0.426736 0.115426	0.405251 0.136907	0.426736 0.136907	
+			}
+		}
+		visible_on 1
+		anim 2 sp_uvc
+		{
+			1 
+			0.425244 0.115426	0.446728 0.115426	0.425244 0.136907	0.446728 0.136907	
+		}
+		anim 3 sp_uvc
+		{
+			1 
+			0.445808 0.115426	0.467292 0.115426	0.445808 0.136907	0.467292 0.136907	
+		}
+		anim 4 sp_uvc
+		{
+			1 
+			0.466562 0.115426	0.488047 0.115426	0.466562 0.136907	0.488047 0.136907	
+		}
+	}
+	sprite objectName198ef
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1.94186 1.64827	23.9419 1.64826	1.94186 23.6483	23.9419 23.6483	
+				0.445377 0.0594079	0.466861 0.0594079	0.445377 0.0808889	0.466861 0.0808889	
+			}
+		}
+		anim close sp_posc
+		{
+			1 
+			2.03731 1.64827	24.0373 1.64826	2.03731 23.6483	24.0373 23.6483	
+		}
+	}
+}
+
