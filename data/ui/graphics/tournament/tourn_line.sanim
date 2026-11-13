@@ -1,0 +1,63 @@
+﻿source_file "Y:/art/source/ui/graphics/bzs/bzs.ma"
+//by sergey_mitryaev
+//at Wed Dec 10 16:15:39 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 704 22
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_l
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 340 22
+			effect "ui\graphics\tournament\tourn_line_slot_l"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_r
+	{
+		defaults
+		{
+			pos 342 -0
+			opacity 255
+			color 0xffffffff
+			size 340 22
+			effect "ui\graphics\tournament\tourn_line_slot_r"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
