@@ -1,0 +1,435 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Wed Aug 21 18:28:23 2013
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 17
+
+objects 13
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 272 60
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on idle_2
+		visible_on select_2
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 1.71394 2.9859
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 obj_posc
+		{
+			1 
+			19.7139 2.9859
+		}
+		anim select_2 obj_posc
+		{
+			1 
+			19.7139 2.9859
+		}
+	}
+	object fraction
+	{
+		defaults
+		{
+			pos 55.3686 2.0489
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_fraction"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 obj_posc
+		{
+			1 
+			75.1186 2.0489
+		}
+		anim select_2 obj_posc
+		{
+			1 
+			75.3686 2.0489
+		}
+	}
+	object product_name
+	{
+		defaults
+		{
+			pos 55.5471 5.04365
+			opacity 255
+			color 0xffffffff
+			size 190 45
+			effect ""
+			alignment "LT"
+			sampleText "Адаптивный|  излучаетель |щита  134 иавр48"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 obj_posc
+		{
+			1 
+			75.2971 5.04365
+		}
+		anim select_2 obj_posc
+		{
+			1 
+			75.5471 5.04365
+		}
+	}
+	object type
+	{
+		defaults
+		{
+			pos 5.60223 39.7925
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect "ui\graphics\shop\prod_type"
+			alignment "LB"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 obj_posc
+		{
+			1 
+			23.6022 39.7925
+		}
+		anim select_2 obj_posc
+		{
+			1 
+			23.6022 39.7925
+		}
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 283 70
+			effect "ui\graphics\equip\prod_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on idle_2
+		visible_on select_2
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 283 70
+			effect "ui\graphics\equip\prod_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on idle_2
+		visible_on select_2
+	}
+	object fraction2
+	{
+		defaults
+		{
+			pos 77.3316 2.26715
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_fraction"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 obj_posc
+		{
+			1 
+			97.0816 2.26715
+		}
+		anim select_2 obj_posc
+		{
+			1 
+			97.3316 2.26715
+		}
+	}
+	object type_text
+	{
+		defaults
+		{
+			pos 73.1465 37.6816
+			opacity 255
+			color 0xffffffff
+			size 190 20
+			effect "ui\graphics\equip\availability"
+			alignment "RM"
+			sampleText "УСТАНОВЛЕН"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+		visible_on idle_2
+		visible_on select_2
+	}
+	object price
+	{
+		defaults
+		{
+			pos 161.007 36.4706
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 obj_posc
+		{
+			1 
+			157.007 36.4706
+		}
+		anim select_2 obj_posc
+		{
+			1 
+			157.007 36.4706
+		}
+	}
+	object noskills
+	{
+		defaults
+		{
+			pos 99.1956 2.0489
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_icon_noskills"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 obj_posc
+		{
+			1 
+			118.946 2.0489
+		}
+		anim select_2 obj_posc
+		{
+			1 
+			119.196 2.0489
+		}
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 210 -1
+			opacity 255
+			color 0xffffffff
+			size 68 68
+			effect "ui\graphics\equip\prod_slot_sale"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 obj_posc
+		{
+			1 
+			204.948 -1
+		}
+		anim select_2 obj_posc
+		{
+			1 
+			204.948 -1
+		}
+	}
+	object turn
+	{
+		defaults
+		{
+			pos 253.189 2.26681
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\equip\prod_slot_turn"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 obj_posc
+		{
+			1 
+			249.007 2.26681
+		}
+		anim select_2 obj_posc
+		{
+			1 
+			249.007 2.26681
+		}
+	}
+}
+
+sprites 4
+{
+	total_vertices 64
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				17 -0	23 -0	261.09 -0	267.09 -0	17 6	23 6	261.09 6	267.09 6	17 54.1373	23 54.1373	261.09 54.1373	267.09 54.1373	17 60.1373	23 60.1373	261.09 60.1373	267.09 60.1373	
+				0.274399 0.00196683	0.280259 0.00196683	0.317302 0.00196683	0.323162 0.00196683	0.274399 0.00782621	0.280259 0.00782621	0.317302 0.00782621	0.323162 0.00782621	0.274399 0.0449466	0.280259 0.0449466	0.317302 0.0449466	0.323162 0.0449466	0.274399 0.050806	0.280259 0.050806	0.317302 0.050806	0.323162 0.050806	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 sp_colc
+		{
+			1
+			0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+		}
+		anim select_2 sp_colc
+		{
+			1
+			0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+		}
+	}
+	sprite folder
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				0 -0	10 -0	260.09 -0	272.09 -0	0 19	10 19	260.09 19	272.09 19	0 42.1373	10 42.1373	260.09 42.1373	272.09 42.1373	0 60.1373	10 60.1373	260.09 60.1373	272.09 60.1373	
+				0.782227 0.128906	0.791992 0.128906	0.945313 0.128906	0.956055 0.128906	0.782227 0.167969	0.791992 0.167969	0.945313 0.167969	0.956055 0.167969	0.782227 0.183594	0.791992 0.183594	0.945313 0.183594	0.956055 0.183594	0.782227 0.21875	0.791992 0.21875	0.945313 0.21875	0.956055 0.21875	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				17 -0	23 -0	261.09 -0	267.09 -0	17 6	23 6	261.09 6	267.09 6	17 54.1373	23 54.1373	261.09 54.1373	267.09 54.1373	17 60.1373	23 60.1373	261.09 60.1373	267.09 60.1373	
+				0.123001 0.00196683	0.12886 0.00196683	0.163856 0.00196683	0.169715 0.00196683	0.123001 0.00782621	0.12886 0.00782621	0.163856 0.00782621	0.169715 0.00782621	0.123001 0.0449466	0.12886 0.0449466	0.163856 0.0449466	0.169715 0.0449466	0.123001 0.050806	0.12886 0.050806	0.163856 0.050806	0.169715 0.050806	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim select sp_posc_colc
+		{
+			1 1
+			0 0.666666	6 0.666666	266.09 0.666666	272.09 0.666666	0 6.66667	6 6.66667	266.09 6.66667	272.09 6.66667	0 53.804	6 53.804	266.09 53.804	272.09 53.804	0 59.804	6 59.804	266.09 59.804	272.09 59.804	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle_2 sp_posc
+		{
+			1 
+			17 1.33333	23 1.33333	261.09 1.33333	267.09 1.33333	17 7.33333	23 7.33333	261.09 7.33333	267.09 7.33333	17 53.4706	23 53.4706	261.09 53.4706	267.09 53.4706	17 59.4706	23 59.4706	261.09 59.4706	267.09 59.4706	
+		}
+		anim select_2 sp_posc_colc
+		{
+			1 1
+			17 2	23 2	261.09 2	267.09 2	17 8	23 8	261.09 8	267.09 8	17 53.1373	23 53.1373	261.09 53.1373	267.09 53.1373	17 59.1373	23 59.1373	261.09 59.1373	267.09 59.1373	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite sp28wf
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	266.09 -0	272.09 -0	0 6	6 6	266.09 6	272.09 6	0 54.1373	6 54.1373	266.09 54.1373	272.09 54.1373	0 60.1373	6 60.1373	266.09 60.1373	272.09 60.1373	
+				0.147461 0.0117188	0.15332 0.0117188	0.155273 0.0117188	0.161133 0.0117188	0.147461 0.0175781	0.15332 0.0175781	0.155273 0.0175781	0.161133 0.0175781	0.147461 0.0195313	0.15332 0.0195313	0.155273 0.0195313	0.161133 0.0195313	0.147461 0.0253906	0.15332 0.0253906	0.155273 0.0253906	0.161133 0.0253906	
+				0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim idle_2 sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim select_2 sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+}
+
