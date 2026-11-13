@@ -1,0 +1,229 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Mon Dec 26 13:45:55 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 11
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 990 625
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 857.914 625.657
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object option_btn_list
+	{
+		defaults
+		{
+			pos -1.14309 1.85797
+			opacity 255
+			color 0xffffffff
+			size 110 150
+			effect "ui\graphics\option\option_btn_list"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object debrifing_list
+	{
+		defaults
+		{
+			pos 141.964 1.76793
+			opacity 255
+			color 0xffffffff
+			size 850 600
+			effect "ui\graphics\debrifing_3\debrifing_list_4"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object timer
+	{
+		defaults
+		{
+			pos 704 625.657
+			opacity 255
+			color 0xffffffff
+			size 300 25
+			effect ""
+			alignment "RM"
+			sampleText "Идет раздача наград. Осталось 5 сек."
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object button_social_net
+	{
+		defaults
+		{
+			pos 134 625.657
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn10"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object social_net_btn_1
+	{
+		defaults
+		{
+			pos 237 625.657
+			opacity 255
+			color 0xffffffff
+			size 22 22
+			effect "ui\graphics\button\facebook_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object social_net_btn_2
+	{
+		defaults
+		{
+			pos 263 625.657
+			opacity 255
+			color 0xffffffff
+			size 22 22
+			effect "ui\graphics\button\vk_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 134 625.657
+			opacity 255
+			color 0xffffffff
+			size 100 25
+			effect ""
+			alignment "RM"
+			sampleText "DFd df fh fjfjfj j"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_11
+	{
+		defaults
+		{
+			pos 698 625.657
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn11"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object timer2
+	{
+		defaults
+		{
+			pos 553 625.657
+			opacity 255
+			color 0xffffffff
+			size 300 25
+			effect ""
+			alignment "RM"
+			sampleText "Поиск боя: 0:12"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	1015.05 -0	1021.05 -0	0 6	6 6	1015.05 6	1021.05 6	0 648.77	6 648.77	1015.05 648.77	1021.05 648.77	0 654.77	6 654.77	1015.05 654.77	1021.05 654.77	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite blackout
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				72.6831 0.997527	131.047 0.997527	72.6831 654.25	131.047 654.25	
+				0.0817908 0.115909	0.156565 0.115909	0.0817908 0.13164	0.156565 0.13164	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				129.986 1.00247	131.986 1.00247	129.986 654.241	131.986 654.241	
+				0.0713222 0.077615	0.069369 0.077615	0.0713222 0.0942166	0.069369 0.0942166	
+			}
+		}
+		visible_on idle
+	}
+}
+
