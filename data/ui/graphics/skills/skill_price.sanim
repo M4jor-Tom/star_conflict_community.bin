@@ -1,0 +1,81 @@
+﻿source_file  Y:/art/source/ui/graphics/skills/skills.ma
+//by sergey_mitryaev
+//at Fri Jun 22 13:41:51 2012
+
+
+animations 4
+{
+	anim red
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim blue
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim white
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim red_blackout
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object price
+	{
+		defaults
+		{
+			pos 0.414365 0.694801
+			opacity 255
+			color 0xffff0d00
+			size 120 13
+			effect ""
+			alignment "RM"
+			sampleText "1 000 000"
+			font "Tiny"
+		}
+		visible_on red
+		anim blue obj_colc
+		{
+			1
+			0xffcccccc
+		}
+		anim white obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim red_blackout obj_colc
+		{
+			1
+			0xff9d0600
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 120 15
+			effect ""
+			alignment "LT"
+		}
+		visible_on red
+		visible_on blue
+		visible_on white
+		visible_on red_blackout
+	}
+}
+
