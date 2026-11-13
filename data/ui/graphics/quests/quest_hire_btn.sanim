@@ -1,0 +1,121 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Mon Oct 20 12:22:58 2014
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 0.6
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 0.1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 102 68
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object player_val2
+	{
+		defaults
+		{
+			pos 7 10
+			opacity 255
+			color 0xffff9000
+			size 80 16
+			effect ""
+			alignment "CM"
+			sampleText "2030"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable obj_opc_colc
+		{
+			1 1
+			114
+			0xffffffff
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				102.063 -0	0.0625 -0	102.063 68	0.0625 68	
+				0.521484 0.407227	0.421875 0.407227	0.521484 0.47168	0.421875 0.47168	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+	sprite dff8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				101.938 -0	-0.0625 -0	101.938 68	-0.0625 68	
+				0.521484 0.407227	0.421875 0.407227	0.521484 0.47168	0.421875 0.47168	
+				0xff595959	0xff595959	0xff595959	0xff595959	
+			}
+		}
+		visible_on over
+	}
+}
+
