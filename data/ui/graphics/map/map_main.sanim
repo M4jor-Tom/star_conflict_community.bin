@@ -1,0 +1,81 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Tue Apr 28 17:00:17 2020
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object blackout
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 654
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 171 71
+			opacity 255
+			color 0xffffffff
+			size 966 576
+			effect "ui\graphics\map\map_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object option_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 315 9
+			opacity 255
+			color 0xffffffff
+			size 640 480
+			effect "ui\graphics\map\lobby_adv_option_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sale_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 223 88
+			opacity 255
+			color 0xffffffff
+			size 640 480
+			effect "ui\graphics\help_control\sale_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
