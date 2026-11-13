@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/help_control/help.ma"
+//by sergey_mitryaev
+//at Wed Oct 22 14:40:04 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite maya_sceneClipBoard_sel2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	4 -0	85 -0	89 -0	0 4	4 4	85 4	89 4	0 46	4 46	85 46	89 46	0 50	4 50	85 50	89 50	
+				0.0859375 0.645508	0.0898438 0.645508	0.103516 0.645508	0.107422 0.645508	0.0859375 0.649414	0.0898438 0.649414	0.103516 0.649414	0.107422 0.649414	0.0859375 0.65918	0.0898438 0.65918	0.103516 0.65918	0.107422 0.65918	0.0859375 0.663086	0.0898438 0.663086	0.103516 0.663086	0.107422 0.663086	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
