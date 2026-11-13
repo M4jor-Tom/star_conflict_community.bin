@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="s8256_thar_lavastone; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" additionalColorRemapAnimTime="1.000" battlefieldRadius="2275.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" />
+  <EntityContainer>
+    <Entity Name="SpawnTeam1Ship1" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-227.059 192.864 -866.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Clouds30" Def="Effects_Clouds" Pos="-83.237 185.128 26.276" />
+    <Entity Name="PandoraShining2" Def="Debris_PandoraShining" Pos="0.000 0.000 0.000" Activity="IDLE" />
+    <Entity Name="StarNova1" Def="Effects_StarNova" Pos="0.000 0.000 0.000" maxViewDist="10000000000.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="AmbientSoundSpot1" Def="Sound_AmbientSoundSpot" Pos="-9.289 -3.147 -3.390" soundname="sound/ambient/pandora_anomaly" max_distance="50.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="PandoraSun_AuraFatal" Def="Anomaly_PandoraSunFatal" Pos="0.000 0.000 0.000" />
+    <Entity Name="Clouds24" Def="Effects_Clouds" Pos="-133.459 83.338 -26.370" />
+    <Entity Name="PointLight6" Def="Lights_PointLight" Pos="146.705 -135.665 13.068" start_off="0" rad="250.00000" color="0x3EFB2C00" />
+    <Entity Name="Clouds36" Def="Effects_Clouds" Pos="1215.765 32.765 201.810" />
+    <Entity Name="Clouds35" Def="Effects_Clouds" Pos="1255.356 4.034 224.292" />
+    <Entity Name="Clouds34" Def="Effects_Clouds" Pos="1227.074 1.298 228.334" />
+    <Entity Name="Clouds33" Def="Effects_Clouds" Pos="1234.992 18.850 215.553" />
+    <Entity Name="Clouds32" Def="Effects_Clouds" Pos="1246.283 -3.632 239.804" />
+    <Entity Name="PandoraSun_Aura" Def="Anomaly_PandoraSun" Pos="0.000 0.000 0.000" />
+    <Entity Name="SpawnTeam2Ship1" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-147.926 371.864 608.435" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="PandoraSun1" Def="Debris_PandoraSun" bindTo="PandoraShining2:joint1" maxViewDist="50000.000" />
+    <Entity Name="PointLight1" Def="Lights_PointLight" Pos="9.000 19.000 8.000" start_off="0" rad="300.00000" color="0xCAFB2C00" />
+    <Entity Name="Clouds16" Def="Effects_Clouds" Pos="-114.564 -105.647 -35.608" />
+    <Entity Name="Clouds17" Def="Effects_Clouds" Pos="-123.430 -103.700 -19.916" />
+    <Entity Name="Clouds38" Def="Effects_Clouds" Pos="1230.416 23.030 196.063" />
+    <Entity Name="Clouds23" Def="Effects_Clouds" Pos="-62.014 -216.686 -35.941" />
+    <Entity Name="Team1CP3" Def="VitalPoint_Team1_BeaconC" GameplaysMask="4294959108" Pos="-620.070 317.589 -362.163" Rot="0.000 0.594 0.000 0.804" Skin="s2" />
+    <Entity Name="Team1CP1" Def="VitalPoint_Team1_BeaconA" GameplaysMask="4294959108" Pos="-247.866 39.589 -461.116" Rot="0.000 0.005 0.000 1.000" Skin="s2" />
+    <Entity Name="Clouds37" Def="Effects_Clouds" Pos="1271.020 -3.888 208.772" />
+    <Entity Name="Clouds12" Def="Effects_Clouds" Pos="-119.904 79.298 -36.955" />
+    <Entity Name="DangerCloud1" Def="Effects_DangerCloud" Pos="0.000 0.000 0.000" />
+    <Entity Name="LootPoint13" Def="Helpers_TagPoint" Pos="-549.000 425.140 483.000" type="0" />
+    <Entity Name="LootPoint14" Def="Helpers_TagPoint" Pos="-715.000 27.000 -379.000" type="0" />
+    <Entity Name="Team1CP2" Def="VitalPoint_Team1_BeaconB" GameplaysMask="4294959108" Pos="155.135 -194.411 -309.115" Skin="s2" />
+    <Entity Name="Clouds11" Def="Effects_Clouds" Pos="-51.753 -210.601 -38.510" />
+    <Entity Name="Clouds1" Def="Effects_Clouds" Pos="-64.988 -243.198 14.596" />
+    <Entity Name="Clouds9" Def="Effects_Clouds" Pos="-63.465 -237.324 -44.398" />
+    <Entity Name="Clouds10" Def="Effects_Clouds" Pos="-42.902 -245.846 -37.034" />
+    <Entity Name="Team2CP1" Def="VitalPoint_Team2_BeaconA" GameplaysMask="4294959108" Pos="-162.868 33.589 300.882" Rot="0.000 0.014 0.000 1.000" Skin="s2" />
+    <Entity Name="Team2CP2" Def="VitalPoint_Team2_BeaconB" GameplaysMask="4294959108" Pos="399.131 86.589 175.881" Rot="0.000 0.016 0.000 1.000" Skin="s2" />
+    <Entity Name="Team2CP3" Def="VitalPoint_Team2_BeaconC" GameplaysMask="4294959108" Pos="-564.837 146.589 171.932" Rot="0.000 -0.154 0.000 0.988" Skin="s2" />
+    <Entity Name="R_VP1" Def="VitalPoint_Beacon1_SS" GameplaysMask="4290764808" Pos="-33.845 2.589 -444.085" Rot="0.000 -0.102 0.000 0.995" />
+    <Entity Name="R_VP2" Def="VitalPoint_Beacon2_SS" GameplaysMask="4290764808" Pos="164.135 181.589 240.885" />
+    <Entity Name="R_VP3" Def="VitalPoint_Beacon3_SS" GameplaysMask="4290764808" Pos="-618.865 434.589 -130.115" />
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-12.199 2425.344 -75.474" Rot="0.527 -0.453 0.398 0.599" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="LootPoint15" Def="Helpers_TagPoint" Pos="-488.000 397.504 -78.000" type="0" />
+    <Entity Name="BombSite_1" Def="BtB_BombSite_Team1_B" GameplaysMask="4290765824" Pos="159.191 -204.884 -308.466" />
+    <Entity Name="BombSite_5" Def="BtB_BombSite_Team2_C" GameplaysMask="4290765824" Pos="-550.557 123.116 188.054" />
+    <Entity Name="BombSite_4" Def="BtB_BombSite_Team2_B" GameplaysMask="4290765824" Pos="399.183 73.290 185.953" />
+    <Entity Name="BombSite_3" Def="BtB_BombSite_Team2_A" GameplaysMask="4290765824" Pos="-157.893 12.116 304.534" />
+    <Entity Name="BombSite_2" Def="BtB_BombSite_Team1_C" GameplaysMask="4290765824" Pos="-620.817 302.196 -359.466" />
+    <Entity Name="LootPoint18" Def="Helpers_TagPoint" Pos="118.296 82.296 -126.018" type="0" />
+    <Entity Name="LootPoint17" Def="Helpers_TagPoint" Pos="157.000 408.441 597.352" type="0" />
+    <Entity Name="LootPoint16" Def="Helpers_TagPoint" Pos="325.000 426.865 430.000" type="0" />
+    <Entity Name="Debris1" Def="Debris_Debris02" Pos="358.769 245.279 -247.019" Rot="0.421 0.000 0.000 0.907" />
+    <Entity Name="Debris2" Def="Debris_Debris02" Pos="415.827 261.523 -162.766" Rot="0.000 -0.518 0.000 0.855" />
+    <Entity Name="Debris3" Def="Debris_Debris03" Pos="330.173 209.455 -209.491" Rot="-0.239 -0.062 0.244 0.938" />
+    <Entity Name="Debris4" Def="Debris_Debris04" Pos="398.714 227.100 -250.468" Rot="-0.376 0.000 0.000 0.927" />
+    <Entity Name="Debris5" Def="Debris_Debris05" Pos="298.924 72.370 -112.597" Rot="0.136 -0.355 0.330 0.864" />
+    <Entity Name="Debris6" Def="Debris_Debris07" Pos="132.421 135.204 -404.939" />
+    <Entity Name="Debris7" Def="Debris_Debris08" Pos="362.030 237.806 119.987" Rot="0.200 -0.389 -0.087 0.895" />
+    <Entity Name="Debris8" Def="Debris_Debris09" Pos="291.874 164.311 7.904" Rot="-0.569 0.000 0.000 0.823" />
+    <Entity Name="Debris9" Def="Debris_Debris10" Pos="304.539 153.842 13.856" Rot="0.000 0.000 -0.506 0.863" />
+    <Entity Name="Debris10" Def="Debris_Debris08" Pos="325.358 162.503 -61.382" />
+    <Entity Name="Debris11" Def="Debris_Debris04" Pos="-331.660 166.329 390.886" Rot="0.000 0.000 -0.421 0.907" />
+    <Entity Name="Debris12" Def="Debris_Debris03" Pos="-279.535 183.691 316.590" Rot="-0.648 0.000 0.000 0.762" />
+    <Entity Name="asteroid_rock01_366" Def="Debris_Asteroid_p4" Pos="-204.369 -439.982 -295.799" />
+    <Entity Name="asteroid_rock01_367" Def="Debris_Asteroid_p4" Pos="-208.642 -431.857 -437.696" Rot="-0.088 0.244 -0.106 0.960" />
+    <Entity Name="asteroid_rock01_368" Def="Debris_Asteroid_p4" Pos="-81.798 -360.669 -660.245" Rot="0.282 0.162 0.032 0.945" />
+    <Entity Name="asteroid_rock01_369" Def="Debris_Asteroid_p4" Pos="-272.490 -371.864 -661.092" Rot="-0.088 0.244 -0.106 0.960" />
+    <Entity Name="asteroid_rock01_370" Def="Debris_Asteroid_p4" Pos="-324.658 -295.940 -649.821" Rot="0.020 0.044 0.158 0.986" />
+    <Entity Name="asteroid_rock01_371" Def="Debris_Asteroid_p4" Pos="-353.938 -296.278 -786.967" Rot="0.247 0.125 0.844 0.460" />
+    <Entity Name="asteroid_rock01_372" Def="Debris_Asteroid_p4" Pos="-557.236 -146.549 -905.469" Rot="0.029 0.107 0.990 -0.092" />
+    <Entity Name="asteroid_rock01_373" Def="Debris_Asteroid_p4" Pos="-379.482 -290.764 -1093.111" Rot="-0.042 0.432 0.858 0.276" />
+    <Entity Name="asteroid_rock01_374" Def="Debris_Asteroid_p4" Pos="-158.072 -374.157 -1005.928" Rot="0.644 0.317 0.677 0.165" />
+    <Entity Name="asteroid_rock01_375" Def="Debris_Asteroid_p4" Pos="-823.498 136.576 -858.349" Rot="0.219 0.408 0.885 -0.052" />
+    <Entity Name="asteroid_rock01_376" Def="Debris_Asteroid_p4" Pos="-950.658 329.387 -975.406" Rot="0.219 0.408 0.885 -0.052" />
+    <Entity Name="asteroid_rock01_377" Def="Debris_Asteroid_p4" Pos="-634.219 -63.626 -66.718" Rot="0.033 0.119 0.986 -0.109" />
+    <Entity Name="asteroid_rock01_378" Def="Debris_Asteroid_p4" Pos="45.544 87.065 -709.950" Rot="0.033 0.119 0.986 -0.109" />
+    <Entity Name="asteroid_rock01_379" Def="Debris_Asteroid_p4" Pos="31.944 205.925 -685.882" Rot="-0.135 0.080 0.834 0.529" />
+    <Entity Name="asteroid_rock01_380" Def="Debris_Asteroid_p4" Pos="158.346 126.569 -691.777" Rot="-0.019 -0.125 0.988 -0.084" />
+    <Entity Name="asteroid_rock01_381" Def="Debris_Asteroid_p4" Pos="-24.301 82.963 -582.353" Rot="0.278 0.490 0.627 0.538" />
+    <Entity Name="asteroid_rock01_382" Def="Debris_Asteroid_p4" Pos="-26.853 103.207 -498.254" Rot="-0.563 0.346 0.546 0.516" />
+    <Entity Name="asteroid_rock01_383" Def="Debris_Asteroid_p4" Pos="121.559 202.940 -634.798" Rot="0.878 -0.472 0.005 0.078" />
+    <Entity Name="asteroid_rock01_384" Def="Debris_Asteroid_p4" Pos="376.785 -29.936 -737.268" Rot="0.268 0.440 0.855 -0.057" />
+    <Entity Name="asteroid_rock01_385" Def="Debris_Asteroid_p4" Pos="-533.801 156.757 -594.342" Rot="0.268 0.440 0.855 -0.057" />
+    <Entity Name="asteroid_rock01_386" Def="Debris_Asteroid_p4" Pos="-568.571 399.855 -764.075" Rot="0.268 0.440 0.855 -0.057" />
+    <Entity Name="asteroid_rock01_387" Def="Debris_Asteroid_p4" Pos="303.794 449.379 441.578" Rot="0.268 0.440 0.855 -0.057" />
+    <Entity Name="asteroid_rock01_388" Def="Debris_Asteroid_p4" Pos="369.737 489.408 342.810" Rot="0.414 -0.642 -0.332 0.553" />
+    <Entity Name="asteroid_rock01_389" Def="Debris_Asteroid_p4" Pos="234.129 347.615 289.277" Rot="0.414 -0.642 -0.332 0.553" />
+    <Entity Name="asteroid_rock01_390" Def="Debris_Asteroid_p4" Pos="-290.407 278.437 240.592" Rot="0.414 -0.642 -0.332 0.553" />
+    <Entity Name="asteroid_rock01_391" Def="Debris_Asteroid_p4" Pos="-385.629 235.467 610.698" Rot="-0.055 0.986 0.160 -0.005" />
+    <Entity Name="asteroid_rock01_392" Def="Debris_Asteroid_p4" Pos="82.888 364.459 951.331" Rot="0.165 0.803 -0.245 0.517" />
+    <Entity Name="asteroid_rock01_393" Def="Debris_Asteroid_p4" Pos="359.106 476.058 822.226" Rot="0.165 0.803 -0.245 0.517" />
+    <Entity Name="asteroid_rock01_394" Def="Debris_Asteroid_p4" Pos="478.685 331.029 798.762" Rot="-0.123 -0.470 0.807 -0.336" />
+    <Entity Name="asteroid_rock01_395" Def="Debris_Asteroid_p4" Pos="384.501 137.987 587.637" Rot="-0.516 0.699 -0.338 0.363" />
+    <Entity Name="asteroid_rock01_396" Def="Debris_Asteroid_p4" Pos="306.844 164.871 288.372" Rot="-0.376 0.089 -0.430 0.816" />
+    <Entity Name="asteroid_rock01_397" Def="Debris_Asteroid_p4" Pos="-23.526 268.599 303.986" Rot="-0.376 0.089 -0.430 0.816" />
+    <Entity Name="asteroid_rock01_398" Def="Debris_Asteroid_p4" Pos="680.727 263.858 467.265" Rot="-0.376 0.089 -0.430 0.816" />
+    <Entity Name="asteroid_rock01_399" Def="Debris_Asteroid_p4" Pos="964.188 201.014 803.132" Rot="-0.376 0.089 -0.430 0.816" />
+    <Entity Name="asteroid_rock01_400" Def="Debris_Asteroid_p4" Pos="628.445 420.911 1076.136" Rot="-0.376 0.089 -0.430 0.816" />
+    <Entity Name="asteroid_rock01_401" Def="Debris_Asteroid_p4" Pos="401.629 261.309 1328.593" Rot="0.769 0.175 0.581 -0.202" />
+    <Entity Name="asteroid_rock01_402" Def="Debris_Asteroid_p4" Pos="-19.765 344.038 1189.609" Rot="0.711 0.611 0.235 -0.256" />
+    <Entity Name="asteroid_rock01_403" Def="Debris_Asteroid_p4" Pos="-19.765 344.038 1189.609" Rot="0.711 0.611 0.235 -0.256" />
+    <Entity Name="asteroid_rock01_404" Def="Debris_Asteroid_p4" Pos="104.292 180.825 96.148" Rot="-0.362 -0.034 0.146 0.920" />
+    <Entity Name="asteroid_rock01_405" Def="Debris_Asteroid_p4" Pos="168.057 265.000 238.296" Rot="-0.109 -0.313 0.204 0.921" />
+    <Entity Name="asteroid_rock01_406" Def="Debris_Asteroid_p4" Pos="249.893 634.027 470.941" Rot="-0.376 0.089 -0.430 0.816" />
+    <Entity Name="asteroid_rock01_407" Def="Debris_Asteroid_p4" Pos="57.480 520.288 243.702" Rot="-0.239 0.021 0.458 0.856" />
+    <Entity Name="asteroid_rock01_408" Def="Debris_Asteroid_p4" Pos="368.352 583.180 607.874" Rot="0.049 0.066 0.131 0.988" />
+    <Entity Name="BombSpawn_0" Def="Helpers_TagPoint" GameplaysMask="4290765824" Pos="-252.000 173.000 -94.000" type="0" />
+    <Entity Name="asteroid_rock01_410" Def="Debris_Asteroid_p4" Pos="-223.435 325.473 -751.336" Rot="0.407 0.800 0.428 0.107" />
+    <Entity Name="asteroid_rock01_411" Def="Debris_Asteroid_p4" Pos="-149.076 410.694 -715.695" Rot="-0.566 0.306 0.721 0.257" />
+    <Entity Name="asteroid_rock01_412" Def="Debris_Asteroid_p4" Pos="-659.172 279.159 -886.338" Rot="0.335 0.026 0.825 -0.454" />
+    <Entity Name="asteroid_rock01_413" Def="Debris_Asteroid_p4" Pos="-274.510 336.285 -1002.262" Rot="0.335 0.026 0.825 -0.454" />
+    <Entity Name="asteroid_rock01_414" Def="Debris_Asteroid_p4" Pos="-117.791 440.187 190.203" Rot="0.335 0.026 0.825 -0.454" />
+    <Entity Name="asteroid_rock01_415" Def="Debris_Asteroid_p4" Pos="530.305 324.634 57.391" Rot="0.214 -0.120 0.080 0.966" />
+    <Entity Name="asteroid_rock01_416" Def="Debris_Asteroid_p4" Pos="622.546 202.257 101.044" Rot="0.317 -0.316 0.095 0.889" />
+    <Entity Name="asteroid_rock01_417" Def="Debris_Asteroid_p4" Pos="621.121 126.906 -93.763" Rot="0.200 -0.124 -0.010 0.972" />
+    <Entity Name="asteroid_rock01_418" Def="Debris_Asteroid_p4" Pos="641.406 317.868 192.556" Rot="0.616 -0.060 0.551 0.560" />
+    <Entity Name="asteroid_rock01_419" Def="Debris_Asteroid_p4" Pos="-67.235 39.313 -40.129" Rot="0.049 0.066 0.131 0.988" />
+    <Entity Name="asteroid_rock01_420" Def="Debris_Asteroid_p4" Pos="-352.773 65.899 -318.553" Rot="0.049 0.066 0.131 0.988" />
+    <Entity Name="asteroid_rock01_421" Def="Debris_Asteroid_p4" Pos="14.628 -65.465 -320.058" Rot="-0.623 0.658 0.093 -0.412" />
+    <Entity Name="asteroid_rock01_422" Def="Debris_Asteroid_p4" Pos="419.660 72.661 -422.308" Rot="0.049 0.066 0.131 0.988" />
+    <Entity Name="asteroid_rock01_423" Def="Debris_Asteroid_p4" Pos="239.466 91.800 -567.816" Rot="0.456 -0.218 -0.228 0.832" />
+    <Entity Name="asteroid_rock01_424" Def="Debris_Asteroid_p4" Pos="465.171 146.588 731.755" Rot="0.456 -0.218 -0.228 0.832" />
+    <Entity Name="asteroid_rock01_425" Def="Debris_Asteroid_p4" Pos="-60.081 96.885 149.396" Rot="0.981 0.114 -0.146 0.054" />
+    <Entity Name="asteroid_rock01_426" Def="Debris_Asteroid_p4" Pos="-197.797 232.197 -149.357" Rot="0.558 0.676 -0.283 -0.390" />
+    <Entity Name="asteroid_rock01_427" Def="Debris_Asteroid_p4" Pos="537.529 229.619 -29.594" Rot="0.616 -0.472 0.539 0.326" />
+    <Entity Name="asteroid_rock01_428" Def="Debris_Asteroid_p4" Pos="528.478 193.580 -148.102" Rot="0.820 -0.040 0.542 -0.178" />
+    <Entity Name="asteroid_rock01_429" Def="Debris_Asteroid_p4" Pos="346.784 170.815 -414.148" Rot="0.820 -0.040 0.542 -0.178" />
+    <Entity Name="asteroid_rock01_430" Def="Debris_Asteroid_p4" Pos="237.564 95.424 -132.081" Rot="0.820 -0.040 0.542 -0.178" />
+    <Entity Name="asteroid_rock01_431" Def="Debris_Asteroid_p4" Pos="59.687 137.826 -293.435" Rot="-0.079 -0.078 -0.017 0.994" />
+    <Entity Name="asteroid_rock01_432" Def="Debris_Asteroid_p4" Pos="705.572 153.576 436.190" Rot="-0.079 -0.078 -0.017 0.994" />
+    <Entity Name="asteroid_rock01_433" Def="Debris_Asteroid_p4" Pos="518.439 315.598 382.673" Rot="0.856 -0.175 -0.376 0.307" />
+    <Entity Name="asteroid_rock01_434" Def="Debris_Asteroid_p4" Pos="-499.817 502.718 45.866" Rot="-0.239 0.021 0.458 0.856" />
+    <Entity Name="asteroid_rock01_435" Def="Debris_Asteroid_p4" Pos="-375.280 149.032 -223.412" Rot="0.414 -0.642 -0.332 0.553" />
+    <Entity Name="asteroid_rock01_436" Def="Debris_Asteroid_p4" Pos="-507.072 10.919 -404.721" Rot="-0.109 -0.313 0.204 0.921" />
+    <Entity Name="asteroid_rock01_437" Def="Debris_Asteroid_p4" Pos="-551.928 262.993 -268.987" Rot="-0.239 0.021 0.458 0.856" />
+    <Entity Name="asteroid_rock01_438" Def="Debris_Asteroid_p4" Pos="-302.565 -33.713 -224.318" Rot="-0.376 0.089 -0.430 0.816" />
+    <Entity Name="asteroid_rock01_439" Def="Debris_Asteroid_p4" Pos="-828.881 270.219 -344.748" Rot="0.059 -0.191 0.243 0.949" />
+    <Entity Name="asteroid_rock01_440" Def="Debris_Asteroid_p4" Pos="-1056.881 54.674 -357.959" Rot="-0.109 -0.313 0.204 0.921" />
+    <Entity Name="asteroid_rock01_441" Def="Debris_Asteroid_p4" Pos="-1028.810 3.202 -503.838" Rot="-0.384 0.576 0.712 -0.123" />
+    <Entity Name="asteroid_rock01_442" Def="Debris_Asteroid_p4" Pos="-797.945 30.977 -388.366" Rot="0.237 -0.390 0.110 0.883" />
+    <Entity Name="asteroid_rock01_443" Def="Debris_Asteroid_p4" Pos="-742.574 -16.373 -632.457" Rot="0.237 -0.390 0.110 0.883" />
+    <Entity Name="asteroid_rock01_444" Def="Debris_Asteroid_p4" Pos="-985.472 76.350 -842.527" Rot="0.237 -0.390 0.110 0.883" />
+    <Entity Name="asteroid_rock01_445" Def="Debris_Asteroid_p4" Pos="561.317 61.955 -246.875" Rot="0.553 -0.096 0.269 0.783" />
+    <Entity Name="asteroid_rock01_446" Def="Debris_Asteroid_p4" Pos="431.687 97.038 -323.792" Rot="0.553 -0.096 0.269 0.783" />
+    <Entity Name="LootPoint1" Def="Helpers_TagPoint" Pos="-295.902 138.517 -1045.534" type="0" />
+    <Entity Name="LootPoint2" Def="Helpers_TagPoint" Pos="-655.527 110.175 -860.750" type="0" />
+    <Entity Name="LootPoint3" Def="Helpers_TagPoint" Pos="-710.604 29.930 -153.000" type="0" />
+    <Entity Name="LootPoint4" Def="Helpers_TagPoint" Pos="-382.130 33.856 -491.589" type="0" />
+    <Entity Name="LootPoint5" Def="Helpers_TagPoint" Pos="-6.042 85.123 -545.600" type="0" />
+    <Entity Name="LootPoint6" Def="Helpers_TagPoint" Pos="300.112 54.149 -573.362" type="0" />
+    <Entity Name="LootPoint7" Def="Helpers_TagPoint" Pos="-34.791 105.541 -214.696" type="0" />
+    <Entity Name="LootPoint8" Def="Helpers_TagPoint" Pos="-345.798 18.306 -101.081" type="0" />
+    <Entity Name="LootPoint9" Def="Helpers_TagPoint" Pos="-844.602 137.299 -393.177" type="0" />
+    <Entity Name="LootPoint10" Def="Helpers_TagPoint" Pos="-694.000 174.573 313.000" type="0" />
+    <Entity Name="LootPoint11" Def="Helpers_TagPoint" Pos="-257.735 229.102 280.726" type="0" />
+    <Entity Name="LootPoint12" Def="Helpers_TagPoint" Pos="-132.012 310.344 562.346" type="0" />
+    <Entity Name="SpawnTeam1Ship2" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-209.059 194.073 -871.394" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship3" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-194.453 194.057 -873.773" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship4" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-175.059 194.074 -876.823" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship5" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-175.284 206.325 -876.179" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship6" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-193.059 206.349 -873.065" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship7" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-210.795 206.416 -870.437" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship8" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-227.779 206.437 -867.678" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship9" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-178.059 190.050 -896.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship10" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-195.964 189.388 -894.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship11" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-212.843 189.718 -893.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship12" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-231.239 189.635 -890.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship13" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-231.884 203.180 -890.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship14" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-212.571 202.575 -894.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship15" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-195.338 202.575 -895.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship16" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4294961151" Pos="-175.600 202.461 -898.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship2" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-167.000 372.864 612.480" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship3" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-187.926 372.864 612.435" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship4" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-204.926 374.864 617.435" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship5" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-199.926 390.865 613.435" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship6" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-184.730 389.284 611.630" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship7" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-168.216 388.007 605.130" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship8" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-148.942 386.713 602.435" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship9" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-145.269 373.864 633.435" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship10" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-165.911 370.864 634.435" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship11" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-183.106 373.882 637.504" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship12" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-201.181 374.033 641.149" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship13" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-199.634 396.781 644.104" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship14" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-181.085 396.167 640.211" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship15" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-164.681 396.036 636.531" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship16" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4294961151" Pos="-144.780 395.448 632.541" Rot="0.000 0.084 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="King1" Def="VitalPoint_Beacon1_RC_King" GameplaysMask="4290765312" Pos="-618.637 434.180 -130.173" />
+    <Entity Name="King2" Def="VitalPoint_Beacon2_RC_King" GameplaysMask="4290765312" Pos="-33.057 2.930 -444.103" />
+    <Entity Name="King3" Def="VitalPoint_Beacon3_RC_King" GameplaysMask="4290765312" Pos="164.306 181.924 240.687" />
+    <Entity Name="BombSite_0" Def="BtB_BombSite_Team1_A" GameplaysMask="4290765824" Pos="-242.540 37.374 -458.466" />
+    <Entity Name="SpawnTeam1Ship17" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-427.240 240.296 -853.371" Rot="0.000 0.959 0.000 -0.283" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="CamHelp1" Def="Helpers_TagPoint" GameplaysMask="4290770944" Pos="-1812.000 55.168 198.000" type="0" />
+    <Entity Name="CamHelp" Def="Helpers_TagPoint" GameplaysMask="4290770944" Pos="533.000 253.531 -144.000" type="0" />
+    <Entity Name="SpawnTeam2Ship17" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="-348.135 175.296 640.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship18" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-427.240 260.296 -853.371" Rot="0.000 0.959 0.000 -0.283" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship19" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-427.240 220.296 -853.371" Rot="0.000 0.959 0.000 -0.283" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship20" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-407.240 260.296 -853.371" Rot="0.000 0.959 0.000 -0.283" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship21" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-407.240 240.296 -853.371" Rot="0.000 0.959 0.000 -0.283" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship22" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-407.240 220.296 -853.371" Rot="0.000 0.959 0.000 -0.283" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship23" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="52.941 55.296 -853.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship24" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="53.165 75.296 -853.619" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship25" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="53.165 95.296 -853.619" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship26" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="32.941 55.296 -853.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship27" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="32.941 75.296 -853.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship28" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="32.941 95.296 -853.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship29" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-142.059 260.296 -853.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship30" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-142.059 260.296 -853.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship31" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-202.059 260.296 -853.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship32" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-202.059 220.296 -853.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship33" Def="Logic_SpawnSpot_Team1Group0" GameplaysMask="4290770944" Pos="-142.059 220.296 -853.438" Rot="0.000 0.998 0.000 -0.067" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship18" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="-348.135 195.296 640.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship19" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="-348.135 215.296 640.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship20" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="-368.135 175.296 640.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship21" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="-368.135 195.296 640.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship22" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="-368.135 215.296 640.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship23" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="-68.135 320.296 705.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship24" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="-68.135 280.296 705.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship25" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="-108.135 280.296 705.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship26" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="-108.135 320.296 705.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship27" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="136.865 340.296 705.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship28" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="136.865 300.296 705.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship29" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="136.865 320.296 705.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship30" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="156.865 300.296 705.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship31" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="156.865 320.296 705.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam2Ship32" Def="Logic_SpawnSpot_Team2Group0" GameplaysMask="4290770944" Pos="156.865 340.296 705.420" Rot="0.000 -0.155 0.000 0.988" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="QuadDamage1" Def="Bonus_QuadDamage" GameplaysMask="4290770944" Pos="-476.351 409.957 -5.353" />
+    <Entity Name="SpeedUp3" Def="Bonus_SpeedUp" GameplaysMask="4290770944" Pos="239.958 291.138 -20.083" Rot="0.029 -0.353 -0.447 0.822" />
+    <Entity Name="SpeedUp4" Def="Bonus_SpeedUp" GameplaysMask="4290770944" Pos="-648.554 -175.727 -14.520" Rot="0.892 -0.407 -0.124 0.151" />
+    <Entity Name="invasion1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-185.495 822.048 -49.450" Rot="-0.678 0.000 0.000 0.735" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Fog1" Def="Logic_Fog" Pos="-244.315 -431.417 -530.596" />
+    <Entity Name="Fog2" Def="Logic_Fog" Pos="-236.330 -410.837 -553.615" />
+    <Entity Name="Fog3" Def="Logic_Fog" Pos="-679.301 -277.187 -4.651" />
+    <Entity Name="Fog4" Def="Logic_Fog" Pos="-683.763 -295.331 -110.672" />
+    <Entity Name="Fog5" Def="Logic_Fog" Pos="-749.162 -197.548 -44.751" />
+    <Entity Name="Fog6" Def="Logic_Fog" Pos="-767.609 -187.100 -68.047" />
+    <Entity Name="Fog7" Def="Logic_Fog" Pos="-372.431 198.089 -489.528" />
+    <Entity Name="Fog8" Def="Logic_Fog" Pos="-352.116 216.057 -452.273" />
+    <Entity Name="Fog9" Def="Logic_Fog" Pos="-399.001 180.593 -434.582" />
+    <Entity Name="Fog10" Def="Logic_Fog" Pos="-377.626 204.196 -439.358" />
+    <Entity Name="Fog11" Def="Logic_Fog" Pos="-467.681 270.360 375.235" />
+    <Entity Name="Fog12" Def="Logic_Fog" Pos="-470.381 295.581 327.175" />
+    <Entity Name="Fog13" Def="Logic_Fog" Pos="-478.029 265.769 437.013" />
+    <Entity Name="Fog14" Def="Logic_Fog" Pos="-448.227 250.242 374.842" />
+    <Entity Name="AntiFrigatAuraHolder1" Def="Anomaly_AntiFrigatAuraHolder" GameplaysMask="4227858436" Pos="0.000 0.000 0.000" />
+  </EntityContainer>
+</Scene>
