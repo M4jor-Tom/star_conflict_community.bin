@@ -1,0 +1,518 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Fri Mar 20 12:27:14 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 34
+
+objects 32
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffcf00
+			size 966 576
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object start_btn
+	{
+		defaults
+		{
+			pos 370 533
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\map\map_start_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 10 1
+			opacity 255
+			color 0xffffffff
+			size 180 20
+			effect ""
+			alignment "LM"
+			sampleText "Легкие лазеры"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 945 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 2 27
+			opacity 255
+			color 0xffffffff
+			size 964 500
+			effect "ui\graphics\map\pve_main_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1_1
+	{
+		defaults
+		{
+			pos 29 109
+			opacity 255
+			color 0xffffffff
+			size 900 400
+			effect ""
+			alignment "LT"
+			sampleText "Легкие лазеры"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object sub_btn_1
+	{
+		defaults
+		{
+			pos 128 92
+			opacity 255
+			color 0xffffffff
+			size 232 24
+			effect "ui\graphics\map\map_sub_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sub_btn_2
+	{
+		defaults
+		{
+			pos 365 92
+			opacity 255
+			color 0xffffffff
+			size 232 24
+			effect "ui\graphics\map\map_sub_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1_2
+	{
+		defaults
+		{
+			pos 29 136
+			opacity 255
+			color 0xffffffff
+			size 900 400
+			effect ""
+			alignment "LT"
+			sampleText "Легкие лазеры"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 635 419
+			opacity 255
+			color 0xffffffff
+			size 300 100
+			effect ""
+			alignment "RB"
+			sampleText "Легкие лазеры"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos 20 419
+			opacity 255
+			color 0xffffffff
+			size 300 100
+			effect ""
+			alignment "LB"
+			sampleText "Легкие лазеры"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sub_btn_3
+	{
+		defaults
+		{
+			pos 602 92
+			opacity 255
+			color 0xffffffff
+			size 232 24
+			effect "ui\graphics\map\map_sub_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 391 540
+			opacity 255
+			color 0xffffffff
+			size 200 25
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 307 540
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_3
+	{
+		defaults
+		{
+			pos 469 540
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down_2
+	{
+		defaults
+		{
+			pos 577.578 539.388
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object info_icon
+	{
+		defaults
+		{
+			pos 848 545
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\map\info_icon"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_4
+	{
+		defaults
+		{
+			pos 4 532
+			opacity 255
+			color 0xffffffff
+			size 364 40
+			effect ""
+			alignment "LM"
+			sampleText "Dfedggww fwf|wf wff|wff sfs|fsf"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_37
+	{
+		defaults
+		{
+			pos 242 532
+			opacity 255
+			color 0xffffcf00
+			size 500 40
+			effect ""
+			alignment "CM"
+			sampleText "Dfedggww fwf|wf wffwff sfsfsf"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object opn_sps
+	{
+		defaults
+		{
+			pos 289 528
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\map\opn_sps"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_4
+	{
+		defaults
+		{
+			pos 232 540
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_5
+	{
+		defaults
+		{
+			pos 550 540
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chek_box
+	{
+		defaults
+		{
+			pos 577.578 531
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\chek_box_nda"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down_4
+	{
+		defaults
+		{
+			pos 106 540
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "LM"
+			sampleText "Заплнять ботами"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1_12
+	{
+		defaults
+		{
+			pos 761 540
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1_15
+	{
+		defaults
+		{
+			pos 805 547
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_46
+	{
+		defaults
+		{
+			pos 581 552
+			opacity 255
+			color 0xffff2800
+			size 240 20
+			effect ""
+			alignment "LM"
+			sampleText "Dfedggww fw"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1_16
+	{
+		defaults
+		{
+			pos 898 545
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1_17
+	{
+		defaults
+		{
+			pos 8 545
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object map_2
+	{
+		defaults
+		{
+			pos 2 65
+			opacity 255
+			color 0xffffffff
+			size 964 440
+			effect "ui\graphics\map\pve_main_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object park_btn
+	{
+		defaults
+		{
+			pos 870 545
+			opacity 255
+			color 0xffffffff
+			size 26 26
+			effect "ui\graphics\map\park_btn"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_47
+	{
+		defaults
+		{
+			pos 627 548
+			opacity 255
+			color 0xffffffff
+			size 240 20
+			effect ""
+			alignment "RM"
+			sampleText "Dfedggww fw"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	961.991 -4	970.009 -4	-4 22	4 22	961.991 22	970.009 22	-4 571.809	4 571.809	961.991 571.809	970.009 571.809	-4 580.191	4 580.191	961.991 580.191	970.009 580.191	
+				0.0585916 0.695313	0.0664131 0.695313	0.0742188 0.695313	0.0820312 0.695313	0.0585915 0.720703	0.0664131 0.720703	0.0742187 0.720703	0.0820313 0.720703	0.0585915 0.723631	0.066413 0.723631	0.0742188 0.723631	0.0820313 0.723631	0.0585915 0.731445	0.0664131 0.731445	0.0742187 0.731445	0.0820313 0.731445	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp213
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				2 25	8 25	958 25	964 25	2 31	8 31	958 31	964 31	2 534	8 534	958 534	964 534	2 540	8 540	958 540	964 540	
+				0.272536 0.0507218	0.272536 0.0448626	0.272536 0.00890714	0.272536 0.00304788	0.266677 0.0507219	0.266677 0.0448626	0.266677 0.00890732	0.266677 0.00304776	0.229545 0.0507219	0.229545 0.0448625	0.229545 0.00890702	0.229545 0.00304776	0.223686 0.0507219	0.223686 0.0448625	0.223686 0.0089072	0.223686 0.00304776	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
