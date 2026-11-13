@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+	<Form name="OldDriverMsgUI"
+		class="OldDriverMsgUI" 
+		width="500"
+		height="250"
+		resizable="false"
+		movable="false"
+		font="Tiny_outl2"
+		text="#OldDriver_Title"
+		foreground="Red"
+		background="White"
+		alpha="1">
+
+		<anchor point="TOPLEFT" x="50" y="50" />
+
+		<TextLabel name="OldDriver" text="#OldDriverMessage" w="500" h="220" text_align="left wordbreak">
+			<anchor point="TOP" y="3" />
+		</TextLabel>
+
+		
+		<Button name="No" text="#No" w="130" h="22">
+			<anchor point="BOTTOMRIGHT"/>
+		</Button>
+
+		<Button name="Yes" text="#Yes" w="130" h="22">
+			<anchor point="RIGHT" to="No:LEFT"/>
+		</Button>
+	
+	</Form>
+</Ui>
