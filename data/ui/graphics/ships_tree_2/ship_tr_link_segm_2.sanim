@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/link.ma"
+//by Sergey
+//at Wed Dec 09 12:51:27 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 13 13
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on active
+		visible_on inactive
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectNamedvd7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			not_align
+			vertices
+			{
+				1 -0	13 -0	1 12	13 12	
+				0.0878906 0.664063	0.111328 0.664063	0.0878906 0.6875	0.111328 0.6875	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectNamedvd8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			not_align
+			vertices
+			{
+				1 -0	13 -0	1 12	13 12	
+				0.166016 0.664063	0.189453 0.664063	0.166016 0.6875	0.189453 0.6875	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
