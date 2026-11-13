@@ -1,0 +1,132 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Nov 25 12:53:20 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 4
+{
+	object title27
+	{
+		defaults
+		{
+			pos 104 6
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "CM"
+			sampleText "Создание клана"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object self140
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 130
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title28
+	{
+		defaults
+		{
+			pos 16 45
+			opacity 255
+			color 0xffffffff
+			size 460 54
+			effect ""
+			alignment "LT"
+			sampleText "Создание клана|hj,fh,|hjk."
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_24
+	{
+		defaults
+		{
+			pos 172 102
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\button\button_1"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp81
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	494.074 -2	500.074 -2	-2 4	4 4	494.074 4	500.074 4	-2 126	4 126	494.074 126	500.074 126	-2 132	4 132	494.074 132	500.074 132	
+				0.0605712 0.646448	0.0663821 0.646448	0.0742188 0.646448	0.0800781 0.646448	0.060571 0.652308	0.0663821 0.652308	0.0742187 0.652308	0.0800782 0.652308	0.0605711 0.660156	0.0663821 0.660156	0.0742189 0.660156	0.0800782 0.660156	0.0605711 0.666016	0.0663821 0.666016	0.0742187 0.666016	0.0800782 0.666016	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName356
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				4.14748 4.5	245.939 4.5	4.14748 37.5	245.939 37.5	
+				0.00195313 0.785156	0.108398 0.785156	0.00195313 0.845703	0.108398 0.845703	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName357
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				252.061 4.5	493.926 4.5	252.061 37.5	493.926 37.5	
+				0.108398 0.785156	0.00195313 0.785156	0.108398 0.845703	0.00195313 0.845703	
+			}
+		}
+		visible_on idle
+	}
+}
+
