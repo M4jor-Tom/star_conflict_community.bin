@@ -1,0 +1,124 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Mon Feb 18 15:33:53 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 40
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 396 400
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 11 6
+			opacity 255
+			color 0xffffffff
+			size 370 60
+			effect "ui\graphics\login_screen\chek_box_voiting2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 11 82
+			opacity 255
+			color 0xffffffff
+			size 370 60
+			effect "ui\graphics\login_screen\chek_box_voiting2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_min_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 15
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 31.727	6 31.727	390 31.727	396 31.727	0 40.273	6 40.273	390 40.273	396 40.273	
+				0.229517 0.00782317	0.235376 0.00782317	0.259766 0.00782317	0.265625 0.00782317	0.229517 0.0136825	0.235376 0.0136825	0.259766 0.0136825	0.265625 0.0136825	0.229517 0.03563	0.235376 0.03563	0.259766 0.03563	0.265625 0.03563	0.229517 0.0444481	0.235376 0.0444481	0.259766 0.0444481	0.265625 0.0444481	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 31.727	6 31.727	390 31.727	396 31.727	0 40.273	6 40.273	390 40.273	396 40.273	
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 67.7239	6 67.7239	390 67.7239	396 67.7239	0 76.2761	6 76.2761	390 76.2761	396 76.2761	
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 103.721	6 103.721	390 103.721	396 103.721	0 112.279	6 112.279	390 112.279	396 112.279	
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 139.718	6 139.718	390 139.718	396 139.718	0 148.282	6 148.282	390 148.282	396 148.282	
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 175.715	6 175.715	390 175.715	396 175.715	0 184.285	6 184.285	390 184.285	396 184.285	
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 211.712	6 211.712	390 211.712	396 211.712	0 220.288	6 220.288	390 220.288	396 220.288	
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 247.709	6 247.709	390 247.709	396 247.709	0 256.291	6 256.291	390 256.291	396 256.291	
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 283.706	6 283.706	390 283.706	396 283.706	0 292.294	6 292.294	390 292.294	396 292.294	
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 319.702	6 319.702	390 319.702	396 319.702	0 328.298	6 328.298	390 328.298	396 328.298	
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 355.699	6 355.699	390 355.699	396 355.699	0 364.301	6 364.301	390 364.301	396 364.301	
+			0 -0	6 -0	390 -0	396 -0	0 6	6 6	390 6	396 6	0 391.696	6 391.696	390 391.696	396 391.696	0 400.304	6 400.304	390 400.304	396 400.304	
+		}
+	}
+}
+
