@@ -1,0 +1,174 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Mon Mar 23 11:45:59 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 250
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 7 176
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect "ui\graphics\clan\fit_proper_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 7 193
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect "ui\graphics\clan\fit_proper_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 7 210
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect "ui\graphics\clan\fit_proper_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 7 227
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect "ui\graphics\clan\fit_proper_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 7 6
+			opacity 255
+			color 0xffff9a00
+			size 250 16
+			effect ""
+			alignment "LM"
+			sampleText "Название"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object descrip
+	{
+		defaults
+		{
+			pos 7 29
+			opacity 255
+			color 0xffffffff
+			size 280 120
+			effect ""
+			alignment "LT"
+			sampleText "Новейший образец флагманского корабля Империи.||Дополнительное оборудование: Экспериментальное вооружение. Орудия наносят больше повреждений вражескому дредноуту."
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title32
+	{
+		defaults
+		{
+			pos 7 153
+			opacity 255
+			color 0xffff9a00
+			size 250 16
+			effect ""
+			alignment "LM"
+			sampleText "Характеристики"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp85
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	293 -2	299 -2	-2 4	4 4	293 4	299 4	-2 245	4 245	293 245	299 245	-2 251	4 251	293 251	299 251	
+				0.0869262 0.672834	0.0927372 0.672834	0.100574 0.672833	0.106433 0.672833	0.0869261 0.678693	0.0927372 0.678693	0.100574 0.678693	0.106433 0.678693	0.0869262 0.686541	0.0927372 0.686541	0.100574 0.686541	0.106433 0.686541	0.0869262 0.692401	0.0927371 0.692401	0.100574 0.692401	0.106433 0.692401	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp86
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	293 -2	299 -2	-2 4	4 4	293 4	299 4	-2 245	4 245	293 245	299 245	-2 251	4 251	293 251	299 251	
+				0.445325 0.613263	0.451136 0.613263	0.458972 0.613263	0.464832 0.613263	0.445325 0.619123	0.451136 0.619123	0.458972 0.619123	0.464832 0.619123	0.445325 0.626971	0.451136 0.626971	0.458972 0.626971	0.464832 0.626971	0.445325 0.632831	0.451136 0.632831	0.458972 0.632831	0.464832 0.632831	
+				0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
