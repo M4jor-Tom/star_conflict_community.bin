@@ -1,0 +1,64 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud_new.ma
+//by sega
+//at Mon Sep 19 16:06:12 2011
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hit
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_hit
+	{
+		mode once
+		cycle_time 0.3
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object progr
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffff2800
+			size 10 10
+			effect "ui\graphics\hud\ship_progress"
+			alignment "RM"
+		}
+		visible_on idle
+		anim hit obj_col
+		{
+			2
+			0xffffffff
+			0xffff2800
+		}
+		anim friend obj_colc
+		{
+			1
+			0xff89b5ff
+		}
+		anim friend_hit obj_col
+		{
+			2
+			0xffffffff
+			0xff89b5ff
+		}
+	}
+}
+
