@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by sergey_mitryaev
+//at Mon Apr 07 14:59:17 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				2 1	8 1	553 1	559 1	2 7	8 7	553 7	559 7	2 15	8 15	553 15	559 15	2 21	8 21	553 21	559 21	
+				0.130637 0.0099504	0.134581 0.0099504	0.158135 0.0099504	0.162079 0.0099504	0.130637 0.0138941	0.134581 0.0138941	0.158135 0.0138941	0.162079 0.0138941	0.130637 0.0388787	0.134581 0.0388787	0.158135 0.0388787	0.162079 0.0388787	0.130637 0.0428224	0.134581 0.0428224	0.158135 0.0428224	0.162079 0.0428224	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
