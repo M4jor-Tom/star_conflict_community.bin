@@ -1,0 +1,40 @@
+﻿source_file "Y:/art/source/ui/graphics/ship_craft/ship_craft.ma"
+//by Sergey
+//at Fri Nov 20 15:06:16 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	30 -0	36 -0	0 6	6 6	30 6	36 6	0 30	6 30	30 30	36 30	0 36	6 36	30 36	36 36	
+				0.0733453 0.00196683	0.0792047 0.00196683	0.1142 0.00196683	0.12006 0.00196683	0.0733453 0.00782621	0.0792047 0.00782621	0.1142 0.00782621	0.12006 0.00782621	0.0733453 0.0449466	0.0792047 0.0449466	0.1142 0.0449466	0.12006 0.0449466	0.0733453 0.050806	0.0792047 0.050806	0.1142 0.050806	0.12006 0.050806	
+				0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+			}
+		}
+		visible_on idle
+	}
+}
+
