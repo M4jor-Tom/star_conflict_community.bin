@@ -1,0 +1,78 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle.ma"
+//by Sergey
+//at Fri Nov 13 09:55:03 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 60 60
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 5.02066 5
+			opacity 255
+			color 0xff07d300
+			size 50 50
+			effect ""
+			alignment "CM"
+			sampleText "99%"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName378
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				0 -0	60 -0	0 60	60 60	
+				0.134766 0.457031	0.251953 0.457031	0.134766 0.574219	0.251953 0.574219	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
