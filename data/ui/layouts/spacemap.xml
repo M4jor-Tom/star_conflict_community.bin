@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+	<Form name="SpaceMapUI"
+		class="SpaceZonesMapUI" 
+		width="950" 
+		height="600"
+		x="200"
+		y="100"
+		min_width="300"
+		min_height="300"
+		resizable="false"
+		movable="true"
+		font="Tiny_outl2"
+		text="#SpaceMap"
+		foreground="White"
+		background="White"
+		alpha="1">
+		
+		<LinearLayout name="InfoBlock" w="250" h="200" debug="false">
+			<anchor point="TOPRIGHT"/>
+			<anchor point="BOTTOMRIGHT"/>
+
+			<TextLabel text="CurrentZone" w="250" h="30" text_align="center" foreground="Cyan"/>
+			<TextLabel name="CurrentZoneName" text="" w="250" h="24"/>
+			<TextLabel name="CurrentZoneStation" text ="" w="250" h="24"/>
+			
+			<Widget w="250" h="40"/>
+			
+			<TextLabel text="SelectedZone" w="250" h="30" text_align="center" foreground="GreenYellow"/>
+			
+			<LinearLayout w="250" h="24" horizontal="true" margin="5" debug="false">
+				<TextLabel text="Name:" w="60" h="24" />
+				<TextLabel name="SelectedZoneName" text="11" w="200" h="24"/>
+			</LinearLayout>	
+			
+			<LinearLayout w="250" h="24" horizontal="true" margin="5" debug="false">
+				<TextLabel text="Station:" w="60" h="24"/>
+				<TextLabel name="SelectedZoneStation" text="" w="200" h="24"/>
+			</LinearLayout>	
+			
+			<LinearLayout w="250" h="24" horizontal="true" margin="5" debug="false">
+				<TextLabel text="Instances:" w="60" h="24"/>
+				<TextLabel name="SelectedZoneInstances" text="" w="200" h="24"/>
+			</LinearLayout>	
+
+			<LinearLayout w="250" h="24" horizontal="true" margin="5" debug="false">
+				<TextLabel text="Clients:" w="60" h="24"/>
+				<TextLabel name="SelectedZoneClients" text="" w="200" h="24"/>
+			</LinearLayout>	
+
+			<LinearLayout w="250" h="24" horizontal="true" margin="5" debug="false">
+				<TextLabel text="Free Slots:" w="60" h="24"/>
+				<TextLabel name="SelectedZoneSlots" text="" w="200" h="24"/>
+			</LinearLayout>	
+			
+			<LinearLayout w="250" h="24" horizontal="true" margin="5" debug="false">
+				<TextLabel text="Live Time:" w="60" h="24"/>
+				<TextLabel name="SelectedZoneLiveTime" text="" w="200" h="24"/>
+			</LinearLayout>	
+			
+		</LinearLayout>
+		
+		<Button name="UndockButton" text="Undock" w="85" h="22" disabled="true">
+			<anchor point="BOTTOMRIGHT" />
+		</Button>
+		
+		<Button name="JumpButton" text="Jump" w="85" h="22" tooltip="Force JUMP into selected SpaceZone">
+			<anchor point="RIGHT" to="UndockButton:LEFT" />
+		</Button>
+		
+		<Button name="RefreshButton" text="Refresh" w="85" h="22" tooltip="Refresh statistic about ZoneInstances">
+			<anchor point="RIGHT" to="JumpButton:LEFT" />
+		</Button>		
+		
+		<Button name="AutoPilotButton" text="AutoPilot" w="85" h="22">
+			<anchor point="BOTTOMRIGHT" to="UndockButton:TOPRIGHT" />
+		</Button>		
+
+		<Button name="ZoneInstanceList" text="Instance List" w="85" h="22">
+			<anchor point="RIGHT" to="AutoPilotButton:LEFT" />
+		</Button>		
+
+		<Widget name="MapContainer">
+			<anchor point="TOPLEFT" />
+			<anchor point="BOTTOMRIGHT" to="InfoBlock:BOTTOMLEFT" x="-10" />
+		</Widget>
+
+	</Form>
+</Ui>
