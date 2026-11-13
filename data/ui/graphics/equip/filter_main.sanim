@@ -1,0 +1,73 @@
+﻿source_file  Y:/art/source/ui/graphics/equip/equip.ma
+//by sergey_mitryaev
+//at Thu Jun 14 17:28:05 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 283 40
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 7.09164 7.89658
+			opacity 255
+			color 0xffffffff
+			size 175 10
+			effect "ui\graphics\equip\filter_chek_box"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 7.43364 25.3576
+			opacity 255
+			color 0xffffffff
+			size 175 10
+			effect "ui\graphics\equip\filter_chek_box"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 7.43364 43.0229
+			opacity 255
+			color 0xffffffff
+			size 175 10
+			effect "ui\graphics\equip\filter_chek_box"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+}
+
