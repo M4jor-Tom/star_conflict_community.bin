@@ -1,0 +1,120 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by Sergey_Mitryaev
+//at Fri May 11 12:33:49 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 420 480
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 9 3
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "Статистика"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 5.71872 40.1205
+			opacity 255
+			color 0xffffffff
+			size 406 134
+			effect "ui\graphics\profile\summary_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 5.71872 180
+			opacity 255
+			color 0xffffffff
+			size 406 134
+			effect "ui\graphics\profile\summary_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 5.71872 285
+			opacity 255
+			color 0xffffffff
+			size 406 134
+			effect "ui\graphics\profile\summary_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 5.71872 396
+			opacity 255
+			color 0xffffffff
+			size 406 134
+			effect "ui\graphics\profile\summary_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down
+	{
+		defaults
+		{
+			pos 303 3
+			opacity 255
+			color 0xffffffff
+			size 20 30
+			effect "ui\graphics\shop\filt_drop_down_main"
+			alignment "LM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
