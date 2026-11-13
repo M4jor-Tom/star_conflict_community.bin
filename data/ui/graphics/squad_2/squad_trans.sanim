@@ -1,0 +1,94 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 28 15:51:44 2017
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 284 48
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object text_5
+	{
+		defaults
+		{
+			pos 7.37741 7.88206
+			opacity 255
+			color 0xff5e686f
+			size 230 30
+			effect ""
+			alignment "RM"
+			sampleText "Преобразовать в крыло"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object trans_btn
+	{
+		defaults
+		{
+			pos 247.183 8.10611
+			opacity 255
+			color 0xffc9e8ff
+			size 30 30
+			effect "ui\graphics\squad_2\squad_trans_btn"
+			alignment "CM"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite er1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				1 1	11 1	273 1	283 1	1 11	11 11	273 11	283 11	1 38	11 38	273 38	283 38	1 48	11 48	273 48	283 48	
+				0.699219 0.794922	0.71875 0.794922	0.880859 0.794922	0.900391 0.794922	0.699219 0.814453	0.71875 0.814453	0.880859 0.814453	0.900391 0.814453	0.699219 0.824219	0.71875 0.824219	0.880859 0.824219	0.900391 0.824219	0.699219 0.84375	0.71875 0.84375	0.880859 0.84375	0.900391 0.84375	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
