@@ -1,0 +1,1915 @@
+﻿source_file "Y:/art/source/ui/graphics/awards/awards.ma"
+//by sergey_mitryaev
+//at Mon Apr 04 17:59:02 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+}
+
+total_elements 11
+
+objects 5
+{
+	object etext_info
+	{
+		defaults
+		{
+			pos -92 191
+			opacity 255
+			color 0xff9ebeff
+			size 700 50
+			effect ""
+			alignment "CT"
+			sampleText "Уничтожить 100 кораблей fgdgg gghte e e fetg tet tety 4yty gew"
+			font "VerySmall_outl"
+		}
+		visible_on idle
+	}
+	object etext_name
+	{
+		defaults
+		{
+			pos -92 149.725
+			opacity 255
+			color 0xffc3ebff
+			size 700 40
+			effect ""
+			alignment "CM"
+			sampleText "СМАЧНЫЙ ЖНЕЦСМАЧНЫЙ ЖНЕЦС"
+			font "Large"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object ship_list_slot
+	{
+		defaults
+		{
+			pos 200 -1042
+			opacity 255
+			color 0xffffffff
+			size 120 40
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			121 
+			200 -1042
+			200 -946.372
+			200 -849.113
+			200 -750.774
+			200 -651.906
+			200 -553.06
+			200 -454.787
+			200 -357.639
+			200 -262.165
+			200 -168.918
+			200 -78.4475
+			200 8.69423
+			200 89.5586
+			200 45.9977
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			200 36
+			189.487 36
+			159.307 36
+			111.492 36
+			48.0777 36
+			-28.9003 36
+			-117.408 36
+			-215.412 36
+			-320.875 36
+			-431.764 36
+			-546.045 36
+			-661.682 36
+			-776.64 36
+			-888.887 36
+			-996.384 36
+			-1097.1 36
+			-1189 36
+			-1189 36
+			-1189 36
+			-1189 36
+			-1189 36
+			-1189 36
+			-1189 36
+			-1189 36
+		}
+	}
+	object prod_icon_main
+	{
+		defaults
+		{
+			pos 237 -1031
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			121 
+			237 -1031
+			237 -935.372
+			237 -838.113
+			237 -739.774
+			237 -640.906
+			237 -542.06
+			237 -443.787
+			237 -346.639
+			237 -251.165
+			237 -157.918
+			237 -67.4475
+			237 19.6942
+			237 100.559
+			237 56.9977
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			237 47
+			226.487 47
+			196.307 47
+			148.492 47
+			85.0777 47
+			8.09973 47
+			-80.4079 47
+			-178.412 47
+			-283.875 47
+			-394.764 47
+			-509.045 47
+			-624.682 47
+			-739.64 47
+			-851.887 47
+			-959.384 47
+			-1060.1 47
+			-1152 47
+			-1152 47
+			-1152 47
+			-1152 47
+			-1152 47
+			-1152 47
+			-1152 47
+			-1152 47
+		}
+	}
+	object parts_slot
+	{
+		defaults
+		{
+			pos 220.464 -1026.02
+			opacity 255
+			color 0xffffffff
+			size 94 50
+			effect "ui\graphics\ships_tree_2\parts_slot"
+			alignment "LT"
+		}
+		anim idle obj_pos
+		{
+			121 
+			220.464 -1026.02
+			220.464 -930.388
+			220.464 -833.129
+			220.464 -734.79
+			220.464 -635.922
+			220.464 -537.076
+			220.464 -438.803
+			220.464 -341.655
+			220.464 -246.181
+			220.464 -152.934
+			220.464 -62.4635
+			220.464 24.6782
+			220.464 105.543
+			220.464 61.9817
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			220.464 51.984
+			210.114 51.984
+			180.401 51.984
+			133.327 51.984
+			70.8954 51.984
+			-4.88995 51.984
+			-92.0263 51.984
+			-188.512 51.984
+			-292.341 51.984
+			-401.512 51.984
+			-514.023 51.984
+			-627.868 51.984
+			-741.045 51.984
+			-851.552 51.984
+			-957.385 51.984
+			-1056.54 51.984
+			-1147.02 51.984
+			-1147.02 51.984
+			-1147.02 51.984
+			-1147.02 51.984
+			-1147.02 51.984
+			-1147.02 51.984
+			-1147.02 51.984
+			-1147.02 51.984
+		}
+	}
+}
+
+sprites 6
+{
+	total_vertices 24
+
+	sprite bg20
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-316.441 279.94	-316.441 -21.9399	824.215 279.94	824.215 -21.9399	
+				0.0807729 0.14116	0.0807729 0.116205	0.226959 0.141159	0.226959 0.116204	
+				0x254759	0x254759	0x254759	0x254759	
+			}
+		}
+		anim idle sp_col
+		{
+			121
+			0x254759	0x254759	0x254759	0x254759	
+			0x7254759	0x7254759	0x7254759	0x7254759	
+			0x10254759	0x10254759	0x10254759	0x10254759	
+			0x19254759	0x19254759	0x19254759	0x19254759	
+			0x22254759	0x22254759	0x22254759	0x22254759	
+			0x2b254759	0x2b254759	0x2b254759	0x2b254759	
+			0x35254759	0x35254759	0x35254759	0x35254759	
+			0x3f254759	0x3f254759	0x3f254759	0x3f254759	
+			0x49254759	0x49254759	0x49254759	0x49254759	
+			0x53254759	0x53254759	0x53254759	0x53254759	
+			0x5d254759	0x5d254759	0x5d254759	0x5d254759	
+			0x67254759	0x67254759	0x67254759	0x67254759	
+			0x71254759	0x71254759	0x71254759	0x71254759	
+			0x7b254759	0x7b254759	0x7b254759	0x7b254759	
+			0x85254759	0x85254759	0x85254759	0x85254759	
+			0x8f254759	0x8f254759	0x8f254759	0x8f254759	
+			0x98254759	0x98254759	0x98254759	0x98254759	
+			0xa1254759	0xa1254759	0xa1254759	0xa1254759	
+			0xaa254759	0xaa254759	0xaa254759	0xaa254759	
+			0xb3254759	0xb3254759	0xb3254759	0xb3254759	
+			0xbb254759	0xbb254759	0xbb254759	0xbb254759	
+			0xc2254759	0xc2254759	0xc2254759	0xc2254759	
+			0xc9254759	0xc9254759	0xc9254759	0xc9254759	
+			0xcf254759	0xcf254759	0xcf254759	0xcf254759	
+			0xd4254759	0xd4254759	0xd4254759	0xd4254759	
+			0xd9254759	0xd9254759	0xd9254759	0xd9254759	
+			0xdd254759	0xdd254759	0xdd254759	0xdd254759	
+			0xe1254759	0xe1254759	0xe1254759	0xe1254759	
+			0xe3254759	0xe3254759	0xe3254759	0xe3254759	
+			0xe4254759	0xe4254759	0xe4254759	0xe4254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe4254759	0xe4254759	0xe4254759	0xe4254759	
+			0xe1254759	0xe1254759	0xe1254759	0xe1254759	
+			0xdd254759	0xdd254759	0xdd254759	0xdd254759	
+			0xd6254759	0xd6254759	0xd6254759	0xd6254759	
+			0xcf254759	0xcf254759	0xcf254759	0xcf254759	
+			0xc6254759	0xc6254759	0xc6254759	0xc6254759	
+			0xbc254759	0xbc254759	0xbc254759	0xbc254759	
+			0xb1254759	0xb1254759	0xb1254759	0xb1254759	
+			0xa6254759	0xa6254759	0xa6254759	0xa6254759	
+			0x99254759	0x99254759	0x99254759	0x99254759	
+			0x8d254759	0x8d254759	0x8d254759	0x8d254759	
+			0x7f254759	0x7f254759	0x7f254759	0x7f254759	
+			0x72254759	0x72254759	0x72254759	0x72254759	
+			0x65254759	0x65254759	0x65254759	0x65254759	
+			0x58254759	0x58254759	0x58254759	0x58254759	
+			0x4b254759	0x4b254759	0x4b254759	0x4b254759	
+			0x3f254759	0x3f254759	0x3f254759	0x3f254759	
+			0x33254759	0x33254759	0x33254759	0x33254759	
+			0x28254759	0x28254759	0x28254759	0x28254759	
+			0x1f254759	0x1f254759	0x1f254759	0x1f254759	
+			0x16254759	0x16254759	0x16254759	0x16254759	
+			0xe254759	0xe254759	0xe254759	0xe254759	
+			0x8254759	0x8254759	0x8254759	0x8254759	
+			0x3254759	0x3254759	0x3254759	0x3254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+		}
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/chest_2.tif"
+			vertices
+			{
+				278 -1076.28	398 -1076.28	278 -930.28	398 -930.28	
+				0.25293 0.0078125	0.370117 0.0078125	0.25293 0.578125	0.370117 0.578125	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim idle sp_pos_col
+		{
+			121 121
+			278 -1076.28	398 -1076.28	278 -930.28	398 -930.28	
+			278 -982.569	398 -982.569	278 -836.569	398 -836.569	
+			278 -887.445	398 -887.445	278 -741.445	398 -741.445	
+			278 -791.384	398 -791.384	278 -645.384	398 -645.384	
+			278 -694.865	398 -694.865	278 -548.865	398 -548.865	
+			278 -598.365	398 -598.365	278 -452.365	398 -452.365	
+			278 -502.362	398 -502.362	278 -356.362	398 -356.362	
+			278 -407.333	398 -407.333	278 -261.333	398 -261.333	
+			278 -313.755	398 -313.755	278 -167.755	398 -167.755	
+			278 -222.107	398 -222.107	278 -76.1072	398 -76.1072	
+			278 -132.866	398 -132.866	278 13.134	398 13.134	
+			278 -46.509	398 -46.509	278 99.491	398 99.491	
+			278 34.2146	398 34.2146	278 180.215	398 180.215	
+			278 4.69079	398 4.69079	278 150.691	398 150.691	
+			289.636 1	409.636 1	289.636 147	409.636 147	
+			304.182 1	424.182 1	304.182 147	424.182 147	
+			318.727 1	438.727 1	318.727 147	438.727 147	
+			333.273 1	453.273 1	333.273 147	453.273 147	
+			347.818 1	467.818 1	347.818 147	467.818 147	
+			362.364 1	482.364 1	362.364 147	482.364 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			374 1	494 1	374 147	494 147	
+			373.55 1	493.55 1	373.55 147	493.55 147	
+			358.323 1	478.323 1	358.323 147	478.323 147	
+			323.037 1	443.037 1	323.037 147	443.037 147	
+			269.835 1	389.835 1	269.835 147	389.835 147	
+			200.86 1	320.86 1	200.86 147	320.86 147	
+			118.255 1	238.255 1	118.255 147	238.255 147	
+			24.1637 1	144.164 1	24.1637 147	144.164 147	
+			-79.2724 1	40.7276 1	-79.2724 147	40.7276 147	
+			-189.908 1	-69.908 1	-189.908 147	-69.908 147	
+			-305.601 1	-185.601 1	-305.601 147	-185.601 147	
+			-424.21 1	-304.21 1	-424.21 147	-304.21 147	
+			-543.589 1	-423.59 1	-543.589 147	-423.59 147	
+			-661.597 1	-541.597 1	-661.597 147	-541.597 147	
+			-776.092 1	-656.092 1	-776.092 147	-656.092 147	
+			-884.927 1	-764.927 1	-884.927 147	-764.927 147	
+			-985.962 1	-865.962 1	-985.962 147	-865.962 147	
+			-1045.54 1	-925.541 1	-1045.54 147	-925.541 147	
+			-1045.54 1	-925.541 1	-1045.54 147	-925.541 147	
+			-1045.54 1	-925.541 1	-1045.54 147	-925.541 147	
+			-1045.54 1	-925.541 1	-1045.54 147	-925.541 147	
+			-1045.54 1	-925.541 1	-1045.54 147	-925.541 147	
+			-1045.54 1	-925.541 1	-1045.54 147	-925.541 147	
+			-1045.54 1	-925.541 1	-1045.54 147	-925.541 147	
+			-1045.54 1	-925.541 1	-1045.54 147	-925.541 147	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x11ffffff	0x11ffffff	0x11ffffff	0x11ffffff	
+			0x24ffffff	0x24ffffff	0x24ffffff	0x24ffffff	
+			0x39ffffff	0x39ffffff	0x39ffffff	0x39ffffff	
+			0x4effffff	0x4effffff	0x4effffff	0x4effffff	
+			0x64ffffff	0x64ffffff	0x64ffffff	0x64ffffff	
+			0x7affffff	0x7affffff	0x7affffff	0x7affffff	
+			0x90ffffff	0x90ffffff	0x90ffffff	0x90ffffff	
+			0xa5ffffff	0xa5ffffff	0xa5ffffff	0xa5ffffff	
+			0xb9ffffff	0xb9ffffff	0xb9ffffff	0xb9ffffff	
+			0xcbffffff	0xcbffffff	0xcbffffff	0xcbffffff	
+			0xdbffffff	0xdbffffff	0xdbffffff	0xdbffffff	
+			0xe8ffffff	0xe8ffffff	0xe8ffffff	0xe8ffffff	
+			0xf3ffffff	0xf3ffffff	0xf3ffffff	0xf3ffffff	
+			0xfaffffff	0xfaffffff	0xfaffffff	0xfaffffff	
+			0xfeffffff	0xfeffffff	0xfeffffff	0xfeffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xf3ffffff	0xf3ffffff	0xf3ffffff	0xf3ffffff	
+			0xe4ffffff	0xe4ffffff	0xe4ffffff	0xe4ffffff	
+			0xd1ffffff	0xd1ffffff	0xd1ffffff	0xd1ffffff	
+			0xbaffffff	0xbaffffff	0xbaffffff	0xbaffffff	
+			0xa0ffffff	0xa0ffffff	0xa0ffffff	0xa0ffffff	
+			0x85ffffff	0x85ffffff	0x85ffffff	0x85ffffff	
+			0x69ffffff	0x69ffffff	0x69ffffff	0x69ffffff	
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			0x30ffffff	0x30ffffff	0x30ffffff	0x30ffffff	
+			0x17ffffff	0x17ffffff	0x17ffffff	0x17ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName325
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/chest_2.tif"
+			vertices
+			{
+				127 -1076.28	247 -1076.28	127 -930.28	247 -930.28	
+				0.370117 0.0078125	0.25293 0.0078125	0.370117 0.578125	0.25293 0.578125	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim idle sp_pos_col
+		{
+			121 121
+			127 -1076.28	247 -1076.28	127 -930.28	247 -930.28	
+			127 -982.569	247 -982.569	127 -836.569	247 -836.569	
+			127 -887.445	247 -887.445	127 -741.445	247 -741.445	
+			127 -791.384	247 -791.384	127 -645.384	247 -645.384	
+			127 -694.865	247 -694.865	127 -548.865	247 -548.865	
+			127 -598.365	247 -598.365	127 -452.365	247 -452.365	
+			127 -502.362	247 -502.362	127 -356.362	247 -356.362	
+			127 -407.333	247 -407.333	127 -261.333	247 -261.333	
+			127 -313.755	247 -313.755	127 -167.755	247 -167.755	
+			127 -222.107	247 -222.107	127 -76.1072	247 -76.1072	
+			127 -132.866	247 -132.866	127 13.134	247 13.134	
+			127 -46.509	247 -46.509	127 99.491	247 99.491	
+			127 34.2146	247 34.2146	127 180.215	247 180.215	
+			127 4.69079	247 4.69079	127 150.691	247 150.691	
+			115.364 1	235.364 1	115.364 147	235.364 147	
+			100.818 1	220.818 1	100.818 147	220.818 147	
+			86.2727 1	206.273 1	86.2727 147	206.273 147	
+			71.7273 1	191.727 1	71.7273 147	191.727 147	
+			57.1818 1	177.182 1	57.1818 147	177.182 147	
+			42.6364 1	162.636 1	42.6364 147	162.636 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			31 1	151 1	31 147	151 147	
+			30.5503 1	150.55 1	30.5503 147	150.55 147	
+			15.323 1	135.323 1	15.323 147	135.323 147	
+			-19.9631 1	100.037 1	-19.9631 147	100.037 147	
+			-73.1649 1	46.8351 1	-73.1649 147	46.8351 147	
+			-142.14 1	-22.1405 1	-142.14 147	-22.1405 147	
+			-224.745 1	-104.745 1	-224.745 147	-104.745 147	
+			-318.836 1	-198.836 1	-318.836 147	-198.836 147	
+			-422.272 1	-302.272 1	-422.272 147	-302.272 147	
+			-532.908 1	-412.908 1	-532.908 147	-412.908 147	
+			-648.601 1	-528.601 1	-648.601 147	-528.601 147	
+			-767.21 1	-647.21 1	-767.21 147	-647.21 147	
+			-886.589 1	-766.589 1	-886.589 147	-766.589 147	
+			-1004.6 1	-884.597 1	-1004.6 147	-884.597 147	
+			-1119.09 1	-999.092 1	-1119.09 147	-999.092 147	
+			-1227.93 1	-1107.93 1	-1227.93 147	-1107.93 147	
+			-1328.96 1	-1208.96 1	-1328.96 147	-1208.96 147	
+			-1388.54 1	-1268.54 1	-1388.54 147	-1268.54 147	
+			-1388.54 1	-1268.54 1	-1388.54 147	-1268.54 147	
+			-1388.54 1	-1268.54 1	-1388.54 147	-1268.54 147	
+			-1388.54 1	-1268.54 1	-1388.54 147	-1268.54 147	
+			-1388.54 1	-1268.54 1	-1388.54 147	-1268.54 147	
+			-1388.54 1	-1268.54 1	-1388.54 147	-1268.54 147	
+			-1388.54 1	-1268.54 1	-1388.54 147	-1268.54 147	
+			-1388.54 1	-1268.54 1	-1388.54 147	-1268.54 147	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x11ffffff	0x11ffffff	0x11ffffff	0x11ffffff	
+			0x24ffffff	0x24ffffff	0x24ffffff	0x24ffffff	
+			0x39ffffff	0x39ffffff	0x39ffffff	0x39ffffff	
+			0x4effffff	0x4effffff	0x4effffff	0x4effffff	
+			0x64ffffff	0x64ffffff	0x64ffffff	0x64ffffff	
+			0x7affffff	0x7affffff	0x7affffff	0x7affffff	
+			0x90ffffff	0x90ffffff	0x90ffffff	0x90ffffff	
+			0xa5ffffff	0xa5ffffff	0xa5ffffff	0xa5ffffff	
+			0xb9ffffff	0xb9ffffff	0xb9ffffff	0xb9ffffff	
+			0xcbffffff	0xcbffffff	0xcbffffff	0xcbffffff	
+			0xdbffffff	0xdbffffff	0xdbffffff	0xdbffffff	
+			0xe8ffffff	0xe8ffffff	0xe8ffffff	0xe8ffffff	
+			0xf3ffffff	0xf3ffffff	0xf3ffffff	0xf3ffffff	
+			0xfaffffff	0xfaffffff	0xfaffffff	0xfaffffff	
+			0xfeffffff	0xfeffffff	0xfeffffff	0xfeffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xf3ffffff	0xf3ffffff	0xf3ffffff	0xf3ffffff	
+			0xe4ffffff	0xe4ffffff	0xe4ffffff	0xe4ffffff	
+			0xd1ffffff	0xd1ffffff	0xd1ffffff	0xd1ffffff	
+			0xbaffffff	0xbaffffff	0xbaffffff	0xbaffffff	
+			0xa0ffffff	0xa0ffffff	0xa0ffffff	0xa0ffffff	
+			0x85ffffff	0x85ffffff	0x85ffffff	0x85ffffff	
+			0x69ffffff	0x69ffffff	0x69ffffff	0x69ffffff	
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			0x30ffffff	0x30ffffff	0x30ffffff	0x30ffffff	
+			0x17ffffff	0x17ffffff	0x17ffffff	0x17ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName324
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/chest_2.tif"
+			vertices
+			{
+				136 -1076.28	392 -1076.28	136 -930.28	392 -930.28	
+				0.000976563 0	0.250977 0	0.000976563 0.570313	0.250977 0.570313	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim idle sp_pos_col
+		{
+			121 121
+			136 -1076.28	392 -1076.28	136 -930.28	392 -930.28	
+			136 -982.569	392 -982.569	136 -836.569	392 -836.569	
+			136 -887.445	392 -887.445	136 -741.445	392 -741.445	
+			136 -791.384	392 -791.384	136 -645.384	392 -645.384	
+			136 -694.865	392 -694.865	136 -548.865	392 -548.865	
+			136 -598.365	392 -598.365	136 -452.365	392 -452.365	
+			136 -502.362	392 -502.362	136 -356.362	392 -356.362	
+			136 -407.333	392 -407.333	136 -261.333	392 -261.333	
+			136 -313.755	392 -313.755	136 -167.755	392 -167.755	
+			136 -222.107	392 -222.107	136 -76.1072	392 -76.1072	
+			136 -132.866	392 -132.866	136 13.134	392 13.134	
+			136 -46.509	392 -46.509	136 99.491	392 99.491	
+			136 34.2146	392 34.2146	136 180.215	392 180.215	
+			136 4.69079	392 4.69079	136 150.691	392 150.691	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			136 1	392 1	136 147	392 147	
+			135.55 1	391.55 1	135.55 147	391.55 147	
+			120.323 1	376.323 1	120.323 147	376.323 147	
+			85.0369 1	341.037 1	85.0369 147	341.037 147	
+			31.8351 1	287.835 1	31.8351 147	287.835 147	
+			-37.1405 1	218.86 1	-37.1405 147	218.86 147	
+			-119.745 1	136.255 1	-119.745 147	136.255 147	
+			-213.836 1	42.1637 1	-213.836 147	42.1637 147	
+			-317.272 1	-61.2724 1	-317.272 147	-61.2724 147	
+			-427.908 1	-171.908 1	-427.908 147	-171.908 147	
+			-543.601 1	-287.601 1	-543.601 147	-287.601 147	
+			-662.21 1	-406.21 1	-662.21 147	-406.21 147	
+			-781.589 1	-525.589 1	-781.589 147	-525.589 147	
+			-899.597 1	-643.597 1	-899.597 147	-643.597 147	
+			-1014.09 1	-758.092 1	-1014.09 147	-758.092 147	
+			-1122.93 1	-866.927 1	-1122.93 147	-866.927 147	
+			-1223.96 1	-967.962 1	-1223.96 147	-967.962 147	
+			-1283.54 1	-1027.54 1	-1283.54 147	-1027.54 147	
+			-1283.54 1	-1027.54 1	-1283.54 147	-1027.54 147	
+			-1283.54 1	-1027.54 1	-1283.54 147	-1027.54 147	
+			-1283.54 1	-1027.54 1	-1283.54 147	-1027.54 147	
+			-1283.54 1	-1027.54 1	-1283.54 147	-1027.54 147	
+			-1283.54 1	-1027.54 1	-1283.54 147	-1027.54 147	
+			-1283.54 1	-1027.54 1	-1283.54 147	-1027.54 147	
+			-1283.54 1	-1027.54 1	-1283.54 147	-1027.54 147	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x11ffffff	0x11ffffff	0x11ffffff	0x11ffffff	
+			0x24ffffff	0x24ffffff	0x24ffffff	0x24ffffff	
+			0x39ffffff	0x39ffffff	0x39ffffff	0x39ffffff	
+			0x4effffff	0x4effffff	0x4effffff	0x4effffff	
+			0x64ffffff	0x64ffffff	0x64ffffff	0x64ffffff	
+			0x7affffff	0x7affffff	0x7affffff	0x7affffff	
+			0x90ffffff	0x90ffffff	0x90ffffff	0x90ffffff	
+			0xa5ffffff	0xa5ffffff	0xa5ffffff	0xa5ffffff	
+			0xb9ffffff	0xb9ffffff	0xb9ffffff	0xb9ffffff	
+			0xcbffffff	0xcbffffff	0xcbffffff	0xcbffffff	
+			0xdbffffff	0xdbffffff	0xdbffffff	0xdbffffff	
+			0xe8ffffff	0xe8ffffff	0xe8ffffff	0xe8ffffff	
+			0xf3ffffff	0xf3ffffff	0xf3ffffff	0xf3ffffff	
+			0xfaffffff	0xfaffffff	0xfaffffff	0xfaffffff	
+			0xfeffffff	0xfeffffff	0xfeffffff	0xfeffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xf3ffffff	0xf3ffffff	0xf3ffffff	0xf3ffffff	
+			0xe4ffffff	0xe4ffffff	0xe4ffffff	0xe4ffffff	
+			0xd1ffffff	0xd1ffffff	0xd1ffffff	0xd1ffffff	
+			0xbaffffff	0xbaffffff	0xbaffffff	0xbaffffff	
+			0xa0ffffff	0xa0ffffff	0xa0ffffff	0xa0ffffff	
+			0x85ffffff	0x85ffffff	0x85ffffff	0x85ffffff	
+			0x69ffffff	0x69ffffff	0x69ffffff	0x69ffffff	
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			0x30ffffff	0x30ffffff	0x30ffffff	0x30ffffff	
+			0x17ffffff	0x17ffffff	0x17ffffff	0x17ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite etext_info_sprite
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			blend color_add
+			vertices
+			{
+				269 217.232	269 217.232	269 217.232	269 217.232	
+				0 0	1 0	0 1	1 1	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		anim idle sp_pos_col
+		{
+			121 121
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			225.279 217.196	309.625 217.196	225.279 221.107	309.625 221.107	
+			98.2736 217.094	427.636 217.094	98.2736 232.366	427.636 232.366	
+			-70.8726 216.958	584.804 216.958	-70.8726 247.359	584.804 247.359	
+			-240.353 216.822	742.282 216.822	-240.353 262.383	742.282 262.383	
+			-368.361 216.719	861.225 216.719	-368.361 273.73	861.225 273.73	
+			-388.32 216.692	879.77 216.692	-388.32 276.711	879.77 276.711	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-93.8481 216.782	606.152 216.782	-93.8481 266.765	606.152 266.765	
+			-130.97 216.782	569.03 216.782	-130.97 266.765	569.03 266.765	
+			-489.859 216.784	213.487 216.784	-489.859 266.621	213.487 266.621	
+			-1087.64 216.793	-362.911 216.793	-1087.64 265.555	-362.911 265.555	
+			-1735.68 216.812	-978.331 216.812	-1735.68 263.504	-978.331 263.504	
+			-2243.65 216.839	-1452.48 216.839	-2243.65 260.531	-1452.48 260.531	
+			-2424.81 216.874	-1608.64 216.874	-2424.81 256.696	-1608.64 256.696	
+			-2428.06 216.915	-1605.63 216.915	-2428.06 252.087	-1605.63 252.087	
+			-2419.59 216.956	-1613.5 216.956	-2419.59 247.632	-1613.5 247.632	
+			-2400.92 216.991	-1630.84 216.991	-2400.92 243.707	-1630.84 243.707	
+			-2373.59 217.023	-1656.24 217.023	-2373.59 240.23	-1656.24 240.23	
+			-2339.1 217.051	-1688.28 217.051	-2339.1 237.125	-1688.28 237.125	
+			-2299 217.077	-1725.55 217.077	-2299 234.311	-1725.55 234.311	
+			-2254.81 217.1	-1766.61 217.1	-2254.81 231.709	-1766.61 231.709	
+			-2208.05 217.123	-1810.06 217.123	-2208.05 229.24	-1810.06 229.24	
+			-2160.25 217.145	-1854.47 217.145	-2160.25 226.825	-1854.47 226.825	
+			-2112.95 217.167	-1898.42 217.167	-2112.95 224.384	-1898.42 224.384	
+			-2067.65 217.19	-1940.51 217.19	-2067.65 221.84	-1940.51 221.84	
+			-2025.9 217.215	-1979.3 217.215	-2025.9 219.111	-1979.3 219.111	
+			-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	
+			-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	
+			-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	
+			-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	
+			-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	
+			-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	-2001.75 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			269 217.232	269 217.232	269 217.232	269 217.232	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x10101	0x10101	0x10101	0x10101	
+			0x10101	0x10101	0x10101	0x10101	
+			0x20202	0x20202	0x20202	0x20202	
+			0x20202	0x20202	0x20202	0x20202	
+			0x20202	0x20202	0x20202	0x20202	
+			0x20202	0x20202	0x20202	0x20202	
+			0x10101	0x10101	0x10101	0x10101	
+			0x10101	0x10101	0x10101	0x10101	
+			0x10101	0x10101	0x10101	0x10101	
+			0x10101	0x10101	0x10101	0x10101	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x5070707	0x5070707	0x5070707	0x5070707	
+			0x191f1f1f	0x191f1f1f	0x191f1f1f	0x191f1f1f	
+			0x39434343	0x39434343	0x39434343	0x39434343	
+			0x63707070	0x63707070	0x63707070	0x63707070	
+			0x96a3a3a3	0x96a3a3a3	0x96a3a3a3	0x96a3a3a3	
+			0xd0d9d9d9	0xd0d9d9d9	0xd0d9d9d9	0xd0d9d9d9	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xf8dddddd	0xf8dddddd	0xf8dddddd	0xf8dddddd	
+			0xd01b1b1b	0xd01b1b1b	0xd01b1b1b	0xd01b1b1b	
+			0x8f000000	0x8f000000	0x8f000000	0x8f000000	
+			0x49000000	0x49000000	0x49000000	0x49000000	
+			0x12000000	0x12000000	0x12000000	0x12000000	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite etext_name_sprite
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				269 186.583	269 186.583	269 186.583	269 186.583	
+				0 0	1 0	0 1	1 1	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		anim idle sp_pos_col
+		{
+			121 121
+			269 186.583	269 186.583	269 186.583	269 186.583	
+			269 188.553	269 188.553	269 188.553	269 188.553	
+			269 189.526	269 189.526	269 189.526	269 189.526	
+			269 189.718	269 189.718	269 189.718	269 189.718	
+			269 189.349	269 189.349	269 189.349	269 189.349	
+			269 188.636	269 188.636	269 188.636	269 188.636	
+			269 187.798	269 187.798	269 187.798	269 187.798	
+			269 187.054	269 187.054	269 187.054	269 187.054	
+			269 186.62	269 186.62	269 186.62	269 186.62	
+			269 186.583	269 186.583	269 186.583	269 186.583	
+			269 186.583	269 186.583	269 186.583	269 186.583	
+			256.001 186.263	281.078 186.263	256.001 187.062	281.078 187.062	
+			145.595 183.546	383.665 183.546	145.595 191.137	383.665 191.137	
+			-39.888 178.981	556.013 178.981	-39.888 197.983	556.013 197.983	
+			-254.669 173.695	755.584 173.695	-254.669 205.91	755.584 205.91	
+			-452.97 168.815	939.842 168.815	-452.97 213.229	939.842 213.229	
+			-589.013 165.468	1066.25 165.468	-589.013 218.25	1066.25 218.25	
+			-238.035 169.446	740.128 169.446	-238.035 212.284	740.128 212.284	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-93.8481 170.581	606.152 170.581	-93.8481 210.581	606.152 210.581	
+			-253.705 170.581	446.295 170.581	-253.705 210.581	446.295 210.581	
+			-664.456 170.581	35.5438 170.581	-664.456 210.581	35.5438 210.581	
+			-1176.89 170.581	-476.891 170.581	-1176.89 210.581	-476.891 210.581	
+			-1654.52 170.682	-929.357 170.682	-1654.52 210.43	-929.357 210.43	
+			-1958.06 171.05	-1162.79 171.05	-1958.06 209.877	-1162.79 209.877	
+			-2020.18 171.703	-1142.49 171.703	-2020.18 208.898	-1142.49 208.898	
+			-2052.06 172.655	-1112.87 172.655	-2052.06 207.47	-1112.87 207.47	
+			-2055.89 173.922	-1109.31 173.922	-2055.89 205.571	-1109.31 205.571	
+			-2025.25 175.406	-1137.77 175.406	-2025.25 203.345	-1137.77 203.345	
+			-1995.65 176.618	-1165.28 176.618	-1995.65 201.527	-1165.28 201.527	
+			-1971.28 177.52	-1187.93 177.52	-1971.28 200.174	-1187.93 200.174	
+			-1951.7 178.139	-1206.12 178.139	-1951.7 199.245	-1206.12 199.245	
+			-1936.47 178.501	-1220.27 178.501	-1936.47 198.702	-1220.27 198.702	
+			-1925.16 178.632	-1230.78 178.632	-1925.16 198.506	-1230.78 198.506	
+			-1917.32 178.557	-1238.07 178.557	-1917.32 198.618	-1238.07 198.618	
+			-1912.51 178.304	-1242.54 178.304	-1912.51 198.999	-1242.54 198.999	
+			-1910.29 177.896	-1244.59 177.896	-1910.29 199.61	-1244.59 199.61	
+			-1910.23 177.362	-1244.65 177.362	-1910.23 200.411	-1244.65 200.411	
+			-1911.88 176.726	-1243.12 176.726	-1911.88 201.364	-1243.12 201.364	
+			-1914.8 176.015	-1240.41 176.015	-1914.8 202.431	-1240.41 202.431	
+			-1918.55 175.255	-1236.92 175.255	-1918.55 203.571	-1236.92 203.571	
+			-1922.7 174.472	-1233.06 174.472	-1922.7 204.745	-1233.06 204.745	
+			-1926.8 173.691	-1229.25 173.691	-1926.8 205.916	-1229.25 205.916	
+			-1930.41 172.94	-1225.9 172.94	-1930.41 207.044	-1225.9 207.044	
+			-1933.1 172.243	-1223.4 172.243	-1933.1 208.089	-1223.4 208.089	
+			-1934.42 171.626	-1222.17 171.626	-1934.42 209.013	-1222.17 209.013	
+			-1933.94 171.117	-1222.62 171.117	-1933.94 209.777	-1222.62 209.777	
+			-1931.2 170.74	-1225.16 170.74	-1931.2 210.342	-1225.16 210.342	
+			-1565.22 187.421	-1565.22 187.421	-1565.22 187.421	-1565.22 187.421	
+			-1565.22 189.007	-1565.22 189.007	-1565.22 189.007	-1565.22 189.007	
+			-1565.22 189.674	-1565.22 189.674	-1565.22 189.674	-1565.22 189.674	
+			-1565.22 189.639	-1565.22 189.639	-1565.22 189.639	-1565.22 189.639	
+			-1565.22 189.121	-1565.22 189.121	-1565.22 189.121	-1565.22 189.121	
+			-1565.22 188.338	-1565.22 188.338	-1565.22 188.338	-1565.22 188.338	
+			269 187.508	269 187.508	269 187.508	269 187.508	
+			269 186.85	269 186.85	269 186.85	269 186.85	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x30303	0x30303	0x30303	0x30303	
+			0x1171717	0x1171717	0x1171717	0x1171717	
+			0xc343434	0xc343434	0xc343434	0xc343434	
+			0x22585858	0x22585858	0x22585858	0x22585858	
+			0x42838383	0x42838383	0x42838383	0x42838383	
+			0x6cb4b4b4	0x6cb4b4b4	0x6cb4b4b4	0x6cb4b4b4	
+			0x9eeaeaea	0x9eeaeaea	0x9eeaeaea	0x9eeaeaea	
+			0xd7ffffff	0xd7ffffff	0xd7ffffff	0xd7ffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcfcfcfc	0xfcfcfcfc	0xfcfcfcfc	0xfcfcfcfc	
+			0xfccacaca	0xfccacaca	0xfccacaca	0xfccacaca	
+			0xfc787878	0xfc787878	0xfc787878	0xfc787878	
+			0xfc292929	0xfc292929	0xfc292929	0xfc292929	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfa000000	0xfa000000	0xfa000000	0xfa000000	
+			0xe2000000	0xe2000000	0xe2000000	0xe2000000	
+			0xb6000000	0xb6000000	0xb6000000	0xb6000000	
+			0x7b000000	0x7b000000	0x7b000000	0x7b000000	
+			0x3a000000	0x3a000000	0x3a000000	0x3a000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+}
+
