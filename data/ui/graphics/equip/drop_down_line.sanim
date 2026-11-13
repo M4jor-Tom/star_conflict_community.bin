@@ -1,0 +1,196 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/drop_down.ma"
+//by sergey_mitryaev
+//at Tue Jun 25 18:40:43 2013
+
+
+animations 4
+{
+	anim dir
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim subdir
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim dir_select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim subdir_select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 0.0159584
+			opacity 255
+			color 0xff88b5ff
+			size 296 20
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on dir
+		anim subdir obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim dir_select obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim subdir_select obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object text
+	{
+		defaults
+		{
+			pos 26.4287 -1.69929
+			opacity 255
+			color 0xffcccccc
+			size 175 20
+			effect ""
+			alignment "LM"
+			sampleText "100000"
+			font "VerySmall"
+		}
+		visible_on dir
+		anim subdir obj_posc
+		{
+			1 
+			40.5688 -1.69929
+		}
+		anim dir_select obj_posc_colc
+		{
+			1 1
+			25.4287 -1.69929
+			0xffffffff
+		}
+		anim subdir_select obj_posc_colc
+		{
+			1 1
+			40.5688 -1.69929
+			0xffffffff
+		}
+	}
+	object prod_icon
+	{
+		defaults
+		{
+			pos 4.48734 1.59048
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\equip\prod_sml_icon"
+			alignment "LT"
+		}
+		visible_on dir
+		anim subdir obj_posc
+		{
+			1 
+			20.7041 1.59048
+		}
+		visible_on dir_select
+		anim subdir_select obj_posc
+		{
+			1 
+			20.7041 1.59048
+		}
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\equip\drop_down_line_over"
+			alignment "LT"
+		}
+		visible_on dir_select
+		visible_on subdir_select
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp5
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				2 -0	8 -0	288 -0	294 -0	2 6	8 6	288 6	294 6	2 12.9241	8 12.9241	288 12.9241	294 12.9241	2 18.9241	8 18.9241	288 18.9241	294 18.9241	
+				0.231723 0.114935	0.237582 0.114935	0.232318 0.115635	0.238178 0.115635	0.231723 0.120794	0.237582 0.120794	0.232318 0.121494	0.238178 0.121494	0.231723 0.125782	0.237582 0.125782	0.232318 0.126482	0.238178 0.126482	0.231723 0.131642	0.237582 0.131642	0.232318 0.132342	0.238178 0.132342	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on dir
+		visible_on subdir
+		anim dir_select sp_colc
+		{
+			1
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+		anim subdir_select sp_colc
+		{
+			1
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+	}
+	sprite sp59
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				2 -0	8 -0	288 -0	294 -0	2 6	8 6	288 6	294 6	2 12.9241	8 12.9241	288 12.9241	294 12.9241	2 18.9241	8 18.9241	288 18.9241	294 18.9241	
+				0.231734 0.131794	0.237594 0.131794	0.233492 0.132424	0.239351 0.132424	0.231734 0.125934	0.237594 0.125934	0.233492 0.126564	0.239351 0.126564	0.231734 0.120946	0.237594 0.120946	0.233492 0.121576	0.239351 0.121576	0.231734 0.115087	0.237594 0.115087	0.233492 0.115717	0.239351 0.115717	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on dir
+		visible_on subdir
+		anim dir_select sp_colc
+		{
+			1
+			0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	
+		}
+		anim subdir_select sp_colc
+		{
+			1
+			0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	0xcc5d5d5d	
+		}
+	}
+}
+
