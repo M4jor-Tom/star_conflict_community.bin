@@ -1,0 +1,286 @@
+﻿source_file  Y:/art/source/ui/graphics/equip/equip.ma
+//by sergey_mitryaev
+//at Wed Aug 22 18:33:10 2012
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim blue
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 17
+
+objects 14
+{
+	object self
+	{
+		defaults
+		{
+			pos 2.63569 -0
+			opacity 255
+			color 0xffffffff
+			size 710 80
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 6.84318 7.38896
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object fraction
+	{
+		defaults
+		{
+			pos 76.0043 13.7486
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_fraction"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object product_name
+	{
+		defaults
+		{
+			pos 142.595 13.7486
+			opacity 255
+			color 0xffffffff
+			size 400 21
+			effect ""
+			alignment "LM"
+			sampleText "Адаптивный  излучаетель щита  134 иавр48"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object description
+	{
+		defaults
+		{
+			pos 74.6535 30.0026
+			opacity 255
+			color 0xff88b5ff
+			size 480 30
+			effect ""
+			alignment "LM"
+			sampleText "Новейшая разработка |увеличивает щит"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object info_slot_1
+	{
+		defaults
+		{
+			pos 123.896 62.7848
+			opacity 255
+			color 0xffffffff
+			size 120 16
+			effect "ui\graphics\shop\prod_info_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object info_slot_2
+	{
+		defaults
+		{
+			pos 244.381 62.7848
+			opacity 255
+			color 0xffffffff
+			size 120 16
+			effect "ui\graphics\shop\prod_info_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object info_slot_3
+	{
+		defaults
+		{
+			pos 363.749 62.7848
+			opacity 255
+			color 0xffffffff
+			size 120 16
+			effect "ui\graphics\shop\prod_info_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object info_slot_4
+	{
+		defaults
+		{
+			pos 484.492 62.7848
+			opacity 255
+			color 0xffffffff
+			size 120 16
+			effect "ui\graphics\shop\prod_info_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object type
+	{
+		defaults
+		{
+			pos 556.314 5.61198
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect "ui\graphics\shop\prod_type"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object noskills
+	{
+		defaults
+		{
+			pos 120.791 13.7486
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_icon_noskills"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object on_ship
+	{
+		defaults
+		{
+			pos 76.1145 -1.31215
+			opacity 255
+			color 0xff88b5ff
+			size 400 21
+			effect ""
+			alignment "LM"
+			sampleText "На корабле"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object fraction2
+	{
+		defaults
+		{
+			pos 98.198 13.7366
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_fraction"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blue
+	}
+	object info_slot_0
+	{
+		defaults
+		{
+			pos 3.82349 63.163
+			opacity 255
+			color 0xffffffff
+			size 120 16
+			effect "ui\graphics\shop\damage_info"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blue
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp2eq
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				6.33916 6.08905	12.3392 6.08905	711.094 6.08905	717.094 6.08905	6.33916 12.089	12.3392 12.089	711.094 12.089	717.094 12.089	6.33916 80.4197	12.3392 80.4197	711.094 80.4197	717.094 80.4197	6.33916 86.4197	12.3392 86.4197	711.094 86.4197	717.094 86.4197	
+				0.325128 0.0544674	0.330987 0.0544674	0.370124 0.0544674	0.375984 0.0544674	0.325128 0.0603268	0.330987 0.0603268	0.370124 0.0603268	0.375984 0.0603268	0.325128 0.0995255	0.330987 0.0995255	0.370124 0.0995255	0.375984 0.0995255	0.325128 0.105385	0.330987 0.105385	0.370124 0.105385	0.375984 0.105385	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on blue
+	}
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	704.755 -0	710.755 -0	0 6	6 6	704.755 6	710.755 6	0 74.3307	6 74.3307	704.755 74.3307	710.755 74.3307	0 80.3307	6 80.3307	704.755 80.3307	710.755 80.3307	
+				0.325128 0.000942171	0.330987 0.000942171	0.370124 0.000942171	0.375984 0.000942171	0.325128 0.00680155	0.330987 0.00680155	0.370124 0.00680155	0.375984 0.00680155	0.325128 0.0460002	0.330987 0.0460002	0.370124 0.0460002	0.375984 0.0460002	0.325128 0.0518596	0.330987 0.0518596	0.370124 0.0518596	0.375984 0.0518596	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on blue
+	}
+	sprite sp23
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	704.755 -0	710.755 -0	0 6	6 6	704.755 6	710.755 6	0 74.3307	6 74.3307	704.755 74.3307	710.755 74.3307	0 80.3307	6 80.3307	704.755 80.3307	710.755 80.3307	
+				0.2236 0.00306064	0.22946 0.00306064	0.266603 0.00306064	0.272463 0.00306064	0.2236 0.00892001	0.22946 0.00892001	0.266603 0.00892001	0.272463 0.00892001	0.2236 0.0451279	0.22946 0.0451279	0.266603 0.0451279	0.272463 0.0451279	0.2236 0.0509873	0.22946 0.0509873	0.266603 0.0509873	0.272463 0.0509873	
+				0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on blue
+	}
+}
+
