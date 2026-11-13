@@ -1,0 +1,215 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/dreadnought.ma"
+//by sergey_mitryaev
+//at Wed Mar 18 17:16:40 2015
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 0.7
+	}
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim blink
+	{
+		mode looped
+		cycle_time 0.4
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 28 50
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on friend
+		visible_on enemy
+		visible_on blink
+	}
+	object vital_progr
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffb3b3b3
+			size 28 28
+			effect "ui\graphics\hud\dread\vital_progr"
+			alignment "LT"
+		}
+		visible_on idle
+		anim friend obj_colc
+		{
+			1
+			0xff00ddff
+		}
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim blink obj_col
+		{
+			8
+			0xffffffff
+			0xffd6f9ff
+			0xffa7f3ff
+			0xff76ecff
+			0xff49e6ff
+			0xff23e1ff
+			0xff09deff
+			0xff00ddff
+		}
+	}
+	object vital_ico
+	{
+		defaults
+		{
+			pos 4 4
+			opacity 255
+			color 0xffb3b3b3
+			size 20 20
+			effect "ui\graphics\hud\ratio\gmp_icon"
+			alignment "LT"
+		}
+		visible_on idle
+		anim friend obj_colc
+		{
+			1
+			0xff00ddff
+		}
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim blink obj_col
+		{
+			8
+			0xffffffff
+			0xffd6f9ff
+			0xffa7f3ff
+			0xff77ecff
+			0xff4ae6ff
+			0xff24e1ff
+			0xff0adeff
+			0xff01ddff
+		}
+	}
+	object timer
+	{
+		defaults
+		{
+			pos -11 26
+			opacity 255
+			color 0xffb3b3b3
+			size 50 20
+			effect ""
+			alignment "CM"
+			sampleText "20"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim friend obj_colc
+		{
+			1
+			0xff00ddff
+		}
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim blink obj_colc
+		{
+			1
+			0xffff2800
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite qw6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				13 -6	15 -6	13 -0	15 -0	
+				0.425781 0.314453	0.427734 0.314453	0.425781 0.320313	0.427734 0.320313	
+				0xffb3b3b3	0xffb3b3b3	0xffb3b3b3	0xffb3b3b3	
+			}
+		}
+		visible_on idle
+		anim friend sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+		anim enemy sp_colc
+		{
+			1
+			0xffff2800	0xffff2800	0xffff2800	0xffff2800	
+		}
+		anim blink sp_col
+		{
+			8
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffdafaff	0xffdafaff	0xffdafaff	0xffdafaff	
+			0xffb6f5ff	0xffb6f5ff	0xffb6f5ff	0xffb6f5ff	
+			0xff91f0ff	0xff91f0ff	0xff91f0ff	0xff91f0ff	
+			0xff6debff	0xff6debff	0xff6debff	0xff6debff	
+			0xff48e6ff	0xff48e6ff	0xff48e6ff	0xff48e6ff	
+			0xff24e1ff	0xff24e1ff	0xff24e1ff	0xff24e1ff	
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+	}
+	sprite qw21
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	28 -0	0 28	28 28	
+				0.413086 0.321289	0.44043 0.321289	0.413086 0.348633	0.44043 0.348633	
+				0xffb3b3b3	0xffb3b3b3	0xffb3b3b3	0xffb3b3b3	
+			}
+		}
+		visible_on idle
+		visible_on friend
+		visible_on enemy
+		visible_on blink
+	}
+}
+
