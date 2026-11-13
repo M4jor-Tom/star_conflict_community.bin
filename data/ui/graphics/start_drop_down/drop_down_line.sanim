@@ -1,0 +1,151 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/drop_down.ma"
+//by sergey_mitryaev
+//at Wed Dec 26 10:30:35 2012
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim premium
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim premium_select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object text
+	{
+		defaults
+		{
+			pos 3 -1.13839
+			opacity 255
+			color 0xffff9100
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "F00000"
+			font "Tiny"
+		}
+		visible_on idle
+		anim select obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim premium obj_colc
+		{
+			1
+			0xffffff03
+		}
+		anim premium_select obj_colc
+		{
+			1
+			0xffffff03
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 0.0159584
+			opacity 255
+			color 0xff88b5ff
+			size 220 20
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim select obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim premium obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim premium_select obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 186 -1.13839
+			opacity 255
+			color 0xffff9100
+			size 30 20
+			effect ""
+			alignment "RM"
+			sampleText "F00000"
+			font "Tiny"
+		}
+		visible_on idle
+		anim select obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim premium obj_colc
+		{
+			1
+			0xffffff03
+		}
+		anim premium_select obj_colc
+		{
+			1
+			0xffffff03
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dfeee826
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/login_screen.tif"
+			vertices
+			{
+				2 1.73032	220 1.73032	2 18	220 18	
+				0.307207 0.487512	0.307925 0.487512	0.307207 0.540246	0.307925 0.540246	
+				0x71ff9100	0x71ff9100	0x71ff9100	0x71ff9100	
+			}
+		}
+		visible_on select
+		anim premium_select sp_colc
+		{
+			1
+			0x71ee7600	0x71ee7600	0x71ee7600	0x71ee7600	
+		}
+	}
+}
+
