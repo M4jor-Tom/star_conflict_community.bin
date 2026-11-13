@@ -1,0 +1,144 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Mon Jun 03 12:34:40 2019
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 256 76
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object title
+	{
+		defaults
+		{
+			pos 0 18
+			opacity 153
+			color 0xff5d676e
+			size 256 30
+			effect ""
+			alignment "CM"
+			sampleText "ЭТАП 3"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		anim select obj_opc_colc
+		{
+			1 1
+			255
+			0xffffffff
+		}
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 256 76
+			effect "ui\graphics\battle_pass\bbookmark_btn_over"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite we56
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				12 59	245 59	12 71	245 71	
+				0.742188 0.388672	0.78125 0.388672	0.742188 0.412109	0.78125 0.412109	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we57
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-8 59	12 59	-8 71	12 71	
+				0.710938 0.388672	0.75 0.388672	0.710938 0.412109	0.75 0.412109	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we58
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				245 59	265 59	245 71	265 71	
+				0.773438 0.388672	0.8125 0.388672	0.773438 0.412109	0.8125 0.412109	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
