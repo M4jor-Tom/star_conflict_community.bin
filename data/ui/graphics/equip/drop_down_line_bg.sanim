@@ -1,0 +1,55 @@
+﻿source_file  Y:/art/source/ui/graphics/equip/drop_down.ma
+//by sega
+//at Mon Nov 14 12:50:22 2011
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dfeee826
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/login_screen.tif"
+			vertices
+			{
+				0.0395508 0.0252991	210 0.0252991	0.0395508 20.016	210 20.016	
+				0.284789 0.487512	0.285507 0.487512	0.284789 0.540246	0.285507 0.540246	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
