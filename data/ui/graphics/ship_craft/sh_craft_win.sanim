@@ -1,0 +1,421 @@
+﻿source_file "Y:/art/source/ui/graphics/ship_craft/ship_craft.ma"
+//by sergey_mitryaev
+//at Tue Dec 25 16:37:07 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 27
+
+objects 20
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 330 630
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6.06577 1
+			opacity 255
+			color 0xffffffff
+			size 250 21
+			effect ""
+			alignment "LT"
+			sampleText "НАзвание "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 306 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 29 544
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\ship_craft\sh_passive_2_icon_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object special_modul
+	{
+		defaults
+		{
+			pos 78.3942 57
+			opacity 255
+			color 0xffffffff
+			size 170 50
+			effect "ui\graphics\ship_craft\sh_special_modul_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object passive_modu
+	{
+		defaults
+		{
+			pos 30 241
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\ship_craft\sh_passive_modul_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title4
+	{
+		defaults
+		{
+			pos 18 27
+			opacity 255
+			color 0xffffffff
+			size 250 20
+			effect ""
+			alignment "LT"
+			sampleText "НАзвание "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_x1
+	{
+		defaults
+		{
+			pos 285 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_help"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title5
+	{
+		defaults
+		{
+			pos 18 213
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LT"
+			sampleText "Склад"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title6
+	{
+		defaults
+		{
+			pos 119 213
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LT"
+			sampleText "Выберите слот"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title7
+	{
+		defaults
+		{
+			pos 212 213
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RT"
+			sampleText "7/9"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 384 210
+			opacity 255
+			color 0xffababab
+			size 100 20
+			effect ""
+			alignment "RT"
+			sampleText "color"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 199 576
+			opacity 255
+			color 0xffffffff
+			size 120 24
+			effect "ui\graphics\shop\buy_btn14"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 86 564
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "999999999"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 107 299
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title11
+	{
+		defaults
+		{
+			pos 18 121
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LT"
+			sampleText "Склад"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title12
+	{
+		defaults
+		{
+			pos 146 121
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LT"
+			sampleText "Склад"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object special_modul1
+	{
+		defaults
+		{
+			pos 31 155
+			opacity 255
+			color 0xffffffff
+			size 112 36
+			effect "ui\graphics\ship_craft\sh_special_modul_2_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object special_modul2
+	{
+		defaults
+		{
+			pos 182 155
+			opacity 255
+			color 0xffffffff
+			size 112 36
+			effect "ui\graphics\ship_craft\sh_special_modul_2_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_dlc
+	{
+		defaults
+		{
+			pos 199 543
+			opacity 255
+			color 0xffffffff
+			size 120 24
+			effect "ui\graphics\shop\btn_2_dlc"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 7
+{
+	total_vertices 100
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4.125	4 -4.125	322 -4.125	330 -4.125	-4 22.125	4 22.125	322 22.125	330 22.125	-4 605	4 605	322 605	330 605	-4 613	4 613	322 613	330 613	
+				0.0585938 0.695313	0.0664061 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664061 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723641	0.0664061 0.723641	0.0742188 0.723641	0.0820313 0.723641	0.0585938 0.731445	0.0664061 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 536.12	326 536.12	0 537.88	326 537.88	
+				0.0566406 0.140625	0.078125 0.140625	0.0566406 0.142578	0.078125 0.142578	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				14.75 48	20.75 48	304.375 48	310.375 48	14.75 54	20.75 54	304.375 54	310.375 54	14.75 110	20.75 110	304.375 110	310.375 110	14.75 116	20.75 116	304.375 116	310.375 116	
+				0.00195599 0.160156	0.00781536 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195599 0.166016	0.00781536 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195599 0.178711	0.00781536 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195599 0.18457	0.00781536 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp57
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				16.5 232	22.5 232	87.5 232	93.5 232	16.5 238	22.5 238	87.5 238	93.5 238	16.5 524	22.5 524	87.5 524	93.5 524	16.5 530	22.5 530	87.5 530	93.5 530	
+				0.00195599 0.160156	0.00781536 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195599 0.166016	0.00781536 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195599 0.178711	0.00781536 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195599 0.18457	0.00781536 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp58
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				117.625 232	123.625 232	304.375 232	310.375 232	117.625 238	123.625 238	304.375 238	310.375 238	117.625 524	123.625 524	304.375 524	310.375 524	117.625 530	123.625 530	304.375 530	310.375 530	
+				0.00195599 0.160156	0.00781536 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195599 0.166016	0.00781536 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195599 0.178711	0.00781536 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195599 0.18457	0.00781536 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp63
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				14.75 140.5	20.75 140.5	151.563 140.5	157.563 140.5	14.75 146.5	20.75 146.5	151.563 146.5	157.563 146.5	14.75 201	20.75 201	151.563 201	157.563 201	14.75 207	20.75 207	151.563 207	157.563 207	
+				0.00195599 0.160156	0.00781536 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195599 0.166016	0.00781536 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195599 0.178711	0.00781536 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195599 0.18457	0.00781536 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp64
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				162.438 140.5	168.438 140.5	304 140.5	310 140.5	162.438 146.5	168.438 146.5	304 146.5	310 146.5	162.438 201	168.438 201	304 201	310 201	162.438 207	168.438 207	304 207	310 207	
+				0.00195599 0.160156	0.00781536 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195599 0.166016	0.00781536 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195599 0.178711	0.00781536 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195599 0.18457	0.00781536 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+}
+
