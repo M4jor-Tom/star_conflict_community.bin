@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle_2.ma"
+//by sergey_mitryaev
+//at Mon Mar 28 17:42:08 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 316 112
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object module_1
+	{
+		defaults
+		{
+			pos 12 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object module_2
+	{
+		defaults
+		{
+			pos 73 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object module_3
+	{
+		defaults
+		{
+			pos 12 60
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
