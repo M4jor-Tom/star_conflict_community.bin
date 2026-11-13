@@ -1,0 +1,139 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by Sergey
+//at Tue May 17 14:31:13 2016
+
+base_res 1280 720
+
+animations 6
+{
+	anim armor
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim armor_damage
+	{
+		mode once
+		cycle_time 0.3
+	}
+	anim shield
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim shield_damage
+	{
+		mode once
+		cycle_time 0.3
+	}
+	anim arm_white
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim arm_white_damage
+	{
+		mode once
+		cycle_time 0.3
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object armor_progress
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff7fb2ff
+			size 24 180
+			effect "ui\graphics\hud\hud_3\armor_progress"
+			alignment "LT"
+		}
+		visible_on armor
+		anim armor_damage obj_col
+		{
+			6
+			0xff7fb2ff
+			0xff7fc4ff
+			0xff7ed8ff
+			0xff7eecff
+			0xff7ef8ff
+			0xff7dfaff
+		}
+		anim shield obj_colc
+		{
+			1
+			0xffff9100
+		}
+		anim shield_damage obj_col
+		{
+			5
+			0xffff9100
+			0xffff99ff
+			0xffffb3ff
+			0xffffd21d
+			0xffffed4c
+		}
+		anim arm_white obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim arm_white_damage obj_col
+		{
+			4
+			0xffb4b4b4
+			0xffb2aeb2
+			0xffccbfcc
+			0xffffffff
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 180
+			effect ""
+			alignment "LT"
+		}
+		visible_on armor
+		anim armor_damage obj_col
+		{
+			6
+			0xffffffff
+			0xfff6f9ff
+			0xffe0ecff
+			0xffc3d9ff
+			0xffa4c6ff
+			0xff88b5ff
+		}
+		anim shield obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+		anim shield_damage obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+		anim arm_white obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+		anim arm_white_damage obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+	}
+}
+
