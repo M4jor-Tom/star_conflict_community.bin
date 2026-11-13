@@ -1,0 +1,68 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by sergey_mitryaev
+//at Wed Oct 23 13:56:15 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 0.2
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite friend_damage
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	34 -0	0 34	34 34	
+				0.138739 0.28125	0.171808 0.28125	0.138739 0.314453	0.171808 0.314453	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			3
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x33343434	0x33343434	0x33343434	0x33343434	
+			0x1000000	0x1000000	0x1000000	0x1000000	
+		}
+	}
+	sprite friend_damage5
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	34 -0	0 34	34 34	
+				0.104492 0.28125	0.137695 0.28125	0.104492 0.314453	0.137695 0.314453	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			3
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x33313131	0x33313131	0x33313131	0x33313131	
+			0x1000000	0x1000000	0x1000000	0x1000000	
+		}
+	}
+}
+
