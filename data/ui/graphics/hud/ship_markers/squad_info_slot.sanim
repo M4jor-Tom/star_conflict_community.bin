@@ -1,0 +1,113 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Thu Dec 12 15:16:27 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object name
+	{
+		defaults
+		{
+			pos -0.31813 0.93773
+			opacity 255
+			color 0xffcfefff
+			size 100 11
+			effect ""
+			alignment "LM"
+			sampleText "DJ.DSJamper"
+			font "MonoTiny"
+		}
+		visible_on idle
+	}
+	object arm
+	{
+		defaults
+		{
+			pos 17 13.9377
+			opacity 255
+			color 0xffffffff
+			size 100 11
+			effect "ui\graphics\hud\ship_markers\ship_progress_arm"
+			alignment "CM"
+			font "MonoTiny"
+		}
+		visible_on idle
+	}
+	object shild
+	{
+		defaults
+		{
+			pos 17 23
+			opacity 255
+			color 0xffffffff
+			size 100 11
+			effect "ui\graphics\hud\ship_markers\ship_progress_shild"
+			alignment "CM"
+			font "MonoTiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos -0.31813 -0.0622697
+			opacity 255
+			color 0xffffffff
+			size 120 40
+			effect ""
+			alignment "CM"
+			font "MonoTiny"
+		}
+		visible_on idle
+	}
+	object role
+	{
+		defaults
+		{
+			pos 0 13
+			opacity 255
+			color 0xffffffff
+			size 100 11
+			effect "ui\graphics\hud\sship_type_navigator"
+			alignment "CM"
+			font "MonoTiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sd
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-5 -5	10.0658 -5	77.9671 -5	92.0329 -5	-5 10.9043	10.0658 10.9043	77.9671 10.9043	92.0329 10.9043	-5 22.0957	10.0658 22.0957	77.9671 22.0957	92.0329 22.0957	-5 35	10.0658 35	77.9671 35	92.0329 35	
+				0.325121 0.0546135	0.332031 0.0546135	0.369141 0.0546135	0.376051 0.0546135	0.325121 0.0615234	0.332031 0.0615234	0.369141 0.0615234	0.376051 0.0615234	0.325121 0.0986328	0.332031 0.0986328	0.369141 0.0986328	0.376051 0.0986328	0.325121 0.105543	0.332031 0.105543	0.369141 0.105543	0.376051 0.105543	
+				0xa0ffffff	0xa0ffffff	0xa0ffffff	0xa0ffffff	0xa0ffffff	0xa0ffffff	0xa0ffffff	0xa0ffffff	0x54ffffff	0x54ffffff	0x54ffffff	0x54ffffff	0x54ffffff	0x54ffffff	0x54ffffff	0x54ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
