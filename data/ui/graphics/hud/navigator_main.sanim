@@ -1,0 +1,165 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Mon Apr 07 11:07:14 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 11
+{
+	object navigator_bg
+	{
+		defaults
+		{
+			pos 124 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\navigator_bg"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object navigator_bottom_y
+	{
+		defaults
+		{
+			pos 219.111 89.5
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object navigator_plane
+	{
+		defaults
+		{
+			pos 124 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object navigator_navigator_top_y
+	{
+		defaults
+		{
+			pos 218.611 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object navigator_top_sprite
+	{
+		defaults
+		{
+			pos 124 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 310 200
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_1
+	{
+		defaults
+		{
+			pos 124 -0
+			opacity 255
+			color 0xffffffff
+			size 10 90
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_2
+	{
+		defaults
+		{
+			pos 124 -0
+			opacity 255
+			color 0xffffffff
+			size 10 35
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object center
+	{
+		defaults
+		{
+			pos 218.611 90
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object minimap_bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 310 180
+			effect "ui\graphics\hud\navi_minimap_bg"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 247 180.133
+			opacity 255
+			color 0xffc6ddff
+			size 50 20
+			effect ""
+			alignment "RM"
+			sampleText "[M]"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
