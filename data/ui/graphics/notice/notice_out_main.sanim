@@ -1,0 +1,35 @@
+﻿source_file  Y:/art/source/ui/graphics/notice/notice.ma
+//by sergey_mitryaev
+//at Wed Aug 15 13:36:22 2012
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object notice_popup
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 876.08 41.4123
+			opacity 255
+			color 0xffffffff
+			size 387 580
+			effect "ui\graphics\notice\notice_popup_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
