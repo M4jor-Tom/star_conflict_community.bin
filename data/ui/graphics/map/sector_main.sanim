@@ -1,0 +1,283 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Mon Dec 28 13:52:45 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 18
+
+objects 18
+{
+	object center
+	{
+		defaults
+		{
+			pos 24 25
+			opacity 153
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 56
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object title_4
+	{
+		defaults
+		{
+			pos -24 45
+			opacity 255
+			color 0xffababab
+			size 100 50
+			effect ""
+			alignment "CT"
+			sampleText "Sector 4"
+			font "Tiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object fraction_ico_1
+	{
+		defaults
+		{
+			pos 4 8
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\ship_fraction_ico"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object fraction_ico_2
+	{
+		defaults
+		{
+			pos 4 8
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\ship_fraction_ico"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object exclamatory
+	{
+		defaults
+		{
+			pos 13 -22
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\map\sector_exclamatory"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bg_1
+	{
+		defaults
+		{
+			pos 24 25
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_bg_1"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bg_2
+	{
+		defaults
+		{
+			pos 24 25
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_bg_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object marker
+	{
+		defaults
+		{
+			pos 24 25
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_sector_marker"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object color_title_1
+	{
+		defaults
+		{
+			pos -24 69
+			opacity 153
+			color 0xffffdeb3
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "Color Sector 4"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object color_title_2
+	{
+		defaults
+		{
+			pos -24 92
+			opacity 255
+			color 0xff737373
+			size 100 50
+			effect ""
+			alignment "CM"
+			sampleText "Color Sector 4"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_8
+	{
+		defaults
+		{
+			pos -14 33
+			opacity 255
+			color 0xffffffff
+			size 80 30
+			effect ""
+			alignment "CT"
+			sampleText "Sector 4|dfv sg sg "
+			font "VeryTiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object color_title_3
+	{
+		defaults
+		{
+			pos -24 115
+			opacity 255
+			color 0xff737373
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "Color Sector 4"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object rang
+	{
+		defaults
+		{
+			pos -92 15
+			opacity 255
+			color 0xffff0000
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "15"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object lock
+	{
+		defaults
+		{
+			pos 17 14
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree\ship_tr_lock"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object clan_ico_2
+	{
+		defaults
+		{
+			pos 8 -18
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\map\map_clan_ico_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object lock4
+	{
+		defaults
+		{
+			pos 19 7
+			opacity 255
+			color 0xffffffff
+			size 10 12
+			effect "ui\graphics\map\lock"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object dread_ico2
+	{
+		defaults
+		{
+			pos 2 -18
+			opacity 255
+			color 0xffffffff
+			size 44 18
+			effect "ui\graphics\map\dread_ico"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+}
+
