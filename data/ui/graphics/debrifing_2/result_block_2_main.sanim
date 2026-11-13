@@ -1,0 +1,102 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing_2.ma"
+//by sergey_mitryaev
+//at Tue Sep 03 10:56:03 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 560 110
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos -0.128829 -0
+			opacity 255
+			color 0xffffffff
+			size 540 26
+			effect "ui\graphics\debrifing_2\result_block_2_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos -0.128829 25
+			opacity 255
+			color 0xffffffff
+			size 540 26
+			effect "ui\graphics\debrifing_2\result_block_2_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos -0.128829 50
+			opacity 255
+			color 0xffffffff
+			size 540 26
+			effect "ui\graphics\debrifing_2\result_block_2_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_4
+	{
+		defaults
+		{
+			pos -0.128829 75
+			opacity 255
+			color 0xffffffff
+			size 540 26
+			effect "ui\graphics\debrifing_2\result_block_2_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 543 -0
+			opacity 255
+			color 0xffffffff
+			size 16 101
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
