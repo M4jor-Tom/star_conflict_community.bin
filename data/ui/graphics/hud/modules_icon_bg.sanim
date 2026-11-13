@@ -1,0 +1,105 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud.ma
+//by sergey_mitryaev
+//at Thu Jul 12 18:04:28 2012
+
+
+animations 7
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim _
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim __
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim empty
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim activity_on
+	{
+		mode looped
+		cycle_time 0.8
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	50 -0	0 50	50 50	
+				0.00192983 0.0634366	0.050758 0.0634366	0.00192983 0.112265	0.050758 0.112265	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on active
+		visible_on _
+		visible_on __
+		anim empty sp_colc
+		{
+			1
+			0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	
+		}
+		visible_on activity_on
+	}
+	sprite select
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	50 -0	0 50	50 50	
+				0.122179 0.00199378	0.171007 0.00199378	0.122179 0.0508219	0.171007 0.0508219	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on select
+		visible_on __
+		anim activity_on sp_col
+		{
+			5
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xa5a5a5a5	0xa5a5a5a5	0xa5a5a5a5	0xa5a5a5a5	
+			0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	
+			0x8f8f8f8f	0x8f8f8f8f	0x8f8f8f8f	0x8f8f8f8f	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
