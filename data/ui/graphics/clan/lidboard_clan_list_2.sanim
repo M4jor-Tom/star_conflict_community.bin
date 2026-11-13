@@ -1,0 +1,265 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue May 13 17:46:03 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 17
+
+objects 16
+{
+	object line_9
+	{
+		defaults
+		{
+			pos -2 337.12
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_10
+	{
+		defaults
+		{
+			pos -2 376.24
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos -2 24.16
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos -2 63.28
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos -2 102.4
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_4
+	{
+		defaults
+		{
+			pos -2 141.52
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_5
+	{
+		defaults
+		{
+			pos -2 180.64
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_6
+	{
+		defaults
+		{
+			pos -2 219.76
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_7
+	{
+		defaults
+		{
+			pos -2 258.88
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_8
+	{
+		defaults
+		{
+			pos -2 298
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 710 -4
+			opacity 255
+			color 0xffffffff
+			size 16 419
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos -2 -0
+			opacity 255
+			color 0xffffffff
+			size 730 450
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object header
+	{
+		defaults
+		{
+			pos -2 -1.84
+			opacity 255
+			color 0xffffffff
+			size 922 26
+			effect "ui\graphics\clan\lidboard_clan_header"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading3
+	{
+		defaults
+		{
+			pos 304 170
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "y:\work_version\pc\data\ui\graphics\hangar\loading_big.sanim"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1_3
+	{
+		defaults
+		{
+			pos 438 427
+			opacity 255
+			color 0xffffffff
+			size 130 24
+			effect "ui\graphics\login_screen\chek_box_voiting2"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_1_4
+	{
+		defaults
+		{
+			pos 573 427
+			opacity 255
+			color 0xffffffff
+			size 130 24
+			effect "ui\graphics\login_screen\chek_box_voiting2"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp213
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-5.01409 -5.5	0.985906 -5.5	699 -5.5	705 -5.5	-5.01409 0.5	0.985906 0.5	699 0.5	705 0.5	-5.01409 410	0.985906 410	699 410	705 410	-5.01409 416	0.985906 416	699 416	705 416	
+				0.272536 0.0507218	0.272536 0.0448626	0.272536 0.00890714	0.272536 0.00304788	0.266677 0.0507219	0.266677 0.0448626	0.266677 0.00890732	0.266677 0.00304776	0.229545 0.0507219	0.229545 0.0448625	0.229545 0.00890702	0.229545 0.00304776	0.223686 0.0507219	0.223686 0.0448625	0.223686 0.0089072	0.223686 0.00304776	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
