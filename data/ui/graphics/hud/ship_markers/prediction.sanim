@@ -1,0 +1,187 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by Sergey_Mitryaev
+//at Fri Jan 20 17:05:38 2017
+
+base_res 1280 720
+
+animations 6
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 2
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock_2_1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock_2_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object center
+	{
+		defaults
+		{
+			pos 11 11.0556
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on lock
+		visible_on lock_2
+		visible_on lock_2_1
+		visible_on lock_2_2
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 22 22
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on lock
+		visible_on lock_2
+		visible_on lock_2_1
+		visible_on lock_2_2
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName21
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-2 -1.9346	24 -1.9346	-2 24.0654	24 24.0654	
+				0.145508 0.379883	0.170898 0.379883	0.145508 0.405273	0.170898 0.405273	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+		}
+		anim lock sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim lock_2 sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim lock_2_1 sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim lock_2_2 sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName75
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-2 -1.9346	24 -1.9346	-2 24.0654	24 24.0654	
+				0.173828 0.436523	0.199219 0.436523	0.173828 0.461914	0.199219 0.461914	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+		anim lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim lock_2 sp_colc
+		{
+			1
+			0x80808080	0x80808080	0x80808080	0x80808080	
+		}
+		visible_on lock_2_1
+		visible_on lock_2_2
+	}
+	sprite objectName76
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-3.60528 -4.39472	26.3947 -4.39472	-3.60528 25.6053	26.3947 25.6053	
+				0.954102 0.311523	0.983398 0.311523	0.954102 0.34082	0.983398 0.34082	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on lock
+		visible_on lock_2
+		anim lock_2_1 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim lock_2_2 sp_colc
+		{
+			1
+			0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+		}
+	}
+}
+
