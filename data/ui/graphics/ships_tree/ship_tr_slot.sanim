@@ -1,0 +1,864 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Mon Nov 17 16:05:33 2014
+
+
+animations 6
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim active_gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim craft_idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim craft_active
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 38
+
+objects 25
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 178 50
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object ship_type
+	{
+		defaults
+		{
+			pos 2 1
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\hud\ship_markers\ship_type_n"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object ship_tr_price_btn
+	{
+		defaults
+		{
+			pos 62 28
+			opacity 255
+			color 0xffffffff
+			size 114 20
+			effect "ui\graphics\ships_tree\ship_tr_price_btn"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object name
+	{
+		defaults
+		{
+			pos 52 1
+			opacity 255
+			color 0xffffffff
+			size 120 18
+			effect ""
+			alignment "RM"
+			sampleText "Dprpkb kr[k  n "
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object progr_1
+	{
+		defaults
+		{
+			pos 71 30
+			opacity 255
+			color 0xffffffff
+			size 102 16
+			effect "ui\graphics\ships_tree\ship_tr_progr_1"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object progr_2
+	{
+		defaults
+		{
+			pos 143 29
+			opacity 255
+			color 0xffffffff
+			size 34 16
+			effect "ui\graphics\ships_tree\ship_tr_progr_2"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree\ship_tr_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree\ship_tr_slot_select"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 4 1
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree\ship_tr_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object tir
+	{
+		defaults
+		{
+			pos 22 6
+			opacity 255
+			color 0xffffffff
+			size 12 14
+			effect ""
+			alignment "LM"
+			sampleText "1"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object self_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 228 50
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object indic_slot
+	{
+		defaults
+		{
+			pos 155 26
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\ships_tree\ship_tr_indic_slot"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object indic_btn
+	{
+		defaults
+		{
+			pos 178 2
+			opacity 255
+			color 0xffffffff
+			size 44 44
+			effect "ui\graphics\ships_tree\ship_tr_indic_slot_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object max
+	{
+		defaults
+		{
+			pos 1 3
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect "ui\graphics\ships_tree\ship_tr_max"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object in_battle
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 178 50
+			effect "ui\graphics\ships_tree\ship_in_battle"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object gmp_icon
+	{
+		defaults
+		{
+			pos 4 5
+			opacity 255
+			color 0xffffffff
+			size 20 18
+			effect "ui\graphics\hud\ratio\gmp_icon"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 3 30
+			opacity 255
+			color 0xffffffff
+			size 34 16
+			effect ""
+			alignment "LM"
+			sampleText "10"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object gold_mark
+	{
+		defaults
+		{
+			pos -4 -5
+			opacity 255
+			color 0xffffffff
+			size 20 18
+			effect "ui\graphics\ships_tree\ship_tr_gold_mark"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object name_2
+	{
+		defaults
+		{
+			pos 61 1
+			opacity 255
+			color 0xffffffff
+			size 120 18
+			effect ""
+			alignment "RM"
+			sampleText "Dprpkb kr[k  n "
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object text_1_2
+	{
+		defaults
+		{
+			pos 3 31
+			opacity 255
+			color 0xffababab
+			size 70 16
+			effect ""
+			alignment "RM"
+			sampleText "0 000 000"
+			font "VeryTiny"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object labe
+	{
+		defaults
+		{
+			pos 126 -1
+			opacity 255
+			color 0xffffffff
+			size 20 18
+			effect "ui\graphics\ships_tree\labe"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object name_3
+	{
+		defaults
+		{
+			pos 3 1
+			opacity 255
+			color 0xffffffff
+			size 120 18
+			effect ""
+			alignment "RM"
+			sampleText "Dprpkb kr[k  n "
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object exclamatory
+	{
+		defaults
+		{
+			pos 156.45 18.7513
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\map\sector_exclamatory"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object in_battle_3
+	{
+		defaults
+		{
+			pos 29 18
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\hangar\ship_in_battle_3"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	object quest
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree\ship_tr_slot_quest"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+}
+
+sprites 13
+{
+	total_vertices 100
+
+	sprite sp12
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				178 -1	178 21	178 28	178 50	169 -0.999999	169 21	169 28	169 50	10 -1	10 21	10 28	10 50	-2.86102e-006 -0.999998	-3.8147e-006 21	-3.8147e-006 28	0 50	
+				0.956055 0.560547	0.956055 0.517578	0.956055 0.505859	0.956055 0.462891	0.947266 0.560547	0.947266 0.517578	0.947266 0.505859	0.947266 0.462891	0.791992 0.560547	0.791992 0.517578	0.791992 0.505859	0.791992 0.462891	0.782227 0.560547	0.782227 0.517578	0.782227 0.505859	0.782227 0.462891	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sp12wfd
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				176 2	176 21	176 28	176 48	169 2	169 21	169 28	169 48	10 2	10 21	10 28	10 48	2 2	2 21	2 28	2 48	
+				0.954102 0.453125	0.954102 0.414062	0.954102 0.402344	0.954102 0.365234	0.947266 0.453125	0.947266 0.414062	0.947266 0.402344	0.947266 0.365234	0.791992 0.453125	0.791992 0.414062	0.791992 0.402344	0.791992 0.365234	0.78418 0.453125	0.78418 0.414062	0.78418 0.402344	0.78418 0.365234	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim active sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim active_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sp12wdf
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				178 -1	178 21	178 28	178 50	169 -0.999999	169 21	169 28	169 50	10 -1	10 21	10 28	10 50	-2.86102e-006 -0.999998	-3.8147e-006 21	-3.8147e-006 28	0 50	
+				0.956055 0.457031	0.956055 0.414063	0.956055 0.402344	0.956055 0.359375	0.947266 0.457031	0.947266 0.414063	0.947266 0.402344	0.947266 0.359375	0.791992 0.457031	0.791992 0.414062	0.791992 0.402344	0.791992 0.359375	0.782227 0.457031	0.782227 0.414062	0.782227 0.402344	0.782227 0.359375	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		anim idle_gold sp_colc
+		{
+			1
+			0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	
+		}
+		anim active_gold sp_colc
+		{
+			1
+			0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	0xfffffd00	
+		}
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sad4ev
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				2 45	2 1.99998	176 45	176 1.99999	
+				0.81543 0.0078125	0.817383 0.0078125	0.81543 0.00585938	0.817383 0.00585938	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sad4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				174 47	174 1.99998	176 47	176 1.99999	
+				0.824219 0.605469	0.837891 0.605469	0.824219 0.601563	0.837891 0.601563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		anim active_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sad3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				0 48	0 1.99998	2 48	2 1.99999	
+				0.824219 0.605469	0.837891 0.605469	0.824219 0.601563	0.837891 0.601563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		anim active_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sad2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				0 48	177 48	0 50	177 50	
+				0.824219 0.605469	0.837891 0.605469	0.824219 0.601563	0.837891 0.601563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		anim active_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sad1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				0 -1.09673e-005	177 -1.09673e-005	0 1.99999	177 1.99999	
+				0.824219 0.605469	0.837891 0.605469	0.824219 0.601563	0.837891 0.601563	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		anim active_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sad4we
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				138 47	138 1.99998	176 47	176 1.99999	
+				0.915039 0.0273438	0.915039 0.0664062	0.890625 0.0273438	0.890625 0.0664063	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		anim active_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sad3we
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				0 48	0 1.99998	36 48	36 1.99999	
+				0.890625 0.0273438	0.890625 0.0664062	0.915039 0.0273438	0.915039 0.0664063	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		anim active_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sad2we
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				0 25	177 25	0 50	177 50	
+				0.915039 0.0273438	0.915039 0.0664062	0.890625 0.0273438	0.890625 0.0664063	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		anim active_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sad1we
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			blend color_add
+			vertices
+			{
+				0 -1.09673e-005	177 -1.09673e-005	0 22	177 22	
+				0.890625 0.0664063	0.890625 0.0273438	0.915039 0.0664063	0.915039 0.0273437	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		anim active_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_active
+	}
+	sprite sp40
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.180913	7 0.180913	171 0.180913	178 0.180913	0 7	7 7	171 7	178 7	0 41	7 41	171 41	178 41	0 48	7 48	171 48	178 48	
+				0.385742 0.612305	0.378906 0.612305	0.353516 0.612305	0.34668 0.612305	0.385742 0.619141	0.378906 0.619141	0.353516 0.619141	0.34668 0.619141	0.385742 0.644531	0.378906 0.644531	0.353516 0.644531	0.34668 0.644531	0.385742 0.651367	0.378906 0.651367	0.353516 0.651367	0.34668 0.651367	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on active
+		visible_on idle_gold
+		visible_on active_gold
+		anim craft_idle sp_colc
+		{
+			1
+			0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	0xa700ddff	
+		}
+		anim craft_active sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+	}
+}
+
