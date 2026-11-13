@@ -1,0 +1,154 @@
+﻿source_file "Y:/art/source/ui/graphics/bzs/bzs_tourn.ma"
+//by sergey_mitryaev
+//at Mon Jan 25 11:38:03 2016
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim silver
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim bronze
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 340 22
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_gold
+		visible_on silver
+		visible_on bronze
+	}
+}
+
+sprites 4
+{
+	total_vertices 64
+
+	sprite objectName357
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 0.143291	140.639 0.143291	542.68 0.143291	683.32 0.143291	0 7.38109	140.639 7.38109	542.68 7.38109	683.32 7.38109	0 14.6189	140.639 14.6189	542.68 14.6189	683.32 14.6189	0 21.8567	140.639 21.8567	542.68 21.8567	683.32 21.8567	
+				0.900391 0.974379	0.801758 0.974379	0.814453 0.974379	0.901367 0.974379	0.900391 0.982345	0.801758 0.982345	0.814453 0.982345	0.901367 0.982345	0.900391 0.990311	0.801758 0.990311	0.814453 0.990311	0.901367 0.990311	0.900391 0.998277	0.801758 0.998277	0.814453 0.998277	0.901367 0.998277	
+			}
+		}
+		visible_on idle
+		visible_on idle_gold
+		visible_on silver
+		visible_on bronze
+	}
+	sprite objectName359
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.143291	140.639 0.143291	542.68 0.143291	683.32 0.143291	0 7.38109	140.639 7.38109	542.68 7.38109	683.32 7.38109	0 14.6189	140.639 14.6189	542.68 14.6189	683.32 14.6189	0 21.8567	140.639 21.8567	542.68 21.8567	683.32 21.8567	
+				0.900391 0.898207	0.801758 0.898207	0.814453 0.898207	0.901367 0.898207	0.900391 0.906173	0.801758 0.906173	0.814453 0.906173	0.901367 0.906173	0.900391 0.914139	0.801758 0.914139	0.814453 0.914139	0.901367 0.914139	0.900391 0.922105	0.801758 0.922105	0.814453 0.922105	0.901367 0.922105	
+				0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	
+			}
+		}
+		visible_on idle
+		anim idle_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim silver sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim bronze sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName365
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.143291	140.639 0.143291	542.68 0.143291	683.32 0.143291	0 7.38109	140.639 7.38109	542.68 7.38109	683.32 7.38109	0 14.6189	140.639 14.6189	542.68 14.6189	683.32 14.6189	0 21.8567	140.639 21.8567	542.68 21.8567	683.32 21.8567	
+				0.900391 0.923598	0.801758 0.923598	0.814453 0.923598	0.901367 0.923598	0.900391 0.931564	0.801758 0.931564	0.814453 0.931564	0.901367 0.931564	0.900391 0.93953	0.801758 0.93953	0.814453 0.93953	0.901367 0.93953	0.900391 0.947496	0.801758 0.947496	0.814453 0.947496	0.901367 0.947496	
+				0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	
+			}
+		}
+		visible_on idle
+		visible_on idle_gold
+		anim silver sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on bronze
+	}
+	sprite objectName366
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.143291	140.639 0.143291	542.68 0.143291	683.32 0.143291	0 7.38109	140.639 7.38109	542.68 7.38109	683.32 7.38109	0 14.6189	140.639 14.6189	542.68 14.6189	683.32 14.6189	0 21.8567	140.639 21.8567	542.68 21.8567	683.32 21.8567	
+				0.900391 0.948988	0.801758 0.948988	0.814453 0.948988	0.901367 0.948988	0.900391 0.956954	0.801758 0.956954	0.814453 0.956954	0.901367 0.956954	0.900391 0.964921	0.801758 0.964921	0.814453 0.964921	0.901367 0.964921	0.900391 0.972887	0.801758 0.972887	0.814453 0.972887	0.901367 0.972887	
+				0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	0xffed67	
+			}
+		}
+		visible_on idle
+		visible_on idle_gold
+		visible_on silver
+		anim bronze sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
