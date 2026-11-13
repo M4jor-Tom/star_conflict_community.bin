@@ -1,0 +1,64 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Thu Mar 14 12:36:08 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self130
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 400 400
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object text_36
+	{
+		defaults
+		{
+			pos 0 2
+			opacity 255
+			color 0xff373533
+			size 200 40
+			effect ""
+			alignment "CM"
+			sampleText "SDwerwerer"
+			font "segoeuilr_30"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 0 22
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\map\frame_star_bg"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+}
+
