@@ -1,0 +1,131 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by sergey_mitryaev
+//at Thu Aug 17 12:04:49 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 284 340
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 50
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object squad_trans
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 284 48
+			effect "ui\graphics\squad_2\squad_trans"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object squad_find
+	{
+		defaults
+		{
+			pos 4.61925 4
+			opacity 255
+			color 0xffffffff
+			size 274 44
+			effect "ui\graphics\squad_2\squad_find"
+			alignment "CM"
+			font "VerySmall"
+		}
+		anim idle obj_pos
+		{
+			2 
+			4.61925 4
+			4.61925 290.532
+		}
+	}
+	object list
+	{
+		defaults
+		{
+			pos 1 49
+			opacity 255
+			color 0xffffffff
+			size 284 256
+			effect "ui\graphics\squad_2\squad_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite er1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 41	10 41	274 41	284 41	0 51	10 51	274 51	284 51	
+				0.693359 0.789063	0.712891 0.789063	0.886719 0.789063	0.90625 0.789063	0.693359 0.808594	0.712891 0.808594	0.886719 0.808594	0.90625 0.808594	0.693359 0.824219	0.712891 0.824219	0.886719 0.824219	0.90625 0.824219	0.693359 0.84375	0.712891 0.84375	0.886719 0.84375	0.90625 0.84375	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 41	10 41	274 41	284 41	0 51	10 51	274 51	284 51	
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 69.9	10 69.9	274 69.9	284 69.9	0 79.9	10 79.9	274 79.9	284 79.9	
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 98.8	10 98.8	274 98.8	284 98.8	0 108.8	10 108.8	274 108.8	284 108.8	
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 127.7	10 127.7	274 127.7	284 127.7	0 137.7	10 137.7	274 137.7	284 137.7	
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 156.6	10 156.6	274 156.6	284 156.6	0 166.6	10 166.6	274 166.6	284 166.6	
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 185.5	10 185.5	274 185.5	284 185.5	0 195.5	10 195.5	274 195.5	284 195.5	
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 214.4	10 214.4	274 214.4	284 214.4	0 224.4	10 224.4	274 224.4	284 224.4	
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 243.3	10 243.3	274 243.3	284 243.3	0 253.3	10 253.3	274 253.3	284 253.3	
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 272.2	10 272.2	274 272.2	284 272.2	0 282.2	10 282.2	274 282.2	284 282.2	
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 301.1	10 301.1	274 301.1	284 301.1	0 311.1	10 311.1	274 311.1	284 311.1	
+			0 -0	10 -0	274 -0	284 -0	0 10	10 10	274 10	284 10	0 330	10 330	274 330	284 330	0 340	10 340	274 340	284 340	
+		}
+	}
+}
+
