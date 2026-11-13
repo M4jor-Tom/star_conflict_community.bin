@@ -1,0 +1,201 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by Sergey_Mitryaev
+//at Tue Jan 17 09:48:28 2017
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 1 1
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object text
+	{
+		defaults
+		{
+			pos 4.33511 4
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect ""
+			alignment "CM"
+			sampleText "Купить"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		anim press obj_posc
+		{
+			1 
+			4.33511 5
+		}
+		anim disable obj_opc
+		{
+			1 
+			153
+		}
+	}
+	object text_color_1
+	{
+		defaults
+		{
+			pos 4.33511 36
+			opacity 0
+			color 0xffff2700
+			size 150 16
+			effect ""
+			alignment "CM"
+			sampleText "Купить"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object waiting
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\btn_waiting"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object blink
+	{
+		defaults
+		{
+			pos 1 1
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1_blink"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object btn_arrow
+	{
+		defaults
+		{
+			pos 140 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\shop\btn_arrow"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	154 -4	162 -4	-4 4	4 4	154 4	162 4	-4 22	4 22	154 22	162 22	-4 30	4 30	154 30	162 30	
+				0.0585938 0.644531	0.0664063 0.644531	0.0742188 0.644531	0.0820313 0.644531	0.0585938 0.652344	0.0664063 0.652344	0.0742188 0.652344	0.0820313 0.652344	0.0585938 0.660156	0.0664063 0.660156	0.0742188 0.660156	0.0820313 0.660156	0.0585938 0.667969	0.0664063 0.667969	0.0742188 0.667969	0.0820313 0.667969	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+		}
+	}
+	sprite over1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	8 -0	150 -0	158 -0	0 8	8 8	150 8	158 8	0 18	8 18	150 18	158 18	0 26	8 26	150 26	158 26	
+				0.0849609 0.644531	0.0888672 0.644531	0.104492 0.644531	0.108398 0.644531	0.0849609 0.648438	0.0888672 0.648438	0.104492 0.648438	0.108398 0.648438	0.0849609 0.664063	0.0888672 0.664063	0.104492 0.664063	0.108398 0.664063	0.0849609 0.667969	0.0888672 0.667969	0.104492 0.667969	0.108398 0.667969	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+		visible_on disable
+	}
+}
+
