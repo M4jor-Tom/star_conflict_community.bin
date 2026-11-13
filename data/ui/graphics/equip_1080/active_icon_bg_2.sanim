@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Thu Dec 19 16:09:15 2019
+
+base_res 1920 1080
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim cross
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 78 78
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on cross
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				2 2	8 2	70 2	76 2	2 8	8 8	70 8	76 8	2 70	8 70	70 70	76 70	2 76	8 76	70 76	76 76	
+				0.569651 0.594065	0.573167 0.594065	0.576413 0.594065	0.578786 0.594065	0.569651 0.595778	0.573167 0.595778	0.576413 0.595778	0.578786 0.595778	0.569651 0.600917	0.573167 0.600917	0.576413 0.600917	0.578786 0.600917	0.569651 0.6032	0.573167 0.6032	0.576413 0.6032	0.578786 0.6032	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on cross
+	}
+	sprite sp124
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				3.97713 4	9.97713 4	68 4	74 4	3.97713 10	9.97713 10	68 10	74 10	3.97713 63	9.97713 63	68 63	74 63	3.97713 69	9.97713 69	68 69	74 69	
+				0.566406 0.59082	0.570313 0.59082	0.577972 0.59082	0.582031 0.59082	0.566406 0.594727	0.570313 0.594727	0.577972 0.594727	0.582031 0.594727	0.566406 0.602539	0.570313 0.602539	0.577972 0.602539	0.582031 0.602539	0.566406 0.606445	0.570313 0.606445	0.577972 0.606445	0.582031 0.606445	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on cross
+	}
+}
+
