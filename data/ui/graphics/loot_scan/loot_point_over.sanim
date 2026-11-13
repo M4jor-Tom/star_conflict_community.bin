@@ -1,0 +1,53 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 15:41:37 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectNameaxx
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-39.375 -39.375	39.375 -39.375	-39.375 39.375	39.375 39.375	
+				0.424943 0.6885	0.448104 0.6885	0.424943 0.711891	0.448104 0.711891	
+				0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+			0xff9b9b9b	0xff9b9b9b	0xff9b9b9b	0xff9b9b9b	
+			0xff848484	0xff848484	0xff848484	0xff848484	
+			0xff686868	0xff686868	0xff686868	0xff686868	
+			0xff515151	0xff515151	0xff515151	0xff515151	
+			0xff474747	0xff474747	0xff474747	0xff474747	
+			0xff515151	0xff515151	0xff515151	0xff515151	
+			0xff686868	0xff686868	0xff686868	0xff686868	
+			0xff848484	0xff848484	0xff848484	0xff848484	
+			0xff9b9b9b	0xff9b9b9b	0xff9b9b9b	0xff9b9b9b	
+			0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	0xffa5a5a5	
+		}
+	}
+}
+
