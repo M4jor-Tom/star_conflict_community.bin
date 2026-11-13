@@ -1,0 +1,156 @@
+﻿source_file  Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma
+//by sergey_mitryaev
+//at Wed Jul 04 18:31:13 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 200
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 22.3211 67.1067
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 155.539 67.1067
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect "ui\graphics\hangar\ship_list_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 28.0059 7.18394
+			opacity 255
+			color 0xffffffff
+			size 250 50
+			effect ""
+			alignment "CM"
+			sampleText "Переделать боевой слот|под корабли следующих типов:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 183.871 147.928
+			opacity 255
+			color 0xffffffff
+			size 125 20
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 9.25181 171.082
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 156.423 171.082
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\login_screen\login_univer_btn"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				5.36293 5.48264	11.3629 5.48264	300.051 5.48264	306.051 5.48264	5.36293 11.4826	11.3629 11.4826	300.051 11.4826	306.051 11.4826	5.36293 198.924	11.3629 198.924	300.051 198.924	306.051 198.924	5.36293 204.924	11.3629 204.924	300.051 204.924	306.051 204.924	
+				0.325132 0.054641	0.330991 0.054641	0.370188 0.054641	0.376047 0.054641	0.325132 0.0605004	0.330991 0.0605004	0.370188 0.0605004	0.376047 0.0605004	0.325132 0.0994473	0.330991 0.0994473	0.370188 0.0994473	0.376047 0.0994473	0.325132 0.105307	0.330991 0.105307	0.370188 0.105307	0.376047 0.105307	
+				0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	0x677f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp24
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	294.688 -0	300.688 -0	0 6	6 6	294.688 6	300.688 6	0 193.442	6 193.442	294.688 193.442	300.688 193.442	0 199.442	6 199.442	294.688 199.442	300.688 199.442	
+				0.325132 0.00101268	0.330991 0.00101268	0.370188 0.00101268	0.376047 0.00101268	0.325132 0.00687206	0.330991 0.00687206	0.370188 0.00687206	0.376047 0.00687206	0.325132 0.045819	0.330991 0.045819	0.370188 0.045819	0.376047 0.045819	0.325132 0.0516784	0.330991 0.0516784	0.370188 0.0516784	0.376047 0.0516784	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
