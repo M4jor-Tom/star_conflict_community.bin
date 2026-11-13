@@ -1,0 +1,125 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Thu Dec 08 11:38:19 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim completed
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object status
+	{
+		defaults
+		{
+			pos 3 -1
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\quests_2\q_2_status_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on completed
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 72
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on completed
+	}
+	object note6
+	{
+		defaults
+		{
+			pos 68 7
+			opacity 255
+			color 0xfffffd97
+			size 220 50
+			effect ""
+			alignment "LT"
+			sampleText "При прокачке открывает  дополнительную ячейку  модуля.|Еще  строка|asdfasdf sgseg sgsg"
+			font "Tiny"
+		}
+		visible_on idle
+		anim completed obj_colc
+		{
+			1
+			0xffababab
+		}
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 72
+			effect "ui\graphics\ships_tree_3\study_quest_slot_blackout"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on completed
+	}
+	object btn_3
+	{
+		defaults
+		{
+			pos 98 27
+			opacity 255
+			color 0xffffffff
+			size 100 30
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_btn_1"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on completed
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite objectName422
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-5 -5.00003	5 -5.00003	295 -5.00003	305 -5.00003	-5 4.99997	5 4.99997	295 4.99997	305 4.99997	-5 74	5 74	295 74	305 74	-5 84	5 84	295 84	305 84	
+				0.119141 0.292969	0.138672 0.292969	0.158203 0.292969	0.177734 0.292969	0.119141 0.3125	0.138672 0.3125	0.158203 0.3125	0.177734 0.3125	0.119141 0.332031	0.138672 0.332031	0.158203 0.332031	0.177734 0.332031	0.119141 0.351563	0.138672 0.351563	0.158203 0.351563	0.177734 0.351563	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		visible_on idle
+		visible_on completed
+	}
+}
+
