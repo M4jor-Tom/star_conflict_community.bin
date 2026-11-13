@@ -1,0 +1,79 @@
+﻿source_file "Y:/art/source/ui/graphics/menu/menu.ma"
+//by sergey_mitryaev
+//at Tue Apr 14 15:23:49 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object title
+	{
+		defaults
+		{
+			pos 7.26243 0.819246
+			opacity 255
+			color 0xffff6700
+			size 300 16
+			effect ""
+			alignment "LM"
+			sampleText "Меню"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object caption
+	{
+		defaults
+		{
+			pos 7.26243 18.4986
+			opacity 255
+			color 0xffff6700
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Игра"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 41.7359
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\menu\menu_list"
+			alignment "LM"
+			sampleText "Игра"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object slot14
+	{
+		defaults
+		{
+			pos 0 151
+			opacity 255
+			color 0xffffffff
+			size 320 34
+			effect "ui\graphics\menu\menu_btn_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
