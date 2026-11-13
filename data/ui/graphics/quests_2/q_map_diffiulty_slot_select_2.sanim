@@ -1,0 +1,70 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by Sergey_Mitryaev
+//at Fri Jan 19 11:46:45 2018
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite objectName498
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_6.tif"
+			vertices
+			{
+				-12 -12	8 -12	42 -12	62 -12	-12 8	8 8	42 8	62 8	-12 42	8 42	42 42	62 42	-12 62	8 62	42 62	62 62	
+				0.323242 0.613281	0.342773 0.613281	0.375977 0.613281	0.395508 0.613281	0.323242 0.652344	0.342773 0.652344	0.375977 0.652344	0.395508 0.652344	0.323242 0.71875	0.342773 0.71875	0.375977 0.71875	0.395508 0.71875	0.323242 0.757813	0.342773 0.757813	0.375977 0.757813	0.395508 0.757813	
+				0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName499
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_6.tif"
+			vertices
+			{
+				-12 -12	8 -12	42 -12	62 -12	-12 8	8 8	42 8	62 8	-12 42	8 42	42 42	62 42	-12 62	8 62	42 62	62 62	
+				0.255859 0.613281	0.275391 0.613281	0.308594 0.613281	0.328125 0.613281	0.255859 0.652344	0.275391 0.652344	0.308594 0.652344	0.328125 0.652344	0.255859 0.71875	0.275391 0.71875	0.308594 0.71875	0.328125 0.71875	0.255859 0.757813	0.275391 0.757813	0.308594 0.757813	0.328125 0.757813	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
