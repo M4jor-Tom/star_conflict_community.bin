@@ -1,0 +1,61 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/drop_down.ma"
+//by sergey_mitryaev
+//at Tue Oct 23 16:24:10 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 285 55
+			effect ""
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object area
+	{
+		defaults
+		{
+			pos 11.0524 22.3508
+			opacity 255
+			color 0xffffffff
+			size 257 18
+			effect "ui\graphics\hangar\distrib_galaxy_value"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 11.0524 1.62008
+			opacity 255
+			color 0xffcccccc
+			size 257 18
+			effect ""
+			alignment "LM"
+			sampleText "Соотношения сил"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
