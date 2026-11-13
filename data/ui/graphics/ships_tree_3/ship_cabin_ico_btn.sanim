@@ -1,0 +1,81 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey
+//at Fri Oct 07 18:13:26 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 42 42
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 32 32
+			effect "ui\graphics\ships_tree_3\ship_cabin_ico_btn_over"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite que280
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				4.76837e-007 -0	42 -0	4.76837e-007 42	42 42	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim disable sp_colc
+		{
+			1
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+		}
+	}
+}
+
