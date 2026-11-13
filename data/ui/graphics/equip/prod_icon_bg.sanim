@@ -1,0 +1,70 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Mon Sep 19 14:45:24 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp53
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.00899506 0.130188	5.991 0.130188	57 0.130188	63 0.130188	-0.00899506 6.13019	5.991 6.13019	57 6.13019	63 6.13019	-0.00899506 43.8698	5.991 43.8698	57 43.8698	63 43.8698	-0.00899506 49.8698	5.991 49.8698	57 49.8698	63 49.8698	
+				0.228478 0.202197	0.234337 0.202197	0.273438 0.202197	0.279297 0.202197	0.228478 0.208057	0.234337 0.208057	0.273438 0.208057	0.279297 0.208057	0.228478 0.24707	0.234337 0.24707	0.273438 0.24707	0.279297 0.24707	0.228478 0.25293	0.234337 0.25293	0.273438 0.25293	0.279297 0.25293	
+				0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	0xff757575	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico21
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				49 9.53674e-007	50 9.53674e-007	49 50	50 50	
+				0.0488281 0.0635613	0.0498047 0.0635613	0.0488281 0.112389	0.0498047 0.112389	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName389
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				49 14	63 14	49 36	63 36	
+				0.880859 0.140625	0.894531 0.140625	0.880859 0.183594	0.894531 0.183594	
+			}
+		}
+		visible_on idle
+	}
+}
+
