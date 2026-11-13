@@ -1,0 +1,54 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Wed Dec 12 15:13:17 2012
+
+
+animations 3
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object color
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff7fb2ff
+			size 200 11
+			effect "ui\graphics\hud\ship_markers\mark_ship_hide"
+			alignment "CM"
+			font "MonoTiny"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2700
+		}
+		anim squad obj_colc
+		{
+			1
+			0xff07ff00
+		}
+	}
+}
+
