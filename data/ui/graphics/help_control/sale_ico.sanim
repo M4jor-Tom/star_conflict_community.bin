@@ -1,0 +1,53 @@
+﻿source_file "Y:/art/source/ui/graphics/help_control/help.ma"
+//by sergey_mitryaev
+//at Wed Sep 03 14:25:17 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hide
+	{
+		mode once
+		cycle_time 0.6
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	852 -0	0 452	852 452	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim hide sp_col
+		{
+			6
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			0x98ffffff	0x98ffffff	0x98ffffff	0x98ffffff	
+			0x65ffffff	0x65ffffff	0x65ffffff	0x65ffffff	
+			0x32ffffff	0x32ffffff	0x32ffffff	0x32ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
