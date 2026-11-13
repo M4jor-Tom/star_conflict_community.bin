@@ -1,0 +1,63 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Tue May 23 15:53:47 2017
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object ship_btn
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 142 32
+			effect "ui\graphics\hangar_iter_3\b_castom_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff000000
+			size 142 32
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
