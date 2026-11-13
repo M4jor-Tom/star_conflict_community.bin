@@ -1,0 +1,160 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Tue Nov 12 15:43:09 2019
+
+base_res 1920 1080
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 52 46
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite wewd
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices_nc
+			{
+				9.53674e-007 -0	10 -0	42 -0	52 -0	9.53674e-007 10	10 10	42 10	52 10	9.53674e-007 36	10 36	42 36	52 36	9.53674e-007 46	10 46	42 46	52 46	
+				0.25 0.181641	0.269531 0.181641	0.302734 0.181641	0.322266 0.181641	0.25 0.201172	0.269531 0.201172	0.302734 0.201172	0.322266 0.201172	0.25 0.224609	0.269531 0.224609	0.302734 0.224609	0.322266 0.224609	0.25 0.244141	0.269531 0.244141	0.302734 0.244141	0.322266 0.244141	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	sprite we
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				8 6	44 6	8 42	44 42	
+				0.558594 0.255859	0.628906 0.255859	0.558594 0.326172	0.628906 0.326172	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on select
+		visible_on sel_over
+	}
+	sprite wewd2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				-12.3333 -5	19.3333 -5	37.6667 -5	71.3333 -5	-12.3333 8.33333	19.3333 8.33333	37.6667 8.33333	71.3333 8.33333	-12.3333 37.6667	19.3333 37.6667	37.6667 37.6667	71.3333 37.6667	-12.3333 51	19.3333 51	37.6667 51	71.3333 51	
+				0.0136719 0.173828	0.094401 0.173828	0.15625 0.173828	0.232422 0.173828	0.0136719 0.19987	0.094401 0.19987	0.15625 0.19987	0.232422 0.19987	0.0136719 0.229818	0.094401 0.229818	0.15625 0.229818	0.232422 0.229818	0.0136719 0.255859	0.094401 0.255859	0.15625 0.255859	0.232422 0.255859	
+				0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+		visible_on press
+		visible_on select
+		anim sel_over sp_colc
+		{
+			1
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+		}
+	}
+	sprite wewd7
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				-12.3333 -5	19.3333 -5	37.6667 -5	71.3333 -5	-12.3333 8.33333	19.3333 8.33333	37.6667 8.33333	71.3333 8.33333	-12.3333 37.6667	19.3333 37.6667	37.6667 37.6667	71.3333 37.6667	-12.3333 51	19.3333 51	37.6667 51	71.3333 51	
+				0.0136719 0.173828	0.094401 0.173828	0.15625 0.173828	0.232422 0.173828	0.0136719 0.19987	0.094401 0.19987	0.15625 0.19987	0.232422 0.19987	0.0136719 0.229818	0.094401 0.229818	0.15625 0.229818	0.232422 0.229818	0.0136719 0.255859	0.094401 0.255859	0.15625 0.255859	0.232422 0.255859	
+				0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim select sp_colc
+		{
+			1
+			0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	
+		}
+		anim sel_over sp_colc
+		{
+			1
+			0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	
+		}
+	}
+}
+
