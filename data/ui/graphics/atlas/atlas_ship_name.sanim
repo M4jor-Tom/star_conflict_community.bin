@@ -1,0 +1,46 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Mon Nov 20 12:51:54 2017
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object name
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 400 50
+			effect ""
+			alignment "RM"
+			sampleText "HERCULES"
+			font "segoeuilr_25"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			140
+		}
+	}
+}
+
