@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Mon Apr 07 14:11:38 2014
+
+
+animations 6
+{
+	anim new_ru
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim new_en
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hot_ru
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hot_en
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sale_ru
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sale_en
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName335
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	54 -0	0 20	54 20	
+				0.291016 0.547852	0.34375 0.547852	0.291016 0.567383	0.34375 0.567383	
+			}
+		}
+		visible_on new_ru
+		anim new_en sp_uvc
+		{
+			1 
+			0.291016 0.568359	0.34375 0.568359	0.291016 0.587891	0.34375 0.587891	
+		}
+		anim hot_ru sp_uvc
+		{
+			1 
+			0.291016 0.609375	0.34375 0.609375	0.291016 0.628906	0.34375 0.628906	
+		}
+		anim hot_en sp_uvc
+		{
+			1 
+			0.291016 0.588867	0.34375 0.588867	0.291016 0.608398	0.34375 0.608398	
+		}
+		anim sale_ru sp_uvc
+		{
+			1 
+			0.291016 0.630859	0.34375 0.630859	0.291016 0.650391	0.34375 0.650391	
+		}
+		anim sale_en sp_uvc
+		{
+			1 
+			0.291016 0.652344	0.34375 0.652344	0.291016 0.671875	0.34375 0.671875	
+		}
+	}
+}
+
