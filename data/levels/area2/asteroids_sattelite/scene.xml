@@ -1,0 +1,466 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="asteroids_sattelite; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" additionalColorRemapAnimTime="1.000" battlefieldRadius="800.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" useWorldLookPoint="true" />
+  <EntityContainer>
+    <Entity Name="LootPoint13" Def="Helpers_TagPoint" Pos="-116.919 425.140 557.562" type="0" />
+    <Entity Name="LootPoint6" Def="Helpers_TagPoint" Pos="399.870 54.149 -492.355" type="0" />
+    <Entity Name="LootPoint5" Def="Helpers_TagPoint" Pos="93.715 85.123 -464.593" type="0" />
+    <Entity Name="LootPoint4" Def="Helpers_TagPoint" Pos="-282.372 33.856 -410.582" type="0" />
+    <Entity Name="LootPoint3" Def="Helpers_TagPoint" Pos="-610.847 29.930 -168.993" type="0" />
+    <Entity Name="LootPoint2" Def="Helpers_TagPoint" Pos="-140.168 3.473 -655.645" type="0" />
+    <Entity Name="LootPoint1" Def="Helpers_TagPoint" Pos="309.898 32.791 -678.837" type="0" />
+    <Entity Name="LootPoint17" Def="Helpers_TagPoint" Pos="356.605 408.441 374.730" type="0" />
+    <Entity Name="LootPoint12" Def="Helpers_TagPoint" Pos="-32.255 310.344 643.353" type="0" />
+    <Entity Name="LootPoint11" Def="Helpers_TagPoint" Pos="-157.978 229.102 361.733" type="0" />
+    <Entity Name="LootPoint10" Def="Helpers_TagPoint" Pos="-406.185 174.573 30.095" type="0" />
+    <Entity Name="LootPoint9" Def="Helpers_TagPoint" Pos="-667.849 137.299 -238.457" type="0" />
+    <Entity Name="LootPoint8" Def="Helpers_TagPoint" Pos="-246.041 18.306 -20.074" type="0" />
+    <Entity Name="LootPoint7" Def="Helpers_TagPoint" Pos="64.966 105.541 -133.689" type="0" />
+    <Entity Name="LootPoint18" Def="Helpers_TagPoint" Pos="218.053 82.296 -45.011" type="0" />
+    <Entity Name="LootPoint16" Def="Helpers_TagPoint" Pos="551.207 314.881 151.806" type="0" />
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-202.623 1295.985 -17.328" Rot="0.594 -0.396 0.419 0.561" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="LootPoint15" Def="Helpers_TagPoint" Pos="386.941 295.689 337.112" type="0" />
+    <Entity Name="LootPoint14" Def="Helpers_TagPoint" Pos="-480.535 331.896 379.096" type="0" />
+    <Entity Name="FreeSpaceAIAgents1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-519.976 437.865 109.578" Rot="-0.703 0.000 0.000 0.711" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Asteroids1" Def="Effects_Dreadnought_Asteroids01" Pos="-3869.987 -294.845 -4690.033" Rot="0.000 -0.707 0.000 0.707" isPlayed="1" environmental="1" env_scale="17.000" env_fog_mult="1.000" />
+    <Entity Name="Asteroids2" Def="Effects_Dreadnought_Asteroids01" Pos="-3336.194 -294.845 4000.000" Rot="0.000 -0.707 0.000 0.707" isPlayed="1" environmental="1" env_scale="17.000" env_fog_mult="1.000" />
+    <Entity Name="Asteroids6" Def="Effects_Dreadnought_Asteroids02" Pos="-2837.334 2770.716 5835.600" Rot="0.000 -0.707 0.000 0.707" isPlayed="1" environmental="1" env_scale="30.000" env_fog_mult="1.000" />
+    <Entity Name="Asteroids4" Def="Effects_Dreadnought_Asteroids02" Pos="-3873.441 -285.088 -5401.697" Rot="0.000 -0.707 0.000 0.707" isPlayed="1" environmental="1" env_scale="30.000" env_fog_mult="1.000" />
+    <Entity Name="Asteroids5" Def="Effects_Dreadnought_Asteroids02" Pos="-2837.334 -1149.379 5835.600" Rot="0.000 -0.707 0.000 0.707" isPlayed="1" environmental="1" env_scale="30.000" env_fog_mult="1.000" />
+    <Entity Name="AsteroidPath1" Def="PathObject" Pos="-1600.000 741.303 -608.971" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 741.303 -608.971" />
+      <Point p="1600.000 741.297 -630.460" />
+    </Entity>
+    <Entity Name="Asteroid22" Def="Movement_Asteroid21" Pos="-1733.789 99.000 -161.366" path_name="AsteroidPath1" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid43" Def="Movement_Asteroid23" Pos="-1733.789 99.000 -161.366" path_name="AsteroidPath1" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid64" Def="Movement_Asteroid24" Pos="-1733.789 99.000 -161.366" path_name="AsteroidPath1" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath2" Def="PathObject" Pos="-1600.000 -297.000 -505.362" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -297.000 -505.362" />
+      <Point p="1600.000 -297.000 -526.852" />
+    </Entity>
+    <Entity Name="Asteroid23" Def="Movement_Asteroid22" Pos="-1733.789 -297.000 -505.362" path_name="AsteroidPath2" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid44" Def="Movement_Asteroid24" Pos="-1733.789 -297.000 -505.362" path_name="AsteroidPath2" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid65" Def="Movement_Asteroid29" Pos="-1733.789 -297.000 -505.362" path_name="AsteroidPath2" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath3" Def="PathObject" Pos="-1600.000 37.231 1231.013" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 37.231 1231.013" />
+      <Point p="1600.000 37.231 1209.523" />
+    </Entity>
+    <Entity Name="Asteroid24" Def="Movement_Asteroid23" Pos="-1747.543 37.231 1231.013" path_name="AsteroidPath3" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid45" Def="Movement_Asteroid21" Pos="-1747.543 37.231 1231.013" path_name="AsteroidPath3" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid66" Def="Movement_Asteroid27" Pos="-1747.543 37.231 1231.013" path_name="AsteroidPath3" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath4" Def="PathObject" Pos="-0.000 262.434 55.427" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 262.434 55.427" />
+      <Point p="1600.000 262.434 33.937" />
+    </Entity>
+    <Entity Name="Asteroid25" Def="Movement_Asteroid29" Pos="-1733.789 96.160 -6.616" path_name="AsteroidPath4" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid46" Def="Movement_Asteroid25" Pos="-1733.789 96.160 -6.616" path_name="AsteroidPath4" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid67" Def="Movement_Asteroid28" Pos="-1733.789 96.160 -6.616" path_name="AsteroidPath4" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath5" Def="PathObject" Pos="-1600.000 -344.000 854.875" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -344.000 854.875" />
+      <Point p="1600.000 -344.006 833.384" />
+    </Entity>
+    <Entity Name="Asteroid26" Def="Movement_Asteroid25" Pos="-1733.789 -344.000 854.875" path_name="AsteroidPath5" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid47" Def="Movement_Asteroid28" Pos="-1733.789 -344.000 854.875" path_name="AsteroidPath5" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid68" Def="Movement_Asteroid21" Pos="-1733.789 -344.000 854.875" path_name="AsteroidPath5" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath6" Def="PathObject" Pos="-1600.000 236.000 -646.767" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 235.999 -646.768" />
+      <Point p="1600.000 235.993 -668.257" />
+    </Entity>
+    <Entity Name="Asteroid27" Def="Movement_Asteroid27" Pos="-1733.789 236.000 -646.767" path_name="AsteroidPath6" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid48" Def="Movement_Asteroid26" Pos="-1733.789 236.000 -646.767" path_name="AsteroidPath6" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid69" Def="Movement_Asteroid23" Pos="-1733.789 236.000 -646.767" path_name="AsteroidPath6" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath7" Def="PathObject" Pos="-1600.000 469.175 972.000" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 469.175 972.000" />
+      <Point p="1600.000 469.175 950.510" />
+    </Entity>
+    <Entity Name="Asteroid28" Def="Movement_Asteroid24" Pos="-1733.789 469.175 972.000" path_name="AsteroidPath7" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid49" Def="Movement_Asteroid27" Pos="-1733.789 469.175 972.000" path_name="AsteroidPath7" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid70" Def="Movement_Asteroid22" Pos="-1733.789 469.175 972.000" path_name="AsteroidPath7" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath8" Def="PathObject" Pos="-1600.000 322.641 520.455" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 322.640 520.455" />
+      <Point p="1600.000 322.640 498.965" />
+    </Entity>
+    <Entity Name="Asteroid29" Def="Movement_Asteroid26" Pos="-1733.789 41.000 425.000" path_name="AsteroidPath8" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid50" Def="Movement_Asteroid22" Pos="-1733.789 41.000 425.000" path_name="AsteroidPath8" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid71" Def="Movement_Asteroid26" Pos="-1733.789 41.000 425.000" path_name="AsteroidPath8" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath9" Def="PathObject" Pos="-1600.000 -1006.215 -174.067" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -1006.215 -174.067" />
+      <Point p="1600.000 -1006.215 -195.557" />
+    </Entity>
+    <Entity Name="Asteroid30" Def="Movement_Asteroid28" Pos="-1747.543 -289.000 -161.000" path_name="AsteroidPath9" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid51" Def="Movement_Asteroid22" Pos="-1747.543 -289.000 -161.000" path_name="AsteroidPath9" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid72" Def="Movement_Asteroid25" Pos="-1747.543 -289.000 -161.000" path_name="AsteroidPath9" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath10" Def="PathObject" Pos="-1600.000 -548.509 262.170" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -548.509 262.170" />
+      <Point p="1600.000 -548.509 240.680" />
+    </Entity>
+    <Entity Name="Asteroid31" Def="Movement_Asteroid22" Pos="-1747.543 -214.248 342.000" path_name="AsteroidPath10" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid52" Def="Movement_Asteroid29" Pos="-1747.543 -214.248 342.000" path_name="AsteroidPath10" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid73" Def="Movement_Asteroid28" Pos="-1747.543 -314.080 278.530" path_name="AsteroidPath10" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath11" Def="PathObject" Pos="-1600.000 75.853 -1067.416" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 75.853 -1067.416" />
+      <Point p="1600.000 75.853 -1088.906" />
+    </Entity>
+    <Entity Name="Asteroid32" Def="Movement_Asteroid25" Pos="-1733.789 75.853 -1067.416" path_name="AsteroidPath11" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid53" Def="Movement_Asteroid26" Pos="-1733.789 75.853 -1067.416" path_name="AsteroidPath11" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid74" Def="Movement_Asteroid24" Pos="-1733.789 75.853 -1067.416" path_name="AsteroidPath11" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath12" Def="PathObject" Pos="-1600.000 -155.935 -943.848" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -155.935 -943.848" />
+      <Point p="1600.000 -155.935 -965.338" />
+    </Entity>
+    <Entity Name="Asteroid33" Def="Movement_Asteroid27" Pos="-1733.789 -155.935 -943.848" path_name="AsteroidPath12" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid54" Def="Movement_Asteroid22" Pos="-1733.789 -155.935 -943.848" path_name="AsteroidPath12" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid75" Def="Movement_Asteroid26" Pos="-1733.789 -155.935 -943.848" path_name="AsteroidPath12" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath13" Def="PathObject" Pos="-1600.000 -69.692 766.979" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -69.692 766.979" />
+      <Point p="1600.000 -69.692 745.489" />
+    </Entity>
+    <Entity Name="Asteroid34" Def="Movement_Asteroid29" Pos="-1747.543 -174.357 1314.284" path_name="AsteroidPath13" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid55" Def="Movement_Asteroid27" Pos="-1747.543 -174.357 1314.284" path_name="AsteroidPath13" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid76" Def="Movement_Asteroid25" Pos="-1747.543 -174.357 1314.284" path_name="AsteroidPath13" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath14" Def="PathObject" Pos="-1600.000 -707.815 248.669" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -707.815 248.669" />
+      <Point p="1600.000 -707.815 227.179" />
+    </Entity>
+    <Entity Name="Asteroid35" Def="Movement_Asteroid28" Pos="-1747.543 -371.000 232.000" path_name="AsteroidPath14" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid56" Def="Movement_Asteroid22" Pos="-1747.543 -371.000 232.000" path_name="AsteroidPath14" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid77" Def="Movement_Asteroid23" Pos="-1747.543 -371.000 232.000" path_name="AsteroidPath14" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath15" Def="PathObject" Pos="-1600.000 -516.815 641.912" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -516.815 641.912" />
+      <Point p="1600.000 -516.815 620.422" />
+    </Entity>
+    <Entity Name="Asteroid36" Def="Movement_Asteroid22" Pos="-1747.543 -290.000 573.000" path_name="AsteroidPath15" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid57" Def="Movement_Asteroid25" Pos="-1747.543 -290.000 573.000" path_name="AsteroidPath15" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid78" Def="Movement_Asteroid28" Pos="-1747.543 -290.000 573.000" path_name="AsteroidPath15" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath16" Def="PathObject" Pos="-1600.000 -520.153 -22.000" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -520.153 -22.000" />
+      <Point p="800.000 -520.153 -43.490" />
+    </Entity>
+    <Entity Name="Asteroid37" Def="Movement_Asteroid21" Pos="-1733.789 -336.000 -22.000" path_name="AsteroidPath16" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid58" Def="Movement_Asteroid29" Pos="-1733.789 -336.000 -22.000" path_name="AsteroidPath16" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid79" Def="Movement_Asteroid27" Pos="-1733.789 -336.000 -22.000" path_name="AsteroidPath16" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath17" Def="PathObject" Pos="-1600.000 326.258 327.972" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 326.258 327.972" />
+      <Point p="1600.000 326.252 306.482" />
+    </Entity>
+    <Entity Name="Asteroid38" Def="Movement_Asteroid25" Pos="-1733.789 115.000 269.000" path_name="AsteroidPath17" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid59" Def="Movement_Asteroid23" Pos="-1733.789 115.000 269.000" path_name="AsteroidPath17" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid80" Def="Movement_Asteroid26" Pos="-1733.789 115.000 269.000" path_name="AsteroidPath17" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath18" Def="PathObject" Pos="-1600.000 -961.587 201.289" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -961.587 201.289" />
+      <Point p="1600.000 -961.587 179.799" />
+    </Entity>
+    <Entity Name="Asteroid39" Def="Movement_Asteroid24" Pos="-1733.789 -176.292 -12.469" path_name="AsteroidPath18" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid60" Def="Movement_Asteroid26" Pos="-1733.789 -176.292 -12.469" path_name="AsteroidPath18" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid81" Def="Movement_Asteroid25" Pos="-1733.789 -176.292 -12.469" path_name="AsteroidPath18" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath19" Def="PathObject" Pos="-1600.000 -935.878 722.828" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -935.878 722.828" />
+      <Point p="1600.000 -935.878 701.338" />
+    </Entity>
+    <Entity Name="Asteroid40" Def="Movement_Asteroid26" Pos="-1733.789 -120.383 239.704" path_name="AsteroidPath19" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid61" Def="Movement_Asteroid22" Pos="-1733.789 -120.383 239.704" path_name="AsteroidPath19" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid82" Def="Movement_Asteroid24" Pos="-1733.789 -120.383 239.704" path_name="AsteroidPath19" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath20" Def="PathObject" Pos="-1600.000 516.808 132.507" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 516.808 132.507" />
+      <Point p="1600.000 516.808 111.017" />
+    </Entity>
+    <Entity Name="Asteroid41" Def="Movement_Asteroid22" Pos="-1733.789 -56.866 100.300" path_name="AsteroidPath20" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid62" Def="Movement_Asteroid21" Pos="-1733.789 -56.866 100.300" path_name="AsteroidPath20" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid83" Def="Movement_Asteroid27" Pos="-1733.789 -56.866 100.300" path_name="AsteroidPath20" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath21" Def="PathObject" Pos="-1600.000 -623.957 -440.934" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -623.957 -440.934" />
+      <Point p="1600.000 -623.957 -462.424" />
+    </Entity>
+    <Entity Name="Asteroid42" Def="Movement_Asteroid21" Pos="-1733.789 -127.003 -126.779" path_name="AsteroidPath21" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid63" Def="Movement_Asteroid29" Pos="-1733.789 -127.003 -126.779" path_name="AsteroidPath21" respawn_time="5.000" closed_path="0" />
+    <Entity Name="Asteroid84" Def="Movement_Asteroid28" Pos="-1733.789 -127.003 -126.779" path_name="AsteroidPath21" respawn_time="5.000" closed_path="0" />
+    <Entity Name="AsteroidPath22" Def="PathObject" Pos="-1014.963 -297.000 -511.898" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1014.963 -297.000 -511.898" />
+      <Point p="1600.000 -297.000 -533.388" />
+    </Entity>
+    <Entity Name="Asteroid1" Def="Movement_Asteroid21" Pos="-1014.963 -297.000 -511.898" path_name="AsteroidPath22" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath23" Def="PathObject" Pos="414.875 37.231 1231.013" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="414.875 37.231 1231.013" />
+      <Point p="1600.000 37.231 1209.523" />
+    </Entity>
+    <Entity Name="Asteroid2" Def="Movement_Asteroid22" Pos="414.875 37.231 1231.013" path_name="AsteroidPath23" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath24" Def="PathObject" Pos="-870.900 250.274 55.427" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-870.900 250.274 55.427" />
+      <Point p="1600.000 250.274 33.937" />
+    </Entity>
+    <Entity Name="Asteroid3" Def="Movement_Asteroid23" Pos="-870.900 250.274 55.427" path_name="AsteroidPath24" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath25" Def="PathObject" Pos="26.257 -344.000 854.875" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="26.257 -344.000 854.875" />
+      <Point p="1600.000 -344.006 833.384" />
+    </Entity>
+    <Entity Name="Asteroid4" Def="Movement_Asteroid29" Pos="26.257 -344.000 854.875" path_name="AsteroidPath25" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath26" Def="PathObject" Pos="-557.299 236.000 -646.767" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-557.299 235.999 -646.768" />
+      <Point p="1600.000 235.993 -668.257" />
+    </Entity>
+    <Entity Name="Asteroid5" Def="Movement_Asteroid25" Pos="-557.299 236.000 -646.767" path_name="AsteroidPath26" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath27" Def="PathObject" Pos="-1479.523 469.175 972.000" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 469.175 972.000" />
+      <Point p="1600.000 469.175 950.510" />
+    </Entity>
+    <Entity Name="Asteroid6" Def="Movement_Asteroid27" Pos="-1479.523 469.175 972.000" path_name="AsteroidPath27" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath28" Def="PathObject" Pos="-1600.000 285.907 546.343" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 285.906 546.343" />
+      <Point p="1600.000 285.906 524.853" />
+    </Entity>
+    <Entity Name="Asteroid7" Def="Movement_Asteroid25" Pos="-1491.606 285.907 546.343" path_name="AsteroidPath28" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath29" Def="PathObject" Pos="-1600.000 -1006.215 -174.067" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -1006.215 -174.067" />
+      <Point p="1600.000 -1006.215 -195.557" />
+    </Entity>
+    <Entity Name="Asteroid8" Def="Movement_Asteroid26" Pos="-1314.548 -976.714 -174.067" path_name="AsteroidPath29" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath30" Def="PathObject" Pos="-168.046 -548.509 262.170" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-168.046 -548.509 262.170" />
+      <Point p="1600.000 -548.509 240.680" />
+    </Entity>
+    <Entity Name="Asteroid9" Def="Movement_Asteroid28" Pos="-168.046 -548.509 262.170" path_name="AsteroidPath30" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath31" Def="PathObject" Pos="-587.704 75.853 -1067.416" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-587.704 75.853 -1067.416" />
+      <Point p="1600.000 75.853 -1088.906" />
+    </Entity>
+    <Entity Name="Asteroid10" Def="Movement_Asteroid22" Pos="-587.704 75.853 -1067.416" path_name="AsteroidPath31" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath32" Def="PathObject" Pos="-249.618 -155.935 -943.848" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-249.618 -155.935 -943.848" />
+      <Point p="1600.000 -155.935 -965.338" />
+    </Entity>
+    <Entity Name="Asteroid11" Def="Movement_Asteroid25" Pos="-249.618 -155.935 -943.848" path_name="AsteroidPath32" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath33" Def="PathObject" Pos="-693.077 -69.692 766.979" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-693.077 -69.692 766.979" />
+      <Point p="1600.000 -69.692 745.489" />
+    </Entity>
+    <Entity Name="Asteroid12" Def="Movement_Asteroid27" Pos="-693.077 -69.692 766.979" path_name="AsteroidPath33" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath34" Def="PathObject" Pos="-855.613 -707.815 248.669" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-855.613 -707.815 248.669" />
+      <Point p="1600.000 -707.815 227.179" />
+    </Entity>
+    <Entity Name="Asteroid13" Def="Movement_Asteroid29" Pos="-855.613 -707.815 248.669" path_name="AsteroidPath34" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath35" Def="PathObject" Pos="-665.640 -516.815 641.912" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-665.640 -516.815 641.912" />
+      <Point p="1600.000 -516.815 620.422" />
+    </Entity>
+    <Entity Name="Asteroid14" Def="Movement_Asteroid28" Pos="-665.640 -516.815 641.912" path_name="AsteroidPath35" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath36" Def="PathObject" Pos="258.387 -520.153 -22.000" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="258.387 -520.153 -22.000" />
+      <Point p="1600.000 -520.153 -43.490" />
+    </Entity>
+    <Entity Name="Asteroid15" Def="Movement_Asteroid22" Pos="258.387 -520.153 -22.000" path_name="AsteroidPath36" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath37" Def="PathObject" Pos="-499.068 326.258 327.972" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-499.068 326.258 327.972" />
+      <Point p="1600.000 326.252 306.482" />
+    </Entity>
+    <Entity Name="Asteroid16" Def="Movement_Asteroid21" Pos="-499.068 326.258 327.972" path_name="AsteroidPath37" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath38" Def="PathObject" Pos="-790.072 -939.462 713.440" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-790.072 -939.462 713.440" />
+      <Point p="1600.000 -939.462 691.950" />
+    </Entity>
+    <Entity Name="Asteroid17" Def="Movement_Asteroid25" Pos="-790.072 -939.462 713.440" path_name="AsteroidPath38" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath39" Def="PathObject" Pos="-1600.000 -968.410 189.781" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1600.000 -968.410 189.781" />
+      <Point p="1600.000 -968.416 168.291" />
+    </Entity>
+    <Entity Name="Asteroid18" Def="Movement_Asteroid23" Pos="-1328.038 -986.974 189.781" path_name="AsteroidPath39" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath40" Def="PathObject" Pos="-177.545 741.303 -608.971" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-177.545 741.303 -608.971" />
+      <Point p="1600.000 741.297 -630.460" />
+    </Entity>
+    <Entity Name="Asteroid19" Def="Movement_Asteroid24" Pos="-177.545 741.303 -608.971" path_name="AsteroidPath40" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath41" Def="PathObject" Pos="-1600.000 508.578 131.068" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1285.515 508.578 131.068" />
+      <Point p="1600.000 508.572 109.578" />
+    </Entity>
+    <Entity Name="Asteroid20" Def="Movement_Asteroid28" Pos="-1285.515 508.578 131.068" path_name="AsteroidPath41" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AsteroidPath42" Def="PathObject" Pos="-694.329 -623.813 -446.925" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-694.329 -623.812 -446.925" />
+      <Point p="1600.000 -623.818 -468.415" />
+    </Entity>
+    <Entity Name="Asteroid21" Def="Movement_Asteroid22" Pos="-694.329 -623.813 -446.925" path_name="AsteroidPath42" respawn_time="0.000" closed_path="0" />
+    <Entity Name="MapLoad1" Def="Logic_MapLoad" Pos="-446.308 433.530 115.987">
+      <ActionList Name="m_onLoad" Num="84">
+        <FireAction Target="Asteroid1" Action="FullActivate" />
+        <FireAction Target="Asteroid2" Action="FullActivate" />
+        <FireAction Target="Asteroid3" Action="FullActivate" />
+        <FireAction Target="Asteroid4" Action="FullActivate" />
+        <FireAction Target="Asteroid5" Action="FullActivate" />
+        <FireAction Target="Asteroid6" Action="FullActivate" />
+        <FireAction Target="Asteroid7" Action="FullActivate" />
+        <FireAction Target="Asteroid8" Action="FullActivate" />
+        <FireAction Target="Asteroid9" Action="FullActivate" />
+        <FireAction Target="Asteroid10" Action="FullActivate" />
+        <FireAction Target="Asteroid11" Action="FullActivate" />
+        <FireAction Target="Asteroid12" Action="FullActivate" />
+        <FireAction Target="Asteroid13" Action="FullActivate" />
+        <FireAction Target="Asteroid14" Action="FullActivate" />
+        <FireAction Target="Asteroid15" Action="FullActivate" />
+        <FireAction Target="Asteroid16" Action="FullActivate" />
+        <FireAction Target="Asteroid17" Action="FullActivate" />
+        <FireAction Target="Asteroid18" Action="FullActivate" />
+        <FireAction Target="Asteroid19" Action="FullActivate" />
+        <FireAction Target="Asteroid20" Action="FullActivate" />
+        <FireAction Target="Asteroid21" Action="FullActivate" />
+        <FireAction Target="Asteroid22" Action="FullActivate" />
+        <FireAction Target="Asteroid23" Action="FullActivate" Delay="10.00000" />
+        <FireAction Target="Asteroid24" Action="FullActivate" Delay="15.00000" />
+        <FireAction Target="Asteroid25" Action="FullActivate" Delay="30.00000" />
+        <FireAction Target="Asteroid26" Action="FullActivate" Delay="25.00000" />
+        <FireAction Target="Asteroid27" Action="FullActivate" Delay="20.00000" />
+        <FireAction Target="Asteroid28" Action="FullActivate" Delay="45.00000" />
+        <FireAction Target="Asteroid29" Action="FullActivate" Delay="55.00000" />
+        <FireAction Target="Asteroid30" Action="FullActivate" Delay="67.00000" />
+        <FireAction Target="Asteroid31" Action="FullActivate" Delay="74.00000" />
+        <FireAction Target="Asteroid32" Action="FullActivate" Delay="44.00000" />
+        <FireAction Target="Asteroid33" Action="FullActivate" Delay="38.00000" />
+        <FireAction Target="Asteroid34" Action="FullActivate" Delay="62.00000" />
+        <FireAction Target="Asteroid35" Action="FullActivate" Delay="49.00000" />
+        <FireAction Target="Asteroid36" Action="FullActivate" Delay="72.00000" />
+        <FireAction Target="Asteroid37" Action="FullActivate" Delay="43.00000" />
+        <FireAction Target="Asteroid38" Action="FullActivate" Delay="38.00000" />
+        <FireAction Target="Asteroid39" Action="FullActivate" Delay="19.00000" />
+        <FireAction Target="Asteroid40" Action="FullActivate" Delay="69.00000" />
+        <FireAction Target="Asteroid41" Action="FullActivate" Delay="42.00000" />
+        <FireAction Target="Asteroid42" Action="FullActivate" Delay="59.00000" />
+        <FireAction Target="Asteroid43" Action="FullActivate" Delay="81.00000" />
+        <FireAction Target="Asteroid44" Action="FullActivate" Delay="85.00000" />
+        <FireAction Target="Asteroid45" Action="FullActivate" Delay="100.00000" />
+        <FireAction Target="Asteroid46" Action="FullActivate" Delay="117.00000" />
+        <FireAction Target="Asteroid47" Action="FullActivate" Delay="125.00000" />
+        <FireAction Target="Asteroid48" Action="FullActivate" Delay="130.00000" />
+        <FireAction Target="Asteroid49" Action="FullActivate" Delay="135.00000" />
+        <FireAction Target="Asteroid50" Action="FullActivate" Delay="142.00000" />
+        <FireAction Target="Asteroid51" Action="FullActivate" Delay="150.00000" />
+        <FireAction Target="Asteroid52" Action="FullActivate" Delay="158.00000" />
+        <FireAction Target="Asteroid53" Action="FullActivate" Delay="124.00000" />
+        <FireAction Target="Asteroid54" Action="FullActivate" Delay="118.00000" />
+        <FireAction Target="Asteroid55" Action="FullActivate" Delay="142.00000" />
+        <FireAction Target="Asteroid56" Action="FullActivate" Delay="129.00000" />
+        <FireAction Target="Asteroid57" Action="FullActivate" Delay="152.00000" />
+        <FireAction Target="Asteroid58" Action="FullActivate" Delay="131.00000" />
+        <FireAction Target="Asteroid59" Action="FullActivate" Delay="118.00000" />
+        <FireAction Target="Asteroid60" Action="FullActivate" Delay="99.00000" />
+        <FireAction Target="Asteroid61" Action="FullActivate" Delay="149.00000" />
+        <FireAction Target="Asteroid62" Action="FullActivate" Delay="122.00000" />
+        <FireAction Target="Asteroid63" Action="FullActivate" Delay="139.00000" />
+        <FireAction Target="Asteroid64" Action="FullActivate" Delay="160.00000" />
+        <FireAction Target="Asteroid65" Action="FullActivate" Delay="170.00000" />
+        <FireAction Target="Asteroid66" Action="FullActivate" Delay="175.00000" />
+        <FireAction Target="Asteroid67" Action="FullActivate" Delay="180.00000" />
+        <FireAction Target="Asteroid68" Action="FullActivate" Delay="185.00000" />
+        <FireAction Target="Asteroid69" Action="FullActivate" Delay="190.00000" />
+        <FireAction Target="Asteroid70" Action="FullActivate" Delay="205.00000" />
+        <FireAction Target="Asteroid71" Action="FullActivate" Delay="215.00000" />
+        <FireAction Target="Asteroid72" Action="FullActivate" Delay="220.00000" />
+        <FireAction Target="Asteroid73" Action="FullActivate" Delay="234.00000" />
+        <FireAction Target="Asteroid74" Action="FullActivate" Delay="204.00000" />
+        <FireAction Target="Asteroid75" Action="FullActivate" Delay="198.00000" />
+        <FireAction Target="Asteroid76" Action="FullActivate" Delay="222.00000" />
+        <FireAction Target="Asteroid77" Action="FullActivate" Delay="209.00000" />
+        <FireAction Target="Asteroid78" Action="FullActivate" Delay="232.00000" />
+        <FireAction Target="Asteroid79" Action="FullActivate" Delay="211.00000" />
+        <FireAction Target="Asteroid80" Action="FullActivate" Delay="198.00000" />
+        <FireAction Target="Asteroid81" Action="FullActivate" Delay="179.00000" />
+        <FireAction Target="Asteroid82" Action="FullActivate" Delay="229.00000" />
+        <FireAction Target="Asteroid83" Action="FullActivate" Delay="202.00000" />
+        <FireAction Target="Asteroid84" Action="FullActivate" Delay="219.00000" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EStation1" Def="OpenWorld_Empire_EStation01" Pos="117.160 -124.296 246.061" Rot="0.000 0.035 0.000 0.999" />
+    <Entity Name="EStation2" Def="OpenWorld_Empire_EStation02" Pos="-79.603 9.584 16.169" Rot="0.000 0.164 0.000 0.986" />
+    <Entity Name="ETransportnik1" Def="OpenWorld_Empire_ETransportnik01" Pos="94.440 -179.573 55.635" Rot="0.000 0.055 0.000 0.998" />
+    <Entity Name="EWreckShip1" Def="OpenWorld_Empire_EWreckShip02" Pos="612.617 -727.379 560.648" />
+    <Entity Name="EStation3" Def="OpenWorld_Empire_EStation05" Pos="334.990 -211.404 23.104" Rot="0.000 0.985 0.000 -0.175" />
+    <Entity Name="Team1Group1" Def="Logic_SpawnArea_Team1Group0" Pos="-251.685 -15.020 -622.656" Rot="0.030 0.953 0.100 -0.284" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team2Group1" Def="Logic_SpawnArea_Team2Group0" Pos="463.990 -187.088 499.287" Rot="0.000 0.693 0.000 0.721" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="EBox1" Def="OpenWorld_Empire_EBox01" Pos="-1408.230 529.876 317.292" />
+    <Entity Name="EShip1" Def="OpenWorld_Empire_EShip04" Pos="1100.662 -51.921 -31.584" Rot="0.243 0.576 0.095 0.775" />
+    <Entity Name="ETransportnik2" Def="OpenWorld_Empire_ETransportnik01" Pos="489.455 -47.382 -736.146" Rot="0.000 0.621 0.000 0.784" />
+    <Entity Name="EWreckShip2" Def="OpenWorld_Empire_EWreckShip01" Pos="-172.182 -772.622 -812.695" Rot="0.000 0.514 0.000 0.858" />
+    <Entity Name="invasion1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-126.530 755.814 93.090" Rot="-0.678 0.000 0.000 0.735" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="EStation4" Def="OpenWorld_Empire_EStation05" Pos="509.737 -56.209 338.629" Rot="0.000 0.816 0.000 0.578" />
+    <Entity Name="EPlatform1" Def="OpenWorld_Empire_EPlatform01" Pos="144.859 -137.689 379.096" Rot="0.000 -0.582 0.000 0.813" />
+    <Entity Name="DockingBay1" Def="PvE_DockingBay" Pos="-437.653 -246.388 -24.691" Rot="0.000 0.813 0.000 0.582" />
+    <Entity Name="DockingBay2" Def="PvE_DockingBay" Pos="-301.104 -318.714 265.115" Rot="0.000 0.813 0.000 0.582" />
+    <Entity Name="Team2Group2" Def="Logic_SpawnArea_Team2Group0" Pos="-20.561 -187.088 693.169" Rot="0.000 -0.114 0.000 0.993" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group2" Def="Logic_SpawnArea_Team1Group0" Pos="-485.984 -2.492 -539.379" Rot="-0.003 -0.848 -0.105 0.519" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="BeamWithHalo1" Def="ProjectorLight" Pos="328.546 -238.221 -26.861" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="DockingBay3" Def="PvE_DockingBay" Pos="-222.106 -308.819 49.819" Rot="0.000 -0.575 0.000 0.818" />
+    <Entity Name="SmokeBig2" Def="Smoke_station" Pos="-39.884 -265.617 326.278" Rot="-0.673 0.105 0.113 0.723" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="rotrig2" Def="Lights_rotrig" Pos="152.256 -191.372 171.736" Rot="0.012 -0.136 -0.667 0.733" collision="0" Activity="IDLE" />
+    <Entity Name="PointLight3" Def="Lights_PointLight" Pos="-68.557 -279.297 -297.233" start_off="0" rad="120.00000" color="0x4AACBF2" />
+    <Entity Name="BeamWithHalo2" Def="ProjectorLight" Pos="213.236 -163.009 301.147" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo3" Def="ProjectorLight" Pos="244.534 -163.009 393.717" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo4" Def="ProjectorLight" Pos="146.772 -163.009 427.010" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo5" Def="ProjectorLight" Pos="115.266 -163.009 334.525" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo6" Def="ProjectorLight" Pos="119.826 -62.255 347.206" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo7" Def="ProjectorLight" Pos="153.360 -62.255 446.796" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo8" Def="ProjectorLight" Pos="217.796 -62.255 313.828" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo9" Def="ProjectorLight" Pos="251.122 -62.255 413.503" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo10" Def="ProjectorLight" Pos="75.252 -62.255 473.214" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo11" Def="ProjectorLight" Pos="41.234 -62.255 373.950" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="SmokeBig1" Def="Smoke_station" Pos="-18.530 -265.617 318.111" Rot="-0.673 0.105 0.113 0.723" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="PointLight4" Def="Lights_PointLight" Pos="-151.745 -310.511 22.937" start_off="0" rad="50.00000" color="0x2BAACBF2" />
+    <Entity Name="PointLight5" Def="Lights_PointLight" Pos="48.602 -162.251 -98.333" start_off="0" rad="50.00000" color="0x2BAACBF2" />
+    <Entity Name="AmbientSoundSpot5" Def="Sound_AmbientSoundSpot" Pos="49.849 -161.804 -95.521" soundname="sound/ambient/ow_objects/bigship" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="Smoke1" Def="Smoke_station" Pos="375.157 -294.949 225.483" Rot="-0.136 0.694 -0.694 -0.136" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Smoke2" Def="Smoke_station" Pos="408.330 -294.949 213.317" Rot="-0.136 0.694 -0.694 -0.136" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Smoke3" Def="Smoke_station" Pos="-484.216 -230.283 -288.042" Rot="-0.136 0.694 -0.694 -0.136" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="SmokeBig3" Def="Smoke_station" Pos="-43.948 -355.534 -460.841" Rot="-0.574 -0.411 -0.400 0.585" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="SmokeBig4" Def="Smoke_station" Pos="-36.350 -355.534 -438.372" Rot="-0.574 -0.411 -0.400 0.585" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Smoke4" Def="Smoke_station" Pos="534.432 -256.177 353.543" Rot="0.699 0.109 -0.109 0.699" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo12" Def="ProjectorLight" Pos="68.264 -163.009 453.544" Rot="1.000 0.000 0.000 0.000" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo14" Def="ProjectorLight" Pos="4.906 -15.469 169.137" Rot="-0.486 0.156 0.088 0.856" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo15" Def="ProjectorLight" Pos="4.907 -32.551 169.137" Rot="0.919 -0.064 -0.167 -0.351" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo16" Def="ProjectorLight" Pos="-29.364 -32.534 181.026" Rot="0.919 -0.064 -0.167 -0.351" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo17" Def="ProjectorLight" Pos="-29.364 -15.452 181.026" Rot="-0.486 0.156 0.088 0.856" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo18" Def="ProjectorLight" Pos="-18.661 -32.534 177.516" Rot="0.919 -0.064 -0.167 -0.351" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo19" Def="ProjectorLight" Pos="-18.661 -15.452 177.516" Rot="-0.486 0.156 0.088 0.856" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo20" Def="ProjectorLight" Pos="-5.398 -15.469 172.979" Rot="-0.486 0.156 0.088 0.856" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo21" Def="ProjectorLight" Pos="-5.397 -32.551 172.979" Rot="0.919 -0.064 -0.167 -0.351" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Projector1" Def="Lights_Projector" bindTo="rotrig2:joint2" fov="0.450" far_dist="600.000" near_dist="1.000" width="0.500" height="0.500" enabled="1" shadows="0" base_color="0xFFB0E1FF" texture="textures\projectors\searchlight" />
+    <Entity Name="BeamWithHalo0" Def="ProjectorLight" bindTo="rotrig2:joint2" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="DockingBay4" Def="PvE_DockingBay" Pos="468.220 -294.762 243.002" Rot="0.000 -0.575 0.000 0.818" />
+    <Entity Name="PointLight2" Def="Lights_PointLight" Pos="366.613 -275.372 361.687" start_off="0" rad="80.00000" color="0xE73B8E1" />
+    <Entity Name="BeamWithHalo22" Def="ProjectorLight" Pos="-60.732 -112.177 126.880" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light2" Def="Landing_light" Pos="-34.559 -119.205 52.332" Rot="0.000 -0.343 0.000 0.939" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light1" Def="Landing_light" Pos="-50.001 -119.205 39.599" Rot="0.000 -0.343 0.000 0.939" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Pushray1" Def="Effects_Nebula_Pushray" Pos="297.930 -95.192 41.346" />
+    <Entity Name="BeamWithHalo52" Def="ProjectorLight" Pos="323.231 -311.383 30.640" Rot="0.890 -0.104 -0.181 -0.405" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo53" Def="ProjectorLight" Pos="361.078 -311.989 16.740" Rot="0.890 -0.104 -0.181 -0.405" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lamp3" Def="Lamp01" Pos="13.249 -256.620 -189.377" Rot="0.130 0.694 0.698 -0.117" />
+    <Entity Name="Lamp2" Def="Lamp01" Pos="362.127 -301.356 19.587" Rot="0.130 0.694 0.698 -0.117" />
+    <Entity Name="BeamWithHalo56" Def="ProjectorLight" Pos="10.595 -262.780 -196.396" Rot="0.898 -0.100 -0.183 -0.388" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo55" Def="ProjectorLight" Pos="12.261 -267.338 -192.218" Rot="0.898 -0.100 -0.183 -0.388" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lamp1" Def="Lamp01" Pos="324.219 -300.665 33.481" Rot="0.130 0.694 0.698 -0.117" />
+    <Entity Name="BeamWithHalo54" Def="ProjectorLight" Pos="359.412 -307.431 12.562" Rot="0.890 -0.104 -0.181 -0.405" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="PointLight6" Def="Lights_PointLight" Pos="324.811 -311.411 -7.237" start_off="0" rad="80.00000" color="0xE73B8E1" />
+    <Entity Name="BeamWithHalo51" Def="ProjectorLight" Pos="321.565 -306.825 26.462" Rot="0.890 -0.104 -0.181 -0.405" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light3" Def="Landing_light" Pos="-8.923 -119.205 69.517" Rot="0.000 -0.348 0.000 0.938" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light4" Def="Landing_light" Pos="-82.116 -119.205 6.754" Rot="0.000 -0.343 0.000 0.939" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light5" Def="Landing_light" Pos="-66.959 -119.205 19.533" Rot="0.000 -0.343 0.000 0.939" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light6" Def="Landing_light" Pos="-117.172 -119.205 18.330" Rot="0.000 -0.777 0.000 0.629" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light7" Def="Landing_light" Pos="-121.153 -119.205 37.029" Rot="0.000 -0.777 0.000 0.629" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light8" Def="Landing_light" Pos="-122.301 -119.205 65.948" Rot="0.000 -0.774 0.000 0.633" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light9" Def="Landing_light" Pos="-126.052 -119.205 85.335" Rot="0.000 -0.774 0.000 0.633" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light10" Def="Landing_light" Pos="18.705 -119.205 124.063" Rot="0.000 -0.771 0.000 0.637" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light11" Def="Landing_light" Pos="7.769 -119.205 156.959" Rot="0.000 -0.771 0.000 0.637" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light12" Def="Landing_light" Pos="4.947 -119.205 171.651" Rot="0.000 -0.771 0.000 0.637" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light13" Def="Landing_light" Pos="3.625 -119.205 201.036" Rot="0.000 -0.771 0.000 0.637" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="light14" Def="Landing_light" Pos="-0.167 -119.205 220.775" Rot="0.000 -0.780 0.000 0.625" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="AmbientSoundSpot6" Def="Sound_AmbientSoundSpot" Pos="-38.780 -354.172 -449.952" soundname="sound/ambient/fed_vent" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSoundSpot7" Def="Sound_AmbientSoundSpot" Pos="-485.314 -232.428 -290.055" soundname="sound/ambient/fed_vent" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSoundSpot8" Def="Sound_AmbientSoundSpot" Pos="-28.953 -267.096 322.463" soundname="sound/ambient/fed_vent" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSoundSpot9" Def="Sound_AmbientSoundSpot" Pos="393.975 -294.689 224.963" soundname="sound/ambient/fed_vent" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="HealHull1" Def="Bonus_HealHull" GameplaysMask="4152363008" Pos="-324.040 -279.580 272.705" />
+    <Entity Name="QuadDamage1" Def="Bonus_QuadDamage" GameplaysMask="4152363008" Pos="99.247 -122.187 28.015" />
+    <Entity Name="HealHull2" Def="Bonus_HealHull" GameplaysMask="4152363008" Pos="-459.154 -210.712 -16.604" />
+    <Entity Name="BombSite_1" Def="BtB_BombSite_Team2_B" GameplaysMask="2281701376" Pos="-338.315 -150.492 326.832" />
+    <Entity Name="BombSite_2" Def="BtB_BombSite_Team2_C" GameplaysMask="2281701376" Pos="243.870 -234.075 151.334" Rot="0.000 0.904 0.000 -0.427" />
+    <Entity Name="BombSite_0" Def="BtB_BombSite_Team2_A" GameplaysMask="2281701376" Pos="127.630 35.248 401.022" Rot="0.000 0.154 0.000 0.988" />
+    <Entity Name="BombSpawn_0" Def="Helpers_TagPoint" GameplaysMask="2281701376" Pos="-287.769 -318.105 -504.206" type="0" />
+    <Entity Name="BombSpawn_1" Def="Helpers_TagPoint" GameplaysMask="2281701376" Pos="-342.417 -280.542 -485.863" type="0" />
+    <Entity Name="BombSpawn_2" Def="Helpers_TagPoint" GameplaysMask="2281701376" Pos="-445.876 -256.396 -402.276" type="0" />
+  </EntityContainer>
+</Scene>
