@@ -1,0 +1,89 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map_2.ma"
+//by sergey_mitryaev
+//at Mon Jan 15 14:47:33 2018
+
+base_res 1920 1080
+
+animations 2
+{
+	anim visit
+	{
+		mode looped
+		cycle_time 5
+	}
+	anim not_visit
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 74 74
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on visit
+		visible_on not_visit
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName386
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-12 -11	82 -11	-12 83	82 83	
+				0 0.486328	0.0917969 0.486328	0 0.669922	0.0917969 0.669922	
+				0xccb9b9b9	0xccb9b9b9	0xccb9b9b9	0xccb9b9b9	
+			}
+		}
+		visible_on visit
+		anim not_visit sp_colc
+		{
+			1
+			0xb9b9b9	0xb9b9b9	0xb9b9b9	0xb9b9b9	
+		}
+	}
+	sprite objectName392
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-12 -11	82 -11	-12 83	82 83	
+				0.000976563 0.300781	0.0927734 0.300781	0.000976563 0.484375	0.0927734 0.484375	
+				0xb9b9b9	0xb9b9b9	0xb9b9b9	0xb9b9b9	
+			}
+		}
+		visible_on visit
+		anim not_visit sp_colc
+		{
+			1
+			0x8cb9b9b9	0x8cb9b9b9	0x8cb9b9b9	0x8cb9b9b9	
+		}
+	}
+}
+
