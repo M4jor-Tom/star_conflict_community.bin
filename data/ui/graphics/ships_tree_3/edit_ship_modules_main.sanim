@@ -1,0 +1,363 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Mon Apr 03 12:04:28 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 24
+
+objects 18
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 370 540
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title_weapon
+	{
+		defaults
+		{
+			pos 0 80
+			opacity 255
+			color 0xffffffff
+			size 200 24
+			effect ""
+			alignment "LT"
+			sampleText "Оружие"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object weap_modules_1
+	{
+		defaults
+		{
+			pos 7 108
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object weap_modules_2
+	{
+		defaults
+		{
+			pos 63 108
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object weap_modules_3
+	{
+		defaults
+		{
+			pos 119 108
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title_active_modul
+	{
+		defaults
+		{
+			pos 0 172
+			opacity 255
+			color 0xffffffff
+			size 200 24
+			effect ""
+			alignment "LT"
+			sampleText "Активные модули"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object active_modules_1
+	{
+		defaults
+		{
+			pos 7 202
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object active_modules_2
+	{
+		defaults
+		{
+			pos 63 202
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object active_modules_3
+	{
+		defaults
+		{
+			pos 119 202
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object active_modules_4
+	{
+		defaults
+		{
+			pos 175 202
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object active_modules_5
+	{
+		defaults
+		{
+			pos 231 202
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title_passive_modul
+	{
+		defaults
+		{
+			pos 0 267
+			opacity 255
+			color 0xffffffff
+			size 200 24
+			effect ""
+			alignment "LT"
+			sampleText "Пассивные модули"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object passive_modules
+	{
+		defaults
+		{
+			pos 1.17384 296.547
+			opacity 255
+			color 0xffffffff
+			size 180 70
+			effect "ui\graphics\ships_tree_3\edit_ship_passive_modules"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object passive_modules_2
+	{
+		defaults
+		{
+			pos 169 296.547
+			opacity 255
+			color 0xffffffff
+			size 180 70
+			effect "ui\graphics\ships_tree_3\edit_ship_passive_modules"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object passive_modules_3
+	{
+		defaults
+		{
+			pos 1.17384 369
+			opacity 255
+			color 0xffffffff
+			size 180 70
+			effect "ui\graphics\ships_tree_3\edit_ship_passive_modules"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object passive_modules_4
+	{
+		defaults
+		{
+			pos 169 369
+			opacity 255
+			color 0xffffffff
+			size 180 70
+			effect "ui\graphics\ships_tree_3\edit_ship_passive_modules"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object passive_modules_5
+	{
+		defaults
+		{
+			pos 1.17384 440
+			opacity 255
+			color 0xffffffff
+			size 180 70
+			effect "ui\graphics\ships_tree_3\edit_ship_passive_modules"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object modul_special
+	{
+		defaults
+		{
+			pos 1 -5
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree_3\edit_ship_spec_module"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 6
+{
+	total_vertices 24
+
+	sprite que453
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 100	336 100	0 101	336 101	
+				0.732118 0.888518	0.787413 0.888518	0.732118 0.904451	0.787413 0.904451	
+				0xff696969	0xff696969	0xff696969	0xff696969	
+			}
+		}
+		visible_on idle
+	}
+	sprite que454
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 101	7 101	0 106	7 106	
+				0.767274 0.941253	0.798828 0.941253	0.767274 0.957185	0.798828 0.957185	
+				0xff696969	0xff696969	0xff696969	0xff696969	
+			}
+		}
+		visible_on idle
+	}
+	sprite que455
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 193	336 193	0 194	336 194	
+				0.732118 0.888518	0.787413 0.888518	0.732118 0.904451	0.787413 0.904451	
+				0xff696969	0xff696969	0xff696969	0xff696969	
+			}
+		}
+		visible_on idle
+	}
+	sprite que456
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 194	7 194	0 199	7 199	
+				0.767274 0.941253	0.798828 0.941253	0.767274 0.957185	0.798828 0.957185	
+				0xff696969	0xff696969	0xff696969	0xff696969	
+			}
+		}
+		visible_on idle
+	}
+	sprite que457
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 288	336 288	0 289	336 289	
+				0.732118 0.888518	0.787413 0.888518	0.732118 0.904451	0.787413 0.904451	
+				0xff696969	0xff696969	0xff696969	0xff696969	
+			}
+		}
+		visible_on idle
+	}
+	sprite que458
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 289	7 289	0 294	7 294	
+				0.767274 0.941253	0.798828 0.941253	0.767274 0.957185	0.798828 0.957185	
+				0xff696969	0xff696969	0xff696969	0xff696969	
+			}
+		}
+		visible_on idle
+	}
+}
+
