@@ -1,0 +1,189 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Thu May 29 15:15:05 2014
+
+
+animations 7
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_over
+	{
+		mode looped
+		cycle_time 0.1
+	}
+	anim chek
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim chek_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable_chek
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim empty
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 28 44
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_over
+		visible_on chek
+		visible_on chek_over
+		visible_on disable
+		visible_on disable_chek
+		visible_on empty
+	}
+	object like_value
+	{
+		defaults
+		{
+			pos 4 28
+			opacity 255
+			color 0xffffffff
+			size 20 17
+			effect ""
+			alignment "CM"
+			sampleText "90"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_over
+		visible_on chek
+		visible_on chek_over
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+		anim disable_chek obj_opc
+		{
+			1 
+			127
+		}
+		anim empty obj_posc
+		{
+			1 
+			4 17
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				5.84547 0.588752	20.8455 0.588752	5.84547 16.5888	20.8455 16.5888	
+				0.211426 0.649414	0.226074 0.649414	0.211426 0.665039	0.226074 0.665039	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on idle_over
+		anim chek sp_posc
+		{
+			1 
+			6.00799 -0.465651	22.7099 -0.465651	6.00799 19.2281	22.7099 19.2281	
+		}
+		anim chek_over sp_posc
+		{
+			1 
+			6.00799 -0.465651	22.7099 -0.465651	6.00799 19.2281	22.7099 19.2281	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+		anim disable_chek sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+		anim empty sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName268
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-5.50126 -6.05236	33.5013 -6.05236	-5.50126 27.7623	33.5013 27.7623	
+				0.425809 0.690596	0.447238 0.690596	0.425809 0.709794	0.447238 0.709794	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim idle_over sp_colc
+		{
+			1
+			0xff333333	0xff333333	0xff333333	0xff333333	
+		}
+		anim chek sp_colc
+		{
+			1
+			0xff333333	0xff333333	0xff333333	0xff333333	
+		}
+		anim chek_over sp_colc
+		{
+			1
+			0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	
+		}
+		visible_on disable
+		anim disable_chek sp_colc
+		{
+			1
+			0xff545454	0xff545454	0xff545454	0xff545454	
+		}
+		visible_on empty
+	}
+}
+
