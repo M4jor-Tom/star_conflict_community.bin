@@ -1,0 +1,74 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by Sergey_Mitryaev
+//at Tue Feb 20 12:23:24 2018
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -0	20 -0	0 20	20 20	
+				0.00976563 0.957031	0.0488281 0.957031	0.00976563 0.996094	0.0488281 0.996094	
+				0x7dffffff	0x7dffffff	0x7dffffff	0x7dffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xc6ffffff	0xc6ffffff	0xc6ffffff	0xc6ffffff	
+		}
+		visible_on press
+	}
+}
+
