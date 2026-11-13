@@ -1,0 +1,125 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Feb 02 19:02:07 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object blackout
+	{
+		defaults
+		{
+			anchor "L"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object window
+	{
+		defaults
+		{
+			anchor "C"
+			pos 379 108
+			opacity 255
+			color 0xffffffff
+			size 352 105
+			effect "ui\graphics\buy_license\buy_license_window"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object exchange
+	{
+		defaults
+		{
+			anchor "C"
+			pos 471.572 289.627
+			opacity 255
+			color 0xffffffff
+			size 340 90
+			effect "ui\graphics\buy_license\exchange_window"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object window_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 471 163
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\buy_license_2\buy_license_window_3"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object tourn_bzs_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 158 68
+			opacity 255
+			color 0xffffffff
+			size 966 576
+			effect "ui\graphics\bzs\tourn_bzs_win"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object avatar_bay_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 403 57
+			opacity 255
+			color 0xffffffff
+			size 486 600
+			effect "ui\graphics\profile\avatar_bay_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object window7
+	{
+		defaults
+		{
+			anchor "C"
+			pos 292 54
+			opacity 255
+			color 0xffffffff
+			size 292 54
+			effect "ui\graphics\tournament\tourn_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
