@@ -1,0 +1,109 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Tue Dec 10 18:08:47 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1484 264
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_btn
+	{
+		defaults
+		{
+			pos 25 207
+			opacity 255
+			color 0xffffffff
+			size 300 42
+			effect "ui\graphics\battle_pass\bp_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text21
+	{
+		defaults
+		{
+			pos 16 6
+			opacity 255
+			color 0xfff2ecb5
+			size 500 30
+			effect ""
+			alignment "LM"
+			sampleText "20asgg eh eh etrertjertjrjh"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object bp_btn7
+	{
+		defaults
+		{
+			pos 25 207
+			opacity 255
+			color 0xffffffff
+			size 300 42
+			effect "ui\graphics\battle_pass\bp_btn2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bp_btn8
+	{
+		defaults
+		{
+			pos 313 207
+			opacity 255
+			color 0xffffffff
+			size 300 42
+			effect "ui\graphics\battle_pass\bp_btn2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				1 1	1483 1	1 263	1483 263	
+				2.98023e-008 0	1 0	2.98023e-008 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
