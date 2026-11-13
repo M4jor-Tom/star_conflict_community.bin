@@ -1,0 +1,51 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Tue Nov 12 12:04:40 2019
+
+base_res 1920 1080
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim cross
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico25
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 103	106 103	0 105.99	106 105.99	
+				0.434656 0.329187	0.442297 0.329187	0.434656 0.336828	0.442297 0.336828	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on cross
+	}
+}
+
