@@ -1,0 +1,159 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Mon Jul 10 13:42:19 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 140
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object friend_btn
+	{
+		defaults
+		{
+			pos 110 38
+			opacity 255
+			color 0xffffffff
+			size 100 50
+			effect "ui\graphics\hangar_iter_3\b_mail_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object voiting_btn
+	{
+		defaults
+		{
+			pos -53 37.644
+			opacity 255
+			color 0xffffffff
+			size 100 50
+			effect "ui\graphics\hangar_iter_3\b_mail_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object mail_btn
+	{
+		defaults
+		{
+			pos 28 37.537
+			opacity 255
+			color 0xffffffff
+			size 100 50
+			effect "ui\graphics\hangar_iter_3\b_mail_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object help_btn
+	{
+		defaults
+		{
+			pos 203 36
+			opacity 255
+			color 0xffffffff
+			size 54 54
+			effect "ui\graphics\hangar_iter_3\menu_btn_4"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object help_btn5
+	{
+		defaults
+		{
+			pos 266 -0
+			opacity 255
+			color 0xffffffff
+			size 126 130
+			effect "ui\graphics\hangar_iter_3\menu_btn_5"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite we44
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				35 42	37 42	35 86	37 86	
+				0.970703 0.216797	0.974609 0.216797	0.970703 0.236328	0.974609 0.236328	
+				0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we45
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				-50 42	-48 42	-50 86	-48 86	
+				0.970703 0.216797	0.974609 0.216797	0.970703 0.236328	0.974609 0.236328	
+				0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we50
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				119 42	121 42	119 86	121 86	
+				0.970703 0.216797	0.974609 0.216797	0.970703 0.236328	0.974609 0.236328	
+				0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
