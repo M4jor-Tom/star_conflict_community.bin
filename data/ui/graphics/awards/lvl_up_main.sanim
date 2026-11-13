@@ -1,0 +1,2405 @@
+﻿source_file "Y:/art/source/ui/graphics/awards/awards.ma"
+//by Sergey_Mitryaev
+//at Tue Feb 06 17:35:32 2018
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 3
+	}
+	anim idle_2
+	{
+		mode once
+		cycle_time 3
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object etext_name
+	{
+		defaults
+		{
+			pos -247 123.725
+			opacity 255
+			color 0xffddecff
+			size 700 40
+			effect ""
+			alignment "CM"
+			sampleText "СМАЧНЫЙ ЖНЕЦСМАЧНЫЙ ЖНЕЦСМАЧНЫЙ ЖНЕЦ"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite bg29
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-235.226 210	-235.226 -91.8797	441.35 210	441.35 -91.8798	
+				0.0807729 0.14116	0.0807729 0.116205	0.226959 0.141159	0.226959 0.116204	
+				0x254759	0x254759	0x254759	0x254759	
+			}
+		}
+		anim idle sp_col
+		{
+			257
+			0x254759	0x254759	0x254759	0x254759	
+			0x7254759	0x7254759	0x7254759	0x7254759	
+			0x10254759	0x10254759	0x10254759	0x10254759	
+			0x19254759	0x19254759	0x19254759	0x19254759	
+			0x22254759	0x22254759	0x22254759	0x22254759	
+			0x2b254759	0x2b254759	0x2b254759	0x2b254759	
+			0x35254759	0x35254759	0x35254759	0x35254759	
+			0x3f254759	0x3f254759	0x3f254759	0x3f254759	
+			0x49254759	0x49254759	0x49254759	0x49254759	
+			0x53254759	0x53254759	0x53254759	0x53254759	
+			0x5d254759	0x5d254759	0x5d254759	0x5d254759	
+			0x67254759	0x67254759	0x67254759	0x67254759	
+			0x71254759	0x71254759	0x71254759	0x71254759	
+			0x7b254759	0x7b254759	0x7b254759	0x7b254759	
+			0x85254759	0x85254759	0x85254759	0x85254759	
+			0x8f254759	0x8f254759	0x8f254759	0x8f254759	
+			0x98254759	0x98254759	0x98254759	0x98254759	
+			0xa1254759	0xa1254759	0xa1254759	0xa1254759	
+			0xaa254759	0xaa254759	0xaa254759	0xaa254759	
+			0xb3254759	0xb3254759	0xb3254759	0xb3254759	
+			0xbb254759	0xbb254759	0xbb254759	0xbb254759	
+			0xc2254759	0xc2254759	0xc2254759	0xc2254759	
+			0xc9254759	0xc9254759	0xc9254759	0xc9254759	
+			0xcf254759	0xcf254759	0xcf254759	0xcf254759	
+			0xd4254759	0xd4254759	0xd4254759	0xd4254759	
+			0xd9254759	0xd9254759	0xd9254759	0xd9254759	
+			0xdd254759	0xdd254759	0xdd254759	0xdd254759	
+			0xe1254759	0xe1254759	0xe1254759	0xe1254759	
+			0xe3254759	0xe3254759	0xe3254759	0xe3254759	
+			0xe4254759	0xe4254759	0xe4254759	0xe4254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe5254759	0xe5254759	0xe5254759	0xe5254759	
+			0xe4254759	0xe4254759	0xe4254759	0xe4254759	
+			0xe1254759	0xe1254759	0xe1254759	0xe1254759	
+			0xdd254759	0xdd254759	0xdd254759	0xdd254759	
+			0xd6254759	0xd6254759	0xd6254759	0xd6254759	
+			0xcf254759	0xcf254759	0xcf254759	0xcf254759	
+			0xc6254759	0xc6254759	0xc6254759	0xc6254759	
+			0xbc254759	0xbc254759	0xbc254759	0xbc254759	
+			0xb1254759	0xb1254759	0xb1254759	0xb1254759	
+			0xa6254759	0xa6254759	0xa6254759	0xa6254759	
+			0x99254759	0x99254759	0x99254759	0x99254759	
+			0x8d254759	0x8d254759	0x8d254759	0x8d254759	
+			0x7f254759	0x7f254759	0x7f254759	0x7f254759	
+			0x72254759	0x72254759	0x72254759	0x72254759	
+			0x65254759	0x65254759	0x65254759	0x65254759	
+			0x58254759	0x58254759	0x58254759	0x58254759	
+			0x4b254759	0x4b254759	0x4b254759	0x4b254759	
+			0x3f254759	0x3f254759	0x3f254759	0x3f254759	
+			0x33254759	0x33254759	0x33254759	0x33254759	
+			0x28254759	0x28254759	0x28254759	0x28254759	
+			0x1f254759	0x1f254759	0x1f254759	0x1f254759	
+			0x16254759	0x16254759	0x16254759	0x16254759	
+			0xe254759	0xe254759	0xe254759	0xe254759	
+			0x8254759	0x8254759	0x8254759	0x8254759	
+			0x3254759	0x3254759	0x3254759	0x3254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+			0x254759	0x254759	0x254759	0x254759	
+		}
+		visible_on idle_2
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/achivments.tif"
+			vertices
+			{
+				-336.345 -78.3232	560.994 -78.3232	-336.345 234.464	560.994 234.464	
+				0.000976563 0.913184	0.342773 0.913184	0.000976563 0.96084	0.342773 0.96084	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim idle sp_pos_col
+		{
+			257 257
+			-336.345 -78.3232	560.994 -78.3232	-336.345 234.464	560.994 234.464	
+			-321.872 -74.0116	546.801 -74.0116	-321.872 228.783	546.801 228.783	
+			-306.224 -69.35	531.456 -69.35	-306.224 222.641	531.456 222.641	
+			-289.608 -64.4003	515.162 -64.4003	-289.608 216.12	515.162 216.12	
+			-272.233 -59.2242	498.124 -59.2242	-272.233 209.3	498.124 209.3	
+			-254.305 -53.8835	480.543 -53.8835	-254.305 202.263	480.543 202.263	
+			-236.032 -48.4399	462.623 -48.4399	-236.032 195.091	462.623 195.091	
+			-217.62 -42.9551	444.568 -42.9551	-217.62 187.865	444.568 187.865	
+			-199.278 -37.4909	426.581 -37.4909	-199.278 180.666	426.581 180.666	
+			-181.212 -32.109	408.865 -32.109	-181.212 173.575	408.865 173.575	
+			-163.629 -26.8712	391.623 -26.8712	-163.629 166.674	391.623 166.674	
+			-146.738 -21.8392	375.058 -21.8392	-146.738 160.044	375.058 160.044	
+			-130.744 -17.0747	359.375 -17.0747	-130.744 153.767	359.375 153.767	
+			-115.856 -12.6396	344.775 -12.6396	-115.856 147.923	344.775 147.923	
+			-102.281 -8.59546	331.462 -8.59546	-102.281 142.595	331.462 142.595	
+			-90.2253 -5.0041	319.64 -5.0041	-90.2253 137.863	319.64 137.863	
+			-79.8968 -1.92727	309.512 -1.92727	-79.8968 133.809	309.512 133.809	
+			-71.5029 0.573295	301.28 0.573295	-71.5029 130.515	301.28 130.515	
+			-65.2506 2.43586	295.149 2.43586	-65.2506 128.061	295.149 128.061	
+			-61.3472 3.59868	291.321 3.59868	-61.3472 126.529	291.321 126.529	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-58.2375 4.52504	288.272 4.52504	-58.2375 125.308	288.272 125.308	
+			-53.2381 6.01438	283.369 6.01438	-53.2381 123.346	283.369 123.346	
+			-45.4329 8.33953	275.715 8.33953	-45.4329 120.283	275.715 120.283	
+			-35.2539 11.3719	265.733 11.3719	-35.2539 116.287	265.733 116.287	
+			-23.1329 14.9827	253.847 14.9827	-23.1329 111.53	253.847 111.53	
+			-9.50086 19.0437	240.479 19.0437	-9.50086 106.179	240.479 106.179	
+			5.21018 23.4261	226.053 23.4261	5.21018 100.405	226.053 100.405	
+			20.5683 28.0013	210.992 28.0013	20.5683 94.3775	210.992 94.3775	
+			36.1426 32.6409	195.719 32.6409	36.1426 88.2647	195.719 88.2647	
+			51.501 37.2162	180.658 37.2162	51.501 82.2366	180.658 82.2366	
+			66.2117 41.5985	166.232 41.5985	66.2117 76.4627	166.232 76.4627	
+			79.8437 45.6595	152.864 45.6595	79.8437 71.1123	152.864 71.1123	
+			91.965 49.2704	140.978 49.2704	91.965 66.3548	140.978 66.3548	
+			102.144 52.3026	130.996 52.3026	102.144 62.3596	130.996 62.3596	
+			109.949 54.6278	123.342 54.6278	109.949 59.2962	123.342 59.2962	
+			114.948 56.1172	118.439 56.1172	114.948 57.3339	118.439 57.3339	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x9ffffff	0x9ffffff	0x9ffffff	0x9ffffff	
+			0x12ffffff	0x12ffffff	0x12ffffff	0x12ffffff	
+			0x1cffffff	0x1cffffff	0x1cffffff	0x1cffffff	
+			0x27ffffff	0x27ffffff	0x27ffffff	0x27ffffff	
+			0x32ffffff	0x32ffffff	0x32ffffff	0x32ffffff	
+			0x3dffffff	0x3dffffff	0x3dffffff	0x3dffffff	
+			0x48ffffff	0x48ffffff	0x48ffffff	0x48ffffff	
+			0x54ffffff	0x54ffffff	0x54ffffff	0x54ffffff	
+			0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	
+			0x6bffffff	0x6bffffff	0x6bffffff	0x6bffffff	
+			0x77ffffff	0x77ffffff	0x77ffffff	0x77ffffff	
+			0x83ffffff	0x83ffffff	0x83ffffff	0x83ffffff	
+			0x8effffff	0x8effffff	0x8effffff	0x8effffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0xa4ffffff	0xa4ffffff	0xa4ffffff	0xa4ffffff	
+			0xafffffff	0xafffffff	0xafffffff	0xafffffff	
+			0xb9ffffff	0xb9ffffff	0xb9ffffff	0xb9ffffff	
+			0xc3ffffff	0xc3ffffff	0xc3ffffff	0xc3ffffff	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			0xd5ffffff	0xd5ffffff	0xd5ffffff	0xd5ffffff	
+			0xddffffff	0xddffffff	0xddffffff	0xddffffff	
+			0xe4ffffff	0xe4ffffff	0xe4ffffff	0xe4ffffff	
+			0xebffffff	0xebffffff	0xebffffff	0xebffffff	
+			0xf1ffffff	0xf1ffffff	0xf1ffffff	0xf1ffffff	
+			0xf5ffffff	0xf5ffffff	0xf5ffffff	0xf5ffffff	
+			0xf9ffffff	0xf9ffffff	0xf9ffffff	0xf9ffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfeffffff	0xfeffffff	0xfeffffff	0xfeffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfeffffff	0xfeffffff	0xfeffffff	0xfeffffff	
+			0xfdffffff	0xfdffffff	0xfdffffff	0xfdffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfaffffff	0xfaffffff	0xfaffffff	0xfaffffff	
+			0xf8ffffff	0xf8ffffff	0xf8ffffff	0xf8ffffff	
+			0xf5ffffff	0xf5ffffff	0xf5ffffff	0xf5ffffff	
+			0xf1ffffff	0xf1ffffff	0xf1ffffff	0xf1ffffff	
+			0xeeffffff	0xeeffffff	0xeeffffff	0xeeffffff	
+			0xe9ffffff	0xe9ffffff	0xe9ffffff	0xe9ffffff	
+			0xe5ffffff	0xe5ffffff	0xe5ffffff	0xe5ffffff	
+			0xe0ffffff	0xe0ffffff	0xe0ffffff	0xe0ffffff	
+			0xdbffffff	0xdbffffff	0xdbffffff	0xdbffffff	
+			0xd5ffffff	0xd5ffffff	0xd5ffffff	0xd5ffffff	
+			0xcfffffff	0xcfffffff	0xcfffffff	0xcfffffff	
+			0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	
+			0xc3ffffff	0xc3ffffff	0xc3ffffff	0xc3ffffff	
+			0xbcffffff	0xbcffffff	0xbcffffff	0xbcffffff	
+			0xb6ffffff	0xb6ffffff	0xb6ffffff	0xb6ffffff	
+			0xafffffff	0xafffffff	0xafffffff	0xafffffff	
+			0xa8ffffff	0xa8ffffff	0xa8ffffff	0xa8ffffff	
+			0xa0ffffff	0xa0ffffff	0xa0ffffff	0xa0ffffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0x92ffffff	0x92ffffff	0x92ffffff	0x92ffffff	
+			0x8affffff	0x8affffff	0x8affffff	0x8affffff	
+			0x83ffffff	0x83ffffff	0x83ffffff	0x83ffffff	
+			0x7bffffff	0x7bffffff	0x7bffffff	0x7bffffff	
+			0x74ffffff	0x74ffffff	0x74ffffff	0x74ffffff	
+			0x6cffffff	0x6cffffff	0x6cffffff	0x6cffffff	
+			0x65ffffff	0x65ffffff	0x65ffffff	0x65ffffff	
+			0x5effffff	0x5effffff	0x5effffff	0x5effffff	
+			0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			0x4fffffff	0x4fffffff	0x4fffffff	0x4fffffff	
+			0x48ffffff	0x48ffffff	0x48ffffff	0x48ffffff	
+			0x42ffffff	0x42ffffff	0x42ffffff	0x42ffffff	
+			0x3bffffff	0x3bffffff	0x3bffffff	0x3bffffff	
+			0x35ffffff	0x35ffffff	0x35ffffff	0x35ffffff	
+			0x2fffffff	0x2fffffff	0x2fffffff	0x2fffffff	
+			0x29ffffff	0x29ffffff	0x29ffffff	0x29ffffff	
+			0x23ffffff	0x23ffffff	0x23ffffff	0x23ffffff	
+			0x1effffff	0x1effffff	0x1effffff	0x1effffff	
+			0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	
+			0x15ffffff	0x15ffffff	0x15ffffff	0x15ffffff	
+			0x10ffffff	0x10ffffff	0x10ffffff	0x10ffffff	
+			0xdffffff	0xdffffff	0xdffffff	0xdffffff	
+			0x9ffffff	0x9ffffff	0x9ffffff	0x9ffffff	
+			0x6ffffff	0x6ffffff	0x6ffffff	0x6ffffff	
+			0x4ffffff	0x4ffffff	0x4ffffff	0x4ffffff	
+			0x2ffffff	0x2ffffff	0x2ffffff	0x2ffffff	
+			0x1ffffff	0x1ffffff	0x1ffffff	0x1ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim idle_2 sp_pos_col
+		{
+			251 251
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			-321.872 -74.0116	546.801 -74.0116	-321.872 228.783	546.801 228.783	
+			-306.224 -69.35	531.456 -69.35	-306.224 222.641	531.456 222.641	
+			-289.608 -64.4003	515.162 -64.4003	-289.608 216.12	515.162 216.12	
+			-272.233 -59.2242	498.124 -59.2242	-272.233 209.3	498.124 209.3	
+			-254.305 -53.8835	480.543 -53.8835	-254.305 202.263	480.543 202.263	
+			-236.032 -48.4399	462.623 -48.4399	-236.032 195.091	462.623 195.091	
+			-217.62 -42.9551	444.568 -42.9551	-217.62 187.865	444.568 187.865	
+			-199.278 -37.4909	426.581 -37.4909	-199.278 180.666	426.581 180.666	
+			-181.212 -32.109	408.865 -32.109	-181.212 173.575	408.865 173.575	
+			-163.629 -26.8712	391.623 -26.8712	-163.629 166.674	391.623 166.674	
+			-146.738 -21.8392	375.058 -21.8392	-146.738 160.044	375.058 160.044	
+			-130.744 -17.0747	359.375 -17.0747	-130.744 153.767	359.375 153.767	
+			-115.856 -12.6396	344.775 -12.6396	-115.856 147.923	344.775 147.923	
+			-102.281 -8.59546	331.462 -8.59546	-102.281 142.595	331.462 142.595	
+			-90.2253 -5.0041	319.64 -5.0041	-90.2253 137.863	319.64 137.863	
+			-79.8968 -1.92727	309.512 -1.92727	-79.8968 133.809	309.512 133.809	
+			-71.5029 0.573295	301.28 0.573295	-71.5029 130.515	301.28 130.515	
+			-65.2506 2.43586	295.149 2.43586	-65.2506 128.061	295.149 128.061	
+			-61.3472 3.59868	291.321 3.59868	-61.3472 126.529	291.321 126.529	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-60 4	290 4	-60 126	290 126	
+			-58.2375 4.52504	288.272 4.52504	-58.2375 125.308	288.272 125.308	
+			-53.2381 6.01438	283.369 6.01438	-53.2381 123.346	283.369 123.346	
+			-45.4329 8.33953	275.715 8.33953	-45.4329 120.283	275.715 120.283	
+			-35.2539 11.3719	265.733 11.3719	-35.2539 116.287	265.733 116.287	
+			-23.1329 14.9827	253.847 14.9827	-23.1329 111.53	253.847 111.53	
+			-9.50086 19.0437	240.479 19.0437	-9.50086 106.179	240.479 106.179	
+			5.21018 23.4261	226.053 23.4261	5.21018 100.405	226.053 100.405	
+			20.5683 28.0013	210.992 28.0013	20.5683 94.3775	210.992 94.3775	
+			36.1426 32.6409	195.719 32.6409	36.1426 88.2647	195.719 88.2647	
+			51.501 37.2162	180.658 37.2162	51.501 82.2366	180.658 82.2366	
+			66.2117 41.5985	166.232 41.5985	66.2117 76.4627	166.232 76.4627	
+			79.8437 45.6595	152.864 45.6595	79.8437 71.1123	152.864 71.1123	
+			91.965 49.2704	140.978 49.2704	91.965 66.3548	140.978 66.3548	
+			102.144 52.3026	130.996 52.3026	102.144 62.3596	130.996 62.3596	
+			109.949 54.6278	123.342 54.6278	109.949 59.2962	123.342 59.2962	
+			114.948 56.1172	118.439 56.1172	114.948 57.3339	118.439 57.3339	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			116.711 56.6422	116.711 56.6422	116.711 56.6422	116.711 56.6422	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0x9ffffff	0x9ffffff	0x9ffffff	0x9ffffff	
+			0x12ffffff	0x12ffffff	0x12ffffff	0x12ffffff	
+			0x1cffffff	0x1cffffff	0x1cffffff	0x1cffffff	
+			0x27ffffff	0x27ffffff	0x27ffffff	0x27ffffff	
+			0x32ffffff	0x32ffffff	0x32ffffff	0x32ffffff	
+			0x3dffffff	0x3dffffff	0x3dffffff	0x3dffffff	
+			0x48ffffff	0x48ffffff	0x48ffffff	0x48ffffff	
+			0x54ffffff	0x54ffffff	0x54ffffff	0x54ffffff	
+			0x60ffffff	0x60ffffff	0x60ffffff	0x60ffffff	
+			0x6bffffff	0x6bffffff	0x6bffffff	0x6bffffff	
+			0x77ffffff	0x77ffffff	0x77ffffff	0x77ffffff	
+			0x83ffffff	0x83ffffff	0x83ffffff	0x83ffffff	
+			0x8effffff	0x8effffff	0x8effffff	0x8effffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0xa4ffffff	0xa4ffffff	0xa4ffffff	0xa4ffffff	
+			0xafffffff	0xafffffff	0xafffffff	0xafffffff	
+			0xb9ffffff	0xb9ffffff	0xb9ffffff	0xb9ffffff	
+			0xc3ffffff	0xc3ffffff	0xc3ffffff	0xc3ffffff	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			0xd5ffffff	0xd5ffffff	0xd5ffffff	0xd5ffffff	
+			0xddffffff	0xddffffff	0xddffffff	0xddffffff	
+			0xe4ffffff	0xe4ffffff	0xe4ffffff	0xe4ffffff	
+			0xebffffff	0xebffffff	0xebffffff	0xebffffff	
+			0xf1ffffff	0xf1ffffff	0xf1ffffff	0xf1ffffff	
+			0xf5ffffff	0xf5ffffff	0xf5ffffff	0xf5ffffff	
+			0xf9ffffff	0xf9ffffff	0xf9ffffff	0xf9ffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfeffffff	0xfeffffff	0xfeffffff	0xfeffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfeffffff	0xfeffffff	0xfeffffff	0xfeffffff	
+			0xfdffffff	0xfdffffff	0xfdffffff	0xfdffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfaffffff	0xfaffffff	0xfaffffff	0xfaffffff	
+			0xf8ffffff	0xf8ffffff	0xf8ffffff	0xf8ffffff	
+			0xf5ffffff	0xf5ffffff	0xf5ffffff	0xf5ffffff	
+			0xf1ffffff	0xf1ffffff	0xf1ffffff	0xf1ffffff	
+			0xeeffffff	0xeeffffff	0xeeffffff	0xeeffffff	
+			0xe9ffffff	0xe9ffffff	0xe9ffffff	0xe9ffffff	
+			0xe5ffffff	0xe5ffffff	0xe5ffffff	0xe5ffffff	
+			0xe0ffffff	0xe0ffffff	0xe0ffffff	0xe0ffffff	
+			0xdbffffff	0xdbffffff	0xdbffffff	0xdbffffff	
+			0xd5ffffff	0xd5ffffff	0xd5ffffff	0xd5ffffff	
+			0xcfffffff	0xcfffffff	0xcfffffff	0xcfffffff	
+			0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	
+			0xc3ffffff	0xc3ffffff	0xc3ffffff	0xc3ffffff	
+			0xbcffffff	0xbcffffff	0xbcffffff	0xbcffffff	
+			0xb6ffffff	0xb6ffffff	0xb6ffffff	0xb6ffffff	
+			0xafffffff	0xafffffff	0xafffffff	0xafffffff	
+			0xa8ffffff	0xa8ffffff	0xa8ffffff	0xa8ffffff	
+			0xa0ffffff	0xa0ffffff	0xa0ffffff	0xa0ffffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0x92ffffff	0x92ffffff	0x92ffffff	0x92ffffff	
+			0x8affffff	0x8affffff	0x8affffff	0x8affffff	
+			0x83ffffff	0x83ffffff	0x83ffffff	0x83ffffff	
+			0x7bffffff	0x7bffffff	0x7bffffff	0x7bffffff	
+			0x74ffffff	0x74ffffff	0x74ffffff	0x74ffffff	
+			0x6cffffff	0x6cffffff	0x6cffffff	0x6cffffff	
+			0x65ffffff	0x65ffffff	0x65ffffff	0x65ffffff	
+			0x5effffff	0x5effffff	0x5effffff	0x5effffff	
+			0x56ffffff	0x56ffffff	0x56ffffff	0x56ffffff	
+			0x4fffffff	0x4fffffff	0x4fffffff	0x4fffffff	
+			0x48ffffff	0x48ffffff	0x48ffffff	0x48ffffff	
+			0x42ffffff	0x42ffffff	0x42ffffff	0x42ffffff	
+			0x3bffffff	0x3bffffff	0x3bffffff	0x3bffffff	
+			0x35ffffff	0x35ffffff	0x35ffffff	0x35ffffff	
+			0x2fffffff	0x2fffffff	0x2fffffff	0x2fffffff	
+			0x29ffffff	0x29ffffff	0x29ffffff	0x29ffffff	
+			0x23ffffff	0x23ffffff	0x23ffffff	0x23ffffff	
+			0x1effffff	0x1effffff	0x1effffff	0x1effffff	
+			0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	
+			0x15ffffff	0x15ffffff	0x15ffffff	0x15ffffff	
+			0x10ffffff	0x10ffffff	0x10ffffff	0x10ffffff	
+			0xdffffff	0xdffffff	0xdffffff	0xdffffff	
+			0x9ffffff	0x9ffffff	0x9ffffff	0x9ffffff	
+		}
+	}
+	sprite etext_name_sprite
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			blend color_add
+			vertices
+			{
+				125.233 128.551	125.233 128.551	125.233 128.551	125.233 128.551	
+				0 0	1 0	0 1	1 1	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		anim idle sp_pos_col
+		{
+			257 257
+			125.233 128.551	125.233 128.551	125.233 128.551	125.233 128.551	
+			125.233 129.555	125.233 129.555	125.233 129.555	125.233 129.555	
+			125.233 130.343	125.233 130.343	125.233 130.343	125.233 130.343	
+			125.233 130.931	125.233 130.931	125.233 130.931	125.233 130.931	
+			125.233 131.341	125.233 131.341	125.233 131.341	125.233 131.341	
+			125.233 131.588	125.233 131.588	125.233 131.588	125.233 131.588	
+			125.233 131.694	125.233 131.694	125.233 131.694	125.233 131.694	
+			125.233 131.675	125.233 131.675	125.233 131.675	125.233 131.675	
+			125.233 131.551	125.233 131.551	125.233 131.551	125.233 131.551	
+			125.233 131.341	125.233 131.341	125.233 131.341	125.233 131.341	
+			125.233 131.062	125.233 131.062	125.233 131.062	125.233 131.062	
+			125.233 130.733	125.233 130.733	125.233 130.733	125.233 130.733	
+			125.233 130.374	125.233 130.374	125.233 130.374	125.233 130.374	
+			125.233 130.002	125.233 130.002	125.233 130.002	125.233 130.002	
+			125.233 129.636	125.233 129.636	125.233 129.636	125.233 129.636	
+			125.233 129.295	125.233 129.295	125.233 129.295	125.233 129.295	
+			125.233 128.997	125.233 128.997	125.233 128.997	125.233 128.997	
+			125.233 128.762	125.233 128.762	125.233 128.762	125.233 128.762	
+			125.233 128.607	125.233 128.607	125.233 128.607	125.233 128.607	
+			125.233 128.551	125.233 128.551	125.233 128.551	125.233 128.551	
+			125.233 128.731	125.233 128.731	125.233 128.731	125.233 128.731	
+			125.233 129.242	125.233 129.242	125.233 129.242	125.233 129.242	
+			125.233 130.043	125.233 130.043	125.233 130.043	125.233 130.043	
+			125.233 131.093	125.233 131.093	125.233 131.093	125.233 131.093	
+			125.233 132.35	125.233 132.35	125.233 132.35	125.233 132.35	
+			112.234 133.453	137.311 133.453	112.234 134.252	137.311 134.252	
+			75.8376 134.104	171.13 134.104	75.8376 137.143	171.13 137.143	
+			19.9432 134.358	223.066 134.358	19.9432 140.835	223.066 140.835	
+			-51.5497 134.27	289.496 134.27	-51.5497 145.145	289.496 145.145	
+			-134.742 133.894	366.796 133.894	-134.742 149.887	366.796 149.887	
+			-225.732 133.285	451.343 133.285	-225.732 154.875	451.343 154.875	
+			-320.623 132.497	539.514 132.497	-320.623 159.925	539.514 159.925	
+			-415.514 131.585	627.685 131.585	-415.514 164.85	627.685 164.85	
+			-506.505 130.602	712.232 130.602	-506.505 169.465	712.232 169.465	
+			-589.696 129.605	789.532 129.605	-589.696 173.585	789.532 173.585	
+			-661.189 128.647	855.962 128.647	-661.189 177.025	855.962 177.025	
+			-717.084 127.782	907.898 127.782	-717.084 179.599	907.898 179.599	
+			-753.48 127.066	941.717 127.066	-753.48 181.122	941.717 181.122	
+			-766.479 126.746	953.795 126.746	-766.479 181.602	953.795 181.602	
+			-216.528 133.619	442.791 133.619	-216.528 171.294	442.791 171.294	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-270.876 132.689	429.124 132.689	-270.876 172.689	429.124 172.689	
+			-362.835 132.689	337.165 132.689	-362.835 172.689	337.165 172.689	
+			-501.748 132.689	198.252 132.689	-501.748 172.689	198.252 172.689	
+			-675.882 132.689	24.1181 132.689	-675.882 172.689	24.1181 172.689	
+			-873.495 132.689	-173.495 132.689	-873.495 172.689	-173.495 172.689	
+			-1082.84 132.689	-382.843 132.689	-1082.84 172.689	-382.843 172.689	
+			-1292.19 132.689	-592.195 132.689	-1292.19 172.689	-592.195 172.689	
+			-1493.31 132.714	-786.551 132.714	-1493.31 172.651	-786.551 172.651	
+			-1676.98 132.79	-951.819 132.79	-1676.98 172.538	-951.819 172.538	
+			-1830 132.918	-1077.63 132.918	-1830 172.346	-1077.63 172.346	
+			-1939.16 133.099	-1153.6 133.099	-1939.16 172.073	-1153.6 172.073	
+			-1991.26 133.335	-1169.36 133.335	-1991.26 171.719	-1169.36 171.719	
+			-2010.26 133.627	-1151.7 133.627	-2010.26 171.281	-1151.7 171.281	
+			-2027.97 133.977	-1135.25 133.977	-2027.97 170.757	-1135.25 170.757	
+			-2042.91 134.385	-1121.36 134.385	-2042.91 170.145	-1121.36 170.145	
+			-2053.62 134.853	-1111.41 134.853	-2053.62 169.444	-1111.41 169.444	
+			-2058.64 135.381	-1106.75 135.381	-2058.64 168.651	-1106.75 168.651	
+			-2056.49 135.973	-1108.75 135.973	-2056.49 167.764	-1108.75 167.764	
+			-2045.71 136.628	-1118.76 136.628	-2045.71 166.782	-1118.76 166.782	
+			-2030.51 137.29	-1132.89 137.29	-2030.51 165.789	-1132.89 165.789	
+			-2016.41 137.886	-1145.99 137.886	-2016.41 164.895	-1145.99 164.895	
+			-2003.39 138.419	-1158.09 138.419	-2003.39 164.096	-1158.09 164.096	
+			-1991.41 138.89	-1169.22 138.89	-1991.41 163.388	-1169.22 163.388	
+			-1980.43 139.303	-1179.42 139.303	-1980.43 162.77	-1179.42 162.77	
+			-1970.41 139.658	-1188.74 139.658	-1970.41 162.237	-1188.74 162.237	
+			-1961.31 139.959	-1197.19 139.959	-1961.31 161.785	-1197.19 161.785	
+			-1953.1 140.208	-1204.82 140.208	-1953.1 161.413	-1204.82 161.413	
+			-1945.74 140.406	-1211.66 140.406	-1945.74 161.115	-1211.66 161.115	
+			-1939.19 140.556	-1217.74 140.556	-1939.19 160.89	-1217.74 160.89	
+			-1933.42 140.661	-1223.11 140.661	-1933.42 160.733	-1223.11 160.733	
+			-1928.38 140.722	-1227.79 140.722	-1928.38 160.642	-1227.79 160.642	
+			-1924.04 140.741	-1231.82 140.741	-1924.04 160.612	-1231.82 160.612	
+			-1920.37 140.722	-1235.23 140.722	-1920.37 160.642	-1235.23 160.642	
+			-1917.32 140.665	-1238.07 140.665	-1917.32 160.726	-1238.07 160.726	
+			-1914.85 140.574	-1240.36 140.574	-1914.85 160.863	-1240.36 160.863	
+			-1912.94 140.45	-1242.13 140.45	-1912.94 161.048	-1242.13 161.048	
+			-1911.54 140.297	-1243.44 140.297	-1911.54 161.279	-1243.44 161.279	
+			-1910.61 140.115	-1244.3 140.115	-1910.61 161.552	-1244.3 161.552	
+			-1910.12 139.907	-1244.75 139.907	-1910.12 161.864	-1244.75 161.864	
+			-1910.03 139.675	-1244.84 139.675	-1910.03 162.211	-1244.84 162.211	
+			-1910.3 139.422	-1244.58 139.422	-1910.3 162.59	-1244.58 162.59	
+			-1910.9 139.15	-1244.03 139.15	-1910.9 162.998	-1244.03 162.998	
+			-1911.78 138.861	-1243.21 138.861	-1911.78 163.432	-1243.21 163.432	
+			-1912.92 138.557	-1242.15 138.557	-1912.92 163.887	-1242.15 163.887	
+			-1914.26 138.241	-1240.9 138.241	-1914.26 164.362	-1240.9 164.362	
+			-1915.78 137.914	-1239.49 137.914	-1915.78 164.852	-1239.49 164.852	
+			-1917.44 137.58	-1237.95 137.58	-1917.44 165.354	-1237.95 165.354	
+			-1919.2 137.239	-1236.32 137.239	-1919.2 165.865	-1236.32 165.865	
+			-1921.02 136.894	-1234.62 136.894	-1921.02 166.382	-1234.62 166.382	
+			-1922.87 136.548	-1232.91 136.548	-1922.87 166.9	-1232.91 166.9	
+			-1924.7 136.203	-1231.2 136.203	-1924.7 167.418	-1231.2 167.418	
+			-1926.48 135.861	-1229.55 135.861	-1926.48 167.931	-1229.55 167.931	
+			-1928.18 135.524	-1227.97 135.524	-1928.18 168.437	-1227.97 168.437	
+			-1929.75 135.194	-1226.51 135.194	-1929.75 168.931	-1226.51 168.931	
+			-1931.16 134.874	-1225.2 134.874	-1931.16 169.411	-1225.2 169.411	
+			-1932.37 134.566	-1224.08 134.566	-1932.37 169.874	-1224.08 169.874	
+			-1933.34 134.272	-1223.18 134.272	-1933.34 170.315	-1223.18 170.315	
+			-1934.04 133.994	-1222.53 133.994	-1934.04 170.732	-1222.53 170.732	
+			-1934.42 133.734	-1222.17 133.734	-1934.42 171.121	-1222.17 171.121	
+			-1934.46 133.495	-1222.14 133.495	-1934.46 171.479	-1222.14 171.479	
+			-1934.1 133.279	-1222.47 133.279	-1934.1 171.803	-1222.47 171.803	
+			-1933.33 133.089	-1223.19 133.089	-1933.33 172.089	-1223.19 172.089	
+			-1932.09 132.925	-1224.34 132.925	-1932.09 172.335	-1224.34 172.335	
+			-1930.35 132.791	-1225.96 132.791	-1930.35 172.536	-1225.96 172.536	
+			-1928.07 132.689	-1228.07 132.689	-1928.07 172.689	-1228.07 172.689	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x50505	0x50505	0x50505	0x50505	
+			0xd0d0d	0xd0d0d	0xd0d0d	0xd0d0d	
+			0x1171717	0x1171717	0x1171717	0x1171717	
+			0x4232323	0x4232323	0x4232323	0x4232323	
+			0xa303030	0xa303030	0xa303030	0xa303030	
+			0x123f3f3f	0x123f3f3f	0x123f3f3f	0x123f3f3f	
+			0x1c4f4f4f	0x1c4f4f4f	0x1c4f4f4f	0x1c4f4f4f	
+			0x28606060	0x28606060	0x28606060	0x28606060	
+			0x36737373	0x36737373	0x36737373	0x36737373	
+			0x45878787	0x45878787	0x45878787	0x45878787	
+			0x579c9c9c	0x579c9c9c	0x579c9c9c	0x579c9c9c	
+			0x6ab2b2b2	0x6ab2b2b2	0x6ab2b2b2	0x6ab2b2b2	
+			0x7fc9c9c9	0x7fc9c9c9	0x7fc9c9c9	0x7fc9c9c9	
+			0x95e1e1e1	0x95e1e1e1	0x95e1e1e1	0x95e1e1e1	
+			0xadf9f9f9	0xadf9f9f9	0xadf9f9f9	0xadf9f9f9	
+			0xc6ffffff	0xc6ffffff	0xc6ffffff	0xc6ffffff	
+			0xe0ffffff	0xe0ffffff	0xe0ffffff	0xe0ffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcf7f7f7	0xfcf7f7f7	0xfcf7f7f7	0xfcf7f7f7	
+			0xfce4e4e4	0xfce4e4e4	0xfce4e4e4	0xfce4e4e4	
+			0xfcc7c7c7	0xfcc7c7c7	0xfcc7c7c7	0xfcc7c7c7	
+			0xfca5a5a5	0xfca5a5a5	0xfca5a5a5	0xfca5a5a5	
+			0xfc7f7f7f	0xfc7f7f7f	0xfc7f7f7f	0xfc7f7f7f	
+			0xfc595959	0xfc595959	0xfc595959	0xfc595959	
+			0xfc373737	0xfc373737	0xfc373737	0xfc373737	
+			0xfc1a1a1a	0xfc1a1a1a	0xfc1a1a1a	0xfc1a1a1a	
+			0xfc070707	0xfc070707	0xfc070707	0xfc070707	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xf9000000	0xf9000000	0xf9000000	0xf9000000	
+			0xf1000000	0xf1000000	0xf1000000	0xf1000000	
+			0xe4000000	0xe4000000	0xe4000000	0xe4000000	
+			0xd3000000	0xd3000000	0xd3000000	0xd3000000	
+			0xbe000000	0xbe000000	0xbe000000	0xbe000000	
+			0xa6000000	0xa6000000	0xa6000000	0xa6000000	
+			0x8c000000	0x8c000000	0x8c000000	0x8c000000	
+			0x71000000	0x71000000	0x71000000	0x71000000	
+			0x55000000	0x55000000	0x55000000	0x55000000	
+			0x38000000	0x38000000	0x38000000	0x38000000	
+			0x1b000000	0x1b000000	0x1b000000	0x1b000000	
+			0x0	0x0	0x0	0x0	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle_2 sp_pos_col
+		{
+			251 251
+			-1565.22 129.636	-1565.22 129.636	-1565.22 129.636	-1565.22 129.636	
+			125.233 129.295	125.233 129.295	125.233 129.295	125.233 129.295	
+			125.233 128.997	125.233 128.997	125.233 128.997	125.233 128.997	
+			125.233 128.762	125.233 128.762	125.233 128.762	125.233 128.762	
+			125.233 128.607	125.233 128.607	125.233 128.607	125.233 128.607	
+			125.233 128.551	125.233 128.551	125.233 128.551	125.233 128.551	
+			125.233 128.731	125.233 128.731	125.233 128.731	125.233 128.731	
+			125.233 129.242	125.233 129.242	125.233 129.242	125.233 129.242	
+			125.233 130.043	125.233 130.043	125.233 130.043	125.233 130.043	
+			125.233 131.093	125.233 131.093	125.233 131.093	125.233 131.093	
+			125.233 132.35	125.233 132.35	125.233 132.35	125.233 132.35	
+			112.234 133.453	137.311 133.453	112.234 134.252	137.311 134.252	
+			75.8376 134.104	171.13 134.104	75.8376 137.143	171.13 137.143	
+			19.9432 134.358	223.066 134.358	19.9432 140.835	223.066 140.835	
+			-51.5497 134.27	289.496 134.27	-51.5497 145.145	289.496 145.145	
+			-134.742 133.894	366.796 133.894	-134.742 149.887	366.796 149.887	
+			-225.732 133.285	451.343 133.285	-225.732 154.875	451.343 154.875	
+			-320.623 132.497	539.514 132.497	-320.623 159.925	539.514 159.925	
+			-415.514 131.585	627.685 131.585	-415.514 164.85	627.685 164.85	
+			-506.505 130.602	712.232 130.602	-506.505 169.465	712.232 169.465	
+			-589.696 129.605	789.532 129.605	-589.696 173.585	789.532 173.585	
+			-661.189 128.647	855.962 128.647	-661.189 177.025	855.962 177.025	
+			-717.084 127.782	907.898 127.782	-717.084 179.599	907.898 179.599	
+			-753.48 127.066	941.717 127.066	-753.48 181.122	941.717 181.122	
+			-766.479 126.746	953.795 126.746	-766.479 181.602	953.795 181.602	
+			-216.528 133.619	442.791 133.619	-216.528 171.294	442.791 171.294	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-237.615 132.689	462.385 132.689	-237.615 172.689	462.385 172.689	
+			-241.12 132.714	465.641 132.714	-241.12 172.651	465.641 172.651	
+			-250.657 132.79	474.503 132.79	-250.657 172.538	474.503 172.538	
+			-264.761 132.918	487.608 132.918	-264.761 172.346	487.608 172.346	
+			-281.965 133.099	503.593 133.099	-281.965 172.073	503.593 172.073	
+			-300.802 133.335	521.096 133.335	-300.802 171.719	521.096 171.719	
+			-319.807 133.627	538.756 133.627	-319.807 171.281	538.756 171.281	
+			-337.514 133.977	555.208 133.977	-337.514 170.757	555.208 170.757	
+			-385.717 134.385	535.831 134.385	-385.717 170.145	535.831 170.145	
+			-488.387 134.853	453.825 134.853	-488.387 169.444	453.825 169.444	
+			-632.314 135.381	319.571 135.381	-632.314 168.651	319.571 168.651	
+			-804.299 135.973	143.441 135.973	-804.299 167.764	143.441 167.764	
+			-991.133 136.628	-64.1873 136.628	-991.133 166.782	-64.1873 166.782	
+			-1185.28 137.29	-287.663 137.29	-1185.28 165.789	-287.663 165.789	
+			-1380.53 137.886	-510.111 137.886	-1380.53 164.895	-510.111 164.895	
+			-1565.13 138.419	-719.821 138.419	-1565.13 164.096	-719.821 164.096	
+			-1727.28 138.89	-905.085 138.89	-1727.28 163.388	-905.085 163.388	
+			-1855.21 139.303	-1054.21 139.303	-1855.21 162.77	-1054.21 162.77	
+			-1937.15 139.658	-1155.48 139.658	-1937.15 162.237	-1155.48 162.237	
+			-1961.31 139.959	-1197.19 139.959	-1961.31 161.785	-1197.19 161.785	
+			-1953.1 140.208	-1204.82 140.208	-1953.1 161.413	-1204.82 161.413	
+			-1945.74 140.406	-1211.66 140.406	-1945.74 161.115	-1211.66 161.115	
+			-1939.19 140.556	-1217.74 140.556	-1939.19 160.89	-1217.74 160.89	
+			-1933.42 140.661	-1223.11 140.661	-1933.42 160.733	-1223.11 160.733	
+			-1928.38 140.722	-1227.79 140.722	-1928.38 160.642	-1227.79 160.642	
+			-1924.04 140.741	-1231.82 140.741	-1924.04 160.612	-1231.82 160.612	
+			-1920.37 140.722	-1235.23 140.722	-1920.37 160.642	-1235.23 160.642	
+			-1917.32 140.665	-1238.07 140.665	-1917.32 160.726	-1238.07 160.726	
+			-1914.85 140.574	-1240.36 140.574	-1914.85 160.863	-1240.36 160.863	
+			-1912.94 140.45	-1242.13 140.45	-1912.94 161.048	-1242.13 161.048	
+			-1911.54 140.297	-1243.44 140.297	-1911.54 161.279	-1243.44 161.279	
+			-1910.61 140.115	-1244.3 140.115	-1910.61 161.552	-1244.3 161.552	
+			-1910.12 139.907	-1244.75 139.907	-1910.12 161.864	-1244.75 161.864	
+			-1910.03 139.675	-1244.84 139.675	-1910.03 162.211	-1244.84 162.211	
+			-1910.3 139.422	-1244.58 139.422	-1910.3 162.59	-1244.58 162.59	
+			-1910.9 139.15	-1244.03 139.15	-1910.9 162.998	-1244.03 162.998	
+			-1911.78 138.861	-1243.21 138.861	-1911.78 163.432	-1243.21 163.432	
+			-1912.92 138.557	-1242.15 138.557	-1912.92 163.887	-1242.15 163.887	
+			-1914.26 138.241	-1240.9 138.241	-1914.26 164.362	-1240.9 164.362	
+			-1915.78 137.914	-1239.49 137.914	-1915.78 164.852	-1239.49 164.852	
+			-1917.44 137.58	-1237.95 137.58	-1917.44 165.354	-1237.95 165.354	
+			-1919.2 137.239	-1236.32 137.239	-1919.2 165.865	-1236.32 165.865	
+			-1921.02 136.894	-1234.62 136.894	-1921.02 166.382	-1234.62 166.382	
+			-1922.87 136.548	-1232.91 136.548	-1922.87 166.9	-1232.91 166.9	
+			-1924.7 136.203	-1231.2 136.203	-1924.7 167.418	-1231.2 167.418	
+			-1926.48 135.861	-1229.55 135.861	-1926.48 167.931	-1229.55 167.931	
+			-1928.18 135.524	-1227.97 135.524	-1928.18 168.437	-1227.97 168.437	
+			-1929.75 135.194	-1226.51 135.194	-1929.75 168.931	-1226.51 168.931	
+			-1931.16 134.874	-1225.2 134.874	-1931.16 169.411	-1225.2 169.411	
+			-1932.37 134.566	-1224.08 134.566	-1932.37 169.874	-1224.08 169.874	
+			-1933.34 134.272	-1223.18 134.272	-1933.34 170.315	-1223.18 170.315	
+			-1934.04 133.994	-1222.53 133.994	-1934.04 170.732	-1222.53 170.732	
+			-1934.42 133.734	-1222.17 133.734	-1934.42 171.121	-1222.17 171.121	
+			-1934.46 133.495	-1222.14 133.495	-1934.46 171.479	-1222.14 171.479	
+			-1934.1 133.279	-1222.47 133.279	-1934.1 171.803	-1222.47 171.803	
+			-1933.33 133.089	-1223.19 133.089	-1933.33 172.089	-1223.19 172.089	
+			-1932.09 132.925	-1224.34 132.925	-1932.09 172.335	-1224.34 172.335	
+			-1930.35 132.791	-1225.96 132.791	-1930.35 172.536	-1225.96 172.536	
+			-1565.22 128.551	-1565.22 128.551	-1565.22 128.551	-1565.22 128.551	
+			-1565.22 129.555	-1565.22 129.555	-1565.22 129.555	-1565.22 129.555	
+			-1565.22 130.343	-1565.22 130.343	-1565.22 130.343	-1565.22 130.343	
+			-1565.22 130.931	-1565.22 130.931	-1565.22 130.931	-1565.22 130.931	
+			-1565.22 131.341	-1565.22 131.341	-1565.22 131.341	-1565.22 131.341	
+			-1565.22 131.588	-1565.22 131.588	-1565.22 131.588	-1565.22 131.588	
+			-1565.22 131.694	-1565.22 131.694	-1565.22 131.694	-1565.22 131.694	
+			-1565.22 131.675	-1565.22 131.675	-1565.22 131.675	-1565.22 131.675	
+			-1565.22 131.551	-1565.22 131.551	-1565.22 131.551	-1565.22 131.551	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x0	0x0	0x0	0x0	
+			0x50505	0x50505	0x50505	0x50505	
+			0xd0d0d	0xd0d0d	0xd0d0d	0xd0d0d	
+			0x1171717	0x1171717	0x1171717	0x1171717	
+			0x4232323	0x4232323	0x4232323	0x4232323	
+			0xa303030	0xa303030	0xa303030	0xa303030	
+			0x123f3f3f	0x123f3f3f	0x123f3f3f	0x123f3f3f	
+			0x1c4f4f4f	0x1c4f4f4f	0x1c4f4f4f	0x1c4f4f4f	
+			0x28606060	0x28606060	0x28606060	0x28606060	
+			0x36737373	0x36737373	0x36737373	0x36737373	
+			0x45878787	0x45878787	0x45878787	0x45878787	
+			0x579c9c9c	0x579c9c9c	0x579c9c9c	0x579c9c9c	
+			0x6ab2b2b2	0x6ab2b2b2	0x6ab2b2b2	0x6ab2b2b2	
+			0x7fc9c9c9	0x7fc9c9c9	0x7fc9c9c9	0x7fc9c9c9	
+			0x95e1e1e1	0x95e1e1e1	0x95e1e1e1	0x95e1e1e1	
+			0xadf9f9f9	0xadf9f9f9	0xadf9f9f9	0xadf9f9f9	
+			0xc6ffffff	0xc6ffffff	0xc6ffffff	0xc6ffffff	
+			0xe0ffffff	0xe0ffffff	0xe0ffffff	0xe0ffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcffffff	0xfcffffff	0xfcffffff	0xfcffffff	
+			0xfcf7f7f7	0xfcf7f7f7	0xfcf7f7f7	0xfcf7f7f7	
+			0xfce4e4e4	0xfce4e4e4	0xfce4e4e4	0xfce4e4e4	
+			0xfcc7c7c7	0xfcc7c7c7	0xfcc7c7c7	0xfcc7c7c7	
+			0xfca5a5a5	0xfca5a5a5	0xfca5a5a5	0xfca5a5a5	
+			0xfc7f7f7f	0xfc7f7f7f	0xfc7f7f7f	0xfc7f7f7f	
+			0xfc595959	0xfc595959	0xfc595959	0xfc595959	
+			0xfc373737	0xfc373737	0xfc373737	0xfc373737	
+			0xfc1a1a1a	0xfc1a1a1a	0xfc1a1a1a	0xfc1a1a1a	
+			0xfc070707	0xfc070707	0xfc070707	0xfc070707	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xfc000000	0xfc000000	0xfc000000	0xfc000000	
+			0xf9000000	0xf9000000	0xf9000000	0xf9000000	
+			0xf1000000	0xf1000000	0xf1000000	0xf1000000	
+			0xe4000000	0xe4000000	0xe4000000	0xe4000000	
+			0xd3000000	0xd3000000	0xd3000000	0xd3000000	
+			0xbe000000	0xbe000000	0xbe000000	0xbe000000	
+			0xa6000000	0xa6000000	0xa6000000	0xa6000000	
+			0x8c000000	0x8c000000	0x8c000000	0x8c000000	
+			0x71000000	0x71000000	0x71000000	0x71000000	
+			0x55000000	0x55000000	0x55000000	0x55000000	
+			0x38000000	0x38000000	0x38000000	0x38000000	
+			0x1b000000	0x1b000000	0x1b000000	0x1b000000	
+			0x0	0x0	0x0	0x0	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+}
+
