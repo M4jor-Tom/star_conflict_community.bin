@@ -1,0 +1,296 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Wed Oct 22 11:02:38 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 19
+
+objects 16
+{
+	object title
+	{
+		defaults
+		{
+			pos 10 3
+			opacity 255
+			color 0xffffffff
+			size 180 20
+			effect ""
+			alignment "LT"
+			sampleText "Легкие лазеры"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 576
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bg_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 619 2.32939
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "RM"
+			sampleText "Свободная Синергия:500"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 83 24
+			opacity 255
+			color 0xffffffff
+			size 1180 525
+			effect "ui\graphics\ships_tree\ships_tr_list"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 8 557
+			opacity 255
+			color 0xffffffff
+			size 950 10
+			effect "ui\graphics\scroll\scroll_h_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object race_choose
+	{
+		defaults
+		{
+			pos 7 187
+			opacity 255
+			color 0xffffffff
+			size 72 216
+			effect "ui\graphics\ships_tree\race_choose_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 10.7158 26
+			opacity 255
+			color 0xffff9100
+			size 180 20
+			effect ""
+			alignment "LM"
+			sampleText "Ранк"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load
+	{
+		defaults
+		{
+			pos 473 234
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 945 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_help
+	{
+		defaults
+		{
+			pos 924 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_help"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_unlock
+	{
+		defaults
+		{
+			pos 5 70
+			opacity 255
+			color 0xffffffff
+			size 76 50
+			effect "ui\graphics\rank_up\rank_btn_unlock"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object syn_btn
+	{
+		defaults
+		{
+			pos 709.436 28.8219
+			opacity 255
+			color 0xffffffff
+			size 248 20
+			effect "ui\graphics\ships_tree\trans_syn_btn"
+			alignment "RM"
+			sampleText "1234235"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object prestige
+	{
+		defaults
+		{
+			pos 6 56
+			opacity 255
+			color 0xffffffff
+			size 76 50
+			effect "ui\graphics\prestige\prestige_ico_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object quest_list
+	{
+		defaults
+		{
+			pos 773 24
+			opacity 255
+			color 0xffffffff
+			size 190 525
+			effect "ui\graphics\ships_tree\ships_quest_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object scroll_2
+	{
+		defaults
+		{
+			pos 8 557
+			opacity 255
+			color 0xffffffff
+			size 760 10
+			effect "ui\graphics\scroll\scroll_h_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	962 -4	970 -4	-4 22	4 22	962 22	970 22	-4 572	4 572	962 572	970 572	-4 580	4 580	962 580	970 580	
+				0.0585937 0.695313	0.066406 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.066406 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723638	0.066406 0.723638	0.0742187 0.723638	0.0820313 0.723638	0.0585938 0.731454	0.066406 0.731454	0.0742187 0.731454	0.0820312 0.731454	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp213
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				6 25	12 25	954.3 25	960.3 25	6 31	12 31	954.3 31	960.3 31	6 549	12 549	954.3 549	960.3 549	6 555	12 555	954.3 555	960.3 555	
+				0.272536 0.0507218	0.272536 0.0448626	0.272536 0.00890714	0.272536 0.00304788	0.266677 0.0507219	0.266677 0.0448626	0.266677 0.00890732	0.266677 0.00304776	0.229545 0.0507219	0.229545 0.0448625	0.229545 0.00890702	0.229545 0.00304776	0.223686 0.0507219	0.223686 0.0448625	0.223686 0.0089072	0.223686 0.00304776	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sad
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices_nc
+			{
+				116.5 50	913.5 50	116.5 534	913.5 534	
+				0.00134277 0.949219	0.779663 0.949219	0.00134277 0.00390625	0.779663 0.00390625	
+			}
+		}
+		visible_on idle
+	}
+}
+
