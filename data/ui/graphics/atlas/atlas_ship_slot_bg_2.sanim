@@ -1,0 +1,134 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Thu Feb 01 16:53:55 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 194 138
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect ""
+			alignment "CM"
+			sampleText "20"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff1f1f1f
+			size 30 30
+			effect ""
+			alignment "CM"
+			sampleText "20"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite we86
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-1.52588e-005 318.333	450 318.333	-1.52588e-005 320	450 320	
+				0.338322 0.684025	0.345272 0.684025	0.338322 0.690975	0.345272 0.690975	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we88
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 0.166656	450 0.166656	0 1.83334	450 1.83334	
+				0.338322 0.684025	0.345272 0.684025	0.338322 0.690975	0.345272 0.690975	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we89
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				448.167 320.167	448.167 -0	449.833 320.167	449.833 -0	
+				0.338322 0.684025	0.345272 0.684025	0.338322 0.690975	0.345272 0.690975	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite we90
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0.166687 320.167	0.166656 -0	1.83334 320.167	1.83334 -0	
+				0.338322 0.684025	0.345272 0.684025	0.338322 0.690975	0.345272 0.690975	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
