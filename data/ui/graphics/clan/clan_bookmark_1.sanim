@@ -1,0 +1,188 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Wed Feb 06 19:02:47 2013
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 38
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+	}
+	object title
+	{
+		defaults
+		{
+			pos 196 14
+			opacity 92
+			color 0xffffffff
+			size 180 20
+			effect ""
+			alignment "LM"
+			sampleText "Легкие лазеры"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim select obj_opc
+		{
+			1 
+			255
+		}
+		anim over obj_opc
+		{
+			1 
+			255
+		}
+		anim sel_over obj_opc
+		{
+			1 
+			255
+		}
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectNamerfhjn
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				28.2885 10	470.712 10	1 39	499 39	
+				0.236328 0.015625	0.255859 0.015625	0.236328 0.0351563	0.255859 0.0351563	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectNamerfhjnfwe
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				28.2885 10	470.712 10	1 39	499 39	
+				0.291016 0.0185547	0.310547 0.0185547	0.291016 0.0380859	0.310547 0.0380859	
+				0x66c6c6c6	0x66c6c6c6	0x66c6c6c6	0x66c6c6c6	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		visible_on over
+		anim sel_over sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				173 13	193 13	173 33	193 33	
+				0.256836 0.850586	0.276367 0.850586	0.256836 0.870117	0.276367 0.870117	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on over
+		visible_on sel_over
+	}
+	sprite objectNamerfhjn45t
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				28.2885 10	470.712 10	1 39	499 39	
+				0.03125 0.117676	0.0507813 0.117676	0.03125 0.126953	0.0507813 0.126953	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on select
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on sel_over
+	}
+}
+
