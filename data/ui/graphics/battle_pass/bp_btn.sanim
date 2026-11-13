@@ -1,0 +1,140 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Wed Jun 19 11:48:58 2019
+
+base_res 1920 1080
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 42
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on over
+	}
+	object text22
+	{
+		defaults
+		{
+			pos 0 5
+			opacity 255
+			color 0xff4f6e71
+			size 300 30
+			effect ""
+			alignment "CM"
+			sampleText "20asgg eh eh etrertjertjrjh"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on over
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite objectName351
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				-6 -6	4 -6	296 -6	306 -6	-6 4	4 4	296 4	306 4	-6 38	4 38	296 38	306 38	-6 48	4 48	296 48	306 48	
+				0.339844 0.177734	0.349609 0.177734	0.381836 0.177734	0.391602 0.177734	0.339844 0.1875	0.349609 0.1875	0.381836 0.1875	0.391602 0.1875	0.339844 0.220703	0.349609 0.220703	0.381836 0.220703	0.391602 0.220703	0.339844 0.230469	0.349609 0.230469	0.381836 0.230469	0.391602 0.230469	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on over
+	}
+	sprite we106
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				-102 -59	410 -59	-102 91	410 91	
+				0.353161 0.254132	0.857776 0.254132	0.353161 0.42165	0.857776 0.42165	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+		visible_on press
+		visible_on over
+	}
+	sprite we116
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				-102 -59	410 -59	-102 91	410 91	
+				0.353161 0.254132	0.857776 0.254132	0.353161 0.42165	0.857776 0.42165	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
