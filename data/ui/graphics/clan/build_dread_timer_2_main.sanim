@@ -1,0 +1,93 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Mon Mar 23 15:46:37 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self131
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 130
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text16
+	{
+		defaults
+		{
+			pos 9 10
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "Тебуются  Легкие лазеры"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object t_1
+	{
+		defaults
+		{
+			pos 82 32
+			opacity 255
+			color 0xffff9a00
+			size 150 40
+			effect ""
+			alignment "CT"
+			sampleText "00:66:89"
+			font "Medium_outl2"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 57 60
+			opacity 255
+			color 0xffffffff
+			size 150 30
+			effect "ui\graphics\clan\build_dread_btn_4"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object button_3
+	{
+		defaults
+		{
+			pos 57 33
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\clan\build_dread_btn_4"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
