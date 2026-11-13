@@ -1,0 +1,357 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud.ma"
+//by Sergey_Mitryaev
+//at Fri Feb 16 13:48:14 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 23
+
+objects 20
+{
+	object gun_mode_1
+	{
+		defaults
+		{
+			pos 40.9686 47.8092
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object gun_mode_2
+	{
+		defaults
+		{
+			pos 93.0848 47.8092
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object gun_mode_3
+	{
+		defaults
+		{
+			pos -11 47.8092
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object missle_1
+	{
+		defaults
+		{
+			pos 197.916 47.8092
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object missle_2
+	{
+		defaults
+		{
+			pos 581.928 47.8092
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object missle_3
+	{
+		defaults
+		{
+			pos 634 47.8092
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object modul_1
+	{
+		defaults
+		{
+			pos 319.14 48.7521
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object modul_2
+	{
+		defaults
+		{
+			pos 370.328 48.7521
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object modul_3
+	{
+		defaults
+		{
+			pos 421.434 48.7521
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object modul_4
+	{
+		defaults
+		{
+			pos 471.54 48.7521
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object gun_mode_title
+	{
+		defaults
+		{
+			pos 67.3671 39.6568
+			opacity 255
+			color 0xffffffff
+			size 100 12
+			effect ""
+			alignment "CM"
+			sampleText "Auto fire mode"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object missle_mode_title
+	{
+		defaults
+		{
+			pos 403.198 40.4096
+			opacity 255
+			color 0xffffffff
+			size 100 12
+			effect ""
+			alignment "CM"
+			sampleText "Cruise Missle"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object key_modul_1
+	{
+		defaults
+		{
+			pos 333.856 52.4643
+			opacity 255
+			color 0xffffffff
+			size 20 12
+			effect ""
+			alignment "CM"
+			sampleText "F1"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object key_modul_2
+	{
+		defaults
+		{
+			pos 384.862 52.8064
+			opacity 255
+			color 0xffffffff
+			size 20 12
+			effect ""
+			alignment "CM"
+			sampleText "F2"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object key_modul_3
+	{
+		defaults
+		{
+			pos 434.55 52.8064
+			opacity 255
+			color 0xffffffff
+			size 20 12
+			effect ""
+			alignment "CM"
+			sampleText "F3"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object key_modul_4
+	{
+		defaults
+		{
+			pos 487 51.7802
+			opacity 255
+			color 0xffffffff
+			size 20 12
+			effect ""
+			alignment "CM"
+			sampleText "F4"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 568 130
+			effect ""
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object modules_special
+	{
+		defaults
+		{
+			pos 251.843 41
+			opacity 255
+			color 0xffffffff
+			size 64 80
+			effect "ui\graphics\hud\modules_special_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 145 47.7742
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 198 47.965
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hud\modules_icon_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName60
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-0.134766 30	283.865 30	-0.134766 138	283.865 138	
+				3.55169e-005 0.431641	0.277379 0.431641	3.55169e-005 0.529297	0.277379 0.529297	
+			}
+		}
+		visible_on idle
+	}
+	sprite spr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				283.865 30	567.865 30	283.865 138	567.865 138	
+				0.277379 0.431641	3.55244e-005 0.431641	0.277379 0.529297	3.55244e-005 0.529297	
+			}
+		}
+		visible_on idle
+	}
+	sprite spr2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				198.066 61.0221	248.066 61.0221	198.066 111.022	248.066 111.022	
+				0.0509074 0.0634481	0.00202159 0.0634481	0.0509074 0.112276	0.00202159 0.112276	
+			}
+		}
+		visible_on idle
+	}
+}
+
