@@ -1,0 +1,72 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Fri Mar 07 15:24:06 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite myself61
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-25 -25	25 -25	-25 25	25 25	
+				0.234375 0.578125	0.283203 0.578125	0.234375 0.626953	0.283203 0.626953	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_posc
+		{
+			1 
+			-29.4731 -29.4731	29.4731 -29.4731	-29.4731 29.4731	29.4731 29.4731	
+		}
+	}
+	sprite myself64
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-25 -25	25 -25	-25 25	25 25	
+				0.234375 0.52832	0.283203 0.52832	0.234375 0.577148	0.283203 0.577148	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_posc_colc
+		{
+			1 1
+			-41.1467 -43.1467	43.1467 -43.1467	-41.1467 41.1467	43.1467 41.1467	
+			0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+		}
+	}
+}
+
