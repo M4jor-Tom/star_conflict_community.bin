@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map_2.ma"
+//by Sergey_Mitryaev
+//at Tue Jan 16 15:47:37 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				26.1768 25.379	86.1768 25.379	26.1768 85.379	86.1768 85.379	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
