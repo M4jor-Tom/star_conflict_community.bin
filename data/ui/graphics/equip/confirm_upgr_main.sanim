@@ -1,0 +1,51 @@
+﻿source_file  Y:/art/source/ui/graphics/equip/drop_down.ma
+//by sega
+//at Wed Nov 16 12:45:12 2011
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object blackout
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object window
+	{
+		defaults
+		{
+			anchor "C"
+			pos 470.018 188.614
+			opacity 255
+			color 0xffffffff
+			size 335 200
+			effect "ui\graphics\equip\confirm_upgr"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
