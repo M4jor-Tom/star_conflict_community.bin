@@ -1,0 +1,380 @@
+﻿source_file "Y:/art/source/ui/graphics/help_control/help.ma"
+//by sergey_mitryaev
+//at Mon Nov 25 14:49:36 2019
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim screen
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 21
+
+objects 19
+{
+	object help_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 454.638 250.222
+			opacity 255
+			color 0xffffffff
+			size 966 560
+			effect "ui\graphics\help_control\help_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object syn_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 742 250
+			opacity 255
+			color 0xffffffff
+			size 400 576
+			effect "ui\graphics\ships_tree\trans_syn_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object help_finish_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 508.528 272.331
+			opacity 255
+			color 0xffffffff
+			size 860 500
+			effect "ui\graphics\help_control\help_finish_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object tutor_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 612 480
+			opacity 255
+			color 0xffffffff
+			size 640 100
+			effect "ui\graphics\help_control\help_tutor_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object wtsc_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 508.528 272.331
+			opacity 255
+			color 0xffffffff
+			size 860 500
+			effect "ui\graphics\help_control\wtsc_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object help_win3
+	{
+		defaults
+		{
+			anchor "C"
+			pos 508.528 272.331
+			opacity 255
+			color 0xffffffff
+			size 860 500
+			effect "ui\graphics\help_control\help_finish_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object pers_info
+	{
+		defaults
+		{
+			anchor "C"
+			pos 598 332
+			opacity 255
+			color 0xffffffff
+			size 720 380
+			effect "ui\graphics\quests_2\qu_2_pers_info_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object pers_info1
+	{
+		defaults
+		{
+			anchor "C"
+			pos 488 371
+			opacity 255
+			color 0xffffffff
+			size 900 300
+			effect "ui\graphics\quests_2\q_2_slot_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object bundle
+	{
+		defaults
+		{
+			anchor "C"
+			pos 300 305
+			opacity 255
+			color 0xffffffff
+			size 720 380
+			effect "ui\graphics\bundle\bundle_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object gmp_sel_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos -1495 304
+			opacity 255
+			color 0xffffffff
+			size 966 560
+			effect "ui\graphics\arena\arena_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object collect_irid_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 782 480
+			opacity 255
+			color 0xffffffff
+			size 314 130
+			effect "ui\graphics\clan\build_dread_collect_irid_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object bundle_info
+	{
+		defaults
+		{
+			anchor "C"
+			pos 742 250
+			opacity 255
+			color 0xffffffff
+			size 400 576
+			effect "ui\graphics\bundle_2\bundle_info_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object craft_resources
+	{
+		defaults
+		{
+			anchor "C"
+			pos 742 250
+			opacity 255
+			color 0xffffffff
+			size 400 576
+			effect "ui\graphics\craft\craft_resources_main_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object bundle_info1
+	{
+		defaults
+		{
+			anchor "C"
+			pos 742 250
+			opacity 255
+			color 0xffffffff
+			size 400 576
+			effect "ui\graphics\bundle_2\bundle_info_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object alien_craft
+	{
+		defaults
+		{
+			anchor "C"
+			pos 488 371
+			opacity 255
+			color 0xffffffff
+			size 900 300
+			effect "ui\graphics\ships_tree_3\alien_craft_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object trans_syn
+	{
+		defaults
+		{
+			anchor "C"
+			pos 752 445
+			opacity 255
+			color 0xffffffff
+			size 314 130
+			effect "ui\graphics\ships_tree\trans_syn_win_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object ad_place_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 732.128 438
+			opacity 255
+			color 0xffffffff
+			size 410 156
+			effect "ui\graphics\equip_3\prod_ad_place_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object ad_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 732.128 324
+			opacity 255
+			color 0xffffffff
+			size 410 410
+			effect "ui\graphics\equip_3\prod_ad_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+	object update_ag_mod
+	{
+		defaults
+		{
+			anchor "C"
+			pos 776 276
+			opacity 255
+			color 0xffffffff
+			size 324 496
+			effect "ui\graphics\atlas\update_ag_mod_win_18"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on screen
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName769
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "C"
+			vertices
+			{
+				4978.23 2603.62	-3498.22 2603.62	4978.23 -1870.01	-3498.22 -1870.01	
+				0.246502 0.0265382	0.247443 0.0265382	0.246502 0.0285897	0.247443 0.0285897	
+				0xcc254759	0xcc254759	0xcc254759	0xcc254759	
+			}
+		}
+		visible_on idle
+		anim screen sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName372
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "C"
+			vertices
+			{
+				4978.23 2603.62	-3498.22 2603.62	4978.23 -1870.01	-3498.22 -1870.01	
+				0.544451 0.458935	0.545392 0.458935	0.544451 0.460987	0.545392 0.460987	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim screen sp_colc
+		{
+			1
+			0x7f586d80	0x7f586d80	0x7f586d80	0x7f586d80	
+		}
+	}
+}
+
