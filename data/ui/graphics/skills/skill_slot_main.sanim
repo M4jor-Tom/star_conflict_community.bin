@@ -1,0 +1,241 @@
+﻿source_file  Y:/art/source/ui/graphics/skills/skills.ma
+//by sergey_mitryaev
+//at Mon Jul 09 13:40:10 2012
+
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim learn
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 285 90
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+	object description
+	{
+		defaults
+		{
+			pos 4.88279 25.4105
+			opacity 255
+			color 0xffb2b2b2
+			size 250 50
+			effect ""
+			alignment "LT"
+			sampleText "Новейшая разработка |увеличивает щит|dfefefe egg"
+			font "Tiny"
+		}
+		visible_on active
+		anim inactive obj_opc_colc
+		{
+			1 1
+			76
+			0xffffffff
+		}
+		anim learn obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object lock
+	{
+		defaults
+		{
+			pos 199.8 57.7279
+			opacity 0
+			color 0xffb2b2b2
+			size 80 15
+			effect ""
+			alignment "RM"
+			sampleText "[разблок]"
+			font "Tiny"
+		}
+		visible_on active
+		anim inactive obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim learn obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\skills\skill_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\skills\skill_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+	object name
+	{
+		defaults
+		{
+			pos 23.3345 4.90956
+			opacity 255
+			color 0xffb2b2b2
+			size 230 16
+			effect ""
+			alignment "LT"
+			sampleText "Быстрый Стрелок"
+			font "VerySmall"
+		}
+		visible_on active
+		anim inactive obj_opc_colc
+		{
+			1 1
+			76
+			0xffffffff
+		}
+		anim learn obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object prod_icon
+	{
+		defaults
+		{
+			pos 5.63083 5.19179
+			opacity 255
+			color 0xffb2b2b2
+			size 16 16
+			effect "ui\graphics\equip\prod_sml_icon"
+			alignment "LT"
+		}
+		visible_on active
+		anim inactive obj_opc_colc
+		{
+			1 1
+			76
+			0xffffffff
+		}
+		anim learn obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object price
+	{
+		defaults
+		{
+			pos 154.753 73.7055
+			opacity 255
+			color 0xffffffff
+			size 120 15
+			effect "ui\graphics\skills\skill_price"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on active
+		anim inactive obj_opc
+		{
+			1 
+			76
+		}
+		visible_on learn
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.180913	6 0.180913	281.197 0.180913	287.197 0.180913	0 6.18091	6 6.18091	281.197 6.18091	287.197 6.18091	0 85.0131	6 85.0131	281.197 85.0131	287.197 85.0131	0 91.0131	6 91.0131	281.197 91.0131	287.197 91.0131	
+				0.25402 0.1143	0.25402 0.120159	0.25402 0.132659	0.25402 0.138518	0.25988 0.1143	0.25988 0.120159	0.25988 0.132659	0.25988 0.138518	0.272565 0.1143	0.272565 0.120159	0.272565 0.132659	0.272565 0.138518	0.278424 0.1143	0.278424 0.120159	0.278424 0.132659	0.278424 0.138518	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+	sprite blackout__
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.245728 -0.0503569	58.6091 -0.0503569	0.245728 91.0673	58.6091 91.0673	
+				0.154264 0.115909	0.229038 0.115909	0.154264 0.13164	0.229038 0.13164	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+}
+
