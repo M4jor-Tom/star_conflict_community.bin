@@ -1,0 +1,232 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Tue Jun 18 16:54:22 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 15
+{
+	object bg
+	{
+		defaults
+		{
+			pos -98.8937 -0
+			opacity 255
+			color 0xffffffff
+			size 4000 2400
+			effect "ui\graphics\profile_2\profile_bg"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0.150928 -0
+			opacity 255
+			color 0xffffffff
+			size 4000 1280
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object atlas_win
+	{
+		defaults
+		{
+			pos 1261.11 239
+			opacity 255
+			color 0xffffffff
+			size 742 1000
+			effect "ui\graphics\atlas\atlas_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object nick_name
+	{
+		defaults
+		{
+			pos 1261.11 152
+			opacity 255
+			color 0xffd1f0ff
+			size 300 40
+			effect ""
+			alignment "LM"
+			sampleText "WEWRE UYIOUUP"
+			font "segoeuilr_30"
+		}
+		visible_on idle
+	}
+	object clan_name
+	{
+		defaults
+		{
+			pos 1261.11 190
+			opacity 255
+			color 0xff758d98
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "Корпорация: ВЫВЦЫАы "
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object lvl
+	{
+		defaults
+		{
+			pos 1821.6 164.396
+			opacity 255
+			color 0xffffe8ba
+			size 44 44
+			effect ""
+			alignment "CM"
+			sampleText "1"
+			font "segoeuilr_44"
+		}
+		visible_on idle
+	}
+	object lvl_val
+	{
+		defaults
+		{
+			pos 1893.76 159.16
+			opacity 255
+			color 0xffa3b5c3
+			size 150 30
+			effect ""
+			alignment "LM"
+			sampleText "99"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object clan_name1
+	{
+		defaults
+		{
+			pos 1652.15 157
+			opacity 255
+			color 0xffffe8ba
+			size 150 60
+			effect ""
+			alignment "RM"
+			sampleText "Прогресс"
+			font "play_reg_24"
+		}
+		visible_on idle
+	}
+	object bookmark
+	{
+		defaults
+		{
+			pos 1261.11 -500
+			opacity 255
+			color 0xffffffff
+			size 1484 60
+			effect "ui\graphics\profile_2\bookmark_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 2693.54 160.618
+			opacity 255
+			color 0xffffffff
+			size 52 48
+			effect "ui\graphics\profile_2\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object lvl_val2
+	{
+		defaults
+		{
+			pos 2533.9 157.281
+			opacity 255
+			color 0xff8f8f8f
+			size 150 30
+			effect ""
+			alignment "RM"
+			sampleText "99"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object lvl_progr
+	{
+		defaults
+		{
+			pos 1893.15 196.002
+			opacity 255
+			color 0xffffffff
+			size 869 3
+			effect "ui\graphics\profile_2\lvl_progr"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 1936.72 482.51
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object area
+	{
+		defaults
+		{
+			pos 1642.15 154.239
+			opacity 255
+			color 0xffffffff
+			size 1050 60
+			effect ""
+			alignment "RM"
+			font "play_reg_24"
+		}
+		visible_on idle
+	}
+	object nick_name2
+	{
+		defaults
+		{
+			pos 1261.11 152
+			opacity 255
+			color 0xffffffff
+			size 300 40
+			effect "ui\graphics\battle_pass\battle_pass_main"
+			alignment "LM"
+			font "segoeuilr_30"
+		}
+		visible_on idle
+	}
+}
+
