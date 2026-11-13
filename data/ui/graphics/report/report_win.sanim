@@ -1,0 +1,391 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Mon Jul 18 16:53:28 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 20
+
+objects 17
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 576 400
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6 -0
+			opacity 255
+			color 0xffffffff
+			size 225 20
+			effect ""
+			alignment "LM"
+			sampleText "DDdsfjmup"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 557 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "y:\work_version\pc\data\ui\graphics\login_screen\btn_x.sanim"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object t_1
+	{
+		defaults
+		{
+			pos 15 27
+			opacity 255
+			color 0xffffffff
+			size 200 16
+			effect ""
+			alignment "LM"
+			sampleText "Swfew geg g ger herh h hheh h"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 415 247
+			opacity 255
+			color 0xffffffff
+			size 128 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			415 372
+		}
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 256 247
+			opacity 255
+			color 0xffffffff
+			size 128 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			256 372
+		}
+	}
+	object t_3
+	{
+		defaults
+		{
+			pos 23 67
+			opacity 255
+			color 0xffffffff
+			size 100 18
+			effect ""
+			alignment "RM"
+			sampleText "DDdsfjmup"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object drop_down
+	{
+		defaults
+		{
+			pos 119 217
+			opacity 255
+			color 0xffffffff
+			size 128 25
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			119 342
+		}
+	}
+	object t_2
+	{
+		defaults
+		{
+			pos 15 43
+			opacity 255
+			color 0xffffffff
+			size 200 16
+			effect ""
+			alignment "LM"
+			sampleText "Swfew geg g ger herh h hheh h"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object t_4
+	{
+		defaults
+		{
+			pos 15 92
+			opacity 255
+			color 0xffffffff
+			size 200 16
+			effect ""
+			alignment "LM"
+			sampleText "eeeeeeeeeeeeeeeeee"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			15 218
+		}
+	}
+	object input
+	{
+		defaults
+		{
+			pos 9 112
+			opacity 255
+			color 0xffffffff
+			size 560 100
+			effect "ui\graphics\report\report_input"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			9 238
+		}
+	}
+	object t_6
+	{
+		defaults
+		{
+			pos 14 222
+			opacity 255
+			color 0xffcccccc
+			size 100 16
+			effect ""
+			alignment "RM"
+			sampleText "Swfew geg :"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			14 347
+		}
+	}
+	object t_8
+	{
+		defaults
+		{
+			pos 369 222
+			opacity 255
+			color 0xffcccccc
+			size 200 16
+			effect ""
+			alignment "RM"
+			sampleText "dffss gh"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			369 347
+		}
+	}
+	object btn_3
+	{
+		defaults
+		{
+			pos 96 247
+			opacity 255
+			color 0xffffffff
+			size 128 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_posc
+		{
+			1 
+			96 372
+		}
+	}
+	object drop_down1
+	{
+		defaults
+		{
+			pos 132 65
+			opacity 255
+			color 0xffffffff
+			size 128 25
+			effect "ui\graphics\login_screen\drop_down_lng_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object t_9
+	{
+		defaults
+		{
+			pos 15 92
+			opacity 0
+			color 0xff000000
+			size 200 16
+			effect ""
+			alignment "LM"
+			sampleText "Swfew geg g ger herh h hheh h"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_opc_colc
+		{
+			1 1
+			255
+			0xffffffff
+		}
+	}
+	object input1
+	{
+		defaults
+		{
+			pos 9 112
+			opacity 0
+			color 0xff000000
+			size 560 100
+			effect "ui\graphics\report\report_input"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_2 obj_opc_colc
+		{
+			1 1
+			255
+			0xffffffff
+		}
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	570.5 -0	576.5 -0	0 6	6 6	570.5 6	576.5 6	0 267.727	6 267.727	570.5 267.727	576.5 267.727	0 276.273	6 276.273	570.5 276.273	576.5 276.273	
+				0.228518 0.202199	0.234378 0.202199	0.273391 0.202199	0.27925 0.202199	0.228518 0.208058	0.234378 0.208058	0.273391 0.208058	0.27925 0.208058	0.228518 0.244141	0.234378 0.244141	0.273391 0.244141	0.27925 0.244141	0.228518 0.252959	0.234378 0.252959	0.273391 0.252959	0.27925 0.252959	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_posc
+		{
+			1 
+			0 -0	6 -0	570.5 -0	576.5 -0	0 6	6 6	570.5 6	576.5 6	0 392.727	6 392.727	570.5 392.727	576.5 392.727	0 401.273	6 401.273	570.5 401.273	576.5 401.273	
+		}
+	}
+	sprite spacer
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 19	575.5 19	1 21	575.5 21	
+				0.0791016 0.149414	0.0791016 0.144531	0.0771485 0.149414	0.0771484 0.144531	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	sprite sp2ss
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				9 112	15 112	559.5 112	565.5 112	9 118	15 118	559.5 118	565.5 118	9 131.727	15 131.727	559.5 131.727	565.5 131.727	9 140.273	15 140.273	559.5 140.273	565.5 140.273	
+				0.226587 0.00586998	0.232446 0.00586998	0.263672 0.00586998	0.269531 0.00586998	0.226587 0.0117294	0.232446 0.0117294	0.263672 0.0117294	0.269531 0.0117294	0.226587 0.03563	0.232446 0.03563	0.263672 0.03563	0.269531 0.03563	0.226587 0.0444481	0.232446 0.0444481	0.263672 0.0444481	0.269531 0.0444481	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
