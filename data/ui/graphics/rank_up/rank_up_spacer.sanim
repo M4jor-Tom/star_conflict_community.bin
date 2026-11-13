@@ -1,0 +1,71 @@
+﻿source_file "Y:/art/source/ui/graphics/rank_up/rank_up.ma"
+//by sergey_mitryaev
+//at Wed Feb 20 17:58:34 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 925 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 160 4
+			opacity 255
+			color 0xffffdeb3
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "12.03.2013sd"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -1	923 -1	0 30	923 30	
+				0.0751953 0.0449219	0.118164 0.0449219	0.0751953 0.00390625	0.118164 0.00390625	
+				0xffcccccc	0xffcccccc	0xffcccccc	0xffcccccc	
+			}
+		}
+		visible_on idle
+	}
+}
+
