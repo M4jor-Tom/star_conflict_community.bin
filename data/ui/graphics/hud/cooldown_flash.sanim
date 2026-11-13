@@ -1,0 +1,73 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by Sergey_Mitryaev
+//at Fri Jun 23 12:31:58 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName125
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				0 1	50 1	0 51	50 51	
+				0.162109 0.419922	0.259766 0.419922	0.162109 0.517578	0.259766 0.517578	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			6
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xa4ffffff	0xa4ffffff	0xa4ffffff	0xa4ffffff	
+			0x5effffff	0x5effffff	0x5effffff	0x5effffff	
+			0x2cffffff	0x2cffffff	0x2cffffff	0x2cffffff	
+			0xdffffff	0xdffffff	0xdffffff	0xdffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName139
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				0 1	50 1	0 51	50 51	
+				0.686048 0.217298	0.681139 0.217298	0.686048 0.212389	0.681139 0.212389	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			6
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xa4ffffff	0xa4ffffff	0xa4ffffff	0xa4ffffff	
+			0x5effffff	0x5effffff	0x5effffff	0x5effffff	
+			0x2cffffff	0x2cffffff	0x2cffffff	0x2cffffff	
+			0xdffffff	0xdffffff	0xdffffff	0xdffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
