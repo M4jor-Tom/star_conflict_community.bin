@@ -1,0 +1,184 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_2.ma"
+//by sergey_mitryaev
+//at Mon May 30 16:28:24 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 340 900
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 15 2
+			opacity 255
+			color 0xffffffff
+			size 283 20
+			effect ""
+			alignment "LM"
+			sampleText "Dioekgkg gke[kg[ghk  kgk wgpk"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 12 30
+			opacity 255
+			color 0xffffffff
+			size 328 26
+			effect "ui\graphics\equip_2\tooltip_line_1"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 12 56
+			opacity 255
+			color 0xffffffff
+			size 328 26
+			effect "ui\graphics\equip_2\tooltip_line_1"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object win_bg
+	{
+		defaults
+		{
+			pos 6 85
+			opacity 255
+			color 0xffffffff
+			size 328 609
+			effect "ui\graphics\equip_2\tooltip_win_bg"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 9 88
+			opacity 255
+			color 0xffffffff
+			size 322 200
+			effect "ui\graphics\equip_2\tooltip_slot"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 9 290
+			opacity 255
+			color 0xffffffff
+			size 322 200
+			effect "ui\graphics\equip_2\tooltip_slot"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 60
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 54	6 54	334 54	340 54	0 60	6 60	334 60	340 60	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 54	6 54	334 54	340 54	0 60	6 60	334 60	340 60	
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 138	6 138	334 138	340 138	0 144	6 144	334 144	340 144	
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 222	6 222	334 222	340 222	0 228	6 228	334 228	340 228	
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 306	6 306	334 306	340 306	0 312	6 312	334 312	340 312	
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 390	6 390	334 390	340 390	0 396	6 396	334 396	340 396	
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 474	6 474	334 474	340 474	0 480	6 480	334 480	340 480	
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 558	6 558	334 558	340 558	0 564	6 564	334 564	340 564	
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 642	6 642	334 642	340 642	0 648	6 648	334 648	340 648	
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 726	6 726	334 726	340 726	0 732	6 732	334 732	340 732	
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 810	6 810	334 810	340 810	0 816	6 816	334 816	340 816	
+			0 -0	6 -0	334 -0	340 -0	0 6	6 6	334 6	340 6	0 894	6 894	334 894	340 894	0 900	6 900	334 900	340 900	
+		}
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 23.1203	340 23.1203	0 24.8797	340 24.8797	
+				0.0566406 0.140625	0.078125 0.140625	0.0566406 0.142578	0.078125 0.142578	
+			}
+		}
+		visible_on idle
+	}
+}
+
