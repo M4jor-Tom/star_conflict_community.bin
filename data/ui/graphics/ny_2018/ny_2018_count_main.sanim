@@ -1,0 +1,178 @@
+﻿source_file "Y:/art/source/ui/graphics/ny_count/ny_count_2018.ma"
+//by sergey_mitryaev
+//at Mon Dec 11 18:37:51 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 7
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos -3.06954e-012 -0
+			opacity 255
+			color 0xffffffff
+			size 200 100
+			effect "ui\graphics\ny_2018\ny_2018_count_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 199 -0
+			opacity 255
+			color 0xffffffff
+			size 200 100
+			effect "ui\graphics\ny_2018\ny_2018_count_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 411 -0
+			opacity 255
+			color 0xffffffff
+			size 200 100
+			effect "ui\graphics\ny_2018\ny_2018_count_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos -3.06954e-012 -0
+			opacity 255
+			color 0xffffffff
+			size 1020 100
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object count_gold
+	{
+		defaults
+		{
+			pos 581 1.39767
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\ny_2018\ny_2018_count_gold"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object area
+	{
+		defaults
+		{
+			pos 411 -0
+			opacity 255
+			color 0xffffffff
+			size 260 100
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object area_2
+	{
+		defaults
+		{
+			pos -3.06954e-012 -0
+			opacity 255
+			color 0xffffffff
+			size 400 100
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite we94
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				-15 1.5	365.25 1.5	-15 102.5	365.25 102.5	
+				0.59561 0.427386	0.608305 0.427386	0.59561 0.624652	0.608305 0.624652	
+			}
+		}
+		visible_on idle
+	}
+	sprite we95
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				365.25 1.5	443.25 1.5	365.25 102.5	443.25 102.5	
+				0.59561 0.427386	0.674829 0.427386	0.59561 0.624652	0.674829 0.624652	
+			}
+		}
+		visible_on idle
+	}
+	sprite we96
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				443.25 1.5	642 1.5	443.25 102.5	642 102.5	
+				0.665039 0.427386	0.674829 0.427386	0.665039 0.624652	0.674829 0.624652	
+			}
+		}
+		visible_on idle
+	}
+	sprite we97
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				642 1.5	700 1.5	642 102.5	700 102.5	
+				0.669375 0.427386	0.728281 0.427386	0.669375 0.624652	0.728281 0.624652	
+			}
+		}
+		visible_on idle
+	}
+}
+
