@@ -1,0 +1,54 @@
+﻿source_file  Y:/art/source/ui/graphics/quests/quests.ma
+//by sergey_mitryaev
+//at Mon Jun 04 14:55:02 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 27 27
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -9.53674e-007	27 -9.53674e-007	0 27	27 27	
+				0.325222 0.107427	0.35159 0.107427	0.325222 0.133795	0.35159 0.133795	
+			}
+		}
+		visible_on idle
+	}
+}
+
