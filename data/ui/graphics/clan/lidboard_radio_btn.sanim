@@ -1,0 +1,62 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Thu Feb 06 17:18:03 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 270 20
+			effect ""
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_1_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 130 24
+			effect "ui\graphics\login_screen\chek_box_voiting2"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_1_2
+	{
+		defaults
+		{
+			pos 135 -0
+			opacity 255
+			color 0xffffffff
+			size 130 24
+			effect "ui\graphics\login_screen\chek_box_voiting2"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
