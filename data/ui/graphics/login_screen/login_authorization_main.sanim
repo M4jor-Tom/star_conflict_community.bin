@@ -1,0 +1,79 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Tue Jul 01 14:34:28 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 15
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object bg
+	{
+		defaults
+		{
+			anchor "L"
+			keep_screen_size
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 342 231
+			opacity 255
+			color 0xffffffff
+			size 430 184
+			effect "ui\graphics\login_screen\login_authorization_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			anchor "C"
+			pos 592 279.866
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object win_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 341 255
+			opacity 255
+			color 0xffffffff
+			size 596 140
+			effect "ui\graphics\login_screen\authorization_win"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
