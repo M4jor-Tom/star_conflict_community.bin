@@ -1,0 +1,77 @@
+﻿source_file  Y:/art/source/ui/graphics/loot_scan/loot_scan.ma
+//by sergey_mitryaev
+//at Fri May 25 14:18:52 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 3
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object scan_prog
+	{
+		defaults
+		{
+			pos 51.3996 25.6986
+			opacity 255
+			color 0xffffffff
+			size 200 18
+			effect "ui\graphics\loot_scan\loot_scan_prog"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object loot_name
+	{
+		defaults
+		{
+			pos 64.0588 7.75838
+			opacity 255
+			color 0xfff3f3f3
+			size 200 15
+			effect ""
+			alignment "LM"
+			sampleText "Сканирование"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object loot_point
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\loot_scan\loot_point"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object scan_msg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\loot_scan\loot_scan_msg"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
