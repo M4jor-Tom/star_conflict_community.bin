@@ -1,0 +1,106 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Mon Nov 25 10:21:53 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 148.51 20.3356
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object friend
+	{
+		defaults
+		{
+			pos 26 -0
+			opacity 255
+			color 0xff7fb2ff
+			size 400 20
+			effect ""
+			alignment "CM"
+			sampleText "Нашиv rg rehwe hjtj ktyktuy ktykrtkt  rt r"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 198.537 20.3356
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 248 20.3356
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 54
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 26 20
+			opacity 255
+			color 0xff7fb2ff
+			size 400 20
+			effect ""
+			alignment "CM"
+			sampleText "Нашиv rg rehwe hjtj ktyktuy ktykrtkt  rt r"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
