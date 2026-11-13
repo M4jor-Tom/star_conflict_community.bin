@@ -1,0 +1,35 @@
+﻿source_file "Y:/art/source/ui/graphics/gmp_select/gmp_select.ma"
+//by Sergey
+//at Tue Jun 16 16:00:04 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object win
+	{
+		defaults
+		{
+			pos -8.71773 -95.9433
+			opacity 255
+			color 0xffffffff
+			size 740 444
+			effect "ui\graphics\gmp_select\fgmp_select_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
