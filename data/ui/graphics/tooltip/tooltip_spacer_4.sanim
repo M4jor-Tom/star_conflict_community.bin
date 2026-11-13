@@ -1,0 +1,55 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Fri Nov 07 14:26:07 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 454 2
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico20
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1 -0	398 -0	1 2	398 2	
+				0.0791016 0.150631	0.0791016 0.147273	0.0771484 0.150631	0.0771484 0.147273	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
