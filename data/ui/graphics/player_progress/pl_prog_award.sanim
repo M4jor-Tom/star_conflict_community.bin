@@ -1,0 +1,215 @@
+﻿source_file "Y:/art/source/ui/graphics/player_progress/player_progress.ma"
+//by sergey_mitryaev
+//at Mon Jul 21 11:47:11 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 382 82
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 8.14886 25
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 70.4618 25
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 133.624 25
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 196.785 25
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 259.947 25
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_6
+	{
+		defaults
+		{
+			pos 323.109 25
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object plus
+	{
+		defaults
+		{
+			pos 58 19
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests\plus"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title6
+	{
+		defaults
+		{
+			pos 43 2
+			opacity 255
+			color 0xffff9a00
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "Награда  командования"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 40
+
+	sprite bg39
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	6 -4	376 -4	386 -4	-4 6	6 6	376 6	386 6	-4 76	6 76	376 76	386 76	-4 86	6 86	376 86	386 86	
+				0.0849609 0.670898	0.0947266 0.670898	0.0986328 0.670898	0.108398 0.670898	0.0849609 0.680664	0.0947266 0.680664	0.0986328 0.680664	0.108398 0.680664	0.0849609 0.68457	0.0947266 0.68457	0.0986328 0.68457	0.108398 0.68457	0.0849609 0.694336	0.0947266 0.694336	0.0986328 0.694336	0.108398 0.694336	
+				0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite bg30
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	6 -4	376 -4	386 -4	-4 6	6 6	376 6	386 6	-4 76	6 76	376 76	386 76	-4 86	6 86	376 86	386 86	
+				0.0263672 0.714844	0.0361328 0.714844	0.0400391 0.714844	0.0498047 0.714844	0.0263672 0.724609	0.0361328 0.724609	0.0400391 0.724609	0.0498047 0.724609	0.0263672 0.728516	0.0361328 0.728516	0.0400391 0.728516	0.0498047 0.728516	0.0263672 0.738281	0.0361328 0.738281	0.0400391 0.738281	0.0498047 0.738281	
+				0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName327
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	28 -0	0 28	28 28	
+				0.325195 0.107422	0.352539 0.107422	0.325195 0.134766	0.352539 0.134766	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName328
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				354 54	382 54	354 82	382 82	
+				0.352539 0.134766	0.325195 0.134766	0.352539 0.107422	0.325195 0.107422	
+			}
+		}
+		visible_on idle
+	}
+}
+
