@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by Sergey_Mitryaev
+//at Tue Feb 20 15:21:52 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object layout_btn_1
+	{
+		defaults
+		{
+			pos -1.64313e-014 -3.55271e-015
+			opacity 255
+			color 0xffffffff
+			size 40 28
+			effect "ui\graphics\rank_up\rank_btn"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object layout_btn_2
+	{
+		defaults
+		{
+			pos 67 -3.55271e-015
+			opacity 255
+			color 0xffffffff
+			size 40 28
+			effect "ui\graphics\rank_up\rank_btn"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object layout_btn_3
+	{
+		defaults
+		{
+			pos 134 -3.55271e-015
+			opacity 255
+			color 0xffffffff
+			size 40 28
+			effect "ui\graphics\rank_up\rank_btn"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object layout_btn_4
+	{
+		defaults
+		{
+			pos 201 -3.55271e-015
+			opacity 255
+			color 0xffffffff
+			size 40 28
+			effect "ui\graphics\rank_up\rank_btn"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos -1.64313e-014 -3.55271e-015
+			opacity 255
+			color 0xffffffff
+			size 266 30
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
