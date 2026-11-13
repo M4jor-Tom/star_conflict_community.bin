@@ -1,0 +1,117 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_2.ma"
+//by sergey_mitryaev
+//at Thu Jun 15 18:07:34 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 24
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value
+	{
+		defaults
+		{
+			pos 114 1
+			opacity 255
+			color 0xffffffff
+			size 200 24
+			effect ""
+			alignment "RM"
+			sampleText "4353464"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color
+	{
+		defaults
+		{
+			pos 116.361 41.5566
+			opacity 255
+			color 0xff98b0d5
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "допол. цвет"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value4
+	{
+		defaults
+		{
+			pos 4 1
+			opacity 255
+			color 0xffffffff
+			size 200 24
+			effect ""
+			alignment "LM"
+			sampleText "4353464"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName82
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -0	319 -0	-2 24	319 24	
+				0.336914 0.0146484	0.360352 0.0146484	0.336914 0.0371094	0.360352 0.0371094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-2 0.120285	319 0.120285	-2 1.87971	319 1.87971	
+				0.0566406 0.140625	0.078125 0.140625	0.0566406 0.142578	0.078125 0.142578	
+			}
+		}
+		visible_on idle
+	}
+}
+
