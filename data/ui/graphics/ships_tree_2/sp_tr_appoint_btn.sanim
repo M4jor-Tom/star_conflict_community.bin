@@ -1,0 +1,429 @@
+﻿source_file "Y:/art/source/ui/graphics/matchmaking_pvp/matchmaking_pvp.ma"
+//by sergey_mitryaev
+//at Thu Oct 27 16:54:42 2016
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0.209052 -0.209052
+			opacity 255
+			color 0xffffffff
+			size 250 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_2
+	}
+	object text
+	{
+		defaults
+		{
+			pos 17 -0
+			opacity 255
+			color 0xff00ddff
+			size 200 20
+			effect ""
+			alignment "CM"
+			sampleText "Назанчено  кораблей : 2\4"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_2
+	}
+	object color
+	{
+		defaults
+		{
+			pos 15.2091 -18
+			opacity 255
+			color 0xff99ffff
+			size 150 20
+			effect ""
+			alignment "CM"
+			sampleText " Color  2\4"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_2
+	}
+	object arrow
+	{
+		defaults
+		{
+			pos 218 3
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree_2\sp_tr_appoint_btn_arrow"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_2
+	}
+}
+
+sprites 12
+{
+	total_vertices 48
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices
+			{
+				0 -0.790948	30 -0.790948	0 20	30 20	
+				0 0.958984	0.015625 0.958984	0 0.919922	0.015625 0.919922	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim over_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName379
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices
+			{
+				219.791 -0.790948	249.791 -0.790948	219.791 20	249.791 20	
+				0.0234375 0.958984	0.0390625 0.958984	0.0234375 0.919922	0.0390625 0.919922	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim over_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName380
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices
+			{
+				30 -0.790948	219.791 -0.790948	30 20	219.791 20	
+				0.0112305 0.958984	0.0268555 0.958984	0.0112305 0.919922	0.0268555 0.919922	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim over_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName381
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				0 -0.790948	30 -0.790948	0 20	30 20	
+				0 0.958984	0.015625 0.958984	0 0.919922	0.015625 0.919922	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	
+		}
+		visible_on idle_2
+		visible_on over_2
+	}
+	sprite objectName382
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				219.791 -0.790948	249.791 -0.790948	219.791 20	249.791 20	
+				0.0234375 0.958984	0.0390625 0.958984	0.0234375 0.919922	0.0390625 0.919922	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	
+		}
+		visible_on idle_2
+		visible_on over_2
+	}
+	sprite objectName383
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				30 -0.790948	219.791 -0.790948	30 20	219.791 20	
+				0.0112305 0.958984	0.0268555 0.958984	0.0112305 0.919922	0.0268555 0.919922	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	0x4c4c4c4c	
+		}
+		visible_on idle_2
+		visible_on over_2
+	}
+	sprite objectName384
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices
+			{
+				0 -0.790948	30 -0.790948	0 20	30 20	
+				0.115234 0.953125	0.130859 0.953125	0.115234 0.914063	0.130859 0.914063	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim over_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName385
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices
+			{
+				219.791 -0.790948	249.791 -0.790948	219.791 20	249.791 20	
+				0.138672 0.953125	0.154297 0.953125	0.138672 0.914063	0.154297 0.914063	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim over_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName386
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices
+			{
+				30 -0.790948	219.791 -0.790948	30 20	219.791 20	
+				0.126465 0.953125	0.14209 0.953125	0.126465 0.914063	0.14209 0.914063	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim over_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName387
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				0 -0.790948	30 -0.790948	0 20	30 20	
+				0.115234 0.953125	0.130859 0.953125	0.115234 0.914063	0.130859 0.914063	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		anim over_2 sp_colc
+		{
+			1
+			0x90909090	0x90909090	0x90909090	0x90909090	
+		}
+	}
+	sprite objectName388
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				219.791 -0.790948	249.791 -0.790948	219.791 20	249.791 20	
+				0.138672 0.953125	0.154297 0.953125	0.138672 0.914063	0.154297 0.914063	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		anim over_2 sp_colc
+		{
+			1
+			0x90909090	0x90909090	0x90909090	0x90909090	
+		}
+	}
+	sprite objectName389
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			blend color_add
+			vertices
+			{
+				30 -0.790948	219.791 -0.790948	30 20	219.791 20	
+				0.126465 0.953125	0.14209 0.953125	0.126465 0.914063	0.14209 0.914063	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		anim over_2 sp_colc
+		{
+			1
+			0x90909090	0x90909090	0x90909090	0x90909090	
+		}
+	}
+}
+
