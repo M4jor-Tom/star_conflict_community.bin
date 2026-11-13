@@ -1,0 +1,642 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Thu Sep 07 18:35:53 2017
+
+base_res 1920 1080
+
+animations 8
+{
+	anim found
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim ready
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim waiting
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim found_press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim ready_press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim found_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim ready_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 17
+
+objects 2
+{
+	object title
+	{
+		defaults
+		{
+			pos 9 2
+			opacity 255
+			color 0xff362608
+			size 150 20
+			effect ""
+			alignment "CM"
+			sampleText "Bujnsfn fswn kna "
+			font "VerySmall"
+		}
+		visible_on found
+		visible_on ready
+		visible_on waiting
+		visible_on disable
+		visible_on found_press
+		visible_on ready_press
+		visible_on found_over
+		visible_on ready_over
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 170 22
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on found
+		visible_on ready
+		visible_on waiting
+		visible_on disable
+		visible_on found_press
+		visible_on ready_press
+		visible_on found_over
+		visible_on ready_over
+	}
+}
+
+sprites 15
+{
+	total_vertices 60
+
+	sprite we53
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				159.5 -34	274.5 -34	159.5 60	274.5 60	
+				0.223633 0.000976563	0.335938 0.000976563	0.223633 0.0927734	0.335938 0.0927734	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on found
+		anim ready sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on waiting
+		visible_on disable
+		visible_on found_press
+		anim ready_press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on found_over
+		anim ready_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we54
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				159.5 -34	274.5 -34	159.5 60	274.5 60	
+				0.223633 0.09375	0.335938 0.09375	0.223633 0.185547	0.335938 0.185547	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on found
+		visible_on ready
+		anim waiting sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on disable
+		visible_on found_press
+		visible_on ready_press
+		visible_on found_over
+		visible_on ready_over
+	}
+	sprite we55
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				159.5 -34	274.5 -34	159.5 60	274.5 60	
+				0.223633 0.185547	0.335938 0.185547	0.223633 0.277344	0.335938 0.277344	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on found
+		anim ready sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim waiting sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim disable sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on found_press
+		anim ready_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on found_over
+		anim ready_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite we58
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				159.5 -34	274.5 -34	159.5 60	274.5 60	
+				0.222656 0.277344	0.334961 0.277344	0.222656 0.369141	0.334961 0.369141	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on found
+		visible_on ready
+		visible_on waiting
+		anim disable sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim found_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim ready_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim found_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim ready_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite we61
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				-88.5 -34	8.5 -34	-88.5 60	8.5 60	
+				0.00195313 0.000976563	0.0966797 0.000976563	0.00195313 0.0927734	0.0966797 0.0927734	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on found
+		anim ready sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on waiting
+		visible_on disable
+		visible_on found_press
+		anim ready_press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on found_over
+		anim ready_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we62
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				-88.5 -34	8.5 -34	-88.5 60	8.5 60	
+				0.00195313 0.09375	0.0966797 0.09375	0.00195313 0.185547	0.0966797 0.185547	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on found
+		visible_on ready
+		anim waiting sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on disable
+		visible_on found_press
+		visible_on ready_press
+		visible_on found_over
+		visible_on ready_over
+	}
+	sprite we63
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				-88.5 -34	8.5 -34	-88.5 60	8.5 60	
+				0.00195313 0.185547	0.0966797 0.185547	0.00195313 0.277344	0.0966797 0.277344	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on found
+		anim ready sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim waiting sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim disable sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on found_press
+		anim ready_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on found_over
+		anim ready_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite we64
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				-88.5 -34	8.5 -34	-88.5 60	8.5 60	
+				0.000976563 0.277344	0.0957031 0.277344	0.000976563 0.369141	0.0957031 0.369141	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on found
+		visible_on ready
+		visible_on waiting
+		anim disable sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim found_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim ready_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim found_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim ready_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite we634
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				8.5 -34	159.5 -34	8.5 60	159.5 60	
+				0.0966797 0.000976563	0.223633 0.000976563	0.0966797 0.0927734	0.223633 0.0927734	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on found
+		anim ready sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on waiting
+		visible_on disable
+		visible_on found_press
+		anim ready_press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on found_over
+		anim ready_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we66
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				8.5 -34	159.5 -34	8.5 60	159.5 60	
+				0.0966797 0.09375	0.223633 0.09375	0.0966797 0.185547	0.223633 0.185547	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on found
+		visible_on ready
+		anim waiting sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on disable
+		visible_on found_press
+		visible_on ready_press
+		visible_on found_over
+		visible_on ready_over
+	}
+	sprite we67
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				8.5 -34	159.5 -34	8.5 60	159.5 60	
+				0.0966797 0.185547	0.223633 0.185547	0.0966797 0.277344	0.223633 0.277344	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on found
+		anim ready sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim waiting sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim disable sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on found_press
+		anim ready_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on found_over
+		anim ready_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite we68
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				8.5 -34	159.5 -34	8.5 60	159.5 60	
+				0.0957031 0.277344	0.222656 0.277344	0.0957031 0.369141	0.222656 0.369141	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on found
+		visible_on ready
+		visible_on waiting
+		anim disable sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim found_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim ready_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim found_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim ready_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite over43
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				-8.49998 1	16.5 1	-8.49998 25	16.5 25	
+				0.341797 0.00390625	0.366211 0.00390625	0.341797 0.0273438	0.366211 0.0273438	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on found
+		visible_on ready
+		visible_on waiting
+		visible_on disable
+		visible_on found_press
+		visible_on ready_press
+		anim found_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim ready_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we65
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				16.5 1	157.5 1	16.5 25	157.5 25	
+				0.366211 0.00390625	0.483398 0.00390625	0.366211 0.0273438	0.483398 0.0273438	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on found
+		visible_on ready
+		visible_on waiting
+		visible_on disable
+		visible_on found_press
+		visible_on ready_press
+		anim found_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim ready_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we60
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				157.5 1	176.5 1	157.5 25	176.5 25	
+				0.483398 0.00390625	0.501953 0.00390625	0.483398 0.0273438	0.501953 0.0273438	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on found
+		visible_on ready
+		visible_on waiting
+		visible_on disable
+		visible_on found_press
+		visible_on ready_press
+		anim found_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim ready_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
