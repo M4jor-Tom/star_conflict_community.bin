@@ -1,0 +1,108 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Tue Sep 03 15:21:50 2013
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 10
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim show
+	{
+		mode once
+		cycle_time 0.1
+	}
+	anim idle_big
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos -16 -16
+			opacity 255
+			color 0xffffffff
+			size 32 32
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_2
+		visible_on show
+		visible_on idle_big
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-12.2416 -11.6169	11.7584 -11.6169	-12.2416 12.3831	11.7584 12.3831	
+				-1.49012e-008 0	1 0	-1.49012e-008 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+		anim show sp_pos_col
+		{
+			10 10
+			-12.2416 -11.6169	11.7584 -11.6169	-12.2416 12.3831	11.7584 12.3831	
+			-12.3293 -11.7191	11.8573 -11.7191	-12.3293 12.4674	11.8573 12.4674	
+			-12.5716 -12.0017	12.1307 -12.0017	-12.5716 12.7006	12.1307 12.7006	
+			-12.9376 -12.4286	12.5439 -12.4286	-12.9376 13.0529	12.5439 13.0529	
+			-13.3965 -12.9637	13.0617 -12.9637	-13.3965 13.4944	13.0617 13.4944	
+			-13.9172 -13.571	13.6494 -13.571	-13.9172 13.9956	13.6494 13.9956	
+			-14.4688 -14.2143	14.2719 -14.2143	-14.4688 14.5264	14.2719 14.5264	
+			-15.0205 -14.8576	14.8945 -14.8576	-15.0205 15.0573	14.8945 15.0573	
+			-15.5412 -15.4649	15.4822 -15.4649	-15.5412 15.5584	15.4822 15.5584	
+			-16 -16	16 -16	-16 16	16 16	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			0x82ffffff	0x82ffffff	0x82ffffff	0x82ffffff	
+			0x8affffff	0x8affffff	0x8affffff	0x8affffff	
+			0x97ffffff	0x97ffffff	0x97ffffff	0x97ffffff	
+			0xa6ffffff	0xa6ffffff	0xa6ffffff	0xa6ffffff	
+			0xb8ffffff	0xb8ffffff	0xb8ffffff	0xb8ffffff	
+			0xcbffffff	0xcbffffff	0xcbffffff	0xcbffffff	
+			0xddffffff	0xddffffff	0xddffffff	0xddffffff	
+			0xefffffff	0xefffffff	0xefffffff	0xefffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim idle_big sp_posc
+		{
+			1 
+			-16 -16	16 -16	-16 16	16 16	
+		}
+	}
+}
+
