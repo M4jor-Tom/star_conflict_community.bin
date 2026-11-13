@@ -1,0 +1,77 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_3.ma"
+//by Sergey_Mitryaev
+//at Wed May 31 13:09:13 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object icon
+	{
+		defaults
+		{
+			pos 7 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 0 50.0643
+			opacity 255
+			color 0xffffffff
+			size 64 20
+			effect ""
+			alignment "CM"
+			sampleText "4500000"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object timer
+	{
+		defaults
+		{
+			pos 7 15
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "CM"
+			sampleText "450"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -2.22045e-014
+			opacity 255
+			color 0xffffffff
+			size 64 70
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
