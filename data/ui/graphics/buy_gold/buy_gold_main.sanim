@@ -1,0 +1,111 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/gold_buy.ma"
+//by Sergey_Mitryaev
+//at Wed Sep 26 16:37:28 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object blackout
+	{
+		defaults
+		{
+			anchor "L"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object window
+	{
+		defaults
+		{
+			anchor "C"
+			pos 364.792 102.56
+			opacity 255
+			color 0xffffffff
+			size 553 462
+			effect "ui\graphics\buy_gold\buy_gold_window"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object window_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 425 160
+			opacity 255
+			color 0xffffffff
+			size 440 360
+			effect "ui\graphics\buy_gold\buy_gold_window"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object window_3
+	{
+		defaults
+		{
+			anchor "C"
+			pos 287 126
+			opacity 255
+			color 0xffffffff
+			size 440 360
+			effect "ui\graphics\buy_gold_3\buy_gold_3_window"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object gold_arc_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 400 191
+			opacity 255
+			color 0xffffffff
+			size 470 210
+			effect "ui\graphics\buy_gold_3\buy_gold_arc_win"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object lvl_up_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 65 126
+			opacity 255
+			color 0xffffffff
+			size 1150 360
+			effect "ui\graphics\awards\lvl_up_2_win"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
