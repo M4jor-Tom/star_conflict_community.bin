@@ -1,0 +1,40 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Mon Jul 11 12:37:10 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite que296
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-10.4467 -10.1333	41.1466 -10.1333	-10.4467 41.46	41.1466 41.46	
+				0.164867 0.627758	0.182789 0.627758	0.164867 0.64568	0.182789 0.64568	
+				0xff1b1b1b	0xff1b1b1b	0xff1b1b1b	0xff1b1b1b	
+			}
+		}
+		visible_on idle
+	}
+}
+
