@@ -1,0 +1,221 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Thu May 22 15:48:56 2014
+
+
+animations 2
+{
+	anim freind
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 5
+{
+	object value_1
+	{
+		defaults
+		{
+			pos 0 2
+			opacity 255
+			color 0xff00ddff
+			size 15 16
+			effect ""
+			alignment "LM"
+			sampleText "A"
+			font "MonoTiny"
+		}
+		visible_on freind
+		anim enemy obj_colc
+		{
+			1
+			0xffff2700
+		}
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 12 6
+			opacity 255
+			color 0xff00ddff
+			size 38 8
+			effect "ui\graphics\hud\ratio\ratio_prog"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on freind
+		anim enemy obj_colc
+		{
+			1
+			0xffff2700
+		}
+	}
+	object dron_count
+	{
+		defaults
+		{
+			pos 20 1
+			opacity 255
+			color 0xffffffff
+			size 23 16
+			effect "ui\graphics\hud\ratio\ratio_dron_count"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on freind
+		visible_on enemy
+	}
+	object value_2
+	{
+		defaults
+		{
+			pos 10 14
+			opacity 255
+			color 0xff00ddff
+			size 40 16
+			effect ""
+			alignment "CM"
+			sampleText "99"
+			font "MonoTiny"
+		}
+		visible_on freind
+		anim enemy obj_colc
+		{
+			1
+			0xffff2700
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on freind
+		visible_on enemy
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite wqe1eary
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				13 7	46 7	13 13	46 13	
+				0.253418 0.369629	0.252441 0.369629	0.253418 0.368652	0.252441 0.368652	
+				0xff2c2c2c	0xff2c2c2c	0xff2c2c2c	0xff2c2c2c	
+			}
+		}
+		visible_on freind
+		visible_on enemy
+	}
+	sprite wqe4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				12 6	47 6	12 7	47 7	
+				0.273438 0.378906	0.252925 0.378906	0.273438 0.376953	0.252925 0.376953	
+				0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+			}
+		}
+		visible_on freind
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+	}
+	sprite wqe3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				12 13	47 13	12 14	47 14	
+				0.273438 0.378906	0.252925 0.378906	0.273438 0.376953	0.252925 0.376953	
+				0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+			}
+		}
+		visible_on freind
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+	}
+	sprite wqe2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				12 14	12 6	13 14	13 6	
+				0.273438 0.378906	0.252925 0.378906	0.273438 0.376953	0.252925 0.376953	
+				0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+			}
+		}
+		visible_on freind
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+	}
+	sprite wqe1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				46 14	46 6	47 14	47 6	
+				0.273438 0.378906	0.252925 0.378906	0.273438 0.376953	0.252925 0.376953	
+				0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+			}
+		}
+		visible_on freind
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+	}
+}
+
