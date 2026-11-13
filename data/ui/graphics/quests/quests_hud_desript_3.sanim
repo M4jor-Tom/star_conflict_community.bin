@@ -1,0 +1,226 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by Sergey_Mitryaev
+//at Fri Mar 03 13:53:40 2017
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hide
+	{
+		mode once
+		cycle_time 1
+	}
+	anim show
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object text17
+	{
+		defaults
+		{
+			pos 0 17
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests\quests_hud_tick_3"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+	object text18
+	{
+		defaults
+		{
+			pos 28 4
+			opacity 255
+			color 0xffffffff
+			size 180 50
+			effect ""
+			alignment "LT"
+			sampleText "Уничтожить корабли, не|принадлежащие Иерехону|Выполнено 24554"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 220 60
+			effect ""
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+		visible_on hide
+		visible_on show
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 239.449 10.0719
+			opacity 255
+			color 0xffababab
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Wsds f geghg eh "
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+	object color_2
+	{
+		defaults
+		{
+			pos 238.091 32.4677
+			opacity 255
+			color 0xffff9000
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Wsds f geghg eh "
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+}
+
