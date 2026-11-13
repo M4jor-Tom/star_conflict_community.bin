@@ -1,0 +1,66 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud.ma
+//by sega
+//at Tue Jul 19 14:51:32 2011
+
+animations 2
+{
+	anim dont_shoot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim shoot
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object distance1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 0
+			color 0xff000000
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "269"
+			font "Tiny_outl"
+			blend color_add
+		}
+		visible_on dont_shoot
+		anim shoot obj_opc_colc
+		{
+			1 1
+			255
+			0xffff0000
+		}
+	}
+	object distance2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffdb0006
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "269"
+			font "Tiny"
+		}
+		visible_on dont_shoot
+		anim shoot obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+}
+
