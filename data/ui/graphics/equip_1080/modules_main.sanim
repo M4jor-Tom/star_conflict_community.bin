@@ -1,0 +1,243 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Thu Dec 12 11:46:34 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 11
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 978 176
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sp
+	{
+		defaults
+		{
+			pos 409 12
+			opacity 255
+			color 0xffd1f0ff
+			size 172 30
+			effect ""
+			alignment "CM"
+			sampleText "СПЕЦМОДУЛЬ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object sp_icon
+	{
+		defaults
+		{
+			pos 444 52
+			opacity 255
+			color 0xffffffff
+			size 106 106
+			effect "ui\graphics\equip_1080\sp_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object active
+	{
+		defaults
+		{
+			pos 671 12
+			opacity 255
+			color 0xffd1f0ff
+			size 240 30
+			effect ""
+			alignment "CM"
+			sampleText "БОЕВЫЕ МОДУЛИ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object weap
+	{
+		defaults
+		{
+			pos 0 12
+			opacity 255
+			color 0xffd1f0ff
+			size 136 30
+			effect ""
+			alignment "CM"
+			sampleText "ОРУДИЯ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object ammo
+	{
+		defaults
+		{
+			pos 130 12
+			opacity 255
+			color 0xffd1f0ff
+			size 168 30
+			effect ""
+			alignment "CM"
+			sampleText "БОЕПРИПАСЫ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object rocket
+	{
+		defaults
+		{
+			pos 289 12
+			opacity 255
+			color 0xffd1f0ff
+			size 110 30
+			effect ""
+			alignment "CM"
+			sampleText "РАКЕТЫ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object rocket_module
+	{
+		defaults
+		{
+			pos 307 52
+			opacity 255
+			color 0xffffffff
+			size 78 78
+			effect "ui\graphics\equip_1080\active_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ammo_module
+	{
+		defaults
+		{
+			pos 176 52
+			opacity 255
+			color 0xffffffff
+			size 78 78
+			effect "ui\graphics\equip_1080\active_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object weap_module
+	{
+		defaults
+		{
+			pos 0 52
+			opacity 255
+			color 0xffffffff
+			size 128 78
+			effect "ui\graphics\equip_1080\wp_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object active_modules
+	{
+		defaults
+		{
+			pos 607 52
+			opacity 255
+			color 0xffffffff
+			size 52 78
+			effect "ui\graphics\equip_1080\act_modules_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName411
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				410 42	581 42	410 45	581 45	
+				0.759766 0.882813	0.779297 0.882813	0.759766 0.902344	0.779297 0.902344	
+				0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName412
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				606 42	975 42	606 45	975 45	
+				0.759766 0.882813	0.779297 0.882813	0.759766 0.902344	0.779297 0.902344	
+				0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName414
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 42	386 42	0 45	386 45	
+				0.759766 0.882813	0.779297 0.882813	0.759766 0.902344	0.779297 0.902344	
+				0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName463
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				141.059 80.0594	160.941 80.0594	141.059 99.9406	160.941 99.9406	
+				0.96875 0.283203	1 0.283203	0.96875 0.314453	1 0.314453	
+			}
+		}
+		visible_on idle
+	}
+}
+
