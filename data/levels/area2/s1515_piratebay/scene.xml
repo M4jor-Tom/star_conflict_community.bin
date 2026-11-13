@@ -1,0 +1,636 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="s1515_piratebay; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" additionalColorRemapAnimTime="1.000" battlefieldRadius="1800.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" />
+  <EntityContainer>
+    <Entity Name="SpawnTeam1Ship1" Def="Logic_SpawnSpot_Team1Group0" Pos="-747.247 -245.719 1284.886" Rot="0.000 0.377 0.000 0.926" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="mobile_spawn1" Def="Logic_SpawnArea" relationshipGroup="2" Pos="-618.059 130.729 0.711" Rot="0.005 -0.722 0.027 0.692" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpaceShield1" Def="Object_SpaceShield" Pos="0.342 -273.121 -0.341" radius="1161.000" intensity="1.000" tiling="0.981" />
+    <Entity Name="SpawnAgentWave0" Def="Logic_SpawnAgentWave_Group0" GameplaysMask="4290772800" Pos="-1034.110 -226.147 1007.610" Rot="0.000 -0.540 0.000 0.842" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="34.164 3466.061 -198.479" Rot="0.057 -0.691 0.718 0.055" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="Counter_Activate_Hungargenerator" Def="Logic_Counter" Pos="-1008.077 -386.834 -149.272" current_value="0.000" max_value="1.000" min_value="0.000">
+      <ActionList Name="m_onChangedValue" Num="4">
+        <FireAction Target="HangarGenerator2" Action="SetDamageable" />
+        <FireAction Target="HangarGenerator1" Action="SetDamageable" />
+        <FireAction Target="HangarGenerator2" Action="ShowInHud" />
+        <FireAction Target="HangarGenerator1" Action="ShowInHud" />
+      </ActionList>
+    </Entity>
+    <Entity Name="ModelEntity1" Def="ModelEntity" Pos="13.296 -388.028 481.686" Rot="0.000 1.000 0.000 0.000" Model="models\illumination\runway" />
+    <Entity Name="ModelEntity2" Def="ModelEntity" Pos="-16.348 -388.103 481.601" Rot="0.000 1.000 0.000 0.000" Model="models\illumination\runway" />
+    <Entity Name="ModelEntity3" Def="ModelEntity" Pos="13.296 -388.028 842.564" Rot="0.000 1.000 0.000 0.000" Model="models\illumination\runway" />
+    <Entity Name="ModelEntity4" Def="ModelEntity" Pos="-16.348 -388.103 842.479" Rot="0.000 1.000 0.000 0.000" Model="models\illumination\runway" />
+    <Entity Name="BeamWithHalo8" Def="Lights_BeamWithHalo" Pos="-78.556 -316.234 591.465" Rot="0.884 0.464 0.027 0.051" base_color="0x5BF17C36" size="100.000" width="21.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="1.000000" halo1_vis_angle="45.000000" halo1_base_color="0x40FF8040" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="BeamWithHalo12" Def="Lights_BeamWithHalo" Pos="-78.721 -316.206 698.749" Rot="0.884 0.464 0.027 0.051" base_color="0x5BF17C36" size="100.000" width="21.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="1.000000" halo1_vis_angle="45.000000" halo1_base_color="0x40FF8040" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="BeamWithHalo13" Def="Lights_BeamWithHalo" Pos="-78.401 -316.187 805.843" Rot="0.884 0.464 0.027 0.051" base_color="0x5BF17C36" size="100.000" width="21.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="1.000000" halo1_vis_angle="45.000000" halo1_base_color="0x40FF8040" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="BeamWithHalo14" Def="Lights_BeamWithHalo" Pos="-78.959 -316.064 912.866" Rot="0.884 0.464 0.027 0.051" base_color="0x5BF17C36" size="100.000" width="21.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="1.000000" halo1_vis_angle="45.000000" halo1_base_color="0x40FF8040" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="BeamWithHalo1" Def="Lights_BeamWithHalo" Pos="77.899 -316.392 591.311" Rot="0.000 0.000 0.884 0.467" base_color="0x5BF17C36" size="100.000" width="21.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="1.000000" halo1_vis_angle="45.000000" halo1_base_color="0x40FF8040" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="BeamWithHalo9" Def="Lights_BeamWithHalo" Pos="78.046 -316.545 698.580" Rot="0.000 0.000 0.884 0.467" base_color="0x5BF17C36" size="100.000" width="21.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="1.000000" halo1_vis_angle="45.000000" halo1_base_color="0x40FF8040" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="BeamWithHalo10" Def="Lights_BeamWithHalo" Pos="77.881 -316.348 805.450" Rot="0.000 0.000 0.884 0.467" base_color="0x5BF17C36" size="100.000" width="21.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="1.000000" halo1_vis_angle="45.000000" halo1_base_color="0x40FF8040" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="BeamWithHalo11" Def="Lights_BeamWithHalo" Pos="78.005 -316.228 912.778" Rot="0.000 0.000 0.884 0.467" base_color="0x5BF17C36" size="100.000" width="21.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="1.000000" halo1_vis_angle="45.000000" halo1_base_color="0x40FF8040" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="RocketGun29" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="32.089 375.003 78.583" Rot="0.000 0.930 0.000 -0.367" />
+    <Entity Name="RocketGun30" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-35.543 383.554 45.335" Rot="0.000 0.704 0.000 0.710" />
+    <Entity Name="RocketGun28" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-96.144 106.603 -9.081" Rot="0.000 0.292 0.000 0.956" />
+    <Entity Name="PointLight1" Def="Lights_PointLight" Pos="-6.488 -361.756 638.872" start_off="0" rad="180.00000" color="0x35FF8000" />
+    <Entity Name="PointLight3" Def="Lights_PointLight" Pos="-0.800 -373.966 851.078" start_off="0" rad="180.00000" color="0x2CFF8000" />
+    <Entity Name="MapLoad4" Def="Logic_MapLoad" Pos="-1152.263 -209.284 952.787">
+      <ActionList Name="m_onLoad" Num="5">
+        <FireAction Target="EnergyGenerator2" Action="DisableAssociatedSpawn" />
+        <FireAction Target="EnergyGenerator3" Action="DisableAssociatedSpawn" />
+        <FireAction Target="PrisonGenerator1" Action="DisableAssociatedSpawn" />
+        <FireAction Target="HangarGenerator1" Action="DisableAssociatedSpawn" />
+        <FireAction Target="HangarGenerator2" Action="DisableAssociatedSpawn" />
+      </ActionList>
+    </Entity>
+    <Entity Name="HangarGenerator2" Def="PvE_HangarGenerator" Pos="-29.081 -371.158 509.059" Rot="0.000 0.707 0.000 0.707" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Counter_Hangar_Laser_Remove2" Action="Add" Params="1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="HangarGenerator1" Def="PvE_HangarGenerator" Pos="26.721 -371.325 508.699" Rot="0.000 0.707 0.000 0.707" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Counter_Hangar_Laser_Remove1" Action="Add" Params="1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EnergyGenerator2" Def="PvE_EnergyGeneratorTriple" Pos="-1278.897 -237.445 907.642" Rot="-0.018 0.378 0.000 0.926" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent" Num="4">
+        <FireAction Target="Counter_Activate_Prisongenerator" Action="Add" Params="1" />
+        <FireAction Target="Counter_shield_remove" Action="Add" Params="1" />
+        <FireAction Target="EnergyGenerator3" Action="EnableAssociatedSpawn" />
+        <FireAction Target="Counter_EnableGenerator3Spawn" Action="Add" Params="1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Counter_Activate_Prisongenerator" Def="Logic_Counter" Pos="-921.543 -116.463 727.047" current_value="0.000" max_value="3.000" min_value="0.000">
+      <ActionList Name="m_onReachedMaxValue" Num="2">
+        <FireAction Target="PrisonGenerator1" Action="SetDamageable" />
+        <FireAction Target="PrisonGenerator1" Action="ShowInHud" Params="2" />
+      </ActionList>
+    </Entity>
+    <Entity Name="MapLoad3" Def="Logic_MapLoad" Pos="-23.398 -317.549 537.310">
+      <ActionList Name="m_onLoad" Num="4">
+        <FireAction Target="HangarGenerator2" Action="HideFromHud" />
+        <FireAction Target="HangarGenerator1" Action="HideFromHud" />
+        <FireAction Target="HangarGenerator2" Action="SetUndamageable" />
+        <FireAction Target="HangarGenerator1" Action="SetUndamageable" />
+      </ActionList>
+    </Entity>
+    <Entity Name="MapLoad2" Def="Logic_MapLoad" Pos="-1035.704 -380.136 -196.034">
+      <ActionList Name="m_onLoad" Num="2">
+        <FireAction Target="PrisonGenerator1" Action="SetUndamageable" />
+        <FireAction Target="PrisonGenerator1" Action="HideFromHud" />
+      </ActionList>
+    </Entity>
+    <Entity Name="PrisonGenerator1" Def="PvE_PrisonGenerator" Pos="-984.463 -461.740 -191.465">
+      <ActionList Name="m_deadEvent" Num="4">
+        <FireAction Target="Counter_Activate_Hungargenerator" Action="Add" />
+        <FireAction Target="HangarGenerator2" Action="EnableAssociatedSpawn" />
+        <FireAction Target="HangarGenerator1" Action="EnableAssociatedSpawn" />
+        <FireAction Target="Counter_EnablePrisonSpawn" Action="Add" Params="1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EnergyGenerator1" Def="PvE_EnergyGeneratorBig" Pos="-922.081 -238.340 916.611" Rot="-0.009 0.371 -0.004 0.929" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent" Num="4">
+        <FireAction Target="Counter_Activate_Prisongenerator" Action="Add" Params="1" />
+        <FireAction Target="Counter_shield_remove" Action="Add" Params="1" />
+        <FireAction Target="EnergyGenerator2" Action="EnableAssociatedSpawn" Params="1" />
+        <FireAction Target="Counter_EnableGenerator2Spawn" Action="Add" Params="1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="TransportPath1" Def="PathObject" Pos="-0.645 -360.671 430.417" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-0.645 -360.671 430.417" />
+      <Point p="-2.341 -364.904 503.436" />
+      <Point p="-8.821 -369.310 535.357" />
+      <Point p="-15.005 -371.040 569.790" />
+      <Point p="-25.065 -366.740 594.607" />
+      <Point p="-35.505 -367.677 608.644" />
+      <Point p="-49.729 -368.035 624.114" />
+      <Point p="-68.580 -366.282 636.579" />
+      <Point p="-90.352 -363.273 642.126" />
+      <Point p="-109.990 -360.178 638.701" />
+      <Point p="-129.340 -354.410 627.998" />
+      <Point p="-146.079 -345.667 612.605" />
+      <Point p="-171.777 -330.600 586.399" />
+      <Point p="-197.099 -311.120 567.296" />
+      <Point p="-250.392 -261.303 521.472" />
+      <Point p="-287.933 -213.993 493.230" />
+      <Point p="-304.173 -193.943 477.801" />
+      <Point p="-317.622 -171.901 463.547" />
+      <Point p="-340.336 -147.166 427.089" />
+      <Point p="-348.470 -145.314 408.281" />
+      <Point p="-353.041 -143.513 395.649" />
+      <Point p="-357.341 -143.697 382.104" />
+      <Point p="-361.367 -139.383 371.530" />
+      <Point p="-362.808 -136.139 363.330" />
+      <Point p="-366.786 -134.064 343.828" />
+      <Point p="-369.604 -130.885 322.394" />
+      <Point p="-371.147 -125.625 302.489" />
+      <Point p="-367.421 -114.416 265.137" />
+      <Point p="-364.145 -105.587 233.820" />
+      <Point p="-350.720 -81.298 172.418" />
+      <Point p="-322.407 -49.260 108.891" />
+      <Point p="-308.298 -41.452 86.272" />
+      <Point p="-294.235 -33.815 67.829" />
+      <Point p="-278.711 -23.556 51.346" />
+      <Point p="-246.642 -8.599 19.508" />
+      <Point p="-225.298 8.281 2.713" />
+      <Point p="-193.934 34.919 -19.213" />
+      <Point p="-174.624 65.906 -37.413" />
+      <Point p="-157.336 81.083 -53.714" />
+      <Point p="-127.579 113.131 -79.233" />
+      <Point p="-111.599 128.873 -91.693" />
+      <Point p="-98.892 137.528 -100.714" />
+      <Point p="-86.939 145.118 -107.250" />
+      <Point p="-63.953 150.506 -112.940" />
+      <Point p="-43.699 154.519 -115.207" />
+      <Point p="-24.603 158.046 -116.536" />
+      <Point p="-9.036 161.027 -117.153" />
+      <Point p="3.077 162.458 -115.758" />
+      <Point p="14.943 163.848 -113.439" />
+      <Point p="21.949 166.084 -110.212" />
+      <Point p="34.393 168.266 -101.797" />
+      <Point p="58.789 169.705 -86.417" />
+      <Point p="78.548 170.859 -72.200" />
+      <Point p="92.459 173.206 -64.373" />
+      <Point p="108.275 176.963 -51.851" />
+      <Point p="127.270 174.450 -33.634" />
+      <Point p="147.390 170.001 -11.677" />
+      <Point p="163.241 166.695 7.194" />
+      <Point p="178.492 164.168 22.868" />
+      <Point p="186.599 164.136 31.841" />
+      <Point p="192.017 164.002 39.596" />
+      <Point p="196.752 165.045 47.892" />
+      <Point p="199.089 166.473 54.854" />
+      <Point p="200.255 166.942 61.667" />
+      <Point p="200.368 167.513 67.831" />
+      <Point p="198.486 171.261 73.792" />
+      <Point p="186.837 174.985 86.548" />
+      <Point p="174.613 178.247 101.005" />
+      <Point p="159.450 188.881 118.386" />
+      <Point p="129.328 210.023 148.398" />
+      <Point p="112.888 218.027 166.987" />
+      <Point p="100.153 227.125 184.501" />
+      <Point p="75.171 235.154 203.541" />
+      <Point p="57.265 240.935 216.300" />
+      <Point p="46.780 248.822 221.043" />
+      <Point p="34.234 253.164 225.519" />
+      <Point p="16.580 259.105 228.505" />
+      <Point p="-5.615 263.861 231.819" />
+      <Point p="-23.557 269.324 232.451" />
+      <Point p="-39.372 276.060 227.388" />
+      <Point p="-56.976 283.001 218.980" />
+      <Point p="-76.002 292.933 208.782" />
+      <Point p="-89.741 301.067 194.797" />
+      <Point p="-112.343 312.793 156.139" />
+      <Point p="-128.063 334.878 94.221" />
+      <Point p="-133.687 340.489 69.232" />
+      <Point p="-135.201 349.087 39.561" />
+      <Point p="-131.263 357.743 8.187" />
+      <Point p="-122.665 366.004 -19.687" />
+      <Point p="-107.608 380.665 -53.313" />
+      <Point p="-90.823 395.283 -78.103" />
+      <Point p="-74.143 404.453 -93.474" />
+      <Point p="-51.368 416.388 -102.333" />
+      <Point p="-23.700 429.761 -106.129" />
+      <Point p="-8.536 438.552 -107.354" />
+      <Point p="8.815 446.204 -101.710" />
+      <Point p="39.388 459.557 -88.242" />
+      <Point p="64.451 470.503 -77.201" />
+      <Point p="90.730 475.132 -59.164" />
+      <Point p="112.983 479.052 -43.890" />
+      <Point p="130.602 491.250 -32.869" />
+      <Point p="143.932 506.628 -16.294" />
+      <Point p="155.325 520.322 1.451" />
+      <Point p="160.292 532.454 19.646" />
+      <Point p="161.131 539.073 45.131" />
+      <Point p="157.185 552.790 67.394" />
+      <Point p="158.078 569.754 86.837" />
+      <Point p="157.629 593.680 106.442" />
+      <Point p="156.741 613.365 123.792" />
+      <Point p="153.679 630.915 142.019" />
+      <Point p="146.815 643.983 162.023" />
+      <Point p="126.053 646.365 193.114" />
+      <Point p="95.469 646.274 233.609" />
+      <Point p="75.812 646.006 255.746" />
+      <Point p="66.491 647.903 266.403" />
+    </Entity>
+    <Entity Name="Laser5" Def="Object_Hangar_Laser" Pos="12.328 -353.019 504.984" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="Jumpgate1" Def="PvE_PirateJumpgate" Pos="52.981 653.407 275.761" Rot="0.000 -0.417 0.000 0.909" />
+    <Entity Name="JumpGate1" Def="Medium_WarpGate" Pos="-832.571 -541.475 -35.649" Rot="0.000 0.947 0.000 -0.320" warp_distance="1000.000" />
+    <Entity Name="SpawnTeam1Ship5" Def="Logic_SpawnSpot_Team1Group1" Pos="110.394 -357.529 814.129" Rot="0.000 0.200 0.000 0.980" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="JumpGate3" Def="Medium_WarpGate" Pos="-1323.742 -173.755 483.058" Rot="-0.255 -0.289 0.025 0.922" warp_distance="450.000" />
+    <Entity Name="Counter_shield_remove" Def="Logic_Counter" Pos="-985.335 -120.788 757.033" current_value="0.000" max_value="3.000" min_value="0.000">
+      <ActionList Name="m_onReachedMaxValue" Num="27">
+        <FireAction Target="SpaceShield1" Action="Fadeout" />
+        <FireAction Target="ShieldGenerator1" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator2" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator3" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator4" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator5" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator6" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator7" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator8" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator9" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator10" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator11" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator12" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator13" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator14" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator15" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator16" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator17" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator18" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator19" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator20" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator21" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator22" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator23" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator24" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator25" Action="Remove" Delay="1.00000" />
+        <FireAction Target="ShieldGenerator26" Action="Remove" Delay="1.00000" />
+      </ActionList>
+    </Entity>
+    <Entity Name="ShieldGenerator1" Def="Object_SpaceShield_AttachEffect" Pos="-739.879 238.582 726.802" Rot="-0.564 0.688 -0.437 0.132" />
+    <Entity Name="ShieldGenerator2" Def="Object_SpaceShield_AttachEffect" Pos="-721.173 239.026 745.218" Rot="0.701 0.584 0.082 0.401" />
+    <Entity Name="ShieldGenerator3" Def="Object_SpaceShield_AttachEffect" Pos="-777.197 134.320 757.510" Rot="-0.587 0.686 -0.401 0.153" />
+    <Entity Name="ShieldGenerator4" Def="Object_SpaceShield_AttachEffect" Pos="-754.451 135.260 779.907" Rot="0.689 0.602 0.131 0.382" />
+    <Entity Name="ShieldGenerator5" Def="Object_SpaceShield_AttachEffect" Pos="-808.621 30.447 775.536" Rot="-0.601 0.686 -0.366 0.188" />
+    <Entity Name="ShieldGenerator6" Def="Object_SpaceShield_AttachEffect" Pos="-771.726 30.152 812.228" Rot="0.685 0.629 0.164 0.329" />
+    <Entity Name="ShieldGenerator7" Def="Object_SpaceShield_AttachEffect" Pos="-1005.962 -246.939 579.484" Rot="0.013 0.850 -0.045 0.525" />
+    <Entity Name="ShieldGenerator8" Def="Object_SpaceShield_AttachEffect" Pos="-1006.779 -301.348 580.670" Rot="0.863 0.013 0.504 -0.039" />
+    <Entity Name="ShieldGenerator9" Def="Object_SpaceShield_AttachEffect" Pos="-1055.321 -256.868 480.786" Rot="0.026 0.835 -0.036 0.548" />
+    <Entity Name="ShieldGenerator10" Def="Object_SpaceShield_AttachEffect" Pos="-1056.439 -290.588 481.227" Rot="0.850 0.015 0.526 -0.026" />
+    <Entity Name="ShieldGenerator11" Def="Object_SpaceShield_AttachEffect" Pos="-1096.159 -289.327 374.601" Rot="0.816 0.006 0.578 -0.020" />
+    <Entity Name="ShieldGenerator12" Def="Object_SpaceShield_AttachEffect" Pos="-1094.961 -257.453 373.536" Rot="0.014 0.822 -0.032 0.569" />
+    <Entity Name="ShieldGenerator13" Def="Object_SpaceShield_AttachEffect" Pos="-744.369 -786.406 724.966" Rot="0.709 -0.575 0.099 -0.397" />
+    <Entity Name="ShieldGenerator14" Def="Object_SpaceShield_AttachEffect" Pos="-721.477 -785.630 746.708" Rot="0.574 0.700 0.414 0.094" />
+    <Entity Name="ShieldGenerator15" Def="Object_SpaceShield_AttachEffect" Pos="-777.848 -681.600 755.649" Rot="0.678 -0.578 0.155 -0.428" />
+    <Entity Name="ShieldGenerator16" Def="Object_SpaceShield_AttachEffect" Pos="-753.594 -681.786 781.683" Rot="0.593 0.697 0.380 0.132" />
+    <Entity Name="ShieldGenerator17" Def="Object_SpaceShield_AttachEffect" Pos="-809.371 -579.979 776.076" Rot="0.685 -0.597 0.193 -0.369" />
+    <Entity Name="ShieldGenerator18" Def="Object_SpaceShield_AttachEffect" Pos="-772.148 -577.844 813.807" Rot="0.619 0.675 0.365 0.167" />
+    <Entity Name="ShieldGenerator19" Def="Object_SpaceShield_AttachEffect" Pos="-370.428 -258.326 1097.383" Rot="0.014 0.987 0.002 0.163" />
+    <Entity Name="ShieldGenerator24" Def="Object_SpaceShield_AttachEffect" Pos="-577.175 -299.086 1010.064" Rot="0.967 -0.004 0.249 -0.049" />
+    <Entity Name="ShieldGenerator21" Def="Object_SpaceShield_AttachEffect" Pos="-477.179 -255.928 1057.070" Rot="0.012 0.979 -0.026 0.200" />
+    <Entity Name="ShieldGenerator25" Def="Object_SpaceShield_AttachEffect" Pos="-370.387 -289.077 1096.950" Rot="0.987 0.011 0.159 -0.028" />
+    <Entity Name="ShieldGenerator23" Def="Object_SpaceShield_AttachEffect" Pos="-577.497 -249.983 1010.285" Rot="0.005 0.967 -0.033 0.254" />
+    <Entity Name="ShieldGenerator26" Def="Object_SpaceShield_AttachEffect" Pos="-477.081 -290.563 1057.630" Rot="0.979 0.000 0.201 -0.028" />
+    <Entity Name="EnergyGenerator3" Def="PvE_EnergyGeneratorLong" Pos="-1261.062 -183.705 568.230" Rot="0.177 0.347 0.434 0.812" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent" Num="3">
+        <FireAction Target="Counter_Activate_Prisongenerator" Action="Add" Params="1" />
+        <FireAction Target="Counter_shield_remove" Action="Add" Params="1" />
+        <FireAction Target="PrisonGenerator1" Action="EnableAssociatedSpawn" Params="1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="JumpGate2" Def="Medium_WarpGate" Pos="-832.722 -487.096 -42.081" Rot="0.000 0.950 0.000 -0.311" warp_distance="1000.000" />
+    <Entity Name="SpawnAgentWave30" Def="Logic_SpawnAgentWave_Group3" GameplaysMask="4290772800" Pos="-747.543 -343.918 28.873" Rot="0.043 0.879 -0.012 0.475" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave31" Def="Logic_SpawnAgentWave_Group3" GameplaysMask="4290772800" Pos="-739.340 -344.008 41.325" Rot="0.043 0.879 -0.012 0.475" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="RocketGun1" Def="Turret_PvePirate_RocketGun" Pos="-892.395 -203.120 951.138" Rot="0.000 0.921 0.000 0.390" do_attack_cargoship="1" />
+    <Entity Name="RocketGun2" Def="Turret_PvePirate_RocketGun" Pos="-957.351 -203.183 886.745" Rot="0.000 0.937 0.000 0.348" do_attack_cargoship="1" />
+    <Entity Name="RailGun1" Def="Turret_PvePirate_RailGun" Pos="-914.868 -254.689 981.605" Rot="0.000 0.907 0.000 0.422" do_attack_cargoship="0" />
+    <Entity Name="RailGun2" Def="Turret_PvePirate_RailGun" Pos="-986.710 -254.663 908.853" Rot="0.000 0.932 0.000 0.362" do_attack_cargoship="0" />
+    <Entity Name="RocketGun3" Def="Turret_PvePirate_RocketGun" Pos="-1258.114 -247.877 929.463" Rot="0.000 0.923 0.000 -0.384" do_attack_cargoship="1" />
+    <Entity Name="RocketGun4" Def="Turret_PvePirate_RocketGun" Pos="-1302.213 -247.958 887.366" Rot="0.000 0.417 0.000 0.909" do_attack_cargoship="1" />
+    <Entity Name="RocketGun14" Def="Turret_PvePirate_RocketGun" Pos="-78.681 -337.820 509.438" Rot="0.000 1.000 0.000 -0.011" do_attack_cargoship="1" />
+    <Entity Name="SpawnAgentWave39" Def="Logic_SpawnAgentWave_Group4" GameplaysMask="4290772800" Pos="152.065 -351.538 723.628" Rot="0.042 0.914 -0.015 0.403" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="DockingBay1" Def="PvE_DockingBay" Pos="-1.195 -364.865 446.195" Rot="0.000 1.000 0.000 0.000" />
+    <Entity Name="SpawnAgentWave38" Def="Logic_SpawnAgentWave_Group4" GameplaysMask="4290772800" Pos="150.935 -350.596 705.237" Rot="0.042 0.914 -0.015 0.403" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="RailGun4" Def="Turret_PvePirate_RailGun" Pos="-1015.840 -251.662 954.538" Rot="0.000 0.925 0.000 0.381" do_attack_cargoship="0" />
+    <Entity Name="RailGun5" Def="Turret_PvePirate_RailGun" Pos="-961.887 -251.539 1009.360" Rot="0.000 0.925 0.000 0.381" do_attack_cargoship="0" />
+    <Entity Name="RailGun6" Def="Turret_PvePirate_RailGun" Pos="-962.932 -237.750 939.686" Rot="0.000 0.925 0.000 0.381" do_attack_cargoship="0" />
+    <Entity Name="RailGun7" Def="Turret_PvePirate_RailGun" Pos="-943.696 -237.726 958.951" Rot="0.000 0.925 0.000 0.381" do_attack_cargoship="0" />
+    <Entity Name="Holder2" Def="Turret_Holder" Pos="-849.617 -238.765 928.598" />
+    <Entity Name="RailGun9" Def="Turret_PvePirate_RailGun" Pos="-828.442 -237.671 906.440" Rot="0.000 0.917 0.000 -0.398" do_attack_cargoship="0" />
+    <Entity Name="RailGun10" Def="Turret_PvePirate_RailGun" Pos="-934.160 -237.878 844.029" Rot="0.000 0.367 0.000 0.930" do_attack_cargoship="0" />
+    <Entity Name="RailGun11" Def="Turret_PvePirate_RailGun" Pos="-910.826 -237.983 824.087" Rot="0.000 0.367 0.000 0.930" do_attack_cargoship="0" />
+    <Entity Name="RocketGun8" Def="Turret_PvePirate_RocketGun" Pos="-1246.545 -215.855 886.585" Rot="0.000 0.917 0.000 0.399" do_attack_cargoship="1" />
+    <Entity Name="RailGun12" Def="Turret_PvePirate_RailGun" Pos="-1198.295 -215.383 884.316" Rot="0.000 0.931 0.000 -0.366" do_attack_cargoship="0" />
+    <Entity Name="RailGun13" Def="Turret_PvePirate_RailGun" Pos="-1221.927 -215.561 907.500" Rot="0.000 0.931 0.000 -0.366" do_attack_cargoship="0" />
+    <Entity Name="RailGun14" Def="Turret_PvePirate_RailGun" Pos="-1248.732 -215.361 839.132" Rot="0.000 0.435 0.000 0.900" do_attack_cargoship="0" />
+    <Entity Name="RailGun15" Def="Turret_PvePirate_RailGun" Pos="-1268.054 -215.357 858.104" Rot="0.000 0.381 0.000 0.925" do_attack_cargoship="0" />
+    <Entity Name="RailGun16" Def="Turret_PvePirate_RailGun" Pos="-1205.101 -223.825 796.529" Rot="0.000 0.045 0.000 0.999" do_attack_cargoship="0" />
+    <Entity Name="RailGun17" Def="Turret_PvePirate_RailGun" Pos="-1246.420 -225.522 644.224" Rot="0.000 0.938 0.000 0.348" do_attack_cargoship="0" />
+    <Entity Name="Holder1" Def="Turret_Holder" Pos="-828.621 -238.922 906.410" />
+    <Entity Name="RocketGun9" Def="Turret_PvePirate_RocketGun" Pos="-949.536 -317.623 942.329" Rot="0.912 0.004 0.409 -0.001" do_attack_cargoship="1" />
+    <Entity Name="Holder10" Def="Turret_Holder" Pos="-961.923 -252.700 1009.469" />
+    <Entity Name="Holder9" Def="Turret_Holder" Pos="-1015.880 -252.662 954.374" />
+    <Entity Name="RocketGun12" Def="Turret_PvePirate_RocketGun" Pos="-1313.893 -196.462 944.436" Rot="0.000 0.930 0.000 0.367" do_attack_cargoship="1" />
+    <Entity Name="RailGun18" Def="Turret_PvePirate_RailGun" Pos="-849.591 -237.693 928.621" Rot="0.000 0.917 0.000 -0.398" do_attack_cargoship="0" />
+    <Entity Name="Holder3" Def="Turret_Holder" Pos="-910.844 -238.950 824.070" />
+    <Entity Name="Holder4" Def="Turret_Holder" Pos="-934.106 -238.922 844.068" />
+    <Entity Name="Holder5" Def="Turret_Holder" Pos="-986.684 -255.899 908.726" />
+    <Entity Name="Holder6" Def="Turret_Holder" Pos="-914.744 -255.873 981.539" />
+    <Entity Name="Holder7" Def="Turret_Holder" Pos="-943.720 -238.756 958.938" />
+    <Entity Name="Holder8" Def="Turret_Holder" Pos="-962.805 -238.826 939.621" />
+    <Entity Name="Holder11" Def="Turret_Holder" Pos="-1198.272 -216.382 884.332" />
+    <Entity Name="Holder12" Def="Turret_Holder" Pos="-1221.831 -216.527 907.581" />
+    <Entity Name="Holder13" Def="Turret_Holder" Pos="-1268.036 -216.405 858.110" />
+    <Entity Name="Holder14" Def="Turret_Holder" Pos="-1248.983 -216.455 839.127" />
+    <Entity Name="Holder15" Def="Turret_Holder" Pos="-1205.089 -224.881 796.493" />
+    <Entity Name="Holder16" Def="Turret_Holder" Pos="-1246.307 -226.686 644.033" Rot="0.000 0.366 0.000 0.931" />
+    <Entity Name="RailGun19" Def="Turret_PvePirate_RailGun" Pos="-1222.913 -226.126 667.048" Rot="0.000 0.932 0.000 0.362" do_attack_cargoship="0" />
+    <Entity Name="Holder17" Def="Turret_Holder" Pos="-1222.979 -227.168 667.156" Rot="0.000 -0.693 0.000 0.721" />
+    <Entity Name="SpawnAgentWave96" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="339.630 663.712 160.541" Rot="0.000 0.629 0.000 0.777" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship3" Def="Logic_SpawnSpot_Team1Group0" Pos="-749.176 -266.566 1314.407" Rot="0.000 0.377 0.000 0.926" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship4" Def="Logic_SpawnSpot_Team1Group0" Pos="-774.621 -244.922 1313.006" Rot="0.000 0.377 0.000 0.926" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship2" Def="Logic_SpawnSpot_Team1Group0" Pos="-767.493 -265.191 1340.191" Rot="0.000 0.377 0.000 0.926" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave1" Def="Logic_SpawnAgentWave_Group0" GameplaysMask="4290772800" Pos="-1042.333 -225.446 996.294" Rot="0.000 -0.540 0.000 0.842" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave2" Def="Logic_SpawnAgentWave_Group0" GameplaysMask="4290772800" Pos="-1050.032 -224.724 983.429" Rot="0.000 -0.540 0.000 0.842" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave3" Def="Logic_SpawnAgentWave_Group0" GameplaysMask="4290772800" Pos="-1058.401 -224.007 970.480" Rot="0.000 -0.540 0.000 0.842" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave4" Def="Logic_SpawnAgentWave_Group0" GameplaysMask="4290772800" Pos="-937.455 -216.121 813.352" Rot="0.000 0.969 0.000 -0.248" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave5" Def="Logic_SpawnAgentWave_Group0" GameplaysMask="4290772800" Pos="-928.849 -216.113 807.602" Rot="0.000 0.969 0.000 -0.248" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave6" Def="Logic_SpawnAgentWave_Group0" GameplaysMask="4290772800" Pos="-919.805 -214.475 800.655" Rot="0.000 0.969 0.000 -0.248" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave7" Def="Logic_SpawnAgentWave_Group0" GameplaysMask="4290772800" Pos="-913.738 -212.465 793.007" Rot="0.000 0.969 0.000 -0.248" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave8" Def="Logic_SpawnAgentWave_Group1" GameplaysMask="4290772800" Pos="-1342.572 -207.328 1004.640" Rot="0.000 -0.663 0.000 0.748" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave9" Def="Logic_SpawnAgentWave_Group1" GameplaysMask="4290772800" Pos="-1344.677 -207.189 991.828" Rot="0.000 -0.663 0.000 0.748" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave10" Def="Logic_SpawnAgentWave_Group1" GameplaysMask="4290772800" Pos="-1346.468 -207.040 978.892" Rot="0.000 -0.663 0.000 0.748" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave11" Def="Logic_SpawnAgentWave_Group1" GameplaysMask="4290772800" Pos="-1349.214 -205.938 968.672" Rot="0.000 -0.663 0.000 0.748" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave12" Def="Logic_SpawnAgentWave_Group1" GameplaysMask="4290772800" Pos="-1293.550 -199.469 851.309" Rot="0.000 0.921 0.000 -0.390" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave13" Def="Logic_SpawnAgentWave_Group1" GameplaysMask="4290772800" Pos="-1286.432 -199.660 844.357" Rot="0.000 0.921 0.000 -0.390" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave14" Def="Logic_SpawnAgentWave_Group1" GameplaysMask="4290772800" Pos="-1280.935 -198.953 837.095" Rot="0.000 0.921 0.000 -0.390" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave15" Def="Logic_SpawnAgentWave_Group1" GameplaysMask="4290772800" Pos="-1301.115 -198.616 856.610" Rot="0.000 0.921 0.000 -0.390" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave16" Def="Logic_SpawnAgentWave_Group2" GameplaysMask="4290772800" Pos="-1396.322 -184.310 419.585" Rot="0.030 0.997 -0.033 -0.065" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave17" Def="Logic_SpawnAgentWave_Group2" GameplaysMask="4290772800" Pos="-1385.793 -186.748 421.577" Rot="0.030 0.997 -0.033 -0.065" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave18" Def="Logic_SpawnAgentWave_Group2" GameplaysMask="4290772800" Pos="-1375.244 -186.179 417.827" Rot="0.030 0.997 -0.033 -0.065" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave19" Def="Logic_SpawnAgentWave_Group2" GameplaysMask="4290772800" Pos="-1363.295 -188.807 418.598" Rot="0.030 0.997 -0.033 -0.065" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave20" Def="Logic_SpawnAgentWave_Group2" GameplaysMask="4290772800" Pos="-1443.956 -160.388 654.525" Rot="-0.001 -0.714 0.045 0.699" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave21" Def="Logic_SpawnAgentWave_Group2" GameplaysMask="4290772800" Pos="-1441.654 -161.600 643.670" Rot="-0.001 -0.714 0.045 0.699" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave22" Def="Logic_SpawnAgentWave_Group2" GameplaysMask="4290772800" Pos="-1439.315 -161.797 663.786" Rot="-0.001 -0.714 0.045 0.699" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave23" Def="Logic_SpawnAgentWave_Group2" GameplaysMask="4290772800" Pos="-1438.125 -161.301 674.686" Rot="-0.001 -0.714 0.045 0.699" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave24" Def="Logic_SpawnAgentWave_Group3" GameplaysMask="4290772800" Pos="-980.097 -339.575 -115.080" Rot="0.031 0.999 -0.032 -0.025" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave25" Def="Logic_SpawnAgentWave_Group3" GameplaysMask="4290772800" Pos="-962.590 -340.275 -106.796" Rot="0.031 0.999 -0.032 -0.025" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave26" Def="Logic_SpawnAgentWave_Group3" GameplaysMask="4290772800" Pos="-941.054 -340.999 -104.295" Rot="0.031 0.999 -0.032 -0.025" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave27" Def="Logic_SpawnAgentWave_Group3" GameplaysMask="4290772800" Pos="-919.888 -342.243 -99.855" Rot="0.031 0.999 -0.032 -0.025" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave28" Def="Logic_SpawnAgentWave_Group3" GameplaysMask="4290772800" Pos="-763.990 -342.606 2.338" Rot="0.043 0.879 -0.012 0.475" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave29" Def="Logic_SpawnAgentWave_Group3" GameplaysMask="4290772800" Pos="-755.925 -343.502 16.276" Rot="0.043 0.879 -0.012 0.475" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="JumpGate4" Def="Medium_WarpGate" Pos="-1139.307 -175.755 611.645" Rot="-0.158 -0.153 -0.114 0.969" warp_distance="450.000" />
+    <Entity Name="SpawnAgentWave32" Def="Logic_SpawnAgentWave_Group4" GameplaysMask="4290772800" Pos="22.526 -326.464 519.153" Rot="0.033 0.999 -0.030 0.020" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave33" Def="Logic_SpawnAgentWave_Group4" GameplaysMask="4290772800" Pos="9.343 -324.454 515.252" Rot="0.033 0.999 -0.030 0.020" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave34" Def="Logic_SpawnAgentWave_Group4" GameplaysMask="4290772800" Pos="-2.674 -324.894 515.978" Rot="0.033 0.999 -0.030 0.020" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave35" Def="Logic_SpawnAgentWave_Group4" GameplaysMask="4290772800" Pos="-14.387 -325.031 516.608" Rot="0.033 0.999 -0.030 0.020" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave36" Def="Logic_SpawnAgentWave_Group4" GameplaysMask="4290772800" Pos="110.371 -354.116 620.753" Rot="0.042 0.914 -0.015 0.403" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave37" Def="Logic_SpawnAgentWave_Group4" GameplaysMask="4290772800" Pos="114.702 -353.514 636.719" Rot="0.042 0.914 -0.015 0.403" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="RailGun20" Def="Turret_PvePirate_RailGun" Pos="-858.906 -237.831 853.125" Rot="0.000 0.929 0.000 0.371" do_attack_cargoship="0" />
+    <Entity Name="Holder18" Def="Turret_Holder" Pos="-858.773 -238.868 853.158" />
+    <Entity Name="RocketGun15" Def="Turret_PvePirate_RocketGun" Pos="42.703 -339.916 494.674" Rot="0.000 1.000 0.000 -0.029" do_attack_cargoship="1" />
+    <Entity Name="RocketGun16" Def="Turret_PvePirate_RocketGun" Pos="-44.989 -339.765 494.300" Rot="0.000 1.000 0.000 -0.029" do_attack_cargoship="1" />
+    <Entity Name="RocketGun17" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-341.155 8.928 0.076" Rot="0.000 1.000 0.000 -0.009" />
+    <Entity Name="RocketGun18" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-439.452 -48.283 0.397" Rot="0.000 1.000 0.000 0.005" />
+    <Entity Name="RocketGun19" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-108.844 77.274 15.756" Rot="0.000 0.714 0.000 0.700" />
+    <Entity Name="RocketGun20" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-81.017 114.444 -11.146" Rot="0.000 0.714 0.000 0.700" />
+    <Entity Name="RocketGun21" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-55.798 150.588 -71.843" Rot="0.000 0.714 0.000 0.700" />
+    <Entity Name="RocketGun22" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="14.141 148.361 -79.174" Rot="0.000 -0.119 0.000 0.993" />
+    <Entity Name="RocketGun23" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="54.514 152.623 -17.819" Rot="0.000 -0.352 0.000 0.936" />
+    <Entity Name="RocketGun24" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="167.635 158.952 65.158" Rot="0.000 -0.213 0.000 0.977" />
+    <Entity Name="RocketGun25" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-20.345 373.924 87.552" Rot="0.000 1.000 0.000 0.010" />
+    <Entity Name="RocketGun26" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-6.821 383.331 19.288" Rot="0.000 -0.031 0.000 1.000" />
+    <Entity Name="RocketGun27" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="23.639 614.535 19.227" Rot="0.000 -0.155 0.000 0.988" />
+    <Entity Name="SpawnAgentWave40" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-306.651 -296.121 589.990" Rot="0.000 -0.501 0.000 0.865" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave41" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-362.600 -237.677 529.925" Rot="0.000 -0.501 0.000 0.865" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave42" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-402.104 -185.577 484.983" Rot="0.000 -0.593 0.000 0.805" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave43" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-427.170 -157.248 444.726" Rot="0.000 -0.501 0.000 0.865" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave44" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-434.931 -144.962 395.880" Rot="0.000 -0.597 0.000 0.802" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave45" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-445.264 -130.920 360.055" Rot="0.000 -0.501 0.000 0.865" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave46" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-443.544 -109.632 316.990" Rot="0.000 -0.569 0.000 0.823" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave47" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-462.165 -82.590 275.700" Rot="0.000 -0.621 0.000 0.784" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave48" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-451.527 -71.468 235.938" Rot="0.000 -0.682 0.000 0.732" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave49" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-447.199 -55.603 191.662" Rot="0.000 -0.682 0.000 0.732" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave50" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-445.903 -34.864 148.863" Rot="0.000 -0.682 0.000 0.732" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave51" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-430.581 -10.176 58.770" Rot="0.000 -0.822 0.000 0.569" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave52" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-445.185 -8.814 101.302" Rot="0.000 -0.822 0.000 0.569" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave53" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="257.954 667.973 200.884" Rot="0.000 0.629 0.000 0.778" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave54" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-427.076 21.030 23.836" Rot="0.000 -0.822 0.000 0.569" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave55" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="271.348 668.086 134.123" Rot="0.000 0.629 0.000 0.778" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave56" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-351.800 11.523 -45.737" Rot="0.000 -0.822 0.000 0.569" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave57" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-274.930 37.324 -93.619" Rot="0.000 0.904 0.000 -0.427" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave58" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-239.249 51.137 -113.332" Rot="0.000 0.904 0.000 -0.427" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave59" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-213.312 65.788 -139.782" Rot="0.000 0.904 0.000 -0.427" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave60" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-177.558 72.084 -164.933" Rot="0.000 0.926 0.000 -0.377" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave61" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-147.683 73.955 -192.457" Rot="0.000 0.926 0.000 -0.377" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave62" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-110.813 77.482 -201.805" Rot="0.000 0.971 0.000 -0.239" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave63" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-76.834 77.846 -216.475" Rot="0.000 0.991 0.000 -0.136" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave64" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-23.722 81.234 -228.231" Rot="0.000 0.991 0.000 -0.136" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave65" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="15.306 82.713 -234.249" Rot="0.000 0.991 0.000 -0.136" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave66" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="70.464 84.654 -225.593" Rot="0.000 0.999 0.000 0.044" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave67" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="111.628 85.726 -216.706" Rot="0.000 0.980 0.000 0.198" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave68" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="169.337 101.487 -202.671" Rot="0.000 0.903 0.000 0.430" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave69" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="204.034 108.432 -161.980" Rot="0.000 0.911 0.000 0.412" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave70" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="225.252 108.467 -135.813" Rot="0.000 0.911 0.000 0.412" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave71" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="269.203 110.443 -91.483" Rot="0.000 0.847 0.000 0.531" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave72" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="280.424 118.319 -59.747" Rot="0.000 0.847 0.000 0.531" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave73" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="289.800 139.508 -7.969" Rot="0.000 0.781 0.000 0.625" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave74" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="286.806 155.546 66.022" Rot="0.000 0.664 0.000 0.748" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave75" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="316.646 221.384 166.349" Rot="0.000 0.574 0.000 0.819" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave76" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="292.590 229.757 213.567" Rot="0.000 0.578 0.000 0.816" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave77" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="243.821 244.310 276.656" Rot="0.000 0.445 0.000 0.895" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave78" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="168.729 263.907 347.602" Rot="0.000 0.445 0.000 0.895" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave79" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="76.879 273.015 376.482" Rot="0.000 0.116 0.000 0.993" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave80" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-18.351 280.231 386.590" Rot="0.000 0.021 0.000 1.000" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave81" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-118.475 305.953 352.585" Rot="0.000 -0.183 0.000 0.983" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave82" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-227.730 330.212 281.374" Rot="0.000 -0.448 0.000 0.894" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave83" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-272.465 337.545 205.885" Rot="0.000 -0.556 0.000 0.831" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave84" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-304.979 395.181 120.434" Rot="0.000 -0.629 0.000 0.778" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave85" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-297.659 411.025 24.308" Rot="0.000 -0.710 0.000 0.704" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave86" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-241.038 445.262 -123.767" Rot="0.000 -0.786 0.000 0.618" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave87" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-146.306 436.832 -172.182" Rot="0.000 0.975 0.000 -0.224" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave88" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="-51.455 453.496 -201.081" Rot="0.000 0.975 0.000 -0.224" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave89" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="32.650 476.849 -220.369" Rot="0.000 0.996 0.000 -0.091" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave90" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="120.963 519.471 -244.715" Rot="0.111 0.990 -0.029 0.082" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave91" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="239.109 539.165 -210.187" Rot="0.115 0.942 -0.002 0.315" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave92" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="287.616 584.657 -138.406" Rot="0.114 0.880 0.016 0.461" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave93" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="330.696 593.817 -76.009" Rot="0.111 0.818 0.030 0.563" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave94" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="352.467 617.220 15.127" Rot="0.000 0.774 0.000 0.633" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave95" Def="Logic_SpawnAgentWave_Group6" GameplaysMask="4290772800" Pos="357.681 648.556 79.287" Rot="0.000 0.629 0.000 0.777" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="RocketGun13" Def="Turret_PvePirate_RocketGun" Pos="78.688 -337.806 508.084" Rot="0.000 1.000 0.000 -0.011" do_attack_cargoship="1" />
+    <Entity Name="SpawnTeam1Ship6" Def="Logic_SpawnSpot_Team1Group1" Pos="113.640 -361.058 727.327" Rot="0.000 0.141 0.000 0.990" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship7" Def="Logic_SpawnSpot_Team1Group1" Pos="-100.538 -360.061 882.309" Rot="0.000 -0.226 0.000 0.974" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship8" Def="Logic_SpawnSpot_Team1Group1" Pos="-128.790 -354.921 743.154" Rot="0.000 -0.202 0.000 0.979" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave97" Def="Logic_SpawnAgentWave_Group7" GameplaysMask="4290772800" Pos="245.548 1233.176 7.058" Rot="0.000 0.479 0.000 0.878" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave98" Def="Logic_SpawnAgentWave_Group7" GameplaysMask="4290772800" Pos="256.036 1240.172 -0.292" Rot="0.000 0.479 0.000 0.878" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave99" Def="Logic_SpawnAgentWave_Group7" GameplaysMask="4290772800" Pos="243.251 1238.851 21.376" Rot="0.000 0.479 0.000 0.878" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave100" Def="Logic_SpawnAgentWave_Group7" GameplaysMask="4290772800" Pos="273.469 1232.328 23.747" Rot="0.000 0.479 0.000 0.878" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave101" Def="Logic_SpawnAgentWave_Group7" GameplaysMask="4290772800" Pos="255.287 1234.874 46.769" Rot="0.000 0.479 0.000 0.878" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave102" Def="Logic_SpawnAgentWave_Group7" GameplaysMask="4290772800" Pos="290.816 1232.692 -5.888" Rot="0.000 0.479 0.000 0.878" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave103" Def="Logic_SpawnAgentWave_Group7" GameplaysMask="4290772800" Pos="281.371 1228.196 47.244" Rot="0.000 0.479 0.000 0.878" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnAgentWave104" Def="Logic_SpawnAgentWave_Group7" GameplaysMask="4290772800" Pos="301.308 1230.030 17.533" Rot="0.000 0.479 0.000 0.878" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship9" Def="Logic_SpawnSpot_Team1Group2" Pos="-222.810 1233.474 19.369" Rot="0.000 -0.612 0.000 0.791" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship10" Def="Logic_SpawnSpot_Team1Group2" Pos="-223.262 1202.931 -0.774" Rot="0.000 -0.596 0.000 0.803" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship11" Def="Logic_SpawnSpot_Team1Group2" Pos="-220.861 1203.840 38.048" Rot="0.000 -0.592 0.000 0.806" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="SpawnTeam1Ship12" Def="Logic_SpawnSpot_Team1Group2" Pos="-231.916 1228.496 -21.234" Rot="0.000 -0.593 0.000 0.805" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Lightnings13" Def="Effects_Lightnings2" Pos="-196.432 1293.793 -252.906" Rot="0.000 -0.787 0.000 0.617" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RocketGun31" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="124.909 166.434 51.929" Rot="0.000 -0.361 0.000 0.932" />
+    <Entity Name="RocketGun32" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-127.546 69.735 32.429" Rot="0.000 0.714 0.000 0.700" />
+    <Entity Name="RocketGun33" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-108.434 60.264 -18.214" Rot="0.000 0.714 0.000 0.700" />
+    <Entity Name="RocketGun34" Def="Turret_PvePirate_RocketGun" Pos="-1261.946 -207.050 607.835" Rot="0.000 0.917 0.000 0.399" do_attack_cargoship="1" />
+    <Entity Name="RocketGun35" Def="Turret_PvePirate_RocketGun" Pos="-1300.229 -206.928 570.939" Rot="0.000 0.917 0.000 0.399" do_attack_cargoship="1" />
+    <Entity Name="RocketGun5" Def="Turret_PvePirate_RocketGun" Pos="-1084.798 -227.538 761.379" Rot="0.000 0.925 0.000 0.381" do_attack_cargoship="1" />
+    <Entity Name="RocketGun6" Def="Turret_PvePirate_RocketGun" Pos="-1118.266 -227.732 727.921" Rot="0.000 0.925 0.000 0.381" do_attack_cargoship="1" />
+    <Entity Name="RocketGun38" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="154.109 149.027 110.893" Rot="0.000 -0.652 0.000 0.759" />
+    <Entity Name="RocketGun39" Def="Turret_PvePirate_RocketGun" Pos="143.572 199.024 74.008" Rot="0.000 -0.652 0.000 0.759" do_attack_cargoship="1" />
+    <Entity Name="RocketGun40" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="98.579 217.077 132.579" Rot="0.000 -0.652 0.000 0.759" />
+    <Entity Name="RocketGun41" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="81.033 226.288 162.385" Rot="0.000 -0.652 0.000 0.759" />
+    <Entity Name="RocketGun42" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="58.038 226.518 176.037" Rot="0.000 0.956 0.000 -0.292" />
+    <Entity Name="Lightnings2" Def="Effects_Lightnings2" Pos="-196.432 1299.701 -252.906" Rot="0.000 0.376 0.000 0.927" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings3" Def="Effects_Lightnings2" Pos="-189.164 1296.162 107.090" Rot="0.000 0.771 0.000 0.637" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings4" Def="Effects_Lightnings2" Pos="-200.476 1298.483 100.388" Rot="0.000 -0.372 0.000 0.928" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings5" Def="Effects_Lightnings2" Pos="114.466 1303.497 274.353" Rot="0.000 0.994 0.000 0.110" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings6" Def="Effects_Lightnings2" Pos="423.616 1287.400 83.891" Rot="0.000 0.919 0.000 -0.394" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings7" Def="Effects_Lightnings2" Pos="120.426 1303.497 275.689" Rot="0.000 0.134 0.000 0.991" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings8" Def="Effects_Lightnings2" Pos="422.530 1293.013 98.683" Rot="0.000 0.628 0.000 0.778" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings9" Def="Effects_Lightnings2" Pos="417.185 1272.055 -258.473" Rot="0.000 -0.602 0.000 0.799" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings10" Def="Effects_Lightnings2" Pos="418.719 1272.332 -253.257" Rot="0.000 0.919 0.000 0.395" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings11" Def="Effects_Lightnings2" Pos="116.475 1282.531 -432.141" Rot="0.000 -0.140 0.000 0.990" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings12" Def="Effects_Lightnings2" Pos="116.475 1282.531 -432.141" Rot="0.000 0.995 0.000 -0.099" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="LootPoint0" Def="Helpers_TagPoint" Pos="-586.637 174.573 -601.197" type="0" />
+    <Entity Name="LootPoint1" Def="Helpers_TagPoint" Pos="-232.204 131.861 -638.476" type="0" />
+    <Entity Name="LootPoint2" Def="Helpers_TagPoint" Pos="138.717 133.303 -711.518" type="0" />
+    <Entity Name="LootPoint3" Def="Helpers_TagPoint" Pos="477.893 152.035 -647.620" type="0" />
+    <Entity Name="LootPoint4" Def="Helpers_TagPoint" Pos="606.465 141.413 -222.088" type="0" />
+    <Entity Name="LootPoint5" Def="Helpers_TagPoint" Pos="571.365 164.020 236.598" type="0" />
+    <Entity Name="LootPoint6" Def="Helpers_TagPoint" Pos="151.261 100.250 -1.197" type="0" />
+    <Entity Name="LootPoint7" Def="Helpers_TagPoint" Pos="-203.398 128.636 233.326" type="0" />
+    <Entity Name="LootPoint8" Def="Helpers_TagPoint" Pos="-674.795 194.704 222.102" type="0" />
+    <Entity Name="LootPoint9" Def="Helpers_TagPoint" Pos="-367.123 233.767 680.451" type="0" />
+    <Entity Name="LootPoint10" Def="Helpers_TagPoint" Pos="431.830 223.532 643.610" type="0" />
+    <Entity Name="LootPoint11" Def="Helpers_TagPoint" Pos="-788.048 324.547 715.906" type="0" />
+    <Entity Name="LootPoint12" Def="Helpers_TagPoint" Pos="-1151.219 346.720 297.308" type="0" />
+    <Entity Name="LootPoint13" Def="Helpers_TagPoint" Pos="-1034.126 371.248 615.217" type="0" />
+    <Entity Name="LootPoint14" Def="Helpers_TagPoint" Pos="-576.281 207.687 427.231" type="0" />
+    <Entity Name="LootPoint15" Def="Helpers_TagPoint" Pos="-1041.133 293.758 -600.204" type="0" />
+    <Entity Name="LootPoint16" Def="Helpers_TagPoint" Pos="-323.625 197.681 -953.984" type="0" />
+    <Entity Name="LootPoint17" Def="Helpers_TagPoint" Pos="409.678 200.551 -957.770" type="0" />
+    <Entity Name="Spawn_AI13" Def="Helpers_TagPoint" Pos="631.357 -486.897 -547.641" type="0" />
+    <Entity Name="Spawn_AI18" Def="Helpers_TagPoint" Pos="232.252 581.155 237.746" type="0" />
+    <Entity Name="Spawn_AI17" Def="Helpers_TagPoint" Pos="398.678 278.037 -71.990" type="0" />
+    <Entity Name="Spawn_AI16" Def="Helpers_TagPoint" Pos="-312.761 278.037 -304.097" type="0" />
+    <Entity Name="Spawn_AI15" Def="Helpers_TagPoint" Pos="368.650 -816.724 296.935" type="0" />
+    <Entity Name="Spawn_AI14" Def="Helpers_TagPoint" Pos="190.125 -775.543 -538.686" type="0" />
+    <Entity Name="Spawn_AI7" Def="Helpers_TagPoint" Pos="-113.340 25.757 850.348" type="0" />
+    <Entity Name="Spawn_AI12" Def="Helpers_TagPoint" Pos="1352.158 -142.122 453.760" type="0" />
+    <Entity Name="Spawn_AI11" Def="Helpers_TagPoint" Pos="151.669 -1211.141 -165.650" type="0" />
+    <Entity Name="Spawn_AI10" Def="Helpers_TagPoint" Pos="64.989 881.959 -461.459" type="0" />
+    <Entity Name="Spawn_AI9" Def="Helpers_TagPoint" Pos="-754.115 1088.126 92.984" type="0" />
+    <Entity Name="Spawn_AI8" Def="Helpers_TagPoint" Pos="-369.900 278.037 507.327" type="0" />
+    <Entity Name="RocketGun43" Def="Turret_PvePirate_RocketGun" Pos="-878.146 -390.905 -35.152" Rot="0.000 1.000 0.000 0.009" do_attack_cargoship="1" />
+    <Entity Name="RocketGun44" Def="Turret_PvePirate_RocketGun" Pos="-923.028 -390.769 -36.050" Rot="0.000 1.000 0.000 0.004" do_attack_cargoship="1" />
+    <Entity Name="RocketGun45" Def="Turret_PvePirate_RocketGun" Pos="-983.467 -386.607 -37.202" Rot="0.000 0.999 0.000 0.034" do_attack_cargoship="1" />
+    <Entity Name="RocketGun46" Def="Turret_PvePirate_RocketGun" Pos="-955.874 -460.230 -237.088" Rot="0.000 -0.689 0.000 0.725" do_attack_cargoship="1" />
+    <Entity Name="RocketGun47" Def="Turret_PvePirate_RocketGun" Pos="-1013.698 -460.053 -237.035" Rot="0.000 0.703 0.000 0.711" do_attack_cargoship="1" />
+    <Entity Name="RocketGun48" Def="Turret_PvePirate_RocketGun" Pos="-902.846 -459.435 -56.236" Rot="0.000 0.035 0.000 0.999" do_attack_cargoship="1" />
+    <Entity Name="BeamWithHalo15" Def="Lights_BeamWithHalo" Pos="-261.521 -127.347 328.280" Rot="0.344 0.182 0.814 0.430" base_color="0x5BF17C36" size="100.000" width="21.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="0.300000" halo1_vis_angle="80.999939" halo1_base_color="0x40FF8040" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="BeamWithHalo16" Def="Lights_BeamWithHalo" Pos="-332.807 -127.175 256.524" Rot="0.344 0.182 0.814 0.430" base_color="0x5BF17C36" size="100.000" width="21.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="0.000000" halo1_vis_angle="80.999939" halo1_base_color="0x40FF8040" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="PointLight6" Def="Lights_PointLight" Pos="-1269.379 -173.261 576.326" start_off="0" rad="40.00000" color="0xFF5BDEFF" />
+    <Entity Name="PointLight5" Def="Lights_PointLight" Pos="-922.272 -231.703 916.765" start_off="0" rad="40.00000" color="0xFF5BDEFF" />
+    <Entity Name="RocketGun49" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-244.049 -117.559 311.520" Rot="0.000 0.926 0.000 0.377" />
+    <Entity Name="RocketGun50" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-316.581 -117.534 239.364" />
+    <Entity Name="Debris1" Def="Debris_Debris04" Pos="-1267.430 -226.301 972.679" Rot="0.143 0.242 -0.489 0.826" />
+    <Entity Name="Debris2" Def="Debris_Debris02" Pos="-1171.027 -206.809 912.489" Rot="-0.406 -0.164 -0.375 0.817" />
+    <Entity Name="RocketGun81" Def="Turret_PvePirate_RocketGun" Pos="-1301.892 -250.099 879.509" Rot="0.344 -0.015 0.939 0.002" do_attack_cargoship="1" />
+    <Entity Name="Debris4" Def="Debris_Debris04" Pos="-986.704 -235.132 1089.564" Rot="-0.258 0.029 -0.437 0.861" />
+    <Entity Name="Debris5" Def="Debris_Debris10" Pos="-801.565 -213.159 1054.114" />
+    <Entity Name="Debris6" Def="Debris_Debris07" Pos="-1128.902 -238.586 780.091" Rot="-0.153 -0.264 -0.477 0.824" />
+    <Entity Name="BeamWithHalo17" Def="Lights_BeamWithHalo" Pos="-1246.130 -109.195 552.421" Rot="0.378 0.095 0.893 0.224" base_color="0xFF024A62" size="240.000" width="47.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.000000" halo1_vis_angle="52.199986" halo1_base_color="0x400FA3E1" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="IndustrialFx7" Def="Effects_IndustrialFx2" Pos="-1208.090 -255.942 902.105" Rot="0.000 -0.383 0.000 0.924" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="BeamWithHalo18" Def="Lights_BeamWithHalo" Pos="-1297.475 -178.767 925.527" Rot="0.912 0.239 -0.323 -0.085" base_color="0xFF024A62" size="100.000" width="22.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="2.000000" halo1_nebulosity="0.000000" halo1_vis_angle="53.999969" halo1_base_color="0x400FA3E1" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="DockingBay4" Def="PvE_DockingBay" Pos="1587.828 -111.437 354.681" Rot="0.000 1.000 0.000 0.000" />
+    <Entity Name="BeamWithHalo19" Def="Lights_BeamWithHalo" Pos="-901.800 -214.524 896.289" Rot="0.357 0.189 0.809 0.428" base_color="0xFF024A62" size="120.000" width="51.000" soft="1" has_halo_1="1" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="0.000000" halo1_vis_angle="68.399971" halo1_base_color="0x4036B9F1" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_base_color="0x98FFFFFF" />
+    <Entity Name="IndustrialFx6" Def="Effects_IndustrialFx2" Pos="-1208.090 -234.937 902.105" Rot="0.000 -0.383 0.000 0.924" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings14" Def="Effects_Lightnings" Pos="-1199.716 -206.889 610.887" Rot="0.000 -0.389 0.000 0.921" />
+    <Entity Name="Lightnings15" Def="Effects_Lightnings" Pos="-1181.502 -206.889 593.173" Rot="0.000 -0.389 0.000 0.921" />
+    <Entity Name="Lightnings16" Def="Effects_Lightnings" Pos="-1218.132 -206.889 628.800" Rot="0.000 -0.389 0.000 0.921" />
+    <Entity Name="Smoke1" Def="Effects_Smoke" Pos="-823.133 -266.931 930.349" Rot="0.270 -0.267 -0.657 0.651" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Smoke2" Def="Effects_Smoke" Pos="-935.018 -266.707 818.355" Rot="-0.647 0.653 -0.276 0.279" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RocketGun51" Def="Turret_PvePirate_RocketGun" Pos="-758.417 -399.272 11.533" Rot="0.000 1.000 0.000 -0.021" do_attack_cargoship="1" />
+    <Entity Name="RocketGun52" Def="Turret_PvePirate_RocketGun" Pos="-730.363 -399.412 11.824" Rot="0.000 1.000 0.000 -0.021" do_attack_cargoship="1" />
+    <Entity Name="RocketGun53" Def="Turret_PvePirate_RocketGun" Pos="-758.686 -473.809 12.077" Rot="0.051 0.000 0.999 -0.005" do_attack_cargoship="1" />
+    <Entity Name="RocketGun54" Def="Turret_PvePirate_RocketGun" Pos="-729.557 -473.775 11.941" Rot="0.051 0.001 0.998 -0.020" do_attack_cargoship="1" />
+    <Entity Name="JumpGate7" Def="Medium_WarpGate" Pos="-1313.393 -351.159 497.150" Rot="-0.109 -0.306 -0.024 0.945" warp_distance="450.000" />
+    <Entity Name="Counter_EnablePrisonSpawn" Def="Logic_Counter" Pos="-1088.023 -219.027 1058.463" current_value="0.000" max_value="1.000" min_value="0.000">
+      <ActionList Name="m_onChangedValue">
+        <FireAction Target="PrisonGenerator1" Action="EnableAssociatedSpawn" Params="1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Laser1" Def="Object_Hangar_Laser" Pos="12.328 -358.720 504.984" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="Laser2" Def="Object_Hangar_Laser" Pos="12.328 -370.680 504.984" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="Laser3" Def="Object_Hangar_Laser" Pos="12.328 -364.334 504.984" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="Laser4" Def="Object_Hangar_Laser" Pos="12.328 -377.143 504.984" Rot="0.000 0.707 0.000 0.707" />
+    <Entity Name="Counter_Hangar_Laser_Remove2" Def="Logic_Counter" Pos="-24.100 -358.176 571.757" current_value="0.000" max_value="1.000" min_value="0.000">
+      <ActionList Name="m_onReachedMaxValue" Num="2">
+        <FireAction Target="Laser1" Action="Remove" />
+        <FireAction Target="Laser2" Action="Remove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Counter_Hangar_Laser_Remove1" Def="Logic_Counter" Pos="6.553 -355.870 562.421" current_value="0.000" max_value="1.000" min_value="0.000">
+      <ActionList Name="m_onReachedMaxValue" Num="3">
+        <FireAction Target="Laser3" Action="Remove" />
+        <FireAction Target="Laser4" Action="Remove" />
+        <FireAction Target="Laser5" Action="Remove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="RocketGun55" Def="Turret_PvePirate_RocketGun" Pos="-904.290 -238.146 899.008" Rot="0.000 -0.391 0.000 0.920" do_attack_cargoship="1" />
+    <Entity Name="RocketGun56" Def="Turret_PvePirate_RocketGun" Pos="-938.731 -238.437 933.130" Rot="0.000 0.934 0.000 0.358" do_attack_cargoship="1" />
+    <Entity Name="RocketGun57" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-312.808 -161.359 405.336" Rot="0.000 0.958 0.000 0.288" />
+    <Entity Name="RocketGun58" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-339.062 -161.126 379.023" Rot="0.000 0.914 0.000 0.405" />
+    <Entity Name="RocketGun59" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-385.876 -161.396 331.610" Rot="0.000 0.914 0.000 0.405" />
+    <Entity Name="RocketGun60" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-411.609 -161.448 306.436" Rot="0.000 0.914 0.000 0.405" />
+    <Entity Name="RocketGun61" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-226.918 -30.938 176.266" Rot="0.000 0.926 0.000 0.377" />
+    <Entity Name="RocketGun62" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-235.827 -30.902 167.168" Rot="0.000 0.926 0.000 0.377" />
+    <Entity Name="RocketGun63" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-322.944 9.106 0.955" Rot="0.000 1.000 0.000 -0.019" />
+    <Entity Name="RocketGun64" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-456.912 -48.259 0.438" Rot="0.000 1.000 0.000 0.005" />
+    <Entity Name="RocketGun65" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-475.172 -48.433 0.503" Rot="0.000 1.000 0.000 0.005" />
+    <Entity Name="RocketGun66" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-363.212 -62.000 16.593" Rot="0.000 0.968 0.000 0.252" />
+    <Entity Name="RocketGun67" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-17.261 589.068 103.813" Rot="0.000 -0.865 0.000 0.501" />
+    <Entity Name="RocketGun68" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-11.482 597.114 86.333" Rot="0.000 0.917 0.000 -0.399" />
+    <Entity Name="RocketGun69" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="37.107 605.284 65.423" Rot="0.000 0.870 0.000 -0.493" />
+    <Entity Name="RocketGun70" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="22.245 605.214 84.068" Rot="0.000 0.870 0.000 -0.493" />
+    <Entity Name="RocketGun71" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="10.462 470.200 105.187" Rot="0.000 -0.728 0.000 0.685" />
+    <Entity Name="RocketGun72" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="39.085 470.316 52.364" Rot="0.000 -0.728 0.000 0.685" />
+    <Entity Name="RocketGun73" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="35.329 374.855 37.944" Rot="0.000 -0.404 0.000 0.915" />
+    <Entity Name="RocketGun74" Def="Turret_Team2_Pve_RocketGun_shadow" Pos="-16.000 470.341 29.837" Rot="0.000 -0.234 0.000 0.972" />
+    <Entity Name="RocketGun75" Def="Turret_PvePirate_RocketGun" Pos="-29.256 -387.376 519.491" Rot="0.000 1.000 0.000 -0.011" do_attack_cargoship="1" />
+    <Entity Name="RocketGun76" Def="Turret_PvePirate_RocketGun" Pos="29.778 -387.597 518.630" Rot="0.000 1.000 0.000 -0.011" do_attack_cargoship="1" />
+    <Entity Name="RocketGun77" Def="Turret_PvePirate_RocketGun" Pos="-1248.369 -250.087 920.260" Rot="0.783 0.007 -0.621 0.014" do_attack_cargoship="1" />
+    <Entity Name="RocketGun78" Def="Turret_PvePirate_RocketGun" Pos="-1030.792 -472.323 -77.252" Rot="-0.703 0.711 -0.005 -0.021" do_attack_cargoship="1" />
+    <Entity Name="RocketGun79" Def="Turret_PvePirate_RocketGun" Pos="-1018.063 -463.712 -127.615" Rot="0.000 0.696 0.000 0.718" do_attack_cargoship="1" />
+    <Entity Name="RocketGun80" Def="Turret_PvePirate_RocketGun" Pos="-925.103 -500.211 -85.552" do_attack_cargoship="1" />
+    <Entity Name="Counter_EnableGenerator3Spawn" Def="Logic_Counter" Pos="-1087.202 -213.329 1060.837" current_value="0.000" max_value="1.000" min_value="0.000">
+      <ActionList Name="m_onChangedValue">
+        <FireAction Target="EnergyGenerator3" Action="EnableAssociatedSpawn" Params="1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Counter_EnableHangarSpawn" Def="Logic_Counter" Pos="-1085.479 -204.660 1071.634" current_value="0.000" max_value="2.000" min_value="0.000">
+      <ActionList Name="m_onChangedValue" Num="2">
+        <FireAction Target="HangarGenerator1" Action="EnableAssociatedSpawn" />
+        <FireAction Target="HangarGenerator2" Action="EnableAssociatedSpawn" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Counter_EnableGenerator2Spawn" Def="Logic_Counter" Pos="-1080.950 -207.083 1068.711" current_value="0.000" max_value="1.000" min_value="0.000">
+      <ActionList Name="m_onChangedValue">
+        <FireAction Target="EnergyGenerator2" Action="EnableAssociatedSpawn" Params="1" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Lightnings17" Def="Effects_Lightnings" Pos="-1178.418 -92.278 605.224" Rot="0.261 -0.264 -0.653 0.660" />
+    <Entity Name="Lightnings18" Def="Effects_Lightnings" Pos="-1176.502 -132.552 608.555" Rot="0.261 -0.264 -0.653 0.660" />
+    <Entity Name="Lightnings19" Def="Effects_Lightnings" Pos="-1176.461 -159.574 608.604" Rot="0.663 0.658 0.254 0.252" />
+    <Entity Name="Lightnings20" Def="Effects_Lightnings" Pos="-1176.963 -119.751 606.773" Rot="0.663 0.658 0.254 0.252" />
+    <Entity Name="Lightnings21" Def="Effects_Lightnings3" Pos="-1255.001 -185.144 859.504" Rot="0.000 -0.380 0.000 0.925" />
+    <Entity Name="Lightnings22" Def="Effects_Lightnings3" Pos="-1220.747 -185.144 893.385" Rot="0.000 0.924 0.000 0.383" />
+    <Entity Name="Lightnings23" Def="Effects_Lightnings" Pos="-1260.206 -184.127 578.370" Rot="-0.269 -0.367 -0.111 0.884" />
+    <Entity Name="Lightnings24" Def="Effects_Lightnings" Pos="-1255.911 -175.051 574.066" Rot="-0.269 -0.367 -0.111 0.884" />
+    <Entity Name="Lightnings25" Def="Effects_Lightnings" Pos="-1264.584 -193.368 582.748" Rot="-0.269 -0.367 -0.111 0.884" />
+    <Entity Name="Lightnings26" Def="Effects_Lightnings" Pos="-1275.339 -193.381 571.977" Rot="0.113 0.886 -0.268 0.362" />
+    <Entity Name="Lightnings27" Def="Effects_Lightnings" Pos="-1270.961 -184.140 567.599" Rot="0.113 0.886 -0.268 0.362" />
+    <Entity Name="Lightnings28" Def="Effects_Lightnings" Pos="-1266.666 -175.064 563.294" Rot="0.113 0.886 -0.268 0.362" />
+    <Entity Name="IndustrialFx1" Def="Effects_IndustrialFx" Pos="-1137.238 -80.443 499.749" Rot="0.000 -0.383 0.000 0.924" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="IndustrialFx2" Def="Effects_IndustrialFx" Pos="-1137.238 -104.216 499.749" Rot="0.000 -0.383 0.000 0.924" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="IndustrialFx3" Def="Effects_IndustrialFx" Pos="-1137.238 -127.795 499.749" Rot="0.000 -0.383 0.000 0.924" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="IndustrialFx4" Def="Effects_IndustrialFx" Pos="-1137.238 -152.240 499.749" Rot="0.000 -0.383 0.000 0.924" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="IndustrialFx5" Def="Effects_IndustrialFx" Pos="-1137.238 -175.974 499.749" Rot="0.000 -0.383 0.000 0.924" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="PointLight4" Def="Lights_PointLight" Pos="-1278.597 -226.950 906.923" start_off="0" rad="40.00000" color="0xFF5BDEFF" />
+    <Entity Name="PointLight7" Def="Lights_PointLight" Pos="-290.332 -150.173 358.182" start_off="0" rad="30.00000" color="0xFFFFBD59" />
+    <Entity Name="PointLight8" Def="Lights_PointLight" Pos="-359.217 -147.542 281.133" start_off="0" rad="30.00000" color="0xFFFFBD59" />
+    <Entity Name="Spawn_AI1" Def="Helpers_TagPoint" Pos="-346.126 -235.218 863.141" type="0" />
+    <Entity Name="Spawn_AI2" Def="Helpers_TagPoint" Pos="-1613.516 114.417 473.001" type="0" />
+    <Entity Name="Spawn_AI3" Def="Helpers_TagPoint" Pos="-1376.135 234.909 -72.577" type="0" />
+    <Entity Name="Spawn_AI4" Def="Helpers_TagPoint" Pos="-1204.684 82.732 -1266.784" type="0" />
+    <Entity Name="Spawn_AI5" Def="Helpers_TagPoint" Pos="1377.087 -336.583 -19.918" type="0" />
+    <Entity Name="Spawn_AI6" Def="Helpers_TagPoint" Pos="1506.655 18.099 405.725" type="0" />
+  </EntityContainer>
+</Scene>
