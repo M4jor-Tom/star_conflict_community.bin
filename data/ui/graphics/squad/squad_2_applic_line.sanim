@@ -1,0 +1,180 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_2.ma"
+//by sergey_mitryaev
+//at Mon Nov 07 17:08:40 2016
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim approved
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 560 30
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object name
+	{
+		defaults
+		{
+			pos 6 5
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "wdffeegegege"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object rank
+	{
+		defaults
+		{
+			pos 270 5
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "hfyu13"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object add_btn
+	{
+		defaults
+		{
+			pos 511.596 7
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\friend\friend_line_add_btn"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object ignor_btn
+	{
+		defaults
+		{
+			pos 537 7
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\friend\friend_line_ignor_btn"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object approved
+	{
+		defaults
+		{
+			pos 357 5
+			opacity 255
+			color 0xff8aff1d
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "Принят"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object color_cancel1
+	{
+		defaults
+		{
+			pos 574.489 1.51043
+			opacity 255
+			color 0xffbb070a
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "Отменено"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object color_invited
+	{
+		defaults
+		{
+			pos 574.489 23.5017
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "Приглашен"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 560 30
+			effect "ui\graphics\squad\squad_2_applic_line_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on approved
+		visible_on disable
+	}
+}
+
