@@ -1,0 +1,89 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Wed Mar 27 17:58:51 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object description7
+	{
+		defaults
+		{
+			pos 31.1195 47
+			opacity 255
+			color 0xffc6c6c6
+			size 700 60
+			effect ""
+			alignment "CT"
+			sampleText "affeggewg h h her  hjerh eheh eh|e r  eh heh eh eh|asfff"
+			font "Tiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object top_2
+	{
+		defaults
+		{
+			pos 173 143
+			opacity 255
+			color 0xffffffff
+			size 120 214
+			effect "ui\graphics\arena\ar_top_4"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object top_1
+	{
+		defaults
+		{
+			pos 324 122
+			opacity 255
+			color 0xffffffff
+			size 120 214
+			effect "ui\graphics\arena\ar_top_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object top_3
+	{
+		defaults
+		{
+			pos 474 143
+			opacity 255
+			color 0xffffffff
+			size 120 214
+			effect "ui\graphics\arena\ar_top_4"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 700 350
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
