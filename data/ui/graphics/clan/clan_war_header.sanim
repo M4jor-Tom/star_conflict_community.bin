@@ -1,0 +1,95 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Feb 19 17:58:52 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object name
+	{
+		defaults
+		{
+			pos 18 -0
+			opacity 255
+			color 0xffffffff
+			size 400 24
+			effect ""
+			alignment "LM"
+			sampleText "JKGUI lh lk h lhoIKHJ"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object losses
+	{
+		defaults
+		{
+			pos 542 -0
+			opacity 255
+			color 0xffffffff
+			size 202 24
+			effect ""
+			alignment "RM"
+			sampleText "689756908"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object data_2
+	{
+		defaults
+		{
+			pos 721 -0
+			opacity 255
+			color 0xffffffff
+			size 176 24
+			effect ""
+			alignment "RM"
+			sampleText "20"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object damage
+	{
+		defaults
+		{
+			pos 382 -0
+			opacity 255
+			color 0xffffffff
+			size 202 24
+			effect ""
+			alignment "RM"
+			sampleText "689756908"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+}
+
