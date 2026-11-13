@@ -1,0 +1,102 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/drop_down.ma"
+//by sergey_mitryaev
+//at Wed Jul 30 12:05:07 2014
+
+
+animations 4
+{
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 22
+			effect ""
+			alignment "LT"
+		}
+		visible_on over
+		visible_on press
+		visible_on idle
+		visible_on disable
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite dfeee5
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				178.018 2.03449	198.018 2.03449	178.018 24.0345	198.018 24.0345	
+				0.378113 0.0592009	0.397644 0.0592009	0.378113 0.0806853	0.397644 0.0806853	
+				0xffff9100	0xffff9100	0xffff9100	0xffff9100	
+			}
+		}
+		visible_on over
+		visible_on press
+		visible_on idle
+		anim disable sp_colc
+		{
+			1
+			0x7cff9100	0x7cff9100	0x7cff9100	0x7cff9100	
+		}
+	}
+	sprite dfeee19
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				169.085 -7.79187	206.951 -7.79187	169.085 33.861	206.951 33.861	
+				0.452958 0.718887	0.480636 0.718887	0.452958 0.749863	0.480636 0.749863	
+				0xffff9100	0xffff9100	0xffff9100	0xffff9100	
+			}
+		}
+		visible_on over
+		anim press sp_colc
+		{
+			1
+			0xff404040	0xff404040	0xff404040	0xff404040	
+		}
+	}
+}
+
