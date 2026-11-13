@@ -1,0 +1,238 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud.ma"
+//by Sergey_Mitryaev
+//at Fri Feb 16 11:19:50 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 16
+{
+	object bg_2
+	{
+		defaults
+		{
+			pos 0 14
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\eq_prod_icon_bg_2"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object frame
+	{
+		defaults
+		{
+			pos 0 14
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\eq_prod_icon_frame"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 64
+			effect ""
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object modules_icon
+	{
+		defaults
+		{
+			pos 0 14
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\modules_icon"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object cooldown
+	{
+		defaults
+		{
+			pos 0 14
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\cooldown_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object key
+	{
+		defaults
+		{
+			pos 17 1
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\key"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object key_2
+	{
+		defaults
+		{
+			pos 4 18
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\key_2"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object namber_ship
+	{
+		defaults
+		{
+			pos 3.33913 18
+			opacity 255
+			color 0xffffffff
+			size 16 12
+			effect "ui\graphics\hud\modules_namber_ship"
+			alignment "RM"
+			font "Tiny_outl"
+		}
+		visible_on idle
+	}
+	object namber_rocket
+	{
+		defaults
+		{
+			pos 30 50
+			opacity 255
+			color 0xffffffff
+			size 16 12
+			effect "ui\graphics\hud\modules_namber_rocket"
+			alignment "RM"
+			font "Tiny_outl"
+		}
+		visible_on idle
+	}
+	object buff_icon
+	{
+		defaults
+		{
+			pos 4 18
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\buff_icon"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object module_inactive
+	{
+		defaults
+		{
+			pos 0 14
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\module_inactive"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object marker_1
+	{
+		defaults
+		{
+			pos 0 14
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_marker"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object marker_2
+	{
+		defaults
+		{
+			pos -1 13
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_marker_2"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object icon_gold
+	{
+		defaults
+		{
+			pos 0 14
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_gold"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object destroy
+	{
+		defaults
+		{
+			pos 0 14
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\hangar\prod_destroy"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object star
+	{
+		defaults
+		{
+			pos 32 10
+			opacity 255
+			color 0xffffffff
+			size 16 12
+			effect "ui\graphics\equip\prod_icon_qu_star"
+			alignment "RM"
+			font "Tiny_outl"
+		}
+		visible_on idle
+	}
+}
+
