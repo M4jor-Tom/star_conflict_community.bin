@@ -1,0 +1,93 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Thu May 24 16:05:24 2018
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object chek_box
+	{
+		defaults
+		{
+			pos 0 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\chek_box_one"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 22
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object title
+	{
+		defaults
+		{
+			pos 22.888 3
+			opacity 255
+			color 0xffffffff
+			size 100 18
+			effect ""
+			alignment "LT"
+			sampleText "Установить эмблему:"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object price
+	{
+		defaults
+		{
+			pos 122 0.0355034
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+}
+
