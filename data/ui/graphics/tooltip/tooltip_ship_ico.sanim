@@ -1,0 +1,109 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Mon Apr 04 17:46:22 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object premium
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect "ui\graphics\tooltip\tooltip_ship_ico_premium"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object tier
+	{
+		defaults
+		{
+			pos 93 4
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object blink
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect "ui\graphics\hangar\custom_ship_blink_4"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite bg_ship2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-1 -0	125 -0	-1 74	125 74	
+				0.000976563 0.329102	0.124023 0.329102	0.000976563 0.401367	0.124023 0.401367	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico_ship
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				0 -0	125 -0	0 73	125 73	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
