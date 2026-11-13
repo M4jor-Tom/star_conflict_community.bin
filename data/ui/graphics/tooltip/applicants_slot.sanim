@@ -1,0 +1,101 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Mon Mar 19 11:46:21 2018
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+	anim local_pl
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object num
+	{
+		defaults
+		{
+			pos 46 -0
+			opacity 255
+			color 0xffffffff
+			size 30 20
+			effect ""
+			alignment "LM"
+			sampleText "5"
+			font "Tiny"
+		}
+		visible_on idle
+		anim local_pl obj_colc
+		{
+			1
+			0xffffcf00
+		}
+	}
+	object name
+	{
+		defaults
+		{
+			pos 72 -0
+			opacity 255
+			color 0xffffffff
+			size 230 20
+			effect ""
+			alignment "LM"
+			sampleText "Ssdfdg fhh f hjjh jtj tjjtjt tj"
+			font "Tiny"
+		}
+		visible_on idle
+		anim local_pl obj_colc
+		{
+			1
+			0xffffcf00
+		}
+	}
+	object vol
+	{
+		defaults
+		{
+			pos 319 2
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect ""
+			alignment "RM"
+			sampleText "5000"
+			font "Tiny"
+		}
+		visible_on idle
+		anim local_pl obj_colc
+		{
+			1
+			0xffffcf00
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 400 20
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on local_pl
+	}
+}
+
