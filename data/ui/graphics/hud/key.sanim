@@ -1,0 +1,46 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud.ma"
+//by sergey_mitryaev
+//at Mon Sep 26 18:52:03 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object number
+	{
+		defaults
+		{
+			pos 0.0913057 0.0279623
+			opacity 127
+			color 0xffffffff
+			size 16 11
+			effect ""
+			alignment "CM"
+			sampleText "F8"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim select obj_opc
+		{
+			1 
+			255
+		}
+	}
+}
+
