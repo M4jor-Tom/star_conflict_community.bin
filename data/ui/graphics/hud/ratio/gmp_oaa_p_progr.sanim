@@ -1,0 +1,171 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Fri Dec 13 12:28:09 2019
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_3
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object title
+	{
+		defaults
+		{
+			pos 3 8
+			opacity 255
+			color 0xff000000
+			size 40 30
+			effect ""
+			alignment "CM"
+			sampleText "B"
+			font "play_reg_24"
+		}
+		visible_on idle
+		anim idle_2 obj_opc
+		{
+			1 
+			0
+		}
+		anim idle_3 obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName87
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				0 -0	46 -0	0 46	46 46	
+				0.144531 0.649414	0.189453 0.649414	0.144531 0.694336	0.189453 0.694336	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xc1ffffff	0xc1ffffff	0xc1ffffff	0xc1ffffff	
+		}
+		anim idle_3 sp_pos
+		{
+			9 
+			0 -0	46 -0	0 46	46 46	
+			0 5.75	46 5.75	0 46	46 46	
+			0 11.5	46 11.5	0 46	46 46	
+			0 17.25	46 17.25	0 46	46 46	
+			0 23	46 23	0 46	46 46	
+			0 28.75	46 28.75	0 46	46 46	
+			0 34.5	46 34.5	0 46	46 46	
+			0 40.25	46 40.25	0 46	46 46	
+			0 46	46 46	0 46	46 46	
+		}
+	}
+	sprite objectName88
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				0 -0	46 -0	0 46	46 46	
+				0.189453 0.649414	0.234375 0.649414	0.189453 0.694336	0.234375 0.694336	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on idle_2
+		anim idle_3 sp_pos_uv_colc
+		{
+			9 9 1
+			0 -0	46 -0	0 46	46 46	
+			0 5.75	46 5.75	0 46	46 46	
+			0 11.5	46 11.5	0 46	46 46	
+			0 17.25	46 17.25	0 46	46 46	
+			0 23	46 23	0 46	46 46	
+			0 28.75	46 28.75	0 46	46 46	
+			0 34.5	46 34.5	0 46	46 46	
+			0 40.25	46 40.25	0 46	46 46	
+			0 46	46 46	0 46	46 46	
+			0.189453 0.649414	0.234375 0.649414	0.189453 0.694336	0.234375 0.694336	
+			0.189453 0.655029	0.234375 0.655029	0.189453 0.694336	0.234375 0.694336	
+			0.189453 0.660645	0.234375 0.660645	0.189453 0.694336	0.234375 0.694336	
+			0.189453 0.66626	0.234375 0.66626	0.189453 0.694336	0.234375 0.694336	
+			0.189453 0.671875	0.234375 0.671875	0.189453 0.694336	0.234375 0.694336	
+			0.189453 0.67749	0.234375 0.67749	0.189453 0.694336	0.234375 0.694336	
+			0.189453 0.683105	0.234375 0.683105	0.189453 0.694336	0.234375 0.694336	
+			0.189453 0.688721	0.234375 0.688721	0.189453 0.694336	0.234375 0.694336	
+			0.189453 0.694336	0.234375 0.694336	0.189453 0.694336	0.234375 0.694336	
+			0xc1ffffff	0xc1ffffff	0xc1ffffff	0xc1ffffff	
+		}
+	}
+	sprite objectName89
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				0 -0	46 -0	0 46	46 46	
+				0.28418 0.547852	0.329102 0.547852	0.28418 0.592773	0.329102 0.592773	
+				0xc1ffffff	0xc1ffffff	0xc1ffffff	0xc1ffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim idle_3 sp_pos_colc
+		{
+			9 1
+			0 -0	46 -0	0 46	46 46	
+			0 5.75	46 5.75	0 46	46 46	
+			0 11.5	46 11.5	0 46	46 46	
+			0 17.25	46 17.25	0 46	46 46	
+			0 23	46 23	0 46	46 46	
+			0 28.75	46 28.75	0 46	46 46	
+			0 34.5	46 34.5	0 46	46 46	
+			0 40.25	46 40.25	0 46	46 46	
+			0 46	46 46	0 46	46 46	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
