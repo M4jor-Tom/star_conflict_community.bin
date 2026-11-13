@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/credits/credits.ma"
+//by sergey_mitryaev
+//at Mon Feb 04 11:49:52 2013
+
+base_res 1280 720
+keep_screen_size
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object text
+	{
+		defaults
+		{
+			anchor "C"
+			pos 386 15
+			opacity 255
+			color 0xffffffff
+			size 500 680
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite bg1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/login_back_2.tif"
+			anchor "C"
+			vertices
+			{
+				0 -0	1280 -0	0 720	1280 720	
+				0 0	0.982036 0	0 1	0.982036 1	
+				0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite bg2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	1280 -0	0 171	1280 171	
+				0.23254 0.0103699	0.2616 0.0103699	0.23254 0.0458984	0.2616 0.0458984	
+				0xff7f7f7f	0xff7f7f7f	0x7f7f7f	0x7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite bg3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 720	1280 720	0 546	1280 546	
+				0.23254 0.0103699	0.2616 0.0103699	0.23254 0.0458984	0.2616 0.0458984	
+				0xff7f7f7f	0xff7f7f7f	0x7f7f7f	0x7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+}
+
