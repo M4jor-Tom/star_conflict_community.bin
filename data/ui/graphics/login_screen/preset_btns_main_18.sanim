@@ -1,0 +1,141 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Mon Nov 25 16:40:44 2019
+
+base_res 1920 1080
+
+animations 6
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object preset_btn_4
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 36
+			effect "ui\graphics\login_screen\preset_btn_18"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+	object preset_btn_3
+	{
+		defaults
+		{
+			pos 76 -0
+			opacity 255
+			color 0xffffffff
+			size 70 36
+			effect "ui\graphics\login_screen\preset_btn_18"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+	object preset_btn_2
+	{
+		defaults
+		{
+			pos 152 -0
+			opacity 255
+			color 0xffffffff
+			size 70 36
+			effect "ui\graphics\login_screen\preset_btn_18"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+	object preset_btn_1
+	{
+		defaults
+		{
+			pos 228 -0
+			opacity 255
+			color 0xffffffff
+			size 70 36
+			effect "ui\graphics\login_screen\preset_btn_18"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 36
+			effect ""
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+}
+
