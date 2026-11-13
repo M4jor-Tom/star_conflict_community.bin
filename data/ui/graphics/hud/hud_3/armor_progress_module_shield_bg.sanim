@@ -1,0 +1,54 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by sergey_mitryaev
+//at Wed Aug 26 15:37:07 2020
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectNameuiopkl_6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				1 43	25 43	1 140	25 140	
+				0.301758 0.0439453	0.27832 0.0439453	0.301758 0.138672	0.27832 0.138672	
+				0x6b252525	0x6b252525	0x6b252525	0x6b252525	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName86
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				-3.4234 156.688	6.5766 156.688	-3.4234 169.688	6.5766 169.688	
+				0.320313 0.179688	0.328125 0.179688	0.320313 0.19043	0.328125 0.19043	
+			}
+		}
+		visible_on idle
+	}
+}
+
