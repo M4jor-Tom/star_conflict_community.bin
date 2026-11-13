@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="s1550_tutorial2; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" battlefieldRadius="1800.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" />
+  <EntityContainer>
+    <Entity Name="SpawnTeam1Ship1" Def="Logic_SpawnSpot_Team1Group0" Pos="-80.262 10.104 804.337" Rot="0.000 0.030 0.000 1.000" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="CinematicView_1" Def="Helpers_TagPoint" Pos="-69.133 125.799 95.249" type="0" />
+    <Entity Name="SpawnAgentWave1" Def="Logic_SpawnAgentWave_Group0" Pos="-77.766 26.458 98.819" Rot="0.000 0.999 0.000 0.044" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="1000.581 2821.030 275.569" Rot="0.459 -0.539 0.467 0.530" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="PlasmaGun1" Def="Turret_Tutorial_RailGun" Pos="-137.286 7.449 -144.699" Rot="0.000 1.000 0.000 0.015" do_attack_cargoship="0" />
+    <Entity Name="Holder3" Def="Turret_Holder" Pos="-137.300 6.420 -144.738" />
+    <Entity Name="PathObject1" Def="PathObject" Pos="105.659 19.917 340.041" Rot="0.000 0.887 0.000 -0.462" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="105.659 19.917 340.041" />
+      <Point p="95.659 19.917 402.041" />
+      <Point p="67.659 19.917 458.040" />
+      <Point p="22.659 19.917 502.040" />
+      <Point p="-32.341 19.917 531.040" />
+      <Point p="-94.341 19.917 540.040" />
+      <Point p="-156.341 19.917 531.040" />
+      <Point p="-212.341 19.917 502.040" />
+      <Point p="-256.341 19.917 458.040" />
+      <Point p="-284.341 19.917 402.041" />
+      <Point p="-294.341 19.917 340.041" />
+      <Point p="-284.341 19.917 279.041" />
+      <Point p="-256.341 19.917 223.041" />
+      <Point p="-212.341 19.917 179.041" />
+      <Point p="-156.341 19.917 150.041" />
+      <Point p="-94.341 19.917 140.041" />
+      <Point p="-32.341 19.917 150.041" />
+      <Point p="22.659 19.917 179.041" />
+      <Point p="67.659 19.917 223.041" />
+      <Point p="95.659 19.917 279.041" />
+    </Entity>
+    <Entity Name="SpawnAgentWave2" Def="Logic_SpawnAgentWave_Group1" Pos="-71.320 42.556 -639.946" Rot="0.000 1.000 0.000 0.009" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Holder4" Def="Turret_Holder" Pos="-137.463 6.607 -195.998" />
+    <Entity Name="PlasmaGun2" Def="Turret_Tutorial_RailGun" Pos="-137.453 7.616 -195.888" Rot="0.000 1.000 0.000 0.015" do_attack_cargoship="0" />
+  </EntityContainer>
+</Scene>
