@@ -1,0 +1,317 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/drop_down.ma"
+//by sergey_mitryaev
+//at Thu Dec 06 14:41:13 2012
+
+
+animations 1
+{
+	anim open
+	{
+		mode once
+		cycle_time 0.3
+	}
+}
+
+total_elements 13
+
+objects 12
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 220 202
+			effect ""
+			alignment "LT"
+		}
+		visible_on open
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 2.28807 0.952045
+			opacity 255
+			color 0xff88b5ff
+			size 240 20
+			effect "ui\graphics\start_drop_down\drop_down_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim open obj_col
+		{
+			7
+			0xff88b5ff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+		}
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 2.28807 20.7023
+			opacity 255
+			color 0xff88b5ff
+			size 240 20
+			effect "ui\graphics\start_drop_down\drop_down_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim open obj_col
+		{
+			7
+			0xff88b5ff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+		}
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos 2.28807 40.4525
+			opacity 255
+			color 0xff88b5ff
+			size 240 20
+			effect "ui\graphics\start_drop_down\drop_down_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim open obj_col
+		{
+			7
+			0xff88b5ff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+		}
+	}
+	object line_4
+	{
+		defaults
+		{
+			pos 2.28807 60.2027
+			opacity 255
+			color 0xff88b5ff
+			size 240 20
+			effect "ui\graphics\start_drop_down\drop_down_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim open obj_col
+		{
+			7
+			0xff88b5ff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+		}
+	}
+	object line_5
+	{
+		defaults
+		{
+			pos 2.28807 79.9529
+			opacity 255
+			color 0xff88b5ff
+			size 240 20
+			effect "ui\graphics\start_drop_down\drop_down_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim open obj_col
+		{
+			7
+			0xff88b5ff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+		}
+	}
+	object line_6
+	{
+		defaults
+		{
+			pos 2.28807 99.7031
+			opacity 255
+			color 0xff88b5ff
+			size 240 20
+			effect "ui\graphics\start_drop_down\drop_down_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim open obj_col
+		{
+			7
+			0xff88b5ff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+		}
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 203 3
+			opacity 255
+			color 0xffffffff
+			size 15 196
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on open
+	}
+	object line_7
+	{
+		defaults
+		{
+			pos 2.28807 119.489
+			opacity 255
+			color 0xff88b5ff
+			size 240 20
+			effect "ui\graphics\start_drop_down\drop_down_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim open obj_col
+		{
+			7
+			0xff88b5ff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+		}
+	}
+	object line_8
+	{
+		defaults
+		{
+			pos 2.28807 139.239
+			opacity 255
+			color 0xff88b5ff
+			size 240 20
+			effect "ui\graphics\start_drop_down\drop_down_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim open obj_col
+		{
+			7
+			0xff88b5ff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+		}
+	}
+	object line_9
+	{
+		defaults
+		{
+			pos 2.28807 158.989
+			opacity 255
+			color 0xff88b5ff
+			size 240 20
+			effect "ui\graphics\start_drop_down\drop_down_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim open obj_col
+		{
+			7
+			0xff88b5ff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+		}
+	}
+	object line_10
+	{
+		defaults
+		{
+			pos 2.28807 178.739
+			opacity 255
+			color 0xff88b5ff
+			size 240 20
+			effect "ui\graphics\start_drop_down\drop_down_line"
+			alignment "LM"
+			font "VerySmall"
+		}
+		anim open obj_col
+		{
+			7
+			0xff88b5ff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+			0xffffffff
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite m
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1.90735e-006 -0	10 -0	212 -0	222 -0	1.90735e-006 10	10 10	212 10	222 10	1.90735e-006 -8.35073	10 -8.35073	212 -8.35073	222 -8.35073	1.90735e-006 1.64927	10 1.64927	212 1.64927	222 1.64927	
+				0.172855 0.00197798	0.18262 0.00197798	0.211895 0.00197798	0.22166 0.00197798	0.172855 0.0117436	0.18262 0.0117436	0.211895 0.0117436	0.22166 0.0117436	0.172855 0.0409938	0.18262 0.0409938	0.211895 0.0409938	0.22166 0.0409938	0.172855 0.0507594	0.18262 0.0507594	0.211895 0.0507594	0.22166 0.0507594	
+			}
+		}
+		anim open sp_pos
+		{
+			7 
+			1.90735e-006 -0	10 -0	212 -0	222 -0	1.90735e-006 10	10 10	212 10	222 10	1.90735e-006 -8.35073	10 -8.35073	212 -8.35073	222 -8.35073	1.90735e-006 1.64927	10 1.64927	212 1.64927	222 1.64927	
+			1.90735e-006 -0	10 -0	212 -0	222 -0	1.90735e-006 10	10 10	212 10	222 10	1.90735e-006 25.2077	10 25.2077	212 25.2077	222 25.2077	1.90735e-006 35.2077	10 35.2077	212 35.2077	222 35.2077	
+			1.90735e-006 -0	10 -0	212 -0	222 -0	1.90735e-006 10	10 10	212 10	222 10	1.90735e-006 58.7662	10 58.7662	212 58.7662	222 58.7662	1.90735e-006 68.7662	10 68.7662	212 68.7662	222 68.7662	
+			1.90735e-006 -0	10 -0	212 -0	222 -0	1.90735e-006 10	10 10	212 10	222 10	1.90735e-006 92.3246	10 92.3246	212 92.3246	222 92.3246	1.90735e-006 102.325	10 102.325	212 102.325	222 102.325	
+			1.90735e-006 -0	10 -0	212 -0	222 -0	1.90735e-006 10	10 10	212 10	222 10	1.90735e-006 125.883	10 125.883	212 125.883	222 125.883	1.90735e-006 135.883	10 135.883	212 135.883	222 135.883	
+			1.90735e-006 -0	10 -0	212 -0	222 -0	1.90735e-006 10	10 10	212 10	222 10	1.90735e-006 159.442	10 159.442	212 159.442	222 159.442	1.90735e-006 169.442	10 169.442	212 169.442	222 169.442	
+			1.90735e-006 -0	10 -0	212 -0	222 -0	1.90735e-006 10	10 10	212 10	222 10	1.90735e-006 193	10 193	212 193	222 193	1.90735e-006 203	10 203	212 203	222 203	
+		}
+	}
+}
+
