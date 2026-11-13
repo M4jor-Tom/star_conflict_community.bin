@@ -1,0 +1,51 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by Sergey
+//at Wed Jun 24 09:58:44 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite myself61
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-25 -25	25 -25	-25 25	25 25	
+				0.419429 0.683039	0.453618 0.683039	0.419429 0.717352	0.453618 0.717352	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_posc_colc
+		{
+			1 1
+			-65.3027 -65.3027	65.3027 -65.3027	-65.3027 65.3027	65.3027 65.3027	
+			0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	
+		}
+	}
+}
+
