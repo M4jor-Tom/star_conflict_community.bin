@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Apr 16 10:45:10 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object input_text
+	{
+		defaults
+		{
+			pos 0 1
+			opacity 255
+			color 0xffffdeb3
+			size 400 30
+			effect ""
+			alignment "LM"
+			sampleText "HDHB LYON:MPOUM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object select_text_color
+	{
+		defaults
+		{
+			pos 0 132
+			opacity 255
+			color 0xff98afd4
+			size 400 30
+			effect ""
+			alignment "LM"
+			sampleText "Цвет выделения  ввожимого текста"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object cursor_color
+	{
+		defaults
+		{
+			pos 0 169
+			opacity 255
+			color 0xffffffff
+			size 400 30
+			effect ""
+			alignment "LM"
+			sampleText "цвет курсоря ///"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp213
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-5 -3	1 -3	405 -3	411 -3	-5 3	1 3	405 3	411 3	-5 28	1 28	405 28	411 28	-5 34	1 34	405 34	411 34	
+				0.272536 0.0507218	0.272536 0.0448626	0.272536 0.00890714	0.272536 0.00304788	0.266677 0.0507219	0.266677 0.0448626	0.266677 0.00890732	0.266677 0.00304776	0.229545 0.0507219	0.229545 0.0448625	0.229545 0.00890702	0.229545 0.00304776	0.223686 0.0507219	0.223686 0.0448625	0.223686 0.0089072	0.223686 0.00304776	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
