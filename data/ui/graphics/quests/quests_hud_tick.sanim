@@ -1,0 +1,135 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Wed Apr 09 14:44:50 2014
+
+
+animations 3
+{
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim show
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim enable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self95
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on disable
+		visible_on show
+		visible_on enable
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite dff31
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				3 3	17 3	3 17	17 17	
+				0.352539 0.106445	0.366211 0.106445	0.352539 0.120117	0.366211 0.120117	
+				0xff444444	0xff444444	0xff444444	0xff444444	
+			}
+		}
+		visible_on disable
+		visible_on show
+		visible_on enable
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-119.599 -119.599	139.599 -119.599	-119.599 139.599	139.599 139.599	
+				0.405273 0.0996094	0.420898 0.0996094	0.405273 0.115234	0.420898 0.115234	
+				0x1ff9900	0x1ff9900	0x1ff9900	0x1ff9900	
+			}
+		}
+		visible_on disable
+		anim show sp_pos_col
+		{
+			2 5
+			-119.599 -119.599	139.599 -119.599	-119.599 139.599	139.599 139.599	
+			2 2	18 2	2 18	18 18	
+			0xff9900	0xff9900	0xff9900	0xff9900	
+			0x27ff9900	0x27ff9900	0x27ff9900	0x27ff9900	
+			0x7fff9900	0x7fff9900	0x7fff9900	0x7fff9900	
+			0xd7ff9900	0xd7ff9900	0xd7ff9900	0xd7ff9900	
+			0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+		}
+		anim enable sp_posc_colc
+		{
+			1 1
+			2 2	18 2	2 18	18 18	
+			0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+		}
+	}
+	sprite dff34
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-119.599 -119.599	139.599 -119.599	-119.599 139.599	139.599 139.599	
+				0.405273 0.0996094	0.420898 0.0996094	0.405273 0.115234	0.420898 0.115234	
+				0x1ff9900	0x1ff9900	0x1ff9900	0x1ff9900	
+			}
+		}
+		visible_on disable
+		anim show sp_pos_col
+		{
+			2 5
+			-119.599 -119.599	139.599 -119.599	-119.599 139.599	139.599 139.599	
+			2 2	18 2	2 18	18 18	
+			0xff9900	0xff9900	0xff9900	0xff9900	
+			0x27ff9900	0x27ff9900	0x27ff9900	0x27ff9900	
+			0x7fff9900	0x7fff9900	0x7fff9900	0x7fff9900	
+			0xd7ff9900	0xd7ff9900	0xd7ff9900	0xd7ff9900	
+			0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+		}
+		anim enable sp_posc_colc
+		{
+			1 1
+			2 2	18 2	2 18	18 18	
+			0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+		}
+	}
+}
+
