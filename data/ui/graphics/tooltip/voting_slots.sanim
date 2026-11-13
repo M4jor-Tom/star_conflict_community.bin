@@ -1,0 +1,235 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Fri Jun 30 16:30:25 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1.5
+	}
+}
+
+total_elements 12
+
+objects 10
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 420 550
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6 4
+			opacity 255
+			color 0xffffffff
+			size 225 20
+			effect ""
+			alignment "LM"
+			sampleText "DDdsfjmup"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 400 3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "y:\work_version\pc\data\ui\graphics\login_screen\btn_x.sanim"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 6 28
+			opacity 255
+			color 0xffffffff
+			size 408 100
+			effect ""
+			alignment "LT"
+			sampleText "Swfew geg g ger herh h hheh h"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object variants
+	{
+		defaults
+		{
+			pos 6 131
+			opacity 255
+			color 0xffffffff
+			size 408 358
+			effect "ui\graphics\tooltip\voting_variants"
+			alignment "LT"
+			sampleText "Swfew geg g ger herh h hheh h"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 260 88
+			opacity 255
+			color 0xffffffff
+			size 128 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			260 88
+			260 523
+		}
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 101 88
+			opacity 255
+			color 0xffffffff
+			size 128 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			101 88
+			101 523
+		}
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 420 115
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 62 63
+			opacity 255
+			color 0xffffffff
+			size 225 20
+			effect ""
+			alignment "RM"
+			sampleText "DDdsfjmup fdefe  fgegfeg g ^"
+			font "VerySmall"
+		}
+		anim idle obj_pos
+		{
+			2 
+			62 63
+			62 498
+		}
+	}
+	object price
+	{
+		defaults
+		{
+			pos 309 63
+			opacity 255
+			color 0xffffffff
+			size 128 25
+			effect "ui\graphics\shop\prod_price"
+			alignment "LT"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			309 63
+			309 498
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 110	6 110	414 110	420 110	0 116	6 116	414 116	420 116	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 110	6 110	414 110	420 110	0 116	6 116	414 116	420 116	
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 153.4	6 153.4	414 153.4	420 153.4	0 159.4	6 159.4	414 159.4	420 159.4	
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 196.8	6 196.8	414 196.8	420 196.8	0 202.8	6 202.8	414 202.8	420 202.8	
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 240.2	6 240.2	414 240.2	420 240.2	0 246.2	6 246.2	414 246.2	420 246.2	
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 283.6	6 283.6	414 283.6	420 283.6	0 289.6	6 289.6	414 289.6	420 289.6	
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 327	6 327	414 327	420 327	0 333	6 333	414 333	420 333	
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 370.4	6 370.4	414 370.4	420 370.4	0 376.4	6 376.4	414 376.4	420 376.4	
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 413.8	6 413.8	414 413.8	420 413.8	0 419.8	6 419.8	414 419.8	420 419.8	
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 457.2	6 457.2	414 457.2	420 457.2	0 463.2	6 463.2	414 463.2	420 463.2	
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 500.6	6 500.6	414 500.6	420 500.6	0 506.6	6 506.6	414 506.6	420 506.6	
+			0 -0	6 -0	414 -0	420 -0	0 6	6 6	414 6	420 6	0 544	6 544	414 544	420 544	0 550	6 550	414 550	420 550	
+		}
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 26	1 24	419 26	419 24	
+				0.0771484 0.145264	0.0791016 0.145264	0.0771484 0.151611	0.0791016 0.151611	
+			}
+		}
+		visible_on idle
+	}
+}
+
