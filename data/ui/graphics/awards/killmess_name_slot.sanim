@@ -1,0 +1,76 @@
+﻿source_file "Y:/art/source/ui/graphics/awards/awards.ma"
+//by sergey_mitryaev
+//at Mon Nov 10 11:30:55 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object line_1
+	{
+		defaults
+		{
+			pos 0.684084 0.231894
+			opacity 255
+			color 0xffffffff
+			size 230 20
+			effect "ui\graphics\awards\killmess_line"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 230 112
+			effect ""
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 0.684084 22
+			opacity 255
+			color 0xffffffff
+			size 230 20
+			effect "ui\graphics\awards\killmess_line"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 3 -0
+			opacity 255
+			color 0xffffffff
+			size 230 112
+			effect "ui\graphics\awards\killmess_blackout"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
