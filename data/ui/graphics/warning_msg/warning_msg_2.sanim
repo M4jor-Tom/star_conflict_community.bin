@@ -1,0 +1,145 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by sergey_mitryaev
+//at Fri Apr 19 14:03:00 2013
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 10
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 500 40
+			effect ""
+			alignment "CM"
+			sampleText "Вы вылетели за границы поля боя"
+			font "Medium"
+		}
+		anim idle obj_op
+		{
+			101 
+			255
+			254
+			251
+			247
+			241
+			233
+			223
+			211
+			196
+			178
+			158
+			254
+			251
+			247
+			241
+			233
+			223
+			211
+			196
+			178
+			255
+			254
+			251
+			247
+			241
+			233
+			223
+			211
+			196
+			178
+			255
+			254
+			251
+			247
+			241
+			233
+			223
+			211
+			196
+			178
+			255
+			254
+			251
+			247
+			241
+			233
+			223
+			211
+			196
+			178
+			158
+			254
+			251
+			247
+			241
+			233
+			223
+			211
+			196
+			178
+			255
+			254
+			251
+			247
+			241
+			233
+			223
+			211
+			196
+			178
+			255
+			254
+			251
+			247
+			241
+			233
+			223
+			211
+			196
+			178
+			255
+			254
+			251
+			247
+			241
+			233
+			223
+			211
+			196
+			178
+			255
+			254
+			251
+			247
+			241
+			233
+			223
+			211
+			196
+			178
+			158
+		}
+		visible_on idle_2
+	}
+}
+
