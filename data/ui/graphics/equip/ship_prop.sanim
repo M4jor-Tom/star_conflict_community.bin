@@ -1,0 +1,95 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Mon Oct 21 11:42:54 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 20
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object ship_proper
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 25 279
+			opacity 255
+			color 0xffffffff
+			size 320 200
+			effect "ui\graphics\ships_tree_3\edit_ship_proper_2"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object progr_prop
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 18 93
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree_3\node_progr_prop_main"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object bonus_slots
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 15.374 487
+			opacity 255
+			color 0xffffffff
+			size 270 70
+			effect "ui\graphics\ships_tree_3\bonus_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object survival
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 48 223
+			opacity 255
+			color 0xffffffff
+			size 200 24
+			effect "ui\graphics\ships_tree_3\node_prop_survival"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object ship_info
+	{
+		defaults
+		{
+			anchor "LT"
+			pos -1 8
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree_3\ed_ship_info_main"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+}
+
