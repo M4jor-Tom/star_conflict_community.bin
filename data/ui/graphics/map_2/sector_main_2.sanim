@@ -1,0 +1,120 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map_2.ma"
+//by Sergey_Mitryaev
+//at Fri Mar 30 17:37:44 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object over
+	{
+		defaults
+		{
+			pos -12.598 -12.8403
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\map_2\sector_over"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object star_ico
+	{
+		defaults
+		{
+			pos -38.598 -38.8403
+			opacity 255
+			color 0xffffffff
+			size 56 56
+			effect "ui\graphics\map_2\sector_star_ico"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object exclamatory_2
+	{
+		defaults
+		{
+			pos 1.41668 -32.8076
+			opacity 255
+			color 0xffffffff
+			size 32 32
+			effect "ui\graphics\map_2\sector_exclamatory"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object title_5
+	{
+		defaults
+		{
+			pos -79.2895 49.1597
+			opacity 255
+			color 0xff82705e
+			size 200 50
+			effect ""
+			alignment "CT"
+			sampleText "Sector 4"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object center
+	{
+		defaults
+		{
+			pos 17.402 17.1597
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 34 34
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object current
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 34 34
+			effect "ui\graphics\map_2\sector_point_current_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+}
+
