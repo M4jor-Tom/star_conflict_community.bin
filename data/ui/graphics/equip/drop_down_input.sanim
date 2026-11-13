@@ -1,0 +1,107 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/drop_down.ma"
+//by sergey_mitryaev
+//at Wed May 15 14:22:02 2013
+
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 296 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object select_color
+	{
+		defaults
+		{
+			pos 1.9258 1.60273
+			opacity 255
+			color 0xff6a93b5
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object cursor
+	{
+		defaults
+		{
+			pos 1.9258 1.60273
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object login
+	{
+		defaults
+		{
+			pos 25.0954 1.60273
+			opacity 255
+			color 0xffffffff
+			size 240 20
+			effect ""
+			alignment "LM"
+			sampleText "Курсант"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-1.31602 -0	4.68398 -0	289.955 -0	295.955 -0	-1.31602 6	4.68398 6	289.955 6	295.955 6	-1.31602 18.9993	4.68398 18.9993	289.955 18.9993	295.955 18.9993	-1.31602 24.9993	4.68398 24.9993	289.955 24.9993	295.955 24.9993	
+				0.073195 0.0761709	0.0790543 0.0761709	0.257886 0.0761709	0.263746 0.0761709	0.073195 0.0820303	0.0790543 0.0820303	0.257886 0.0820303	0.263746 0.0820303	0.073195 0.0870184	0.0790543 0.0870184	0.257886 0.0870184	0.263746 0.0870184	0.073195 0.0928778	0.0790543 0.0928778	0.257886 0.0928778	0.263746 0.0928778	
+			}
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
