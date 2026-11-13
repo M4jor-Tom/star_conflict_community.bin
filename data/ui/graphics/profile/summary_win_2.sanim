@@ -1,0 +1,369 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by sergey_mitryaev
+//at Mon Mar 01 15:04:49 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 24
+
+objects 22
+{
+	object title_1
+	{
+		defaults
+		{
+			pos 131 13
+			opacity 255
+			color 0xffffdeb3
+			size 250 30
+			effect ""
+			alignment "LB"
+			sampleText "HDhehjg jberjb j borwejh"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object title_2
+	{
+		defaults
+		{
+			pos 131 42
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect ""
+			alignment "LT"
+			sampleText "asffa f  wqf:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_3
+	{
+		defaults
+		{
+			pos 131 42
+			opacity 255
+			color 0xffffdeb3
+			size 400 30
+			effect ""
+			alignment "LT"
+			sampleText "WWWWWWWWWWWWWWWWWWWW"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 525
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 33 154
+			opacity 255
+			color 0xffffffff
+			size 406 134
+			effect "ui\graphics\profile\summary_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_4
+	{
+		defaults
+		{
+			pos 131 42
+			opacity 255
+			color 0xffffffff
+			size 310 30
+			effect ""
+			alignment "LT"
+			sampleText "WWWWWWWWWWWWWWWWWWWW"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object karma
+	{
+		defaults
+		{
+			pos 129 108
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\debrifing_2\karma_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_5
+	{
+		defaults
+		{
+			pos 344 122
+			opacity 255
+			color 0xffffffff
+			size 34 26
+			effect "ui\graphics\clan\lidboard_btn_6"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_6
+	{
+		defaults
+		{
+			pos 383 15
+			opacity 255
+			color 0xffffffff
+			size 34 26
+			effect "ui\graphics\clan\lidboard_btn_7"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object reputacion_1
+	{
+		defaults
+		{
+			pos 36 102
+			opacity 255
+			color 0xffffffff
+			size 70 20
+			effect "ui\graphics\profile\reputacion"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object reputacion_2
+	{
+		defaults
+		{
+			pos 36 119
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect "ui\graphics\profile\reputacion"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object avatar_icon1
+	{
+		defaults
+		{
+			pos 36 13
+			opacity 255
+			color 0xffffffff
+			size 88 88
+			effect "ui\graphics\hud\avatar_icon"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_7
+	{
+		defaults
+		{
+			pos 91 73
+			opacity 255
+			color 0xffffffff
+			size 20 16
+			effect "ui\graphics\clan\lidboard_btn_7"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object prestige_slot
+	{
+		defaults
+		{
+			pos 38 265
+			opacity 255
+			color 0xffffffff
+			size 400 80
+			effect "ui\graphics\profile\prestige_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object liga_slot
+	{
+		defaults
+		{
+			pos 40 416
+			opacity 255
+			color 0xffffffff
+			size 400 80
+			effect "ui\graphics\profile\liga_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object stat_slot
+	{
+		defaults
+		{
+			pos 526.759 15
+			opacity 255
+			color 0xffffffff
+			size 420 480
+			effect "ui\graphics\profile\stat_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object race_icon_1
+	{
+		defaults
+		{
+			pos 129 83
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\profile\race_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object race_icon_2
+	{
+		defaults
+		{
+			pos 210 83
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\profile\race_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object race_icon_3
+	{
+		defaults
+		{
+			pos 292 83
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\profile\race_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object race_icon_4
+	{
+		defaults
+		{
+			pos 372 83
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\profile\race_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_11
+	{
+		defaults
+		{
+			pos 131 87
+			opacity 255
+			color 0xffffffff
+			size 310 30
+			effect ""
+			alignment "LT"
+			sampleText "WWWWWWWWWWWWWWWWWWWW"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_12
+	{
+		defaults
+		{
+			pos 131 65
+			opacity 255
+			color 0xffffffff
+			size 310 30
+			effect ""
+			alignment "LT"
+			sampleText "WWWWWWWWWWWWWWWWWWWW"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	960 -0	966 -0	0 6	6 6	960 6	966 6	0 541	6 541	960 541	966 541	0 549	6 549	960 549	966 549	
+				0.325184 0.000963449	0.331044 0.000963449	0.370107 0.00096339	0.375966 0.00096339	0.325184 0.00682282	0.331044 0.00682282	0.370107 0.00682282	0.375966 0.00682276	0.325184 0.0439453	0.331044 0.0439453	0.370107 0.0439453	0.375966 0.0439453	0.325184 0.0517613	0.331044 0.0517614	0.370107 0.0517613	0.375966 0.0517614	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26yklyul
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/podlogka_profil.tif"
+			vertices_nc
+			{
+				7 8	13 8	953 8	959 8	7 14	13 14	953 14	959 14	7 533	13 533	953 533	959 533	7 539	13 539	953 539	959 539	
+				0.00583157 0.00283498	0.0116909 0.00283498	0.992154 0.00283498	0.998013 0.00283498	0.00583157 0.00869435	0.0116909 0.00869435	0.992154 0.00869435	0.998013 0.00869435	0.00583157 0.985352	0.0116909 0.985352	0.992154 0.985352	0.998013 0.985352	0.00583157 0.991211	0.0116909 0.991211	0.992154 0.991211	0.998013 0.991211	
+			}
+		}
+		visible_on idle
+	}
+}
+
