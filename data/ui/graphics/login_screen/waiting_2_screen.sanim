@@ -1,0 +1,51 @@
+﻿source_file  Y:/art/source/ui/graphics/spectate/spectate.ma
+//by sergey_mitryaev
+//at Wed Mar 07 16:34:34 2012
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object blackout
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			anchor "C"
+			pos 592.253 296.855
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
