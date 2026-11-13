@@ -1,0 +1,77 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Mon Aug 26 17:27:54 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object count
+	{
+		defaults
+		{
+			pos 0 3
+			opacity 255
+			color 0xffd1f0ff
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "34241234234243"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 234 3
+			effect "ui\graphics\atlas\update_ag_progr_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object count3
+	{
+		defaults
+		{
+			pos 150 3
+			opacity 255
+			color 0xffff8900
+			size 300 30
+			effect ""
+			alignment "LM"
+			sampleText "34241234234243"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 234 34
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
