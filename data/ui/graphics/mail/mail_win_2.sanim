@@ -1,0 +1,159 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by sergey_mitryaev
+//at Thu Jan 26 12:57:29 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1.5
+	}
+	anim idle_3
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 323 460
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_3
+	}
+	object descrip
+	{
+		defaults
+		{
+			pos 8 8
+			opacity 255
+			color 0xffffffff
+			size 308 355
+			effect "ui\graphics\mail\mail_descrip"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_3
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 163 435
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_3
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 4 435
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_3
+	}
+	object btn_3
+	{
+		defaults
+		{
+			pos 87 435
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_3
+	}
+	object attach
+	{
+		defaults
+		{
+			pos 8 357
+			opacity 255
+			color 0xffffffff
+			size 308 64
+			effect "ui\graphics\mail\mail_attach"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		anim idle_3 obj_posc
+		{
+			1 
+			8 337
+		}
+	}
+	object price
+	{
+		defaults
+		{
+			pos 8 411
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "adfasfasfsdf"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_3
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	318 -0	324 -0	0 6	6 6	318 6	324 6	0 454.727	6 454.727	318 454.727	324 454.727	0 463.273	6 463.273	318 463.273	324 463.273	
+				0.228518 0.202199	0.234378 0.202199	0.273391 0.202199	0.27925 0.202199	0.228518 0.208058	0.234378 0.208058	0.273391 0.208058	0.27925 0.208058	0.228518 0.244141	0.234378 0.244141	0.273391 0.244141	0.27925 0.244141	0.228518 0.252959	0.234378 0.252959	0.273391 0.252959	0.27925 0.252959	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on idle_3
+	}
+}
+
