@@ -1,0 +1,282 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_3.ma"
+//by sergey_mitryaev
+//at Wed Jun 07 14:40:51 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 18
+
+objects 15
+{
+	object load_modules
+	{
+		defaults
+		{
+			pos 325 181.992
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 760 470
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object product_list
+	{
+		defaults
+		{
+			pos 239 127
+			opacity 255
+			color 0xffffffff
+			size 430 340
+			effect "ui\graphics\equip_3\prod_win_3_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6.06577 3
+			opacity 255
+			color 0xffffffff
+			size 250 21
+			effect ""
+			alignment "LT"
+			sampleText "НАзвание "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object modul_bg
+	{
+		defaults
+		{
+			pos 0 470
+			opacity 255
+			color 0xffffffff
+			size 56 64
+			effect "ui\graphics\equip_2\prod_modul_bg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 100
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tree
+	{
+		defaults
+		{
+			pos 6 31
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\shop\shop_tree_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object note
+	{
+		defaults
+		{
+			pos 9 358
+			opacity 255
+			color 0xffffdeb3
+			size 220 100
+			effect ""
+			alignment "LB"
+			sampleText "НАзвание "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 742 2
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title6
+	{
+		defaults
+		{
+			pos 316 280
+			opacity 255
+			color 0xffffffff
+			size 350 21
+			effect ""
+			alignment "CM"
+			sampleText "Нет предметов для торговли"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object icon_7
+	{
+		defaults
+		{
+			pos 236.297 31
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip_3\prod_item_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object reload
+	{
+		defaults
+		{
+			pos 723 95
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\clan\lidboard_btn_3"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object chek_box
+	{
+		defaults
+		{
+			pos 236.297 99
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect "ui\graphics\login_screen\chek_box_nda"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object filtr_input
+	{
+		defaults
+		{
+			pos 508 99
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect "ui\graphics\clan\recruit_input"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title11
+	{
+		defaults
+		{
+			pos 352 99
+			opacity 255
+			color 0xffffffff
+			size 150 21
+			effect ""
+			alignment "RM"
+			sampleText "фильтр"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	754 -0	760 -0	0 6	6 6	754 6	760 6	0 465.5	6 465.5	754 465.5	760 465.5	0 471.5	6 471.5	754 471.5	760 471.5	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				235 125.339	241 125.339	730 125.339	736 125.339	235 131.339	241 131.339	730 131.339	736 131.339	235 458.5	241 458.5	730 458.5	736 458.5	235 464.5	241 464.5	730 464.5	736 464.5	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 26.1203	760 26.1203	0 27.8797	760 27.8797	
+				0.0566406 0.140625	0.078125 0.140625	0.0566406 0.142578	0.078125 0.142578	
+			}
+		}
+		visible_on idle
+	}
+}
+
