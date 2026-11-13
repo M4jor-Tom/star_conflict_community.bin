@@ -1,0 +1,177 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Mon Mar 18 16:04:32 2013
+
+
+animations 6
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 73
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on idle_2
+		visible_on over_2
+		visible_on press_2
+	}
+	object waiting
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 73
+			effect "ui\graphics\hangar\ship_change_btn_waiting"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on idle_2
+		visible_on over_2
+		visible_on press_2
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	17.5682 -0	23.5682 -0	0 6	6 6	17.5682 6	23.5682 6	0 67.8901	6 67.8901	17.5682 67.8901	23.5682 67.8901	0 73.8901	6 73.8901	17.5682 73.8901	23.5682 73.8901	
+				0.0263565 0.138746	0.0263565 0.132886	0.0263566 0.119955	0.0263566 0.114095	0.0204972 0.138746	0.0204972 0.132886	0.0204972 0.119955	0.0204972 0.114095	0.00769228 0.138746	0.00769228 0.132886	0.00769228 0.119955	0.00769228 0.114095	0.00183287 0.138746	0.0018329 0.132886	0.0018329 0.119955	0.00183287 0.114095	
+				0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on idle_2
+		visible_on over_2
+		visible_on press_2
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				2.68925 26.4143	22.6893 26.4143	2.68925 46.4143	22.6893 46.4143	
+				0.465801 0.020339	0.465801 0.0398703	0.44627 0.020339	0.44627 0.0398703	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim press sp_posc
+		{
+			1 
+			5.55847 26.4143	25.5585 26.4143	5.55847 46.4143	25.5585 46.4143	
+		}
+		anim idle_2 sp_uvc
+		{
+			1 
+			0.465801 0.0392349	0.465801 0.0587662	0.44627 0.0392349	0.44627 0.0587662	
+		}
+		anim over_2 sp_uvc
+		{
+			1 
+			0.465801 0.0392349	0.465801 0.0587662	0.44627 0.0392349	0.44627 0.0587662	
+		}
+		anim press_2 sp_posc_uvc
+		{
+			1 1 
+			-0.488066 26.4143	19.5119 26.4143	-0.488066 46.4143	19.5119 46.4143	
+			0.465801 0.0392349	0.465801 0.0587662	0.44627 0.0392349	0.44627 0.0587662	
+		}
+	}
+	sprite sp12
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	17.5682 -0	23.5682 -0	0 6	6 6	17.5682 6	23.5682 6	0 67.8901	6 67.8901	17.5682 67.8901	23.5682 67.8901	0 73.8901	6 73.8901	17.5682 73.8901	23.5682 73.8901	
+				0.0528233 0.138746	0.0528233 0.132886	0.0528233 0.119955	0.0528233 0.114095	0.046964 0.138746	0.046964 0.132886	0.046964 0.119955	0.046964 0.114095	0.034159 0.138746	0.034159 0.132886	0.034159 0.119955	0.034159 0.114095	0.0282996 0.138746	0.0282997 0.132886	0.0282997 0.119955	0.0282996 0.114095	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+		visible_on idle_2
+		anim over_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press_2
+	}
+}
+
