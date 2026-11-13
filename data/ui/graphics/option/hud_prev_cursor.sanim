@@ -1,0 +1,197 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Fri Jan 17 10:00:51 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 12
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 116
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object center_1
+	{
+		defaults
+		{
+			pos 316.676 54
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object center_2
+	{
+		defaults
+		{
+			pos 390.906 87.77
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object center_3
+	{
+		defaults
+		{
+			pos 74 58
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object radius
+	{
+		defaults
+		{
+			pos 307.811 126.738
+			opacity 255
+			color 0xffffffff
+			size 30 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ship_1
+	{
+		defaults
+		{
+			pos 276.092 34.6559
+			opacity 255
+			color 0xffffffff
+			size 82 42
+			effect "ui\graphics\option\hud_prev_ship_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ship_2
+	{
+		defaults
+		{
+			pos 398.553 36.4303
+			opacity 255
+			color 0xffffffff
+			size 42 42
+			effect "ui\graphics\option\hud_prev_ship_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object radius_ship_1
+	{
+		defaults
+		{
+			pos 426.534 127.172
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object radius_ship_2
+	{
+		defaults
+		{
+			pos 389.295 127.742
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object base
+	{
+		defaults
+		{
+			pos 149 13
+			opacity 255
+			color 0xffffffff
+			size 84 70
+			effect "ui\graphics\option\hud_prev_base"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object center_ship_2
+	{
+		defaults
+		{
+			pos 418.983 57
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object center_base
+	{
+		defaults
+		{
+			pos 191 46
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices_nc
+			{
+				0 -0	478 -0	0 116	478 116	
+				0 0.421875	0.933594 0.421875	0 0.648438	0.933594 0.648438	
+			}
+		}
+		visible_on idle
+	}
+}
+
