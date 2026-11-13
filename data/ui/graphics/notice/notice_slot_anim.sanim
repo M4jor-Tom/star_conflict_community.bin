@@ -1,0 +1,75 @@
+﻿source_file  Y:/art/source/ui/graphics/notice/notice.ma
+//by sergey_mitryaev
+//at Mon Aug 13 17:09:37 2012
+
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1.5
+	}
+	anim show
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim hide
+	{
+		mode once
+		cycle_time 0.3
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object slot_anim
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "CM"
+			sampleText "Здесь анимируется альфа"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_op
+		{
+			11 
+			0
+			7
+			26
+			55
+			89
+			127
+			165
+			199
+			228
+			247
+			255
+		}
+		anim hide obj_op
+		{
+			11 
+			255
+			247
+			228
+			199
+			165
+			127
+			89
+			55
+			26
+			7
+			0
+		}
+	}
+}
+
