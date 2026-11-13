@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Tue Oct 29 18:23:37 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object progr_prop_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 190 30
+			effect "ui\graphics\equip_1080\node_progr_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progr_prop_2
+	{
+		defaults
+		{
+			pos 0 31
+			opacity 255
+			color 0xffffffff
+			size 190 30
+			effect "ui\graphics\equip_1080\node_progr_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progr_prop_3
+	{
+		defaults
+		{
+			pos 0 62
+			opacity 255
+			color 0xffffffff
+			size 190 30
+			effect "ui\graphics\equip_1080\node_progr_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progr_prop_4
+	{
+		defaults
+		{
+			pos 0 93
+			opacity 255
+			color 0xffffffff
+			size 190 30
+			effect "ui\graphics\equip_1080\node_progr_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 200
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
