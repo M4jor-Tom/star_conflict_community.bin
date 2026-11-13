@@ -1,0 +1,95 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Thu Nov 01 17:32:30 2012
+
+
+animations 2
+{
+	anim freind
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 260 150
+			effect ""
+			alignment "LT"
+		}
+		visible_on freind
+		visible_on enemy
+	}
+	object value_1
+	{
+		defaults
+		{
+			pos 3.64622 2.74135
+			opacity 255
+			color 0xffffffff
+			size 100 40
+			effect ""
+			alignment "LT"
+			sampleText "fdsfjmup"
+			font "Tiny"
+		}
+		visible_on freind
+		visible_on enemy
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite target_window
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/target_window.tif"
+			anchor "LT"
+			vertices_nc
+			{
+				0 -0	260 -0	0 150	260 150	
+				1.02445e-008 0	1 0	1.02445e-008 1	1 1	
+			}
+		}
+		visible_on freind
+		visible_on enemy
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "LT"
+			vertices_nc
+			{
+				0.0129204 0.0129156	10.0129 0.0129156	250 0.0129156	260 0.0129156	0.0129204 10.0129	10.0129 10.0129	250 10.0129	260 10.0129	0.0129204 140	10.0129 140	250 140	260 140	0.0129204 150	10.0129 150	250 150	260 150	
+				0.960052 0.420934	0.969817 0.420934	0.988317 0.420934	0.998083 0.420934	0.960052 0.411168	0.969817 0.411168	0.988317 0.411168	0.998083 0.411168	0.960052 0.392499	0.969817 0.392499	0.988317 0.392499	0.998083 0.392499	0.960052 0.382733	0.969817 0.382733	0.988317 0.382733	0.998083 0.382733	
+			}
+		}
+		visible_on freind
+		visible_on enemy
+	}
+}
+
