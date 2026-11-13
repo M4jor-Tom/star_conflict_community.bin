@@ -1,0 +1,62 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Mon Jun 02 14:36:31 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos -2 -0
+			opacity 255
+			color 0xffffffff
+			size 708 164
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 2 -0
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\recruit_list_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 354 -0
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\recruit_list_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
