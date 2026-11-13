@@ -1,0 +1,103 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Thu Nov 28 13:02:57 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object text_buy
+	{
+		defaults
+		{
+			pos 8 35
+			opacity 255
+			color 0xffff2700
+			size 120 15
+			effect ""
+			alignment "CM"
+			sampleText "В БОЮ!!"
+			font "Tiny_outl"
+			blend color_add
+		}
+		anim idle obj_col
+		{
+			11
+			0xffff2700
+			0xfffe2500
+			0xfffb2300
+			0xfff62100
+			0xffed1e00
+			0xffe01c00
+			0xffce1a00
+			0xffb71700
+			0xff9a1500
+			0xff761300
+			0xff4a1000
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName460
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				1.25643 85.5861	136.915 85.5861	1.25643 0.738033	136.915 0.738033	
+				0.288086 0.863281	0.291016 0.863281	0.288086 0.866211	0.291016 0.866211	
+				0x999d9d9d	0x999d9d9d	0x999d9d9d	0x999d9d9d	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0x999d9d9d	0x999d9d9d	0x999d9d9d	0x999d9d9d	
+			0x999d9d9d	0x999d9d9d	0x999d9d9d	0x999d9d9d	
+			0x999b9b9b	0x999b9b9b	0x999b9b9b	0x999b9b9b	
+			0x99989898	0x99989898	0x99989898	0x99989898	
+			0x99929292	0x99929292	0x99929292	0x99929292	
+			0x99898989	0x99898989	0x99898989	0x99898989	
+			0x997d7d7d	0x997d7d7d	0x997d7d7d	0x997d7d7d	
+			0x996c6c6c	0x996c6c6c	0x996c6c6c	0x996c6c6c	
+			0x99555555	0x99555555	0x99555555	0x99555555	
+			0x99393939	0x99393939	0x99393939	0x99393939	
+			0x99171717	0x99171717	0x99171717	0x99171717	
+		}
+	}
+	sprite sp85
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				13.7699 34.0438	19.7699 34.0438	116.208 34.0438	122.208 34.0438	13.7699 40.0438	19.7699 40.0438	116.208 40.0438	122.208 40.0438	13.7699 45.1684	19.7699 45.1684	116.208 45.1684	122.208 45.1684	13.7699 51.1684	19.7699 51.1684	116.208 51.1684	122.208 51.1684	
+				0.223559 0.00296903	0.229418 0.00296903	0.266694 0.00296903	0.272554 0.00296903	0.223559 0.0088284	0.229418 0.0088284	0.266694 0.0088284	0.272554 0.0088284	0.223559 0.044773	0.229418 0.044773	0.266694 0.044773	0.272554 0.044773	0.223559 0.0506324	0.229418 0.0506324	0.266694 0.0506324	0.272554 0.0506324	
+			}
+		}
+		visible_on idle
+	}
+}
+
