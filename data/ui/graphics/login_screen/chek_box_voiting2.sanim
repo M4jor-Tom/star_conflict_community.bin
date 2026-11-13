@@ -1,0 +1,201 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Fri Feb 08 14:33:41 2013
+
+
+animations 6
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim chek
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim chek_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable_chek
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 3
+{
+	object value
+	{
+		defaults
+		{
+			pos 21 1
+			opacity 255
+			color 0xffffffff
+			size 350 58
+			effect ""
+			alignment "LT"
+			sampleText "запомнить логин"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_over
+		visible_on chek
+		visible_on chek_over
+		anim disable obj_opc
+		{
+			1 
+			102
+		}
+		anim disable_chek obj_opc
+		{
+			1 
+			102
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 370 60
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_over
+		visible_on chek
+		visible_on chek_over
+		visible_on disable
+		visible_on disable_chek
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_over
+		visible_on chek
+		visible_on chek_over
+		visible_on disable
+		visible_on disable_chek
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				3.57628e-007 -1	18 -0.999999	4.17233e-007 17	18 17	
+				0.495117 0.173828	0.512695 0.173828	0.495117 0.191406	0.512695 0.191406	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on idle_over
+		visible_on chek
+		visible_on chek_over
+		anim disable sp_colc
+		{
+			1
+			0x66666666	0x66666666	0x66666666	0x66666666	
+		}
+		anim disable_chek sp_colc
+		{
+			1
+			0x66666666	0x66666666	0x66666666	0x66666666	
+		}
+	}
+	sprite objectName198
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1 3.36766e-006	17 -2.26684e-006	1 16	17 16	
+				0.496094 0.158204	0.511719 0.158204	0.496094 0.173827	0.511719 0.173827	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on chek
+		visible_on chek_over
+		anim disable sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim disable_chek sp_colc
+		{
+			1
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+		}
+	}
+	sprite objectName665
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				16.248 16	1 16	16.248 1	1 1	
+				0.352275 0.120123	0.366475 0.120123	0.352275 0.106439	0.366475 0.106439	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim idle_over sp_colc
+		{
+			1
+			0xff191919	0xff191919	0xff191919	0xff191919	
+		}
+		visible_on chek
+		anim chek_over sp_colc
+		{
+			1
+			0xff191919	0xff191919	0xff191919	0xff191919	
+		}
+		visible_on disable
+		visible_on disable_chek
+	}
+}
+
