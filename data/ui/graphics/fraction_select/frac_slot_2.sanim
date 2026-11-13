@@ -1,0 +1,342 @@
+﻿source_file "Y:/art/source/ui/graphics/fraction_select/fraction_select.ma"
+//by sergey_mitryaev
+//at Thu Sep 27 16:08:35 2012
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim __
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim fading
+	{
+		mode once
+		cycle_time 0.5
+	}
+}
+
+total_elements 8
+
+objects 3
+{
+	object title
+	{
+		defaults
+		{
+			pos 0.0746616 326.72
+			opacity 102
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "Армия Империи"
+			font "Medium"
+		}
+		visible_on idle
+		anim over obj_opc
+		{
+			1 
+			255
+		}
+		anim __ obj_opc
+		{
+			1 
+			255
+		}
+		anim fading obj_op
+		{
+			11 
+			255
+			230
+			210
+			193
+			180
+			169
+			162
+			156
+			153
+			151
+			150
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 301 473
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on __
+		visible_on fading
+	}
+	object description
+	{
+		defaults
+		{
+			pos 6.76569 348.415
+			opacity 102
+			color 0xffffffff
+			size 290 120
+			effect ""
+			alignment "CT"
+			sampleText "ddfaWD EGEGdw egfeg geg egeg|fds|d ffef f|cfee|sf fefg "
+			font "Tiny"
+		}
+		visible_on idle
+		anim over obj_opc
+		{
+			1 
+			255
+		}
+		anim __ obj_opc
+		{
+			1 
+			255
+		}
+		anim fading obj_op
+		{
+			11 
+			255
+			230
+			210
+			193
+			180
+			169
+			162
+			156
+			153
+			151
+			150
+		}
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				1.69084 0.747879	299.691 0.747879	1.69084 471.748	299.691 471.748	
+				-1.5039e-008 0	1 0	-1.5039e-008 1	1 1	
+				0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim __ sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim fading sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xcbffffff	0xcbffffff	0xcbffffff	0xcbffffff	
+			0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	
+			0x83ffffff	0x83ffffff	0x83ffffff	0x83ffffff	
+			0x6cffffff	0x6cffffff	0x6cffffff	0x6cffffff	
+			0x5cffffff	0x5cffffff	0x5cffffff	0x5cffffff	
+			0x52ffffff	0x52ffffff	0x52ffffff	0x52ffffff	
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+		}
+	}
+	sprite dfeee10
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				299.459 0.702507	2.20728 0.702507	299.459 1.56889	2.20728 1.56889	
+				0.233533 0.0555255	0.237641 0.0555255	0.233533 0.0539837	0.237641 0.0539837	
+				0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim __ sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim fading sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xcbffffff	0xcbffffff	0xcbffffff	0xcbffffff	
+			0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	
+			0x83ffffff	0x83ffffff	0x83ffffff	0x83ffffff	
+			0x6cffffff	0x6cffffff	0x6cffffff	0x6cffffff	
+			0x5cffffff	0x5cffffff	0x5cffffff	0x5cffffff	
+			0x52ffffff	0x52ffffff	0x52ffffff	0x52ffffff	
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+		}
+	}
+	sprite dfeee65
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				299.459 470.877	2.20728 470.877	299.459 471.743	2.20728 471.743	
+				0.233533 0.0555255	0.237641 0.0555255	0.233533 0.0539837	0.237641 0.0539837	
+				0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim __ sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim fading sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xcbffffff	0xcbffffff	0xcbffffff	0xcbffffff	
+			0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	
+			0x83ffffff	0x83ffffff	0x83ffffff	0x83ffffff	
+			0x6cffffff	0x6cffffff	0x6cffffff	0x6cffffff	
+			0x5cffffff	0x5cffffff	0x5cffffff	0x5cffffff	
+			0x52ffffff	0x52ffffff	0x52ffffff	0x52ffffff	
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+		}
+	}
+	sprite dfeee66
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1.63715 0.702538	1.63721 472.065	2.50342 0.702675	2.50342 472.065	
+				0.233533 0.0555255	0.237641 0.0555255	0.233533 0.0539837	0.237641 0.0539837	
+				0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim __ sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim fading sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xcbffffff	0xcbffffff	0xcbffffff	0xcbffffff	
+			0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	
+			0x83ffffff	0x83ffffff	0x83ffffff	0x83ffffff	
+			0x6cffffff	0x6cffffff	0x6cffffff	0x6cffffff	
+			0x5cffffff	0x5cffffff	0x5cffffff	0x5cffffff	
+			0x52ffffff	0x52ffffff	0x52ffffff	0x52ffffff	
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+		}
+	}
+	sprite dfeee67
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				298.826 0.702477	298.825 472.065	299.692 0.702614	299.692 472.065	
+				0.233533 0.0555255	0.237641 0.0555255	0.233533 0.0539837	0.237641 0.0539837	
+				0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim __ sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim fading sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xcbffffff	0xcbffffff	0xcbffffff	0xcbffffff	
+			0xa2ffffff	0xa2ffffff	0xa2ffffff	0xa2ffffff	
+			0x83ffffff	0x83ffffff	0x83ffffff	0x83ffffff	
+			0x6cffffff	0x6cffffff	0x6cffffff	0x6cffffff	
+			0x5cffffff	0x5cffffff	0x5cffffff	0x5cffffff	
+			0x52ffffff	0x52ffffff	0x52ffffff	0x52ffffff	
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+			0x49ffffff	0x49ffffff	0x49ffffff	0x49ffffff	
+		}
+	}
+}
+
