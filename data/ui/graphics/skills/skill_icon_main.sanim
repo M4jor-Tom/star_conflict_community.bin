@@ -1,0 +1,267 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 17:34:31 2014
+
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim learn
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 57 58
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+	object vol_1
+	{
+		defaults
+		{
+			pos 9.17951 42.5902
+			opacity 255
+			color 0xff98afd4
+			size 15 15
+			effect ""
+			alignment "RM"
+			sampleText "8"
+			font "Tiny"
+		}
+		visible_on active
+		anim inactive obj_colc
+		{
+			1
+			0xff5b7398
+		}
+		visible_on learn
+	}
+	object vol_2
+	{
+		defaults
+		{
+			pos 24.0269 42.5902
+			opacity 255
+			color 0xff98afd4
+			size 10 15
+			effect ""
+			alignment "CM"
+			sampleText "/"
+			font "Tiny"
+		}
+		visible_on active
+		anim inactive obj_colc
+		{
+			1
+			0xff5b7398
+		}
+		visible_on learn
+	}
+	object vol_3
+	{
+		defaults
+		{
+			pos 33.7692 42.5902
+			opacity 255
+			color 0xff98afd4
+			size 15 15
+			effect ""
+			alignment "LM"
+			sampleText "8"
+			font "Tiny"
+		}
+		visible_on active
+		anim inactive obj_colc
+		{
+			1
+			0xff5b7398
+		}
+		visible_on learn
+	}
+	object over
+	{
+		defaults
+		{
+			pos 10.5842 8.82016
+			opacity 255
+			color 0xffffffff
+			size 36 36
+			effect "ui\graphics\skills\skill_icon_over"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+	object select
+	{
+		defaults
+		{
+			pos 9.88928 7.86466
+			opacity 255
+			color 0xffffffff
+			size 36 36
+			effect "ui\graphics\skills\skill_icon_select"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+	object center
+	{
+		defaults
+		{
+			pos 28.9009 26.8221
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+	object sel_area
+	{
+		defaults
+		{
+			pos 10.5842 8.82014
+			opacity 255
+			color 0xffffffff
+			size 36 36
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				10.5842 8.82014	46.5842 8.82014	10.5842 44.8201	46.5842 44.8201	
+				0.228516 0.202148	0.279297 0.202148	0.228516 0.25293	0.279297 0.25293	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				10.5842 8.82014	46.5842 8.82014	10.5842 44.8201	46.5842 44.8201	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xa8ffffff	0xa8ffffff	0xa8ffffff	0xa8ffffff	
+		}
+		anim learn sp_colc
+		{
+			1
+			0xa8ffffff	0xa8ffffff	0xa8ffffff	0xa8ffffff	
+		}
+	}
+	sprite objectName822
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				10.5842 8.82014	46.5842 8.82014	10.5842 44.8201	46.5842 44.8201	
+				0.230469 0.00878906	0.265625 0.00878906	0.230469 0.0439453	0.265625 0.0439453	
+				0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	
+			}
+		}
+		visible_on inactive
+	}
+	sprite objectName8301
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				10.5842 8.82014	46.5842 8.82014	10.5842 44.8201	46.5842 44.8201	
+				0.0810547 0.00488281	0.116211 0.00488281	0.0810547 0.0400391	0.116211 0.0400391	
+				0xffa6a6a6	0xffa6a6a6	0xffa6a6a6	0xffa6a6a6	
+			}
+		}
+		visible_on learn
+	}
+	sprite objectName302
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				8.58418 43.6771	48.5842 43.6771	8.58418 57.6771	48.5842 57.6771	
+				0.0546875 0.140625	0.0791016 0.140625	0.0546875 0.15625	0.0791016 0.15625	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+	}
+}
+
