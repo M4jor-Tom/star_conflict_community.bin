@@ -1,0 +1,115 @@
+﻿source_file "Y:/art/source/ui/graphics/bzs/bzs.ma"
+//by sergey_mitryaev
+//at Wed Dec 10 19:03:34 2014
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 340 22
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on squad
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 340 22
+			effect "ui\graphics\tournament\tourn_line_slot_bg"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on squad
+	}
+	object sq_mark_r
+	{
+		defaults
+		{
+			pos 309 5
+			opacity 255
+			color 0xffffffff
+			size 12 12
+			effect "ui\graphics\tournament\tourn_sq_mark_r"
+			alignment "LM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim squad obj_colc
+		{
+			1
+			0xff00ff00
+		}
+	}
+	object text24
+	{
+		defaults
+		{
+			pos 146 1
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "RM"
+			sampleText "90"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim squad obj_colc
+		{
+			1
+			0xff00ff00
+		}
+	}
+	object text25
+	{
+		defaults
+		{
+			pos 5 1
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LM"
+			sampleText "WErer ryryy "
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim squad obj_colc
+		{
+			1
+			0xff00ff00
+		}
+	}
+}
+
