@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills_2.ma"
+//by sergey_mitryaev
+//at Wed Sep 03 17:10:31 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp23
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-1 -1	5 -1	211 -1	217 -1	-1 5	5 5	211 5	217 5	-1 137	5 137	211 137	217 137	-1 143	5 143	211 143	217 143	
+				0.0839846 0.643555	0.0898438 0.643555	0.103516 0.643555	0.109375 0.643555	0.0839844 0.649414	0.0898438 0.649414	0.103516 0.649414	0.109375 0.649414	0.0839843 0.663086	0.0898437 0.663086	0.103516 0.663086	0.109375 0.663086	0.0839843 0.668945	0.0898437 0.668945	0.103516 0.668945	0.109375 0.668945	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
