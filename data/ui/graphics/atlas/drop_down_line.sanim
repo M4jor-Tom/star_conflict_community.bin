@@ -1,0 +1,60 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Mon May 21 15:02:42 2018
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos 8 7
+			opacity 255
+			color 0xff64727d
+			size 230 30
+			effect ""
+			alignment "LM"
+			sampleText "Сортировать"
+			font "Medium"
+		}
+		visible_on idle
+		anim select obj_colc
+		{
+			1
+			0xffb3ccf8
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 250 44
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+	}
+}
+
