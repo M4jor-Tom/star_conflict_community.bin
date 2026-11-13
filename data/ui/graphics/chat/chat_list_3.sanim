@@ -1,0 +1,410 @@
+﻿source_file "Y:/art/source/ui/graphics/chat/chat.ma"
+//by sergey_mitryaev
+//at Thu Jul 13 18:59:24 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 27
+
+objects 27
+{
+	object btn_x
+	{
+		defaults
+		{
+			pos 393 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x2
+	{
+		defaults
+		{
+			pos 374 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\chat\chat_btn_3"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object alpha
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 127
+			color 0xffffffff
+			size 430 408
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 430 420
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 403 50
+			opacity 255
+			color 0xffffffff
+			size 16 332
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object cc_system
+	{
+		defaults
+		{
+			pos 513.877 62.6265
+			opacity 255
+			color 0xffffff00
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_system"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_ignored
+	{
+		defaults
+		{
+			pos 513.877 83.2671
+			opacity 255
+			color 0xffff0000
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_ignored"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_say
+	{
+		defaults
+		{
+			pos 513.877 104.768
+			opacity 255
+			color 0xffdcdcdc
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_say"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_party
+	{
+		defaults
+		{
+			pos 513.877 126.268
+			opacity 255
+			color 0xff8cbbff
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_party"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_enemy
+	{
+		defaults
+		{
+			pos 513.877 147.769
+			opacity 255
+			color 0xffff6967
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_enemy"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_raid
+	{
+		defaults
+		{
+			pos 513.877 170.13
+			opacity 255
+			color 0xffff8700
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_raid"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_guild
+	{
+		defaults
+		{
+			pos 513.877 191.63
+			opacity 255
+			color 0xff6ec434
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_guild"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_yell
+	{
+		defaults
+		{
+			pos 513.877 213.131
+			opacity 255
+			color 0xffffe700
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_yell"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_whisper
+	{
+		defaults
+		{
+			pos 513.877 236.352
+			opacity 255
+			color 0xffff80ff
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_whisper"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_channel_join
+	{
+		defaults
+		{
+			pos 513.877 258.712
+			opacity 255
+			color 0xffffa9a9
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_join"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_channel_leave
+	{
+		defaults
+		{
+			pos 513.877 281.933
+			opacity 255
+			color 0xffc57d80
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_leave"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_channel_list
+	{
+		defaults
+		{
+			pos 513.877 304.294
+			opacity 255
+			color 0xffc17d7d
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_list"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_channel_notice
+	{
+		defaults
+		{
+			pos 513.877 328.374
+			opacity 255
+			color 0xffbebebe
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_notice"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 12 52
+			opacity 255
+			color 0xffffffff
+			size 374 330
+			effect ""
+			alignment "LT"
+			sampleText "dfwfwfwfw"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_channel_butlog
+	{
+		defaults
+		{
+			pos 506.069 354.822
+			opacity 255
+			color 0xff009a02
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_notice"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bookmark
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 370 24
+			effect "ui\graphics\chat\chat_bookmark_main"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object angle_btn
+	{
+		defaults
+		{
+			pos 412 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\angle_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object input4
+	{
+		defaults
+		{
+			pos 7 391
+			opacity 255
+			color 0xffffffff
+			size 356 25
+			effect "ui\graphics\chat\chat_input_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self_max
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1200 600
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 430 150
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self_default
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 430 420
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object frame_text
+	{
+		defaults
+		{
+			pos 7.86326 47.8633
+			opacity 255
+			color 0xffffffff
+			size 414 338
+			effect ""
+			alignment "LT"
+			sampleText "dfwfwfwfw"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
