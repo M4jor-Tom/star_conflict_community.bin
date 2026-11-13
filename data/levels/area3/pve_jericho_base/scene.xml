@@ -1,0 +1,561 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="pve_jericho_base; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" additionalColorRemapAnimTime="1.000" battlefieldRadius="1800.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" worldViewRotation="180.000" />
+  <EntityContainer>
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-41.929 2533.341 -451.284" Rot="0.652 -0.215 0.201 0.698" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="mobile_spawn1" Def="Logic_SpawnArea" relationshipGroup="2" Pos="-618.059 130.729 0.711" Rot="0.005 -0.722 0.027 0.692" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group1" Def="Logic_SpawnAgentWave_Group6" Pos="-1153.884 -463.511 934.298" Rot="-0.087 0.276 0.035 0.957" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Counter1" Def="Logic_Counter" Pos="320.000 320.000 120.000" current_value="0.000" max_value="1.000" min_value="-1.000">
+      <ActionList Name="m_onChangedValue">
+        <FireAction Target="PirateAvanpost2" Action="FullActivate" Params="1" />
+      </ActionList>
+      <ActionList Name="m_onReachedMaxValue" Num="25">
+        <FireAction Target="SpaceShield1" Action="Fadeout" />
+        <FireAction Target="AttachEffect1" Action="Remove" />
+        <FireAction Target="AttachEffect2" Action="Remove" />
+        <FireAction Target="AttachEffect3" Action="Remove" />
+        <FireAction Target="AttachEffect4" Action="Remove" />
+        <FireAction Target="AttachEffect5" Action="Remove" />
+        <FireAction Target="AttachEffect6" Action="Remove" />
+        <FireAction Target="AttachEffect7" Action="Remove" />
+        <FireAction Target="AttachEffect8" Action="Remove" />
+        <FireAction Target="AttachEffect9" Action="Remove" />
+        <FireAction Target="AttachEffect10" Action="Remove" />
+        <FireAction Target="AttachEffect11" Action="Remove" />
+        <FireAction Target="AttachEffect12" Action="Remove" />
+        <FireAction Target="AttachEffect13" Action="Remove" />
+        <FireAction Target="AttachEffect14" Action="Remove" />
+        <FireAction Target="AttachEffect15" Action="Remove" />
+        <FireAction Target="AttachEffect16" Action="Remove" />
+        <FireAction Target="AttachEffectJer1" Action="Remove" />
+        <FireAction Target="AttachEffectJer2" Action="Remove" />
+        <FireAction Target="AttachEffectJer3" Action="Remove" />
+        <FireAction Target="AttachEffectJer4" Action="Remove" />
+        <FireAction Target="AttachEffectJer5" Action="Remove" />
+        <FireAction Target="AttachEffectJer6" Action="Remove" />
+        <FireAction Target="AttachEffectJer7" Action="Remove" />
+        <FireAction Target="AttachEffect17" Action="Remove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EntityBuilderTrigger1" Def="Logic_EntityBuilderTrigger" Pos="44.410 -197.208 -986.105" Rot="0.001 -0.105 -0.005 0.994" buildEntityName="PoliceTurret1" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="Group3" Def="Logic_SpawnAgentWave_Group2" Pos="-753.865 -94.692 -199.058" Rot="-0.001 -0.701 -0.082 0.708" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Holder1" Def="Platform_Turret_Team1_Pve_Jericho" Pos="-100.823 -208.586 -1193.284" Rot="0.000 0.980 0.000 -0.198" />
+    <Entity Name="LootPoint_Base6" Def="Helpers_TagPoint" Pos="-70.283 855.051 1112.352" Rot="0.257 0.000 0.000 0.966" type="0" />
+    <Entity Name="Counter2" Def="Logic_Counter" Pos="320.180 324.620 116.590" current_value="0.000" max_value="1.000" min_value="-1.000">
+      <ActionList Name="m_onChangedValue">
+        <FireAction Target="PirateAvanpost3" Action="FullActivate" Params="2" />
+      </ActionList>
+      <ActionList Name="m_onReachedMaxValue">
+        <FireAction Target="SpaceShield2" Action="Fadeout" Delay="4.50000" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Group2" Def="Logic_SpawnAgentWave_Group1" Pos="270.277 -152.536 236.088" Rot="-0.050 0.863 0.086 0.495" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Spawn_AI15" Def="Helpers_TagPoint" Pos="270.079 218.355 -1446.934" type="0" />
+    <Entity Name="AsteroidPath1" Def="PathObject" Pos="997.414 -113.416 -106.732" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="997.414 -113.416 -106.732" />
+      <Point p="75.692 -98.047 343.267" />
+    </Entity>
+    <Entity Name="JumpgateStation_scene" Def="OpenWorld_Jericho_JStation01" Pos="822.699 -70.586 -341.677" Rot="0.000 -0.498 0.000 0.867" />
+    <Entity Name="BigActiveJumpgate_scene" Def="OpenWorld_BigActiveJumpgateJer" Pos="950.528 -106.001 -69.637" Rot="0.000 0.862 0.000 0.507" />
+    <Entity Name="EnergyGenerator1" Def="PvE_Gen_MainGateBlocker" Pos="911.927 -110.780 -274.387" Rot="0.682 0.185 -0.185 0.682">
+      <ActionList Name="m_deadEvent" Num="8">
+        <FireAction Target="Asteroid_scene" Action="FullActivate" Delay="3.00000" />
+        <FireAction Target="FlareFX" Action="Enable" Delay="3.00000" />
+        <FireAction Target="FlareFX" Action="Disable" Delay="3.30000" />
+        <FireAction Target="Asteroid_scene" Action="EmitDeathEffectAndRemove" Delay="32.30000" />
+        <FireAction Target="Counter1" Action="Add" Params="1" Delay="32.30000" />
+        <FireAction Target="PirateAvanpost2" Action="EnableAssociatedSpawn" Params="1" />
+        <FireAction Target="AmbientSoundSpot1" Action="Play" Delay="32.30000" />
+        <FireAction Target="AmbientSoundSpot2" Action="Play" Delay="3.00000" />
+      </ActionList>
+    </Entity>
+    <Entity Name="FlareFX" Def="Effects_Superflare" Pos="1023.633 -119.180 -49.517" maxViewDist="2500.000" start_disabled="1" size="100.000000" nebulosity="1.000000" vis_angle="179.999985" base_color="0x5C0693CE" />
+    <Entity Name="Spawn_AI19" Def="Helpers_TagPoint" Pos="-880.601 -156.975 -1490.518" type="0" />
+    <Entity Name="Spawn_AI18" Def="Helpers_TagPoint" Pos="161.159 -125.260 -1734.718" type="0" />
+    <Entity Name="Spawn_AI17" Def="Helpers_TagPoint" Pos="-44.564 -125.860 -1764.613" type="0" />
+    <Entity Name="Spawn_AI16" Def="Helpers_TagPoint" Pos="50.678 227.163 -1462.162" type="0" />
+    <Entity Name="PirateAvanpost2" Def="PvE_JerichoAvanpost" Pos="-133.526 -220.236 544.693" Rot="0.000 0.711 0.000 0.704">
+      <ActionList Name="m_deadEvent" Num="17">
+        <FireAction Target="Counter2" Action="Add" Params="2" />
+        <FireAction Target="PirateAvanpost3" Action="EnableAssociatedSpawn" Params="2" />
+        <FireAction Target="PveJericho26" Action="EmitDeathEffectAndRemove" Delay="0.50000" />
+        <FireAction Target="PveJericho27" Action="EmitDeathEffectAndRemove" Delay="1.00000" />
+        <FireAction Target="PveJericho30" Action="EmitDeathEffectAndRemove" Delay="1.50000" />
+        <FireAction Target="PveJericho31" Action="EmitDeathEffectAndRemove" Delay="2.00000" />
+        <FireAction Target="PveJericho32" Action="EmitDeathEffectAndRemove" Delay="2.50000" />
+        <FireAction Target="PveJericho33" Action="EmitDeathEffectAndRemove" Delay="3.00000" />
+        <FireAction Target="PveJericho34" Action="EmitDeathEffectAndRemove" Delay="3.50000" />
+        <FireAction Target="PveJericho35" Action="EmitDeathEffectAndRemove" Delay="4.00000" />
+        <FireAction Target="PveJericho36" Action="EmitDeathEffectAndRemove" Delay="4.50000" />
+        <FireAction Target="PveJericho37" Action="EmitDeathEffectAndRemove" Delay="5.00000" />
+        <FireAction Target="PveJericho38" Action="EmitDeathEffectAndRemove" Delay="5.50000" />
+        <FireAction Target="PveJericho39" Action="EmitDeathEffectAndRemove" Delay="6.00000" />
+        <FireAction Target="PveJericho40" Action="EmitDeathEffectAndRemove" Delay="6.50000" />
+        <FireAction Target="PveJericho28" Action="EmitDeathEffectAndRemove" Delay="7.00000" />
+        <FireAction Target="PveJericho29" Action="EmitDeathEffectAndRemove" Delay="7.50000" />
+      </ActionList>
+    </Entity>
+    <Entity Name="PirateAvanpost3" Def="PvE_JerichoAvanpost" Pos="-299.194 -117.026 -147.081" Rot="0.000 1.000 0.000 -0.028">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="SpaceShield4" Action="EmitDeathEffectAndRemove" Delay="0.50000" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Team1Group1" Def="Logic_SpawnSpot_Team1Group1" Pos="-466.999 -196.220 -241.149" Rot="0.000 -0.610 0.000 0.793" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group2" Def="Logic_SpawnSpot_Team1Group2" Pos="-333.945 24.006 -1353.357" Rot="0.035 0.957 0.115 -0.265" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="AttachEffect12" Def="Object_SpaceShield_AttachEffectJer" Pos="171.510 -218.318 527.309" Rot="-0.679 0.035 0.733 0.013" />
+    <Entity Name="Spawn_AI10" Def="Helpers_TagPoint" Pos="916.187 -132.183 -776.614" type="0" />
+    <Entity Name="Spawn_AI11" Def="Helpers_TagPoint" Pos="806.819 31.236 -504.824" type="0" />
+    <Entity Name="Spawn_AI12" Def="Helpers_TagPoint" Pos="925.348 -97.742 -1092.517" type="0" />
+    <Entity Name="Spawn_AI13" Def="Helpers_TagPoint" Pos="702.465 36.904 -1119.006" type="0" />
+    <Entity Name="PveJericho26" Def="Tube_PveJericho04" Pos="-125.146 -211.329 525.726" Rot="0.000 1.000 -0.021 -0.011" />
+    <Entity Name="Holder7" Def="Platform_Turret_Team1_Pve_Jericho" Pos="125.606 -209.833 -982.256" Rot="0.000 -0.095 0.000 0.995" />
+    <Entity Name="EntityBuilderTrigger2" Def="Logic_EntityBuilderTrigger" Pos="-100.775 -200.526 -1193.742" Rot="0.000 -0.100 0.000 0.995" buildEntityName="PoliceTurret2" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="AttachEffectJer6" Def="Object_SpaceShield_AttachEffectJer" Pos="119.354 -312.420 414.841" Rot="-0.433 -0.215 0.491 0.724" />
+    <Entity Name="Holder3" Def="Platform_Turret_Team1_Pve_Jericho" Pos="-142.132 -212.591 -1105.386" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="Holder8" Def="Platform_Turret_Team1_Pve_Jericho" Pos="44.402 -205.290 -986.107" Rot="0.001 -0.105 -0.005 0.994" />
+    <Entity Name="EntityBuilderTrigger3" Def="Logic_EntityBuilderTrigger" Pos="-142.133 -204.539 -1105.380" Rot="0.005 -0.095 0.000 0.995" buildEntityName="PoliceTurret3" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="EntityBuilderTrigger4" Def="Logic_EntityBuilderTrigger" Pos="125.606 -201.813 -982.256" Rot="0.000 -0.095 0.000 0.995" buildEntityName="PoliceTurret4" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="SpaceShield1" Def="Object_SpaceShieldJericho" Pos="-95.802 -221.250 543.075" radius="269.000" intensity="1.000" tiling="1.000" />
+    <Entity Name="AttachEffect1" Def="Object_SpaceShield_AttachEffectJer" Pos="163.916 -212.749 475.653" Rot="0.063 -0.619 0.057 0.781" />
+    <Entity Name="SpaceShield2" Def="Object_SpaceShieldJericho" Pos="-317.490 -117.300 -168.600" Rot="0.000 -0.319 0.000 0.948" radius="129.000" intensity="1.000" tiling="1.000" />
+    <Entity Name="Team1Group0" Def="Logic_SpawnSpot_Team1Group0" Pos="1614.461 76.915 50.233" Rot="-0.078 0.480 0.039 0.873" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="AttachEffectJer4" Def="Object_SpaceShield_AttachEffectJer" Pos="111.854 -337.080 424.559" Rot="0.215 -0.473 -0.647 0.558" />
+    <Entity Name="AttachEffectJer5" Def="Object_SpaceShield_AttachEffectJer" Pos="125.823 -288.360 409.153" Rot="-0.422 -0.269 0.549 0.669" />
+    <Entity Name="AttachEffectJer3" Def="Object_SpaceShield_AttachEffectJer" Pos="120.604 -312.450 421.466" Rot="0.195 -0.456 -0.653 0.572" />
+    <Entity Name="Team1Group3" Def="Logic_SpawnSpot_Team1Group0" Pos="1613.887 93.691 38.705" Rot="-0.076 0.438 0.043 0.895" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group4" Def="Logic_SpawnSpot_Team1Group0" Pos="1620.645 90.526 62.793" Rot="-0.079 0.502 0.037 0.861" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="AttachEffect10" Def="Object_SpaceShield_AttachEffectJer" Pos="73.541 -213.350 335.809" Rot="0.066 -0.324 0.015 0.944" />
+    <Entity Name="Group14" Def="Logic_SpawnAgentWave_Group6" Pos="-563.356 -180.120 468.716" Rot="-0.213 0.834 0.130 0.491" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group18" Def="Logic_SpawnAgentWave_Group2" Pos="-328.168 -526.623 -558.023" Rot="-0.066 0.979 -0.185 0.057" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group17" Def="Logic_SpawnAgentWave_Group2" Pos="18.615 7.897 -437.425" Rot="0.013 0.948 0.008 0.319" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group15" Def="Logic_SpawnAgentWave_Group1" Pos="327.538 -74.611 892.983" Rot="-0.086 0.488 0.016 0.868" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group16" Def="Logic_SpawnAgentWave_Group1" Pos="162.167 -110.599 1011.407" Rot="-0.060 0.171 0.026 0.983" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="AttachEffect11" Def="Object_SpaceShield_AttachEffectJer" Pos="170.229 -215.470 527.012" Rot="0.067 -0.679 0.052 0.729" />
+    <Entity Name="AttachEffect9" Def="Object_SpaceShield_AttachEffectJer" Pos="72.166 -222.710 338.075" Rot="-0.340 0.027 0.940 0.026" />
+    <Entity Name="AttachEffect2" Def="Object_SpaceShield_AttachEffectJer" Pos="168.635 -213.770 500.403" Rot="0.065 -0.653 0.054 0.752" />
+    <Entity Name="AttachEffect3" Def="Object_SpaceShield_AttachEffectJer" Pos="168.416 -220.690 500.278" Rot="-0.657 0.035 0.753 0.014" />
+    <Entity Name="AttachEffect4" Def="Object_SpaceShield_AttachEffectJer" Pos="163.760 -222.605 474.950" Rot="-0.619 0.034 0.785 0.016" />
+    <Entity Name="Group13" Def="Logic_SpawnAgentWave_Group6" Pos="-911.888 -381.593 881.192" Rot="-0.048 -0.038 0.112 0.992" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Spawn_AI24" Def="Helpers_TagPoint" Pos="475.278 -701.106 137.932" type="0" />
+    <Entity Name="JStation2" Def="OpenWorld_Jericho_JStation09" Pos="-1267.875 -117.530 1069.633" Rot="0.000 -0.380 0.000 0.925" />
+    <Entity Name="LootPoint18" Def="Helpers_TagPoint" Pos="1055.776 -146.676 161.090" type="0" />
+    <Entity Name="Jericho32" Def="Turret_Team2_Pve_JerichoBase" Pos="986.951 -164.150 -260.448" Rot="0.000 -0.592 0.000 0.806" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder45" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="JStation4" Def="OpenWorld_Jericho_JStation12" Pos="817.585 -523.778 338.137" Rot="0.000 -0.601 0.000 0.799" />
+    <Entity Name="AmbientSoundSpot2" Def="Sound_AmbientSoundSpot" Pos="999.836 -111.506 -102.306" soundname="sound/raid/big_enemy_warp" max_distance="20.000" volume="1.000" flags="3" start_silent="1" />
+    <Entity Name="JerichoControlStationA1" Def="VitalPoint_PvE_Jerichobase_ControlStationA" Pos="-201.147 -179.431 -564.221" Rot="0.000 -0.115 0.000 0.993" Skin="s2">
+      <ActionList Name="m_capturedEvent" Num="2">
+        <FireAction Target="SpaceShield3" Action="Fadeout" />
+        <FireAction Target="SpaceShield6" Action="FullDeactivate" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Spawn_AI23" Def="Helpers_TagPoint" Pos="1077.622 -431.792 749.151" type="0" />
+    <Entity Name="Team1Group5" Def="Logic_SpawnSpot_Team1Group0" Pos="1625.556 74.679 75.811" Rot="-0.082 0.544 0.034 0.834" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Jericho11" Def="Turret_Team2_Big_PvE_JerichoBase" Pos="-57.208 -98.422 -709.599" Rot="-0.130 0.000 0.992 0.000" do_attack_cargoship="0" />
+    <Entity Name="AttachEffect5" Def="Object_SpaceShield_AttachEffectJer" Pos="92.291 -212.140 352.809" Rot="0.067 -0.362 0.012 0.930" />
+    <Entity Name="AttachEffect6" Def="Object_SpaceShield_AttachEffectJer" Pos="49.979 -214.980 319.732" Rot="0.052 -0.291 0.013 0.955" />
+    <Entity Name="AttachEffect7" Def="Object_SpaceShield_AttachEffectJer" Pos="93.448 -223.987 353.981" Rot="-0.373 0.028 0.927 0.025" />
+    <Entity Name="AttachEffect8" Def="Object_SpaceShield_AttachEffectJer" Pos="52.073 -220.700 320.373" Rot="-0.269 0.025 0.962 0.028" />
+    <Entity Name="Jericho10" Def="Turret_Team2_Big_PvE_JerichoBase" Pos="-252.744 -98.435 -758.501" Rot="1.000 0.000 0.000 0.000" do_attack_cargoship="0" />
+    <Entity Name="Team1Group6" Def="Logic_SpawnSpot_Team1Group1" Pos="-470.896 -212.359 -219.110" Rot="0.000 -0.784 0.000 0.621" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group7" Def="Logic_SpawnSpot_Team1Group1" Pos="-457.512 -211.188 -242.625" Rot="0.000 -0.634 0.000 0.774" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group8" Def="Logic_SpawnSpot_Team1Group1" Pos="-487.983 -197.650 -220.639" Rot="0.000 -0.820 0.000 0.573" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group9" Def="Logic_SpawnSpot_Team1Group2" Pos="-317.287 3.620 -1350.004" Rot="0.035 0.957 0.115 -0.265" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group10" Def="Logic_SpawnSpot_Team1Group2" Pos="-302.426 26.806 -1354.144" Rot="0.035 0.957 0.115 -0.265" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Team1Group11" Def="Logic_SpawnSpot_Team1Group2" Pos="-287.526 8.091 -1352.444" Rot="0.035 0.957 0.115 -0.265" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="LootPoint0" Def="Helpers_TagPoint" Pos="-586.637 550.796 -601.197" type="0" />
+    <Entity Name="LootPoint1" Def="Helpers_TagPoint" Pos="275.990 182.580 -835.050" type="0" />
+    <Entity Name="LootPoint2" Def="Helpers_TagPoint" Pos="13.490 149.910 -838.950" type="0" />
+    <Entity Name="LootPoint3" Def="Helpers_TagPoint" Pos="372.300 -155.700 -545.060" type="0" />
+    <Entity Name="LootPoint4" Def="Helpers_TagPoint" Pos="915.540 -87.640 -449.240" type="0" />
+    <Entity Name="LootPoint5" Def="Helpers_TagPoint" Pos="149.292 -287.147 664.598" type="0" />
+    <Entity Name="LootPoint6" Def="Helpers_TagPoint" Pos="195.390 -133.329 179.110" type="0" />
+    <Entity Name="LootPoint7" Def="Helpers_TagPoint" Pos="-50.868 -122.251 241.289" type="0" />
+    <Entity Name="LootPoint8" Def="Helpers_TagPoint" Pos="371.908 -126.296 504.114" type="0" />
+    <Entity Name="LootPoint9" Def="Helpers_TagPoint" Pos="-812.800 -456.892 868.229" type="0" />
+    <Entity Name="LootPoint10" Def="Helpers_TagPoint" Pos="379.162 -305.170 737.036" type="0" />
+    <Entity Name="LootPoint11" Def="Helpers_TagPoint" Pos="-564.277 -176.400 454.674" type="0" />
+    <Entity Name="LootPoint12" Def="Helpers_TagPoint" Pos="-715.093 -100.368 -141.100" type="0" />
+    <Entity Name="LootPoint13" Def="Helpers_TagPoint" Pos="-917.210 -174.770 -410.580" type="0" />
+    <Entity Name="LootPoint14" Def="Helpers_TagPoint" Pos="-229.850 -59.910 -1446.380" type="0" />
+    <Entity Name="LootPoint15" Def="Helpers_TagPoint" Pos="-886.008 -54.295 -1139.079" type="0" />
+    <Entity Name="LootPoint16" Def="Helpers_TagPoint" Pos="113.640 214.550 -1415.490" type="0" />
+    <Entity Name="LootPoint17" Def="Helpers_TagPoint" Pos="595.296 81.339 -986.428" type="0" />
+    <Entity Name="PoliceTurret4" Def="Turret_Team1_Pve_Jericho" Pos="125.639 -207.817 -982.294" Rot="0.000 0.670 0.000 0.742" do_attack_cargoship="1" />
+    <Entity Name="PoliceTurret3" Def="Turret_Team1_Pve_Jericho" Pos="-142.071 -210.571 -1105.339" Rot="0.005 -0.095 0.000 0.995" do_attack_cargoship="1" />
+    <Entity Name="PoliceTurret11" Def="Turret_Team1_Pve_Jericho" Pos="-562.425 -208.430 -1255.079" Rot="0.005 -0.095 0.000 0.995" do_attack_cargoship="1" />
+    <Entity Name="AttachEffectJer7" Def="Object_SpaceShield_AttachEffectJer" Pos="110.666 -336.680 421.091" Rot="-0.447 -0.229 0.473 0.724" />
+    <Entity Name="PoliceTurret2" Def="Turret_Team1_Pve_Jericho" Pos="-100.838 -206.561 -1193.215" Rot="0.000 -0.070 0.000 0.998" do_attack_cargoship="1" />
+    <Entity Name="Jericho13" Def="Turret_Team2_Big_PvE_JerichoBase" Pos="-200.709 -98.414 -747.656" Rot="0.984 0.000 0.179 0.000" do_attack_cargoship="0" />
+    <Entity Name="PoliceTurret1" Def="Turret_Team1_Pve_Jericho" Pos="44.519 -203.274 -986.153" Rot="0.001 -0.105 -0.005 0.994" do_attack_cargoship="1" />
+    <Entity Name="AttachEffect13" Def="Object_SpaceShield_AttachEffectJer" Pos="124.104 -146.070 407.231" Rot="-0.242 -0.395 0.692 0.554" />
+    <Entity Name="AttachEffect14" Def="Object_SpaceShield_AttachEffectJer" Pos="131.010 -145.900 419.403" Rot="0.476 -0.313 -0.509 0.645" />
+    <Entity Name="AttachEffect15" Def="Object_SpaceShield_AttachEffectJer" Pos="120.479 -121.480 421.559" Rot="0.483 -0.261 -0.501 0.669" />
+    <Entity Name="AttachEffect16" Def="Object_SpaceShield_AttachEffectJer" Pos="117.635 -121.730 416.263" Rot="0.707 -0.522 0.218 -0.424" />
+    <Entity Name="AttachEffect17" Def="Object_SpaceShield_AttachEffectJer" Pos="111.416 -97.970 424.059" Rot="0.500 -0.227 -0.453 0.702" />
+    <Entity Name="AttachEffectJer1" Def="Object_SpaceShield_AttachEffectJer" Pos="111.541 -98.340 423.903" Rot="-0.235 -0.460 0.728 0.451" />
+    <Entity Name="AttachEffectJer2" Def="Object_SpaceShield_AttachEffectJer" Pos="131.416 -288.190 419.216" Rot="0.266 -0.475 -0.611 0.574" />
+    <Entity Name="SpaceShield3" Def="Object_SpaceShieldJericho" Pos="-189.841 -48.771 -1095.146" radius="411.000" intensity="1.000" tiling="1.000" />
+    <Entity Name="Jericho22" Def="Turret_Team2_Pve_JerichoBase" Pos="-129.266 -228.590 -949.186" Rot="0.000 -0.104 0.000 0.995" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder33" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="RunwayJer22" Def="Effects_RunwayJer" Pos="-120.502 -176.615 -1299.830" Rot="0.014 -0.830 0.004 0.557" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="SpaceShield4" Def="Door_Pve_Team2_Jericho" GameplaysMask="4294967287" Pos="-144.125 -126.001 -305.777" Rot="0.000 -0.104 0.000 0.995" />
+    <Entity Name="SpaceShield7" Def="Door_Pve_Team2_JerichoFx" Pos="-143.101 -127.155 -305.451" Rot="0.000 0.630 0.000 0.776" />
+    <Entity Name="SpaceShield5" Def="Door_Pve_Team2_JerichoFx" Pos="-46.562 -127.139 -767.221" Rot="0.000 -0.777 0.000 0.630" />
+    <Entity Name="Jericho_holder3" Def="Platform_Turret_Team2_Pve_Jericho2" Pos="-307.872 -71.995 -620.975" Rot="1.000 0.000 0.000 0.000" />
+    <Entity Name="Holder43" Def="Platform_Turret_Team2_Pve_Jericho" Pos="-261.424 -209.370 71.296" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="Jericho30" Def="Turret_Team2_Pve_JerichoBase" Pos="-261.386 -207.381 71.285" Rot="0.000 0.994 0.000 0.110" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder43" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Jericho29" Def="Turret_Team2_Pve_JerichoBase" Pos="-535.866 -410.089 677.788" Rot="0.000 0.805 0.000 0.593" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder42" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Holder42" Def="Platform_Turret_Team2_Pve_Jericho" Pos="-535.913 -412.175 677.815" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="Group39" Def="Logic_SpawnAreaAgentWave_Group0" Pos="-168.026 -124.428 -841.897" Rot="0.000 -0.755 0.000 0.656" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="PoliceTurret12" Def="Turret_Team1_Pve_Jericho" Pos="116.391 -200.765 -848.419" Rot="0.005 -0.095 0.000 0.995" do_attack_cargoship="1" />
+    <Entity Name="EntityBuilderTrigger12" Def="Logic_EntityBuilderTrigger" Pos="118.043 -194.666 -848.258" Rot="0.005 -0.095 0.000 0.995" buildEntityName="PoliceTurret12" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="Holder41" Def="Platform_Turret_Team1_Pve_Jericho" Pos="116.353 -202.730 -848.375" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="Jericho_holder2" Def="Platform_Turret_Team2_Pve_Jericho2" Pos="-219.246 -71.979 -601.721" Rot="1.000 0.000 0.000 0.000" />
+    <Entity Name="Jericho_holder1" Def="Platform_Turret_Team2_Pve_Jericho2" Pos="-236.114 -72.426 -522.106" Rot="1.000 0.000 0.000 0.000" />
+    <Entity Name="Jericho_holder" Def="Platform_Turret_Team2_Pve_Jericho2" Pos="-294.658 -99.221 -447.087" Rot="1.000 0.000 0.000 0.000" />
+    <Entity Name="EntityBuilderTrigger11" Def="Logic_EntityBuilderTrigger" Pos="-560.789 -202.370 -1254.933" Rot="0.005 -0.095 0.000 0.995" buildEntityName="PoliceTurret11" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="Holder39" Def="Platform_Turret_Team2_Pve_Jericho" Pos="-219.480 -224.392 -875.915" Rot="0.004 -0.544 0.002 0.839" />
+    <Entity Name="Jericho28" Def="Turret_Team2_Pve_JerichoBase" Pos="-219.434 -222.381 -875.885" Rot="0.000 -0.104 0.000 0.995" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder39" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Jericho27" Def="Turret_Team2_Pve_JerichoBase" Pos="-337.136 -222.057 -1022.598" Rot="0.000 -0.104 0.000 0.995" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder38" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="EnergyGeneratorLong2" Def="PvE_Jericho_base_EnergyGenerator1" Pos="-25.688 -126.946 -703.860" Rot="0.455 -0.539 0.562 0.433">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="SpaceShield5" Action="FullDeactivate" />
+      </ActionList>
+    </Entity>
+    <Entity Name="RunwayJer25" Def="Effects_RunwayJer" Pos="-534.859 -181.498 -1173.721" Rot="0.013 -0.229 0.000 0.973" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Group31" Def="Logic_SpawnAgentWave_Group17" Pos="-132.363 -126.266 -732.817" Rot="0.000 0.621 0.000 0.784" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group30" Def="Logic_SpawnAgentWave_Group18" Pos="-266.329 -118.374 -582.015" Rot="-0.005 0.997 0.035 0.069" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Holder19" Def="Platform_Turret_Team1_Pve_Jericho" Pos="-222.567 -205.575 -1239.287" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="EntityBuilderTrigger6" Def="Logic_EntityBuilderTrigger" Pos="-220.877 -197.511 -1239.168" Rot="0.005 -0.095 0.000 0.995" buildEntityName="PoliceTurret6" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="PoliceTurret6" Def="Turret_Team1_Pve_Jericho" Pos="-222.583 -203.603 -1239.290" Rot="0.005 -0.095 0.000 0.995" do_attack_cargoship="1" />
+    <Entity Name="Holder20" Def="Platform_Turret_Team1_Pve_Jericho" Pos="211.079 -213.182 -808.487" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="Group19" Def="Logic_SpawnAgentWave_Group10" Pos="817.233 -153.111 -700.466" Rot="-0.008 0.611 -0.055 0.789" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group20" Def="Logic_SpawnAgentWave_Group10" Pos="736.821 -120.792 -577.567" Rot="-0.227 0.397 -0.370 0.808" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group21" Def="Logic_SpawnAgentWave_Group10" Pos="763.097 -269.711 -669.474" Rot="-0.096 0.368 0.182 0.907" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group22" Def="Logic_SpawnAgentWave_Group10" Pos="797.704 -172.707 -713.666" Rot="0.113 0.516 0.013 0.849" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group32" Def="Logic_SpawnAgentWave_Group12" Pos="152.380 -159.417 -1697.894" Rot="0.000 0.979 0.000 0.204" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group24" Def="Logic_SpawnAgentWave_Group11" Pos="982.172 -191.132 -1057.784" Rot="0.165 0.599 0.046 0.783" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="EntityBuilderTrigger8" Def="Logic_EntityBuilderTrigger" Pos="-486.844 -199.220 -1232.630" Rot="0.005 -0.095 0.000 0.995" buildEntityName="PoliceTurret8" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="Group26" Def="Logic_SpawnAgentWave_Group11" Pos="997.053 -264.654 -1042.516" Rot="-0.174 0.617 0.139 0.755" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group36" Def="Logic_SpawnAreaAgentWave_Group3" Pos="-773.217 -189.142 -1023.421" Rot="0.000 -0.605 0.000 0.796" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group37" Def="Logic_SpawnAreaAgentWave_Group4" Pos="230.525 -13.183 -716.388" Rot="0.000 0.319 0.000 0.948" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="PointLight1" Def="Lights_PointLight" Pos="-225.809 -107.095 -562.935" start_off="0" rad="130.00000" color="0x7658D1FA" />
+    <Entity Name="PointLight10" Def="Lights_PointLight" Pos="-313.537 -83.339 -63.096" start_off="0" rad="370.00000" color="0xA28AF8FD" />
+    <Entity Name="Jericho_holder8" Def="Platform_Turret_Team2_Pve_Jericho2" Pos="-57.263 -99.255 -709.566" Rot="1.000 0.000 0.000 0.000" />
+    <Entity Name="RunwayJer24" Def="Effects_RunwayJer" Pos="-726.530 -179.143 -1311.811" Rot="0.013 -0.229 0.000 0.973" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Jericho12" Def="Turret_Team2_Big_PvE_JerichoBase" Pos="-94.508 -98.389 -724.601" Rot="0.652 0.000 0.758 0.000" do_attack_cargoship="0" />
+    <Entity Name="Jericho_holder5" Def="Platform_Turret_Team2_Pve_Jericho2" Pos="-252.747 -99.278 -758.430" Rot="1.000 0.000 0.000 0.000" />
+    <Entity Name="Jericho_holder6" Def="Platform_Turret_Team2_Pve_Jericho2" Pos="-200.724 -99.238 -747.645" Rot="1.000 0.000 0.000 0.000" />
+    <Entity Name="Jericho_holder7" Def="Platform_Turret_Team2_Pve_Jericho2" Pos="-94.542 -99.212 -724.593" Rot="1.000 0.000 0.000 0.000" />
+    <Entity Name="Jericho_holder4" Def="Platform_Turret_Team2_Pve_Jericho2" Pos="-325.048 -71.956 -540.862" Rot="1.000 0.000 0.000 0.000" />
+    <Entity Name="Jericho5" Def="Turret_Team2_Big_PvE_JerichoBase" Pos="-294.683 -98.364 -447.044" Rot="0.996 0.000 0.090 0.000" do_attack_cargoship="0" />
+    <Entity Name="Spawn_AI14" Def="Helpers_TagPoint" Pos="412.526 39.950 -1388.049" type="0" />
+    <Entity Name="Holder40" Def="Platform_Turret_Team1_Pve_Jericho" Pos="-562.479 -210.434 -1255.050" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="Jericho9" Def="Turret_Team2_Big_PvE_JerichoBase" Pos="-236.103 -71.593 -522.075" Rot="0.979 0.000 0.204 0.000" do_attack_cargoship="0" />
+    <Entity Name="Jericho8" Def="Turret_Team2_Big_PvE_JerichoBase" Pos="-325.038 -71.123 -540.832" Rot="1.000 0.000 -0.010 0.000" do_attack_cargoship="0" />
+    <Entity Name="Jericho7" Def="Turret_Team2_Big_PvE_JerichoBase" Pos="-307.950 -71.169 -620.985" Rot="1.000 0.000 -0.015 0.000" do_attack_cargoship="0" />
+    <Entity Name="Jericho6" Def="Turret_Team2_Big_PvE_JerichoBase" Pos="-219.245 -71.162 -601.712" Rot="0.974 0.000 0.228 0.000" do_attack_cargoship="0" />
+    <Entity Name="RunwayJer31" Def="Effects_RunwayJer" Pos="-623.291 -179.831 -1260.372" Rot="0.013 -0.229 0.000 0.973" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer23" Def="Effects_RunwayJer" Pos="-150.603 -177.339 -1312.126" Rot="0.014 -0.830 0.004 0.557" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer26" Def="Effects_RunwayJer" Pos="-743.576 -180.109 -1277.694" Rot="0.013 -0.229 0.000 0.973" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer30" Def="Effects_RunwayJer" Pos="-518.044 -180.531 -1207.939" Rot="0.013 -0.229 0.000 0.973" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer28" Def="Effects_RunwayJer" Pos="-846.963 -179.420 -1329.223" Rot="0.013 -0.229 0.000 0.973" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer29" Def="Effects_RunwayJer" Pos="-640.889 -180.792 -1226.543" Rot="0.013 -0.229 0.000 0.973" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer27" Def="Effects_RunwayJer" Pos="-829.959 -178.455 -1363.339" Rot="0.013 -0.229 0.000 0.973" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Spawn_AI9" Def="Helpers_TagPoint" Pos="178.713 -36.478 -620.434" type="0" />
+    <Entity Name="SpaceShield6" Def="Door_Pve_Team2_JerichoFx" Pos="-242.809 -127.061 -682.443" Rot="0.000 -0.777 0.000 0.630" />
+    <Entity Name="AmbientSoundSpot1" Def="Sound_AmbientSoundSpot" Pos="66.354 -97.703 351.452" soundname="sound/raid/big_asteroid_explosion" max_distance="20.000" volume="1.000" flags="3" start_silent="1" />
+    <Entity Name="AmbientSoundSpot_RadarStation" Def="Sound_AmbientSoundSpot" Pos="-235.572 -111.290 -1057.992" Rot="0.000 -0.135 0.000 0.991" soundname="sound/ambient/ow_objects/radar_station" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSoundSpotJerichoLab1" Def="Sound_AmbientSoundSpot" Pos="-316.460 89.724 -745.352" Rot="0.000 -0.100 0.000 0.995" soundname="sound/ambient/ow_objects/jericho_lab" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSoundSpot_JerichoHangar" Def="Sound_AmbientSoundSpot" Pos="-227.883 -280.216 -849.003" Rot="0.000 -0.075 0.000 0.997" soundname="sound/ambient/ow_objects/jericho_hangar" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSoundSpot_LandingPlatform" Def="Sound_AmbientSoundSpot" Pos="-1015.038 -545.190 714.797" Rot="0.000 0.055 0.000 0.998" soundname="sound/ambient/ow_objects/landing_platform" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="Spawn_AI7" Def="Helpers_TagPoint" Pos="-639.681 205.605 -372.152" type="0" />
+    <Entity Name="Spawn_AI8" Def="Helpers_TagPoint" Pos="-349.916 -614.545 -681.127" type="0" />
+    <Entity Name="Group35" Def="Logic_SpawnAgentWave_Group12" Pos="24.780 -274.593 -1689.315" Rot="0.000 0.979 0.000 0.204" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Group34" Def="Logic_SpawnAgentWave_Group12" Pos="34.945 -102.034 -1745.137" Rot="0.000 0.979 0.000 0.204" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Spawn_AI2" Def="Helpers_TagPoint" Pos="-759.034 -429.931 1055.006" type="0" />
+    <Entity Name="Spawn_AI1" Def="Helpers_TagPoint" Pos="-977.127 -420.537 976.092" type="0" />
+    <Entity Name="Spawn_AI3" Def="Helpers_TagPoint" Pos="32.586 -130.477 1124.689" type="0" />
+    <Entity Name="Spawn_AI4" Def="Helpers_TagPoint" Pos="244.726 -99.936 1025.426" type="0" />
+    <Entity Name="Holder45" Def="Platform_Turret_Team2_Pve_Jericho" Pos="986.820 -166.236 -260.392" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="Spawn_AI6" Def="Helpers_TagPoint" Pos="-721.593 -172.798 -358.309" type="0" />
+    <Entity Name="PveJericho40" Def="Tube_PveJericho02" Pos="-305.802 -238.805 -145.034" Rot="-0.052 0.758 -0.108 0.641" />
+    <Entity Name="PveJericho34" Def="Tube_PveJericho01" Pos="-203.947 -209.227 135.242" Rot="-0.012 0.847 -0.008 0.532" />
+    <Entity Name="PveJericho35" Def="Tube_PveJericho01" Pos="-232.431 -212.848 72.700" Rot="-0.034 0.835 -0.021 0.548" />
+    <Entity Name="PveJericho36" Def="Tube_PveJericho01" Pos="-258.453 -218.342 9.261" Rot="-0.035 0.824 -0.021 0.565" />
+    <Entity Name="PveJericho37" Def="Tube_PveJericho01" Pos="-282.161 -224.927 -54.969" Rot="-0.047 0.815 -0.029 0.577" />
+    <Entity Name="PveJericho38" Def="Tube_PveJericho02" Pos="-295.868 -230.667 -98.720" Rot="-0.027 0.766 -0.090 0.636" />
+    <Entity Name="PveJericho39" Def="Tube_PveJericho02" Pos="-300.935 -234.386 -121.985" Rot="-0.025 0.778 -0.091 0.621" />
+    <Entity Name="PveJericho27" Def="Tube_PveJericho03" Pos="-70.678 -207.423 414.772" Rot="-0.466 -0.073 0.881 0.035" />
+    <Entity Name="PveJericho33" Def="Tube_PveJericho01" Pos="-174.380 -207.766 197.505" Rot="-0.008 0.845 0.002 0.535" />
+    <Entity Name="PveJericho32" Def="Tube_PveJericho01" Pos="-144.465 -207.403 259.634" Rot="0.000 0.849 0.000 0.528" />
+    <Entity Name="PveJericho31" Def="Tube_PveJericho01" Pos="-114.380 -207.398 321.543" Rot="0.000 0.847 0.000 0.532" />
+    <Entity Name="PveJericho30" Def="Tube_PveJericho01" Pos="-84.708 -207.421 383.586" Rot="0.000 0.847 0.000 0.532" />
+    <Entity Name="PveJericho29" Def="Tube_PveJericho04" Pos="-316.647 -104.114 -154.037" Rot="0.512 -0.487 0.502 0.499" />
+    <Entity Name="PveJericho28" Def="Tube_PveJericho04" Pos="-316.247 -171.508 -222.019" Rot="0.039 0.019 0.718 0.695" />
+    <Entity Name="EntityBuilderTrigger7" Def="Logic_EntityBuilderTrigger" Pos="212.769 -205.117 -808.370" Rot="0.005 -0.095 0.000 0.995" buildEntityName="PoliceTurret7" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="PoliceTurret7" Def="Turret_Team1_Pve_Jericho" Pos="211.134 -211.171 -808.541" Rot="0.005 -0.095 0.000 0.995" do_attack_cargoship="1" />
+    <Entity Name="Group33" Def="Logic_SpawnAgentWave_Group12" Pos="-40.330 -182.825 -1747.501" Rot="0.000 0.979 0.000 0.204" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="PointLight5" Def="Lights_PointLight" Pos="-197.313 -155.845 550.517" start_off="0" rad="160.00000" color="0xA28AF8FD" />
+    <Entity Name="RunwayJer2" Def="Effects_RunwayJer" Pos="630.149 -189.053 -713.762" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer3" Def="Effects_RunwayJer" Pos="514.945 -189.053 -758.717" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer4" Def="Effects_RunwayJer" Pos="295.993 -189.053 -844.156" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer5" Def="Effects_RunwayJer" Pos="621.839 -189.053 -692.466" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer6" Def="Effects_RunwayJer" Pos="506.635 -189.053 -737.421" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer7" Def="Effects_RunwayJer" Pos="396.241 -189.053 -780.499" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer8" Def="Effects_RunwayJer" Pos="287.488 -189.053 -822.936" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer9" Def="Effects_RunwayJer" Pos="405.536 -189.053 -801.409" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer10" Def="Effects_RunwayJer" Pos="176.793 -189.053 -866.131" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer11" Def="Effects_RunwayJer" Pos="184.809 -189.053 -887.543" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer12" Def="Effects_RunwayJer" Pos="65.288 -189.053 -909.642" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer13" Def="Effects_RunwayJer" Pos="73.389 -189.053 -931.021" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer14" Def="Effects_RunwayJer" Pos="-34.763 -189.053 -973.224" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer15" Def="Effects_RunwayJer" Pos="-43.617 -189.053 -952.139" Rot="0.000 0.983 0.000 0.185" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="EvalScript1" Def="Logic_EvalScript" Pos="-331.362 -67.242 -909.040" />
+    <Entity Name="Spawn_AI26" Def="Helpers_TagPoint" Pos="-32.977 -51.592 -1423.150" type="0" />
+    <Entity Name="Spawn_AI25" Def="Helpers_TagPoint" Pos="-294.317 -575.087 -1187.232" type="0" />
+    <Entity Name="Light_scene" Def="Lights_PointLightFlickeringEngine" Pos="963.529 -115.169 -110.668" start_off="0" rad="480.00000" color="0x53789CE9" />
+    <Entity Name="Asteroid_scene" Def="Movement_PvEAsteroid" Pos="1008.888 -102.067 -86.941" Rot="0.000 0.830 0.000 0.557" path_name="AsteroidPath1" respawn_time="999.000" closed_path="0" />
+    <Entity Name="Spawn_AI22" Def="Helpers_TagPoint" Pos="666.028 -624.025 679.110" type="0" />
+    <Entity Name="ActiveJumpgate1" Def="OpenWorld_ActiveJumpgate" Pos="768.672 -195.747 -644.087" Rot="0.008 -0.828 0.014 0.561" />
+    <Entity Name="ActiveJumpgate2" Def="OpenWorld_ActiveJumpgate" Pos="59.233 -177.454 -1775.684" Rot="0.016 -0.189 0.005 0.982" />
+    <Entity Name="ActiveJumpgate3" Def="OpenWorld_ActiveJumpgate" Pos="-916.865 -191.242 -1381.896" Rot="0.067 -0.826 -0.035 0.558" />
+    <Entity Name="DeactivateJumpgate1" Def="OpenWorld_DeactivateJumpgate" Pos="768.672 -195.747 -644.087" Rot="0.008 -0.828 0.014 0.561" />
+    <Entity Name="DeactivateJumpgate2" Def="OpenWorld_DeactivateJumpgate" Pos="59.233 -177.454 -1775.684" Rot="0.016 -0.189 0.005 0.982" />
+    <Entity Name="DeactivateJumpgate3" Def="OpenWorld_DeactivateJumpgate" Pos="-916.865 -191.242 -1381.896" Rot="0.067 -0.826 -0.035 0.558" />
+    <Entity Name="TransportPath1" Def="PathObject" Pos="45.824 -155.992 -1748.248" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="45.824 -176.534 -1748.248" />
+      <Point p="-206.906 -190.451 -1131.034" />
+    </Entity>
+    <Entity Name="TransportPath2" Def="PathObject" Pos="735.665 -195.797 -660.296" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="735.665 -195.797 -660.296" />
+      <Point p="-229.013 -195.797 -1036.155" />
+    </Entity>
+    <Entity Name="PoliceTurret8" Def="Turret_Team1_Pve_Jericho" Pos="-488.529 -205.312 -1232.719" Rot="0.005 -0.095 0.000 0.995" do_attack_cargoship="1" />
+    <Entity Name="Holder21" Def="Platform_Turret_Team1_Pve_Jericho" Pos="-488.534 -207.284 -1232.747" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="PoliceTurret9" Def="Turret_Team1_Pve_Jericho" Pos="-597.672 -209.922 -1162.615" Rot="0.000 -0.070 0.000 0.998" do_attack_cargoship="1" />
+    <Entity Name="EntityBuilderTrigger9" Def="Logic_EntityBuilderTrigger" Pos="-599.095 -203.878 -1161.767" Rot="0.000 -0.100 0.000 0.995" buildEntityName="PoliceTurret9" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="Holder30" Def="Platform_Turret_Team1_Pve_Jericho" Pos="-597.662 -211.941 -1162.679" Rot="0.000 0.980 0.000 -0.198" />
+    <Entity Name="PoliceTurret10" Def="Turret_Team1_Pve_Jericho" Pos="-250.090 -212.861 -1136.811" Rot="0.000 -0.070 0.000 0.998" do_attack_cargoship="1" />
+    <Entity Name="EntityBuilderTrigger10" Def="Logic_EntityBuilderTrigger" Pos="-251.513 -206.806 -1135.932" Rot="0.000 -0.100 0.000 0.995" buildEntityName="PoliceTurret10" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="Holder29" Def="Platform_Turret_Team1_Pve_Jericho" Pos="-250.081 -214.870 -1136.844" Rot="0.000 0.980 0.000 -0.198" />
+    <Entity Name="PoliceTurret5" Def="Turret_Team1_Pve_Jericho" Pos="-479.241 -202.030 -1116.887" Rot="0.000 -0.070 0.000 0.998" do_attack_cargoship="1" />
+    <Entity Name="EntityBuilderTrigger5" Def="Logic_EntityBuilderTrigger" Pos="-480.712 -195.936 -1116.017" Rot="0.000 -0.100 0.000 0.995" buildEntityName="PoliceTurret5" start_disabled="0" box_dimensions="30.000 16.000 30.000" />
+    <Entity Name="Holder28" Def="Platform_Turret_Team1_Pve_Jericho" Pos="-479.280 -204.000 -1116.930" Rot="0.000 0.980 0.000 -0.198" />
+    <Entity Name="JerichoControlStationB1" Def="VitalPoint_PvE_Jerichobase_ControlStationB" Pos="-203.091 -265.327 -947.873" Rot="0.000 -0.777 0.000 0.629" Skin="s2" />
+    <Entity Name="JerichoControlStationC1" Def="VitalPoint_PvE_Jerichobase_ControlStationB" Pos="173.388 -95.174 -1313.116" Rot="0.000 -0.777 0.000 0.629" Skin="s2" />
+    <Entity Name="TransportPath3" Def="PathObject" Pos="-894.199 -192.422 -1372.775" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-894.199 -192.422 -1372.775" />
+      <Point p="-252.938 -197.396 -1053.153" />
+    </Entity>
+    <Entity Name="Station1" Def="Radar_Station" Pos="-235.678 -112.477 -1058.551" Rot="0.609 0.000 0.793 0.000" />
+    <Entity Name="RunwayJer16" Def="Effects_RunwayJer" Pos="-58.240 -172.755 -1537.800" Rot="0.014 -0.830 0.004 0.557" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer17" Def="Effects_RunwayJer" Pos="-104.463 -175.049 -1424.862" Rot="0.014 -0.830 0.004 0.557" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer18" Def="Effects_RunwayJer" Pos="-28.117 -172.031 -1525.375" Rot="0.014 -0.830 0.004 0.557" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer19" Def="Effects_RunwayJer" Pos="-11.360 -170.428 -1652.346" Rot="0.014 -0.830 0.004 0.557" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer20" Def="Effects_RunwayJer" Pos="-74.433 -174.330 -1412.169" Rot="0.014 -0.830 0.004 0.557" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="RunwayJer21" Def="Effects_RunwayJer" Pos="18.790 -169.703 -1639.991" Rot="0.014 -0.830 0.004 0.557" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Holder31" Def="Platform_Turret_Team2_Pve_Jericho" Pos="-167.514 -290.675 -970.517" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="Jericho20" Def="Turret_Team2_Pve_JerichoBase" Pos="-167.464 -288.628 -970.589" Rot="0.000 -0.104 0.000 0.995" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder31" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Holder32" Def="Platform_Turret_Team2_Pve_Jericho" Pos="-228.561 -289.640 -985.219" Rot="0.004 -0.544 0.002 0.839" />
+    <Entity Name="Jericho21" Def="Turret_Team2_Pve_JerichoBase" Pos="-228.473 -287.603 -985.234" Rot="0.000 -0.104 0.000 0.995" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder32" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Holder33" Def="Platform_Turret_Team2_Pve_Jericho" Pos="-129.334 -230.621 -949.204" Rot="0.005 -0.296 0.001 0.955" />
+    <Entity Name="Group38" Def="Logic_SpawnAreaAgentWave_Group5" Pos="123.798 23.189 -1532.310" Rot="0.000 0.805 0.000 0.594" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="Spawn_AI27" Def="Helpers_TagPoint" Pos="-612.957 -59.267 -977.013" type="0" />
+    <Entity Name="Jericho23" Def="Turret_Team2_Pve_JerichoBase" Pos="-75.569 -70.211 -897.995" Rot="0.000 -0.104 0.000 0.995" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder34" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Holder34" Def="Platform_Turret_Team2_Pve_Jericho" Pos="-75.643 -72.209 -897.992" Rot="0.005 -0.296 0.001 0.955" />
+    <Entity Name="Jericho24" Def="Turret_Team2_Pve_JerichoBase" Pos="33.837 -70.017 -878.451" Rot="0.000 -0.104 0.000 0.995" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder35" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Holder35" Def="Platform_Turret_Team2_Pve_Jericho" Pos="33.726 -72.051 -878.415" Rot="0.005 -0.296 0.001 0.955" />
+    <Entity Name="Jericho25" Def="Turret_Team2_Pve_JerichoBase" Pos="-473.166 -77.382 -989.996" Rot="0.000 -0.104 0.000 0.995" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder36" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Holder36" Def="Platform_Turret_Team2_Pve_Jericho" Pos="-473.256 -79.358 -990.000" Rot="0.005 -0.296 0.001 0.955" />
+    <Entity Name="Jericho26" Def="Turret_Team2_Pve_JerichoBase" Pos="-268.686 -83.840 -918.327" Rot="0.000 -0.104 0.000 0.995" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder37" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Holder37" Def="Platform_Turret_Team2_Pve_Jericho" Pos="-268.742 -85.794 -918.349" Rot="0.005 -0.296 0.001 0.955" />
+    <Entity Name="EnergyGeneratorLong3" Def="PvE_Jericho_base_EnergyGenerator2" Pos="-51.729 -133.824 -580.823" Rot="0.458 -0.537 0.559 0.435" />
+    <Entity Name="Holder38" Def="Platform_Turret_Team2_Pve_Jericho" Pos="-337.187 -224.073 -1022.597" Rot="0.004 -0.544 0.002 0.839" />
+    <Entity Name="Dark6" Def="Effects_Smoke_Dark2" Pos="-293.888 -5.353 -854.890" Rot="-0.397 -0.079 -0.019 0.914" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx6" Def="Effects_Industrial_Fx2" Pos="-56.544 -30.897 -746.652" Rot="-0.703 -0.074 -0.074 0.703" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="small1" Def="Effects_DrillBeam_small" Pos="-199.461 217.628 -493.725" Rot="0.758 -0.557 -0.048 0.336" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Dark10" Def="Effects_Smoke_Dark2" Pos="-166.129 -97.466 -809.631" Rot="-0.718 -0.011 -0.039 0.695" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Dark5" Def="Effects_Smoke_Dark2" Pos="-292.949 -14.058 -862.999" Rot="-0.397 -0.079 -0.019 0.914" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam3" Def="Lights_Beam" Pos="-46.536 -97.444 -769.901" Rot="0.845 -0.033 0.192 -0.498" base_color="0x19FF9900" size="40.000" width="29.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999466" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999466" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Dark7" Def="Effects_Smoke_Dark2" Pos="-210.239 -97.459 -819.878" Rot="-0.718 -0.054 -0.045 0.692" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam6" Def="Lights_Beam" Pos="-207.073 -113.337 -807.235" Rot="-0.850 -0.016 -0.140 0.508" base_color="0x19FF9900" size="40.000" width="29.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999466" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999466" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Fx5" Def="Effects_Industrial_Fx2" Pos="-102.170 -30.999 -756.365" Rot="-0.703 -0.074 -0.074 0.703" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="small2" Def="Effects_DrillBeam_small" Pos="-207.641 209.286 -507.807" Rot="0.758 -0.557 -0.048 0.336" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam4" Def="Lights_Beam" Pos="-122.884 -97.097 -785.056" Rot="-0.850 -0.016 -0.140 0.508" base_color="0x19FF9900" size="40.000" width="29.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999466" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999466" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Dark1" Def="Effects_Smoke_Dark" Pos="-378.638 -19.460 -859.021" Rot="-0.566 -0.073 -0.057 0.819" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam5" Def="Lights_Beam" Pos="-174.020 -113.150 -800.815" Rot="-0.850 -0.016 -0.140 0.508" base_color="0x19FF9900" size="40.000" width="29.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999466" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999466" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam2" Def="Lights_Beam" Pos="-143.366 -96.877 -302.083" Rot="0.833 -0.047 0.071 0.547" base_color="0x19FF9900" size="40.000" width="29.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999466" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999466" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Dark11" Def="Effects_Smoke_Dark" Pos="-42.720 -249.936 -822.312" Rot="-0.662 -0.062 -0.043 0.746" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Dark12" Def="Effects_Smoke_Dark" Pos="-0.121 -249.324 -815.895" Rot="-0.661 -0.072 -0.054 0.745" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Dark4" Def="Effects_Smoke_Dark2" Pos="-316.435 -5.993 -858.536" Rot="-0.397 -0.079 -0.019 0.914" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam7" Def="Lights_Beam" Pos="-956.479 -546.967 748.686" base_color="0x15B6FCF7" size="240.000" width="74.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.600000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999466" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999466" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam1" Def="Lights_Beam" Pos="-218.770 -97.334 -315.865" Rot="0.833 -0.047 0.071 0.547" base_color="0x19FF9900" size="40.000" width="29.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999466" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999466" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Dark9" Def="Effects_Smoke_Dark2" Pos="-200.963 -97.315 -818.571" Rot="-0.718 -0.054 -0.045 0.692" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Dark8" Def="Effects_Smoke_Dark2" Pos="-177.215 -98.664 -813.609" Rot="-0.718 -0.011 -0.039 0.695" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="small4" Def="Effects_DrillBeam_small" Pos="-542.281 -147.656 -433.931" Rot="0.003 0.997 -0.060 0.051" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Dark2" Def="Effects_Smoke_Dark" Pos="-363.339 -19.029 -857.870" Rot="-0.566 -0.073 -0.057 0.819" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="small3" Def="Effects_DrillBeam_small" Pos="-543.861 -145.786 -418.531" Rot="0.003 0.997 -0.060 0.051" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Dark3" Def="Effects_Smoke_Dark2" Pos="-314.893 -14.681 -866.547" Rot="-0.397 -0.079 -0.019 0.914" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam27" Def="Lights_Beam" Pos="-420.606 -139.678 -912.193" Rot="-0.491 -0.083 -0.051 0.866" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999489" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999489" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam13" Def="Lights_Beam" Pos="-401.547 148.745 -1001.670" Rot="0.975 0.017 0.094 -0.202" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999596" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999596" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam20" Def="Lights_Beam" Pos="-421.134 57.730 -904.857" Rot="-0.830 -0.050 -0.082 0.549" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999542" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999542" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam10" Def="Lights_Beam" Pos="-387.206 164.352 -1067.911" Rot="0.995 -0.001 0.095 -0.014" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999619" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999619" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam19" Def="Lights_Beam" Pos="-419.617 68.426 -912.223" Rot="-0.851 -0.046 -0.084 0.516" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999550" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999550" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Heat5" Def="Effects_Industrial_Heat" Pos="-420.523 -51.964 -899.167" Rot="0.555 0.539 -0.446 -0.450" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Heat6" Def="Effects_Industrial_Heat" Pos="-185.746 -65.415 -866.307" Rot="0.710 0.696 0.071 0.079" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Heat7" Def="Effects_Industrial_Heat" Pos="-186.585 -29.290 -866.564" Rot="0.710 0.696 0.071 0.079" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="LavaSparks1" Def="Effects_LavaSparks" Pos="-154.717 174.260 -756.581" Rot="-0.294 -0.297 0.777 0.471" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Steam2" Def="Effects_Industrial_Steam" Pos="-321.947 -116.131 -861.235" Rot="0.000 0.652 0.000 0.758" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx2" Def="Effects_Industrial_Fx2" Pos="-161.823 -295.538 -935.987" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx3" Def="Effects_Industrial_Fx2" Pos="-250.541 -295.538 -908.078" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx4" Def="Effects_Industrial_Fx2" Pos="-176.564 -295.538 -892.578" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Steam1" Def="Effects_Industrial_Steam" Pos="-340.159 -116.131 -864.889" Rot="0.000 0.652 0.000 0.758" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam24" Def="Lights_Beam" Pos="-424.288 -90.259 -890.606" Rot="-0.646 -0.071 -0.065 0.757" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999512" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999512" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="LavaSparks19" Def="Effects_LavaSparks" Pos="-858.212 94.523 -611.955" Rot="0.213 0.198 0.749 0.595" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Heat4" Def="Effects_Industrial_Heat" Pos="-371.217 -51.466 -888.161" Rot="0.555 0.539 -0.446 -0.450" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Heat3" Def="Effects_Industrial_Heat" Pos="-323.157 -51.898 -878.213" Rot="0.555 0.539 -0.446 -0.450" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Heat2" Def="Effects_Industrial_Heat" Pos="-279.802 -29.405 -886.749" Rot="-0.078 -0.070 0.696 0.710" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Heat1" Def="Effects_Industrial_Heat" Pos="-280.557 -65.546 -886.417" Rot="-0.078 -0.070 0.696 0.710" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx7" Def="Effects_Industrial_Fx2" Pos="-11.166 -30.999 -736.992" Rot="-0.703 -0.074 -0.074 0.703" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx20" Def="Effects_Industrial_Fx5" Pos="-203.493 -295.202 -948.087" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx11" Def="Effects_Industrial_Fx3" Pos="-371.090 -60.804 -885.077" Rot="0.482 0.504 -0.416 0.584" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx10" Def="Effects_Industrial_Fx3" Pos="-428.945 -55.943 -897.368" Rot="0.727 0.139 -0.645 0.188" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx9" Def="Effects_Industrial_Fx3" Pos="-419.575 -60.676 -895.506" Rot="0.495 0.493 -0.412 0.585" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx8" Def="Effects_Industrial_Fx3" Pos="-413.180 -48.028 -894.273" Rot="-0.167 0.623 0.133 0.753" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam22" Def="Lights_Beam" Pos="-424.338 19.413 -890.884" Rot="-0.784 -0.056 -0.078 0.614" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999527" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999527" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam23" Def="Lights_Beam" Pos="-425.647 -8.793 -885.332" Rot="-0.752 -0.060 -0.075 0.652" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999519" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999519" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam14" Def="Lights_Beam" Pos="-403.537 143.639 -990.030" Rot="0.975 0.017 0.094 -0.202" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999588" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999588" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="LavaSparks6" Def="Effects_LavaSparks" Pos="-200.971 259.667 -524.528" Rot="0.505 0.151 -0.243 0.814" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="LavaSparks5" Def="Effects_LavaSparks" Pos="-156.043 223.059 -525.552" Rot="0.527 0.000 0.000 0.850" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="LavaSparks4" Def="Effects_LavaSparks" Pos="-150.410 256.274 -833.038" Rot="-0.236 -0.147 0.867 0.414" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam17" Def="Lights_Beam" Pos="-415.019 101.389 -936.506" Rot="0.921 0.033 0.090 -0.378" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999565" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999565" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam26" Def="Lights_Beam" Pos="-421.685 -128.571 -906.311" Rot="-0.534 -0.080 -0.055 0.840" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999496" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999496" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Fx14" Def="Effects_Industrial_Fx3" Pos="-331.777 -56.016 -876.308" Rot="0.740 0.143 -0.631 0.186" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="LavaSparks18" Def="Effects_LavaSparks" Pos="-409.187 -146.616 -344.269" Rot="0.518 -0.268 0.230 0.779" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="LavaSparks17" Def="Effects_LavaSparks" Pos="-472.594 -160.009 -396.244" Rot="0.518 -0.268 0.230 0.779" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx13" Def="Effects_Industrial_Fx3" Pos="-364.686 -48.088 -883.375" Rot="-0.163 0.600 0.138 0.771" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx12" Def="Effects_Industrial_Fx3" Pos="-380.595 -56.167 -886.200" Rot="0.740 0.143 -0.631 0.186" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx17" Def="Effects_Industrial_Fx4" Pos="-420.789 -52.070 -896.316" Rot="-0.710 -0.078 -0.077 0.696" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="LavaSparks13" Def="Effects_LavaSparks" Pos="-255.555 232.084 -472.051" Rot="0.505 0.151 -0.243 0.814" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="LavaSparks12" Def="Effects_LavaSparks" Pos="-255.555 232.085 -472.051" Rot="0.505 0.151 -0.243 0.814" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx18" Def="Effects_Industrial_Fx4" Pos="-372.362 -52.040 -885.727" Rot="-0.711 -0.071 -0.070 0.697" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx19" Def="Effects_Industrial_Fx4" Pos="-323.574 -51.887 -876.170" Rot="-0.710 -0.074 -0.073 0.696" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx16" Def="Effects_Industrial_Fx3" Pos="-315.868 -47.937 -873.483" Rot="-0.163 0.600 0.138 0.771" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam18" Def="Lights_Beam" Pos="-414.584 91.804 -927.497" Rot="0.911 0.035 0.089 -0.401" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999557" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999557" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam21" Def="Lights_Beam" Pos="-423.712 31.464 -894.485" Rot="-0.784 -0.056 -0.078 0.614" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999535" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999535" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam15" Def="Lights_Beam" Pos="-408.262 128.123 -966.922" Rot="0.950 0.026 0.092 -0.298" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999580" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999580" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam12" Def="Lights_Beam" Pos="-395.421 157.807 -1027.920" Rot="0.988 0.009 0.095 -0.118" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999603" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999603" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="LavaSparks7" Def="Effects_LavaSparks" Pos="-200.971 259.666 -524.528" Rot="0.505 0.151 -0.243 0.814" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx15" Def="Effects_Industrial_Fx3" Pos="-322.272 -60.653 -875.185" Rot="0.482 0.504 -0.416 0.584" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam16" Def="Lights_Beam" Pos="-410.394 121.294 -956.490" Rot="0.948 0.026 0.092 -0.303" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999573" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999573" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam25" Def="Lights_Beam" Pos="-423.567 -102.401 -894.724" Rot="-0.611 -0.074 -0.062 0.785" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999504" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999504" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam32" Def="Lights_Beam" Pos="-403.509 -213.727 -991.330" Rot="-0.243 -0.093 -0.027 0.965" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999451" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999451" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam31" Def="Lights_Beam" Pos="-408.234 -199.134 -967.096" Rot="-0.310 -0.091 -0.033 0.946" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999458" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999458" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam11" Def="Lights_Beam" Pos="-392.789 160.767 -1039.886" Rot="0.988 0.009 0.095 -0.118" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999611" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999611" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Fx1" Def="Effects_Industrial_Fx2" Pos="-246.759 -295.538 -953.779" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Steam8" Def="Effects_Industrial_Steam" Pos="-285.739 -133.793 -853.498" Rot="0.000 0.652 0.000 0.758" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Steam3" Def="Effects_Industrial_Steam" Pos="-303.841 -116.131 -857.262" Rot="0.000 0.652 0.000 0.758" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Steam4" Def="Effects_Industrial_Steam" Pos="-285.739 -116.131 -853.498" Rot="0.000 0.652 0.000 0.758" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Steam5" Def="Effects_Industrial_Steam" Pos="-340.159 -133.793 -864.889" Rot="0.000 0.652 0.000 0.758" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Fx22" Def="Effects_Industrial_Fx5" Pos="-219.621 -243.149 -873.877" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Steam7" Def="Effects_Industrial_Steam" Pos="-303.841 -133.793 -857.262" Rot="0.000 0.652 0.000 0.758" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Beam30" Def="Lights_Beam" Pos="-410.235 -191.246 -957.712" Rot="-0.300 -0.092 -0.032 0.949" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999466" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999466" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam29" Def="Lights_Beam" Pos="-414.804 -172.556 -936.383" Rot="-0.389 -0.088 -0.041 0.916" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999474" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999474" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam28" Def="Lights_Beam" Pos="-416.696 -162.666 -928.655" Rot="-0.421 -0.086 -0.044 0.902" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999481" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999481" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="LavaSparks3" Def="Effects_LavaSparks" Pos="-174.605 239.465 -775.135" Rot="-0.294 -0.297 0.777 0.471" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings11" Def="Effects_Lightnings" Pos="-221.465 151.544 -764.990" />
+    <Entity Name="Beam9" Def="Lights_Beam" Pos="-378.436 162.832 -1107.327" Rot="0.994 -0.008 0.095 0.061" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999619" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999619" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Beam8" Def="Lights_Beam" Pos="-384.432 164.687 -1079.751" Rot="0.995 -0.001 0.095 -0.014" base_color="0x15FEB063" size="90.000" width="25.000" soft="0" has_halo_1="0" has_halo_2="0" flicker="" flicker_fps="30.000" halo1_size="1.000000" halo1_nebulosity="0.500000" halo1_vis_angle="89.999626" halo1_base_color="0x15FFFFFF" halo2_size="1.000000" halo2_nebulosity="0.500000" halo2_vis_angle="89.999626" halo2_base_color="0x15FFFFFF" />
+    <Entity Name="Lightnings24" Def="Effects_Lightnings" Pos="-223.100 202.990 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings23" Def="Effects_Lightnings" Pos="-221.465 202.990 -764.990" />
+    <Entity Name="Lightnings22" Def="Effects_Lightnings" Pos="-223.100 196.118 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings21" Def="Effects_Lightnings" Pos="-221.465 196.118 -764.990" />
+    <Entity Name="Lightnings20" Def="Effects_Lightnings" Pos="-223.100 190.352 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings19" Def="Effects_Lightnings" Pos="-221.465 190.352 -764.990" />
+    <Entity Name="Lightnings18" Def="Effects_Lightnings" Pos="-223.100 182.412 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings17" Def="Effects_Lightnings" Pos="-221.465 182.412 -764.990" />
+    <Entity Name="Lightnings16" Def="Effects_Lightnings" Pos="-223.100 175.729 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings15" Def="Effects_Lightnings" Pos="-221.465 175.729 -764.990" />
+    <Entity Name="Lightnings14" Def="Effects_Lightnings" Pos="-223.100 168.275 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings13" Def="Effects_Lightnings" Pos="-221.465 168.275 -764.990" />
+    <Entity Name="Lightnings12" Def="Effects_Lightnings" Pos="-223.100 151.544 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Steam6" Def="Effects_Industrial_Steam" Pos="-321.947 -133.793 -861.235" Rot="0.000 0.652 0.000 0.758" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lightnings10" Def="Effects_Lightnings" Pos="-222.486 130.222 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings9" Def="Effects_Lightnings" Pos="-220.851 130.222 -764.990" />
+    <Entity Name="Lightnings8" Def="Effects_Lightnings" Pos="-222.486 137.401 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings7" Def="Effects_Lightnings" Pos="-222.486 145.150 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings6" Def="Effects_Lightnings" Pos="-222.486 124.116 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings5" Def="Effects_Lightnings" Pos="-222.486 117.685 -764.988" Rot="0.000 1.000 0.000 0.001" />
+    <Entity Name="Lightnings4" Def="Effects_Lightnings" Pos="-220.851 137.401 -764.990" />
+    <Entity Name="Lightnings3" Def="Effects_Lightnings" Pos="-221.379 145.150 -764.990" />
+    <Entity Name="Lightnings2" Def="Effects_Lightnings" Pos="-220.909 124.116 -764.990" />
+    <Entity Name="Lightnings1" Def="Effects_Lightnings" Pos="-221.371 117.685 -764.990" />
+    <Entity Name="Spawn_AI5" Def="Helpers_TagPoint" Pos="-908.687 143.294 -1026.825" type="0" />
+    <Entity Name="Spawn_AI20" Def="Helpers_TagPoint" Pos="-983.352 -158.299 -1302.972" type="0" />
+    <Entity Name="Spawn_AI21" Def="Helpers_TagPoint" Pos="-972.344 -159.818 -997.073" type="0" />
+    <Entity Name="AmbientSound_JerichoDepot" Def="Sound_AmbientSoundSpot" Pos="255.890 -197.007 352.169" soundname="sound/ambient/ow_objects/jericho_depot" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSound_JerichoHangar" Def="Sound_AmbientSoundSpot" Pos="168.072 40.641 -1308.738" Rot="0.000 0.030 0.000 1.000" soundname="sound/ambient/ow_objects/jericho_hangar" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSound_MiningPlatformDrilling" Def="Sound_AmbientSoundSpot" Pos="-202.707 213.323 -500.585" soundname="sound/ambient/ow_objects/mining_platform_drilling" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSound_MiningPlatformDrilling1" Def="Sound_AmbientSoundSpot" Pos="-546.590 -155.352 -425.546" Rot="0.000 -0.030 0.000 1.000" soundname="sound/ambient/ow_objects/mining_platform_drilling" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSoundSpot_MiningPlatform" Def="Sound_AmbientSoundSpot" Pos="-434.100 66.455 -196.467" soundname="sound/ambient/ow_objects/mining_platform" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="AmbientSoundSpot_JerichoLab" Def="Sound_AmbientSoundSpot" Pos="88.257 -181.960 858.730" soundname="sound/ambient/ow_objects/jericho_lab" max_distance="20.000" volume="1.000" flags="3" start_silent="0" />
+    <Entity Name="Jericho31" Def="Turret_Team2_Pve_JerichoBase" Pos="1139.740 -163.807 -5.006" Rot="0.000 -0.592 0.000 0.806" do_attack_cargoship="0">
+      <ActionList Name="m_deadEvent">
+        <FireAction Target="Holder44" Action="EmitDeathEffectAndRemove" />
+      </ActionList>
+    </Entity>
+    <Entity Name="Holder44" Def="Platform_Turret_Team2_Pve_Jericho" Pos="1139.610 -165.893 -4.951" Rot="0.005 -0.095 0.000 0.995" />
+    <Entity Name="JStation5" Def="OpenWorld_Jericho_JStation04" Pos="234.756 -546.524 988.393" Rot="0.000 0.870 0.000 0.493" />
+    <Entity Name="Asteroid1" Def="OpenWorld_Empire_Asteroid01" Pos="370.160 -80.914 -256.168" />
+    <Entity Name="PrisonGenerator1" Def="PvE_Gen_SignalBlocker" Pos="-180.478 -99.400 -523.163" Rot="-0.078 -0.078 0.703 0.703" />
+    <Entity Name="PrisonGenerator2" Def="PvE_Gen_SignalBlocker" Pos="-165.288 -99.395 -580.279" Rot="0.701 -0.701 0.092 -0.092" />
+  </EntityContainer>
+</Scene>
