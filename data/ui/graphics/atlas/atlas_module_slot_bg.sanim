@@ -1,0 +1,96 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by Sergey_Mitryaev
+//at Fri Nov 17 12:19:52 2017
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim completed
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim not_purch
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 194 138
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on completed
+		visible_on not_purch
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				1 1	11.6667 1	182.667 1	193.333 1	1 11.6667	11.6667 11.6667	182.667 11.6667	193.333 11.6667	1 125.667	11.6667 125.667	182.667 125.667	193.333 125.667	1 136.333	11.6667 136.333	182.667 136.333	193.333 136.333	
+				0.337092 0.684748	0.338926 0.684748	0.340761 0.684748	0.342596 0.684748	0.337092 0.686583	0.338926 0.686583	0.340761 0.686583	0.342596 0.686583	0.337092 0.688417	0.338926 0.688417	0.340761 0.688417	0.342596 0.688417	0.337092 0.690252	0.338926 0.690252	0.340761 0.690252	0.342596 0.690252	
+				0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim completed sp_colc
+		{
+			1
+			0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+		}
+		visible_on not_purch
+	}
+	sprite we86
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				1 135.333	193 135.333	1 137	193 137	
+				0.338322 0.684025	0.345272 0.684025	0.338322 0.690975	0.345272 0.690975	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on completed
+		anim not_purch sp_colc
+		{
+			1
+			0x70ffffff	0x70ffffff	0x70ffffff	0x70ffffff	
+		}
+	}
+}
+
