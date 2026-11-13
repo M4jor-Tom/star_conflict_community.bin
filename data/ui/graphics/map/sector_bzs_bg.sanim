@@ -1,0 +1,78 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Wed Mar 11 10:40:01 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim zone_off
+	{
+		mode looped
+		cycle_time 5
+	}
+	anim zone_on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim zone_war
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite myself57
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				-14 -14	14 -14	-14 14	14 14	
+				0.375 0.0117188	0.484375 0.0117188	0.375 0.121094	0.484375 0.121094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on zone_off
+		anim zone_on sp_colc
+		{
+			1
+			0xff00ff00	0xff00ff00	0xff00ff00	0xff00ff00	
+		}
+		anim zone_war sp_colc
+		{
+			1
+			0xffff2800	0xffff2800	0xffff2800	0xffff2800	
+		}
+	}
+	sprite myself77
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-11 -11	11 -11	-11 11	11 11	
+				0.804688 0.381836	0.826172 0.381836	0.804688 0.40332	0.826172 0.40332	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on zone_off
+		visible_on zone_on
+		visible_on zone_war
+	}
+}
+
