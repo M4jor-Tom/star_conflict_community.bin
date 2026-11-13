@@ -1,0 +1,70 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Fri Dec 13 12:01:16 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 230 6
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName75
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				0 -0	0 -0	0 6	0 6	
+				0.161133 0.69873	0.148926 0.69873	0.161133 0.703125	0.148926 0.703125	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	0 -0	0 6	0 6	
+			0 -0	23 -0	0 6	23 6	
+			0 -0	46 -0	0 6	46 6	
+			0 -0	69 -0	0 6	69 6	
+			0 -0	92 -0	0 6	92 6	
+			0 -0	115 -0	0 6	115 6	
+			0 -0	138 -0	0 6	138 6	
+			0 -0	161 -0	0 6	161 6	
+			0 -0	184 -0	0 6	184 6	
+			0 -0	207 -0	0 6	207 6	
+			0 -0	230 -0	0 6	230 6	
+		}
+	}
+}
+
