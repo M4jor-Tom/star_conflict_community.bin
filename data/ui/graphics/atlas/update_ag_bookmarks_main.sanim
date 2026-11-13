@@ -1,0 +1,95 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Thu Oct 17 11:58:12 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 40
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bookmarks_01
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 40
+			effect "ui\graphics\atlas\update_ag_bookmarks"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bookmarks_02
+	{
+		defaults
+		{
+			pos 102 -0
+			opacity 255
+			color 0xffffffff
+			size 100 40
+			effect "ui\graphics\atlas\update_ag_bookmarks"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bookmarks_03
+	{
+		defaults
+		{
+			pos 204 -0
+			opacity 255
+			color 0xffffffff
+			size 100 40
+			effect "ui\graphics\atlas\update_ag_bookmarks"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we114
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-0.5 37	307 37	-0.5 39.5	307 39.5	
+				0.94661 0.776688	0.947921 0.776688	0.94661 0.777999	0.947921 0.777999	
+				0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
