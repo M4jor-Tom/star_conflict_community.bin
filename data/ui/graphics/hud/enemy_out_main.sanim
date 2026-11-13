@@ -1,0 +1,58 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud.ma
+//by sega
+//at Wed Jul 20 16:23:58 2011
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object radius
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 230
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object radius2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object radius3
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
