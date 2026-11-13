@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Tue Apr 10 14:51:10 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 270 30
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object level_progr
+	{
+		defaults
+		{
+			pos 74.4879 7.99837
+			opacity 255
+			color 0xffffffff
+			size 190 14
+			effect "ui\graphics\hangar_iter_3\level_progr"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_count
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 30
+			effect "ui\graphics\hangar_iter_3\level_progr_count"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object blink
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 270 30
+			effect "ui\graphics\hangar_iter_3\level_progr_blink_2"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr_btn
+	{
+		defaults
+		{
+			pos 62.4879 3
+			opacity 255
+			color 0xffffffff
+			size 204 14
+			effect "ui\graphics\hangar_iter_3\level_progr_btn"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
