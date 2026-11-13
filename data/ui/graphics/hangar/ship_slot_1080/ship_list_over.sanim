@@ -1,0 +1,75 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Wed Nov 27 16:56:44 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 125 73
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp78
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	132 -0	138 -0	0 6	6 6	132 6	138 6	0 81	6 81	132 81	138 81	0 87	6 87	132 87	138 87	
+				0.533283 0.51269	0.539143 0.51269	0.585938 0.51269	0.591797 0.51269	0.533283 0.518549	0.539143 0.518549	0.585938 0.518549	0.591797 0.518549	0.533283 0.56543	0.539143 0.56543	0.585938 0.56543	0.591797 0.56543	0.533283 0.571289	0.539143 0.571289	0.585938 0.571289	0.591797 0.571289	
+				0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp82
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				0 36	6 36	132 36	138 36	0 42	6 42	132 42	138 42	0 82	6 82	132 82	138 82	0 86	6 86	132 86	138 86	
+				0.0263672 0.00488281	0.0322266 0.00488281	0.229492 0.00488281	0.235352 0.00488281	0.0263672 0.0107422	0.0322266 0.0107422	0.229492 0.0107422	0.235352 0.0107422	0.0263672 0.097659	0.0322266 0.097659	0.229492 0.097659	0.235352 0.097659	0.0263672 0.103518	0.0322266 0.103518	0.229492 0.103518	0.235352 0.103518	
+				0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	0xcce5e5e5	
+			}
+		}
+		visible_on idle
+	}
+}
+
