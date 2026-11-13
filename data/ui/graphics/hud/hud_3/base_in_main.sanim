@@ -1,0 +1,175 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by Sergey_Mitryaev
+//at Tue May 29 17:10:59 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 10
+{
+	object center
+	{
+		defaults
+		{
+			pos 32 46
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 96
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos -65.9799 67.7074
+			opacity 255
+			color 0xffffffff
+			size 200 11
+			effect "ui\graphics\hud\hud_3\base_in_name"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object base_in
+	{
+		defaults
+		{
+			pos 15 29
+			opacity 255
+			color 0xffffffff
+			size 34 34
+			effect "ui\graphics\hud\hud_3\base_in"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object friend_damage
+	{
+		defaults
+		{
+			pos 15 29
+			opacity 255
+			color 0xffffffff
+			size 34 34
+			effect "ui\graphics\hud\hud_3\base_friend_damage"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object name_2
+	{
+		defaults
+		{
+			pos 22 36
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\hud_3\base_in_name_2"
+			alignment "CM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object bomb
+	{
+		defaults
+		{
+			pos 15 29
+			opacity 255
+			color 0xffffffff
+			size 34 34
+			effect "ui\graphics\hud\hud_3\base_in_bomb"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object dron
+	{
+		defaults
+		{
+			pos 15 29
+			opacity 255
+			color 0xffffffff
+			size 34 34
+			effect "ui\graphics\hud\hud_3\base_in_dron"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object dist
+	{
+		defaults
+		{
+			pos -65.9799 80
+			opacity 255
+			color 0xffffffff
+			size 200 11
+			effect "ui\graphics\hud\hud_3\base_in_name"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object quest
+	{
+		defaults
+		{
+			pos 31.2837 14.2723
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\ratio\gmp_icon2"
+			alignment "CM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite sprt1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				15 29	49 29	15 63	49 63	
+				0.0703125 0.28125	0.103516 0.28125	0.0703125 0.314453	0.103516 0.314453	
+			}
+		}
+		visible_on idle
+	}
+}
+
