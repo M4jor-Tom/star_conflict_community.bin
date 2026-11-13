@@ -1,0 +1,130 @@
+﻿source_file "Y:/art/source/ui/graphics/agreement/agreement.ma"
+//by sergey_mitryaev
+//at Wed Apr 08 12:28:56 2020
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 5
+{
+	object title
+	{
+		defaults
+		{
+			pos 14 4.66562
+			opacity 255
+			color 0xffffdeb3
+			size 600 60
+			effect ""
+			alignment "LM"
+			sampleText "Соглашение |dsf |ef reggbgewvwev|Wevevev"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 625 630
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 307.79 595.033
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 466.897 595.033
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object description
+	{
+		defaults
+		{
+			pos 13.3934 76
+			opacity 255
+			color 0xffffffff
+			size 625 657
+			effect "ui\graphics\agreement\nda_description_2"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp5
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0442877 -0	6.04429 -0	622.216 -0	628.216 -0	0.0442877 6	6.04429 6	622.216 6	628.216 6	0.0442877 617.965	6.04429 617.965	622.216 617.965	628.216 617.965	0.0442877 623.965	6.04429 623.965	622.216 623.965	628.216 623.965	
+				0.00190511 0.159248	0.00776449 0.159248	0.0205952 0.159248	0.0264545 0.159248	0.00190511 0.165108	0.00776449 0.165108	0.0205952 0.165108	0.0264545 0.165108	0.00190511 0.179604	0.00776449 0.179604	0.0205952 0.179604	0.0264545 0.179604	0.00190511 0.185463	0.00776449 0.185463	0.0205952 0.185463	0.0264545 0.185463	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				628 69	628 71	0 69	0 71	
+				0.0771484 0.144531	0.0791016 0.144531	0.0771484 0.152344	0.0791016 0.152344	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
