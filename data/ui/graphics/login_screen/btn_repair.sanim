@@ -1,0 +1,184 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by Sergey
+//at Tue Jan 12 15:59:49 2016
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 0 25.0435
+			opacity 255
+			color 0xffff0000
+			size 50 15
+			effect ""
+			alignment "LM"
+			sampleText "color_1"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	object color_2
+	{
+		defaults
+		{
+			pos 0 40.8273
+			opacity 255
+			color 0xffffcd00
+			size 50 15
+			effect ""
+			alignment "LM"
+			sampleText "color_1"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	object color_3
+	{
+		defaults
+		{
+			pos 0 56.8215
+			opacity 255
+			color 0xffff0000
+			size 50 15
+			effect ""
+			alignment "LM"
+			sampleText "color_1"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite m
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0239325 -0.115014	10.0239 -0.115014	14.1982 -0.115014	24.1982 -0.115014	0.0239325 9.88499	10.0239 9.88499	14.1982 9.88499	24.1982 9.88499	0.0239325 14	10.0239 13.8554	14.1982 13.8554	24.1982 13.8554	0 24	10 23.8554	14.1982 23.8554	24.1982 23.8554	
+				0.172842 0.00201488	0.182608 0.00201488	0.211926 0.00201488	0.221692 0.00201488	0.172842 0.0117805	0.182608 0.0117805	0.211926 0.0117805	0.221692 0.0117805	0.172842 0.0409799	0.182608 0.0409799	0.211926 0.0409799	0.221692 0.0409799	0.172842 0.0507455	0.182608 0.0507455	0.211926 0.0507455	0.221692 0.0507455	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	sprite objectName198
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 1.00275	23 1.00274	1 23.0027	23 23.0027	
+				0.378379 0.127867	0.399863 0.127867	0.378379 0.149348	0.399863 0.149348	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim press sp_posc
+		{
+			1 
+			1 0.778502	23 0.778489	1 22.7785	23 22.7785	
+		}
+	}
+	sprite m4
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.0239325 -0.115014	10.0239 -0.115014	14.1982 -0.115014	24.1982 -0.115014	0.0239325 9.88499	10.0239 9.88499	14.1982 9.88499	24.1982 9.88499	0.0239325 13.8554	10.0239 13.8554	14.1982 13.8554	24.1982 13.8554	0.0239325 23.8554	10.0239 23.8554	14.1982 23.8554	24.1982 23.8554	
+				0.0284823 0.114243	0.0382479 0.114243	0.0429687 0.114243	0.0527343 0.114243	0.0284823 0.124009	0.0382479 0.124009	0.0429687 0.124009	0.0527343 0.124009	0.0284823 0.128866	0.0382479 0.128866	0.0429687 0.128866	0.0527343 0.128866	0.0284823 0.138632	0.0382479 0.138632	0.0429687 0.138632	0.0527343 0.138632	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+		visible_on press
+	}
+	sprite m5
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.0239325 -0.115014	10.0239 -0.115014	14.1982 -0.115014	24.1982 -0.115014	0.0239325 9.88499	10.0239 9.88499	14.1982 9.88499	24.1982 9.88499	0.0239325 13.8554	10.0239 13.8554	14.1982 13.8554	24.1982 13.8554	0.0239325 23.8554	10.0239 23.8554	14.1982 23.8554	24.1982 23.8554	
+				0.054787 0.114243	0.0645527 0.114243	0.0692735 0.114243	0.0790391 0.114243	0.054787 0.124009	0.0645527 0.124009	0.0692735 0.124009	0.0790391 0.124009	0.054787 0.128866	0.0645527 0.128866	0.0692735 0.128866	0.0790391 0.128866	0.054787 0.138632	0.0645527 0.138632	0.0692735 0.138632	0.0790391 0.138632	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
