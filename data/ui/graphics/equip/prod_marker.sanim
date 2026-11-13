@@ -1,0 +1,55 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Mon Jul 03 18:08:44 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.022912 0.123479	6.02291 0.123479	44.0409 0.123477	50.0409 0.123477	0.022912 6.12348	6.02291 6.12348	44.0409 6.12348	50.0409 6.12348	0.0229082 43.8631	6.02291 43.8631	44.0409 43.8631	50.0409 43.8631	0.0229082 49.8631	6.02291 49.8631	44.0409 49.8631	50.0409 49.8631	
+				0.231365 0.152344	0.237224 0.152344	0.272287 0.152344	0.278146 0.152344	0.231365 0.158203	0.237224 0.158203	0.272287 0.158203	0.278146 0.158203	0.231365 0.193417	0.237224 0.193417	0.272287 0.193417	0.278146 0.193417	0.231365 0.199276	0.237224 0.199276	0.272287 0.199276	0.278146 0.199276	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico24
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				2 0.5	49 0.5	2 1.5	49 1.5	
+				0.443848 0.29834	0.468262 0.29834	0.443848 0.299316	0.468262 0.299316	
+				0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
