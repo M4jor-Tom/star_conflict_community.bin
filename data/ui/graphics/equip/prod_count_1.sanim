@@ -1,0 +1,69 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Thu Aug 14 13:58:45 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 60 15
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0.285137 0.373383
+			opacity 255
+			color 0xffffffff
+			size 60 13
+			effect ""
+			alignment "CM"
+			sampleText "999"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0191402 0.0169482	34.0191 0.0169482	0.0191402 15.0169	34.0191 15.0169	
+				0.928733 0.837925	0.89553 0.837925	0.928733 0.808629	0.89553 0.808629	
+				0xff959595	0xff959595	0xff959595	0xff959595	
+			}
+		}
+	}
+}
+
