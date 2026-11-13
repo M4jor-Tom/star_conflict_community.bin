@@ -1,0 +1,96 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by Sergey_Mitryaev
+//at Tue Apr 18 12:23:16 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object buy_input
+	{
+		defaults
+		{
+			pos 16 0.132032
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree\trans_syn_sl_input"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_down
+	{
+		defaults
+		{
+			pos 139 -0
+			opacity 255
+			color 0xffffffff
+			size 20 10
+			effect "ui\graphics\ships_tree\trans_syn_sl_btn_down"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_up
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 10
+			effect "ui\graphics\ships_tree\trans_syn_sl_btn_up"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				12 -0	16 -0	133 -0	137 -0	12 4	16 4	133 4	137 4	12 16	16 16	133 16	137 16	12 20	16 20	133 20	137 20	
+				0.00194812 0.160028	0.00585437 0.160028	0.0224393 0.160028	0.0263455 0.160028	0.00194812 0.163934	0.00585437 0.163934	0.0224393 0.163934	0.0263455 0.163934	0.00194812 0.18057	0.00585437 0.18057	0.0224393 0.18057	0.0263455 0.18057	0.00194812 0.184476	0.00585437 0.184476	0.0224393 0.184476	0.0263455 0.184476	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
