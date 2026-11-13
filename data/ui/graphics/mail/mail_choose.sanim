@@ -1,0 +1,107 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by sergey_mitryaev
+//at Fri Mar 29 10:25:29 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1.5
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object btn_2
+	{
+		defaults
+		{
+			pos 156 -0
+			opacity 255
+			color 0xffffffff
+			size 128 25
+			effect "ui\graphics\mail\mail_btn_right"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 128 25
+			effect "ui\graphics\mail\mail_btn_left"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object t_1
+	{
+		defaults
+		{
+			pos 127 2
+			opacity 255
+			color 0xffffffff
+			size 10 20
+			effect ""
+			alignment "RM"
+			sampleText "1"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 277 25
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object t_
+	{
+		defaults
+		{
+			pos 137 2
+			opacity 255
+			color 0xffffffff
+			size 10 20
+			effect ""
+			alignment "CM"
+			sampleText "/"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object t_3
+	{
+		defaults
+		{
+			pos 147 2
+			opacity 255
+			color 0xffffffff
+			size 10 20
+			effect ""
+			alignment "LM"
+			sampleText "2"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
