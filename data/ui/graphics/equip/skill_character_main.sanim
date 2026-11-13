@@ -1,0 +1,92 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 12:28:13 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 320 130
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object skill_prog_main
+	{
+		defaults
+		{
+			pos 0 51.1504
+			opacity 255
+			color 0xffffffff
+			size 320 86
+			effect "ui\graphics\equip\skill_prog_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object fee_progress
+	{
+		defaults
+		{
+			pos 7.02596 29.992
+			opacity 255
+			color 0xffffffff
+			size 200 18
+			effect "ui\graphics\debrifing\debrif_fee_progress"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value
+	{
+		defaults
+		{
+			pos -42.0159 5.74509
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "STRIX fgfkg oowip kfkff kfkffkfk"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object value_2
+	{
+		defaults
+		{
+			pos 10.8221 46.3661
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "Свободный опыт: 500"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
