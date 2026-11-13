@@ -1,0 +1,112 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Mon Dec 17 14:25:41 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 38
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bookmark_1
+	{
+		defaults
+		{
+			pos 230 -0
+			opacity 255
+			color 0xffffffff
+			size 500 38
+			effect "ui\graphics\clan\clan_bookmark_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bookmark_2
+	{
+		defaults
+		{
+			pos 230 -0
+			opacity 255
+			color 0xffffffff
+			size 250 38
+			effect "ui\graphics\clan\clan_bookmark_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bookmark_3
+	{
+		defaults
+		{
+			pos 480 -0
+			opacity 255
+			color 0xffffffff
+			size 250 38
+			effect "ui\graphics\clan\clan_bookmark_3"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				23 10	229 10	23 36	229 36	
+				0.00195313 0.84668	0.203125 0.84668	0.00195313 0.87207	0.203125 0.87207	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNameerg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				732 10	938 10	732 36	938 36	
+				0.203125 0.84668	0.00195313 0.84668	0.203125 0.87207	0.00195313 0.87207	
+			}
+		}
+		visible_on idle
+	}
+}
+
