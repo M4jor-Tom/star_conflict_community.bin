@@ -1,0 +1,174 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/cursor.ma"
+//by Sergey
+//at Tue Oct 20 15:20:24 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim blink
+	{
+		mode looped
+		cycle_time 0.3
+	}
+}
+
+total_elements 10
+
+objects 10
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 230 230
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object warning
+	{
+		defaults
+		{
+			pos -98.0915 22.0313
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\warning_msg\warning_cursor"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object cursor
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\hud\cursor\cursor"
+			alignment "LT"
+		}
+		visible_on idle
+		anim blink obj_op
+		{
+			3 
+			255
+			159
+			0
+		}
+	}
+	object cursor_center
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\hud\cursor\cursor_center"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object overheat
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\hud\cursor\overheat"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object disintegrator_prog
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 26 10
+			effect "ui\graphics\hud\disintegrator_prog"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 2 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object rect
+	{
+		defaults
+		{
+			pos -120 -120
+			opacity 255
+			color 0xffffffff
+			size 240 240
+			effect "rect"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object hit
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\hud\cursor\cursor_hit"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on blink
+	}
+	object sinergy
+	{
+		defaults
+		{
+			pos -50 -65
+			opacity 255
+			color 0xffffffff
+			size 100 15
+			effect "ui\graphics\hud\cursor\cursor_sinergy"
+			alignment "CM"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+		visible_on blink
+	}
+}
+
