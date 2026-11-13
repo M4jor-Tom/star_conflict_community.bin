@@ -1,0 +1,83 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by sergey_mitryaev
+//at Mon Oct 14 13:35:04 2013
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim boost
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object speed_value
+	{
+		defaults
+		{
+			pos 17 -0
+			opacity 255
+			color 0xff89b5ff
+			size 50 15
+			effect ""
+			alignment "LM"
+			sampleText "570"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim boost obj_col
+		{
+			2
+			0xff89b5ff
+			0xffffffff
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				3 1	15 1	3 13	15 13	
+				0.305664 0.179688	0.317383 0.179688	0.305664 0.191406	0.317383 0.191406	
+				0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	
+			}
+		}
+		visible_on idle
+		anim boost sp_col
+		{
+			11
+			0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	
+			0xff8cbaff	0xff8cbaff	0xff8cbaff	0xff8cbaff	
+			0xff99c1ff	0xff99c1ff	0xff99c1ff	0xff99c1ff	
+			0xffa5c9ff	0xffa5c9ff	0xffa5c9ff	0xffa5c9ff	
+			0xffb2d1ff	0xffb2d1ff	0xffb2d1ff	0xffb2d1ff	
+			0xffbfd8ff	0xffbfd8ff	0xffbfd8ff	0xffbfd8ff	
+			0xffcce0ff	0xffcce0ff	0xffcce0ff	0xffcce0ff	
+			0xffd8e8ff	0xffd8e8ff	0xffd8e8ff	0xffd8e8ff	
+			0xffe5efff	0xffe5efff	0xffe5efff	0xffe5efff	
+			0xfff2f7ff	0xfff2f7ff	0xfff2f7ff	0xfff2f7ff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
