@@ -1,0 +1,139 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Thu May 22 15:10:44 2014
+
+
+animations 4
+{
+	anim off_enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off_friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim on_enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim on_friend
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on off_enemy
+		visible_on off_friend
+		visible_on on_enemy
+		visible_on on_friend
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite objectNamefg
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-6.61625 -1.28247	6.80087 -1.28247	17.1991 -1.28247	30.6162 -1.28247	-6.61625 6.97087	6.80087 6.97087	17.1991 6.97087	30.6162 6.97087	-6.61625 13.8733	6.80087 13.8733	17.1991 13.8733	30.6162 13.8733	-6.61625 22.1267	6.80087 22.1267	17.1991 22.1267	30.6162 22.1267	
+				0.325539 0.0550315	0.333884 0.0550315	0.367288 0.0550315	0.375633 0.0550315	0.325539 0.0605469	0.333884 0.0605469	0.367288 0.0605469	0.375633 0.0605469	0.325539 0.0996094	0.333884 0.0996094	0.367288 0.0996094	0.375633 0.0996094	0.325539 0.105125	0.333884 0.105125	0.367288 0.105125	0.375633 0.105125	
+				0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	
+			}
+		}
+		visible_on off_enemy
+		visible_on off_friend
+		visible_on on_enemy
+		visible_on on_friend
+	}
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	24 -0	0 20	24 20	
+				0.564453 0.0244141	0.587891 0.0244141	0.564453 0.00488281	0.587891 0.00488281	
+				0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+			}
+		}
+		visible_on off_enemy
+		anim off_friend sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+		anim on_enemy sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+		anim on_friend sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+	}
+	sprite icon
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	24 -0	0 20	24 20	
+				0.59375 0.0244141	0.617188 0.0244141	0.59375 0.00488281	0.617188 0.00488281	
+				0xff2700	0xff2700	0xff2700	0xff2700	
+			}
+		}
+		visible_on off_enemy
+		anim off_friend sp_colc
+		{
+			1
+			0x7fb2ff	0x7fb2ff	0x7fb2ff	0x7fb2ff	
+		}
+		anim on_enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim on_friend sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+	}
+}
+
