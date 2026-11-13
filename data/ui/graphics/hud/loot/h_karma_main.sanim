@@ -1,0 +1,248 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Mon Mar 01 15:46:51 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 12
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 790 65
+			effect ""
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 31 4
+			opacity 255
+			color 0xffb6ced0
+			size 200 18
+			effect ""
+			alignment "LM"
+			sampleText "Карма:  -10 (1223454)"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_color_down
+	{
+		defaults
+		{
+			pos 210.763 -68.3849
+			opacity 255
+			color 0xffff2800
+			size 150 18
+			effect ""
+			alignment "LM"
+			sampleText "-30"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 26
+			effect ""
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 0 21
+			opacity 255
+			color 0xffffffff
+			size 10 20
+			effect "ui\graphics\hud\loot\h_karma_slot"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object title_color_up
+	{
+		defaults
+		{
+			pos 210.763 -49.3849
+			opacity 255
+			color 0xff80b3ff
+			size 150 18
+			effect ""
+			alignment "LM"
+			sampleText "+10"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 0 41
+			opacity 255
+			color 0xffffffff
+			size 10 20
+			effect "ui\graphics\hud\loot\h_karma_slot"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object fact_01
+	{
+		defaults
+		{
+			pos 246 4
+			opacity 255
+			color 0xffffffff
+			size 106 18
+			effect ""
+			alignment "LM"
+			sampleText "9999"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object fact_02
+	{
+		defaults
+		{
+			pos 353 4
+			opacity 255
+			color 0xffffffff
+			size 106 18
+			effect ""
+			alignment "LM"
+			sampleText "9999"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object fact_03
+	{
+		defaults
+		{
+			pos 461 4
+			opacity 255
+			color 0xffffffff
+			size 106 18
+			effect ""
+			alignment "LM"
+			sampleText "9999"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object fact_04
+	{
+		defaults
+		{
+			pos 569 4
+			opacity 255
+			color 0xffffffff
+			size 106 18
+			effect ""
+			alignment "LM"
+			sampleText "9999"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object fact_05
+	{
+		defaults
+		{
+			pos 677 4
+			opacity 255
+			color 0xffffffff
+			size 106 18
+			effect ""
+			alignment "LM"
+			sampleText "9999"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName1923
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				4.57764e-005 26	-4.57764e-005 1.33514e-005	785 26	785 -1.33514e-005	
+				0.0810547 0.293945	0.0908203 0.293945	0.0810547 0.300781	0.0908203 0.300781	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			4.57764e-005 26	-4.57764e-005 1.33514e-005	785 26	785 -1.33514e-005	
+			4.57764e-005 29.7	-4.57764e-005 1.33514e-005	785 29.7	785 -1.33514e-005	
+			4.57764e-005 33.4	-4.57764e-005 1.33514e-005	785 33.4	785 -1.33514e-005	
+			4.57764e-005 37.1	-4.57764e-005 1.33514e-005	785 37.1	785 -1.33514e-005	
+			4.57764e-005 40.8	-4.57764e-005 1.33514e-005	785 40.8	785 -1.33514e-005	
+			4.57764e-005 44.5	-4.57764e-005 1.33514e-005	785 44.5	785 -1.33514e-005	
+			4.57764e-005 48.2	-4.57764e-005 1.33514e-005	785 48.2	785 -1.33514e-005	
+			4.57764e-005 51.9	-4.57764e-005 1.33514e-005	785 51.9	785 -1.33514e-005	
+			4.57764e-005 55.6	-4.57764e-005 1.33514e-005	785 55.6	785 -1.33514e-005	
+			4.57764e-005 59.3	-4.57764e-005 1.33514e-005	785 59.3	785 -1.33514e-005	
+			4.57764e-005 63	-4.57764e-005 1.33514e-005	785 63	785 -1.33514e-005	
+		}
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				10 3	28 3	10 23	28 23	
+				0.708984 0.0703125	0.726563 0.0703125	0.708984 0.0898438	0.726563 0.0898438	
+				0xffb5cdd0	0xffb5cdd0	0xffb5cdd0	0xffb5cdd0	
+			}
+		}
+		visible_on idle
+	}
+}
+
