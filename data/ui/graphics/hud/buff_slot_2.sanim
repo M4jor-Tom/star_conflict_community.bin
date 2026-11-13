@@ -1,0 +1,122 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by sergey_mitryaev
+//at Tue Dec 10 17:44:23 2019
+
+base_res 1920 1080
+
+animations 2
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object bg
+	{
+		defaults
+		{
+			pos 0 15
+			opacity 255
+			color 0xffffffff
+			size 32 32
+			effect "ui\graphics\hud\buff_slot_2_bg"
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on enemy
+	}
+	object title
+	{
+		defaults
+		{
+			pos -4 35.7625
+			opacity 255
+			color 0xff0fff00
+			size 38 15
+			effect ""
+			alignment "CM"
+			sampleText "32.2"
+			font "Tiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff0027
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 28 50
+			effect ""
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on enemy
+	}
+	object buff_icon
+	{
+		defaults
+		{
+			pos 0 15
+			opacity 255
+			color 0xffffffff
+			size 42 42
+			effect "ui\graphics\hud\buff_icon_2"
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on enemy
+	}
+	object title5
+	{
+		defaults
+		{
+			pos -4 -1
+			opacity 255
+			color 0xff0fff00
+			size 38 15
+			effect ""
+			alignment "CM"
+			sampleText "2"
+			font "Tiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff0027
+		}
+	}
+	object agen_ico
+	{
+		defaults
+		{
+			pos -9 5
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip_1080\agen_b_ico_main"
+			alignment "LT"
+		}
+		visible_on friend
+		visible_on enemy
+	}
+}
+
