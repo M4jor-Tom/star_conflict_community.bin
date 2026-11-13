@@ -1,0 +1,65 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by Sergey_Mitryaev
+//at Wed Jun 14 15:07:12 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite maya_sceneClipBoard_bg13
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	50 -0	0 2	50 2	
+				0.476074 0.591797	0.480957 0.591797	0.476074 0.59375	0.480957 0.59375	
+				0xfffffe97	0xfffffe97	0xfffffe97	0xfffffe97	
+			}
+		}
+		anim idle sp_pos
+		{
+			2 
+			0 -0	50 -0	0 2	50 2	
+			0 50	50 50	0 52	50 52	
+		}
+	}
+	sprite maya_sceneClipBoard_bg14
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	50 -0	0 -2	50 -2	
+				0.476074 0.591797	0.480957 0.591797	0.476074 0.59375	0.480957 0.59375	
+				0xfffffe97	0xfffffe97	0xfffffe97	0xfffffe97	
+			}
+		}
+		anim idle sp_pos
+		{
+			2 
+			0 -0	50 -0	0 -2	50 -2	
+			0 50	50 50	0 48	50 48	
+		}
+	}
+}
+
