@@ -1,0 +1,136 @@
+﻿source_file  Y:/art/source/ui/graphics/equip/drop_down.ma
+//by sega
+//at Tue Nov 15 15:00:53 2011
+
+
+animations 3
+{
+	anim white
+	{
+		mode once
+		cycle_time 0.5
+	}
+	anim gray
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim blue
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object level
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 15
+			effect ""
+			alignment "RM"
+			sampleText "Ур.5"
+			font "Tiny"
+		}
+		visible_on white
+		anim gray obj_colc
+		{
+			1
+			0xff999999
+		}
+		anim blue obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+	}
+	object info_slot_1
+	{
+		defaults
+		{
+			pos 37.1354 1.46373
+			opacity 255
+			color 0xff999999
+			size 10 10
+			effect "ui\graphics\shop\prod_info_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on white
+		visible_on gray
+		anim blue obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+	}
+	object info_slot_2
+	{
+		defaults
+		{
+			pos 112.402 1.46373
+			opacity 255
+			color 0xff999999
+			size 10 10
+			effect "ui\graphics\shop\prod_info_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on white
+		visible_on gray
+		anim blue obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+	}
+	object description
+	{
+		defaults
+		{
+			pos 37.0671 15.7292
+			opacity 255
+			color 0xffffffff
+			size 250 40
+			effect ""
+			alignment "LT"
+			sampleText "safdewfwgwsgg  ewqfc  wfgwgf gwrgwrwgg vfgwef fewffgwf"
+			font "Tiny"
+		}
+		visible_on white
+		anim gray obj_colc
+		{
+			1
+			0xff999999
+		}
+		anim blue obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+	}
+	object price
+	{
+		defaults
+		{
+			pos 187.793 -1.24955
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\shop\prod_price"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on white
+		visible_on gray
+		visible_on blue
+	}
+}
+
