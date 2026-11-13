@@ -1,0 +1,58 @@
+﻿source_file "Y:/art/source/ui/graphics/loading_screen/loading_screen.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 14:36:13 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object loading
+	{
+		defaults
+		{
+			anchor "LB"
+			pos 36 584
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "C"
+			vertices_nc
+			{
+				-6477.24 -3643.45	7757.24 -3643.45	-6477.24 4363.45	7757.24 4363.45	
+				0.245914 0.0239226	0.246273 0.0239226	0.245914 0.0249055	0.246273 0.0249055	
+			}
+		}
+		visible_on idle
+	}
+}
+
