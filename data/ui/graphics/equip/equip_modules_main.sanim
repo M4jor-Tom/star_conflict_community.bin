@@ -1,0 +1,335 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Mon Jun 24 11:47:29 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 20
+	}
+}
+
+total_elements 21
+
+objects 14
+{
+	object equip_ship
+	{
+		defaults
+		{
+			pos 17.0055 1.56743
+			opacity 255
+			color 0xffffffff
+			size 360 72
+			effect "ui\graphics\equip\equip_ship"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object equip_modules
+	{
+		defaults
+		{
+			pos 182.858 43.5213
+			opacity 255
+			color 0xffffffff
+			size 430 145
+			effect "ui\graphics\equip\equip_modules"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object equip_rocket
+	{
+		defaults
+		{
+			pos 375.407 202.308
+			opacity 255
+			color 0xffffffff
+			size 220 50
+			effect "ui\graphics\equip\equip_rocket"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object equip_weapon
+	{
+		defaults
+		{
+			pos 40.5633 202.2
+			opacity 255
+			color 0xffffffff
+			size 300 64
+			effect "ui\graphics\equip\equip_weapon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 320.962 203.39
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object special_icon
+	{
+		defaults
+		{
+			pos 253.518 196.284
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\hud\modules_special_icon_main"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 26.126 263.984
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect ""
+			alignment "RM"
+			sampleText "Мод,орудий"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 197.93 263.984
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect ""
+			alignment "LM"
+			sampleText "Jhelbz"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos 322.139 263.984
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect ""
+			alignment "LM"
+			sampleText "Dhelbzefgewg gewq"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_5
+	{
+		defaults
+		{
+			pos 183.44 72.7949
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect ""
+			alignment "CM"
+			sampleText "Jhelbz"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object text_4
+	{
+		defaults
+		{
+			pos 26.126 170.45
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect ""
+			alignment "LM"
+			sampleText "Мод,орудий"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_6
+	{
+		defaults
+		{
+			pos 392.139 170.45
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect ""
+			alignment "RM"
+			sampleText "Dhelbzefgewg gewq"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_7
+	{
+		defaults
+		{
+			pos 187.177 171.593
+			opacity 255
+			color 0xffffffff
+			size 200 16
+			effect ""
+			alignment "CM"
+			sampleText "Jhelbz"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 570 300
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 7
+{
+	total_vertices 64
+
+	sprite objectName60
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1.45891 132.497	285.459 132.497	1.45891 262.497	285.459 262.497	
+				3.55169e-005 0.401572	0.277379 0.401572	3.55169e-005 0.528525	0.277379 0.528525	
+			}
+		}
+		visible_on idle
+	}
+	sprite spr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				285.46 132.497	569.46 132.497	285.46 262.497	569.46 262.497	
+				0.277379 0.401572	3.55244e-005 0.401572	0.277379 0.528525	3.55244e-005 0.528525	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				5.17404 67.3144	11.174 67.3144	563.621 67.3144	569.621 67.3144	5.17404 73.3144	11.174 73.3144	563.621 73.3144	569.621 73.3144	5.17404 280.194	11.174 280.194	563.621 280.194	569.621 280.194	5.17404 286.194	11.174 286.194	563.621 286.194	569.621 286.194	
+				0.325212 0.00723875	0.331072 0.00723875	0.370079 0.00723875	0.375939 0.00723875	0.325212 0.0130981	0.331072 0.0130981	0.370079 0.0130981	0.375939 0.0130981	0.325212 0.0461038	0.331072 0.0461038	0.370079 0.0461038	0.375939 0.0461038	0.325212 0.0519632	0.331072 0.0519632	0.370079 0.0519632	0.375939 0.0519632	
+				0xcccccc	0xcccccc	0xcccccc	0xcccccc	0xcccccc	0xcccccc	0xcccccc	0xcccccc	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp3
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				23.0713 264.864	29.0713 264.864	543.842 264.864	549.842 264.864	23.0713 270.864	29.0713 270.864	543.842 270.864	549.842 270.864	23.0713 275.209	29.0713 275.209	543.842 275.209	549.842 275.209	23.0713 281.209	29.0713 281.209	543.842 281.209	549.842 281.209	
+				0.223561 0.00303477	0.22942 0.00303477	0.266628 0.00303477	0.272487 0.00303477	0.223561 0.00889415	0.22942 0.00889415	0.266628 0.00889415	0.272487 0.00889415	0.223561 0.0448637	0.22942 0.0448637	0.266628 0.0448637	0.272487 0.0448637	0.223561 0.0507231	0.22942 0.0507231	0.266628 0.0507231	0.272487 0.0507231	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp31
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				23.0713 171.411	29.0713 171.411	543.842 171.411	549.842 171.411	23.0713 177.411	29.0713 177.411	543.842 177.411	549.842 177.411	23.0713 181.757	29.0713 181.757	543.842 181.757	549.842 181.757	23.0713 187.757	29.0713 187.757	543.842 187.757	549.842 187.757	
+				0.223561 0.00303477	0.22942 0.00303477	0.266628 0.00303477	0.272487 0.00303477	0.223561 0.00889415	0.22942 0.00889415	0.266628 0.00889415	0.272487 0.00889415	0.223561 0.0448637	0.22942 0.0448637	0.266628 0.0448637	0.272487 0.0448637	0.223561 0.0507231	0.22942 0.0507231	0.266628 0.0507231	0.272487 0.0507231	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName60w
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				17.3796 57.1309	132.38 57.1309	17.3796 172.131	132.38 172.131	
+				0.000276417 0.527422	0.112581 0.527422	0.000276417 0.639726	0.112581 0.639726	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName60wsv
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				438.55 57.6664	553.55 57.6664	438.55 172.666	553.55 172.666	
+				0.000276417 0.527422	0.112581 0.527422	0.000276417 0.639726	0.112581 0.639726	
+			}
+		}
+		visible_on idle
+	}
+}
+
