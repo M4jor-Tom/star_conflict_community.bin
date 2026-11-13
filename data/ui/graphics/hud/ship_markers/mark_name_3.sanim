@@ -1,0 +1,462 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Thu Oct 21 12:11:20 2021
+
+base_res 1280 720
+
+animations 16
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_shot
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim agressiv
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim agressiv_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim me
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim me_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim alien
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim alien_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 8
+{
+	object name1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff00ddff
+			size 200 16
+			effect ""
+			alignment "CM"
+			sampleText "DJ.DSJamper"
+			font "MonoTiny"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2700
+		}
+		anim enemy_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim squad obj_colc
+		{
+			1
+			0xff07ff00
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xff999999
+		}
+		anim neutral_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim friend_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim agressiv obj_colc
+		{
+			1
+			0xffff9a00
+		}
+		anim agressiv_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim nlo obj_colc
+		{
+			1
+			0xffbc24e4
+		}
+		anim nlo_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim squad_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim me obj_colc
+		{
+			1
+			0xffb3efa8
+		}
+		anim me_shot obj_colc
+		{
+			1
+			0xffb3efa8
+		}
+		anim alien obj_colc
+		{
+			1
+			0xffbc24e4
+		}
+		anim alien_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object name_outl
+	{
+		defaults
+		{
+			pos 0 28
+			opacity 255
+			color 0xffb3efa8
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "werwrwrwrt"
+			font "MonoTiny"
+			back_color 0x701200
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me
+		visible_on me_shot
+		visible_on alien
+		visible_on alien_shot
+	}
+	object name_outl2
+	{
+		defaults
+		{
+			pos 0 78
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "werwrwrwrt"
+			font "MonoTiny"
+			back_color 0x4c57
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me
+		visible_on me_shot
+		visible_on alien
+		visible_on alien_shot
+	}
+	object name_outl3
+	{
+		defaults
+		{
+			pos 0 106
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "werwrwrwrt"
+			font "MonoTiny"
+			back_color 0xab4b00
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me
+		visible_on me_shot
+		visible_on alien
+		visible_on alien_shot
+	}
+	object objectNamewfwfw3
+	{
+		defaults
+		{
+			pos 0 135
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "werwrwrwrt"
+			font "MonoTiny"
+			back_color 0xbd25e5
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me
+		visible_on me_shot
+		visible_on alien
+		visible_on alien_shot
+	}
+	object name2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff00ddff
+			size 200 16
+			effect ""
+			alignment "CB"
+			sampleText "DJ.DSJamper"
+			font "MonoTiny"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2700
+		}
+		anim enemy_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim squad obj_colc
+		{
+			1
+			0xff07ff00
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xff999999
+		}
+		anim neutral_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim friend_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim agressiv obj_colc
+		{
+			1
+			0xffff9a00
+		}
+		anim agressiv_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim nlo obj_colc
+		{
+			1
+			0xffbc24e4
+		}
+		anim nlo_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim squad_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim me obj_colc
+		{
+			1
+			0xffb3efa8
+		}
+		anim me_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim alien obj_colc
+		{
+			1
+			0xffbc24e4
+		}
+		anim alien_shot obj_colc
+		{
+			1
+			0xffffffff
+		}
+	}
+	object name_color_squad_shot
+	{
+		defaults
+		{
+			pos 0 160
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "werwrwrwrt"
+			font "MonoTiny"
+			back_color 0xe600
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me
+		visible_on me_shot
+		visible_on alien
+		visible_on alien_shot
+	}
+	object name_color_me_shot
+	{
+		defaults
+		{
+			pos 0 187
+			opacity 255
+			color 0xffb3efa8
+			size 150 20
+			effect ""
+			alignment "LT"
+			sampleText "werwrwrwrt"
+			font "MonoTiny"
+			back_color 0xa0f9ca
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me
+		visible_on me_shot
+		visible_on alien
+		visible_on alien_shot
+	}
+}
+
