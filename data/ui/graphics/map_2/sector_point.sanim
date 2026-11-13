@@ -1,0 +1,138 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map_2.ma"
+//by sergey_mitryaev
+//at Thu Dec 14 15:40:10 2017
+
+base_res 1920 1080
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+	anim not_visit
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim clan_enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim clan_frend
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName385
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-30 -30	30 -30	-30 30	30 30	
+				0.180664 0.09375	0.239258 0.09375	0.180664 0.210938	0.239258 0.210938	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on not_visit
+		visible_on clan_enemy
+		anim clan_frend sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName386
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-30 -30	30 -30	-30 30	30 30	
+				0.118164 0.216797	0.176758 0.216797	0.118164 0.333984	0.176758 0.333984	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on not_visit
+		anim clan_enemy sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on clan_frend
+	}
+	sprite objectName387
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-30 -30	30 -30	-30 30	30 30	
+				0.118164 0.09375	0.176758 0.09375	0.118164 0.210938	0.176758 0.210938	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim not_visit sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim clan_enemy sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim clan_frend sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName388
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-30 -30	30 -30	-30 30	30 30	
+				0.118164 0.09375	0.176758 0.09375	0.118164 0.210938	0.176758 0.210938	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim not_visit sp_colc
+		{
+			1
+			0xff787878	0xff787878	0xff787878	0xff787878	
+		}
+		visible_on clan_enemy
+		visible_on clan_frend
+	}
+}
+
