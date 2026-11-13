@@ -1,0 +1,192 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Thu Mar 19 09:11:07 2015
+
+base_res 1280 720
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim unuse
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 50
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object title_7
+	{
+		defaults
+		{
+			pos -17 32
+			opacity 255
+			color 0xffc3d6ff
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "Color Sector 4"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object arrow
+	{
+		defaults
+		{
+			pos 21 7
+			opacity 255
+			color 0xffc3d6ff
+			size 20 20
+			effect "ui\graphics\map\backspase_2_arrow_2"
+			alignment "CM"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object center
+	{
+		defaults
+		{
+			pos 31 18
+			opacity 255
+			color 0xffc3d6ff
+			size 20 20
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object exclamatory
+	{
+		defaults
+		{
+			pos 19 -20
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_exclamatory"
+			alignment "CM"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object exclamatory4
+	{
+		defaults
+		{
+			pos 42 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_exclamatory"
+			alignment "CM"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object exclamatory5
+	{
+		defaults
+		{
+			pos 19 24
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_exclamatory"
+			alignment "CM"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object exclamatory6
+	{
+		defaults
+		{
+			pos -1 0.9395
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_exclamatory"
+			alignment "CM"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
