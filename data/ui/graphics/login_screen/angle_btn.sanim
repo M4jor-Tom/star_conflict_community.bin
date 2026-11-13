@@ -1,0 +1,208 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by Sergey_Mitryaev
+//at Fri Apr 21 11:54:13 2017
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 6
+{
+	total_vertices 24
+
+	sprite objectName356
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				3.52757 0.922695	6.47243 0.922695	3.52757 3.86755	6.47243 3.86755	
+				0.0498259 0.32131	0.0556428 0.32131	0.0498259 0.327127	0.0556428 0.327127	
+				0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName35qws
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				13.5276 0.922695	16.4724 0.922695	13.5276 3.86755	16.4724 3.86755	
+				0.0498259 0.32131	0.0556428 0.32131	0.0498259 0.327127	0.0556428 0.327127	
+				0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName3wqe
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				8.52757 0.922695	11.4724 0.922695	8.52757 3.86755	11.4724 3.86755	
+				0.0498259 0.32131	0.0556428 0.32131	0.0498259 0.327127	0.0556428 0.327127	
+				0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName359
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				13.5276 5.52757	16.4724 5.52757	13.5276 8.47243	16.4724 8.47243	
+				0.0498259 0.32131	0.0556428 0.32131	0.0498259 0.327127	0.0556428 0.327127	
+				0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName360
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				13.5276 10.5276	16.4724 10.5276	13.5276 13.4724	16.4724 13.4724	
+				0.0498259 0.32131	0.0556428 0.32131	0.0498259 0.327127	0.0556428 0.327127	
+				0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite objectName361
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				8.52757 5.52757	11.4724 5.52757	8.52757 8.47243	11.4724 8.47243	
+				0.0498259 0.32131	0.0556428 0.32131	0.0498259 0.327127	0.0556428 0.327127	
+				0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	0xff9d9d9d	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
