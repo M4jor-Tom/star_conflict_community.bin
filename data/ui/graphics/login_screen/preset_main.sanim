@@ -1,0 +1,187 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Mon Nov 25 16:34:24 2019
+
+base_res 1280 720
+
+animations 6
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 6
+{
+	object preset_btns
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 36
+			effect "ui\graphics\login_screen\preset_btns_main"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 470 36
+			effect ""
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+	object save
+	{
+		defaults
+		{
+			pos 305 -0
+			opacity 255
+			color 0xffffffff
+			size 36 36
+			effect "ui\graphics\login_screen\preset_btn_1"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+	object load
+	{
+		defaults
+		{
+			pos 346 -0
+			opacity 255
+			color 0xffffffff
+			size 36 36
+			effect "ui\graphics\login_screen\preset_btn_2"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+	object add
+	{
+		defaults
+		{
+			pos 387 -0
+			opacity 255
+			color 0xffffffff
+			size 36 36
+			effect "ui\graphics\login_screen\preset_btn_3"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+	object remove
+	{
+		defaults
+		{
+			pos 428 -0
+			opacity 255
+			color 0xffffffff
+			size 36 36
+			effect "ui\graphics\login_screen\preset_btn_4"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp30
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-3 -3	3 -3	463 -3	469 -3	-3 3	3 3	463 3	469 3	-3 34	3 34	463 34	469 34	-3 40	3 40	463 40	469 40	
+				0.223926 0.00267881	0.229785 0.00267881	0.264781 0.00267881	0.27064 0.00267881	0.223926 0.00853819	0.229785 0.00853819	0.264781 0.00853819	0.27064 0.00853819	0.223926 0.0456586	0.229785 0.0456586	0.264781 0.0456586	0.27064 0.0456586	0.223926 0.051518	0.229785 0.051518	0.264781 0.051518	0.27064 0.051518	
+				0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on select
+		visible_on press
+		visible_on over_select
+		visible_on disable
+	}
+}
+
