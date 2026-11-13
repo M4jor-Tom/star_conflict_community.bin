@@ -1,0 +1,170 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by sergey_mitryaev
+//at Thu Sep 24 17:08:35 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 460 80
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object prog
+	{
+		defaults
+		{
+			pos -2 26
+			opacity 255
+			color 0xffffffff
+			size 454 20
+			effect "ui\graphics\hud\hud_3\boss_prog"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 127 24
+			opacity 255
+			color 0xffffffff
+			size 200 22
+			effect ""
+			alignment "CM"
+			sampleText "Разрушитель 100%"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object vol_1
+	{
+		defaults
+		{
+			pos 127 24
+			opacity 255
+			color 0xffffffff
+			size 200 22
+			effect ""
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object shield
+	{
+		defaults
+		{
+			pos -2 45
+			opacity 255
+			color 0xffffffff
+			size 454 20
+			effect "ui\graphics\hud\hud_3\boss_prog_shield"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object name1
+	{
+		defaults
+		{
+			pos 127 47
+			opacity 255
+			color 0xff00ddff
+			size 200 22
+			effect ""
+			alignment "CM"
+			sampleText "Осталось авнпостов 55"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 28
+
+	sprite sprt2_interaction19
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/head_back_1.tif"
+			vertices_nc
+			{
+				451.725 25.5173	498.275 25.5173	451.725 48.4826	498.275 48.4826	
+				0.662139 0.0164931	0.851533 0.0164931	0.662139 0.530382	0.851533 0.530382	
+			}
+		}
+		visible_on idle
+	}
+	sprite sprt2_interaction21
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/head_back_1.tif"
+			vertices_nc
+			{
+				-46.2922 25.5089	0.292221 25.5089	-46.2922 48.4911	0.292221 48.4911	
+				0.851533 0.0164931	0.662139 0.0164931	0.851533 0.530382	0.662139 0.530382	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-5 23	1 23	451 23	457 23	-5 29	1 29	451 29	457 29	-5 43	1 43	451 43	457 43	-5 49	1 49	451 49	457 49	
+				0.629883 0.688477	0.635742 0.688477	0.700195 0.688477	0.706055 0.688477	0.629883 0.694336	0.635742 0.694336	0.700195 0.694336	0.706055 0.694336	0.629883 0.74707	0.635742 0.74707	0.700195 0.74707	0.706055 0.74707	0.629883 0.75293	0.635742 0.75293	0.700195 0.75293	0.706055 0.75293	
+			}
+		}
+		visible_on idle
+	}
+	sprite sprt2_interaction13
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 29	451 29	1 43	451 43	
+				0.233398 0.0107422	0.266602 0.0107422	0.233398 0.0439453	0.266602 0.0439453	
+			}
+		}
+		visible_on idle
+	}
+}
+
