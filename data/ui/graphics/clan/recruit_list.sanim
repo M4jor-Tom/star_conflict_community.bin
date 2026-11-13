@@ -1,0 +1,125 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Wed May 28 15:26:20 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 6
+{
+	object scroll_max
+	{
+		defaults
+		{
+			pos 713 1.5
+			opacity 255
+			color 0xffffffff
+			size 16 504
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 730 506
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading3
+	{
+		defaults
+		{
+			pos 309.014 175.5
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "y:\work_version\pc\data\ui\graphics\hangar\loading_big.sanim"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 3.01409 3
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\recruit_list_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 3.01409 169.743
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\recruit_list_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos 3.01409 336.912
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\recruit_list_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp213
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	704.014 -0	710.014 -0	0 6	6 6	704.014 6	710.014 6	0 500.5	6 500.5	704.014 500.5	710.014 500.5	0 506.5	6 506.5	704.014 506.5	710.014 506.5	
+				0.272536 0.0507218	0.272536 0.0448626	0.272536 0.00890714	0.272536 0.00304788	0.266677 0.0507219	0.266677 0.0448626	0.266677 0.00890732	0.266677 0.00304776	0.229545 0.0507219	0.229545 0.0448625	0.229545 0.00890702	0.229545 0.00304776	0.223686 0.0507219	0.223686 0.0448625	0.223686 0.0089072	0.223686 0.00304776	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
