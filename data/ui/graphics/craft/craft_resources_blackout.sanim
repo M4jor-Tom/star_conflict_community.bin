@@ -1,0 +1,72 @@
+﻿source_file "Y:/art/source/ui/graphics/craft/craft.ma"
+//by Sergey_Mitryaev
+//at Wed Sep 05 11:57:23 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 362 480
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_not_found1
+	{
+		defaults
+		{
+			pos 32 89
+			opacity 255
+			color 0xffffffff
+			size 300 300
+			effect ""
+			alignment "CM"
+			sampleText "Нет не единого товара"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp47
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1 1	7 1	355 1	361 1	1 7	7 7	355 7	361 7	1 474	7 474	355 474	361 474	1 480	7 480	355 480	361 480	
+				0.0585966 0.670898	0.064456 0.670898	0.0761719 0.670898	0.0820313 0.670898	0.0585966 0.676758	0.064456 0.676758	0.0761719 0.676758	0.0820313 0.676758	0.0585966 0.688477	0.064456 0.688477	0.0761719 0.688477	0.0820313 0.688477	0.0585966 0.694336	0.064456 0.694336	0.0761719 0.694336	0.0820313 0.694336	
+				0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	0xb2000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
