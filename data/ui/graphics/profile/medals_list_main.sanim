@@ -1,0 +1,74 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by sergey_mitryaev
+//at Mon Mar 11 13:48:06 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object medals_list_1
+	{
+		defaults
+		{
+			pos 11 29
+			opacity 255
+			color 0xffffffff
+			size 912 126
+			effect "ui\graphics\profile\medals_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 350 27
+			effect "ui\graphics\profile\medals_title"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object medals_list_2
+	{
+		defaults
+		{
+			pos 11 165
+			opacity 255
+			color 0xffffffff
+			size 912 126
+			effect "ui\graphics\profile\medals_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 290
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
