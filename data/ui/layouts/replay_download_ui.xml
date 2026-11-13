@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+	<Form name="ReplayDownloadUI"
+		class="ReplayDownloadUI" 
+		width="300"
+		height="80"
+		resizable="false"
+		movable="false"
+		font="Tiny_outl2"
+		text="#REPLAY_DOWNLOAD_UI"
+		foreground="White"
+		background="White"
+		alpha="1">
+
+		<!--<anchor point="BOTTOMRIGHT" x="-30" y="-30" />-->
+		<anchor point="TOPRIGHT" x="-10" y="10" />
+
+		<TextLabel name="DownloadAvailable" text="#REPLAY_DOWNLOAD_AVAILABLE" w="290" h="22">
+			<anchor point="TOP" y="3" />
+		</TextLabel>
+
+		<Button name="DownloadButton" text="#DOWNLOAD" w="290" h="22">
+			<anchor point="TOP" y="3" to="DownloadAvailable:BOTTOM"/>
+		</Button>
+
+		<Progressbar name="Progress" text="#PROGRESS" h="22" w="290">
+			<anchor point="BOTTOM" y="-3" />
+		</Progressbar>
+	
+	</Form>
+</Ui>
