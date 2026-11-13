@@ -1,0 +1,66 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by Sergey_Mitryaev
+//at Fri Feb 16 13:31:22 2018
+
+base_res 1280 720
+
+animations 2
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName393
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-1 -1	9 -1	-1 29	9 29	
+				0.542969 0.832031	0.5625 0.832031	0.542969 0.890625	0.5625 0.890625	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		visible_on inactive
+	}
+	sprite objectName394
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-1 -1	9 -1	-1 29	9 29	
+				0.572266 0.832031	0.591797 0.832031	0.572266 0.890625	0.591797 0.890625	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
