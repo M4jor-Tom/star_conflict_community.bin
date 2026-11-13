@@ -1,0 +1,137 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Fri Apr 05 11:24:55 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 8
+{
+	object friend
+	{
+		defaults
+		{
+			pos 77.2557 -0
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "Наши"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object enemy
+	{
+		defaults
+		{
+			pos 269.484 -0
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "Наши"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object friend_score
+	{
+		defaults
+		{
+			pos 171.794 -0
+			opacity 255
+			color 0xff00ddff
+			size 40 20
+			effect ""
+			alignment "RM"
+			sampleText "999"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object indicator_1
+	{
+		defaults
+		{
+			pos 214 2
+			opacity 255
+			color 0xffffffff
+			size 20 15
+			effect "ui\graphics\hud\ratio\ratio_indicator"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 163.037 21.4151
+			opacity 255
+			color 0xffffffff
+			size 73 30
+			effect "ui\graphics\hud\ratio\ratio_ctrl_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 70
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object enemy_score
+	{
+		defaults
+		{
+			pos 237.242 -0
+			opacity 255
+			color 0xffff2700
+			size 40 20
+			effect ""
+			alignment "LM"
+			sampleText "999"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object timer
+	{
+		defaults
+		{
+			pos 240.256 20
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "80 сек."
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
