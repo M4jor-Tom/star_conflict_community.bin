@@ -1,0 +1,40 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Thu Jul 20 11:44:16 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we8_22
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-26.2868 -32.1729	141.791 -32.1729	-26.2868 128.14	141.791 128.14	
+				0.276612 0.00871229	0.3562 0.00871229	0.276612 0.0850377	0.3562 0.0850377	
+				0xfe2a2a2a	0xfe2a2a2a	0xfe2a2a2a	0xfe2a2a2a	
+			}
+		}
+		visible_on idle
+	}
+}
+
