@@ -1,0 +1,89 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 28 16:33:07 2017
+
+base_res 1920 1080
+
+animations 2
+{
+	anim on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on on
+		visible_on off
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite er10
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-3 -3	27 -3	-3 27	27 27	
+				0.373047 0.5	0.431641 0.5	0.373047 0.558594	0.431641 0.558594	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on on
+		anim off sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite er11
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-3 -3	27 -3	-3 27	27 27	
+				0.376953 0.439453	0.435547 0.439453	0.376953 0.498047	0.435547 0.498047	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on on
+		anim off sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
