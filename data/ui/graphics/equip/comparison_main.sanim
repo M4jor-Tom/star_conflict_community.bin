@@ -1,0 +1,48 @@
+﻿source_file  Y:/art/source/ui/graphics/equip/equip.ma
+//by sega
+//at Wed Nov 23 17:53:35 2011
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 2.63569 -0
+			opacity 255
+			color 0xffffffff
+			size 710 70
+			effect "ui\graphics\equip\comparison_slot"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 75.9708 73.1148
+			opacity 255
+			color 0xffffffff
+			size 710 70
+			effect "ui\graphics\equip\comparison_slot_on_ship"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
