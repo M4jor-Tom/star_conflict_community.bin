@@ -1,0 +1,183 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Fri Nov 22 13:27:43 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 1
+{
+	object waiting
+	{
+		defaults
+		{
+			pos 75 24
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hangar\ship_slot_1080\waiting"
+			alignment "CM"
+			font "Tiny_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite objectName396
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				1.52588e-005 6	156 6	1.52588e-005 41	156 41	
+				0.288574 0.863281	0.290039 0.863281	0.288574 0.868164	0.290039 0.868164	
+				0x99898989	0x99898989	0x99898989	0x99898989	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName397
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				78.9999 6	-1.52588e-005 6	79.0001 4.19617e-005	1.52588e-005 -4.19617e-005	
+				0.286133 0.847799	0.406488 0.847799	0.286133 0.870951	0.406488 0.870951	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	
+			0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	
+			0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	
+			0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	
+			0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	
+			0xffababab	0xffababab	0xffababab	0xffababab	
+			0xff919191	0xff919191	0xff919191	0xff919191	
+			0xff767676	0xff767676	0xff767676	0xff767676	
+			0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	
+			0xff414141	0xff414141	0xff414141	0xff414141	
+		}
+	}
+	sprite objectName398
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				156 6	79 6	156 4.19617e-005	79 -4.19617e-005	
+				0.284919 0.847799	0.388672 0.847799	0.284919 0.870951	0.388672 0.870951	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	
+			0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	
+			0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	
+			0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	
+			0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	
+			0xffababab	0xffababab	0xffababab	0xffababab	
+			0xff919191	0xff919191	0xff919191	0xff919191	
+			0xff767676	0xff767676	0xff767676	0xff767676	
+			0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	
+			0xff414141	0xff414141	0xff414141	0xff414141	
+		}
+	}
+	sprite objectName399
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				78.9999 47	-1.52588e-005 47	79.0001 41	1.52588e-005 41	
+				0.286133 0.847799	0.406488 0.847799	0.286133 0.870951	0.406488 0.870951	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	
+			0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	
+			0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	
+			0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	
+			0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	
+			0xffababab	0xffababab	0xffababab	0xffababab	
+			0xff919191	0xff919191	0xff919191	0xff919191	
+			0xff767676	0xff767676	0xff767676	0xff767676	
+			0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	
+			0xff414141	0xff414141	0xff414141	0xff414141	
+		}
+	}
+	sprite objectName400
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				156 47	79 47	156 41	79 41	
+				0.284919 0.847799	0.388672 0.847799	0.284919 0.870951	0.388672 0.870951	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	0xfffdfdfd	
+			0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	0xfff6f6f6	
+			0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	0xffe9e9e9	
+			0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	0xffd7d7d7	
+			0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	0xffc2c2c2	
+			0xffababab	0xffababab	0xffababab	0xffababab	
+			0xff919191	0xff919191	0xff919191	0xff919191	
+			0xff767676	0xff767676	0xff767676	0xff767676	
+			0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	0xff5b5b5b	
+			0xff414141	0xff414141	0xff414141	0xff414141	
+		}
+	}
+}
+
