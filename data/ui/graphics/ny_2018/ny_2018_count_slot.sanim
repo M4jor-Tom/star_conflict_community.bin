@@ -1,0 +1,162 @@
+﻿source_file "Y:/art/source/ui/graphics/ny_count/ny_count_2018.ma"
+//by sergey_mitryaev
+//at Mon Nov 27 12:23:33 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 5
+{
+	object lvl
+	{
+		defaults
+		{
+			pos 4 51
+			opacity 255
+			color 0xffd1f0ff
+			size 100 44
+			effect ""
+			alignment "LM"
+			sampleText "999"
+			font "segoeuilr_30"
+		}
+		visible_on idle
+	}
+	object lvl_val
+	{
+		defaults
+		{
+			pos 75 58
+			opacity 255
+			color 0xff75838e
+			size 150 30
+			effect ""
+			alignment "LM"
+			sampleText "99"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos -3.06954e-012 -0
+			opacity 255
+			color 0xffffffff
+			size 200 100
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object nick_name
+	{
+		defaults
+		{
+			pos 4 9
+			opacity 255
+			color 0xff7b8cac
+			size 300 40
+			effect ""
+			alignment "LM"
+			sampleText "Всего кораблей"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object lvl_progr
+	{
+		defaults
+		{
+			pos 3.94813 47.0204
+			opacity 255
+			color 0xffffffff
+			size 300 3
+			effect "ui\graphics\ny_2018\ny_2018_count_progr"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite que479
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				55 63.9228	71 63.9228	55 79.9228	71 79.9228	
+				0.4375 0.00585938	0.46875 0.00585938	0.4375 0.0371094	0.46875 0.0371094	
+				0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite que480
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				62 54	63 54	62 62.2401	63 62.2401	
+				0.175781 0.246094	0.207031 0.246094	0.175781 0.277344	0.207031 0.277344	
+				0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite que481
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				62 82.24	63 82.24	62 91	63 91	
+				0.175781 0.246094	0.207031 0.246094	0.175781 0.277344	0.207031 0.277344	
+				0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite que494
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-13.1864 43.0599	49 43.0599	-13.1864 100.941	49 100.941	
+				0.438078 0.594328	0.483797 0.594328	0.438078 0.640047	0.483797 0.640047	
+				0x544a73ff	0x544a73ff	0x544a73ff	0x544a73ff	
+			}
+		}
+		visible_on idle
+	}
+}
+
