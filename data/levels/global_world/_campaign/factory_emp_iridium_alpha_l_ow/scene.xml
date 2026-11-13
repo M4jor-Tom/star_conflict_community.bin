@@ -1,0 +1,604 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="da_prototype; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" additionalColorRemapAnimTime="1.000" battlefieldRadius="1985.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" useWorldLookPoint="true" />
+  <EntityContainer>
+    <Entity Name="PointLight25" Def="Lights_PointLight" Pos="-1150.106 -31.372 169.920" start_off="0" rad="130.00000" color="0x43FF7C51" />
+    <Entity Name="Lamp10" Def="Lamp01" Pos="-918.349 63.873 -309.096" Rot="-0.703 0.000 0.000 0.711" Skin="orange" />
+    <Entity Name="AntennaLightOrange1" Def="Effects_AntennaLightOrange" Pos="-58.726 420.876 -547.636" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="Lamp9" Def="Lamp01" Pos="-871.423 63.883 -310.016" Rot="-0.703 0.000 0.000 0.711" Skin="orange" />
+    <Entity Name="Lamp8" Def="Lamp01" Pos="-918.349 106.605 -308.831" Rot="-0.703 0.000 0.000 0.711" Skin="orange" />
+    <Entity Name="Lamp7" Def="Lamp01" Pos="-871.423 106.613 -309.532" Rot="-0.703 0.000 0.000 0.711" Skin="orange" />
+    <Entity Name="Lamp6" Def="Lamp01" Pos="-1179.432 -55.226 129.967" Rot="-0.452 0.536 0.536 0.471" Skin="orange" />
+    <Entity Name="Lamp5" Def="Lamp01" Pos="-1177.008 -54.771 168.679" Rot="-0.486 0.505 0.504 0.505" Skin="orange" />
+    <Entity Name="PointLight24" Def="Lights_PointLight" Pos="147.575 217.884 -243.642" start_off="0" rad="150.00000" color="0xDE2B065" />
+    <Entity Name="Lamp4" Def="Lamp01" Pos="-1181.389 -56.563 207.433" Rot="-0.529 0.459 0.457 0.548" Skin="orange" />
+    <Entity Name="Lamp3" Def="Lamp01" Pos="-1178.157 17.192 208.220" Rot="-0.529 0.459 0.457 0.548" Skin="orange" />
+    <Entity Name="Drillbot35" Def="Drillbot" Pos="370.443 -349.589 217.169" Rot="-0.005 -0.261 -0.745 0.614" Skin="orange" Activity="IDLE" />
+    <Entity Name="Lamp2" Def="Lamp01" Pos="-1174.779 19.309 169.129" Rot="-0.486 0.505 0.504 0.505" Skin="orange" />
+    <Entity Name="Lamp1" Def="Lamp01" Pos="-1177.496 20.034 130.941" Rot="-0.452 0.536 0.536 0.471" Skin="orange" />
+    <Entity Name="PointLight26" Def="Lights_PointLight" Pos="-894.715 38.412 -244.452" start_off="0" rad="100.00000" color="0x69FFA851" />
+    <Entity Name="Drillbot36" Def="Drillbot" Pos="412.148 -385.718 -136.046" Rot="-0.051 -0.204 -0.762 0.612" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot37" Def="Drillbot" Pos="300.421 -132.104 -501.460" Rot="-0.181 -0.018 -0.709 0.682" Skin="orange" Activity="IDLE" />
+    <Entity Name="PointLight21" Def="Lights_PointLight" Pos="-662.183 -242.119 440.084" start_off="0" rad="50.00000" color="0xFF1A85E6" />
+    <Entity Name="CrystalSmall8" Def="CrystalSmall" Pos="-683.850 -216.017 471.513" Rot="0.336 0.025 0.830 -0.444" />
+    <Entity Name="CrystalSmall9" Def="CrystalSmall" Pos="-629.285 -263.677 432.441" Rot="-0.107 -0.042 0.364 0.924" />
+    <Entity Name="CrystalSmall10" Def="CrystalSmall" Pos="-690.112 -214.958 414.353" Rot="-0.031 0.111 0.884 -0.454" />
+    <Entity Name="Drillbot34" Def="Drillbot" Pos="-575.368 220.617 -258.929" Rot="0.317 0.797 0.437 0.271" Skin="orange" Activity="IDLE" />
+    <Entity Name="CrystalMedium3" Def="CrystalMedium" Pos="9.571 119.724 187.453" Rot="0.849 -0.182 0.066 0.492" />
+    <Entity Name="CrystalMedium4" Def="CrystalMedium" Pos="68.947 82.662 219.812" Rot="-0.178 0.404 0.582 0.683" />
+    <Entity Name="Drillbot46" Def="Drillbot" Pos="60.756 329.879 192.090" Rot="0.066 0.869 0.079 0.484" Activity="IDLE" />
+    <Entity Name="CrystalSmall12" Def="CrystalSmall" Pos="-624.064 110.240 -640.692" Rot="0.178 0.023 -0.128 0.975" />
+    <Entity Name="CrystalMedium5" Def="CrystalMedium" Pos="-674.793 171.194 -661.618" Rot="0.720 0.203 -0.180 0.639" />
+    <Entity Name="CrystalSmall13" Def="CrystalSmall" Pos="-649.609 218.156 -581.944" Rot="1.000 0.000 0.000 0.024" />
+    <Entity Name="Flare7" Def="Lights_Flare" Pos="171.908 179.101 -168.417" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999634" base_color="0x3FF811A" />
+    <Entity Name="Flare11" Def="Lights_Flare" Pos="99.674 232.174 -314.522" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999611" base_color="0x3FF811A" />
+    <Entity Name="Flare10" Def="Lights_Flare" Pos="160.394 232.194 -265.897" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999619" base_color="0x3FF811A" />
+    <Entity Name="Flare9" Def="Lights_Flare" Pos="102.968 224.876 -224.740" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999626" base_color="0x3FF811A" />
+    <Entity Name="Flare8" Def="Lights_Flare" Pos="218.767 196.658 -204.560" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999626" base_color="0x3FF811A" />
+    <Entity Name="DrillStation8" Def="DrillStation" Pos="-545.371 212.328 740.589" Rot="-0.080 0.025 0.165 0.983" Activity="IDLE" />
+    <Entity Name="Drillbot52" Def="Drillbot" Pos="-557.185 127.190 -623.565" Rot="0.164 0.006 -0.065 0.984" Skin="orange" Activity="IDLE" />
+    <Entity Name="Flare2" Def="Lights_Flare" Pos="228.910 171.996 -153.478" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999649" base_color="0x3FF811A" />
+    <Entity Name="Flare6" Def="Lights_Flare" Pos="193.663 171.996 -138.449" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999641" base_color="0x3FF811A" />
+    <Entity Name="Flare5" Def="Lights_Flare" Pos="45.139 357.879 222.130" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999649" base_color="0x3FF4435" />
+    <Entity Name="Flare4" Def="Lights_Flare" Pos="85.027 357.649 155.489" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999649" base_color="0x5FF4435" />
+    <Entity Name="Flare3" Def="Lights_Flare" Pos="4.697 350.855 135.913" maxViewDist="2500.000" start_disabled="0" size="4.000000" nebulosity="1.000000" vis_angle="89.999657" base_color="0x5FF4435" />
+    <Entity Name="CrystalSmall22" Def="CrystalSmall" Pos="-950.262 -447.242 -237.609" Rot="-0.233 0.749 0.045 0.618" />
+    <Entity Name="Flare1" Def="Lights_Flare" Pos="260.442 175.101 -102.762" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999657" base_color="0xBFF811A" />
+    <Entity Name="CrystalMedium9" Def="CrystalMedium" Pos="-921.864 -438.981 -283.487" Rot="0.067 -0.334 0.301 0.891" />
+    <Entity Name="CrystalSmall24" Def="CrystalSmall" Pos="-917.870 -435.459 -244.523" Rot="-0.236 0.811 0.020 0.535" />
+    <Entity Name="CrystalSmall23" Def="CrystalSmall" Pos="-907.106 -435.451 -273.527" Rot="0.014 0.785 -0.152 0.601" />
+    <Entity Name="CrystalMedium8" Def="CrystalMedium" Pos="-549.212 237.205 945.529" Rot="-0.051 -0.098 0.109 0.988" />
+    <Entity Name="Drillbot53" Def="Drillbot" Pos="-496.956 194.196 688.222" Rot="-0.256 0.334 -0.060 0.905" Skin="red" Activity="IDLE" />
+    <Entity Name="CrystalSmall21" Def="CrystalSmall" Pos="-633.004 207.484 957.238" Rot="-0.446 0.880 -0.138 0.089" />
+    <Entity Name="CrystalSmall20" Def="CrystalSmall" Pos="-601.384 234.695 957.643" Rot="0.315 0.711 0.249 0.577" />
+    <Entity Name="CrystalMedium7" Def="CrystalMedium" Pos="-499.209 205.031 732.147" Rot="-0.051 -0.098 0.109 0.988" />
+    <Entity Name="CrystalSmall19" Def="CrystalSmall" Pos="-573.966 241.205 959.247" Rot="-0.149 -0.208 -0.396 0.882" />
+    <Entity Name="CrystalSmall18" Def="CrystalSmall" Pos="-548.839 187.160 748.175" Rot="-0.077 0.335 0.303 0.889" />
+    <Entity Name="CrystalSmall17" Def="CrystalSmall" Pos="-554.493 198.333 760.373" Rot="0.315 0.711 0.249 0.577" />
+    <Entity Name="CrystalSmall16" Def="CrystalSmall" Pos="-520.927 190.509 716.910" Rot="-0.078 -0.049 0.095 0.991" />
+    <Entity Name="PointLight19" Def="Lights_PointLight" Pos="233.855 -297.590 -69.199" start_off="0" rad="100.00000" color="0x894097F7" />
+    <Entity Name="CrystalSmall6" Def="CrystalSmall" Pos="-488.807 -88.694 514.024" Rot="-0.095 0.163 -0.747 0.637" />
+    <Entity Name="CrystalSmall5" Def="CrystalSmall" Pos="-426.909 -36.561 522.541" Rot="0.736 0.036 0.584 -0.341" />
+    <Entity Name="CrystalMedium1" Def="CrystalMedium" Pos="-348.991 -127.228 482.674" />
+    <Entity Name="PointLight20" Def="Lights_PointLight" Pos="-408.050 -99.804 487.652" start_off="0" rad="100.00000" color="0x86148FEB" />
+    <Entity Name="CrystalSmall3" Def="CrystalSmall" Pos="209.081 -230.145 -14.411" Rot="0.724 -0.142 0.528 -0.422" />
+    <Entity Name="CrystalSmall2" Def="CrystalSmall" Pos="209.937 -316.759 -64.499" Rot="-0.070 0.738 0.078 0.667" />
+    <Entity Name="CrystalSmall1" Def="CrystalSmall" Pos="301.483 -304.570 -81.047" Rot="-0.021 0.470 -0.040 0.881" />
+    <Entity Name="PointLight18" Def="Lights_PointLight" Pos="-533.701 247.205 165.620" start_off="0" rad="750.00000" color="0x4D3A92F1" />
+    <Entity Name="DustCloud2" Def="Effects_DustCloud" Pos="-432.482 75.219 911.341" />
+    <Entity Name="Drillbot14" Def="Drillbot" Pos="-300.161 33.765 977.335" Rot="0.745 -0.062 -0.105 0.656" Activity="IDLE" />
+    <Entity Name="Drillbot13" Def="Drillbot" Pos="-684.631 78.346 965.793" Rot="0.788 -0.089 -0.065 0.606" Activity="IDLE" />
+    <Entity Name="DustCloud4" Def="Effects_DustCloud" Pos="-676.030 -738.130 -313.880" />
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-1236.401 2117.510 337.208" Rot="0.330 0.669 -0.492 0.449" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="LootPoint15" Def="Helpers_TagPoint" Pos="251.335 393.809 13.317" type="0" />
+    <Entity Name="CrystalSmall14" Def="CrystalSmall" Pos="49.649 224.491 78.039" Rot="0.000 0.000 -0.324 0.946" />
+    <Entity Name="Drillbot25" Def="Drillbot" Pos="-689.076 -177.476 318.101" Rot="-0.307 0.757 -0.576 0.034" Skin="red" Activity="IDLE" />
+    <Entity Name="LootPoint18" Def="Helpers_TagPoint" Pos="-410.101 137.214 26.163" type="0" />
+    <Entity Name="LootPoint17" Def="Helpers_TagPoint" Pos="17.712 323.074 -211.143" type="0" />
+    <Entity Name="LootPoint16" Def="Helpers_TagPoint" Pos="88.626 317.086 -537.817" type="0" />
+    <Entity Name="Flare18" Def="Lights_Flare" Pos="46.631 240.252 -261.639" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999603" base_color="0x3FF811A" />
+    <Entity Name="Drillbot16" Def="Drillbot" Pos="54.506 50.458 207.930" Rot="-0.396 0.655 0.265 0.587" Skin="red" Activity="IDLE" />
+    <Entity Name="Drillbot17" Def="Drillbot" Pos="4.256 152.034 222.313" Rot="0.818 -0.144 0.157 0.534" Skin="red" Activity="IDLE" />
+    <Entity Name="CrystalSmall11" Def="CrystalSmall" Pos="50.942 30.089 212.599" Rot="0.000 0.000 0.573 0.820" />
+    <Entity Name="Drillbot19" Def="Drillbot" Pos="-844.076 223.152 -436.543" Rot="0.671 -0.141 0.527 0.503" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot20" Def="Drillbot" Pos="-1011.152 453.015 -346.661" Rot="0.827 0.145 0.493 0.228" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot23" Def="Drillbot" Pos="-598.677 37.223 486.244" Rot="-0.044 0.745 0.265 0.610" Skin="red" Activity="IDLE" />
+    <Entity Name="Drillbot21" Def="Drillbot" Pos="-1009.811 513.218 -289.575" Rot="0.819 0.204 0.346 0.409" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot22" Def="Drillbot" Pos="-712.266 196.353 -639.189" Rot="0.798 0.348 0.211 0.445" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot50" Def="Drillbot" Pos="-630.486 104.470 -609.308" Rot="0.156 0.804 0.109 0.563" Skin="orange" Activity="IDLE" />
+    <Entity Name="CrystalMedium2" Def="CrystalMedium" Pos="-484.680 65.470 597.562" Rot="-0.302 -0.103 0.094 0.943" />
+    <Entity Name="Drillbot15" Def="Drillbot" Pos="119.135 -392.123 9.376" Rot="0.197 -0.185 0.212 0.939" Skin="orange" Activity="IDLE" />
+    <Entity Name="Flare15" Def="Lights_Flare" Pos="206.787 311.937 255.148" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999626" base_color="0x3FF4435" />
+    <Entity Name="Flare17" Def="Lights_Flare" Pos="220.688 283.362 324.451" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999611" base_color="0x3FF4435" />
+    <Entity Name="Flare16" Def="Lights_Flare" Pos="171.985 284.643 330.957" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999619" base_color="0x3FF4435" />
+    <Entity Name="Flare12" Def="Lights_Flare" Pos="86.058 348.754 198.843" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999641" base_color="0x3FF4435" />
+    <Entity Name="Flare14" Def="Lights_Flare" Pos="93.526 332.901 268.932" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999626" base_color="0x3FF4435" />
+    <Entity Name="Drillbot51" Def="Drillbot" Pos="-463.452 -185.058 45.670" Rot="0.234 0.225 0.886 -0.331" Skin="red" Activity="IDLE" />
+    <Entity Name="Flare13" Def="Lights_Flare" Pos="133.456 335.107 221.297" maxViewDist="2500.000" start_disabled="0" size="3.000000" nebulosity="1.000000" vis_angle="89.999634" base_color="0x3FF4435" />
+    <Entity Name="Drillbot24" Def="Drillbot" Pos="-426.168 162.735 591.195" Rot="-0.594 0.057 0.021 0.802" Skin="red" Activity="IDLE" />
+    <Entity Name="Drillbot32" Def="Drillbot" Pos="-119.759 334.055 -358.555" Rot="-0.557 0.780 0.137 -0.251" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot31" Def="Drillbot" Pos="-306.448 45.313 -52.783" Rot="-0.652 0.437 -0.203 0.585" Skin="orange" Activity="IDLE" />
+    <Entity Name="CrystalSmall15" Def="CrystalSmall" Pos="168.988 364.297 -148.208" Rot="0.580 0.588 0.222 0.518" />
+    <Entity Name="Drillbot28" Def="Drillbot" Pos="-323.081 -108.981 489.967" Rot="0.054 0.332 0.215 0.917" Skin="red" Activity="IDLE" />
+    <Entity Name="Drillbot27" Def="Drillbot" Pos="-407.702 -10.635 499.632" Rot="0.137 -0.148 0.866 -0.458" Skin="red" Activity="IDLE" />
+    <Entity Name="Drillbot26" Def="Drillbot" Pos="-281.042 -232.507 350.872" Rot="-0.406 0.874 -0.229 0.137" Skin="red" Activity="IDLE" />
+    <Entity Name="CamHelp1" Def="Helpers_TagPoint" Pos="596.689 48.026 716.517" type="0" />
+    <Entity Name="LootPoint12" Def="Helpers_TagPoint" Pos="-2.817 488.914 582.238" type="0" />
+    <Entity Name="CamHelp" Def="Helpers_TagPoint" Pos="-1519.275 296.405 -701.673" type="0" />
+    <Entity Name="LootPoint13" Def="Helpers_TagPoint" Pos="-637.780 420.891 720.929" type="0" />
+    <Entity Name="LootPoint4" Def="Helpers_TagPoint" Pos="-910.526 88.774 -339.408" type="0" />
+    <Entity Name="LootPoint1" Def="Helpers_TagPoint" Pos="-194.156 168.690 -720.183" type="0" />
+    <Entity Name="LootPoint2" Def="Helpers_TagPoint" Pos="-523.113 86.219 -589.932" type="0" />
+    <Entity Name="LootPoint3" Def="Helpers_TagPoint" Pos="-1347.417 120.319 72.492" type="0" />
+    <Entity Name="LootPoint8" Def="Helpers_TagPoint" Pos="-874.194 73.224 51.100" type="0" />
+    <Entity Name="LootPoint5" Def="Helpers_TagPoint" Pos="-534.439 140.041 -393.419" type="0" />
+    <Entity Name="LootPoint6" Def="Helpers_TagPoint" Pos="-228.284 109.067 -421.181" type="0" />
+    <Entity Name="Drillbot49" Def="Drillbot" Pos="-582.410 157.624 -389.696" Rot="0.263 -0.050 0.958 0.105" Skin="orange" Activity="IDLE" />
+    <Entity Name="LootPoint14" Def="Helpers_TagPoint" Pos="-44.718 272.728 212.152" type="0" />
+    <Entity Name="LootPoint9" Def="Helpers_TagPoint" Pos="-1372.998 145.657 -240.996" type="0" />
+    <Entity Name="LootPoint11" Def="Helpers_TagPoint" Pos="-786.131 284.020 432.907" type="0" />
+    <Entity Name="EnvLaser1" Def="Effects_EnvLaser" Pos="13905.599 3493.009 12415.688" isPlayed="1" environmental="1" env_scale="40.500" env_fog_mult="1.000" />
+    <Entity Name="Drillbot29" Def="Drillbot" Pos="77.878 -55.946 -480.133" Rot="0.175 -0.459 0.256 0.832" Skin="orange" Activity="IDLE" />
+    <Entity Name="LootPoint10" Def="Helpers_TagPoint" Pos="-1034.339 229.491 101.269" type="0" />
+    <Entity Name="LootPoint7" Def="Helpers_TagPoint" Pos="-563.188 160.459 -62.515" type="0" />
+    <Entity Name="CrystalMedium6" Def="CrystalMedium" Pos="52.281 291.137 -152.249" Rot="0.621 0.212 -0.144 0.740" />
+    <Entity Name="Drillbot30" Def="Drillbot" Pos="-542.423 274.711 -314.863" Rot="0.276 0.851 0.426 0.133" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot48" Def="Drillbot" Pos="-658.847 -244.252 467.979" Rot="-0.260 0.683 -0.253 0.634" Skin="red" Activity="IDLE" />
+    <Entity Name="Drillbot45" Def="Drillbot" Pos="-692.066 107.124 -1000.183" Rot="-0.529 0.046 0.041 0.846" Skin="orange" Activity="IDLE" />
+    <Entity Name="DustCloud3" Def="Effects_DustCloud" Pos="-1211.717 499.251 -601.302" />
+    <Entity Name="Drillbot41" Def="Drillbot" Pos="410.211 461.419 492.388" Rot="-0.150 0.031 -0.355 0.922" Skin="red" Activity="IDLE" />
+    <Entity Name="Drillbot44" Def="Drillbot" Pos="-1088.946 490.388 -712.739" Rot="-0.523 0.091 0.113 0.840" Skin="orange" Activity="IDLE" />
+    <Entity Name="DrillStation2" Def="DrillStation" Pos="-328.586 -218.654 370.037" Rot="-0.383 -0.029 0.387 0.838" Activity="IDLE" />
+    <Entity Name="PointLight12" Def="Lights_PointLight" Pos="176.710 291.192 7.749" start_off="0" rad="190.00000" color="0x9B2F88EA" />
+    <Entity Name="Drillbot43" Def="Drillbot" Pos="-926.344 837.117 -594.124" Rot="-0.471 0.077 0.073 0.876" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot42" Def="Drillbot" Pos="-352.103 949.880 -515.925" Rot="-0.180 0.086 -0.074 0.977" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot40" Def="Drillbot" Pos="159.693 479.785 -490.209" Rot="-0.182 0.044 -0.354 0.916" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot39" Def="Drillbot" Pos="383.702 474.006 300.720" Rot="-0.150 0.031 -0.355 0.922" Skin="red" Activity="IDLE" />
+    <Entity Name="Drillbot38" Def="Drillbot" Pos="400.448 367.134 -122.894" Rot="-0.088 0.030 -0.288 0.953" Skin="orange" Activity="IDLE" />
+    <Entity Name="PointLight23" Def="Lights_PointLight" Pos="-656.368 156.773 -635.287" start_off="0" rad="100.00000" color="0xFF1896F3" />
+    <Entity Name="DrillStation9" Def="DrillStation" Pos="-622.248 238.648 971.772" Rot="-0.019 -0.021 0.332 0.943" Activity="IDLE" />
+    <Entity Name="Drillbot1" Def="Drillbot" Pos="262.156 -300.627 -37.952" Rot="-0.144 0.000 0.000 0.990" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot2" Def="Drillbot" Pos="208.176 -252.907 -186.391" Rot="0.292 -0.004 0.009 0.956" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot3" Def="Drillbot" Pos="57.502 -313.051 -127.915" Rot="0.164 -0.210 -0.023 0.964" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot4" Def="Drillbot" Pos="-404.213 218.215 1014.016" Rot="0.750 -0.070 -0.093 0.651" Activity="IDLE" />
+    <Entity Name="DustCloud5" Def="Effects_DustCloud" Pos="-595.200 97.445 -32.882" />
+    <Entity Name="Drillbot47" Def="Drillbot" Pos="-490.958 -145.121 53.995" Rot="0.219 0.181 0.514 0.809" Skin="red" Activity="IDLE" />
+    <Entity Name="Drillbot7" Def="Drillbot" Pos="-331.738 19.460 92.498" Rot="0.126 0.120 0.666 0.725" Skin="red" Activity="IDLE" />
+    <Entity Name="Drillbot8" Def="Drillbot" Pos="-685.869 696.576 -608.842" Rot="0.073 0.173 0.541 0.820" Skin="orange" Activity="IDLE" />
+    <Entity Name="PointLight22" Def="Lights_PointLight" Pos="113.266 324.093 261.346" start_off="0" rad="130.00000" color="0x17ED5818" />
+    <Entity Name="Drillbot10" Def="Drillbot" Pos="-24.637 334.900 106.422" Rot="0.537 0.751 -0.305 0.235" Activity="IDLE" />
+    <Entity Name="Drillbot11" Def="Drillbot" Pos="213.132 126.509 -149.965" Rot="0.129 0.579 0.310 0.743" Skin="orange" Activity="IDLE" />
+    <Entity Name="Drillbot12" Def="Drillbot" Pos="206.656 249.416 -138.444" Rot="0.126 0.677 0.532 0.493" Skin="orange" Activity="IDLE" />
+    <Entity Name="DrillStation7" Def="DrillStation" Pos="-926.743 -416.584 -251.612" Rot="-0.171 0.009 0.201 0.965" Activity="IDLE" />
+    <Entity Name="JumpGateLocation_122" Def="Logic_JumpGateLocation" Pos="-77.811 441.458 858.475" Rot="-0.192 0.252 0.051 0.947" dock="0" target_zone="122" secret_zone="0" secret_chance="0.000" filter="" start_disabled="0" box_dimensions="110.000 110.000 60.000" />
+    <Entity Name="JumpGateLocation_218" Def="Logic_JumpGateLocation" Pos="-193.406 318.969 -1093.017" Rot="0.148 0.984 -0.077 -0.059" dock="0" target_zone="218" secret_zone="0" secret_chance="0.000" filter="" start_disabled="0" box_dimensions="110.000 110.000 60.000" />
+    <Entity Name="FreeSpace1" Def="Logic_SpawnArea_FreeSpace0" Pos="16.160 449.797 735.415" Rot="-0.183 0.252 0.063 0.948" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="122" />
+    <Entity Name="FreeSpace2" Def="Logic_SpawnArea_FreeSpace0" Pos="-113.926 563.974 766.111" Rot="-0.183 0.252 0.062 0.948" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="122" />
+    <Entity Name="FreeSpace3" Def="Logic_SpawnArea_FreeSpace0" Pos="-257.437 442.015 904.449" Rot="-0.183 0.252 0.062 0.948" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="122" />
+    <Entity Name="FreeSpace4" Def="Logic_SpawnArea_FreeSpace0" Pos="-296.000 412.472 -1090.000" Rot="-0.012 0.980 -0.064 -0.189" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="218" />
+    <Entity Name="FreeSpace5" Def="Logic_SpawnArea_FreeSpace0" Pos="-25.000 419.000 -1105.000" Rot="-0.001 0.997 -0.075 -0.016" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="218" />
+    <Entity Name="FreeSpace6" Def="Logic_SpawnArea_FreeSpace0" Pos="-180.653 197.000 -1053.599" Rot="-0.001 0.996 -0.085 -0.016" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="218" />
+    <Entity Name="pirate_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-722.732 17.192 -435.898" Rot="0.000 0.652 0.000 0.758" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="pirate_path1" Def="PathObject" Pos="-792.535 16.809 -453.434" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-792.535 16.809 -453.434" />
+      <Point p="-847.338 23.911 -512.009" />
+      <Point p="-956.474 31.433 -491.800" />
+      <Point p="-1086.273 -4.872 -431.102" />
+      <Point p="-1157.373 -1.800 -500.412" />
+      <Point p="-1068.152 207.383 -670.779" />
+      <Point p="-958.413 168.574 -639.657" />
+      <Point p="-939.507 180.194 -271.732" />
+      <Point p="-862.861 47.396 -213.148" />
+      <Point p="-760.731 52.474 -190.917" />
+      <Point p="-625.212 24.394 -288.264" />
+      <Point p="-641.222 20.162 -399.541" />
+    </Entity>
+    <Entity Name="pirate_spawn_spot2" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-573.997 -172.821 364.047" Rot="0.000 0.993 0.000 0.115" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="pirate_path2" Def="PathObject" Pos="-596.103 -188.284 473.437" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-596.103 -188.284 473.437" />
+      <Point p="-606.371 -191.560 621.526" />
+      <Point p="-586.719 -261.959 674.479" />
+      <Point p="-663.620 -303.626 715.590" />
+      <Point p="-847.919 -256.133 678.578" />
+      <Point p="-1021.014 -140.921 491.579" />
+      <Point p="-854.813 -60.990 356.351" />
+      <Point p="-667.494 -62.228 306.760" />
+      <Point p="-577.372 -146.979 403.326" />
+    </Entity>
+    <Entity Name="pirate_spawn_spot3" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-381.936 -511.869 -242.869" Rot="0.000 0.993 0.000 0.115" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="pirate_path3" Def="PathObject" Pos="-405.751 -505.053 -154.250" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-405.751 -505.053 -154.250" />
+      <Point p="-516.034 -542.282 23.812" />
+      <Point p="-621.222 -466.827 134.609" />
+      <Point p="-716.143 -447.957 82.765" />
+      <Point p="-839.873 -409.948 53.924" />
+      <Point p="-945.273 -418.221 -109.097" />
+      <Point p="-769.718 -447.176 -252.797" />
+      <Point p="-656.521 -515.175 -212.502" />
+      <Point p="-556.226 -516.472 -299.951" />
+      <Point p="-459.484 -504.684 -407.323" />
+      <Point p="-387.034 -508.066 -371.792" />
+      <Point p="-368.347 -503.266 -284.204" />
+    </Entity>
+    <Entity Name="pirate_spawn_spot4" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-643.025 65.365 209.142" Rot="0.000 0.752 0.000 0.660" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="pirate_path4" Def="PathObject" Pos="-728.763 62.718 205.578" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-728.763 62.718 205.578" />
+      <Point p="-879.558 44.790 110.711" />
+      <Point p="-861.598 30.036 -103.609" />
+      <Point p="-722.389 -4.925 -174.369" />
+      <Point p="-567.010 -4.945 -140.644" />
+      <Point p="-511.841 47.392 27.905" />
+      <Point p="-571.569 131.552 79.586" />
+      <Point p="-611.858 82.138 174.161" />
+    </Entity>
+    <Entity Name="pirate_spawn_spot5" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="366.237 -30.751 -98.064" Rot="0.000 1.000 0.000 0.010" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="pirate_path5" Def="PathObject" Pos="380.509 -22.963 -12.701" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="380.509 -22.963 -12.701" />
+      <Point p="380.851 8.172 192.103" />
+      <Point p="273.770 48.769 404.230" />
+      <Point p="291.694 198.232 530.169" />
+      <Point p="253.995 271.370 495.632" />
+      <Point p="360.889 185.520 442.558" />
+      <Point p="54.133 -26.454 373.148" />
+      <Point p="-88.953 -59.903 231.596" />
+      <Point p="-77.246 -154.563 101.300" />
+      <Point p="-2.196 -158.691 -220.501" />
+      <Point p="281.428 -107.780 -234.242" />
+      <Point p="363.171 -61.834 -146.600" />
+    </Entity>
+    <Entity Name="pirate_spawn_spot6" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="405.748 132.571 -585.654" Rot="0.000 0.089 0.000 0.996" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="pirate_path6" Def="PathObject" Pos="381.635 122.688 -631.282" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="381.635 122.688 -631.282" />
+      <Point p="243.410 165.791 -746.509" />
+      <Point p="127.168 166.556 -740.497" />
+      <Point p="30.504 171.236 -568.338" />
+      <Point p="-157.459 212.693 -513.581" />
+      <Point p="-231.002 309.229 -493.387" />
+      <Point p="-59.870 387.675 -630.461" />
+      <Point p="30.797 280.279 -656.003" />
+      <Point p="66.868 93.218 -557.214" />
+      <Point p="367.923 109.824 -493.257" />
+    </Entity>
+    <Entity Name="pirate_spawn_spot7" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-396.046 630.918 -367.221" Rot="0.000 0.384 0.000 0.923" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="pirate_path7" Def="PathObject" Pos="-454.565 640.553 -409.235" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-454.565 640.553 -409.235" />
+      <Point p="-571.923 700.802 -467.710" />
+      <Point p="-720.494 721.959 -440.544" />
+      <Point p="-708.780 673.238 -242.481" />
+      <Point p="-624.283 694.726 -63.185" />
+      <Point p="-327.577 720.125 -48.119" />
+      <Point p="-224.010 697.959 -142.622" />
+      <Point p="-175.590 666.464 -329.814" />
+      <Point p="-291.513 648.014 -388.694" />
+    </Entity>
+    <Entity Name="pirate_spawn_spot8" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-650.069 245.395 787.332" Rot="0.000 0.247 0.000 0.969" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="pirate_path8" Def="PathObject" Pos="-679.083 242.838 714.386" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-679.083 242.838 714.386" />
+      <Point p="-660.586 247.412 564.306" />
+      <Point p="-465.707 169.333 516.204" />
+      <Point p="-399.754 88.534 329.081" />
+      <Point p="-440.901 -47.525 374.201" />
+      <Point p="-621.613 -53.276 349.728" />
+      <Point p="-752.658 49.434 485.877" />
+      <Point p="-772.622 85.730 794.908" />
+      <Point p="-715.796 191.660 911.331" />
+      <Point p="-650.951 236.917 855.392" />
+    </Entity>
+    <Entity Name="neutral1_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="36.665 238.119 844.751" Rot="0.000 -0.408 0.000 0.913" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral1_path1" Def="PathObject" Pos="82.635 228.162 803.527" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="82.635 228.162 803.527" />
+      <Point p="196.027 275.111 722.806" />
+      <Point p="209.582 343.257 615.376" />
+      <Point p="43.601 373.962 535.549" />
+      <Point p="-30.128 282.783 511.555" />
+      <Point p="-168.581 243.056 677.723" />
+      <Point p="-92.841 253.154 871.656" />
+      <Point p="-9.709 240.824 874.915" />
+    </Entity>
+    <Entity Name="neutral1_spawn_spot2" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-1159.846 -46.931 259.138" Rot="0.000 -0.408 0.000 0.913" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral1_path2" Def="PathObject" Pos="-1101.698 -44.407 189.134" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1101.698 -44.407 189.134" />
+      <Point p="-1183.314 -132.873 51.824" />
+      <Point p="-1191.136 -105.919 -77.050" />
+      <Point p="-1136.907 -34.655 -205.569" />
+      <Point p="-1231.232 127.120 -255.565" />
+      <Point p="-1340.484 71.658 -284.867" />
+      <Point p="-1396.101 -138.138 -351.794" />
+      <Point p="-1398.869 -183.689 -223.558" />
+      <Point p="-1333.596 -194.334 -29.133" />
+      <Point p="-1315.798 -271.085 204.821" />
+      <Point p="-1271.897 -206.273 411.007" />
+      <Point p="-1196.825 -118.236 379.737" />
+      <Point p="-1155.691 -71.286 283.804" />
+    </Entity>
+    <Entity Name="neutral2_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="206.912 273.458 -44.047" Rot="0.000 -0.408 0.000 0.913" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral2_path1" Def="PathObject" Pos="149.835 266.051 -17.792" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="149.835 266.051 -17.792" />
+      <Point p="46.472 315.999 35.397" />
+      <Point p="48.064 350.037 114.194" />
+      <Point p="162.343 351.391 -4.764" />
+      <Point p="217.186 220.888 -78.821" />
+    </Entity>
+    <Entity Name="neutral3_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-962.912 453.010 -896.746" Rot="0.000 0.865 0.000 0.502" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral3_path1" Def="PathObject" Pos="-1089.468 430.156 -843.025" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1089.468 430.156 -843.025" />
+      <Point p="-1221.923 412.720 -712.826" />
+      <Point p="-1217.376 360.232 -564.517" />
+      <Point p="-1056.257 386.884 -453.774" />
+      <Point p="-813.159 332.856 -393.982" />
+      <Point p="-709.329 172.665 -472.568" />
+      <Point p="-481.977 183.485 -940.970" />
+      <Point p="-548.600 304.374 -994.591" />
+      <Point p="-878.075 388.160 -1004.718" />
+    </Entity>
+    <Entity Name="transport_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-1489.931 181.718 -71.618" Rot="0.000 -0.725 0.000 0.688" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="transport_path1" Def="PathObject" Pos="-1411.053 182.649 -76.730" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1411.053 182.649 -76.730" />
+      <Point p="-903.094 412.892 -47.739" />
+      <Point p="-249.219 443.308 195.316" />
+      <Point p="-183.057 420.658 455.873" />
+      <Point p="-89.204 435.689 825.995" />
+    </Entity>
+    <Entity Name="LootPoint_Base1" Def="Helpers_TagPoint" Pos="-871.476 7.755 -389.976" type="0" />
+    <Entity Name="LootPoint_Base2" Def="Helpers_TagPoint" Pos="-638.283 -412.696 -31.937" type="0" />
+    <Entity Name="LootPoint_Base3" Def="Helpers_TagPoint" Pos="-1284.200 -209.488 252.712" type="0" />
+    <Entity Name="LootPoint_Base4" Def="Helpers_TagPoint" Pos="-469.061 -336.164 750.104" Rot="0.000 0.394 0.000 0.919" type="0" />
+    <Entity Name="LootPoint_Base5" Def="Helpers_TagPoint" Pos="168.146 157.831 -9.893" type="0" />
+    <Entity Name="LootPoint_Base6" Def="Helpers_TagPoint" Pos="60.009 295.392 -150.347" type="0" />
+    <Entity Name="LootPoint_Base7" Def="Helpers_TagPoint" Pos="-831.557 -30.180 806.918" type="0" />
+    <Entity Name="LootPoint_Base8" Def="Helpers_TagPoint" Pos="-540.651 219.033 -667.539" type="0" />
+    <Entity Name="LootPoint_Base9" Def="Helpers_TagPoint" Pos="-325.485 -682.009 1.569" type="0" />
+    <Entity Name="LootPoint_Junk1" Def="Helpers_TagPoint" Pos="-1315.612 68.199 129.434" type="0" />
+    <Entity Name="LootPoint_Junk2" Def="Helpers_TagPoint" Pos="-1319.373 20.745 181.817" type="0" />
+    <Entity Name="LootPoint_Junk3" Def="Helpers_TagPoint" Pos="-1319.565 -9.909 212.363" type="0" />
+    <Entity Name="LootPoint_Junk4" Def="Helpers_TagPoint" Pos="-1204.284 8.075 194.349" type="0" />
+    <Entity Name="LootPoint_Junk5" Def="Helpers_TagPoint" Pos="-1217.984 -104.258 191.967" type="0" />
+    <Entity Name="LootPoint_Junk6" Def="Helpers_TagPoint" Pos="-1179.495 -119.844 247.210" type="0" />
+    <Entity Name="LootPoint_Junk7" Def="Helpers_TagPoint" Pos="-1141.703 -175.848 222.632" type="0" />
+    <Entity Name="LootPoint_Junk8" Def="Helpers_TagPoint" Pos="-953.125 -184.370 240.574" type="0" />
+    <Entity Name="LootPoint_Junk9" Def="Helpers_TagPoint" Pos="-1272.591 -235.844 169.928" type="0" />
+    <Entity Name="LootPoint_Junk10" Def="Helpers_TagPoint" Pos="-1202.003 -112.714 -268.054" type="0" />
+    <Entity Name="LootPoint_Junk11" Def="Helpers_TagPoint" Pos="-1105.347 -113.202 -342.116" type="0" />
+    <Entity Name="LootPoint_Junk12" Def="Helpers_TagPoint" Pos="-1094.147 -17.187 -347.869" type="0" />
+    <Entity Name="LootPoint_Junk13" Def="Helpers_TagPoint" Pos="-1096.185 144.327 -255.100" type="0" />
+    <Entity Name="LootPoint_Junk14" Def="Helpers_TagPoint" Pos="-1138.201 143.398 -263.437" type="0" />
+    <Entity Name="LootPoint_Junk15" Def="Helpers_TagPoint" Pos="-1101.115 219.563 -242.005" type="0" />
+    <Entity Name="LootPoint_Junk16" Def="Helpers_TagPoint" Pos="-856.882 127.933 -364.065" type="0" />
+    <Entity Name="LootPoint_Junk17" Def="Helpers_TagPoint" Pos="-671.688 -247.389 438.437" type="0" />
+    <Entity Name="LootPoint_Junk18" Def="Helpers_TagPoint" Pos="-321.165 -239.936 320.611" type="0" />
+    <Entity Name="LootPoint_Junk19" Def="Helpers_TagPoint" Pos="14.067 231.711 712.819" type="0" />
+    <Entity Name="LootPoint_Junk20" Def="Helpers_TagPoint" Pos="137.546 177.686 593.780" type="0" />
+    <Entity Name="LootPoint_Junk21" Def="Helpers_TagPoint" Pos="268.276 182.975 586.666" type="0" />
+    <Entity Name="LootPoint_Junk22" Def="Helpers_TagPoint" Pos="126.962 217.503 42.781" type="0" />
+    <Entity Name="LootPoint_Junk23" Def="Helpers_TagPoint" Pos="103.927 176.296 31.562" type="0" />
+    <Entity Name="LootPoint_Junk24" Def="Helpers_TagPoint" Pos="114.848 174.938 15.555" type="0" />
+    <Entity Name="LootPoint_Junk25" Def="Helpers_TagPoint" Pos="130.093 174.679 0.497" type="0" />
+    <Entity Name="LootPoint_Junk26" Def="Helpers_TagPoint" Pos="152.709 170.074 -24.107" type="0" />
+    <Entity Name="LootPoint_Junk27" Def="Helpers_TagPoint" Pos="201.233 165.604 -34.165" type="0" />
+    <Entity Name="LootPoint_Junk28" Def="Helpers_TagPoint" Pos="227.055 153.545 -27.814" type="0" />
+    <Entity Name="LootPoint_Junk29" Def="Helpers_TagPoint" Pos="159.442 191.081 -604.471" type="0" />
+    <Entity Name="LootPoint_Junk30" Def="Helpers_TagPoint" Pos="213.708 188.129 -629.298" type="0" />
+    <Entity Name="LootPoint_Junk31" Def="Helpers_TagPoint" Pos="241.166 188.496 -614.469" type="0" />
+    <Entity Name="LootPoint_Junk32" Def="Helpers_TagPoint" Pos="257.160 159.407 -590.091" type="0" />
+    <Entity Name="LootPoint_Junk33" Def="Helpers_TagPoint" Pos="276.410 108.449 -611.679" type="0" />
+    <Entity Name="LootPoint_Junk34" Def="Helpers_TagPoint" Pos="304.373 -260.420 -74.595" type="0" />
+    <Entity Name="LootPoint_Junk35" Def="Helpers_TagPoint" Pos="-528.388 89.918 -624.857" type="0" />
+    <Entity Name="LootPoint_Junk36" Def="Helpers_TagPoint" Pos="-448.105 -468.704 -327.811" type="0" />
+    <Entity Name="LootPoint_Junk37" Def="Helpers_TagPoint" Pos="-508.000 -468.713 -355.405" type="0" />
+    <Entity Name="LootPoint_Junk38" Def="Helpers_TagPoint" Pos="-560.020 -441.670 -300.640" type="0" />
+    <Entity Name="LootPoint_Junk39" Def="Helpers_TagPoint" Pos="-557.233 -451.095 -235.232" type="0" />
+    <Entity Name="LootPoint_Junk40" Def="Helpers_TagPoint" Pos="-608.830 -437.532 -54.443" type="0" />
+    <Entity Name="LootPoint_Junk41" Def="Helpers_TagPoint" Pos="-562.538 -430.442 -9.132" type="0" />
+    <Entity Name="LootPoint_Junk42" Def="Helpers_TagPoint" Pos="-536.548 -414.798 -131.592" type="0" />
+    <Entity Name="LootPoint_Junk43" Def="Helpers_TagPoint" Pos="-194.824 -532.796 15.583" type="0" />
+    <Entity Name="LootPoint_Junk44" Def="Helpers_TagPoint" Pos="-361.016 -630.210 -27.819" type="0" />
+    <Entity Name="LootPoint_Junk45" Def="Helpers_TagPoint" Pos="-359.348 -234.525 336.648" type="0" />
+    <Entity Name="WreckFuel1" Def="OpenWorld_WreckFuel" Pos="-710.276 790.143 -594.284" />
+    <Entity Name="WreckFuel2" Def="OpenWorld_WreckFuel" Pos="-569.884 -462.143 445.337" />
+    <Entity Name="LootPoint_Mineral1" Def="Helpers_TagPoint" Pos="-1417.685 13.392 558.447" type="0" />
+    <Entity Name="LootPoint_Mineral2" Def="Helpers_TagPoint" Pos="-749.264 -49.694 820.629" type="0" />
+    <Entity Name="LootPoint_Mineral3" Def="Helpers_TagPoint" Pos="-405.387 -47.198 960.749" type="0" />
+    <Entity Name="LootPoint_Mineral4" Def="Helpers_TagPoint" Pos="-562.411 268.731 966.474" type="0" />
+    <Entity Name="LootPoint_Mineral5" Def="Helpers_TagPoint" Pos="-637.193 148.651 870.674" type="0" />
+    <Entity Name="LootPoint_Mineral6" Def="Helpers_TagPoint" Pos="-481.655 258.462 891.681" type="0" />
+    <Entity Name="LootPoint_Mineral7" Def="Helpers_TagPoint" Pos="-472.672 214.510 617.175" type="0" />
+    <Entity Name="LootPoint_Mineral8" Def="Helpers_TagPoint" Pos="-306.440 34.863 508.740" type="0" />
+    <Entity Name="LootPoint_Mineral9" Def="Helpers_TagPoint" Pos="-212.469 -3.051 614.138" type="0" />
+    <Entity Name="LootPoint_Mineral10" Def="Helpers_TagPoint" Pos="-200.728 -237.495 730.028" type="0" />
+    <Entity Name="LootPoint_Mineral11" Def="Helpers_TagPoint" Pos="60.852 -418.951 -13.572" type="0" />
+    <Entity Name="LootPoint_Mineral12" Def="Helpers_TagPoint" Pos="166.588 -289.982 -50.957" type="0" />
+    <Entity Name="LootPoint_Mineral13" Def="Helpers_TagPoint" Pos="170.665 -247.011 -172.518" type="0" />
+    <Entity Name="LootPoint_Mineral14" Def="Helpers_TagPoint" Pos="105.648 -161.217 -394.707" type="0" />
+    <Entity Name="LootPoint_Mineral15" Def="Helpers_TagPoint" Pos="213.874 79.364 -412.857" type="0" />
+    <Entity Name="LootPoint_Mineral16" Def="Helpers_TagPoint" Pos="233.016 82.474 -481.417" type="0" />
+    <Entity Name="LootPoint_Mineral17" Def="Helpers_TagPoint" Pos="263.884 329.808 -614.864" type="0" />
+    <Entity Name="LootPoint_Mineral18" Def="Helpers_TagPoint" Pos="78.399 583.421 -413.151" type="0" />
+    <Entity Name="LootPoint_Mineral19" Def="Helpers_TagPoint" Pos="104.076 642.027 -209.600" type="0" />
+    <Entity Name="LootPoint_Mineral20" Def="Helpers_TagPoint" Pos="-467.673 1038.366 -318.952" type="0" />
+    <Entity Name="LootPoint_Mineral21" Def="Helpers_TagPoint" Pos="-933.091 762.193 -352.129" type="0" />
+    <Entity Name="LootPoint_Mineral22" Def="Helpers_TagPoint" Pos="-1259.546 626.238 -352.891" type="0" />
+    <Entity Name="LootPoint_Mineral23" Def="Helpers_TagPoint" Pos="-1187.802 345.312 -756.912" type="0" />
+    <Entity Name="LootPoint_Mineral24" Def="Helpers_TagPoint" Pos="-1345.164 148.535 -747.431" type="0" />
+    <Entity Name="LootPoint_Mineral25" Def="Helpers_TagPoint" Pos="-1236.593 -156.442 -608.247" type="0" />
+    <Entity Name="LootPoint_Mineral26" Def="Helpers_TagPoint" Pos="-888.177 103.969 -724.143" type="0" />
+    <Entity Name="LootPoint_Mineral27" Def="Helpers_TagPoint" Pos="-735.623 -72.374 -762.791" type="0" />
+    <Entity Name="LootPoint_Mineral28" Def="Helpers_TagPoint" Pos="-692.249 -39.228 -956.704" type="0" />
+    <Entity Name="LootPoint_Mineral29" Def="Helpers_TagPoint" Pos="-926.610 -533.613 -579.784" type="0" />
+    <Entity Name="LootPoint_Mineral30" Def="Helpers_TagPoint" Pos="-932.978 -598.486 -430.257" type="0" />
+    <Entity Name="LootPoint_Mineral31" Def="Helpers_TagPoint" Pos="-749.678 -547.936 -302.461" type="0" />
+    <Entity Name="LootPoint_Mineral32" Def="Helpers_TagPoint" Pos="-796.858 -584.560 -220.634" type="0" />
+    <Entity Name="LootPoint_Mineral33" Def="Helpers_TagPoint" Pos="-936.646 -528.938 -203.872" type="0" />
+    <Entity Name="LootPoint_Mineral34" Def="Helpers_TagPoint" Pos="-780.437 -621.383 110.579" type="0" />
+    <Entity Name="LootPoint_Mineral35" Def="Helpers_TagPoint" Pos="-464.382 -484.745 397.860" type="0" />
+    <Entity Name="LootPoint_Mineral36" Def="Helpers_TagPoint" Pos="-431.995 -421.867 513.465" type="0" />
+    <Entity Name="LootPoint_Mineral37" Def="Helpers_TagPoint" Pos="-585.105 -213.726 501.666" type="0" />
+    <Entity Name="LootPoint_Mineral38" Def="Helpers_TagPoint" Pos="-527.509 87.649 524.703" type="0" />
+    <Entity Name="LootPoint_Mineral39" Def="Helpers_TagPoint" Pos="-525.647 324.245 690.843" type="0" />
+    <Entity Name="LootPoint_Mineral40" Def="Helpers_TagPoint" Pos="-206.170 105.710 974.246" type="0" />
+    <Entity Name="LootPoint_Mineral41" Def="Helpers_TagPoint" Pos="-806.446 704.978 -334.009" type="0" />
+    <Entity Name="LootPoint_Mineral42" Def="Helpers_TagPoint" Pos="-814.690 538.047 -501.661" type="0" />
+    <Entity Name="LootPoint_Mineral43" Def="Helpers_TagPoint" Pos="-752.001 548.063 -544.662" type="0" />
+    <Entity Name="LootPoint_Mineral44" Def="Helpers_TagPoint" Pos="-660.114 668.613 -487.366" type="0" />
+    <Entity Name="LootPoint_Mineral45" Def="Helpers_TagPoint" Pos="-197.418 427.083 -116.920" type="0" />
+    <Entity Name="LootPoint_Mineral46" Def="Helpers_TagPoint" Pos="9.687 188.471 291.499" type="0" />
+    <Entity Name="LootPoint_Mineral47" Def="Helpers_TagPoint" Pos="48.242 65.028 167.878" type="0" />
+    <Entity Name="LootPoint_Mineral48" Def="Helpers_TagPoint" Pos="170.212 3.267 62.242" type="0" />
+    <Entity Name="LootPoint_Mineral49" Def="Helpers_TagPoint" Pos="462.304 148.965 12.840" type="0" />
+    <Entity Name="LootPoint_Mineral50" Def="Helpers_TagPoint" Pos="334.402 -114.697 -481.296" type="0" />
+    <Entity Name="LootPoint_Mineral51" Def="Helpers_TagPoint" Pos="-602.038 38.702 61.519" type="0" />
+    <Entity Name="LootPoint_Mineral52" Def="Helpers_TagPoint" Pos="-664.921 78.221 -99.984" type="0" />
+    <Entity Name="LootPoint_Mineral53" Def="Helpers_TagPoint" Pos="-736.179 101.071 -11.975" type="0" />
+    <Entity Name="LootPoint_Mineral54" Def="Helpers_TagPoint" Pos="-726.936 -93.227 -6.429" type="0" />
+    <Entity Name="LootPoint_Mineral55" Def="Helpers_TagPoint" Pos="64.838 -3.422 -28.819" type="0" />
+    <Entity Name="alien_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-1115.061 608.660 806.789" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path2" Def="PathObject" Pos="393.419 808.278 -130.147" Rot="0.000 0.900 0.000 0.436" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="393.419 808.278 -130.147" />
+      <Point p="161.898 733.412 159.727" />
+      <Point p="-108.660 543.782 393.464" />
+      <Point p="-493.996 285.471 541.818" />
+      <Point p="-759.023 154.826 157.501" />
+      <Point p="-764.421 990.360 -370.013" />
+      <Point p="-548.210 1110.636 -382.813" />
+      <Point p="-70.509 1035.564 -274.802" />
+      <Point p="-30.322 701.734 -257.864" />
+      <Point p="380.095 794.122 -167.375" />
+    </Entity>
+    <Entity Name="alien_portal2" Def="OpenWorld_PortalJumpgate" Pos="499.732 825.479 -180.826" Rot="-0.403 0.503 0.681 0.348" />
+    <Entity Name="alien_spawn_spot2" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="497.183 828.384 -181.841" Rot="-0.012 0.842 0.083 0.532" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="pirate_path9" Def="PathObject" Pos="-528.617 -114.678 -376.885" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-528.617 -114.678 -376.885" />
+      <Point p="-631.083 -71.826 -394.719" />
+      <Point p="-803.359 -55.518 -376.710" />
+      <Point p="-795.105 -61.087 -254.728" />
+      <Point p="-681.812 -199.286 -207.460" />
+      <Point p="-455.667 -325.069 -89.908" />
+      <Point p="-228.414 -497.321 74.003" />
+      <Point p="-201.479 -490.211 -48.324" />
+      <Point p="-180.988 -410.552 -139.122" />
+      <Point p="-304.838 -291.967 -283.793" />
+      <Point p="-419.502 -193.214 -363.598" />
+    </Entity>
+    <Entity Name="pirate_spawn_spot9" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-459.958 -126.245 -392.697" Rot="0.000 0.752 0.000 0.660" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_portal1" Def="OpenWorld_PortalJumpgate" Pos="-1113.057 609.808 807.558" Rot="-0.741 0.000 0.000 0.671" />
+    <Entity Name="alien_path1" Def="PathObject" Pos="-1064.674 587.324 775.461" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1064.674 587.324 775.461" />
+      <Point p="-983.683 435.904 628.647" />
+      <Point p="-834.929 328.562 527.667" />
+      <Point p="-438.972 118.048 313.085" />
+      <Point p="-434.460 135.858 -72.720" />
+      <Point p="-826.556 270.397 -235.053" />
+      <Point p="-1050.551 126.825 -187.941" />
+      <Point p="-1140.592 92.313 132.860" />
+      <Point p="-1157.390 398.101 528.171" />
+      <Point p="-1136.845 561.285 717.698" />
+    </Entity>
+    <Entity Name="HealHull1" Def="Bonus_HealHull" Pos="-604.497 -389.698 -16.945" />
+    <Entity Name="QuadDamage1" Def="Bonus_QuadDamage" Pos="-631.752 86.549 64.532" />
+    <Entity Name="Invulnerability1" Def="Bonus_Invulnerability" Pos="196.389 169.139 -23.633" />
+    <Entity Name="Radar1" Def="Bonus_Radar" Pos="-1099.049 147.126 -366.699" />
+    <Entity Name="SpeedUp1" Def="Bonus_SpeedUp" Pos="137.354 179.102 656.223" />
+    <Entity Name="SpeedUp2" Def="Bonus_SpeedUp" Pos="38.144 -374.185 -492.703" />
+    <Entity Name="StCon1" Def="OpenWorld_Quest_PvPObjects_StCon_feia" GameplaysMask="4294967167" Pos="213.629 322.202 19.208" />
+    <Entity Name="BeaconPoint1" Def="Helpers_TagPoint" Pos="213.629 322.202 19.208" type="0" />
+    <Entity Name="BeaconPoint" Def="Helpers_TagPoint" Pos="-356.439 -127.882 52.081" type="0" />
+    <Entity Name="BeaconPoint3" Def="Helpers_TagPoint" Pos="-1181.933 -38.619 -58.937" type="0" />
+    <Entity Name="Beacon1" Def="OpenWorld_Quest_PvPObjects_Beacon_feia" GameplaysMask="4294967167" Pos="35.183 182.558 377.534" />
+    <Entity Name="BombSite1" Def="Helpers_TagPoint" Pos="35.183 182.558 377.534" type="0" />
+    <Entity Name="BombSite0" Def="Helpers_TagPoint" Pos="-843.757 41.069 -55.466" type="0" />
+    <Entity Name="BombSite2" Def="Helpers_TagPoint" Pos="-365.817 -163.884 110.534" type="0" />
+    <Entity Name="BombSite3" Def="Helpers_TagPoint" Pos="391.399 -224.472 -221.466" type="0" />
+    <Entity Name="BombSite4" Def="Helpers_TagPoint" Pos="27.183 123.694 -495.466" type="0" />
+    <Entity Name="BombSite5" Def="Helpers_TagPoint" Pos="-112.688 287.290 372.431" type="0" />
+    <Entity Name="LootMailer1" Def="OpenWorld_LootMailer" Pos="-1246.805 80.363 -293.014" Rot="0.000 0.993 0.000 0.116" />
+    <Entity Name="DeactivateJumpgate1" Def="OpenWorld_DeactivateJumpgate" Pos="-1568.621 189.000 -64.012" Rot="0.000 -0.696 0.000 0.718" />
+    <Entity Name="FastJump1" Def="Logic_SpawnArea_FreeSpace0" Pos="-1370.878 254.799 597.663" Rot="-0.186 -0.369 -0.051 0.909" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="RideWay_0" Def="PathObject" Pos="-661.620 778.095 -659.821" default_size="6.000" path_type="0" unidirectional_road="0">
+      <Point p="-661.620 778.095 -659.821" />
+      <Point p="-529.027 810.996 -708.380" />
+      <Point p="-349.179 725.467 -762.129" />
+      <Point p="2.620 301.257 -669.703" />
+      <Point p="68.492 182.337 -459.926" />
+      <Point p="57.061 233.117 -296.472" />
+      <Point p="192.358 185.570 -197.025" />
+      <Point p="230.693 170.152 -84.893" />
+      <Point p="156.168 261.036 6.935" />
+      <Point p="36.257 357.786 131.844" />
+      <Point p="96.880 345.567 242.510" />
+      <Point p="188.768 289.485 297.978" />
+      <Point p="239.947 256.786 505.427" />
+      <Point p="201.358 178.403 600.248" />
+      <Point p="83.649 0.611 662.849" />
+      <Point p="-70.133 -47.512 659.770" />
+      <Point p="-231.789 -30.229 572.652" />
+      <Point p="-332.229 -49.903 527.456" />
+      <Point p="-483.541 -237.523 580.968" />
+      <Point p="-538.966 -354.033 643.396" />
+      <Point p="-617.275 -398.060 708.281" />
+      <Point p="-988.048 -270.145 498.895" />
+      <Point p="-980.856 -224.205 363.866" />
+      <Point p="-951.927 -174.171 200.124" />
+      <Point p="-940.102 -145.030 -42.608" />
+      <Point p="-921.030 -42.892 -197.354" />
+      <Point p="-907.352 21.781 -181.015" />
+      <Point p="-984.159 102.385 -172.111" />
+      <Point p="-1115.284 145.777 -190.424" />
+      <Point p="-1125.284 144.331 -313.661" />
+      <Point p="-1139.575 189.624 -359.895" />
+      <Point p="-1026.424 211.565 -436.246" />
+      <Point p="-827.159 438.852 -505.521" />
+      <Point p="-753.652 706.412 -621.230" />
+      <Point p="-724.331 752.898 -658.499" />
+    </Entity>
+    <Entity Name="BasePlace1" Def="Helpers_TagPoint" Pos="-1124.062 346.572 764.096" type="0" />
+    <Entity Name="BasePlace2" Def="Helpers_TagPoint" Pos="272.679 900.912 -631.613" type="0" />
+    <Entity Name="BasePlace3" Def="Helpers_TagPoint" Pos="-150.177 -744.676 -430.013" type="0" />
+    <Entity Name="Dreadnought1" Def="CargoShip_OW_Dreadnought" Pos="537.381 1459.036 695.478" path_name="" respawn_time="0.000" closed_path="0" />
+    <Entity Name="AimPoint1" Def="ClanShip_AimPoint" relationshipGroup="1" Pos="0.000 0.000 0.000" type="0" />
+    <Entity Name="AimPoint2" Def="ClanShip_AimPoint" relationshipGroup="1" Pos="0.000 0.000 0.000" type="0" />
+    <Entity Name="AimPoint3" Def="ClanShip_AimPoint" relationshipGroup="1" Pos="0.000 0.000 0.000" type="0" />
+    <Entity Name="AimPoint4" Def="ClanShip_AimPoint" relationshipGroup="1" Pos="0.000 0.000 0.000" type="0" />
+    <Entity Name="Service_Dreadnought1" Def="PathObject" Pos="1403.466 956.706 -3269.511" Rot="0.023 0.421 0.050 0.905" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="1403.466 956.705 -3269.508" />
+      <Point p="1975.456 912.369 -2713.532" />
+      <Point p="2589.220 854.015 -1842.965" />
+      <Point p="2911.042 810.858 -1205.508" />
+    </Entity>
+    <Entity Name="MineCrystal2" Def="AdventureInteractObject_FEIA_MineCrystal" Pos="-624.990 126.674 -636.802" />
+    <Entity Name="MineCrystal3" Def="AdventureInteractObject_FEIA_MineCrystal" Pos="-653.000 203.200 -579.861" />
+    <Entity Name="MineCrystal1" Def="AdventureInteractObject_FEIA_MineCrystal" Pos="-664.417 172.621 -646.327" />
+    <Entity Name="FEIA_1_Stage2_MobSpawn1" Def="AdventureSpawnPoint_FEIA_1_MobSpawn" Pos="-558.612 168.728 -1176.700" Rot="0.000 0.960 0.000 0.280" type="0" />
+    <Entity Name="FEIA_1_Stage2_MobSpawn2" Def="AdventureSpawnPoint_FEIA_1_MobSpawn" Pos="-1168.000 460.605 -93.000" Rot="-0.128 -0.489 -0.218 0.835" type="0" />
+    <Entity Name="FEIA_1_Stage3_Point" Def="AdventureInteractObject_FEIA_1_Escape" Pos="-1117.546 66.820 743.740" />
+    <Entity Name="Scout1" Def="AdventureSpawnPoint_RoP2025_St11_Scout01" Pos="191.767 398.562 -52.782" type="0" />
+    <Entity Name="Adv_Path_RoP2025_St111" Def="PathObject" Pos="152.118 403.707 -25.568" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="152.118 403.707 -25.568" />
+      <Point p="257.653 279.553 -98.955" />
+      <Point p="226.881 253.658 138.860" />
+      <Point p="117.197 241.382 116.877" />
+      <Point p="125.968 292.332 -37.100" />
+    </Entity>
+    <Entity Name="Scout2" Def="AdventureSpawnPoint_RoP2025_St11_Scout02" Pos="208.542 194.988 61.932" type="0" />
+    <Entity Name="Adv_Path_RoP2025_St112" Def="PathObject" Pos="221.532 195.570 34.887" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="221.532 195.570 34.887" />
+      <Point p="158.226 204.078 -65.009" />
+      <Point p="90.696 229.239 -69.346" />
+      <Point p="46.565 271.073 -71.225" />
+      <Point p="121.933 279.232 69.884" />
+    </Entity>
+    <Entity Name="Scout3" Def="AdventureSpawnPoint_RoP2025_St11_Scout03" Pos="84.751 425.208 9.450" type="0" />
+    <Entity Name="Adv_Path_RoP2025_St113" Def="PathObject" Pos="85.722 410.151 16.001" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="85.722 410.151 16.001" />
+      <Point p="106.913 302.284 -104.504" />
+      <Point p="197.662 192.102 22.707" />
+      <Point p="219.338 280.454 101.240" />
+    </Entity>
+    <Entity Name="Scout4" Def="AdventureSpawnPoint_RoP2025_St11_Scout04" Pos="45.569 217.177 -61.380" type="0" />
+    <Entity Name="Adv_Path_RoP2025_St114" Def="PathObject" Pos="64.774 218.504 -65.155" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="64.774 218.504 -65.155" />
+      <Point p="105.694 210.093 10.048" />
+      <Point p="265.704 231.217 -29.189" />
+      <Point p="162.495 319.241 -124.980" />
+    </Entity>
+    <Entity Name="Scout5" Def="AdventureSpawnPoint_RoP2025_St11_Scout05" Pos="731.329 -463.795 212.466" type="0" />
+    <Entity Name="Adv_Path_RoP2025_St115" Def="PathObject" Pos="848.107 -472.741 241.299" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="848.107 -472.741 241.299" />
+      <Point p="1348.727 -693.923 -99.712" />
+      <Point p="1486.020 -523.272 -888.392" />
+      <Point p="1134.663 1.364 -1171.378" />
+      <Point p="1143.571 145.780 -1511.267" />
+      <Point p="543.904 192.205 -1464.337" />
+      <Point p="-761.828 -293.440 -60.193" />
+      <Point p="-1375.418 -438.206 632.897" />
+      <Point p="-1344.961 -458.460 1165.767" />
+      <Point p="-839.603 740.313 1665.066" />
+      <Point p="-1174.673 1011.397 1205.247" />
+      <Point p="-1484.741 1257.640 -29.271" />
+      <Point p="-1243.111 1346.798 -824.332" />
+      <Point p="-767.164 838.679 -409.327" />
+      <Point p="-642.487 706.075 -113.540" />
+      <Point p="-337.254 815.743 318.759" />
+      <Point p="442.241 627.442 462.611" />
+      <Point p="1112.013 431.698 1104.361" />
+    </Entity>
+  </EntityContainer>
+</Scene>
