@@ -1,0 +1,48 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Thu Nov 03 15:13:08 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 900 360
+			effect "ui\graphics\ships_tree_3\bg_white"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object win
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 191 160
+			opacity 255
+			color 0xffffffff
+			size 900 360
+			effect "ui\graphics\ships_tree_3\alien_craft_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
