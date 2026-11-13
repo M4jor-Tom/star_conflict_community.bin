@@ -1,0 +1,100 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Mon Mar 04 13:45:39 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object q_map
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 578 800
+			effect "ui\graphics\quests_2\q_map_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object quest_btn
+	{
+		defaults
+		{
+			pos 427.381 834
+			opacity 255
+			color 0xffffffff
+			size 150 32
+			effect "ui\graphics\hangar_iter_3\b_quest_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 578 900
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object clan_war
+	{
+		defaults
+		{
+			pos 379 834
+			opacity 255
+			color 0xffffffff
+			size 40 30
+			effect "ui\graphics\hangar_iter_3\btn_clan_war"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object current_btn
+	{
+		defaults
+		{
+			pos 312.403 818.672
+			opacity 255
+			color 0xffffffff
+			size 60 60
+			effect "ui\graphics\map\sector_current_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object q_map2
+	{
+		defaults
+		{
+			pos -20 101
+			opacity 255
+			color 0xffffffff
+			size 578 800
+			effect "ui\graphics\quests_2\q_map_main_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
