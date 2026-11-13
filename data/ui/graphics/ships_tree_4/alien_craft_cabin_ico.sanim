@@ -1,0 +1,83 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race_4.ma"
+//by Sergey_Mitryaev
+//at Tue Nov 28 17:47:54 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object text_cabin
+	{
+		defaults
+		{
+			pos -25 39
+			opacity 255
+			color 0xff99ffff
+			size 150 20
+			effect ""
+			alignment "CM"
+			sampleText "Не изучено"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-10 -10	110 -10	-10 110	110 110	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim disable sp_colc
+		{
+			1
+			0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	0xff7f7f7f	
+		}
+	}
+}
+
