@@ -1,0 +1,280 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Thu Mar 27 12:45:59 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 18
+
+objects 17
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 950 480
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 0 98
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 0 122
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object header
+	{
+		defaults
+		{
+			pos 0 71
+			opacity 255
+			color 0xffffffff
+			size 922 26
+			effect "ui\graphics\clan\clan_rating_header"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_3
+	{
+		defaults
+		{
+			pos 0 146
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_4
+	{
+		defaults
+		{
+			pos 0 170
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_5
+	{
+		defaults
+		{
+			pos 0 194
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_6
+	{
+		defaults
+		{
+			pos 0 218
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_7
+	{
+		defaults
+		{
+			pos 0 242
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_8
+	{
+		defaults
+		{
+			pos 0 266
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_9
+	{
+		defaults
+		{
+			pos 0 290
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_10
+	{
+		defaults
+		{
+			pos 0 314
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_11
+	{
+		defaults
+		{
+			pos 0 338
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_12
+	{
+		defaults
+		{
+			pos 0 362
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_13
+	{
+		defaults
+		{
+			pos 0 386
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\clan_line_rating"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 930 -4
+			opacity 255
+			color 0xffffffff
+			size 16 460
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object race
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 930 74
+			effect "ui\graphics\clan\clan_race"
+			alignment "LB"
+			sampleText "HDhehjg jberjb j borwejh"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp213
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-5.01409 -5.5	0.985906 -5.5	919.014 -5.5	925.014 -5.5	-5.01409 0.5	0.985906 0.5	919.014 0.5	925.014 0.5	-5.01409 422	0.985906 422	919.014 422	925.014 422	-5.01409 428	0.985906 428	919.014 428	925.014 428	
+				0.272536 0.0507218	0.272536 0.0448626	0.272536 0.00890714	0.272536 0.00304788	0.266677 0.0507219	0.266677 0.0448626	0.266677 0.00890732	0.266677 0.00304776	0.229545 0.0507219	0.229545 0.0448625	0.229545 0.00890702	0.229545 0.00304776	0.223686 0.0507219	0.223686 0.0448625	0.223686 0.0089072	0.223686 0.00304776	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
