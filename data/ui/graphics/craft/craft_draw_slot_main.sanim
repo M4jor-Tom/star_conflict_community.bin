@@ -1,0 +1,245 @@
+﻿source_file "Y:/art/source/ui/graphics/craft/craft.ma"
+//by sergey_mitryaev
+//at Wed Apr 07 14:37:15 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 12
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 328 90
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 6 6
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object product_name
+	{
+		defaults
+		{
+			pos 65.3677 7
+			opacity 255
+			color 0xffffffff
+			size 240 50
+			effect ""
+			alignment "LT"
+			sampleText "Адаптивный  излучаетель|tyjtyjy|tjkthmjjh"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\craft\craft_draw_slot_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\craft\craft_draw_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 219 65.146
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect ""
+			alignment "RM"
+			sampleText "КУПЛЕН"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object mark
+	{
+		defaults
+		{
+			pos 65.3677 30
+			opacity 255
+			color 0xffffdeb3
+			size 200 21
+			effect ""
+			alignment "LM"
+			sampleText "Vh34"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn5
+	{
+		defaults
+		{
+			pos 245 61
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\btn_sml_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 92 62
+			opacity 255
+			color 0xffffffff
+			size 150 23
+			effect "ui\graphics\craft\craft_draw_slot_price"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object over6
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\craft\craft_draw_slot_select"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 6 65
+			opacity 255
+			color 0xffff9a00
+			size 150 23
+			effect ""
+			alignment "LM"
+			sampleText "13223435"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object unstudied
+	{
+		defaults
+		{
+			pos 89 4
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\craft\craft_unstudied"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-3.9653 -4	3.9653 -4	323.965 -4	332.035 -4	-3.9653 4	3.9653 4	323.965 4	332.035 4	-3.9653 86	3.9653 86	323.965 86	332.035 86	-3.9653 94	3.9653 94	323.965 94	332.035 94	
+				0.0585938 0.644531	0.0664391 0.644531	0.0742188 0.644531	0.0820313 0.644531	0.0585938 0.652344	0.0664391 0.652344	0.0742188 0.652344	0.0820313 0.652344	0.0585938 0.660162	0.0664391 0.660162	0.0742188 0.660162	0.0820313 0.660162	0.0585938 0.667969	0.0664391 0.667969	0.0742188 0.667969	0.0820313 0.667969	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	322 -0	328 -0	0 6	6 6	322 6	328 6	0 84	6 84	322 84	328 84	0 90	6 90	322 90	328 90	
+				0.123001 0.00196683	0.12886 0.00196683	0.163856 0.00196683	0.169715 0.00196683	0.123001 0.00782621	0.12886 0.00782621	0.163856 0.00782621	0.169715 0.00782621	0.123001 0.0449466	0.12886 0.0449466	0.163856 0.0449466	0.169715 0.0449466	0.123001 0.050806	0.12886 0.050806	0.163856 0.050806	0.169715 0.050806	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite qwe
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/achivments.tif"
+			vertices
+			{
+				0.500031 -0	167.5 -0	0.500038 80.6093	167.5 80.6093	
+				0.72514 0.00512624	0.970173 0.00512624	0.72514 0.06128	0.970173 0.06128	
+				0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
