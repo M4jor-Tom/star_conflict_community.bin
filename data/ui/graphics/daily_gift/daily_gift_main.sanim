@@ -1,0 +1,58 @@
+﻿source_file "Y:/art/source/ui/graphics/daily_gift/daily_gift.ma"
+//by sergey_mitryaev
+//at Fri Aug 23 14:24:38 2013
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 154 92.3305
+			opacity 255
+			color 0xffffffff
+			size 966 500
+			effect "ui\graphics\daily_gift\daily_gift_win"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName769
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				10083.8 5298.19	-8603.76 5298.19	10083.8 -4564.57	-8603.76 -4564.57	
+				0.246502 0.0265382	0.247443 0.0265382	0.246502 0.0285897	0.247443 0.0285897	
+				0xcc254759	0xcc254759	0xcc254759	0xcc254759	
+			}
+		}
+		visible_on idle
+	}
+}
+
