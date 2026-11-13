@@ -1,0 +1,84 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop.ma"
+//by sergey_mitryaev
+//at Wed Jun 05 18:11:49 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object indic_big
+	{
+		defaults
+		{
+			pos 25 25
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect "ui\graphics\shop\chest_box_indic_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				-92.9517 -2	19.6183 -2	30.4004 -2	142.97 -2	-92.9517 4	19.6183 4	30.4004 4	142.97 4	-92.9517 46	19.6183 46	30.4004 46	142.97 46	-92.9517 52	19.6183 52	30.4004 52	142.97 52	
+				0.108398 0.786133	0.00683594 0.786133	0.00878906 0.786133	0.108398 0.786133	0.108398 0.791992	0.00683594 0.791992	0.00878906 0.791992	0.108398 0.791992	0.108398 0.839844	0.00683594 0.839844	0.00878906 0.839844	0.108398 0.839844	0.108398 0.845703	0.00683594 0.845703	0.00878906 0.845703	0.108398 0.845703	
+			}
+		}
+		visible_on idle
+	}
+}
+
