@@ -1,0 +1,55 @@
+﻿source_file  Y:/art/source/ui/graphics/equip/equip.ma
+//by sega
+//at Fri Nov 11 15:26:20 2011
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 33 26
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-0.138741 0.0559559	32.8613 0.0559559	-0.138741 26.056	32.8613 26.056	
+				1 0	0 0	1 1	0 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
