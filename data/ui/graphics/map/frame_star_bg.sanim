@@ -1,0 +1,56 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Tue Mar 11 18:20:50 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self126
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite sd9
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	30 -0	0 30	30 30	
+				0.24375 0.016511	0.250391 0.016511	0.24375 0.0362233	0.250391 0.0362233	
+				0x4c000000	0x4c000000	0x4c000000	0x4c000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
