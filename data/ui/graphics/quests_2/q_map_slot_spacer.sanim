@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Thu Nov 30 15:48:15 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 540 16
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite que81
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				260 6.10352e-005	276 6.10352e-005	260 16.0001	276 16.0001	
+				0.363281 0.712891	0.394531 0.712891	0.363281 0.744141	0.394531 0.744141	
+			}
+		}
+		visible_on idle
+	}
+	sprite que82
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				11 8.00006	256 8.00006	11 10.0001	256 10.0001	
+				0.330199 0.683714	0.341676 0.683714	0.330199 0.695192	0.341676 0.695192	
+				0xff3b3b3b	0xff3b3b3b	0xff3b3b3b	0xff3b3b3b	
+			}
+		}
+		visible_on idle
+	}
+	sprite que83
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				280 8.00006	525 8.00006	280 10.0001	525 10.0001	
+				0.330199 0.683714	0.341676 0.683714	0.330199 0.695192	0.341676 0.695192	
+				0xff3b3b3b	0xff3b3b3b	0xff3b3b3b	0xff3b3b3b	
+			}
+		}
+		visible_on idle
+	}
+}
+
