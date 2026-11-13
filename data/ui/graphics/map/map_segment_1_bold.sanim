@@ -1,0 +1,57 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Wed Apr 10 15:52:12 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 30
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 14 1
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/map_global.tif"
+			blend color_add
+			vertices
+			{
+				-4 -2.98687	-1 -2.98687	16 -2.98687	19 -2.98687	-4 0.0131302	-1 0.0131302	16 0.0131302	19 0.0131302	-4 2.01313	-1 2.01313	16 2.01313	19 2.01313	-4 5.01313	-1 5.01313	16 5.01313	19 5.01313	
+				0.0390626 0.195313	0.0625001 0.195313	0.226563 0.195313	0.25 0.195313	0.0390625 0.21875	0.0625001 0.21875	0.226563 0.21875	0.25 0.21875	0.0390624 0.234375	0.0624999 0.234375	0.226563 0.234375	0.25 0.234375	0.0390624 0.257813	0.0624999 0.257813	0.226562 0.257813	0.25 0.257813	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
