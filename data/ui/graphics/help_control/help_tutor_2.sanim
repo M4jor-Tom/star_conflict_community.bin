@@ -1,0 +1,215 @@
+﻿source_file "Y:/art/source/ui/graphics/help_control/help.ma"
+//by sergey_mitryaev
+//at Thu Jul 16 16:14:44 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 584 584
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_1
+	{
+		defaults
+		{
+			pos 2 23
+			opacity 255
+			color 0xffffffff
+			size 580 30
+			effect ""
+			alignment "CM"
+			sampleText "Вы  успешно прошли  обучение"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 423 555
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title_2
+	{
+		defaults
+		{
+			pos 12 506
+			opacity 255
+			color 0xffff9a00
+			size 560 30
+			effect ""
+			alignment "CM"
+			sampleText "Добро пожаловат ьс СтарКонфликт"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object descript_1
+	{
+		defaults
+		{
+			pos 12 426
+			opacity 255
+			color 0xffffffff
+			size 560 78
+			effect ""
+			alignment "CM"
+			sampleText "Добро пожало|ват ьс СтарКонфликт|efwewew"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title16
+	{
+		defaults
+		{
+			pos 2 -0
+			opacity 255
+			color 0xffff9a00
+			size 580 20
+			effect ""
+			alignment "CM"
+			sampleText "Обучение"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 564 2
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object chek_box
+	{
+		defaults
+		{
+			pos 13 558
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\login_screen\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_5
+	{
+		defaults
+		{
+			pos 263 555
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn11"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	580 -4	588 -4	-4 22	4 22	580 22	588 22	-4 580	4 580	580 580	588 580	-4 588	4 588	580 588	588 588	
+				0.0585938 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585936 0.723633	0.0664061 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585936 0.731445	0.0664061 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico15
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				13 30	575 30	13 542	575 542	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp29
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				13 432	19 432	569 432	575 432	13 438	19 438	569 438	575 438	13 536.267	19 536.267	569 536.267	575 536.267	13 542.267	19 542.267	569 542.267	575 542.267	
+				0.237305 0.0166016	0.243164 0.0166016	0.24707 0.0166016	0.25293 0.0166016	0.237305 0.0224609	0.243164 0.0224609	0.24707 0.0224609	0.25293 0.0224609	0.237305 0.0263672	0.243164 0.0263672	0.24707 0.0263672	0.25293 0.0263672	0.237305 0.0322266	0.243164 0.0322266	0.24707 0.0322266	0.25293 0.0322266	
+				0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	0x7f000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp30
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				13 432	19 432	569 432	575 432	13 438	19 438	569 438	575 438	13 536.267	19 536.267	569 536.267	575 536.267	13 542.267	19 542.267	569 542.267	575 542.267	
+				0.494141 0.615234	0.5 0.615234	0.503906 0.615234	0.509766 0.615234	0.494141 0.621094	0.5 0.621094	0.503906 0.621094	0.509766 0.621094	0.494141 0.625	0.5 0.625	0.503906 0.625	0.509766 0.625	0.494141 0.630859	0.5 0.630859	0.503906 0.630859	0.509766 0.630859	
+				0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	0xd6000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
