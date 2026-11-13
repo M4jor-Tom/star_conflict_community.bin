@@ -1,0 +1,113 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle.ma"
+//by Sergey
+//at Wed Nov 18 12:44:32 2015
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 34 66
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName379d
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 -0	34 -0	0 66	34 66	
+				0.0703125 0.480469	0.00390625 0.480469	0.0703125 0.609375	0.00390625 0.609375	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_posc
+		{
+			1 
+			-0.64333 -1.24882	34.6433 -1.24882	-0.64333 67.2488	34.6433 67.2488	
+		}
+		anim press sp_posc
+		{
+			1 
+			0.64333 1.24881	33.3567 1.24881	0.64333 64.7512	33.3567 64.7512	
+		}
+		anim disable sp_posc_colc
+		{
+			1 1
+			0.64333 1.24881	33.3567 1.24881	0.64333 64.7512	33.3567 64.7512	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName380
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 -0	34 -0	0 66	34 66	
+				0.136719 0.480469	0.0703125 0.480469	0.136719 0.609375	0.0703125 0.609375	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
