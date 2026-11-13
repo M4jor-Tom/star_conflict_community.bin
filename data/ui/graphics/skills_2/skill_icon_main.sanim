@@ -1,0 +1,364 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills_2.ma"
+//by sergey_mitryaev
+//at Mon Mar 25 10:42:29 2013
+
+
+animations 5
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim learn
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_inactiv
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim white
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 54 45
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+		visible_on sel_inactiv
+		visible_on white
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -26
+			opacity 255
+			color 0xffffffff
+			size 54 100
+			effect "ui\graphics\skills_2\skill_icon_over"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+		visible_on sel_inactiv
+		visible_on white
+	}
+}
+
+sprites 9
+{
+	total_vertices 36
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				5.9181 0.863148	47.9181 0.863148	5.9181 42.8631	47.9181 42.8631	
+				-9.31323e-009 0	1 0	-9.31323e-009 1	1 1	
+				0x7fff8600	0x7fff8600	0x7fff8600	0x7fff8600	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0x7f808080	0x7f808080	0x7f808080	0x7f808080	
+		}
+		anim learn sp_colc
+		{
+			1
+			0xffff8600	0xffff8600	0xffff8600	0xffff8600	
+		}
+		anim sel_inactiv sp_colc
+		{
+			1
+			0xe5ff8600	0xe5ff8600	0xe5ff8600	0xe5ff8600	
+		}
+		anim white sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite sd6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				0 -25.8831	54 -25.8831	0 74.1169	54 74.1169	
+				0.631806 0.820278	0.688056 0.820278	0.631806 0.942229	0.688056 0.942229	
+				0x92000000	0x92000000	0x92000000	0x92000000	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0x92929292	0x92929292	0x92929292	0x92929292	
+		}
+		visible_on learn
+		visible_on sel_inactiv
+		visible_on white
+	}
+	sprite sd7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				0 -28.8831	54 -28.8831	0 77.1169	54 77.1169	
+				0.690813 0.816619	0.747063 0.816619	0.690813 0.945888	0.747063 0.945888	
+				0x92929292	0x92929292	0x92929292	0x92929292	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0x92000000	0x92000000	0x92000000	0x92000000	
+		}
+		visible_on learn
+		visible_on sel_inactiv
+		anim white sp_colc
+		{
+			1
+			0x92000000	0x92000000	0x92000000	0x92000000	
+		}
+	}
+	sprite sd8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				16 -18.3903	36 -18.3903	16 63.6097	36 63.6097	
+				0.585417 0.639343	0.60625 0.639343	0.585417 0.739343	0.60625 0.739343	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim learn sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel_inactiv sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim white sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+	sprite sd10
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				0 -18.3903	14 -18.3903	0 63.6097	14 63.6097	
+				0.566667 0.639343	0.58125 0.639343	0.566667 0.739343	0.58125 0.739343	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+		anim sel_inactiv sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim white sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+	sprite sd11
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				38.7328 -18.3903	52.7328 -18.3903	38.7328 63.6097	52.7328 63.6097	
+				0.58125 0.639343	0.566667 0.639343	0.58125 0.739343	0.566667 0.739343	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on learn
+		anim sel_inactiv sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim white sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+	sprite sd10w
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				0 -18.3903	14 -18.3903	0 63.6097	14 63.6097	
+				0.566667 0.639343	0.58125 0.639343	0.566667 0.739343	0.58125 0.739343	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim learn sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel_inactiv sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim white sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+	sprite sd11wsdf
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				38.7328 -18.3903	52.7328 -18.3903	38.7328 63.6097	52.7328 63.6097	
+				0.58125 0.639343	0.566667 0.639343	0.58125 0.739343	0.566667 0.739343	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim learn sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim sel_inactiv sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+		anim white sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+	sprite sd7wc
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/skills.tif"
+			blend color_add
+			vertices
+			{
+				6 1	48 1	6 43	48 43	
+				0.632292 0.943902	0.675 0.943902	0.632292 0.995122	0.675 0.995122	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		anim learn sp_colc
+		{
+			1
+			0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	
+		}
+		visible_on sel_inactiv
+		visible_on white
+	}
+}
+
