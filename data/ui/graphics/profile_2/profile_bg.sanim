@@ -1,0 +1,69 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Thu Sep 21 16:08:06 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object min_dist
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 500
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos -1360 -0
+			opacity 255
+			color 0xffffffff
+			size 4000 1280
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we74
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-3966.74 -2449	5246.73 -2449	-3966.74 3555	5246.73 3555	
+				0.334936 0.680639	0.344751 0.680639	0.334936 0.690454	0.344751 0.690454	
+				0x66000000	0x66000000	0x66000000	0x66000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
