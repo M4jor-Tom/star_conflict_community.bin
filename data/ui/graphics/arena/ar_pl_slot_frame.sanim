@@ -1,0 +1,52 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Mon Sep 28 15:21:49 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lider
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp45
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/arena.tif"
+			blend color_add
+			vertices
+			{
+				-3 -3	3 -3	243 -3	249 -3	-3 3	3 3	243 3	249 3	-3 21	3 21	243 21	249 21	-3 27	3 27	243 27	249 27	
+				0.285156 0.232422	0.296875 0.232422	0.328125 0.232422	0.339844 0.232422	0.285156 0.244141	0.296875 0.244141	0.328125 0.244141	0.339844 0.244141	0.285156 0.275391	0.296875 0.275391	0.328125 0.275391	0.339844 0.275391	0.285156 0.287109	0.296875 0.287109	0.328125 0.287109	0.339844 0.287109	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on on
+		visible_on lider
+		visible_on off
+	}
+}
+
