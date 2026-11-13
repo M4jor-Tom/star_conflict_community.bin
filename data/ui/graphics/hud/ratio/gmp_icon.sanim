@@ -1,0 +1,330 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Mon Feb 17 18:30:29 2020
+
+base_res 1280 720
+
+animations 16
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim white
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim agressiv
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim agressiv_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim ico_gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim me
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim me_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos -34.4395 8.78092
+			opacity 255
+			color 0xffffffff
+			size 22 20
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on white
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on ico_gold
+		visible_on squad_shot
+		visible_on me
+		visible_on me_shot
+	}
+	object center
+	{
+		defaults
+		{
+			pos 11 10
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on white
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on ico_gold
+		visible_on squad_shot
+		visible_on me
+		visible_on me_shot
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 22 20
+			effect "ui\graphics\hud\ratio\gmp_icon_over"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on neutral
+		visible_on neutral_shot
+		visible_on white
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on ico_gold
+		visible_on squad_shot
+		visible_on me
+		visible_on me_shot
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite ico_bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-2 -2	24 -2	-2 22	24 22	
+				0 0	1 0	0 1	1 1	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		anim enemy_shot sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim neutral_shot sp_colc
+		{
+			1
+			0xff8f8f8f	0xff8f8f8f	0xff8f8f8f	0xff8f8f8f	
+		}
+		anim friend_shot sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+		anim agressiv_shot sp_colc
+		{
+			1
+			0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+		}
+		anim nlo_shot sp_colc
+		{
+			1
+			0xffbd25e4	0xffbd25e4	0xffbd25e4	0xffbd25e4	
+		}
+		anim squad_shot sp_colc
+		{
+			1
+			0xff00db67	0xff00db67	0xff00db67	0xff00db67	
+		}
+		anim me_shot sp_colc
+		{
+			1
+			0xffb4f0a7	0xffb4f0a7	0xffb4f0a7	0xffb4f0a7	
+		}
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	22 -0	0 20	22 20	
+				0 0	1 0	0 1	1 1	
+				0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim enemy_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim neutral sp_colc
+		{
+			1
+			0xcccccccc	0xcccccccc	0xcccccccc	0xcccccccc	
+		}
+		anim neutral_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim white sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim squad sp_colc
+		{
+			1
+			0xff25de00	0xff25de00	0xff25de00	0xff25de00	
+		}
+		anim friend_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim agressiv sp_colc
+		{
+			1
+			0xffff9a00	0xffff9a00	0xffff9a00	0xffff9a00	
+		}
+		anim agressiv_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim nlo sp_colc
+		{
+			1
+			0xffbd25e4	0xffbd25e4	0xffbd25e4	0xffbd25e4	
+		}
+		anim nlo_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim ico_gold sp_colc
+		{
+			1
+			0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+		}
+		anim squad_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim me sp_colc
+		{
+			1
+			0xffb4f0a7	0xffb4f0a7	0xffb4f0a7	0xffb4f0a7	
+		}
+		anim me_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
