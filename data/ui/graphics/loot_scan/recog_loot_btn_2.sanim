@@ -1,0 +1,155 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by Sergey
+//at Fri Jul 08 16:27:23 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 126 144
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object t_2
+	{
+		defaults
+		{
+			pos 3 65
+			opacity 255
+			color 0xffcccccc
+			size 120 62
+			effect ""
+			alignment "CT"
+			sampleText "Шанс|rtjtm rth |dgd dg "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 20 122
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "swsdfwf"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\loot_scan\recog_loot_btn_over_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object gold
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\loot_scan\recog_loot_btn_gold"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 39 8
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object uniq_icon
+	{
+		defaults
+		{
+			pos 39 8
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\loot_scan\recog_loot_uniq"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 126 144
+			effect "ui\graphics\loot_scan\recog_loot_btn_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	8 -0	120 -0	126 -0	0 6	8 6	120 6	126 6	0 135.809	8 135.809	120 135.809	126 135.809	0 144.191	8 144.191	120 144.191	126 144.191	
+				0.283201 0.349609	0.291022 0.349609	0.399414 0.349609	0.405273 0.349609	0.283201 0.355468	0.291022 0.355468	0.399414 0.355468	0.405274 0.355468	0.283201 0.481444	0.291022 0.481444	0.399414 0.481444	0.405274 0.481444	0.283201 0.489259	0.291022 0.489259	0.399414 0.489259	0.405274 0.489259	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
