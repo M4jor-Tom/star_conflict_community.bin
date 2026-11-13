@@ -1,0 +1,160 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Wed Apr 29 16:51:09 2020
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 600 74
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object role
+	{
+		defaults
+		{
+			pos 20 10
+			opacity 255
+			color 0xffffffff
+			size 54 54
+			effect "ui\graphics\ships_tree_3\ed_ship_info_role_main_1080"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 90 3.17335
+			opacity 255
+			color 0xffffffff
+			size 80 44
+			effect ""
+			alignment "LM"
+			sampleText "2"
+			font "segoeuilr_44"
+		}
+		visible_on idle
+	}
+	object role_title
+	{
+		defaults
+		{
+			pos 90 46
+			opacity 255
+			color 0xffa3b5c3
+			size 80 30
+			effect ""
+			alignment "LM"
+			sampleText "ШТУР"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object sinerg
+	{
+		defaults
+		{
+			pos 187 5
+			opacity 255
+			color 0xffffffff
+			size 100 66
+			effect "ui\graphics\equip_1080\ed_ship_info_sinerg"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 74
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite que477
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				273 -0	313 -0	273 74	313 74	
+				0.181641 0.195313	0.259766 0.195313	0.181641 0.339844	0.259766 0.339844	
+				0x7f000000	0x7f000000	0x7f000000	0x7f000000	
+			}
+		}
+		anim idle sp_pos
+		{
+			2 
+			273 -0	313 -0	273 74	313 74	
+			560 -0	600 -0	560 74	600 74	
+		}
+	}
+	sprite que478
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_1.tif"
+			vertices
+			{
+				0 -0	273 -0	0 74	273 74	
+				0.167969 0.195313	0.177734 0.195313	0.167969 0.339844	0.177734 0.339844	
+				0x7f000000	0x7f000000	0x7f000000	0x7f000000	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	273 -0	0 74	273 74	
+			0 -0	301.7 -0	0 74	301.7 74	
+			0 -0	330.4 -0	0 74	330.4 74	
+			0 -0	359.1 -0	0 74	359.1 74	
+			0 -0	387.8 -0	0 74	387.8 74	
+			0 -0	416.5 -0	0 74	416.5 74	
+			0 -0	445.2 -0	0 74	445.2 74	
+			0 -0	473.9 -0	0 74	473.9 74	
+			0 -0	502.6 -0	0 74	502.6 74	
+			0 -0	531.3 -0	0 74	531.3 74	
+			0 -0	560 -0	0 74	560 74	
+		}
+	}
+}
+
