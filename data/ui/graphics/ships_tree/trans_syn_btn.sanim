@@ -1,0 +1,77 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Thu Dec 26 14:10:16 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object btn
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 248 30
+			effect "ui\graphics\shop\buy_btn8"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object syn_ico
+	{
+		defaults
+		{
+			pos 229.956 32.1792
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\shop\gold_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 78 31
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "RM"
+			sampleText "1234235"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 235 -0
+			opacity 255
+			color 0xffffffff
+			size 12 22
+			effect "ui\graphics\hangar\sale_syn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
