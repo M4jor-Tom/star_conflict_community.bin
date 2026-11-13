@@ -1,0 +1,106 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by Sergey
+//at Tue Sep 29 10:33:39 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 64 80
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title30
+	{
+		defaults
+		{
+			pos -23 58
+			opacity 255
+			color 0xff7fb2ff
+			size 110 20
+			effect ""
+			alignment "CM"
+			sampleText "Боев"
+			font "Tiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object objectName396
+	{
+		defaults
+		{
+			pos 16 32.5408
+			opacity 255
+			color 0xffffffff
+			size 30 20
+			effect ""
+			alignment "CM"
+			sampleText "99"
+			font "VerySmall_outl2"
+			back_color 0x4f9f
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName381
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	64 -0	0 64	64 64	
+				0.00195313 0.308594	0.126953 0.308594	0.00195313 0.433594	0.126953 0.433594	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName395
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/arena.tif"
+			blend color_add
+			vertices
+			{
+				15 8	47 8	15 40	47 40	
+				0.492188 0.00195313	0.554688 0.00195313	0.492188 0.0644531	0.554688 0.0644531	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
