@@ -1,0 +1,167 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Mon Jul 10 13:46:16 2017
+
+base_res 1920 1080
+
+animations 6
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 36 24
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on idle_2
+		visible_on over_2
+		visible_on press_2
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite we2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -1	36 -1	0 23	36 23	
+				0.00976563 0.394531	0.0800781 0.394531	0.00976563 0.441406	0.0800781 0.441406	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim over_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-1.11225 -1.68313	34.8877 -1.68313	-1.11225 22.3169	34.8877 22.3169	
+				0.0078125 0.345703	0.078125 0.345703	0.0078125 0.392578	0.078125 0.392578	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim over_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim press_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite we8_20
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-12.2176 -5.66767	48.955 -5.66767	-12.2176 27.978	48.955 27.978	
+				0.276612 0.00871229	0.3562 0.00871229	0.276612 0.0850377	0.3562 0.0850377	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x171f253b	0x171f253b	0x171f253b	0x171f253b	
+		}
+		visible_on press
+		visible_on idle_2
+		anim over_2 sp_colc
+		{
+			1
+			0x171f253b	0x171f253b	0x171f253b	0x171f253b	
+		}
+		visible_on press_2
+	}
+}
+
