@@ -1,0 +1,213 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_3.ma"
+//by sergey_mitryaev
+//at Mon Mar 11 17:38:33 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 9
+{
+	object load_modules
+	{
+		defaults
+		{
+			pos 180.773 151.888
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 470 410
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6.06577 3
+			opacity 255
+			color 0xffffffff
+			size 250 21
+			effect ""
+			alignment "LT"
+			sampleText "НАзвание "
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 452 2
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object icon5
+	{
+		defaults
+		{
+			pos 6 33
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		anim idle obj_op
+		{
+			11 
+			255
+			255
+			127
+			127
+			127
+			127
+			127
+			127
+			127
+			127
+			127
+		}
+	}
+	object product_name
+	{
+		defaults
+		{
+			pos 62 32
+			opacity 255
+			color 0xffffffff
+			size 340 40
+			effect ""
+			alignment "LT"
+			sampleText "Адаптивный излучаетель MK2 hg gsb|tb bretetrgewrtrg ew"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object count
+	{
+		defaults
+		{
+			pos 62 64
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "LM"
+			sampleText "На складе 6  шт"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 9.69608 89
+			opacity 255
+			color 0xffffffff
+			size 396 200
+			effect "ui\graphics\equip_3\prod_ad_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object reload
+	{
+		defaults
+		{
+			pos 432 59
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\clan\lidboard_btn_3"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	464 -0	470 -0	0 6	6 6	464 6	470 6	0 401.5	6 401.5	464 401.5	470 401.5	0 407.5	6 407.5	464 407.5	470 407.5	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				6 89	12 89	439 89	445 89	6 95	12 95	439 95	445 95	6 394.5	12 394.5	439 394.5	445 394.5	6 400.5	12 400.5	439 400.5	445 400.5	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 26.1203	470 26.1203	0 27.8797	470 27.8797	
+				0.0566406 0.140625	0.078125 0.140625	0.0566406 0.142578	0.078125 0.142578	
+			}
+		}
+		visible_on idle
+	}
+}
+
