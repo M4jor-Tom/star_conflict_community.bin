@@ -1,0 +1,80 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Wed Nov 27 15:01:41 2019
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 130 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp136
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			not_align
+			vertices
+			{
+				128.693 22.0393	122.693 22.0393	5.06176 22.0393	-0.938244 22.0393	128.693 16.0393	122.693 16.0393	5.06175 16.0393	-0.938244 16.0393	128.693 6.21369	122.693 6.21369	5.06175 6.21369	-0.938246 6.2137	128.693 0.213692	122.693 0.213699	5.06175 0.213692	-0.938248 0.213692	
+				0.0733453 0.00196683	0.0792047 0.00196683	0.1142 0.00196683	0.12006 0.00196683	0.0733453 0.00782621	0.0792047 0.00782621	0.1142 0.00782621	0.12006 0.00782621	0.0733453 0.0302734	0.0792047 0.0302734	0.1142 0.0302734	0.12006 0.0302734	0.0733453 0.0361328	0.0792047 0.0361328	0.1142 0.0361328	0.12006 0.0361328	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	
+		}
+		anim press sp_colc
+		{
+			1
+			0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	0xccb2b2b2	
+		}
+	}
+}
+
