@@ -1,0 +1,101 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Thu Apr 04 14:35:12 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0.52538 0.344561
+			opacity 255
+			color 0xffffffff
+			size 480 130
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 9 9
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect "ui\graphics\debrifing\det_title"
+			alignment "LB"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object heder_1
+	{
+		defaults
+		{
+			pos 201 59
+			opacity 255
+			color 0xffffffff
+			size 124 20
+			effect "ui\graphics\debrifing\det_synergy_heder"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object heder_2
+	{
+		defaults
+		{
+			pos 330 59
+			opacity 255
+			color 0xffffffff
+			size 124 20
+			effect "ui\graphics\debrifing\det_synergy_heder"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 0.52538 82.3446
+			opacity 255
+			color 0xffffffff
+			size 454 24
+			effect "ui\graphics\debrifing\det_synergy_line"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object line_2
+	{
+		defaults
+		{
+			pos 0.52538 108.345
+			opacity 255
+			color 0xffffffff
+			size 454 24
+			effect "ui\graphics\debrifing\det_synergy_line"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
