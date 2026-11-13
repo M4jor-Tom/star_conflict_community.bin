@@ -1,0 +1,129 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Thu Dec 20 12:28:35 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 5
+{
+	object button_1
+	{
+		defaults
+		{
+			pos 78 105
+			opacity 255
+			color 0xffffffff
+			size 270 25
+			effect "ui\graphics\login_screen\btn_steam"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 62 19
+			opacity 255
+			color 0xffffffff
+			size 300 18
+			effect ""
+			alignment "CM"
+			sampleText "Сервер переполнен"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 422 134
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 62 39.9325
+			opacity 255
+			color 0xffffffff
+			size 300 18
+			effect ""
+			alignment "CM"
+			sampleText "Сервер переполнен"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos 62 60.9325
+			opacity 255
+			color 0xffffffff
+			size 300 18
+			effect ""
+			alignment "CM"
+			sampleText "Сервер переполнен"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.0490952 -0	5.9509 -0	416 -0	422 -0	-0.0490952 6	5.9509 6	416 6	422 6	-0.0490952 128	5.9509 128	416 128	422 128	-0.0490952 134	5.9509 134	416 134	422 134	
+				0.325187 0.000901282	0.331047 0.000901282	0.370158 0.000901282	0.376017 0.000901282	0.325187 0.00676066	0.331047 0.00676066	0.370158 0.00676066	0.376017 0.00676066	0.325187 0.0458738	0.331047 0.0458738	0.370158 0.0458738	0.376017 0.0458738	0.325187 0.0517332	0.331047 0.0517332	0.370158 0.0517332	0.376017 0.0517332	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				6 6	416 6	6 100	416 100	
+				0.241884 0.0202046	0.25421 0.0202046	0.241884 0.0325298	0.25421 0.0325298	
+			}
+		}
+		visible_on idle
+	}
+}
+
