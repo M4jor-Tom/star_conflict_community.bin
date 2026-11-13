@@ -1,0 +1,93 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Tue Oct 29 15:17:10 2013
+
+
+animations 5
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim ememy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_start
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim ememy_start
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object progr
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff00ddff
+			size 60 8
+			effect "ui\graphics\hud\ratio\ratio_ctrl_prog"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on friend
+		anim ememy obj_colc
+		{
+			1
+			0xffff2700
+		}
+		anim friend_start obj_opc
+		{
+			1 
+			127
+		}
+		anim ememy_start obj_opc_colc
+		{
+			1 1
+			127
+			0xffff2700
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xff7f7f7f
+		}
+	}
+	object marker
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 60 8
+			effect "ui\graphics\hud\ratio\ratio_ctrl_prog_marker"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on friend
+		visible_on ememy
+		visible_on friend_start
+		visible_on ememy_start
+		visible_on neutral
+	}
+}
+
