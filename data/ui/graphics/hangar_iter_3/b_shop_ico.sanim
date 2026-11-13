@@ -1,0 +1,107 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by sergey_mitryaev
+//at Mon Jul 17 13:36:17 2017
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sale
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim present
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite we
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				0 -2	36 -2	0 34	36 34	
+				0.00976563 0.408203	0.0800781 0.408203	0.00976563 0.478516	0.0800781 0.478516	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim sale sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim present sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we8_9
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				0 -2	36 -2	0 34	36 34	
+				0.246094 0.257813	0.316406 0.257813	0.246094 0.328125	0.316406 0.328125	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on sale
+		anim present sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite we8_19
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				0 -2	36 -2	0 34	36 34	
+				0.164063 0.257813	0.234375 0.257813	0.164063 0.328125	0.234375 0.328125	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim sale sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim present sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
