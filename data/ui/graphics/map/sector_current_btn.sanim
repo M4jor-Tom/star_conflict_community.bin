@@ -1,0 +1,97 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map_2.ma"
+//by Sergey_Mitryaev
+//at Wed Feb 07 15:15:47 2018
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self170
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 60 60
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite myself57
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-1 -1	59 -1	-1 59	59 59	
+				0.00585938 0.00390625	0.123047 0.00390625	0.00585938 0.121094	0.123047 0.121094	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on press
+	}
+	sprite myself77
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-1 -1	59 -1	-1 59	59 59	
+				0.130859 0.00390625	0.248047 0.00390625	0.130859 0.121094	0.248047 0.121094	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+	}
+}
+
