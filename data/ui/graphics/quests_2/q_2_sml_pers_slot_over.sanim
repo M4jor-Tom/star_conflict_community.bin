@@ -1,0 +1,56 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Mon Nov 27 17:57:45 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite que6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-7.9461 -11.8617	79.2385 -11.8617	-7.9461 81.8617	79.2385 81.8617	
+				0.457911 0.687494	0.481542 0.687494	0.457911 0.712897	0.481542 0.712897	
+				0x33333333	0x33333333	0x33333333	0x33333333	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName491
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				-3.5 -3.5	6.5 -3.5	64.5 -3.5	74.5 -3.5	-3.5 6.5	6.5 6.5	64.5 6.5	74.5 6.5	-3.5 63.5	6.5 63.5	64.5 63.5	74.5 63.5	-3.5 73.5	6.5 73.5	64.5 73.5	74.5 73.5	
+				0.119141 0.292969	0.138672 0.292969	0.158203 0.292969	0.177734 0.292969	0.119141 0.3125	0.138672 0.3125	0.158203 0.3125	0.177734 0.3125	0.119141 0.332031	0.138672 0.332031	0.158203 0.332031	0.177734 0.332031	0.119141 0.351563	0.138672 0.351563	0.158203 0.351563	0.177734 0.351563	
+				0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	0x7effffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
