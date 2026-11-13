@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/gold_buy.ma"
+//by sergey_mitryaev
+//at Wed Nov 06 15:08:25 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sprite_6
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-0.401107 -0	3.59889 -0	416 -0	420 -0	-0.401107 4	3.59889 4	416 4	420 4	-0.401107 38	3.59889 38	416 38	420 38	-0.401107 42	3.59889 42	416 42	420 42	
+				0.0288169 0.114245	0.0327232 0.114245	0.0488281 0.114245	0.0527344 0.114245	0.0288169 0.118151	0.0327232 0.118151	0.0488281 0.118151	0.0527344 0.118151	0.0288169 0.130859	0.0327232 0.130859	0.0488281 0.130859	0.0527344 0.130859	0.0288169 0.134766	0.0327232 0.134766	0.0488281 0.134766	0.0527344 0.134766	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
