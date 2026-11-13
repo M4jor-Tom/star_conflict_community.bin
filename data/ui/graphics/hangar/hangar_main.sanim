@@ -1,0 +1,607 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by Sergey_Mitryaev
+//at Wed Apr 05 18:26:34 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 38
+
+objects 32
+{
+	object start_slot
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 850 1
+			opacity 255
+			color 0xffffffff
+			size 250 150
+			effect "ui\graphics\hangar\info_slot_4"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object decor_bg_1
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 0 -202.714
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\decor_bg_1"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object menu
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 83 0.808108
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hangar\menu_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object esc_menu
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 1 -0
+			opacity 255
+			color 0xffe9e9e9
+			size 76 30
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object account
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 954.643 652
+			opacity 255
+			color 0xffffffff
+			size 360 45
+			effect "ui\graphics\hangar\account_main_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ship_list
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 3 235
+			opacity 255
+			color 0xffffffff
+			size 125 288
+			effect "ui\graphics\hangar\ship_list_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object damage_msg
+	{
+		defaults
+		{
+			anchor "C"
+			pos 333.963 281.002
+			opacity 255
+			color 0xffffffff
+			size 600 50
+			effect "ui\graphics\hangar\damage_msg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object start_button
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 537.998 666
+			opacity 255
+			color 0xffffffff
+			size 201 64
+			effect "ui\graphics\hangar\start_button"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object in_battle_msg
+	{
+		defaults
+		{
+			anchor "C"
+			pos 333.963 344.732
+			opacity 255
+			color 0xffffffff
+			size 600 50
+			effect "ui\graphics\hangar\damage_msg"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object repair
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 1064 78
+			opacity 255
+			color 0xffffffff
+			size 230 78
+			effect "ui\graphics\hangar\repair_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object notice
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 847 247
+			opacity 255
+			color 0xffffffff
+			size 425 430
+			effect "ui\graphics\notice\notice_main---"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object friend_list
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 484 454
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 171 71
+			opacity 255
+			color 0xffffffff
+			size 966 576
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object quests_tutor_slots
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 981 206
+			opacity 255
+			color 0xffffffff
+			size 86 300
+			effect "ui\graphics\quests_2\q_2_sml_pers_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object sticker_2
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 802 70.6572
+			opacity 255
+			color 0xffffffff
+			size 480 584
+			effect "ui\graphics\sticker\n_sticker_main---"
+			alignment "CM"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object name_ship
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 333.963 102.002
+			opacity 255
+			color 0xffff9100
+			size 600 50
+			effect ""
+			alignment "CM"
+			sampleText "Bujnsfn fswn kna "
+			font "Large"
+		}
+		visible_on idle
+	}
+	object help_list_2
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 501 70
+			opacity 255
+			color 0xffffffff
+			size 320 150
+			effect "ui\graphics\help_control\help_lst_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object custom_ship
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 567 553
+			opacity 255
+			color 0xffffffff
+			size 150 64
+			effect "ui\graphics\hangar\custom_ship_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object fps_info
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 71
+			opacity 255
+			color 0xffffffff
+			size 320 160
+			effect "ui\graphics\hangar\fps_info_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object craft
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 484 454
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object facebook_btn
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 562 603
+			opacity 255
+			color 0xffffffff
+			size 145 21
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object start_button3
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 494 666
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\hangar\start_button3"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object start_button4
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 744 666
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\hangar\start_button4"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object ny_count_win
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 917 74
+			opacity 255
+			color 0xffffffff
+			size 230 78
+			effect "ui\graphics\ny_count\ny_count_win"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object gmp_select
+	{
+		defaults
+		{
+			anchor "C"
+			pos -1799 135
+			opacity 255
+			color 0xffffffff
+			size 5000 444
+			effect "ui\graphics\gmp_select\fgmp_select_main---"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object qu_2
+	{
+		defaults
+		{
+			anchor "LT"
+			pos -1356 71
+			opacity 255
+			color 0xffffffff
+			size 4000 160
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bottom_point
+	{
+		defaults
+		{
+			anchor "LB"
+			pos 0 649.155
+			opacity 255
+			color 0xffffffff
+			size 600 50
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ny_count
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 19 131
+			opacity 255
+			color 0xffffffff
+			size 125 122
+			effect "ui\graphics\quests_2\ivent_count_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object friend_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 333.963 102.002
+			opacity 255
+			color 0xffffffff
+			size 600 50
+			effect "ui\graphics\friend\friend_list_main---"
+			alignment "CM"
+			sampleText "Bujnsfn fswn kna "
+			font "Large"
+		}
+		visible_on idle
+	}
+	object map
+	{
+		defaults
+		{
+			anchor "LT"
+			pos -1309 68
+			opacity 255
+			color 0xffffffff
+			size 4000 3000
+			effect "ui\graphics\map\map_fs_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object edit_ship
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 68
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\ships_tree_3\edit_ship_2_main---"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object voting
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 858 97
+			opacity 255
+			color 0xffffffff
+			size 420 550
+			effect "ui\graphics\tooltip\voting_slots"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 6
+{
+	total_vertices 48
+
+	sprite objectName6039
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "L"
+			vertices
+			{
+				-15.0229 -531.078	243.342 -531.078	-15.0229 1328.53	243.342 1328.53	
+				0.158203 0.134628	0.0830078 0.134628	0.158203 0.123185	0.0830078 0.123185	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName6040
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "R"
+			vertices
+			{
+				1033 -531.078	1291.36 -531.078	1033 1328.53	1291.36 1328.53	
+				0.0830078 0.134628	0.158203 0.134628	0.0830078 0.123185	0.158203 0.123185	
+				0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite m
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "BC"
+			vertices_nc
+			{
+				-5955.24 649.097	-5945.24 649.097	7080.81 649.097	7090.81 649.097	-5955.24 659.097	-5945.24 659.097	7080.81 659.097	7090.81 659.097	-5955.24 710.407	-5945.24 710.407	7080.81 710.407	7090.81 710.407	-5955.24 720.407	-5945.24 720.407	7080.81 720.407	7090.81 720.407	
+				0.25396 0.114336	0.263726 0.114336	0.268721 0.114336	0.278487 0.114336	0.25396 0.124102	0.263726 0.124102	0.268721 0.124102	0.278487 0.124102	0.25396 0.128907	0.263726 0.128907	0.268721 0.128907	0.278487 0.128907	0.25396 0.138672	0.263726 0.138672	0.268721 0.138672	0.278487 0.138672	
+			}
+		}
+		visible_on idle
+	}
+	sprite m2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "TC"
+			vertices_nc
+			{
+				-5955.24 -0.326494	-5945.24 -0.326494	7080.81 -0.326494	7090.81 -0.326494	-5955.24 9.67351	-5945.24 9.67351	7080.81 9.67351	7090.81 9.67351	-5955.24 60.6711	-5945.24 60.6711	7080.81 60.6711	7090.81 60.6711	-5955.24 70.6711	-5945.24 70.6711	7080.81 70.6711	7090.81 70.6711	
+				0.25396 0.138672	0.263726 0.138672	0.268721 0.138672	0.278487 0.138672	0.25396 0.128907	0.263726 0.128907	0.268721 0.128907	0.278487 0.128907	0.25396 0.124102	0.263726 0.124102	0.268721 0.124102	0.278487 0.124102	0.25396 0.114336	0.263726 0.114336	0.268721 0.114336	0.278487 0.114336	
+			}
+		}
+		visible_on idle
+	}
+	sprite spr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/head_back_1.tif"
+			anchor "BC"
+			vertices_nc
+			{
+				227.552 649.155	1017.55 649.155	227.552 725.155	1017.55 725.155	
+				0.0011045 0.000434101	1.0011 0.000434101	0.0011045 0.528212	1.0011 0.528212	
+			}
+		}
+		visible_on idle
+	}
+	sprite spr6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/head_back_1.tif"
+			anchor "TC"
+			vertices_nc
+			{
+				227.552 3.78935	1017.55 3.78935	227.552 67.7894	1017.55 67.7894	
+				0.0011045 0.546163	1.0011 0.546163	0.0011045 0.990607	1.0011 0.990607	
+			}
+		}
+		visible_on idle
+	}
+}
+
