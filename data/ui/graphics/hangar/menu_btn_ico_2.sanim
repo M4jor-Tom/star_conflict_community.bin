@@ -1,0 +1,54 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Tue Feb 10 14:31:10 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 10
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite m52
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				7 7	17 7	33 7	43 7	7 17	17 17	33 17	43 17	7 33	17 33	33 33	43 33	7 43	17 43	33 43	43 43	
+				0.0654297 0.651367	0.0683594 0.651367	0.0722656 0.651367	0.0751953 0.651367	0.0654297 0.65332	0.0683594 0.65332	0.0722656 0.65332	0.0751953 0.65332	0.0654297 0.658203	0.0683594 0.658203	0.0722656 0.658203	0.0751953 0.658203	0.0654297 0.662109	0.0683594 0.662109	0.0722656 0.662109	0.0751953 0.662109	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				7 7	43 7	7 43	43 43	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
