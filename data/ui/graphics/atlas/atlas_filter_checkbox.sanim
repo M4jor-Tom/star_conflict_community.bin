@@ -1,0 +1,141 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by Sergey_Mitryaev
+//at Tue Sep 19 12:31:40 2017
+
+base_res 1920 1080
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim check
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim check_over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 56 56
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+		visible_on over
+		visible_on check
+		visible_on check_over
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite ico_check
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	56 -0	0 56	56 56	
+				0 0	1 0	0 1	1 1	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim check sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim check_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite ico_idle
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	56 -0	0 56	56 56	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim check sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim check_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite we61
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-24.0168 -25.2227	80.1049 -25.2227	-24.0168 78.899	80.1049 78.899	
+				0.26899 -0.000541687	0.363823 -0.000541687	0.26899 0.0942917	0.363823 0.0942917	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x6001523	0x6001523	0x6001523	0x6001523	
+		}
+		visible_on check
+		anim check_over sp_colc
+		{
+			1
+			0x6001523	0x6001523	0x6001523	0x6001523	
+		}
+	}
+}
+
