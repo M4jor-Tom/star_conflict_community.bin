@@ -1,0 +1,70 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by Sergey_Mitryaev
+//at Fri Jan 20 17:55:25 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 0.7
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName61
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				-23 -23	23 -23	-23 23	23 23	
+				0.488281 0.386719	0.533203 0.386719	0.488281 0.431641	0.533203 0.431641	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			2
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite objectName63
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-18 -18	18 -18	-18 18	18 18	
+				0.537109 0.383789	0.572266 0.383789	0.537109 0.418945	0.572266 0.418945	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			6
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xe2ffffff	0xe2ffffff	0xe2ffffff	0xe2ffffff	
+			0xc6ffffff	0xc6ffffff	0xc6ffffff	0xc6ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0x8dffffff	0x8dffffff	0x8dffffff	0x8dffffff	
+			0x71ffffff	0x71ffffff	0x71ffffff	0x71ffffff	
+		}
+	}
+}
+
