@@ -1,0 +1,245 @@
+﻿source_file "Y:/art/source/ui/graphics/matchmaking_pvp/matchmaking_pvp.ma"
+//by sergey_mitryaev
+//at Mon Sep 02 12:59:09 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 11
+{
+	object text123
+	{
+		defaults
+		{
+			pos 2176.98 230.784
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "CM"
+			sampleText "Быстрый бойrevgrrrrrrrrrrrrrrrrrrrrrrrrrrrrrgrrgerbhehtjerjertjr"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title21
+	{
+		defaults
+		{
+			pos 2116.15 4
+			opacity 255
+			color 0xff7fe1ff
+			size 608 40
+			effect ""
+			alignment "CM"
+			sampleText "Открытый мир"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text124
+	{
+		defaults
+		{
+			pos 2319.58 308.772
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "CM"
+			sampleText "Вызовы"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object skill_slot
+	{
+		defaults
+		{
+			pos 2211 129
+			opacity 255
+			color 0xffffffff
+			size 420 80
+			effect "ui\graphics\match_pvp\match_pvp_skill_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object maps
+	{
+		defaults
+		{
+			pos 2017 248
+			opacity 255
+			color 0xffffffff
+			size 400 190
+			effect "ui\graphics\match_pvp\match_pvp_maps_2"
+			alignment "CM"
+			font "Large_outl"
+		}
+		visible_on idle
+	}
+	object btn_8
+	{
+		defaults
+		{
+			pos 2261.41 46.4188
+			opacity 255
+			color 0xffffffff
+			size 312 90
+			effect "ui\graphics\gmp_select\gmp_sel_btn_7"
+			alignment "CM"
+			font "Large_outl"
+		}
+		visible_on idle
+	}
+	object text136
+	{
+		defaults
+		{
+			pos 2141.15 412.552
+			opacity 255
+			color 0xffababab
+			size 500 80
+			effect ""
+			alignment "LM"
+			sampleText "Необходимо выбрать миссию|dghdvgndn fg fg"
+			font "Tiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 2665.55 436.105
+			opacity 255
+			color 0xffffffff
+			size 86 30
+			effect "ui\graphics\gmp_select\sel_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object maps_3
+	{
+		defaults
+		{
+			pos 2262.77 51
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\match_pvp\match_pvp_maps_3"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 2366.43 179.18
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "Large_outl"
+		}
+		visible_on idle
+	}
+	object history
+	{
+		defaults
+		{
+			pos 2112.72 26
+			opacity 255
+			color 0xffffffff
+			size 360 190
+			effect "ui\graphics\map\pve_history_main"
+			alignment "CM"
+			font "Large_outl"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName370
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				1379.47 -0.120682	3330.07 -0.120682	1379.47 504.868	3330.07 504.868	
+				0.03125 0	0.96875 0	0.03125 0.910156	0.96875 0.910156	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName371
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				4254.4 -0.120682	3330.07 -0.120682	4254.4 504.868	3330.07 504.868	
+				0.994629 0	0.96875 0	0.994629 0.910156	0.96875 0.910156	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName372
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				1379.47 -0.120682	579.45 -0.120682	1379.47 504.868	579.45 504.868	
+				0.03125 0	0.012207 0	0.03125 0.910156	0.012207 0.910156	
+			}
+		}
+		visible_on idle
+	}
+	sprite maya_sceneClipBoard_objectName376
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gmp_sel_bg.tif"
+			vertices_nc
+			{
+				1999.29 219.067	2834.53 219.067	1999.29 220.933	2834.53 220.933	
+				0.398438 0.00390625	0.600098 0.00390625	0.398438 0.00390625	0.600098 0.00390625	
+			}
+		}
+		visible_on idle
+	}
+}
+
