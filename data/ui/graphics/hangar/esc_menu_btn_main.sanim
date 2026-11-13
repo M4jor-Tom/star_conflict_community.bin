@@ -1,0 +1,112 @@
+﻿source_file  Y:/art/source/ui/graphics/hangar/hangar_new.ma
+//by sergey_mitryaev
+//at Mon Sep 10 13:12:05 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object player
+	{
+		defaults
+		{
+			pos 24.7668 1.02747
+			opacity 255
+			color 0xffcccccc
+			size 150 15
+			effect ""
+			alignment "LM"
+			sampleText "Players:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object battles
+	{
+		defaults
+		{
+			pos 24.7668 21.7942
+			opacity 255
+			color 0xffcccccc
+			size 150 15
+			effect ""
+			alignment "LM"
+			sampleText "Battles:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load_text_1
+	{
+		defaults
+		{
+			pos 25.2751 5.92021
+			opacity 255
+			color 0xffffffff
+			size 64 8
+			effect "ui\graphics\hangar\loading_text"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object load_text_2
+	{
+		defaults
+		{
+			pos 25.2751 27.2417
+			opacity 255
+			color 0xffffffff
+			size 64 8
+			effect "ui\graphics\hangar\loading_text"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite spr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-0.690063 18.9721	19.3099 18.9721	-0.690063 38.9721	19.3099 38.9721	
+				0.468835 0.0788181	0.488366 0.0788181	0.468835 0.0983493	0.488366 0.0983493	
+			}
+		}
+		visible_on idle
+	}
+	sprite spr18
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-0.690063 -1.3453	19.3099 -1.3453	-0.690063 18.6547	19.3099 18.6547	
+				0.49043 0.0788181	0.509961 0.0788181	0.49043 0.0983493	0.509961 0.0983493	
+			}
+		}
+		visible_on idle
+	}
+}
+
