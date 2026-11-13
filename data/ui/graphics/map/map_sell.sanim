@@ -1,0 +1,404 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Wed Apr 10 14:49:22 2013
+
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 30
+	}
+	anim idle_full_color
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 22
+
+objects 21
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 32 28
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 8 14
+			effect "ui\graphics\map\map_segment_3"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_2
+	{
+		defaults
+		{
+			pos 0 14
+			opacity 255
+			color 0xffffffff
+			size 8 14
+			effect "ui\graphics\map\map_segment_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_3
+	{
+		defaults
+		{
+			pos 24 -0
+			opacity 255
+			color 0xffffffff
+			size 8 14
+			effect "ui\graphics\map\map_segment_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_4
+	{
+		defaults
+		{
+			pos 24 14
+			opacity 255
+			color 0xffffffff
+			size 8 14
+			effect "ui\graphics\map\map_segment_3"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_5
+	{
+		defaults
+		{
+			pos 8 1.11022e-016
+			opacity 255
+			color 0xffffffff
+			size 14 1
+			effect "ui\graphics\map\map_segment_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_6
+	{
+		defaults
+		{
+			pos 8 27
+			opacity 255
+			color 0xffffffff
+			size 14 1
+			effect "ui\graphics\map\map_segment_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object center_rect
+	{
+		defaults
+		{
+			pos 8 -0
+			opacity 255
+			color 0xffffffff
+			size 16 28
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_1_bold
+	{
+		defaults
+		{
+			pos 1 1
+			opacity 255
+			color 0xffffffff
+			size 10 8
+			effect "ui\graphics\map\map_segment_3_bold"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_2_bold
+	{
+		defaults
+		{
+			pos 1 14
+			opacity 255
+			color 0xffffffff
+			size 8 14
+			effect "ui\graphics\map\map_segment_2_bold"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_3_bold
+	{
+		defaults
+		{
+			pos 23 2.22045e-016
+			opacity 255
+			color 0xffffffff
+			size 8 14
+			effect "ui\graphics\map\map_segment_2_bold"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_4_bold
+	{
+		defaults
+		{
+			pos 23 14
+			opacity 255
+			color 0xffffffff
+			size 8 14
+			effect "ui\graphics\map\map_segment_3_bold"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_5_bold
+	{
+		defaults
+		{
+			pos 8 1
+			opacity 255
+			color 0xffffffff
+			size 20 1
+			effect "ui\graphics\map\map_segment_1_bold"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object segment_6_bold
+	{
+		defaults
+		{
+			pos 8 26
+			opacity 255
+			color 0xffffffff
+			size 20 1
+			effect "ui\graphics\map\map_segment_1_bold"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 71 22
+			opacity 255
+			color 0xffe40023
+			size 10 8
+			effect ""
+			alignment "CM"
+			sampleText "0"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object color_2
+	{
+		defaults
+		{
+			pos 71 32
+			opacity 255
+			color 0xffff9100
+			size 10 8
+			effect ""
+			alignment "CM"
+			sampleText "0"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object color_3
+	{
+		defaults
+		{
+			pos 71 42
+			opacity 255
+			color 0xff00dcff
+			size 10 8
+			effect ""
+			alignment "CM"
+			sampleText "0"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object color_4
+	{
+		defaults
+		{
+			pos 71 52
+			opacity 255
+			color 0xffff0012
+			size 10 8
+			effect ""
+			alignment "CM"
+			sampleText "0"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object color_5
+	{
+		defaults
+		{
+			pos 71 62
+			opacity 255
+			color 0xffff9100
+			size 10 8
+			effect ""
+			alignment "CM"
+			sampleText "0"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object color_6
+	{
+		defaults
+		{
+			pos 71 72
+			opacity 255
+			color 0xff0ea8ff
+			size 10 8
+			effect ""
+			alignment "CM"
+			sampleText "0"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 5 5
+			effect "ui\graphics\map\map_sell_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on idle_full_color
+		visible_on idle_2
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_global.tif"
+			vertices
+			{
+				0 -0	32 -0	0 28	32 28	
+				0.445313 0.234375	0.695313 0.234375	0.445313 0.015625	0.695313 0.015625	
+				0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	
+			}
+		}
+		visible_on idle
+		anim idle_full_color sp_colc
+		{
+			1
+			0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	
+		}
+		anim idle_2 sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+}
+
