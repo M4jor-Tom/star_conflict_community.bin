@@ -1,0 +1,113 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Wed May 14 13:59:04 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 960 550
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object tree
+	{
+		defaults
+		{
+			pos 0 6.57252e-014
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\shop\shop_tree_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 233 7
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\clan\lidboard_clan_list_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object line_1
+	{
+		defaults
+		{
+			pos 231 472
+			opacity 255
+			color 0xffffffff
+			size 922 24
+			effect "ui\graphics\clan\lidboard_clan_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite blackout
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				165.349 -2.00247	223.712 -2.00247	165.349 518.004	223.712 518.004	
+				0.0817908 0.115909	0.156565 0.115909	0.0817908 0.13164	0.156565 0.13164	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				222.651 -1.99753	224.651 -1.99753	222.651 517.996	224.651 517.996	
+				0.0713222 0.077615	0.069369 0.077615	0.0713222 0.0942166	0.069369 0.0942166	
+			}
+		}
+		visible_on idle
+	}
+}
+
