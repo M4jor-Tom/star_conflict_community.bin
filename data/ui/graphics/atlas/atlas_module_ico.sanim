@@ -1,0 +1,38 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by Sergey_Mitryaev
+//at Tue Sep 19 15:32:19 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName332
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				0 -0	194 -0	0 138	194 138	
+				2.98023e-008 0	1 0	2.98023e-008 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
