@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="precursor_zona_1; default; default; default; default; default; default; default; " additionalColorRemap="textures/posteffects/alien_remap" battlefieldRadius="2000.000" levelPhysLimitRadius="2000.000" levelPhysLimitHeight="0.000" useWorldLookPoint="true" />
+  <EntityContainer>
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-64.779 2428.327 -15.886" Rot="0.640 -0.287 0.280 0.656" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="FreeSpace1" Def="Logic_SpawnArea_FreeSpace0" Pos="1084.511 -47.766 99.873" Rot="0.000 0.761 0.000 0.649" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="1" />
+    <Entity Name="pz1do1" Def="OpenWorld_Quest_Empire_pz1do" Pos="-275.686 361.872 644.800" do_attack_cargoship="0" />
+    <Entity Name="alien_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="1161.478 67.945 538.767" Rot="0.000 0.947 0.000 0.320" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path1" Def="PathObject" Pos="1130.403 62.515 576.975" Rot="0.000 0.943 0.000 0.334" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="1130.403 62.515 576.975" />
+      <Point p="1068.451 52.663 848.041" />
+      <Point p="1049.372 56.948 1089.629" />
+      <Point p="815.337 64.280 1212.859" />
+      <Point p="466.157 28.950 1082.502" />
+      <Point p="398.054 -46.572 901.293" />
+      <Point p="182.420 -57.613 828.320" />
+      <Point p="-12.126 -43.999 699.537" />
+      <Point p="-103.246 -14.114 529.271" />
+      <Point p="-139.594 -22.737 367.879" />
+      <Point p="-115.920 0.083 256.744" />
+      <Point p="-45.718 9.289 172.728" />
+      <Point p="76.586 24.790 124.393" />
+      <Point p="554.771 68.087 178.154" />
+      <Point p="750.913 81.812 225.337" />
+      <Point p="933.729 87.483 314.195" />
+      <Point p="1109.165 83.087 469.324" />
+    </Entity>
+    <Entity Name="alien_spawn_spot2" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="387.596 -43.129 -828.681" Rot="0.000 0.947 0.000 0.320" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path2" Def="PathObject" Pos="357.797 -41.770 -777.247" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="357.797 -41.770 -777.247" />
+      <Point p="324.618 -36.323 -732.316" />
+      <Point p="197.017 -22.397 -629.643" />
+      <Point p="64.527 -9.214 -564.299" />
+      <Point p="-111.495 3.301 -521.169" />
+      <Point p="-283.700 11.461 -496.328" />
+      <Point p="-592.989 24.659 -384.677" />
+      <Point p="-685.229 30.456 -257.207" />
+      <Point p="-670.752 31.442 -98.008" />
+      <Point p="-596.150 25.754 -16.895" />
+      <Point p="-484.016 18.818 62.764" />
+      <Point p="-347.389 11.162 97.196" />
+      <Point p="-75.384 -17.583 -32.985" />
+      <Point p="-1.701 -22.404 -113.872" />
+      <Point p="157.980 -27.019 -242.046" />
+      <Point p="276.984 -27.764 -321.481" />
+      <Point p="366.822 -27.072 -433.671" />
+      <Point p="441.991 -46.413 -763.765" />
+    </Entity>
+    <Entity Name="alien_spawn_spot3" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="60.421 406.864 -729.481" Rot="0.000 0.947 0.000 0.320" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path3" Def="PathObject" Pos="36.394 402.363 -696.374" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="36.394 402.363 -696.374" />
+      <Point p="-66.621 401.120 -621.826" />
+      <Point p="-235.232 391.495 -529.400" />
+      <Point p="-361.820 383.419 -459.592" />
+      <Point p="-485.841 374.336 -337.072" />
+      <Point p="-527.347 369.341 -210.948" />
+      <Point p="-501.533 357.696 19.568" />
+      <Point p="-416.077 349.949 183.035" />
+      <Point p="-125.726 339.585 339.912" />
+      <Point p="45.137 335.404 356.883" />
+      <Point p="249.361 332.234 296.037" />
+      <Point p="402.751 327.551 158.473" />
+      <Point p="479.713 326.509 -68.223" />
+      <Point p="480.780 346.556 -266.560" />
+      <Point p="450.074 376.718 -445.813" />
+      <Point p="372.924 405.953 -594.308" />
+      <Point p="169.206 421.282 -721.072" />
+    </Entity>
+    <Entity Name="alien_spawn_spot4" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-580.132 -400.993 -1254.104" Rot="0.000 0.988 0.000 0.155" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path4" Def="PathObject" Pos="-589.979 -402.282 -1194.047" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-589.979 -402.282 -1194.047" />
+      <Point p="-639.977 -412.502 -1095.897" />
+      <Point p="-741.838 -426.650 -979.750" />
+      <Point p="-808.232 -431.009 -862.201" />
+      <Point p="-849.520 -431.891 -688.083" />
+      <Point p="-957.569 -420.582 -451.082" />
+      <Point p="-832.008 -454.958 -280.650" />
+      <Point p="-647.996 -398.685 -124.223" />
+      <Point p="-438.039 -387.138 -84.130" />
+      <Point p="-289.710 -379.719 -97.614" />
+      <Point p="-165.846 -367.044 -286.455" />
+      <Point p="-85.948 -349.035 -481.909" />
+      <Point p="-14.881 -337.617 -670.797" />
+      <Point p="-11.721 -344.660 -847.989" />
+      <Point p="-107.960 -365.993 -1029.909" />
+      <Point p="-248.065 -386.506 -1169.709" />
+      <Point p="-465.603 -400.837 -1276.090" />
+    </Entity>
+    <Entity Name="FastJump1" Def="Logic_SpawnArea_FreeSpace0" Pos="503.002 121.494 -1441.881" Rot="-0.005 0.962 0.114 0.250" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_spawn_spot5" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="654.076 -50.453 -106.263" Rot="0.000 0.581 0.000 0.814" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path5" Def="PathObject" Pos="590.376 -50.561 -133.170" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="590.376 -50.561 -133.170" />
+      <Point p="530.250 -53.726 -150.280" />
+      <Point p="252.039 -81.630 -200.388" />
+      <Point p="-189.083 -150.875 -269.312" />
+      <Point p="-275.285 -159.532 -267.443" />
+      <Point p="-507.717 -171.538 -96.279" />
+      <Point p="-764.290 -176.144 188.935" />
+      <Point p="-762.320 -169.828 546.939" />
+      <Point p="-454.778 -172.038 784.577" />
+      <Point p="-111.287 -229.104 771.802" />
+      <Point p="120.731 -250.555 658.847" />
+      <Point p="365.737 -252.093 515.641" />
+      <Point p="599.038 -206.239 385.765" />
+      <Point p="771.731 -141.901 331.344" />
+      <Point p="877.560 -83.997 183.511" />
+      <Point p="744.744 -46.350 -82.781" />
+    </Entity>
+    <Entity Name="alien_spawn_spot6" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="377.938 -382.008 -876.490" Rot="0.000 0.959 0.000 0.282" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path6" Def="PathObject" Pos="342.902 -375.853 -834.091" Rot="0.005 0.000 0.000 1.000" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="342.902 -375.853 -834.091" />
+      <Point p="169.187 -395.059 -568.766" />
+      <Point p="-378.642 -478.500 95.316" />
+      <Point p="-538.598 -482.375 476.785" />
+      <Point p="-356.627 -472.058 876.543" />
+      <Point p="-36.526 -464.301 1074.002" />
+      <Point p="670.468 -434.052 1259.105" />
+      <Point p="872.447 -402.099 1202.584" />
+      <Point p="1080.983 -351.464 1002.386" />
+      <Point p="1179.594 -310.643 654.038" />
+      <Point p="1170.383 -304.630 246.800" />
+      <Point p="1138.117 -325.552 -274.479" />
+      <Point p="1037.433 -341.486 -551.104" />
+      <Point p="811.096 -354.633 -876.132" />
+      <Point p="411.488 -376.756 -925.939" />
+    </Entity>
+    <Entity Name="alien_spawn_spot7" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="157.562 103.058 891.224" Rot="0.000 0.947 0.000 0.320" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_spawn_spot8" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="807.588 -19.442 -453.380" Rot="0.000 0.947 0.000 0.320" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path7" Def="PathObject" Pos="106.283 96.612 949.099" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="106.283 96.612 949.099" />
+      <Point p="5.211 86.246 1009.582" />
+      <Point p="-220.449 74.651 1081.585" />
+      <Point p="-424.117 94.178 1005.212" />
+      <Point p="-466.863 148.014 754.105" />
+      <Point p="-422.758 189.831 518.505" />
+      <Point p="-340.432 209.931 403.565" />
+      <Point p="-131.456 216.403 386.894" />
+      <Point p="23.024 210.574 457.897" />
+      <Point p="151.575 167.987 574.109" />
+      <Point p="224.292 105.742 708.909" />
+      <Point p="202.612 105.205 840.551" />
+    </Entity>
+    <Entity Name="alien_path8" Def="PathObject" Pos="758.176 -15.753 -387.831" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="758.176 -15.753 -387.831" />
+      <Point p="646.723 -20.050 -360.035" />
+      <Point p="486.064 -33.829 -337.836" />
+      <Point p="335.476 -66.596 -360.199" />
+      <Point p="246.538 -107.547 -489.376" />
+      <Point p="292.872 -138.623 -694.905" />
+      <Point p="437.285 -163.538 -870.824" />
+      <Point p="581.672 -162.719 -935.410" />
+      <Point p="743.774 -129.523 -896.396" />
+      <Point p="838.576 -79.153 -753.908" />
+      <Point p="835.745 -11.087 -496.334" />
+    </Entity>
+    <Entity Name="LootPoint_Base8" Def="Helpers_TagPoint" Pos="-777.161 -393.650 -543.442" type="0" />
+    <Entity Name="S3" Def="OW_Wreck_R3_S" Pos="42.680 -59.468 758.138" Rot="0.853 -0.169 -0.096 0.484" />
+    <Entity Name="M3" Def="OW_Wreck_R3_M" Pos="36.666 -55.206 760.864" Rot="0.389 0.000 0.000 0.921" />
+    <Entity Name="L3" Def="OW_Wreck_R3_L" Pos="38.374 -53.867 749.925" Rot="-0.058 0.601 -0.072 0.794" />
+    <Entity Name="M2" Def="OW_Wreck_R1_M" Pos="769.640 -134.171 266.404" Rot="0.240 -0.104 0.385 0.885" />
+    <Entity Name="S2" Def="OW_Wreck_R2_S" Pos="290.586 -40.679 -415.843" Rot="-0.177 -0.100 -0.482 0.852" />
+    <Entity Name="M1" Def="OW_Wreck_R2_M" Pos="280.556 -35.358 -415.151" Rot="-0.678 0.000 0.000 0.735" />
+    <Entity Name="L2" Def="OW_Wreck_R2_L" Pos="276.336 -35.578 -398.294" Rot="-0.282 0.048 0.162 0.944" />
+    <Entity Name="S1" Def="OW_Wreck_R1_S" Pos="768.371 -135.658 252.960" Rot="0.461 -0.391 0.237 0.760" />
+    <Entity Name="L1" Def="OW_Wreck_R1_L" Pos="776.155 -134.741 258.291" Rot="-0.300 0.000 0.000 0.954" />
+    <Entity Name="LootPoint_Base9" Def="Helpers_TagPoint" Pos="823.539 -861.344 890.416" type="0" />
+    <Entity Name="LootPoint_Base1" Def="Helpers_TagPoint" Pos="654.613 -139.261 -576.306" type="0" />
+    <Entity Name="LootPoint_Base2" Def="Helpers_TagPoint" Pos="-744.458 720.856 -451.423" type="0" />
+    <Entity Name="LootPoint_Base3" Def="Helpers_TagPoint" Pos="-1403.599 73.643 935.746" type="0" />
+    <Entity Name="LootPoint_Base4" Def="Helpers_TagPoint" Pos="-184.118 -600.513 1571.364" type="0" />
+    <Entity Name="LootPoint_Base5" Def="Helpers_TagPoint" Pos="813.745 675.898 971.846" type="0" />
+    <Entity Name="LootPoint_Base6" Def="Helpers_TagPoint" Pos="-507.911 29.146 278.733" type="0" />
+    <Entity Name="LootPoint_Base7" Def="Helpers_TagPoint" Pos="25.094 -216.729 491.803" type="0" />
+    <Entity Name="L4" Def="OW_Wreck_R1_L" Pos="-245.594 -314.205 -181.818" Rot="0.770 -0.218 -0.339 0.494" />
+    <Entity Name="M4" Def="OW_Wreck_R2_M" Pos="-254.407 -320.704 -179.139" Rot="-0.063 -0.631 -0.568 0.525" />
+    <Entity Name="S4" Def="OW_Wreck_R3_S" Pos="-256.349 -314.501 -167.861" Rot="0.495 0.488 -0.472 0.542" />
+    <Entity Name="LootPoint_Base10" Def="Helpers_TagPoint" Pos="613.665 1042.301 -576.642" type="0" />
+    <Entity Name="LootPoint_Base11" Def="Helpers_TagPoint" Pos="-225.497 1160.598 1585.161" type="0" />
+    <Entity Name="LootPoint_Base12" Def="Helpers_TagPoint" Pos="-1337.094 163.068 952.749" type="0" />
+    <Entity Name="PrecursorsLasers1" Def="Effects_PrecursorsLasers" Pos="735.447 496.670 1027.098" Rot="0.707 0.000 0.000 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="PrecursorsLasers2" Def="Effects_PrecursorsLasers" Pos="914.976 -307.637 702.028" Rot="0.707 0.000 0.000 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="PrecursorsLasers3" Def="Effects_PrecursorsLasers" Pos="531.660 -374.753 -445.232" Rot="0.707 0.000 0.000 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="PrecursorsLasers4" Def="Effects_PrecursorsLasers" Pos="-1271.489 -46.390 956.760" Rot="0.707 0.000 0.000 0.707" isPlayed="1" environmental="0" env_scale="1.000" env_fog_mult="1.000" />
+    <Entity Name="AnomalyHurt1" Def="AnomalyHurt" Pos="915.809 -439.528 701.475" max_damage_per_second="4000.000" min_damage_per_second="100.000" damage_type="3" filter="" start_disabled="0" box_dimensions="30.000 316.000 30.000" />
+    <Entity Name="AnomalyHurt2" Def="AnomalyHurt" Pos="915.809 365.972 701.475" max_damage_per_second="4000.000" min_damage_per_second="100.000" damage_type="3" filter="" start_disabled="0" box_dimensions="30.000 402.000 30.000" />
+    <Entity Name="AnomalyHurt3" Def="AnomalyHurt" Pos="-1271.075 578.641 957.277" max_damage_per_second="4000.000" min_damage_per_second="100.000" damage_type="3" filter="" start_disabled="0" box_dimensions="30.000 482.000 30.000" />
+    <Entity Name="AnomalyHurt4" Def="AnomalyHurt" Pos="737.151 1000.086 1027.532" max_damage_per_second="4000.000" min_damage_per_second="100.000" damage_type="3" filter="" start_disabled="0" box_dimensions="30.000 786.000 30.000" />
+    <Entity Name="AnomalyHurt5" Def="AnomalyHurt" Pos="530.198 299.187 -441.662" max_damage_per_second="4000.000" min_damage_per_second="100.000" damage_type="3" filter="" start_disabled="0" box_dimensions="30.000 338.000 30.000" />
+    <Entity Name="AnomalyHurt6" Def="AnomalyHurt" Pos="530.198 -518.268 -441.662" max_damage_per_second="4000.000" min_damage_per_second="100.000" damage_type="3" filter="" start_disabled="0" box_dimensions="30.000 374.000 30.000" />
+    <Entity Name="alien_spawn_spot9" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-145.446 -41.658 -1058.678" Rot="0.000 0.988 0.000 0.155" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="PortalJumpgate3" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="-153.702 -40.787 -1055.022" Rot="0.416 0.434 0.573 0.557" />
+    <Entity Name="alien_path9" Def="PathObject" Pos="-164.536 -49.245 -1012.071" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-164.536 -49.245 -1012.071" />
+      <Point p="-177.212 -47.528 -982.364" />
+      <Point p="-269.654 -59.268 -768.492" />
+      <Point p="-447.216 -101.762 -394.796" />
+      <Point p="-567.854 -116.099 -198.634" />
+      <Point p="-737.344 -117.199 2.687" />
+      <Point p="-904.736 -113.047 144.722" />
+      <Point p="-1321.685 -109.234 376.838" />
+      <Point p="-1610.193 -109.573 430.290" />
+    </Entity>
+    <Entity Name="PortalJumpgate4" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="-1610.214 -109.319 430.256" Rot="0.028 0.049 0.716 0.696" />
+    <Entity Name="PortalJumpgate5" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="942.209 164.584 53.368" Rot="0.125 0.135 0.706 0.684" />
+    <Entity Name="alien_spawn_spot10" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="943.313 169.092 53.595" Rot="-0.001 0.816 0.015 0.577" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path10" Def="PathObject" Pos="899.421 160.498 71.566" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="899.421 160.498 71.566" />
+      <Point p="865.959 159.713 71.124" />
+      <Point p="637.647 151.518 53.474" />
+      <Point p="400.019 150.027 -0.648" />
+      <Point p="-64.963 155.876 -131.960" />
+      <Point p="-364.827 164.078 -189.120" />
+      <Point p="-724.422 181.978 -251.583" />
+      <Point p="-1164.252 200.192 -332.014" />
+    </Entity>
+    <Entity Name="PortalJumpgate6" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="-1160.635 200.683 -331.642" Rot="-0.076 -0.059 0.715 0.692" />
+    <Entity Name="PortalJumpgate7" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="-1378.389 -9.978 -142.956" Rot="0.664 0.688 0.207 0.205" />
+    <Entity Name="alien_spawn_spot11" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-1377.321 -4.366 -142.745" Rot="0.001 0.890 -0.020 -0.456" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path11" Def="PathObject" Pos="-1336.190 -13.841 -118.947" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1336.190 -13.841 -118.947" />
+      <Point p="-1285.249 -14.714 -72.894" />
+      <Point p="-1114.057 -25.553 89.708" />
+      <Point p="-955.876 -32.292 281.391" />
+      <Point p="-744.998 -40.839 561.387" />
+      <Point p="-600.614 -46.208 707.376" />
+      <Point p="-399.669 -48.974 840.026" />
+      <Point p="-102.869 -50.405 996.577" />
+      <Point p="115.287 -48.471 1181.842" />
+      <Point p="214.133 -45.391 1306.277" />
+    </Entity>
+    <Entity Name="PortalJumpgate8" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="214.114 -44.303 1306.239" Rot="-0.296 -0.300 0.653 0.629" />
+    <Entity Name="alien_spawn_spot12" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="442.372 244.428 1401.207" Rot="-0.020 0.260 0.003 0.965" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="PortalJumpgate9" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="443.347 239.284 1400.750" Rot="-0.363 -0.324 0.624 0.612" />
+    <Entity Name="alien_path12" Def="PathObject" Pos="426.600 240.397 1372.365" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="426.600 240.397 1372.365" />
+      <Point p="409.874 237.684 1325.978" />
+      <Point p="393.576 208.733 1195.795" />
+      <Point p="390.990 128.533 887.110" />
+      <Point p="385.226 27.279 602.693" />
+      <Point p="359.364 -67.486 372.283" />
+      <Point p="263.221 -174.476 76.473" />
+      <Point p="149.697 -254.590 -255.933" />
+      <Point p="130.873 -278.736 -503.180" />
+      <Point p="187.554 -276.704 -956.731" />
+    </Entity>
+    <Entity Name="PortalJumpgate10" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="187.148 -276.849 -956.903" Rot="0.467 0.486 0.529 0.515" />
+    <Entity Name="PortalJumpgate11" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="-711.468 55.830 -891.914" Rot="0.642 0.665 0.272 0.267" />
+    <Entity Name="alien_spawn_spot13" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-710.284 57.986 -891.680" Rot="0.001 0.929 -0.017 -0.370" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path13" Def="PathObject" Pos="-682.162 55.135 -861.777" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-682.162 55.135 -861.777" />
+      <Point p="-663.319 54.943 -840.052" />
+      <Point p="-513.188 56.680 -724.411" />
+      <Point p="-257.823 81.029 -528.721" />
+      <Point p="-28.718 97.839 -378.491" />
+      <Point p="130.338 107.609 -298.784" />
+      <Point p="365.779 122.952 -238.648" />
+      <Point p="623.947 142.428 -230.264" />
+      <Point p="931.864 143.863 -274.425" />
+    </Entity>
+    <Entity Name="PortalJumpgate12" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="934.313 143.975 -273.472" Rot="0.056 0.064 0.716 0.693" />
+    <Entity Name="PortalJumpgate13" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="-671.121 130.000 1349.552" Rot="0.618 0.578 -0.373 -0.382" />
+    <Entity Name="alien_spawn_spot14" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-671.734 139.670 1348.160" Rot="-0.019 -0.235 -0.007 0.972" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path14" Def="PathObject" Pos="-660.000 125.369 1323.523" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-660.000 125.369 1323.523" />
+      <Point p="-658.812 125.809 1250.443" />
+      <Point p="-698.832 133.268 1063.513" />
+      <Point p="-738.323 166.502 813.263" />
+      <Point p="-766.255 210.261 552.823" />
+      <Point p="-752.891 249.091 309.129" />
+      <Point p="-659.707 273.612 32.660" />
+      <Point p="-470.191 272.540 -269.430" />
+      <Point p="-210.362 241.520 -634.292" />
+      <Point p="-32.223 195.036 -851.976" />
+    </Entity>
+    <Entity Name="PortalJumpgate14" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="-32.004 195.001 -852.003" Rot="0.308 0.338 0.626 0.632" />
+    <Entity Name="PortalJumpgate15" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="844.975 347.001 527.581" Rot="-0.013 -0.008 0.719 0.695" />
+    <Entity Name="alien_spawn_spot15" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="844.263 349.078 528.461" Rot="-0.001 0.685 0.021 0.728" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path15" Def="PathObject" Pos="800.000 344.690 522.947" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="800.000 344.690 522.947" />
+      <Point p="759.268 342.715 506.318" />
+      <Point p="556.991 330.950 440.305" />
+      <Point p="368.402 298.058 400.278" />
+      <Point p="118.047 223.638 326.218" />
+      <Point p="-60.979 174.647 247.189" />
+      <Point p="-268.103 127.599 117.888" />
+      <Point p="-434.398 84.835 -14.149" />
+      <Point p="-588.115 10.694 -119.215" />
+      <Point p="-724.818 -84.327 -195.524" />
+      <Point p="-915.475 -169.023 -257.372" />
+      <Point p="-1065.179 -210.606 -308.105" />
+    </Entity>
+    <Entity Name="PortalJumpgate16" Def="OpenWorld_PortalJumpgate" GameplaysMask="4294967167" Pos="-1067.175 -211.325 -307.904" Rot="0.664 0.688 0.207 0.205" />
+    <Entity Name="LootPoint_Mineral1" Def="Helpers_TagPoint" Pos="-687.402 47.294 -471.487" type="0" />
+    <Entity Name="LootPoint_Mineral2" Def="Helpers_TagPoint" Pos="-740.075 -464.491 -529.409" type="0" />
+    <Entity Name="LootPoint_Mineral3" Def="Helpers_TagPoint" Pos="-797.281 208.066 -602.295" type="0" />
+    <Entity Name="LootPoint_Mineral4" Def="Helpers_TagPoint" Pos="-829.943 604.401 -545.130" type="0" />
+    <Entity Name="LootPoint_Mineral5" Def="Helpers_TagPoint" Pos="-1337.051 -732.752 777.353" type="0" />
+    <Entity Name="LootPoint_Mineral6" Def="Helpers_TagPoint" Pos="-1469.636 -600.878 765.122" type="0" />
+    <Entity Name="LootPoint_Mineral7" Def="Helpers_TagPoint" Pos="-1460.230 -166.452 773.711" type="0" />
+    <Entity Name="LootPoint_Mineral8" Def="Helpers_TagPoint" Pos="-1293.909 36.932 853.726" type="0" />
+    <Entity Name="LootPoint_Mineral9" Def="Helpers_TagPoint" Pos="-1309.064 429.169 920.817" type="0" />
+    <Entity Name="LootPoint_Mineral10" Def="Helpers_TagPoint" Pos="-243.430 -620.264 1569.707" type="0" />
+    <Entity Name="LootPoint_Mineral11" Def="Helpers_TagPoint" Pos="-215.672 448.999 1487.157" type="0" />
+    <Entity Name="LootPoint_Mineral12" Def="Helpers_TagPoint" Pos="734.264 -656.143 974.125" type="0" />
+    <Entity Name="LootPoint_Mineral13" Def="Helpers_TagPoint" Pos="872.198 -396.879 729.593" type="0" />
+    <Entity Name="LootPoint_Mineral14" Def="Helpers_TagPoint" Pos="831.675 232.727 706.562" type="0" />
+    <Entity Name="LootPoint_Mineral15" Def="Helpers_TagPoint" Pos="858.564 1196.409 934.364" type="0" />
+    <Entity Name="LootPoint_Mineral16" Def="Helpers_TagPoint" Pos="564.049 172.823 -446.282" type="0" />
+    <Entity Name="LootPoint_Mineral17" Def="Helpers_TagPoint" Pos="554.092 -401.995 -439.936" type="0" />
+    <Entity Name="LootPoint_Mineral18" Def="Helpers_TagPoint" Pos="717.513 211.540 -599.718" type="0" />
+    <Entity Name="LootPoint_Mineral19" Def="Helpers_TagPoint" Pos="557.192 455.617 -635.649" type="0" />
+    <Entity Name="LootPoint_Mineral20" Def="Helpers_TagPoint" Pos="635.299 260.206 -725.096" type="0" />
+    <Entity Name="LootPoint_Mineral21" Def="Helpers_TagPoint" Pos="-768.900 -316.829 -396.733" type="0" />
+    <Entity Name="LootPoint_Mineral22" Def="Helpers_TagPoint" Pos="-481.776 182.832 314.178" type="0" />
+    <Entity Name="LootPoint_Mineral23" Def="Helpers_TagPoint" Pos="-200.877 64.928 111.626" type="0" />
+    <Entity Name="LootPoint_Mineral24" Def="Helpers_TagPoint" Pos="-460.646 112.271 607.405" type="0" />
+    <Entity Name="LootPoint_Mineral25" Def="Helpers_TagPoint" Pos="-213.185 212.258 721.755" type="0" />
+    <Entity Name="LootPoint_Mineral26" Def="Helpers_TagPoint" Pos="87.228 21.372 458.093" type="0" />
+    <Entity Name="LootPoint_Mineral27" Def="Helpers_TagPoint" Pos="-148.377 9.743 590.276" type="0" />
+    <Entity Name="LootPoint_Mineral28" Def="Helpers_TagPoint" Pos="-147.946 -156.286 615.058" type="0" />
+    <Entity Name="LootPoint_Junk1" Def="Helpers_TagPoint" Pos="-633.967 -192.315 -419.927" type="0" />
+    <Entity Name="LootPoint_Junk2" Def="Helpers_TagPoint" Pos="-627.188 -64.642 -437.826" type="0" />
+    <Entity Name="LootPoint_Junk3" Def="Helpers_TagPoint" Pos="-830.607 -130.673 -364.001" type="0" />
+    <Entity Name="LootPoint_Junk4" Def="Helpers_TagPoint" Pos="-841.804 173.156 -371.776" type="0" />
+    <Entity Name="LootPoint_Junk5" Def="Helpers_TagPoint" Pos="-1402.488 -274.799 698.965" type="0" />
+    <Entity Name="LootPoint_Junk6" Def="Helpers_TagPoint" Pos="-1277.088 -487.662 932.730" type="0" />
+    <Entity Name="LootPoint_Junk7" Def="Helpers_TagPoint" Pos="-1331.348 64.243 772.088" type="0" />
+    <Entity Name="LootPoint_Junk8" Def="Helpers_TagPoint" Pos="-1469.382 82.376 881.388" type="0" />
+    <Entity Name="LootPoint_Junk9" Def="Helpers_TagPoint" Pos="-1394.731 663.782 905.671" type="0" />
+    <Entity Name="LootPoint_Junk10" Def="Helpers_TagPoint" Pos="-389.697 -124.331 1628.761" type="0" />
+    <Entity Name="LootPoint_Junk11" Def="Helpers_TagPoint" Pos="-267.048 -332.751 1496.753" type="0" />
+    <Entity Name="LootPoint_Junk12" Def="Helpers_TagPoint" Pos="-160.380 -101.048 1519.363" type="0" />
+    <Entity Name="LootPoint_Junk13" Def="Helpers_TagPoint" Pos="-363.907 676.821 1548.509" type="0" />
+    <Entity Name="LootPoint_Junk14" Def="Helpers_TagPoint" Pos="-73.547 226.252 1895.702" type="0" />
+    <Entity Name="LootPoint_Junk15" Def="Helpers_TagPoint" Pos="689.122 436.954 1161.441" type="0" />
+    <Entity Name="LootPoint_Junk16" Def="Helpers_TagPoint" Pos="588.742 250.412 1102.316" type="0" />
+    <Entity Name="LootPoint_Junk17" Def="Helpers_TagPoint" Pos="580.543 304.661 926.349" type="0" />
+    <Entity Name="LootPoint_Junk18" Def="Helpers_TagPoint" Pos="853.533 248.063 666.366" type="0" />
+    <Entity Name="LootPoint_Junk19" Def="Helpers_TagPoint" Pos="782.188 913.113 712.762" type="0" />
+    <Entity Name="LootPoint_Junk20" Def="Helpers_TagPoint" Pos="629.889 -3.771 -424.346" type="0" />
+    <Entity Name="LootPoint_Junk21" Def="Helpers_TagPoint" Pos="711.744 -168.027 -526.729" type="0" />
+    <Entity Name="LootPoint_Junk22" Def="Helpers_TagPoint" Pos="546.157 661.036 -441.575" type="0" />
+    <Entity Name="LootPoint_Junk23" Def="Helpers_TagPoint" Pos="482.991 -187.314 -506.324" type="0" />
+    <Entity Name="LootPoint_Junk24" Def="Helpers_TagPoint" Pos="-822.219 -320.091 -516.972" type="0" />
+    <Entity Name="LootPoint_Junk25" Def="Helpers_TagPoint" Pos="-666.438 -418.290 -455.533" type="0" />
+    <Entity Name="LootPoint_Junk26" Def="Helpers_TagPoint" Pos="-611.776 -311.187 -394.556" type="0" />
+    <Entity Name="LootPoint_Junk27" Def="Helpers_TagPoint" Pos="-252.549 4.063 63.886" type="0" />
+    <Entity Name="LootPoint_Junk28" Def="Helpers_TagPoint" Pos="-515.651 72.089 232.834" type="0" />
+    <Entity Name="LootPoint_Junk29" Def="Helpers_TagPoint" Pos="-504.447 87.029 581.289" type="0" />
+    <Entity Name="LootPoint_Junk30" Def="Helpers_TagPoint" Pos="-238.463 -51.280 503.041" type="0" />
+    <Entity Name="alien_spawn_spot20" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-324.902 7.717 757.243" Rot="0.005 0.453 0.020 0.891" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path20" Def="PathObject" Pos="-365.946 -2.465 710.188" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-365.946 -2.465 710.188" />
+      <Point p="-530.586 14.624 598.802" />
+      <Point p="-616.038 42.044 389.426" />
+      <Point p="-581.183 90.212 228.976" />
+      <Point p="-426.339 83.744 214.876" />
+      <Point p="-380.740 39.286 331.897" />
+      <Point p="-87.557 29.315 558.353" />
+      <Point p="-82.618 61.762 795.020" />
+      <Point p="-257.874 15.422 812.896" />
+    </Entity>
+    <Entity Name="alien_spawn_spot21" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="672.650 488.135 1182.385" Rot="0.005 0.453 0.020 0.891" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path21" Def="PathObject" Pos="610.202 485.599 1121.918" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="610.202 485.599 1121.918" />
+      <Point p="531.637 418.972 967.429" />
+      <Point p="531.553 228.722 766.921" />
+      <Point p="648.760 79.498 635.897" />
+      <Point p="858.943 -254.705 534.148" />
+      <Point p="1053.909 -267.227 595.739" />
+      <Point p="1125.342 -283.555 761.339" />
+      <Point p="1133.756 -255.812 957.885" />
+      <Point p="1043.569 -194.132 1138.824" />
+      <Point p="872.261 -111.826 1276.703" />
+      <Point p="797.559 109.062 1341.830" />
+      <Point p="717.368 423.570 1230.089" />
+    </Entity>
+    <Entity Name="alien_spawn_spot22" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-1191.577 95.427 863.724" Rot="0.005 0.453 0.020 0.891" box_dimensions="75.000 75.000 75.000" spawn_dir="0" from_zone="0" />
+    <Entity Name="alien_path22" Def="PathObject" Pos="-1235.357 93.830 831.109" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-1235.357 93.830 831.109" />
+      <Point p="-1382.472 85.025 701.278" />
+      <Point p="-1515.284 118.140 723.333" />
+      <Point p="-1561.668 1.943 659.255" />
+      <Point p="-1387.689 -113.631 620.878" />
+      <Point p="-1149.473 -40.175 430.657" />
+      <Point p="-877.633 -6.248 299.217" />
+      <Point p="-676.023 -25.590 408.666" />
+      <Point p="-620.737 -61.895 648.144" />
+      <Point p="-825.372 -71.895 943.469" />
+      <Point p="-1046.538 -30.412 928.184" />
+      <Point p="-1175.308 45.952 873.185" />
+    </Entity>
+    <Entity Name="pz1_1" Def="OpenWorld_QuestLootEmpire_pz1" Pos="710.346 -45.024 -530.869" />
+    <Entity Name="pz1_2" Def="OpenWorld_QuestLootEmpire_pz1" Pos="694.366 -74.397 -770.529" />
+    <Entity Name="pz1_3" Def="OpenWorld_QuestLootEmpire_pz1" Pos="530.294 -77.145 -716.916" />
+    <Entity Name="pz1_4" Def="OpenWorld_QuestLootEmpire_pz1" Pos="484.062 -97.200 -546.533" />
+    <Entity Name="pz1_5" Def="OpenWorld_QuestLootEmpire_pz1" Pos="634.475 -56.483 -431.316" />
+    <Entity Name="pz1_6" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-696.496 60.484 -537.367" />
+    <Entity Name="pz1_7" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-719.888 -69.748 -598.987" />
+    <Entity Name="pz1_8" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-846.347 232.789 -427.529" />
+    <Entity Name="pz1_9" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-814.871 64.785 -377.227" />
+    <Entity Name="pz1_10" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-1482.684 -39.361 760.670" />
+    <Entity Name="pz1_11" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-1338.916 -91.506 754.592" />
+    <Entity Name="pz1_12" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-1219.798 -108.767 845.903" />
+    <Entity Name="pz1_13" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-1273.010 -62.552 1072.282" />
+    <Entity Name="pz1_14" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-300.594 212.076 1510.205" />
+    <Entity Name="pz1_15" Def="OpenWorld_QuestLootEmpire_pz1" Pos="646.015 116.704 898.599" />
+    <Entity Name="pz1_16" Def="OpenWorld_QuestLootEmpire_pz1" Pos="643.954 57.135 1121.836" />
+    <Entity Name="pz1_17" Def="OpenWorld_QuestLootEmpire_pz1" Pos="776.394 73.941 696.333" />
+    <Entity Name="pz1_18" Def="OpenWorld_QuestLootEmpire_pz1" Pos="989.630 -27.194 705.843" />
+    <Entity Name="pz1_19" Def="OpenWorld_QuestLootEmpire_pz1" Pos="114.897 -156.516 398.642" />
+    <Entity Name="pz1_20" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-165.336 -123.223 571.473" />
+    <Entity Name="pz1_21" Def="OpenWorld_QuestLootEmpire_pz1" Pos="-512.052 83.030 677.744" />
+    <Entity Name="AimPoint1" Def="ClanShip_AimPoint" relationshipGroup="1" Pos="0 0 0" type="0" />
+    <Entity Name="AimPoint2" Def="ClanShip_AimPoint" relationshipGroup="1" Pos="0 0 0" type="0" />
+    <Entity Name="AimPoint3" Def="ClanShip_AimPoint" relationshipGroup="1" Pos="0 0 0" type="0" />
+    <Entity Name="AimPoint4" Def="ClanShip_AimPoint" relationshipGroup="1" Pos="0 0 0" type="0" />
+    <Entity Name="Service_Dreadnought1" Def="PathObject" Pos="1403.466 956.706 -3269.511" Rot="0.023 0.421 0.050 0.905" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="1403.466 956.705 -3269.508" />
+      <Point p="1975.456 912.369 -2713.532" />
+      <Point p="2589.220 854.015 -1842.965" />
+      <Point p="2911.042 810.858 -1205.508" />
+    </Entity>
+  </EntityContainer>
+</Scene>
