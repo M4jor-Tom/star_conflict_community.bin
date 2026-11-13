@@ -1,0 +1,74 @@
+﻿source_file "Y:/art/source/ui/graphics/rank_up/rank_up.ma"
+//by sergey_mitryaev
+//at Fri Feb 22 16:19:47 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object modul_title_1
+	{
+		defaults
+		{
+			pos 2 1
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "CM"
+			sampleText "12.03.2013sd"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object modul_icon_1
+	{
+		defaults
+		{
+			pos 1 30
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object modul_icon_2
+	{
+		defaults
+		{
+			pos 58 30
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 934 80
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
