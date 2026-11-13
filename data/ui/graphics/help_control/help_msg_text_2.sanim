@@ -1,0 +1,71 @@
+﻿source_file  Y:/art/source/ui/graphics/help_control/help.ma
+//by sergey_mitryaev
+//at Thu Jun 28 14:32:10 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object text_2
+	{
+		defaults
+		{
+			pos 19.5323 59.5856
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "НАЖМИТЕ КНОПКУ В БОЙ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 19.5323 14.1784
+			opacity 255
+			color 0xffffffff
+			size 600 40
+			effect ""
+			alignment "CM"
+			sampleText "fdsfjmup|ваваппрв пвпв"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0.125807 0.0648384	6.12581 0.0648384	632.092 0.0648384	638.092 0.0648384	0.125807 6.06484	6.12581 6.06484	632.092 6.06484	638.092 6.06484	0.125807 86.1527	6.12581 86.1527	632.092 86.1527	638.092 86.1527	0.125807 92.1527	6.12581 92.1527	632.092 92.1527	638.092 92.1527	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+}
+
