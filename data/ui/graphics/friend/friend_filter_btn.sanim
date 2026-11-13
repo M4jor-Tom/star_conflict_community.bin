@@ -1,0 +1,141 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by sergey_mitryaev
+//at Mon Dec 03 17:39:09 2012
+
+
+animations 3
+{
+	anim over_deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 116 26
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on over_deselect
+		visible_on select
+		visible_on deselect
+	}
+	object text
+	{
+		defaults
+		{
+			pos 8 2
+			opacity 255
+			color 0xffffffff
+			size 100 21
+			effect ""
+			alignment "CM"
+			sampleText "Наблюдение"
+			font "VerySmall"
+		}
+		visible_on over_deselect
+		visible_on select
+		visible_on deselect
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	110 -0	116 -0	0 6	6 6	110 6	116 6	0 20	6 20	110 20	116 20	0 26	6 26	110 26	116 26	
+				0.274399 0.00196683	0.280259 0.00196683	0.317302 0.00196683	0.323162 0.00196683	0.274399 0.00782621	0.280259 0.00782621	0.317302 0.00782621	0.323162 0.00782621	0.274399 0.0449466	0.280259 0.0449466	0.317302 0.0449466	0.323162 0.0449466	0.274399 0.050806	0.280259 0.050806	0.317302 0.050806	0.323162 0.050806	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on over_deselect
+		visible_on select
+		anim deselect sp_colc
+		{
+			1
+			0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	110 -0	116 -0	0 6	6 6	110 6	116 6	0 20	6 20	110 20	116 20	0 26	6 26	110 26	116 26	
+				0.123001 0.00196683	0.12886 0.00196683	0.163856 0.00196683	0.169715 0.00196683	0.123001 0.00782621	0.12886 0.00782621	0.163856 0.00782621	0.169715 0.00782621	0.123001 0.0449466	0.12886 0.0449466	0.163856 0.0449466	0.169715 0.0449466	0.123001 0.050806	0.12886 0.050806	0.163856 0.050806	0.169715 0.050806	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on over_deselect
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on deselect
+	}
+	sprite over
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	110 -0	116 -0	0 6	6 6	110 6	116 6	0 20	6 20	110 20	116 20	0 26	6 26	110 26	116 26	
+				0.0734789 0.00196683	0.0793383 0.00196683	0.114334 0.00196683	0.120193 0.00196683	0.0734789 0.00782621	0.0793383 0.00782621	0.114334 0.00782621	0.120193 0.00782621	0.0734789 0.0449466	0.0793383 0.0449466	0.114334 0.0449466	0.120193 0.0449466	0.0734789 0.050806	0.0793383 0.050806	0.114334 0.050806	0.120193 0.050806	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on over_deselect
+		anim select sp_colc
+		{
+			1
+			0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+		}
+		anim deselect sp_colc
+		{
+			1
+			0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+		}
+	}
+}
+
