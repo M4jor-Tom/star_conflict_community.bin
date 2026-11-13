@@ -1,0 +1,140 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing_2.ma"
+//by sergey_mitryaev
+//at Wed Sep 04 17:49:24 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 950 660
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 790 632
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bookmarks
+	{
+		defaults
+		{
+			pos 6 23.858
+			opacity 255
+			color 0xffffffff
+			size 500 26
+			effect "ui\graphics\debrifing_2\bookmarks_main"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object debrifing_list
+	{
+		defaults
+		{
+			pos 0 50
+			opacity 255
+			color 0xffffffff
+			size 950 570
+			effect "ui\graphics\debrifing_2\debrifing_list_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6 -0
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Wwfeg eg whhh werhjjhehj"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 931 1
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	944 -0	950 -0	0 6	6 6	944 6	950 6	0 654	6 654	944 654	950 654	0 660	6 660	944 660	950 660	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite blackout
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				950 21	950 23	0 21	0 23	
+				0.0791016 0.145508	0.0771484 0.145508	0.0791016 0.152344	0.0771484 0.152344	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
