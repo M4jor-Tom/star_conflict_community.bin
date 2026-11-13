@@ -1,0 +1,157 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Oct 21 15:00:16 2013
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 312 24
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on disable
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 0
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\quests\change_btn_bg"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on disable
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 0
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\quests\change_btn_over"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on over
+	}
+	object text
+	{
+		defaults
+		{
+			pos 6.45988 4.43683
+			opacity 255
+			color 0xffffffff
+			size 300 16
+			effect ""
+			alignment "CM"
+			sampleText "Купить"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim press obj_posc
+		{
+			1 
+			6.45988 6.33541
+		}
+		visible_on over
+		anim disable obj_opc
+		{
+			1 
+			153
+		}
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 10
+			effect ""
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on disable
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 0
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\quests\change_btn_blackout"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on disable
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 6.45988 32.2132
+			opacity 255
+			color 0xffff001d
+			size 300 16
+			effect ""
+			alignment "CM"
+			sampleText "COLOR"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on disable
+	}
+}
+
