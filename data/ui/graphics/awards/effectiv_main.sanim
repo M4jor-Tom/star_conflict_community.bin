@@ -1,0 +1,53 @@
+﻿source_file "Y:/art/source/ui/graphics/awards/awards.ma"
+//by sergey_mitryaev
+//at Mon Sep 21 17:29:18 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object medals
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1043.66 564.861
+			opacity 255
+			color 0xffffffff
+			size 230 112
+			effect "ui\graphics\awards\medals_name_slot"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object effectiv
+	{
+		defaults
+		{
+			anchor "C"
+			pos 527.308 198
+			opacity 255
+			color 0xffffffff
+			size 230 30
+			effect ""
+			alignment "CM"
+			sampleText "МСТИТЕЛЬ"
+			font "Medium_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
