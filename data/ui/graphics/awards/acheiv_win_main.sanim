@@ -1,0 +1,50 @@
+﻿source_file "Y:/art/source/ui/graphics/awards/awards.ma"
+//by sergey_mitryaev
+//at Fri Mar 01 11:39:58 2013
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1280 720
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object acheiv
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 521.178 62
+			opacity 255
+			color 0xff88b5ff
+			size 240 132
+			effect "ui\graphics\awards\acheiv_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
