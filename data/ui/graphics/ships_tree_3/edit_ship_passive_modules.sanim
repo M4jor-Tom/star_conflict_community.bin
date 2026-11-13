@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey_Mitryaev
+//at Wed Apr 05 17:44:02 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object title
+	{
+		defaults
+		{
+			pos 7 -0
+			opacity 255
+			color 0xffa3b5c3
+			size 200 20
+			effect ""
+			alignment "LT"
+			sampleText "Оружие"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object pass_modules_1
+	{
+		defaults
+		{
+			pos 7 18
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object pass_modules_2
+	{
+		defaults
+		{
+			pos 63 18
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object pass_modules_3
+	{
+		defaults
+		{
+			pos 119 18
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 180 70
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
