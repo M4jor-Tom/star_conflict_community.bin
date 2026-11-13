@@ -1,0 +1,145 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Mon Dec 23 15:48:49 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 6
+{
+	object title
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffa3b5c3
+			size 307 20
+			effect ""
+			alignment "LM"
+			sampleText "Бонусы"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object proper
+	{
+		defaults
+		{
+			pos 0 22
+			opacity 255
+			color 0xffffffff
+			size 307 20
+			effect "ui\graphics\equip_1080\edit_ship_proper_2"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object proper1
+	{
+		defaults
+		{
+			pos 0 228
+			opacity 255
+			color 0xffffffff
+			size 307 20
+			effect "ui\graphics\equip_1080\bonus_main"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 290 22
+			opacity 255
+			color 0xffffffff
+			size 20 560
+			effect "ui\graphics\scroll_1080\scroll_2_main"
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 350 590
+			effect ""
+			alignment "LM"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object not_bonus
+	{
+		defaults
+		{
+			pos 7 36
+			opacity 255
+			color 0xffbffbbb
+			size 307 20
+			effect ""
+			alignment "LM"
+			sampleText "Пока нет бонусов"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite que451
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 21	277 21	0 22	277 22	
+				0.732118 0.888518	0.787413 0.888518	0.732118 0.904451	0.787413 0.904451	
+				0xff696969	0xff696969	0xff696969	0xff696969	
+			}
+		}
+		visible_on idle
+	}
+	sprite que452
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 22	7 22	0 27	7 27	
+				0.767274 0.941253	0.798828 0.941253	0.767274 0.957185	0.798828 0.957185	
+				0xff696969	0xff696969	0xff696969	0xff696969	
+			}
+		}
+		visible_on idle
+	}
+}
+
