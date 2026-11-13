@@ -1,0 +1,236 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Thu Nov 24 18:09:14 2016
+
+base_res 1280 720
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 4
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 40
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+}
+
+sprites 8
+{
+	total_vertices 32
+
+	sprite que288
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				6.9333 -8.17566	33.9973 -0.996457	1.8053 11.1558	28.8693 18.335	
+				0.865234 0.00195313	0.892578 0.00195313	0.865234 0.0410156	0.892578 0.0410156	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+	sprite que290
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				24.4148 3.92615	47.6125 10.0798	19.2868 23.2576	42.4845 29.4112	
+				0.897949 0.00195313	0.921387 0.00195313	0.897949 0.0410156	0.921387 0.0410156	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+	sprite que292
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				43.5101 25.5449	66.7078 31.6985	37.8693 46.8094	61.067 52.963	
+				0.869141 0.0449219	0.892578 0.0449219	0.869141 0.0878906	0.892578 0.0878906	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+	sprite que294
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				34.2188 13.7689	57.4165 19.9226	29.0908 33.1004	52.2885 39.254	
+				0.897949 0.00195313	0.921387 0.00195313	0.897949 0.0410156	0.921387 0.0410156	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+	sprite que295
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				24.4148 3.92615	47.6125 10.0798	19.2868 23.2576	42.4845 29.4112	
+				0.953613 0.00195313	0.977051 0.00195313	0.953613 0.0410156	0.977051 0.0410156	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on 3
+		visible_on 4
+	}
+	sprite que293
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				43.5101 25.5449	66.7078 31.6985	37.8693 46.8094	61.067 52.963	
+				0.96582 0.046875	0.989258 0.046875	0.96582 0.0898438	0.989258 0.0898438	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		anim 4 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que291
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				34.2188 13.7689	57.4165 19.9226	29.0908 33.1004	52.2885 39.254	
+				0.953613 0.00195313	0.977051 0.00195313	0.953613 0.0410156	0.977051 0.0410156	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on 4
+	}
+	sprite que289
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				6.9333 -8.17566	33.9973 -0.996457	1.8053 11.1558	28.8693 18.335	
+				0.920898 0.00195313	0.948242 0.00195313	0.920898 0.0410156	0.948242 0.0410156	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim 1 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+}
+
