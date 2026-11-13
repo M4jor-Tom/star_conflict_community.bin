@@ -1,0 +1,85 @@
+﻿source_file "Y:/art/source/ui/graphics/ship_craft/ship_craft.ma"
+//by sergey_mitryaev
+//at Tue Jun 03 14:19:04 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self88
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 52 52
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite ico15
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 9.53674e-007	52 9.53674e-007	0 52	52 52	
+				0.666992 0.177734	0.717773 0.177734	0.666992 0.228516	0.717773 0.228516	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+	sprite ico16
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 9.53674e-007	52 9.53674e-007	0 52	52 52	
+				0.666992 0.177734	0.717773 0.177734	0.666992 0.228516	0.717773 0.228516	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xff848484	0xff848484	0xff848484	0xff848484	
+		}
+	}
+}
+
