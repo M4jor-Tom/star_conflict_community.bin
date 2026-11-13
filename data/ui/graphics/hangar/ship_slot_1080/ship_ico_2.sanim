@@ -1,0 +1,38 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Thu Oct 31 11:34:27 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico_ship
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				13.8617 1.09522	111.138 1.09522	13.8617 38.9048	111.138 38.9048	
+				5.28388e-009 0.158424	1 0.158424	7.15744e-009 0.823973	1 0.823973	
+			}
+		}
+		visible_on idle
+	}
+}
+
