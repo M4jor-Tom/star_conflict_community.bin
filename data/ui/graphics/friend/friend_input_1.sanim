@@ -1,0 +1,70 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by sergey_mitryaev
+//at Mon Dec 03 17:39:11 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object title_2
+	{
+		defaults
+		{
+			pos 6 2
+			opacity 255
+			color 0xffffffff
+			size 450 20
+			effect ""
+			alignment "LM"
+			sampleText "Позывной"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 460 25
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	454 -0	460 -0	0 6	6 6	454 6	460 6	0 19	6 19	454 19	460 19	0 25	6 25	454 25	460 25	
+				0.00195888 0.160156	0.00781825 0.160156	0.0205078 0.160156	0.0263672 0.160156	0.00195888 0.166016	0.00781825 0.166016	0.0205078 0.166016	0.0263672 0.166016	0.00195888 0.178711	0.00781825 0.178711	0.0205078 0.178711	0.0263672 0.178711	0.00195888 0.18457	0.00781825 0.18457	0.0205078 0.18457	0.0263672 0.18457	
+			}
+		}
+		visible_on idle
+	}
+}
+
