@@ -1,0 +1,77 @@
+﻿source_file  Y:/art/source/ui/graphics/skills/skills.ma
+//by sergey_mitryaev
+//at Fri Jun 22 13:51:26 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object position_1
+	{
+		defaults
+		{
+			pos 29.6583 55.0072
+			opacity 255
+			color 0xffffffff
+			size 68 50
+			effect "ui\graphics\skills\skill_icon_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 660 190
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object position_2
+	{
+		defaults
+		{
+			pos 96.077 104.713
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\skills\skill_icon_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 13.2 -3.36605
+			opacity 255
+			color 0xffffffff
+			size 200 15
+			effect ""
+			alignment "LM"
+			sampleText "Поддержка"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
