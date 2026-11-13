@@ -1,0 +1,98 @@
+﻿source_file  Y:/art/source/ui/graphics/quests/quests.ma
+//by sergey_mitryaev
+//at Fri Jun 22 13:58:36 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 721 106
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object name_fraction
+	{
+		defaults
+		{
+			pos 14.553 2.49492
+			opacity 255
+			color 0xffffffff
+			size 90 20
+			effect ""
+			alignment "CM"
+			sampleText "Армада"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object global_progr
+	{
+		defaults
+		{
+			pos 126.173 -0
+			opacity 255
+			color 0xffffffff
+			size 590 106
+			effect "ui\graphics\quests\global_progr_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-0.048429 -0.0763121	3.95157 -0.0763121	717 -0.0763121	721 -0.0763121	-0.048429 3.92369	3.95157 3.92369	717 3.92369	721 3.92369	-0.048429 102.089	3.95157 102.089	717 102.089	721 102.089	-0.048429 106.089	3.95157 106.089	717 106.089	721 106.089	
+				0.223603 0.00296026	0.227509 0.00296026	0.268536 0.00296026	0.272442 0.00296026	0.223603 0.00686651	0.227509 0.00686651	0.268536 0.00686651	0.272442 0.00686651	0.223603 0.0468209	0.227509 0.0468209	0.268536 0.0468209	0.272442 0.0468209	0.223603 0.0507271	0.227509 0.0507271	0.268536 0.0507271	0.272442 0.0507271	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				15.0522 27.7642	103.052 27.7642	15.0522 95.7642	103.052 95.7642	
+				-1.49012e-008 0	1 0	-1.49012e-008 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
