@@ -1,0 +1,576 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by Sergey_Mitryaev
+//at Tue Feb 27 17:40:19 2018
+
+base_res 1920 1080
+
+animations 20
+{
+	anim completed
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim accept
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim assign
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim launch
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim undock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim completed_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim completed_press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim accept_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim accept_press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim launch_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim launch_press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim assign_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim assign_press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim undock_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim undock_press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim completed_disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim accept_disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim assign_disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim launch_disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim undock_disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 2
+{
+	object try_text2
+	{
+		defaults
+		{
+			pos 5 -0
+			opacity 255
+			color 0xffffffff
+			size 100 24
+			effect ""
+			alignment "CM"
+			sampleText "Подготовка"
+			font "VerySmall"
+		}
+		visible_on completed
+		visible_on accept
+		visible_on assign
+		visible_on launch
+		visible_on undock
+		visible_on completed_over
+		visible_on completed_press
+		visible_on accept_over
+		visible_on accept_press
+		visible_on launch_over
+		visible_on launch_press
+		visible_on assign_over
+		visible_on assign_press
+		visible_on undock_over
+		visible_on undock_press
+		anim completed_disable obj_opc
+		{
+			1 
+			127
+		}
+		anim accept_disable obj_opc
+		{
+			1 
+			127
+		}
+		anim assign_disable obj_opc
+		{
+			1 
+			127
+		}
+		anim launch_disable obj_opc
+		{
+			1 
+			127
+		}
+		anim undock_disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 110 26
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on completed
+		visible_on accept
+		visible_on assign
+		visible_on launch
+		visible_on undock
+		visible_on completed_over
+		visible_on completed_press
+		visible_on accept_over
+		visible_on accept_press
+		visible_on launch_over
+		visible_on launch_press
+		visible_on assign_over
+		visible_on assign_press
+		visible_on undock_over
+		visible_on undock_press
+		visible_on completed_disable
+		visible_on accept_disable
+		visible_on assign_disable
+		visible_on launch_disable
+		visible_on undock_disable
+	}
+}
+
+sprites 6
+{
+	total_vertices 24
+
+	sprite que97
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_6.tif"
+			vertices
+			{
+				0 -0	110 -0	0 26	110 26	
+				0.149414 0.666016	0.256836 0.666016	0.149414 0.716797	0.256836 0.716797	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on completed
+		visible_on accept
+		visible_on assign
+		anim launch sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on undock
+		visible_on completed_over
+		visible_on completed_press
+		visible_on accept_over
+		visible_on accept_press
+		anim launch_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim launch_press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on assign_over
+		visible_on assign_press
+		visible_on undock_over
+		visible_on undock_press
+		visible_on completed_disable
+		visible_on accept_disable
+		visible_on assign_disable
+		anim launch_disable sp_colc
+		{
+			1
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+		}
+		visible_on undock_disable
+	}
+	sprite que98
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_6.tif"
+			vertices
+			{
+				0 -0	110 -0	0 26	110 26	
+				0.149414 0.720703	0.256836 0.720703	0.149414 0.771484	0.256836 0.771484	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on completed
+		visible_on accept
+		anim assign sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on launch
+		visible_on undock
+		visible_on completed_over
+		visible_on completed_press
+		visible_on accept_over
+		visible_on accept_press
+		visible_on launch_over
+		visible_on launch_press
+		anim assign_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim assign_press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on undock_over
+		visible_on undock_press
+		visible_on completed_disable
+		visible_on accept_disable
+		anim assign_disable sp_colc
+		{
+			1
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+		}
+		visible_on launch_disable
+		visible_on undock_disable
+	}
+	sprite que99
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_6.tif"
+			vertices
+			{
+				0 -0	110 -0	0 26	110 26	
+				0.149414 0.775391	0.256836 0.775391	0.149414 0.826172	0.256836 0.826172	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on completed
+		anim accept sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on assign
+		visible_on launch
+		visible_on undock
+		visible_on completed_over
+		visible_on completed_press
+		anim accept_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim accept_press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on launch_over
+		visible_on launch_press
+		visible_on assign_over
+		visible_on assign_press
+		visible_on undock_over
+		visible_on undock_press
+		visible_on completed_disable
+		anim accept_disable sp_colc
+		{
+			1
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+		}
+		visible_on assign_disable
+		visible_on launch_disable
+		visible_on undock_disable
+	}
+	sprite que100
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_6.tif"
+			vertices
+			{
+				0 -0	110 -0	0 26	110 26	
+				0.149414 0.613281	0.256836 0.613281	0.149414 0.664063	0.256836 0.664063	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on completed
+		visible_on accept
+		visible_on assign
+		visible_on launch
+		anim undock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on completed_over
+		visible_on completed_press
+		visible_on accept_over
+		visible_on accept_press
+		visible_on launch_over
+		visible_on launch_press
+		visible_on assign_over
+		visible_on assign_press
+		anim undock_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim undock_press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on completed_disable
+		visible_on accept_disable
+		visible_on assign_disable
+		visible_on launch_disable
+		anim undock_disable sp_colc
+		{
+			1
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+		}
+	}
+	sprite que108
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_6.tif"
+			vertices
+			{
+				0 -0	110 -0	0 26	110 26	
+				0.149414 0.830078	0.256836 0.830078	0.149414 0.880859	0.256836 0.880859	
+				0xfeffffff	0xfeffffff	0xfeffffff	0xfeffffff	
+			}
+		}
+		visible_on completed
+		anim accept sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim assign sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim launch sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim undock sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim completed_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on completed_press
+		anim accept_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim accept_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim launch_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim launch_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim assign_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim assign_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim undock_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim undock_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim completed_disable sp_colc
+		{
+			1
+			0x65ffffff	0x65ffffff	0x65ffffff	0x65ffffff	
+		}
+		anim accept_disable sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim assign_disable sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim launch_disable sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim undock_disable sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite que109
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			blend color_add
+			vertices
+			{
+				-13.1435 -1.94542	124.143 -1.94542	-13.1435 27.9455	124.143 27.9455	
+				0.436696 0.594899	0.481273 0.594899	0.436696 0.639476	0.481273 0.639476	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on completed
+		visible_on accept
+		visible_on assign
+		visible_on launch
+		visible_on undock
+		anim completed_over sp_colc
+		{
+			1
+			0xff191919	0xff191919	0xff191919	0xff191919	
+		}
+		visible_on completed_press
+		anim accept_over sp_colc
+		{
+			1
+			0xff191919	0xff191919	0xff191919	0xff191919	
+		}
+		visible_on accept_press
+		anim launch_over sp_colc
+		{
+			1
+			0xff191919	0xff191919	0xff191919	0xff191919	
+		}
+		visible_on launch_press
+		anim assign_over sp_colc
+		{
+			1
+			0xff191919	0xff191919	0xff191919	0xff191919	
+		}
+		visible_on assign_press
+		anim undock_over sp_colc
+		{
+			1
+			0xff191919	0xff191919	0xff191919	0xff191919	
+		}
+		visible_on undock_press
+		visible_on completed_disable
+		visible_on accept_disable
+		visible_on assign_disable
+		visible_on launch_disable
+		visible_on undock_disable
+	}
+}
+
