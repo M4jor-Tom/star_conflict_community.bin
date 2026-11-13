@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 28 15:51:35 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object text_7
+	{
+		defaults
+		{
+			pos 0.445886 -0.168649
+			opacity 255
+			color 0xffffcd3b
+			size 30 30
+			effect ""
+			alignment "CM"
+			sampleText "+2"
+			font "segoeuilr_20"
+		}
+		anim idle obj_op
+		{
+			2 
+			255
+			0
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffc9e8ff
+			size 30 30
+			effect ""
+			alignment "CM"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite er8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-4.62049 -6.97762	37.9048 -6.97762	-4.62049 35.5476	37.9048 35.5476	
+				0.275391 0.00585938	0.353516 0.00585938	0.275391 0.0839844	0.353516 0.0839844	
+				0xff40330e	0xff40330e	0xff40330e	0xff40330e	
+			}
+		}
+		anim idle sp_col
+		{
+			6
+			0xff40330e	0xff40330e	0xff40330e	0xff40330e	
+			0xff33290b	0xff33290b	0xff33290b	0xff33290b	
+			0xff261f08	0xff261f08	0xff261f08	0xff261f08	
+			0xff191405	0xff191405	0xff191405	0xff191405	
+			0xff0c0a02	0xff0c0a02	0xff0c0a02	0xff0c0a02	
+			0xff000000	0xff000000	0xff000000	0xff000000	
+		}
+	}
+}
+
