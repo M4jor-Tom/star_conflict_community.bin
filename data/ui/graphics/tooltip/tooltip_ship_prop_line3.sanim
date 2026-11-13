@@ -1,0 +1,85 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Thu Apr 18 13:23:58 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 515 38
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object properties_line_2_1
+	{
+		defaults
+		{
+			pos 1 -0
+			opacity 255
+			color 0xffffffff
+			size 254 20
+			effect "ui\graphics\tooltip\tooltip_ship_prop_line2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object properties_line_2_2
+	{
+		defaults
+		{
+			pos 262 -0
+			opacity 255
+			color 0xffffffff
+			size 254 20
+			effect "ui\graphics\tooltip\tooltip_ship_prop_line2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object properties_line_2_3
+	{
+		defaults
+		{
+			pos 262 17
+			opacity 255
+			color 0xffffffff
+			size 254 20
+			effect "ui\graphics\tooltip\tooltip_ship_prop_line2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object properties_line_2_4
+	{
+		defaults
+		{
+			pos 1 17
+			opacity 255
+			color 0xffffffff
+			size 254 20
+			effect "ui\graphics\tooltip\tooltip_ship_prop_line2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
