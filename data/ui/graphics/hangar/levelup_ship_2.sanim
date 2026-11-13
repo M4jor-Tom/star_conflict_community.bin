@@ -1,0 +1,99 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by Sergey_Mitryaev
+//at Fri Jun 23 10:43:23 2017
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 38 38
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_2
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite spr66
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices_nc
+			{
+				0.451683 0.842274	36.4517 0.842274	0.451683 36.8423	36.4517 36.8423	
+				0.828125 0.351563	0.898438 0.351563	0.828125 0.421875	0.898438 0.421875	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_2
+	}
+	sprite spr67
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_1.tif"
+			vertices
+			{
+				0.451683 0.842274	36.4517 0.842274	0.451683 36.8423	36.4517 36.8423	
+				0.830078 0.425781	0.900391 0.425781	0.830078 0.496094	0.900391 0.496094	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on idle_2
+		visible_on over_2
+	}
+}
+
