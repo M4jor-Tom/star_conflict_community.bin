@@ -1,0 +1,379 @@
+﻿source_file "Y:/art/source/ui/graphics/chat/chat.ma"
+//by sergey_mitryaev
+//at Thu Dec 19 13:07:39 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 23
+
+objects 22
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 370 408
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list_area
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 356 405
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll_max
+	{
+		defaults
+		{
+			pos 3.33157 27
+			opacity 255
+			color 0xffffffff
+			size 16 326
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object min_dist
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 81
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object cc_system
+	{
+		defaults
+		{
+			pos 64.9229 27.4909
+			opacity 255
+			color 0xffffff00
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_system"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_ignored
+	{
+		defaults
+		{
+			pos 64.9229 48.1315
+			opacity 255
+			color 0xffff0000
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_ignored"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_say
+	{
+		defaults
+		{
+			pos 64.9229 69.6322
+			opacity 255
+			color 0xffdcdcdc
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_say"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_party
+	{
+		defaults
+		{
+			pos 64.9229 91.1328
+			opacity 255
+			color 0xff8cbbff
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_party"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_enemy
+	{
+		defaults
+		{
+			pos 64.9229 112.633
+			opacity 255
+			color 0xffff6967
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_enemy"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_raid
+	{
+		defaults
+		{
+			pos 64.9229 134.994
+			opacity 255
+			color 0xffff8700
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_raid"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_guild
+	{
+		defaults
+		{
+			pos 64.9229 156.495
+			opacity 255
+			color 0xff6ec434
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_guild"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_yell
+	{
+		defaults
+		{
+			pos 64.9229 177.995
+			opacity 255
+			color 0xffffe700
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_yell"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_whisper
+	{
+		defaults
+		{
+			pos 64.9229 201.216
+			opacity 255
+			color 0xffff80ff
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_whisper"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_channel_join
+	{
+		defaults
+		{
+			pos 64.9229 223.577
+			opacity 255
+			color 0xffffa9a9
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_join"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_channel_leave
+	{
+		defaults
+		{
+			pos 64.9229 246.798
+			opacity 255
+			color 0xffc57d80
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_leave"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_channel_list
+	{
+		defaults
+		{
+			pos 64.9229 269.158
+			opacity 255
+			color 0xffc17d7d
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_list"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_channel_notice
+	{
+		defaults
+		{
+			pos 64.9229 293.239
+			opacity 255
+			color 0xffbebebe
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_notice"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 28.4224 31
+			opacity 255
+			color 0xffffffff
+			size 320 370
+			effect ""
+			alignment "LT"
+			sampleText "dfwfwfwfw"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object list_area_sml
+	{
+		defaults
+		{
+			pos 0 282
+			opacity 255
+			color 0xffffffff
+			size 356 124
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object cc_channel_butlog
+	{
+		defaults
+		{
+			pos 64.9229 316.759
+			opacity 255
+			color 0xff009a02
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_notice"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bookmark
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 370 24
+			effect "ui\graphics\chat\chat_bookmark_main"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object cc_channel_notice3
+	{
+		defaults
+		{
+			pos 64.9229 339
+			opacity 255
+			color 0xff74e5ae
+			size 260 20
+			effect ""
+			alignment "LM"
+			sampleText "cc_channel_notice3"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 74	6.21778 74	26.8603 74	355.606 74	0.217775 80	6.21778 80	26.8603 80	355.606 80	
+				0.0019778 0.160203	0.00783718 0.160203	0.013447 0.160203	0.0193063 0.160203	0.0019778 0.166062	0.00783718 0.166062	0.013447 0.166062	0.0193063 0.166062	0.0019778 0.178786	0.00783718 0.178786	0.013447 0.178786	0.0193063 0.178786	0.0019778 0.184645	0.00783718 0.184645	0.013447 0.184645	0.0193063 0.184645	
+				0xffffffff	0xffffffff	0xffffffff	0xffffff	0xffffffff	0xffffffff	0xffffffff	0xffffff	0xffffffff	0xffffffff	0xffffffff	0xffffff	0xffffffff	0xffffffff	0xffffffff	0xffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 74	6.21778 74	26.8603 74	355.606 74	0.217775 80	6.21778 80	26.8603 80	355.606 80	
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 106.593	6.21778 106.593	26.8603 106.593	355.606 106.593	0.217775 112.593	6.21778 112.593	26.8603 112.593	355.606 112.593	
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 139.185	6.21778 139.185	26.8603 139.185	355.606 139.185	0.217775 145.185	6.21778 145.185	26.8603 145.185	355.606 145.185	
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 171.778	6.21778 171.778	26.8603 171.778	355.606 171.778	0.217775 177.778	6.21778 177.778	26.8603 177.778	355.606 177.778	
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 204.371	6.21778 204.371	26.8603 204.371	355.606 204.371	0.217775 210.371	6.21778 210.371	26.8603 210.371	355.606 210.371	
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 236.964	6.21778 236.964	26.8603 236.964	355.606 236.964	0.217775 242.964	6.21778 242.964	26.8603 242.964	355.606 242.964	
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 269.556	6.21778 269.556	26.8603 269.556	355.606 269.556	0.217775 275.556	6.21778 275.556	26.8603 275.556	355.606 275.556	
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 302.149	6.21778 302.149	26.8603 302.149	355.606 302.149	0.217775 308.149	6.21778 308.149	26.8603 308.149	355.606 308.149	
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 334.742	6.21778 334.742	26.8603 334.742	355.606 334.742	0.217775 340.742	6.21778 340.742	26.8603 340.742	355.606 340.742	
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 367.335	6.21778 367.335	26.8603 367.335	355.606 367.335	0.217775 373.335	6.21778 373.335	26.8603 373.335	355.606 373.335	
+			0.217775 -0	6.21778 -0	26.8603 -0	355.606 -0	0.217775 6	6.21778 6	26.8603 6	355.606 6	0.217775 399.927	6.21778 399.927	26.8603 399.927	355.606 399.927	0.217775 405.927	6.21778 405.927	26.8603 405.927	355.606 405.927	
+		}
+	}
+}
+
