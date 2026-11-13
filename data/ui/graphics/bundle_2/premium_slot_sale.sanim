@@ -1,0 +1,102 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle_2.ma"
+//by sergey_mitryaev
+//at Mon Jun 19 11:47:30 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 184 344
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sale_val
+	{
+		defaults
+		{
+			pos -1.41719 4.50298
+			opacity 255
+			color 0xffffffff
+			size 100 30
+			effect ""
+			alignment "RM"
+			sampleText "-100%"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object sale_title
+	{
+		defaults
+		{
+			pos 18 34.2575
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect ""
+			alignment "CM"
+			sampleText "СКИДКА"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite pasted__sp22
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	8 -0	176 -0	184 -0	0 8	8 8	176 8	184 8	0 336	8 336	176 336	184 336	0 344	8 344	176 344	184 344	
+				0.494141 0.615234	0.501953 0.615234	0.501953 0.615234	0.509766 0.615234	0.494141 0.623047	0.501953 0.623047	0.501953 0.623047	0.509766 0.623047	0.494141 0.623043	0.501953 0.623043	0.501953 0.623043	0.509766 0.623043	0.494141 0.630864	0.501953 0.630864	0.501953 0.630864	0.509766 0.630864	
+				0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	
+			}
+		}
+		visible_on idle
+	}
+	sprite pasted__sp37
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	8 -0	96 -0	104 -0	0 8	8 8	96 8	104 8	0 48	8 48	96 48	104 48	0 56	8 56	96 56	104 56	
+				0.430664 0.325193	0.438477 0.325193	0.438477 0.325193	0.446289 0.325193	0.430664 0.333006	0.438477 0.333006	0.438477 0.333006	0.446289 0.333006	0.430664 0.333002	0.438477 0.333002	0.438477 0.333002	0.446289 0.333002	0.430664 0.340822	0.438477 0.340822	0.438477 0.340822	0.446289 0.340822	
+				0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	0xffff2800	
+			}
+		}
+		visible_on idle
+	}
+}
+
