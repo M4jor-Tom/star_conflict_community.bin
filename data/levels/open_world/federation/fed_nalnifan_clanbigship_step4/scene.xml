@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<Scene>
+  <EnvSettings Name="empire_ilay_station; default; default; default; default; default; default; default; " battlefieldRadius="1500.000" />
+  <EntityContainer>
+    <Entity Name="WorldLookPoint" Def="CameraEntity" Pos="-64.779 2428.327 -15.886" Rot="0.609 -0.344 0.331 0.633" dof="0" dofFarPlane="300.000" dofNearPlane="80.000" dofFocusPlane="120.000" dofMaxBlur="1.000" fov="1.309" aimObj="" />
+    <Entity Name="alien_spawn_spot2" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="210.345 1142.998 -2.229" Rot="-0.707 0.000 0.000 0.707" spawn_dir="0" from_zone="0" />
+    <Entity Name="neutral4_spawn_spot2" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="848.275 -80.140 7.649" Rot="0.000 0.999 0.000 0.033" spawn_dir="0" from_zone="0" />
+    <Entity Name="transport_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-222.235 157.060 -298.608" Rot="0.000 0.996 0.000 -0.084" spawn_dir="0" from_zone="0" />
+    <Entity Name="transport_path1" Def="PathObject" Pos="-217.697 169.575 -346.888" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-217.697 169.575 -346.888" />
+      <Point p="-215.329 166.386 -326.561" />
+      <Point p="-218.429 123.267 -178.053" />
+      <Point p="-265.609 85.516 -103.101" />
+      <Point p="-415.217 45.411 -47.563" />
+      <Point p="-568.942 41.736 4.477" />
+      <Point p="-693.192 24.645 18.413" />
+    </Entity>
+    <Entity Name="ParkingStation1" Def="OW_ParkingStation" Pos="-901.010 30.402 -21.043" Rot="0.000 0.993 0.000 0.115" relationshipGroup="0" />
+    <Entity Name="TransportParking1" Def="OW_TransportParking" Pos="-987.101 -12.061 -67.994" Rot="0.000 -0.787 0.000 0.617" relationshipGroup="0" />
+    <Entity Name="TransportParking2" Def="OW_TransportParking" Pos="-1028.997 -11.945 -78.223" Rot="0.000 -0.785 0.000 0.620" relationshipGroup="0" />
+    <Entity Name="ParkingStation2" Def="OW_ParkingStation" Pos="-808.380 251.467 865.178" Rot="0.000 0.879 0.000 -0.476" relationshipGroup="0" />
+    <Entity Name="ParkingStation3" Def="OW_ParkingStation" Pos="186.787 386.782 427.886" Rot="0.000 0.223 0.000 0.975" relationshipGroup="0" />
+    <Entity Name="transport_spawn_spot3" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-16.004 380.730 550.869" Rot="0.000 0.835 0.000 0.550" spawn_dir="0" from_zone="0" />
+    <Entity Name="transport_path3" Def="PathObject" Pos="-40.851 379.085 566.423" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-40.851 379.085 566.423" />
+      <Point p="-138.792 340.478 567.447" />
+      <Point p="-214.087 328.110 526.062" />
+      <Point p="-329.162 316.854 438.475" />
+      <Point p="-449.118 305.236 402.957" />
+      <Point p="-547.029 286.662 483.704" />
+      <Point p="-630.662 267.678 572.577" />
+      <Point p="-698.277 244.895 680.550" />
+    </Entity>
+    <Entity Name="PoliceAvanpostSmall1" Def="OpenWorld_ClanshipAvanpostSmall" Pos="178.334 -69.029 -551.142" Rot="0.000 0.228 0.000 0.974" />
+    <Entity Name="neutral4_path2" Def="PathObject" Pos="847.460 -86.251 54.643" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="847.460 -86.251 54.643" />
+      <Point p="913.905 -77.464 172.053" />
+      <Point p="902.758 -33.385 437.719" />
+      <Point p="681.940 18.503 446.000" />
+      <Point p="389.655 56.070 359.755" />
+      <Point p="196.649 83.717 355.888" />
+      <Point p="-83.129 23.123 442.215" />
+      <Point p="-236.892 -80.211 470.839" />
+      <Point p="-320.533 -204.367 442.900" />
+      <Point p="-359.482 -263.474 305.450" />
+      <Point p="-493.325 -349.991 -73.456" />
+      <Point p="-574.451 -399.568 -400.853" />
+      <Point p="-527.303 -405.295 -681.691" />
+      <Point p="-334.045 -374.514 -929.504" />
+      <Point p="-20.016 -320.920 -1060.979" />
+      <Point p="386.563 -232.578 -1067.010" />
+      <Point p="756.682 -151.927 -913.917" />
+      <Point p="941.071 -120.710 -667.220" />
+      <Point p="858.695 -85.271 -419.908" />
+      <Point p="852.217 -87.806 14.388" />
+    </Entity>
+    <Entity Name="neutral4_path1" Def="PathObject" Pos="-890.064 233.708 1010.551" default_size="10.000" path_type="0" unidirectional_road="0">
+      <Point p="-890.064 233.708 1010.551" />
+      <Point p="-1033.133 224.664 983.961" />
+      <Point p="-1155.842 178.101 820.450" />
+      <Point p="-1250.515 126.877 550.647" />
+      <Point p="-1167.475 99.896 334.553" />
+      <Point p="-1046.733 115.943 37.396" />
+      <Point p="-949.123 160.582 -107.843" />
+      <Point p="-819.019 158.264 -170.149" />
+      <Point p="-556.855 117.758 -190.963" />
+      <Point p="-351.199 9.408 -363.199" />
+      <Point p="-207.184 -107.031 -445.925" />
+      <Point p="-75.341 -208.471 -401.217" />
+      <Point p="-33.548 -293.585 -236.211" />
+      <Point p="-151.311 -402.302 44.815" />
+      <Point p="-324.031 -446.237 237.299" />
+      <Point p="-445.980 -433.116 395.004" />
+      <Point p="-507.802 -366.536 593.973" />
+      <Point p="-454.389 -207.962 852.186" />
+      <Point p="-413.540 -68.893 963.849" />
+      <Point p="-521.659 97.737 1168.787" />
+      <Point p="-691.242 225.647 1144.630" />
+      <Point p="-839.495 263.667 1043.482" />
+    </Entity>
+    <Entity Name="neutral4_spawn_spot1" Def="Logic_SpawnArea_FreeSpaceAIAgents" Pos="-870.832 230.711 1042.107" Rot="0.000 0.327 0.000 0.945" spawn_dir="0" from_zone="0" />
+  </EntityContainer>
+</Scene>
