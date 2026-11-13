@@ -1,0 +1,141 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Mon Apr 22 11:53:15 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 420 280
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 10 -0
+			opacity 255
+			color 0xffffffff
+			size 400 20
+			effect ""
+			alignment "CM"
+			sampleText "Тренеровочные бои"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loot_module
+	{
+		defaults
+		{
+			pos 23.6011 30.0223
+			opacity 255
+			color 0xffffffff
+			size 50 25
+			effect "ui\graphics\loot_scan\recognition_loot_module"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 6.60112 104.022
+			opacity 255
+			color 0xffffffff
+			size 50 25
+			effect "ui\graphics\loot_scan\recognition_loot_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 6.60112 190.022
+			opacity 255
+			color 0xffffffff
+			size 50 25
+			effect "ui\graphics\loot_scan\recognition_loot_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	8 -0	414.018 -0	420.018 -0	0 6	8 6	414.018 6	420.018 6	0 271.617	8 271.617	414.018 271.617	420.018 271.617	0 280	8 280	414.018 280	420.018 280	
+				0.325191 0.000976563	0.333012 0.000976563	0.370117 0.000976563	0.375976 0.000976563	0.325191 0.00683588	0.333012 0.00683582	0.370117 0.00683588	0.375977 0.00683594	0.325191 0.0439442	0.333012 0.0439442	0.370117 0.0439442	0.375977 0.0439442	0.325191 0.0517589	0.333012 0.0517589	0.370117 0.051759	0.375977 0.0517589	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-0.188206 21.083	419.812 21.083	-0.188206 23.083	419.812 23.083	
+				0.0791015 0.147461	0.0791016 0.149414	0.0771484 0.147461	0.0771485 0.149414	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2wc
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 23	8 23	414.018 23	420.018 23	0 29	8 29	414.018 29	420.018 29	0 87.6172	8 87.6172	414.018 87.6172	420.018 87.6172	0 96	8 96	414.018 96	420.018 96	
+				0.223631 0.0351563	0.231452 0.0351563	0.232422 0.0351563	0.238281 0.0351563	0.22363 0.0410156	0.231452 0.0410155	0.232422 0.0410156	0.238281 0.0410156	0.22363 0.042967	0.231452 0.042967	0.232422 0.0429671	0.238281 0.0429671	0.22363 0.0507818	0.231452 0.0507818	0.232422 0.0507818	0.238281 0.0507818	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
