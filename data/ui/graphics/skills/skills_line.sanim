@@ -1,0 +1,68 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 17:37:48 2014
+
+
+animations 2
+{
+	anim active
+	{
+		mode looped
+		cycle_time 20
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 5
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName8301
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			not_align
+			vertices
+			{
+				0 -0	10 -0	0 5	10 5	
+				0.34668 0.743164	0.356445 0.743164	0.34668 0.75293	0.356445 0.75293	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+		}
+	}
+}
+
