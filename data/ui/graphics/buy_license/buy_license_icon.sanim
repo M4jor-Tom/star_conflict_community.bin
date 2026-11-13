@@ -1,0 +1,54 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Tue Jan 08 18:10:17 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				2.89873 1.44937	6.89873 1.44937	49.4331 1.44937	53.4331 1.44937	2.89873 5.44937	6.89873 5.44937	49.4331 5.44937	53.4331 5.44937	2.89873 46.1801	6.89873 46.1801	49.4331 46.1801	53.4331 46.1801	2.89873 50.1801	6.89873 50.1801	49.4331 50.1801	53.4331 50.1801	
+				0.00194812 0.0634855	0.00585437 0.0634855	0.0468272 0.0634855	0.0507334 0.0634855	0.00194812 0.0673918	0.00585437 0.0673918	0.0468272 0.0673918	0.0507334 0.0673918	0.00194812 0.108415	0.00585437 0.108415	0.0468272 0.108415	0.0507334 0.108415	0.00194812 0.112321	0.00585437 0.112321	0.0468272 0.112321	0.0507334 0.112321	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				8.12949 5.46634	48.1295 5.46634	8.12949 45.4663	48.1295 45.4663	
+				-7.51016e-007 0	0.999999 0	-7.51016e-007 1	0.999999 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
