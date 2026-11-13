@@ -1,0 +1,59 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Wed Oct 16 11:41:02 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 0.7
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 30
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff7fb2ff
+			size 300 30
+			effect ""
+			alignment "CT"
+			sampleText "ЗАХВАТ БОМБЫ"
+			font "Medium_outl"
+			blend color_add
+		}
+		anim idle obj_col
+		{
+			6
+			0xff7fb2ff
+			0xff8bb7f9
+			0xff95baf1
+			0xff92aed9
+			0xff7787a0
+			0xff393939
+		}
+	}
+}
+
