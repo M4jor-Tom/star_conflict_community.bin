@@ -1,0 +1,60 @@
+﻿source_file  Y:/art/source/ui/graphics/option/option.ma
+//by sergey_mitryaev
+//at Tue Feb 07 17:45:57 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object slider
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\option\option_slider"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slider_tick
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\option\option_slider_tick"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 385 22
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
