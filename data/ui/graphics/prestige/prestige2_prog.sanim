@@ -1,0 +1,86 @@
+﻿source_file "Y:/art/source/ui/graphics/prestige/prestige.ma"
+//by sergey_mitryaev
+//at Mon Dec 07 14:59:39 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 90 2
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName339
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 -0	90 -0	0 2	90 2	
+				0.603377 0.320174	0.619279 0.320174	0.603377 0.336076	0.619279 0.336076	
+				0xff7a7a7a	0xff7a7a7a	0xff7a7a7a	0xff7a7a7a	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName340
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				3.8147e-006 -4.99999	1.90735e-006 -5	3.8147e-006 9.00001	1.90735e-006 9	
+				0.115096 0.613142	0.130998 0.613142	0.115096 0.629045	0.130998 0.629045	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			3.8147e-006 -4.99999	1.90735e-006 -5	3.8147e-006 9.00001	1.90735e-006 9	
+			3.8147e-006 -4.99999	9 -5	3.8147e-006 9.00001	9 9	
+			3.8147e-006 -4.99999	18 -5	3.8147e-006 9.00001	18 9	
+			3.8147e-006 -4.99999	27 -5	3.8147e-006 9.00001	27 9	
+			3.8147e-006 -4.99999	36 -5	3.8147e-006 9.00001	36 9	
+			3.8147e-006 -4.99999	45 -5	3.8147e-006 9.00001	45 9	
+			3.8147e-006 -4.99999	54 -5	3.8147e-006 9.00001	54 9	
+			3.8147e-006 -4.99999	63 -5	3.8147e-006 9.00001	63 9	
+			3.8147e-006 -4.99999	72 -5	3.8147e-006 9.00001	72 9	
+			3.8147e-006 -4.99999	81 -5	3.8147e-006 9.00001	81 9	
+			3.8147e-006 -4.99999	90 -5	3.8147e-006 9.00001	90 9	
+		}
+	}
+}
+
