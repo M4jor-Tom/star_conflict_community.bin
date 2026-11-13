@@ -1,0 +1,598 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Tue Jul 14 15:31:50 2020
+
+base_res 1280 720
+
+animations 14
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_shot
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim friend_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim agressiv
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim agressiv_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim me_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim me
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+sprites 14
+{
+	total_vertices 56
+
+	sprite friend
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.322319 0.293017	0.333903 0.293017	0.322319 0.304639	0.333903 0.304639	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim enemy_shot sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim squad sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim friend_shot sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim agressiv sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim agressiv_shot sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim nlo sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim nlo_shot sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim squad_shot sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim me_shot sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim me sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim neutral sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim neutral_shot sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite enemy
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.335028 0.293065	0.346613 0.293065	0.335028 0.304592	0.346613 0.304592	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on enemy_shot
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me_shot
+		visible_on me
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite squad
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.347723 0.293017	0.359308 0.293017	0.347723 0.30464	0.359308 0.30464	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		anim squad sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me_shot
+		visible_on me
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite enemy_shot
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.359442 0.293065	0.371027 0.293065	0.359442 0.304592	0.371027 0.304592	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		anim enemy_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me_shot
+		visible_on me
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite enemy_shot1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.284247 0.293065	0.295831 0.293065	0.284247 0.304592	0.295831 0.304592	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		anim friend_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me_shot
+		visible_on me
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite enemy_shot2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.309637 0.293065	0.321222 0.293065	0.309637 0.304592	0.321222 0.304592	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on friend_shot
+		anim agressiv sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me_shot
+		visible_on me
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite enemy_shot3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.296942 0.293065	0.308527 0.293065	0.296942 0.304592	0.308527 0.304592	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		anim agressiv_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me_shot
+		visible_on me
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite enemy_shot27
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.232489 0.364354	0.244073 0.364354	0.232489 0.375881	0.244073 0.375881	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		anim nlo sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me_shot
+		visible_on me
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite enemy_shot28
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.371161 0.293065	0.382745 0.293065	0.371161 0.304592	0.382745 0.304592	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		anim nlo_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on squad_shot
+		visible_on me_shot
+		visible_on me
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite enemy_shot50
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.215887 0.353612	0.227472 0.353612	0.215887 0.365138	0.227472 0.365138	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		anim squad_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on me_shot
+		visible_on me
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite enemy_shot51
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.443427 0.356541	0.455011 0.356541	0.443427 0.368068	0.455011 0.368068	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		anim me_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on me
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite enemy_shot52
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.443427 0.344823	0.455011 0.344823	0.443427 0.356349	0.455011 0.356349	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me_shot
+		anim me sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on neutral
+		visible_on neutral_shot
+	}
+	sprite enemy_shot59
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.331122 0.181737	0.342706 0.181737	0.331122 0.193263	0.342706 0.193263	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me_shot
+		visible_on me
+		anim neutral sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on neutral_shot
+	}
+	sprite enemy_shot66
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	12 -0	0 12	12 12	
+				0.331122 0.193455	0.342706 0.193455	0.331122 0.204982	0.342706 0.204982	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on friend_shot
+		visible_on agressiv
+		visible_on agressiv_shot
+		visible_on nlo
+		visible_on nlo_shot
+		visible_on squad_shot
+		visible_on me_shot
+		visible_on me
+		visible_on neutral
+		anim neutral_shot sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
