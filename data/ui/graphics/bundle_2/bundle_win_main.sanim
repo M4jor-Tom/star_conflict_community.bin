@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/bundle/bundle_2.ma"
+//by Sergey
+//at Tue Jun 07 12:23:31 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object bundle_list2
+	{
+		defaults
+		{
+			pos -5.68434e-014 3.55271e-015
+			opacity 255
+			color 0xffffffff
+			size 1174 600
+			effect "ui\graphics\bundle_2\voucher_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object info1
+	{
+		defaults
+		{
+			pos 813 1
+			opacity 255
+			color 0xffffffff
+			size 362 544
+			effect "ui\graphics\bundle_2\voucher_info_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1200 530
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 514 187.633
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object desription2
+	{
+		defaults
+		{
+			pos 321 152
+			opacity 255
+			color 0xffffffff
+			size 500 190
+			effect ""
+			alignment "CM"
+			sampleText "У нас нет активных билетов|Для получения  участвуйте в|рандомных боях или купите  бандл"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
