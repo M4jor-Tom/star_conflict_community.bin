@@ -1,0 +1,133 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by Sergey_Mitryaev
+//at Tue Apr 18 12:12:46 2017
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	4 -0	16 -0	20 -0	0 4	4 4	16 4	20 4	0 6	4 6	16 6	20 6	0 10	4 10	16 10	20 10	
+				0.0322056 0.140569	0.0361118 0.140569	0.0457945 0.140569	0.0497007 0.140569	0.0322056 0.144476	0.0361118 0.144476	0.0457945 0.144476	0.0497007 0.144476	0.0322056 0.154289	0.0361118 0.154289	0.0457945 0.154289	0.0497007 0.154289	0.0322056 0.158195	0.0361118 0.158195	0.0457945 0.158195	0.0497007 0.158195	
+				0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			}
+		}
+	}
+	sprite sprite_1qd
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 20	0 16	0 4	0 -0	4 20	4 16	4 4	4 7.15256e-007	9 20	9 16	9 4	9 4.76837e-007	10 20	10 16	10 4	10 -0	
+				0.0283532 0.114245	0.0322594 0.114245	0.048764 0.114245	0.0526703 0.114245	0.0283532 0.118151	0.0322594 0.118151	0.048764 0.118151	0.0526703 0.118151	0.0283532 0.134706	0.0322594 0.134706	0.048764 0.134706	0.0526703 0.134706	0.0283532 0.138612	0.0322594 0.138612	0.048764 0.138612	0.0526703 0.138612	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+		anim press sp_colc
+		{
+			1
+			0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	0xcc565656	
+		}
+		visible_on disable
+	}
+	sprite sprite_1ad
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.5 19.5	0.5 15.5	0.499999 5.5	0.5 1.5	4.5 19.5	4.5 15.5	4.5 5.5	4.5 1.5	5.5 19.5	5.5 15.5	5.5 5.5	5.5 1.5	9.5 19.5	9.5 15.5	9.5 5.5	9.5 1.5	
+				0.447307 0.046875	0.451213 0.046875	0.460896 0.046875	0.464802 0.046875	0.447307 0.0507813	0.451213 0.0507813	0.460896 0.0507813	0.464802 0.0507813	0.447307 0.0517578	0.451213 0.0517578	0.460896 0.0517578	0.464802 0.0517578	0.447307 0.0556641	0.451213 0.0556641	0.460896 0.0556641	0.464802 0.0556641	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_posc
+		{
+			1 
+			0.5 19	0.500001 15	0.5 5	0.5 1	4.5 19	4.5 15	4.5 5	4.5 0.999999	5.5 19	5.5 15	5.5 5	5.5 1	9.5 19	9.5 15	9.5 5	9.5 1	
+		}
+		anim press sp_posc
+		{
+			1 
+			1.18756 17.6249	1.18756 14.236	1.18756 5.76395	1.18756 2.37511	4.5764 17.6249	4.5764 14.236	4.57639 5.76395	4.57639 2.37511	5.4236 17.6249	5.4236 14.236	5.4236 5.76395	5.4236 2.37511	8.81244 17.6249	8.81244 14.236	8.81244 5.76395	8.81244 2.37511	
+		}
+		anim disable sp_posc_colc
+		{
+			1 1
+			0.5 19	0.5 15	0.5 5	0.5 1	4.5 19	4.5 15	4.5 5	4.5 0.999999	5.5 19	5.5 15	5.5 5	5.5 1	9.5 19	9.5 15	9.5 5	9.5 1	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+	}
+}
+
