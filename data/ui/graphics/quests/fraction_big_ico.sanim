@@ -1,0 +1,37 @@
+﻿source_file  Y:/art/source/ui/graphics/quests/quests.ma
+//by sergey_mitryaev
+//at Fri Aug 31 11:54:52 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				0 -0	132 -0	0 100	132 100	
+				-1.49012e-008 0	1 0	-1.49012e-008 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
