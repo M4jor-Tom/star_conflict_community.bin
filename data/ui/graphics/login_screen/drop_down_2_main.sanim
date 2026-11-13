@@ -1,0 +1,95 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Fri Jan 10 15:47:20 2014
+
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object drop_down_btn
+	{
+		defaults
+		{
+			pos 0 22.9196
+			opacity 255
+			color 0xffffffff
+			size 390 22
+			effect "ui\graphics\login_screen\drop_down_btn"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 48
+			opacity 255
+			color 0xffffffff
+			size 20 22
+			effect "ui\graphics\login_screen\drop_down_list"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object drop_down_input
+	{
+		defaults
+		{
+			pos 0 22.9196
+			opacity 255
+			color 0xffffffff
+			size 20 22
+			effect "ui\graphics\login_screen\drop_down_input"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 290 48
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 390 22
+			effect "ui\graphics\option\chek_box_text"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
