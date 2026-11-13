@@ -1,0 +1,407 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Mon Sep 08 15:00:31 2014
+
+
+animations 4
+{
+	anim all
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hide_friends
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim points
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hide
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+sprites 14
+{
+	total_vertices 56
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				88.6994 187.911	104.699 187.911	88.6993 203.911	104.699 203.911	
+				0.304688 0.837891	0.335938 0.837891	0.304688 0.869141	0.335938 0.869141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		visible_on hide_friends
+		anim points sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				95.9901 215.063	111.99 215.063	95.99 231.063	111.99 231.063	
+				0.306641 0.873047	0.337891 0.873047	0.306641 0.904297	0.337891 0.904297	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		anim hide_friends sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim points sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				194.102 300.735	210.102 300.735	194.102 316.735	210.102 316.735	
+				0.371094 0.837891	0.402344 0.837891	0.371094 0.869141	0.402344 0.869141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		anim hide_friends sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim points sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				105.276 229.266	121.276 229.266	105.276 245.266	121.276 245.266	
+				0.433594 0.671875	0.464844 0.671875	0.433594 0.703125	0.464844 0.703125	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		visible_on hide_friends
+		visible_on points
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				133.716 269.087	149.716 269.087	133.716 285.087	149.716 285.087	
+				0.46875 0.671875	0.5 0.671875	0.46875 0.703125	0.5 0.703125	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		visible_on hide_friends
+		visible_on points
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg5
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				323.05 272.285	339.05 272.285	323.05 288.285	339.05 288.285	
+				0.501953 0.671875	0.533203 0.671875	0.501953 0.703125	0.533203 0.703125	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		visible_on hide_friends
+		visible_on points
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				338.997 67.7891	354.997 67.7891	338.997 83.7891	354.997 83.7891	
+				0.533203 0.671875	0.564453 0.671875	0.533203 0.703125	0.564453 0.703125	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		visible_on hide_friends
+		visible_on points
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg7
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				135.301 59.0621	151.301 59.0621	135.301 75.0621	151.301 75.0621	
+				0.371094 0.837891	0.402344 0.837891	0.371094 0.869141	0.402344 0.869141	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		anim hide_friends sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim points sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				346.006 248.191	362.005 248.191	346.005 264.191	362.005 264.191	
+				0.40625 0.873047	0.4375 0.873047	0.40625 0.904297	0.4375 0.904297	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		anim hide_friends sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim points sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg9
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				102.351 171.865	102.351 187.865	86.3511 171.865	86.351 187.865	
+				0.339844 0.873047	0.371094 0.873047	0.339844 0.904297	0.371094 0.904297	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		visible_on hide_friends
+		anim points sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg33
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				85.3954 150.255	101.395 150.255	85.3954 166.255	101.395 166.255	
+				0.566406 0.673828	0.597656 0.673828	0.566406 0.705078	0.597656 0.705078	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		visible_on hide_friends
+		visible_on points
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg82
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				346.006 248.191	362.005 248.191	346.005 264.191	362.005 264.191	
+				0.40625 0.873047	0.4375 0.873047	0.40625 0.904297	0.4375 0.904297	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		anim hide_friends sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim points sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg81
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				365.887 201.659	381.887 201.659	365.887 217.659	381.887 217.659	
+				0.601526 0.671911	0.632776 0.671839	0.601599 0.703161	0.632849 0.703089	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		visible_on hide_friends
+		visible_on points
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite bg123
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices
+			{
+				127.697 276.206	117.798 266.307	139.011 264.892	129.112 254.993	
+				0.304688 0.671875	0.332031 0.671875	0.304688 0.703125	0.332031 0.703125	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on all
+		visible_on hide_friends
+		visible_on points
+		anim hide sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+}
+
