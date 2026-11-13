@@ -1,0 +1,124 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Tue Mar 17 18:46:58 2015
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 0.5
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self88
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite over32
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-1 -1	3 -1	36.9957 -1	40.9957 -1	-1 3	3 3	36.9957 3	40.9957 3	-1 37	3 37	37.0043 37	41.0043 37	-1 41	3 41	37.0043 41	41.0043 41	
+				0.0615234 0.647461	0.0654297 0.647461	0.0751953 0.647461	0.0791016 0.647461	0.0615234 0.651367	0.0654297 0.651367	0.0751953 0.651367	0.0791016 0.651367	0.0615234 0.661133	0.0654297 0.661133	0.0751953 0.661133	0.0791016 0.661133	0.0615234 0.665039	0.0654297 0.665039	0.0751953 0.665039	0.0791016 0.665039	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	sprite spr52
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				3 3	37 3	3 37	37 37	
+				0.265625 0.324219	0.398438 0.324219	0.265625 0.457031	0.398438 0.457031	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x52ffffff	0x52ffffff	0x52ffffff	0x52ffffff	
+		}
+	}
+	sprite over33
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 1	10 1	29.9827 1	39.9827 1	0 10	10 10	29.9827 10	39.9827 10	0 30	10 30	29.9827 30	39.9827 30	0 40	10 40	29.9827 40	39.9827 40	
+				0.073449 0.00194174	0.0798425 0.00194174	0.113756 0.00194174	0.12015 0.00194174	0.073449 0.0088253	0.0798425 0.0088253	0.113756 0.0088253	0.12015 0.0088253	0.073449 0.042606	0.0798425 0.042606	0.113756 0.042606	0.12015 0.042606	0.073449 0.0493029	0.0798425 0.0493029	0.113756 0.0493029	0.12015 0.0493029	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	0x9a5d08	
+		}
+		visible_on press
+		visible_on disable
+	}
+}
+
