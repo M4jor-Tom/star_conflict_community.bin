@@ -1,0 +1,150 @@
+﻿source_file  Y:/art/source/ui/graphics/equip/equip.ma
+//by sergey_mitryaev
+//at Mon Feb 13 17:37:00 2012
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim sel_inactiv
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 87 65
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 1.133 0.565025
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip\prod_icon"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object fraction
+	{
+		defaults
+		{
+			pos 65.8999 0.762582
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_fraction"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object noskills
+	{
+		defaults
+		{
+			pos 65.8999 42.8104
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_icon_noskills"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 87 65
+			effect "ui\graphics\equip\grid_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object over
+	{
+		defaults
+		{
+			pos 4.41343 -0
+			opacity 255
+			color 0xffffffff
+			size 87 65
+			effect "ui\graphics\equip\line_upd_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+	object fraction2
+	{
+		defaults
+		{
+			pos 66.0619 21.6562
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\shop\prod_fraction"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on select
+		visible_on inactive
+		visible_on sel_inactiv
+	}
+}
+
