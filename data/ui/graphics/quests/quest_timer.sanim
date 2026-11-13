@@ -1,0 +1,57 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Tue Jun 18 15:41:27 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xfff30000
+			size 100 18
+			effect ""
+			alignment "RM"
+			sampleText "3ч.15.мин"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/item_icon.tif"
+			vertices
+			{
+				101.409 1.66987	116.409 1.66987	101.409 19.6699	116.409 19.6699	
+				0.719238 0.192383	0.733887 0.192383	0.719238 0.209961	0.733887 0.209961	
+				0xffff0300	0xffff0300	0xffff0300	0xffff0300	
+			}
+		}
+		visible_on idle
+	}
+}
+
