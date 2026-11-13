@@ -1,0 +1,278 @@
+﻿source_file "Y:/art/source/ui/graphics/daily_gift/daily_gift.ma"
+//by sergey_mitryaev
+//at Thu Jan 22 17:24:40 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 17
+
+objects 12
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 460
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 180.405 2
+			opacity 255
+			color 0xffff9100
+			size 600 30
+			effect ""
+			alignment "CM"
+			sampleText "Плата  за верность"
+			font "Medium_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn_close
+	{
+		defaults
+		{
+			pos 340 428
+			opacity 255
+			color 0xffffffff
+			size 270 25
+			effect "ui\graphics\login_screen\btn_steam"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 931 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 41 36
+			opacity 255
+			color 0xffff9100
+			size 600 30
+			effect ""
+			alignment "LM"
+			sampleText "Плата  за верность"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 326 36
+			opacity 255
+			color 0xffff9100
+			size 600 30
+			effect ""
+			alignment "RM"
+			sampleText "Плата  за верность"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object description_1
+	{
+		defaults
+		{
+			pos 180.405 355
+			opacity 255
+			color 0xffffffff
+			size 600 30
+			effect ""
+			alignment "CM"
+			sampleText "Плата  за верность"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object description_2
+	{
+		defaults
+		{
+			pos 180.405 382
+			opacity 255
+			color 0xffffffff
+			size 600 30
+			effect ""
+			alignment "CT"
+			sampleText "Плата  за верность wefew  gw4g wheh 3 j5j 54j 45"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 280 275
+			opacity 255
+			color 0xffffffff
+			size 93 93
+			effect "ui\graphics\daily_gift\daily_gift_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 352 275
+			opacity 255
+			color 0xffffffff
+			size 93 93
+			effect "ui\graphics\daily_gift\daily_gift_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object description_3
+	{
+		defaults
+		{
+			pos 180.405 425
+			opacity 255
+			color 0xffffffff
+			size 600 30
+			effect ""
+			alignment "CM"
+			sampleText "Плата  за верность wefew  gw4g wheh 3 j5j 54j 45"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object btn_sale
+	{
+		defaults
+		{
+			pos 340 419
+			opacity 255
+			color 0xffffffff
+			size 270 25
+			effect "ui\graphics\login_screen\btn_sale"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 32
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				13 -0	19 -0	944 -0	950 -0	13 6	19 6	944 6	950 6	13 453	19 453	944 453	950 453	13 459	19 459	944 459	950 459	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				19.748 33	943.748 33	19.748 335	943.748 335	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/daily_gift.tif"
+			blend color_add
+			vertices_nc
+			{
+				-31.4513 -8.3726	994.947 -8.3726	-31.4513 42.3726	994.947 42.3726	
+				0.308857 0.949169	0.363018 0.949169	0.308857 0.973053	0.363018 0.973053	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNamewdf
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/daily_gift.tif"
+			blend color_add
+			vertices_nc
+			{
+				-40 33.3871	302.542 33.3871	-40 70.6129	302.542 70.6129	
+				0.308857 0.949169	0.363018 0.949169	0.308857 0.973053	0.363018 0.973053	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNamewdfwwvv
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/daily_gift.tif"
+			blend color_add
+			vertices_nc
+			{
+				624.458 33.3871	1003 33.3871	624.458 70.6129	1003 70.6129	
+				0.308857 0.949169	0.363018 0.949169	0.308857 0.973053	0.363018 0.973053	
+			}
+		}
+		visible_on idle
+	}
+}
+
