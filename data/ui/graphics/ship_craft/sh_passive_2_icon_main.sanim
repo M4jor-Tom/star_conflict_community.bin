@@ -1,0 +1,133 @@
+﻿source_file "Y:/art/source/ui/graphics/ship_craft/ship_craft.ma"
+//by sergey_mitryaev
+//at Tue Jun 03 15:24:20 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\ship_craft\sh_passive_icon_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title9
+	{
+		defaults
+		{
+			pos -2 28
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "RB"
+			sampleText "7/9"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object title10
+	{
+		defaults
+		{
+			pos 54 29
+			opacity 255
+			color 0xffff9a00
+			size 100 20
+			effect ""
+			alignment "LB"
+			sampleText "color"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 36
+
+	sprite sp28
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	44 -0	50 -0	0 6	6 6	44 6	50 6	0 44	6 44	44 44	50 44	0 50	6 50	44 50	50 50	
+				0.34969 0.655273	0.355549 0.655273	0.381836 0.655273	0.387695 0.655273	0.34969 0.661133	0.355549 0.661133	0.381836 0.661133	0.387695 0.661133	0.34969 0.687506	0.355549 0.687506	0.381836 0.687506	0.387695 0.687506	0.34969 0.693365	0.355549 0.693365	0.381836 0.693365	0.387695 0.693365	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	44 -0	50 -0	0 6	6 6	44 6	50 6	0 44	6 44	44 44	50 44	0 50	6 50	44 50	50 50	
+				0.00198594 0.0634711	0.00784531 0.0634711	0.0448891 0.0634711	0.0507484 0.0634711	0.00198594 0.0693305	0.00784531 0.0693305	0.0448891 0.0693305	0.0507484 0.0693305	0.00198594 0.106451	0.00784531 0.106451	0.0448891 0.106451	0.0507484 0.106451	0.00198594 0.11231	0.00784531 0.11231	0.0448891 0.11231	0.0507484 0.11231	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				5 5	45 5	5 45	45 45	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
