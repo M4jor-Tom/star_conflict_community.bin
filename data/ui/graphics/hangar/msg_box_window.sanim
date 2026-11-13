@@ -1,0 +1,219 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Mon Mar 03 11:40:41 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 9
+{
+	object title
+	{
+		defaults
+		{
+			pos 10.3215 76
+			opacity 255
+			color 0xffff9a00
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Conection problen"
+			font "VerySmall"
+		}
+		anim idle obj_pos
+		{
+			2 
+			10.3215 76
+			10.3215 -0
+		}
+	}
+	object text
+	{
+		defaults
+		{
+			pos 10.3215 103.763
+			opacity 255
+			color 0xffffffff
+			size 530 190
+			effect ""
+			alignment "LT"
+			sampleText "Conection problen Text"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			10.3215 103.763
+			10.3215 23.4399
+		}
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 231 153.977
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			231 153.977
+			231 220.977
+		}
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 390.445 153.977
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			390.445 153.977
+			390.445 220.977
+		}
+	}
+	object dist_max
+	{
+		defaults
+		{
+			pos 0 79.9495
+			opacity 255
+			color 0xffffffff
+			size 10 250
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			0 79.9495
+			0 -0
+		}
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 10.3215 103.763
+			opacity 255
+			color 0xffffffff
+			size 10 40
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			10.3215 103.763
+			10.3215 23.4399
+		}
+	}
+	object button_3
+	{
+		defaults
+		{
+			pos 70.3094 153.977
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn6"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			70.3094 153.977
+			70.3094 220.977
+		}
+	}
+	object button_4
+	{
+		defaults
+		{
+			pos 279.445 153.977
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn6"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			279.445 153.977
+			279.445 220.977
+		}
+	}
+	object button_5
+	{
+		defaults
+		{
+			pos 71.6906 153.977
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			71.6906 153.977
+			71.6906 220.977
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 72	4 72	547 72	555 72	-4 98	4 98	547 98	555 98	-4 176.14	4 176.14	547 176.14	555 176.14	-4 185.86	4 185.86	547 185.86	555 185.86	
+				0.0585937 0.695308	0.0664063 0.695308	0.0742188 0.695308	0.0820313 0.695308	0.0585937 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585937 0.72168	0.0664063 0.72168	0.0742188 0.72168	0.0820313 0.72168	0.0585937 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		anim idle sp_pos
+		{
+			2 
+			-4 72	4 72	547 72	555 72	-4 98	4 98	547 98	555 98	-4 176.14	4 176.14	547 176.14	555 176.14	-4 185.86	4 185.86	547 185.86	555 185.86	
+			-4 -4	4 -4	547 -4	555 -4	-4 22	4 22	547 22	555 22	-4 243.14	4 243.14	547 243.14	555 243.14	-4 252.86	4 252.86	547 252.86	555 252.86	
+		}
+	}
+}
+
