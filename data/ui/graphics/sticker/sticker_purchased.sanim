@@ -1,0 +1,49 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Wed Jun 26 13:37:36 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos 0.496374 -0
+			opacity 255
+			color 0xffffffff
+			size 83 20
+			effect ""
+			alignment "RM"
+			sampleText "ecnfyjdkty"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 85 20
+			effect ""
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
