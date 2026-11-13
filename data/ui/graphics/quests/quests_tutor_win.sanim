@@ -1,0 +1,477 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Mon Nov 17 15:40:35 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 30
+
+objects 17
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 780 360
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn_1
+	{
+		defaults
+		{
+			pos 619 331
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 760 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn_2
+	{
+		defaults
+		{
+			pos 458 331
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\button\button_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 197.161 0.494095
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect ""
+			alignment "LM"
+			sampleText "Первый бой"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos 197.161 41
+			opacity 255
+			color 0xffcccccc
+			size 570 100
+			effect ""
+			alignment "LT"
+			sampleText "saf af a |awff f|afff|awfwf|af af |fwfwf|sdfsf|vve"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_4
+	{
+		defaults
+		{
+			pos 197.161 169.506
+			opacity 255
+			color 0xffcccccc
+			size 570 66
+			effect ""
+			alignment "CM"
+			sampleText "fef gew|g weg gweg |weghw geqw|gweg  egg eg"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_4_color
+	{
+		defaults
+		{
+			pos 197.161 214
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "text_4_color"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object award
+	{
+		defaults
+		{
+			pos 191 273
+			opacity 255
+			color 0xffffffff
+			size 580 54
+			effect "ui\graphics\quests\quests_tutor_award"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 419 50
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_5
+	{
+		defaults
+		{
+			pos 196 249
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Награды"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_task
+	{
+		defaults
+		{
+			pos 197.161 145
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "text_4_color"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_m
+	{
+		defaults
+		{
+			pos 10 302
+			opacity 255
+			color 0xffffffff
+			size 170 50
+			effect ""
+			alignment "LM"
+			sampleText "Центкрион|Dfkthbjy|wwvwyp"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_color_1
+	{
+		defaults
+		{
+			pos 398 249
+			opacity 255
+			color 0xffff9a00
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "COLOR"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object hire_btn
+	{
+		defaults
+		{
+			pos 659 170.527
+			opacity 255
+			color 0xffffffff
+			size 102 68
+			effect "ui\graphics\quests\quest_hire_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_12
+	{
+		defaults
+		{
+			pos 197.161 169.506
+			opacity 255
+			color 0xffcccccc
+			size 450 66
+			effect ""
+			alignment "LT"
+			sampleText "fef gew|g weg gweg |weghw geqw|gweg  egg eg"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_color_2
+	{
+		defaults
+		{
+			pos 198 213
+			opacity 255
+			color 0xffff9a00
+			size 200 30
+			effect ""
+			alignment "LM"
+			sampleText "COLOR"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 13
+{
+	total_vertices 136
+
+	sprite |bg
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	774 -0	780 -0	0 6	6 6	774 6	780 6	0 352	6 352	774 352	780 352	0 360	6 360	774 360	780 360	
+				0.325228 0.000971019	0.331087 0.000971019	0.370117 0.000971019	0.375977 0.000971019	0.325228 0.00683039	0.331087 0.00683039	0.370117 0.00683039	0.375977 0.00683039	0.325228 0.0439453	0.331087 0.0439453	0.370117 0.0439453	0.375977 0.0439453	0.325228 0.0517578	0.331087 0.0517578	0.370117 0.0517578	0.375977 0.0517578	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				4 4	184 4	4 306	184 306	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+	sprite bg21
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				4 300	10 300	178 300	184 300	4 306	10 306	178 306	184 306	4 348	10 348	178 348	184 348	4 356	10 356	178 356	184 356	
+				0.224626 0.0107422	0.230485 0.0107422	0.259766 0.0107422	0.265625 0.0107422	0.224626 0.0166016	0.230485 0.0166016	0.259766 0.0166016	0.265625 0.0166016	0.224626 0.0361328	0.230485 0.0361328	0.259766 0.0361328	0.265625 0.0361328	0.224626 0.0439453	0.230485 0.0439453	0.259766 0.0439453	0.265625 0.0439453	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2hth
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				341 1	347 1	656 1	662 1	341 7	347 7	656 7	662 7	341 23	347 23	656 23	662 23	341 31	347 31	656 31	662 31	
+				0.224609 0.753906	0.248047 0.753906	0.609375 0.753906	0.669922 0.753906	0.224609 0.759766	0.248047 0.759766	0.609375 0.759766	0.669922 0.759766	0.224609 0.775393	0.248047 0.775393	0.609375 0.775393	0.669922 0.775393	0.224609 0.783206	0.248047 0.783206	0.609375 0.783206	0.669922 0.783206	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2gh
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				185 1	191 1	335 1	341 1	185 7	191 7	335 7	341 7	185 23	191 23	335 23	341 23	185 31	191 31	335 31	341 31	
+				0.00195313 0.753906	0.0078125 0.753906	0.213867 0.753906	0.219727 0.753906	0.00195313 0.759766	0.0078125 0.759766	0.213867 0.759766	0.219727 0.759766	0.00195313 0.775393	0.0078125 0.775393	0.213867 0.775393	0.219727 0.775393	0.00195313 0.783206	0.0078125 0.783206	0.213867 0.783206	0.219727 0.783206	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2et
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				597 1	603 1	774 1	780 1	597 7	603 7	774 7	780 7	597 23	603 23	774 23	780 23	597 31	603 31	774 31	780 31	
+				0.224609 0.753906	0.1875 0.753906	0.0078125 0.753906	0.00195313 0.753906	0.224609 0.759766	0.1875 0.759766	0.0078125 0.759766	0.00195313 0.759766	0.224609 0.775393	0.1875 0.775393	0.0078125 0.775393	0.00195313 0.775393	0.224609 0.783206	0.1875 0.783206	0.0078125 0.783206	0.00195313 0.783206	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2zvv
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				195 273	201 273	762 273	768 273	195 279	201 279	762 279	768 279	195 320.955	201 320.955	762 320.955	768 320.955	195 328.955	201 328.955	762 328.955	768 328.955	
+				0.223649 0.00292695	0.229509 0.00292695	0.266602 0.00292695	0.272461 0.00292695	0.223649 0.00878632	0.229509 0.00878632	0.266602 0.00878632	0.272461 0.00878632	0.223649 0.0429688	0.229509 0.0429688	0.266602 0.0429688	0.272461 0.0429688	0.223649 0.0507813	0.229509 0.0507813	0.266602 0.0507813	0.272461 0.0507813	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2ad
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				195 167.506	201 167.506	762 167.506	768 167.506	195 173.506	201 173.506	762 173.506	768 173.506	195 238.506	201 238.506	762 238.506	768 238.506	195 246.506	201 246.506	762 246.506	768 246.506	
+				0.27443 0.00195038	0.28029 0.00195038	0.317383 0.00195038	0.323242 0.00195038	0.27443 0.00780976	0.28029 0.00780976	0.317383 0.00780976	0.323242 0.00780976	0.27443 0.0429688	0.28029 0.0429688	0.317383 0.0429688	0.323242 0.0429688	0.27443 0.0507813	0.28029 0.0507813	0.317383 0.0507813	0.323242 0.0507813	
+				0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	0xb3b3b3b3	
+			}
+		}
+		visible_on idle
+	}
+	sprite dffsg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				-8.14084 353	185 353	-8.14084 357	185 357	
+				0.108398 0.78418	0.00976563 0.78418	0.108398 0.788086	0.00976563 0.788086	
+			}
+		}
+		visible_on idle
+	}
+	sprite dffhk
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				475.859 353	185 353	475.859 357	185 357	
+				0.108398 0.78418	0.00976563 0.78418	0.108398 0.788086	0.00976563 0.788086	
+			}
+		}
+		visible_on idle
+	}
+	sprite dffhkt77
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				474.859 271.089	195 271.089	474.859 275.089	195 275.089	
+				0.108398 0.78418	0.00976563 0.78418	0.108398 0.788086	0.00976563 0.788086	
+			}
+		}
+		visible_on idle
+	}
+	sprite dffhkscv
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				474.859 325.045	195 325.045	474.859 329.045	195 329.045	
+				0.108398 0.78418	0.00976563 0.78418	0.108398 0.788086	0.00976563 0.788086	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices_nc
+			{
+				-8.14084 -0.910545	185 -0.910545	-8.14084 3.08945	185 3.08945	
+				0.108398 0.78418	0.00976563 0.78418	0.108398 0.788086	0.00976563 0.788086	
+			}
+		}
+		visible_on idle
+	}
+}
+
