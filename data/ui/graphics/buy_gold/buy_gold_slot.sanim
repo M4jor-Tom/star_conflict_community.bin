@@ -1,0 +1,195 @@
+﻿source_file  Y:/art/source/ui/graphics/shop/gold_buy.ma
+//by sergey_mitryaev
+//at Mon Jul 09 12:16:44 2012
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 10
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 530 62
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object text_sml
+	{
+		defaults
+		{
+			pos 60.6624 24.4217
+			opacity 255
+			color 0xffffffff
+			size 400 17
+			effect ""
+			alignment "LM"
+			sampleText "Золотых стандартов"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object text_big
+	{
+		defaults
+		{
+			pos 60.6624 11.79
+			opacity 255
+			color 0xffffffff
+			size 400 30
+			effect ""
+			alignment "LB"
+			sampleText "500+100 "
+			font "Medium"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 468 51
+			effect "ui\graphics\buy_gold\buy_gold_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 6.23985 5.06988
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\buy_gold\buy_gold_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object rub
+	{
+		defaults
+		{
+			pos 493.539 24.4217
+			opacity 255
+			color 0xffffffff
+			size 30 17
+			effect ""
+			alignment "LM"
+			sampleText "руб."
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object text_rub
+	{
+		defaults
+		{
+			pos 440.883 11.79
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect ""
+			alignment "RB"
+			sampleText "500"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on select
+	}
+	object text_big_color
+	{
+		defaults
+		{
+			pos 60.6624 11.79
+			opacity 255
+			color 0xffffba00
+			size 20 30
+			effect ""
+			alignment "LB"
+			sampleText "500+100 "
+			font "Medium"
+		}
+		visible_on idle
+		visible_on select
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.401107 -1.33426	3.59889 -1.33426	526.193 -1.33426	530.193 -1.33426	-0.401107 2.66574	3.59889 2.66574	526.193 2.66574	530.193 2.66574	-0.401107 58.0157	3.59889 58.0157	526.193 58.0157	530.193 58.0157	-0.401107 62.0157	3.59889 62.0157	526.193 62.0157	530.193 62.0157	
+				0.00194812 0.114245	0.00585437 0.114245	0.0224393 0.114245	0.0263455 0.114245	0.00194812 0.118151	0.00585437 0.118151	0.0224393 0.118151	0.0263455 0.118151	0.00194812 0.134786	0.00585437 0.134786	0.0224393 0.134786	0.0263455 0.134786	0.00194812 0.138693	0.00585437 0.138693	0.0224393 0.138693	0.0263455 0.138693	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+	sprite sprite_6
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-0.401107 -1.33426	3.59889 -1.33426	526.193 -1.33426	530.193 -1.33426	-0.401107 2.66574	3.59889 2.66574	526.193 2.66574	530.193 2.66574	-0.401107 58.0157	3.59889 58.0157	526.193 58.0157	530.193 58.0157	-0.401107 62.0157	3.59889 62.0157	526.193 62.0157	530.193 62.0157	
+				0.0547712 0.114245	0.0586774 0.114245	0.0752623 0.114245	0.0791685 0.114245	0.0547712 0.118151	0.0586774 0.118151	0.0752623 0.118151	0.0791685 0.118151	0.0547712 0.134786	0.0586774 0.134786	0.0752623 0.134786	0.0791685 0.134786	0.0547712 0.138693	0.0586774 0.138693	0.0752623 0.138693	0.0791685 0.138693	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
