@@ -1,0 +1,242 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Wed Jun 19 12:03:15 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 328
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object mark
+	{
+		defaults
+		{
+			pos 169.011 5.04744
+			opacity 255
+			color 0xffffffff
+			size 34 34
+			effect "ui\graphics\battle_pass\bp_mark"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object mark1
+	{
+		defaults
+		{
+			pos 2.09172 290.447
+			opacity 255
+			color 0xffffffff
+			size 34 34
+			effect "ui\graphics\battle_pass\bp_mark"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object disable
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 328
+			effect "ui\graphics\battle_pass\battle_pass_slot_disable"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 4 228
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect ""
+			alignment "CM"
+			sampleText "ПОРТРЕТ"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+	}
+	object name12
+	{
+		defaults
+		{
+			pos 4 166
+			opacity 204
+			color 0xff83a8cf
+			size 200 40
+			effect ""
+			alignment "CB"
+			sampleText "На 19 боев"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object name13
+	{
+		defaults
+		{
+			pos 43 293
+			opacity 255
+			color 0xffababab
+			size 160 30
+			effect ""
+			alignment "LM"
+			sampleText "Ячейка"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object frame_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 210 328
+			effect "ui\graphics\battle_pass\battle_pass_slot_frame_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object name14
+	{
+		defaults
+		{
+			pos 4 250
+			opacity 255
+			color 0xffd73900
+			size 200 30
+			effect ""
+			alignment "CM"
+			sampleText "Требуется кредитов"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 6
+{
+	total_vertices 36
+
+	sprite objectName355
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				0 -0	209 -0	0 283	209 283	
+				0.00488281 0.373047	0.208984 0.373047	0.00488281 0.649413	0.208984 0.649413	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName356
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices_nc
+			{
+				0 288	10 288	199 288	209 288	0 298	10 298	199 298	209 298	0 318	10 318	199 318	209 318	0 328	10 328	199 328	209 328	
+				0.219727 0.373047	0.229492 0.373047	0.24707 0.373047	0.256836 0.373047	0.219727 0.382813	0.229492 0.382813	0.24707 0.382813	0.256836 0.382813	0.219727 0.401367	0.229492 0.401367	0.24707 0.401367	0.256836 0.401367	0.219727 0.411133	0.229492 0.411133	0.24707 0.411133	0.256836 0.411133	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				4 3	204 3	4 203	204 203	
+				0 0	1 0	0 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+	sprite we112
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				93 208.5	113 208.5	93 225.5	113 225.5	
+				0.964844 0.283203	1.00391 0.283203	0.964844 0.316406	1.00391 0.316406	
+			}
+		}
+		visible_on idle
+	}
+	sprite we113
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				113.5 219.5	113.5 215.5	199 219.5	199 215.5	
+				0.982422 0.263672	0.990234 0.263672	0.982422 0.277344	0.990234 0.277344	
+			}
+		}
+		visible_on idle
+	}
+	sprite we114
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				7.25 219.5	7.25 215.5	92.75 219.5	92.75 215.5	
+				0.982422 0.263672	0.990234 0.263672	0.982422 0.277344	0.990234 0.277344	
+			}
+		}
+		visible_on idle
+	}
+}
+
