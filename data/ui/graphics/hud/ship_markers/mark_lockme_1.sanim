@@ -1,0 +1,298 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Tue Jul 14 15:44:58 2020
+
+base_res 1280 720
+
+animations 10
+{
+	anim lock_me
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim lock_me_shot
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim friend
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim friend_shot
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim agressiv
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim agressiv_shot
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim nlo
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim nlo_shot
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim neutral_shot
+	{
+		mode looped
+		cycle_time 0.3
+	}
+}
+
+total_elements 8
+
+sprites 8
+{
+	total_vertices 32
+
+	sprite enemy_shot
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-0.304795 -0	9.69521 -0	-0.304795 10	9.69521 10	
+				0.282294 0.252049	0.291925 0.252049	0.282294 0.261623	0.291925 0.261623	
+				0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			}
+		}
+		anim lock_me sp_col
+		{
+			6
+			0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			0xccff0000	0xccff0000	0xccff0000	0xccff0000	
+			0x99ff0000	0x99ff0000	0x99ff0000	0x99ff0000	
+			0x66ff0000	0x66ff0000	0x66ff0000	0x66ff0000	
+			0x33ff0000	0x33ff0000	0x33ff0000	0x33ff0000	
+			0xff0000	0xff0000	0xff0000	0xff0000	
+		}
+		anim lock_me_shot sp_col
+		{
+			6
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite fr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	10 -0	0 10	10 10	
+				0.281317 0.242283	0.290948 0.242284	0.281317 0.251857	0.290948 0.251857	
+				0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			}
+		}
+		anim friend sp_col
+		{
+			6
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite fr_sh
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	10 -0	0 10	10 10	
+				0.281317 0.215916	0.290948 0.215916	0.281317 0.22549	0.290948 0.22549	
+				0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			}
+		}
+		anim friend_shot sp_col
+		{
+			6
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite agr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	10 -0	0 10	10 10	
+				0.281317 0.233494	0.290949 0.233494	0.281317 0.243068	0.290948 0.243068	
+				0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			}
+		}
+		anim agressiv sp_col
+		{
+			6
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite agr_sh
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	10 -0	0 10	10 10	
+				0.281317 0.224705	0.290949 0.224705	0.281317 0.234279	0.290948 0.234279	
+				0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			}
+		}
+		anim agressiv_shot sp_col
+		{
+			6
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite agr_sh4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	10 -0	0 10	10 10	
+				0.282294 0.262791	0.291925 0.262791	0.282294 0.272365	0.291925 0.272365	
+				0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+			}
+		}
+		anim nlo sp_col
+		{
+			5
+			0xffbd25e4	0xffbd25e4	0xffbd25e4	0xffbd25e4	
+			0xe3bd25e4	0xe3bd25e4	0xe3bd25e4	0xe3bd25e4	
+			0x9fbd25e4	0x9fbd25e4	0x9fbd25e4	0x9fbd25e4	
+			0x4bbd25e4	0x4bbd25e4	0x4bbd25e4	0x4bbd25e4	
+			0xbd25e4	0xbd25e4	0xbd25e4	0xbd25e4	
+		}
+		anim nlo_shot sp_col
+		{
+			6
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite nlo4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	10 -0	0 10	10 10	
+				0.293036 0.225682	0.302667 0.225682	0.293036 0.235256	0.302667 0.235256	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim neutral sp_col
+		{
+			12
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xe2ffffff	0xe2ffffff	0xe2ffffff	0xe2ffffff	
+			0xc6ffffff	0xc6ffffff	0xc6ffffff	0xc6ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0x8dffffff	0x8dffffff	0x8dffffff	0x8dffffff	
+			0x71ffffff	0x71ffffff	0x71ffffff	0x71ffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0x38ffffff	0x38ffffff	0x38ffffff	0x38ffffff	
+			0x1cffffff	0x1cffffff	0x1cffffff	0x1cffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite nlo8
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	10 -0	0 10	10 10	
+				0.293036 0.215916	0.302667 0.215916	0.293036 0.22549	0.302667 0.22549	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		anim neutral_shot sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xe2ffffff	0xe2ffffff	0xe2ffffff	0xe2ffffff	
+			0xc6ffffff	0xc6ffffff	0xc6ffffff	0xc6ffffff	
+			0xaaffffff	0xaaffffff	0xaaffffff	0xaaffffff	
+			0x8dffffff	0x8dffffff	0x8dffffff	0x8dffffff	
+			0x71ffffff	0x71ffffff	0x71ffffff	0x71ffffff	
+			0x55ffffff	0x55ffffff	0x55ffffff	0x55ffffff	
+			0x38ffffff	0x38ffffff	0x38ffffff	0x38ffffff	
+			0x1cffffff	0x1cffffff	0x1cffffff	0x1cffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
