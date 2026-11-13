@@ -1,0 +1,64 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Mon Jun 17 17:47:09 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 950 440
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 925 5
+			opacity 255
+			color 0xffffffff
+			size 20 430
+			effect "ui\graphics\scroll_2\scroll_2_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object descript
+	{
+		defaults
+		{
+			pos 13 6
+			opacity 255
+			color 0xffffffff
+			size 900 430
+			effect ""
+			alignment "LT"
+			sampleText "eeeefe"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
