@@ -1,0 +1,58 @@
+﻿source_file "Y:/art/source/ui/graphics/loot_scan/loot_scan.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 15:35:21 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object text
+	{
+		defaults
+		{
+			pos 1.36652 0.667483
+			opacity 255
+			color 0xffffffff
+			size 600 30
+			effect ""
+			alignment "CM"
+			sampleText "Поиск ценностей..."
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-31.8868 1.99162	633.363 1.99162	-31.8868 36.5617	633.363 36.5617	
+				0.423489 0.68814	0.449558 0.68814	0.423489 0.712251	0.449558 0.712251	
+				0x3b3b3b3b	0x3b3b3b3b	0x3b3b3b3b	0x3b3b3b3b	
+			}
+		}
+		visible_on idle
+	}
+}
+
