@@ -1,0 +1,45 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_4.ma"
+//by Sergey_Mitryaev
+//at Wed Dec 06 17:06:14 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico_ship
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-9.0512 42.349	188.949 42.349	-9.0512 176.349	188.949 176.349	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
