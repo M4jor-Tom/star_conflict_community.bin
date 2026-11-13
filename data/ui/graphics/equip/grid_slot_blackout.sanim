@@ -1,0 +1,38 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Tue Jul 29 12:21:59 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	87 -0	0 65	87 65	
+				0.234726 0.00649261	0.263321 0.00649261	0.234726 0.0481948	0.263321 0.0481948	
+				0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
