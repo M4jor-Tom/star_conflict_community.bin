@@ -1,0 +1,81 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Thu Nov 15 14:27:21 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object slider
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\option\option_slider"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slider_tick_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 21 21
+			effect "ui\graphics\option\option_slider_tick_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 385 22
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				223.436 -0.0234537	229.436 -0.0234537	268.458 -0.0234537	274.458 -0.0234537	223.436 5.97655	229.436 5.97655	268.458 5.97655	274.458 5.97655	223.436 18.7603	229.436 18.7603	268.458 18.7603	274.458 18.7603	223.436 24.7603	229.436 24.7603	268.458 24.7603	274.458 24.7603	
+				0.00198111 0.160147	0.00784048 0.160147	0.0204857 0.160147	0.026345 0.160147	0.00198111 0.166006	0.00784048 0.166006	0.0204857 0.166006	0.026345 0.166006	0.00198111 0.178747	0.00784048 0.178747	0.0204857 0.178747	0.026345 0.178747	0.00198111 0.184606	0.00784048 0.184606	0.0204857 0.184606	0.026345 0.184606	
+			}
+		}
+		visible_on idle
+	}
+}
+
