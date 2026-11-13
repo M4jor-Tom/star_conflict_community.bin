@@ -1,0 +1,59 @@
+﻿source_file  Y:/art/source/ui/graphics/option/option.ma
+//by sergey_mitryaev
+//at Wed Feb 01 18:46:08 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 700 390
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 12.8188 10.0856
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 12.8188 35.9804
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_3"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
