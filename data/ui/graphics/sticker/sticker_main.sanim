@@ -1,0 +1,228 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Thu Dec 06 15:08:23 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 270 584
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sticker_list
+	{
+		defaults
+		{
+			pos 0 105
+			opacity 255
+			color 0xffffffff
+			size 283 441
+			effect "ui\graphics\sticker\sticker_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load_modules
+	{
+		defaults
+		{
+			pos 88.4881 250.531
+			opacity 255
+			color 0xff88b5ff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 7.88798 45.0355
+			opacity 255
+			color 0xffffffff
+			size 250 21
+			effect ""
+			alignment "LT"
+			sampleText "Установить эмблему:"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object drop_down
+	{
+		defaults
+		{
+			pos 7.77871 77.7578
+			opacity 255
+			color 0xffffffff
+			size 283 83
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object sort_btn1
+	{
+		defaults
+		{
+			pos 107.455 551.434
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object btn1
+	{
+		defaults
+		{
+			pos 1 2
+			opacity 255
+			color 0xffffffff
+			size 111 29
+			effect "ui\graphics\shop\buy_btn4"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn2
+	{
+		defaults
+		{
+			pos 112 2
+			opacity 255
+			color 0xffffffff
+			size 111 29
+			effect "ui\graphics\shop\buy_btn5"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 248.972 2
+			opacity 255
+			color 0xffffffff
+			size 111 29
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 56
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-1.31602 -0	4.68398 -0	264 -0	270 -0	-1.31602 6	4.68398 6	264 6	270 6	-1.31602 573.574	4.68398 573.574	264 573.574	270 573.574	-1.31602 579.574	4.68398 579.574	264 579.574	270 579.574	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				7.59029 105.252	13.5903 105.252	237.675 105.252	243.675 105.252	7.59029 111.252	13.5903 111.252	237.675 111.252	243.675 111.252	7.59029 535.851	13.5903 535.851	237.675 535.851	243.675 535.851	7.59029 541.851	13.5903 541.851	237.675 541.851	243.675 541.851	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2615
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				246.774 105.252	252.774 105.252	259.282 105.252	265.282 105.252	246.774 111.252	252.774 111.252	259.282 111.252	265.282 111.252	246.774 535.851	252.774 535.851	259.282 535.851	265.282 535.851	246.774 541.851	252.774 541.851	259.282 541.851	265.282 541.851	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+	}
+	sprite spac
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 32.6822	269.059 32.6822	0 34.6822	269.059 34.6822	
+				0.07911 0.151495	0.0791099 0.145156	0.0771568 0.151495	0.0771568 0.145156	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite spac1
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 547	268.972 547	0 549	268.972 549	
+				0.0791029 0.151529	0.0791029 0.146709	0.0771498 0.151529	0.0771498 0.146709	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
