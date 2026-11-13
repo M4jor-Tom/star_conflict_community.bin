@@ -1,0 +1,45 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_2.ma"
+//by Sergey_Mitryaev
+//at Wed Feb 21 15:36:55 2018
+
+base_res 1920 1080
+
+animations 2
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 0.205581	30 0.205581	0 30	30 30	
+				0.433594 0.324219	0.447266 0.324219	0.433594 0.34375	0.447266 0.34375	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on friend
+		visible_on enemy
+	}
+}
+
