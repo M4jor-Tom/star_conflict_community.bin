@@ -1,0 +1,236 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race_4.ma"
+//by sergey_mitryaev
+//at Mon Dec 04 17:15:33 2017
+
+base_res 1280 720
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 1
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 3
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 4
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 70 40
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+}
+
+sprites 8
+{
+	total_vertices 32
+
+	sprite que288
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				9.48067 -1.62241	31.2803 9.9899	0.958539 11.0593	19.5026 25.3731	
+				0.916838 0.241726	0.940323 0.252731	0.911969 0.269935	0.933057 0.28767	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+	sprite que290
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				30.4431 12.2676	46.2292 28.9499	19.081 26.681	31.75 39.6229	
+				0.940368 0.25774	0.959446 0.281328	0.933253 0.29064	0.948452 0.308728	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+	sprite que292
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				38.3797 56.0538	56.3495 49.4689	38.5559 74.2994	64.1098 76.5505	
+				0.9573 0.336079	0.972614 0.314649	0.962035 0.370436	0.98672 0.361889	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+	sprite que294
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				45.0446 29.2172	57.7128 47.4466	30.3444 40.3017	39.331 55.8067	
+				0.957758 0.282189	0.97428 0.310259	0.946658 0.310477	0.959022 0.335247	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+	sprite que295
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				32.2737 7.48778	49.6869 27.6278	15.8266 28.4099	28.8008 41.6568	
+				0.956464 0.376675	0.977944 0.405976	0.946178 0.424409	0.961742 0.44292	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		anim 2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on 3
+		visible_on 4
+	}
+	sprite que293
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				35.4773 56.9245	57.6072 48.1145	41.2648 79.427	67 76.5505	
+				0.945659 0.46929	0.964342 0.441576	0.956757 0.508873	0.980328 0.490555	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		visible_on 3
+		anim 4 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que291
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				49.3015 27.3789	60.5185 47.3498	27.1517 39.818	35.1708 58.7091	
+				0.932488 0.440525	0.948076 0.47261	0.914695 0.4751	0.926994 0.506748	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on 1
+		visible_on 2
+		anim 3 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on 4
+	}
+	sprite que289
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				9.99923 -4.83747	34.1843 8.43422	-3.8122 10.8519	17.9469 27.551	
+				0.920064 0.380855	0.946216 0.393798	0.910956 0.41739	0.935676 0.438019	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim 1 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on 2
+		visible_on 3
+		visible_on 4
+	}
+}
+
