@@ -1,0 +1,206 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Tue Oct 29 18:10:27 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 13
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 59 20.3356
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object friend
+	{
+		defaults
+		{
+			pos 85.4027 -0
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "Наши"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object enemy
+	{
+		defaults
+		{
+			pos 264.114 -0
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "LM"
+			sampleText "Наши"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object enemy_vol
+	{
+		defaults
+		{
+			pos 235.537 -0
+			opacity 255
+			color 0xffffffff
+			size 40 20
+			effect ""
+			alignment "LM"
+			sampleText "99"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object friend_vol
+	{
+		defaults
+		{
+			pos 172.134 -0
+			opacity 255
+			color 0xffffffff
+			size 40 20
+			effect ""
+			alignment "RM"
+			sampleText "99"
+			font "VerySmall_outl2"
+		}
+		visible_on idle
+	}
+	object indicator_1
+	{
+		defaults
+		{
+			pos 214 4.25503
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_indicator"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 111 20.3356
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 163.584 20.3356
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 237 20.3356
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 288.973 20.3356
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object slot_6
+	{
+		defaults
+		{
+			pos 341 20.3356
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_slot"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object indicator_2
+	{
+		defaults
+		{
+			pos 214 22.0268
+			opacity 255
+			color 0xffffffff
+			size 50 30
+			effect "ui\graphics\hud\ratio\ratio_indicator"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 54
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
