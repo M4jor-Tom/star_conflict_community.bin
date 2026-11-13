@@ -1,0 +1,154 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Tue Jul 01 11:57:02 2014
+
+
+animations 6
+{
+	anim idle_l
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_l
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press_l
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_r
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_r
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press_r
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self28
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect ""
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle_l
+		visible_on over_l
+		visible_on press_l
+		visible_on idle_r
+		visible_on over_r
+		visible_on press_r
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite enemy16
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	16 -0	0 16	16 16	
+				0.485256 0.00299686	0.485256 0.0184875	0.469823 0.00299686	0.469823 0.0184875	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle_l
+		anim over_l sp_posc
+		{
+			1 
+			-1.1142 -1.1142	17.1142 -1.1142	-1.1142 17.1142	17.1142 17.1142	
+		}
+		anim press_l sp_posc
+		{
+			1 
+			1.01292 1.01292	14.9871 1.01292	1.01292 14.9871	14.9871 14.9871	
+		}
+		anim idle_r sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim over_r sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim press_r sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite enemy17
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	16 -0	0 16	16 16	
+				0.485256 0.0184875	0.485256 0.00299686	0.469823 0.0184875	0.469823 0.00299686	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle_l
+		anim over_l sp_posc
+		{
+			1 
+			-1.1142 -1.1142	17.1142 -1.1142	-1.1142 17.1142	17.1142 17.1142	
+		}
+		anim press_l sp_posc
+		{
+			1 
+			1.01292 1.01292	14.9871 1.01292	1.01292 14.9871	14.9871 14.9871	
+		}
+		anim idle_r sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim over_r sp_posc_colc
+		{
+			1 1
+			-1.1142 -1.1142	17.1142 -1.1142	-1.1142 17.1142	17.1142 17.1142	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press_r sp_posc_colc
+		{
+			1 1
+			1.01292 1.01292	14.9871 1.01292	1.01292 14.9871	14.9871 14.9871	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
