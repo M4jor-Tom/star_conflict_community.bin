@@ -1,0 +1,165 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_3.ma"
+//by Sergey_Mitryaev
+//at Fri Jul 28 15:51:40 2017
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 284 26
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 443 20
+			effect "ui\graphics\squad_2\squad_line_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 40.7836 0.59486
+			opacity 255
+			color 0xffffffff
+			size 204 24
+			effect ""
+			alignment "LM"
+			sampleText "Wwdffeegegege"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object status
+	{
+		defaults
+		{
+			pos 1.69293 0.79743
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\squad_2\squad_ico_status"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object status_2
+	{
+		defaults
+		{
+			pos 252.606 1.29493
+			opacity 255
+			color 0xffffffff
+			size 26 26
+			effect "ui\graphics\squad_2\squad_ico_status_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object ignor_btn
+	{
+		defaults
+		{
+			pos 250.786 -0.921597
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\squad_2\squad_ignor_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object color_lid
+	{
+		defaults
+		{
+			pos 51.6755 -28.7803
+			opacity 255
+			color 0xfffde299
+			size 204 24
+			effect ""
+			alignment "LM"
+			sampleText "color_lid"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object color_online
+	{
+		defaults
+		{
+			pos 51.3579 -53.5515
+			opacity 255
+			color 0xffbffbba
+			size 204 24
+			effect ""
+			alignment "LM"
+			sampleText "color_lid"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object color_offline
+	{
+		defaults
+		{
+			pos 51.3579 -77.5515
+			opacity 255
+			color 0xff8f8f8f
+			size 204 24
+			effect ""
+			alignment "LM"
+			sampleText "color_lid"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
