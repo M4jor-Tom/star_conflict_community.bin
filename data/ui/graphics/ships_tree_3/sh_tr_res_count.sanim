@@ -1,0 +1,115 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by Sergey
+//at Tue Oct 11 12:45:06 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 3
+{
+	object self172
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 250 44
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 5 10
+			opacity 255
+			color 0xffffffff
+			size 200 23
+			effect ""
+			alignment "RM"
+			sampleText "Живых кристалов 1200"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object res_ico
+	{
+		defaults
+		{
+			pos 202 -3
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite que350
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				196 -0	246 -0	196 44	246 44	
+				0.442383 0.376953	0.491211 0.376953	0.442383 0.462891	0.491211 0.462891	
+			}
+		}
+		visible_on idle
+	}
+	sprite que351
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices_nc
+			{
+				29 -0	196 -0	29 44	196 44	
+				0.298828 0.376953	0.431641 0.376953	0.298828 0.462891	0.431641 0.462891	
+			}
+		}
+		visible_on idle
+	}
+	sprite que352
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-58 -0	29 -0	-90 44	29 44	
+				0.347656 0.376953	0.396484 0.376953	0.347656 0.462891	0.396484 0.462891	
+				0xffffff	0xffffffff	0xffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
