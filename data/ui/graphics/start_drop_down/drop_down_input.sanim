@@ -1,0 +1,135 @@
+﻿source_file  Y:/art/source/ui/graphics/hangar/drop_down.ma
+//by sergey_mitryaev
+//at Wed Sep 12 14:41:01 2012
+
+
+animations 4
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim premium_sel
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim premium_desel
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 201 30
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+		visible_on premium_sel
+		visible_on premium_desel
+	}
+	object select_color
+	{
+		defaults
+		{
+			pos 14 1.60273
+			opacity 255
+			color 0xff6a93b5
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+		visible_on premium_sel
+		visible_on premium_desel
+	}
+	object cursor
+	{
+		defaults
+		{
+			pos 14 1.60273
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on select
+		visible_on deselect
+		visible_on premium_sel
+		visible_on premium_desel
+	}
+	object login
+	{
+		defaults
+		{
+			pos 14 1.60273
+			opacity 255
+			color 0xffffb200
+			size 180 20
+			effect ""
+			alignment "LM"
+			sampleText "Курсант"
+			font "Tiny"
+		}
+		visible_on select
+		visible_on deselect
+		anim premium_sel obj_colc
+		{
+			1
+			0xfffff700
+		}
+		anim premium_desel obj_colc
+		{
+			1
+			0xfffff700
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite m
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1.90735e-006 -0	10 -0	191 -0	201 -0	1.90735e-006 10	10 10	191 10	201 10	1.90735e-006 15.2347	10 15.2347	191 15.2347	201 15.2347	1.90735e-006 25.2347	10 25.2347	191 25.2347	201 25.2347	
+				0.172855 0.00197798	0.18262 0.00197798	0.211895 0.00197798	0.22166 0.00197798	0.172855 0.0117436	0.18262 0.0117436	0.211895 0.0117436	0.22166 0.0117436	0.172855 0.037971	0.18262 0.037971	0.211895 0.037971	0.22166 0.037971	0.172855 0.0477366	0.18262 0.0477366	0.211895 0.0477366	0.22166 0.0477366	
+			}
+		}
+		visible_on select
+		visible_on deselect
+		visible_on premium_sel
+		visible_on premium_desel
+	}
+}
+
