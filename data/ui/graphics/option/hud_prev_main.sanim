@@ -1,0 +1,184 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Thu Mar 13 12:29:59 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 11
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object damage
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_el_damage"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object enem_damage
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_el_enem_damage"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object group
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_el_group"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object object
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_el_object"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_el_progr"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sh_center
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_el_sh_center"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object target
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_el_target"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sh_edge
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_el_sh_edge"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sh_ellipse
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_el_sh_ellipse"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object minimap
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_el_minimap"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_setting.tif"
+			vertices_nc
+			{
+				0 -0	478 -0	0 340	478 340	
+				0 0	0.933594 0	0 0.664063	0.933594 0.664063	
+			}
+		}
+		visible_on idle
+	}
+}
+
