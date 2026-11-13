@@ -1,0 +1,98 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by sergey_mitryaev
+//at Thu Apr 24 15:44:47 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object level
+	{
+		defaults
+		{
+			pos 15 31
+			opacity 255
+			color 0xffff9a00
+			size 50 20
+			effect ""
+			alignment "CM"
+			sampleText "100%"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progr
+	{
+		defaults
+		{
+			pos 7 6
+			opacity 255
+			color 0xffffffff
+			size 40 20
+			effect "ui\graphics\hud\hud_3\fuel_progr"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 82 92
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object level1
+	{
+		defaults
+		{
+			pos -8 72
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect ""
+			alignment "RM"
+			sampleText "Топливо"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite sprt2
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				0 -0	82 -0	0 82	82 82	
+				0.558594 0.0869141	0.638672 0.0869141	0.558594 0.166992	0.638672 0.166992	
+			}
+		}
+		visible_on idle
+	}
+}
+
