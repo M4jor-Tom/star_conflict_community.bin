@@ -1,0 +1,63 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Fri Dec 14 11:07:47 2012
+
+
+animations 2
+{
+	anim active
+	{
+		mode looped
+		cycle_time 20
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object rank_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffff9100
+			size 20 16
+			effect ""
+			alignment "CM"
+			sampleText "1"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on active
+		anim inactive obj_opc_colc
+		{
+			1 1
+			76
+			0xff7f7f7f
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 0
+			color 0xffffffff
+			size 20 16
+			effect ""
+			alignment "CM"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on active
+		visible_on inactive
+	}
+}
+
