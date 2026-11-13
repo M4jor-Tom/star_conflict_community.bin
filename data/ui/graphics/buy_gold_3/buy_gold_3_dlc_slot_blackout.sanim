@@ -1,0 +1,72 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/gold_buy.ma"
+//by sergey_mitryaev
+//at Mon Aug 17 11:34:37 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 160 70
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite ico6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1 1	159 1	1 69	159 69	
+				0.0605469 0.672852	0.0800781 0.672852	0.0605469 0.692383	0.0800781 0.692383	
+				0x99000000	0x99000000	0x99000000	0x99000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				9 20	37 20	9 48	37 48	
+				0.967773 0.621094	0.995117 0.621094	0.967773 0.648438	0.995117 0.648438	
+			}
+		}
+		visible_on idle
+	}
+}
+
