@@ -1,0 +1,266 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Mar 24 12:08:25 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 16
+
+objects 9
+{
+	object text
+	{
+		defaults
+		{
+			pos 180 1.42109e-014
+			opacity 255
+			color 0xffffffff
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Тебуются  Легкие лазеры 2 dvwegwefg  qettt"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object progr_1
+	{
+		defaults
+		{
+			pos 192 24
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect "ui\graphics\clan\build_dread_progr"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object progr_2
+	{
+		defaults
+		{
+			pos 276 24
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect "ui\graphics\clan\build_dread_progr"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object progr_3
+	{
+		defaults
+		{
+			pos 358 24
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect "ui\graphics\clan\build_dread_progr"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object progr_4
+	{
+		defaults
+		{
+			pos 441 24
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect "ui\graphics\clan\build_dread_progr"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object progr_5
+	{
+		defaults
+		{
+			pos 524 24
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect "ui\graphics\clan\build_dread_progr"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object progr_6
+	{
+		defaults
+		{
+			pos 607 24
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect "ui\graphics\clan\build_dread_progr"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object progr_7
+	{
+		defaults
+		{
+			pos 690 24
+			opacity 255
+			color 0xffffffff
+			size 80 20
+			effect "ui\graphics\clan\build_dread_progr"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 960 50
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 7
+{
+	total_vertices 28
+
+	sprite myself
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				8 42.6745	952 42.6745	8 52.3915	952 52.3915	
+				0.242464 0.0214288	0.255583 0.0214288	0.242464 0.0332587	0.255583 0.0332587	
+				0x73ffffff	0x73ffffff	0x73ffffff	0x73ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite myself6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				262.451 42.6745	702.502 42.6745	286.314 -0.825552	678.639 -0.825552	
+				0.242464 0.0214288	0.255583 0.0214288	0.242464 0.0332587	0.255583 0.0332587	
+				0x73ffffff	0x73ffffff	0x73ffffff	0x73ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff9
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				286.314 0.17445	286.314 -1.82555	678.639 0.174417	678.639 -1.82553	
+				0.493164 0.596691	0.495117 0.596691	0.493164 0.602528	0.495117 0.602528	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff910
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				8 44.1745	8 42.1745	262.451 44.1744	262.451 42.1745	
+				0.493164 0.596691	0.495117 0.596691	0.493164 0.602528	0.495117 0.602528	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff11
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				702.502 44.1745	702.502 42.1745	952 44.1744	952 42.1745	
+				0.493164 0.596691	0.495117 0.596691	0.493164 0.602528	0.495117 0.602528	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff12
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				676.871 -0.789639	678.625 -1.75081	701.375 43.5592	703.129 42.5979	
+				0.493164 0.596691	0.495117 0.596691	0.493164 0.602528	0.495117 0.602528	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff13
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				285.298 -2.39148	287.048 -1.42424	260.952 42.0443	262.702 43.0111	
+				0.493164 0.596691	0.495117 0.596691	0.493164 0.602528	0.495117 0.602528	
+				0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+	}
+}
+
