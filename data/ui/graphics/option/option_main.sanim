@@ -1,0 +1,50 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Wed Jan 08 18:02:06 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\blackout"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object option_win
+	{
+		defaults
+		{
+			anchor "C"
+			pos 157 71
+			opacity 255
+			color 0xffffffff
+			size 966 578
+			effect "ui\graphics\option\option_win"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
