@@ -1,0 +1,57 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Jan 15 14:51:50 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite over17
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-0.5 -0.5	5.5 -0.5	193.5 -0.5	199.5 -0.5	-0.5 5.5	5.5 5.5	193.5 5.5	199.5 5.5	-0.5 46.5	5.5 46.5	193.5 46.5	199.5 46.5	-0.5 52.5	5.5 52.5	193.5 52.5	199.5 52.5	
+				0.0820311 0.670898	0.0761718 0.670898	0.0644531 0.670898	0.0585937 0.670898	0.0820312 0.676758	0.0761718 0.676758	0.0644531 0.676758	0.0585938 0.676758	0.0820313 0.688477	0.0761719 0.688477	0.0644531 0.688477	0.0585938 0.688477	0.0820313 0.694336	0.0761719 0.694336	0.0644532 0.694336	0.0585938 0.694336	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite over18
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-0.5 -0.5	5.5 -0.5	193.5 -0.5	199.5 -0.5	-0.5 5.5	5.5 5.5	193.5 5.5	199.5 5.5	-0.5 46.5	5.5 46.5	193.5 46.5	199.5 46.5	-0.5 52.5	5.5 52.5	193.5 52.5	199.5 52.5	
+				0.509766 0.591797	0.503906 0.591797	0.5 0.591797	0.494141 0.591797	0.509766 0.597656	0.503906 0.597656	0.5 0.597656	0.494141 0.597656	0.509766 0.601563	0.503906 0.601563	0.5 0.601563	0.494141 0.601563	0.509766 0.607422	0.503906 0.607422	0.5 0.607422	0.494141 0.607422	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
