@@ -1,0 +1,65 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Wed Aug 27 10:54:18 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\debrifing\loading_blackout"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object loading_big
+	{
+		defaults
+		{
+			anchor "C"
+			pos 590 286
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_10
+	{
+		defaults
+		{
+			anchor "C"
+			pos 562 396
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
