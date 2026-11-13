@@ -1,0 +1,49 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Wed Dec 10 18:29:52 2014
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle_1
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 474 14
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle_1
+	}
+	object slider
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 340 14
+			effect "ui\graphics\clan\build_dread_slider"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle_1
+	}
+}
+
