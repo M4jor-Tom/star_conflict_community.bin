@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/modul_1080.ma"
+//by sergey_mitryaev
+//at Tue Nov 12 11:26:50 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object text_buy
+	{
+		defaults
+		{
+			pos 14.1332 17.0744
+			opacity 255
+			color 0xffda2200
+			size 50 40
+			effect ""
+			alignment "CM"
+			sampleText "В БОЮ!!"
+			font "Tiny_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.022913 0.123477	6.02291 0.123477	72.0409 0.123477	78.0409 0.123477	0.022913 6.12348	6.02291 6.12348	72.0409 6.12348	78.0409 6.12348	0.022913 71.8631	6.02291 71.8631	72.0409 71.8631	78.0409 71.8631	0.022913 77.8631	6.02291 77.8631	72.0409 77.8631	78.0409 77.8631	
+				0.13754 0.793803	0.139016 0.793803	0.142234 0.793803	0.14371 0.793803	0.13754 0.79528	0.139016 0.79528	0.142234 0.79528	0.14371 0.79528	0.13754 0.79847	0.139016 0.79847	0.142234 0.79847	0.14371 0.79847	0.13754 0.799947	0.139016 0.799947	0.142234 0.799947	0.14371 0.799947	
+				0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	0x344c4c4c	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName247
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				77.7281 9.88986	0.0753937 9.88986	77.7282 0.12318	0.0754242 0.123096	
+				0.228562 0.803972	0.111281 0.803972	0.228562 0.789778	0.111281 0.789778	
+				0xff343434	0xff343434	0xff343434	0xff343434	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName248
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				78.0011 78.1989	0.0753937 78.1989	78.0012 67.8195	0.0754242 67.8195	
+				0.228969 0.804067	0.110987 0.804067	0.228969 0.789029	0.110987 0.789029	
+				0xff343434	0xff343434	0xff343434	0xff343434	
+			}
+		}
+		visible_on idle
+	}
+}
+
