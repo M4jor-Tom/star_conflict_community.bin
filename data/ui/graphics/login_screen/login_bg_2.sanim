@@ -1,0 +1,42 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by sergey_mitryaev
+//at Mon Apr 01 10:15:41 2019
+
+base_res 1280 720
+keep_screen_size
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 10
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite dfeee57
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/login_back_2.tif"
+			not_align
+			anchor "C"
+			vertices
+			{
+				-1.92328 -1.84596	1280 -1.84596	-1.92328 718.154	1280 718.154	
+				2.98023e-008 0	1 0	2.98023e-008 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
