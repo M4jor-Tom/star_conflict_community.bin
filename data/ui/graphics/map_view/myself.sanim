@@ -1,0 +1,55 @@
+﻿source_file "Y:/art/source/ui/graphics/map_view/map_view.ma"
+//by sergey_mitryaev
+//at Thu May 22 17:12:39 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object center
+	{
+		defaults
+		{
+			pos 9.92218 14.7393
+			opacity 255
+			color 0xff88b5ff
+			size 10 10
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices_nc
+			{
+				-5.0784 -1.12097	24.9216 -1.12097	-5.0784 28.879	24.9216 28.879	
+				0.598377 0.235352	0.627674 0.235352	0.598377 0.264648	0.627674 0.264648	
+			}
+		}
+		visible_on idle
+	}
+}
+
