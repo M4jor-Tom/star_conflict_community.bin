@@ -1,0 +1,46 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Mon Oct 26 14:10:56 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim start
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim finish
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object text6
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff99ffff
+			size 60 20
+			effect ""
+			alignment "CM"
+			sampleText "200\200"
+			font "Tiny_outl2"
+		}
+		visible_on start
+		anim finish obj_colc
+		{
+			1
+			0xffababab
+		}
+	}
+}
+
