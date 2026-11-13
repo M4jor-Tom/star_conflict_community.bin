@@ -1,0 +1,142 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Thu Aug 21 12:21:59 2014
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 3
+{
+	object social_net_ico
+	{
+		defaults
+		{
+			pos 1 1
+			opacity 255
+			color 0xffffffff
+			size 24 24
+			effect "ui\graphics\option\social_net_ico"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object self
+	{
+		defaults
+		{
+			pos 1 1
+			opacity 255
+			color 0xffffffff
+			size 330 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+	object text
+	{
+		defaults
+		{
+			pos 29 5
+			opacity 255
+			color 0xffffffff
+			size 280 16
+			effect ""
+			alignment "LM"
+			sampleText "Купить sgfg  g adhh hsdfhd"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable obj_opc
+		{
+			1 
+			153
+		}
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	4 -4	327 -4	335 -4	-4 4	4 4	327 4	335 4	-4 22	4 22	327 22	335 22	-4 30	4 30	327 30	335 30	
+				0.0585938 0.644531	0.0664063 0.644531	0.0742188 0.644531	0.0820313 0.644531	0.0585938 0.652344	0.0664063 0.652344	0.0742188 0.652344	0.0820313 0.652344	0.0585938 0.660156	0.0664063 0.660156	0.0742188 0.660156	0.0820313 0.660156	0.0585938 0.667969	0.0664063 0.667969	0.0742188 0.667969	0.0820313 0.667969	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+		}
+	}
+	sprite over1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	8 -0	323 -0	331 -0	0 8	8 8	323 8	331 8	0 18	8 18	323 18	331 18	0 26	8 26	323 26	331 26	
+				0.0849609 0.644531	0.0888672 0.644531	0.104492 0.644531	0.108398 0.644531	0.0849609 0.648438	0.0888672 0.648438	0.104492 0.648438	0.108398 0.648438	0.0849609 0.664063	0.0888672 0.664063	0.104492 0.664063	0.108398 0.664063	0.0849609 0.667969	0.0888672 0.667969	0.104492 0.667969	0.108398 0.667969	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+		visible_on disable
+	}
+}
+
