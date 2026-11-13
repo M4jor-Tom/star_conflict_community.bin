@@ -1,0 +1,322 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Tue Feb 19 16:44:02 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 21
+
+objects 21
+{
+	object list
+	{
+		defaults
+		{
+			pos 0 0.349514
+			opacity 255
+			color 0xffffffff
+			size 920 480
+			effect "ui\graphics\clan\clan_rating_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 413 176.746
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "y:\work_version\pc\data\ui\graphics\hangar\loading_big.sanim"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_irid
+	{
+		defaults
+		{
+			pos -2 450
+			opacity 255
+			color 0xffffffff
+			size 250 20
+			effect ""
+			alignment "LM"
+			sampleText "swfAF afaf afg agg"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_6
+	{
+		defaults
+		{
+			pos 354 446.35
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\shop\buy_btn6"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_loyalty
+	{
+		defaults
+		{
+			pos -2 433.35
+			opacity 255
+			color 0xffffffff
+			size 250 20
+			effect ""
+			alignment "LM"
+			sampleText "wwdw"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object value_loyalty
+
+	{
+		defaults
+		{
+			pos 219 433.35
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "0000000"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object icon_loyalty
+	{
+		defaults
+		{
+			pos 325 430.35
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\shop\gold_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object add_slot
+	{
+		defaults
+		{
+			pos 724 436
+			opacity 255
+			color 0xffffffff
+			size 200 25
+			effect "ui\graphics\equip\add_slot"
+			alignment "RM"
+			sampleText "sgsggdghdhth"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 0.349514
+			opacity 255
+			color 0xffffffff
+			size 950 520
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 770 471
+			opacity 255
+			color 0xffff9100
+			size 200 30
+			effect "ui\graphics\shop\buy_btn6"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object chek_box
+	{
+		defaults
+		{
+			pos 551 474
+			opacity 255
+			color 0xffffffff
+			size 250 25
+			effect "ui\graphics\login_screen\chek_box_hangar"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2_1
+	{
+		defaults
+		{
+			pos -3 475.35
+			opacity 255
+			color 0xffffffff
+			size 34 26
+			effect "ui\graphics\clan\lidboard_btn_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2_2
+	{
+		defaults
+		{
+			pos 32 475.35
+			opacity 255
+			color 0xffffffff
+			size 34 26
+			effect "ui\graphics\clan\lidboard_btn_2"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2_3
+	{
+		defaults
+		{
+			pos 67 475.35
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\clan\lidboard_btn_3"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2_4
+	{
+		defaults
+		{
+			pos 102 475.35
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\clan\lidboard_btn_4"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2_5
+	{
+		defaults
+		{
+			pos 136 475.35
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\clan\lidboard_btn_5"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2_6
+	{
+		defaults
+		{
+			pos 170 475.35
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\clan\lidboard_btn_5"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_34
+	{
+		defaults
+		{
+			pos 204 475.35
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\clan\lidboard_btn_5"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object runk_corp
+	{
+		defaults
+		{
+			pos -2 437.35
+			opacity 255
+			color 0xffffffff
+			size 350 20
+			effect ""
+			alignment "LM"
+			sampleText "Рейтинг корпорации неопределен"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_42
+	{
+		defaults
+		{
+			pos 375 435.35
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object iridium
+	{
+		defaults
+		{
+			pos 331 466.35
+			opacity 255
+			color 0xffffffff
+			size 250 20
+			effect ""
+			alignment "CM"
+			sampleText "500000000"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
