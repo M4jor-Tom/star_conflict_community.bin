@@ -1,0 +1,135 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud_2.ma
+//by sega
+//at Fri Sep 30 15:55:53 2011
+
+animations 3
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim color
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite action_type
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-5.23348 -5.71126	36.7665 -5.71126	-5.23348 36.2887	36.7665 36.2887	
+				-9.31323e-009 0	1 0	-9.31323e-009 1	1 1	
+				0xff88b5ff	0xff88b5ff	0xff88b5ff	0xff88b5ff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim color sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite action_area
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-5.23348 -5.71126	36.7665 -5.71126	-5.23348 36.2887	36.7665 36.2887	
+				-9.31323e-009 0	1 0	-9.31323e-009 1	1 1	
+				0xff88b5ff	0xff88b5ff	0xff88b5ff	0xff88b5ff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim color sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite action_object
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				-5.23348 -5.71126	36.7665 -5.71126	-5.23348 36.2887	36.7665 36.2887	
+				-9.31323e-009 0	1 0	-9.31323e-009 1	1 1	
+				0xff88b5ff	0xff88b5ff	0xff88b5ff	0xff88b5ff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim color sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite modification
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				19.6216 18.1621	34.6216 18.1621	19.6216 34.1621	34.6216 34.1621	
+				-2.6077e-008 0	1 0	-2.6077e-008 1	1 1	
+				0xff88b5ff	0xff88b5ff	0xff88b5ff	0xff88b5ff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim color sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
