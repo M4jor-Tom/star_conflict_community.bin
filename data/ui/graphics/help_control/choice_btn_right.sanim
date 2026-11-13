@@ -1,0 +1,152 @@
+﻿source_file  Y:/art/source/ui/graphics/help_control/help.ma
+//by sergey_mitryaev
+//at Wed Jun 20 15:07:43 2012
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 25 25
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite over7
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	4 -0	21 -0	25 -0	0 4	4 4	21 4	25 4	0 21	4 21	21 21	25 21	0 25	4 25	21 25	25 25	
+				0.0283342 0.138693	0.0322405 0.138693	0.0488254 0.138693	0.0527316 0.138693	0.0283342 0.134786	0.0322405 0.134786	0.0488254 0.134786	0.0527316 0.134786	0.0283342 0.118151	0.0322405 0.118151	0.0488254 0.118151	0.0527316 0.118151	0.0283342 0.114245	0.0322405 0.114245	0.0488254 0.114245	0.0527316 0.114245	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim press sp_colc
+		{
+			1
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+		visible_on disable
+	}
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	4 -0	21 -0	25 -0	0 4	4 4	21 4	25 4	0 21	4 21	21 21	25 21	0 25	4 25	21 25	25 25	
+				0.00194812 0.114245	0.00585437 0.114245	0.0224393 0.114245	0.0263455 0.114245	0.00194812 0.118151	0.00585437 0.118151	0.0224393 0.118151	0.0263455 0.118151	0.00194812 0.134786	0.00585437 0.134786	0.0224393 0.134786	0.0263455 0.134786	0.00194812 0.138693	0.00585437 0.138693	0.0224393 0.138693	0.0263455 0.138693	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+		}
+	}
+	sprite over1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	4 -0	21 -0	25 -0	0 4	4 4	21 4	25 4	0 21	4 21	21 21	25 21	0 25	4 25	21 25	25 25	
+				0.0283342 0.114245	0.0322405 0.114245	0.0488254 0.114245	0.0527316 0.114245	0.0283342 0.118151	0.0322405 0.118151	0.0488254 0.118151	0.0527316 0.118151	0.0283342 0.134786	0.0322405 0.134786	0.0488254 0.134786	0.0527316 0.134786	0.0283342 0.138693	0.0322405 0.138693	0.0488254 0.138693	0.0527316 0.138693	
+				0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	0xcc000000	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+		}
+		visible_on press
+		visible_on disable
+	}
+	sprite objectName306
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "L"
+			vertices
+			{
+				3.80367 3.19503	22.8037 3.19503	3.80367 21.195	22.8037 21.195	
+				0.486451 0.0203351	0.486451 0.00178039	0.468873 0.0203351	0.468873 0.00178039	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x99999999	0x99999999	0x99999999	0x99999999	
+		}
+	}
+}
+
