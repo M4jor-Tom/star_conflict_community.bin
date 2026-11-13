@@ -1,0 +1,216 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Fri Mar 22 12:10:42 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 11
+{
+	object info
+	{
+		defaults
+		{
+			pos 98.9984 43.4871
+			opacity 255
+			color 0xffcccccc
+			size 320 40
+			effect ""
+			alignment "LT"
+			sampleText "Dfedgg|ww fwfwf  wffwff"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 964 520
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 407.331 171.425
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 98.989 7.26914
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect ""
+			alignment "LM"
+			sampleText "Тренеровочные бои"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1_color
+	{
+		defaults
+		{
+			pos -199.587 64.6566
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Dfedgg|ww fwfwf  |wffwff"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object info_2
+	{
+		defaults
+		{
+			pos 483.998 11.4871
+			opacity 255
+			color 0xffcccccc
+			size 200 20
+			effect ""
+			alignment "RM"
+			sampleText "Dfedgg|"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 750 7
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object info_2_val
+	{
+		defaults
+		{
+			pos 688.998 11.4871
+			opacity 255
+			color 0xffff9100
+			size 50 20
+			effect ""
+			alignment "LM"
+			sampleText "145"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 5.07346 90.5166
+			opacity 255
+			color 0xffffffff
+			size 950 326
+			effect "ui\graphics\map\custom_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 750 39
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_3
+	{
+		defaults
+		{
+			pos 545 39
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite icotyj
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/gameplay_select.tif"
+			vertices_nc
+			{
+				0 4	959 4	0 424	959 424	
+				0.0078125 0.283374	0.998047 0.283374	0.0078125 0.011807	0.998047 0.011807	
+			}
+		}
+		visible_on idle
+	}
+	sprite 3
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				28.2715 23.6927	73.4232 23.6927	28.2715 62.6878	73.4232 62.6878	
+				0.64385 0.248449	0.688182 0.248449	0.64385 0.286708	0.688182 0.286708	
+			}
+		}
+		visible_on idle
+	}
+}
+
