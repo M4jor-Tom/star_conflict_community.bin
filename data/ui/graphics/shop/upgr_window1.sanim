@@ -1,0 +1,236 @@
+﻿source_file "Y:/art/source/ui/graphics/shop/shop_buy.ma"
+//by sergey_mitryaev
+//at Mon Dec 26 18:20:47 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 11
+{
+	object title
+	{
+		defaults
+		{
+			pos 10.3215 1
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Conection problen"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object icon
+	{
+		defaults
+		{
+			pos 11 30
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object price
+	{
+		defaults
+		{
+			pos 331 83
+			opacity 255
+			color 0xffffffff
+			size 200 23
+			effect ""
+			alignment "RM"
+			sampleText "23252366"
+			font "VerySmall"
+		}
+		anim idle obj_pos
+		{
+			2 
+			331 83
+			331 345
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 550 400
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 390.451 109
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			390.451 109
+			390.451 371
+		}
+	}
+	object button_1
+	{
+		defaults
+		{
+			pos 230 109
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			230 109
+			230 371
+		}
+	}
+	object product_name_2
+	{
+		defaults
+		{
+			pos 86 30
+			opacity 255
+			color 0xffffffff
+			size 400 20
+			effect ""
+			alignment "LT"
+			sampleText "Адаптивный  излучаетель щита  134 иавр48"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 86 55
+			opacity 255
+			color 0xffffffff
+			size 450 280
+			effect ""
+			alignment "LT"
+			sampleText "sdgsgj wfef fwf  gggg  lgj|dsf fefe|ef  gewg wg   feg "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_3
+	{
+		defaults
+		{
+			pos 70 109
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		anim idle obj_pos
+		{
+			2 
+			70 109
+			70 371
+		}
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 221 33
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		anim idle obj_pos
+		{
+			2 
+			221 33
+			221 160
+		}
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 140
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp29
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 135	4 135	546 135	554 135	-4 143	4 143	546 143	554 143	
+				0.0585938 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585938 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 135	4 135	546 135	554 135	-4 143	4 143	546 143	554 143	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 161.1	4 161.1	546 161.1	554 161.1	-4 169.1	4 169.1	546 169.1	554 169.1	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 187.2	4 187.2	546 187.2	554 187.2	-4 195.2	4 195.2	546 195.2	554 195.2	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 213.3	4 213.3	546 213.3	554 213.3	-4 221.3	4 221.3	546 221.3	554 221.3	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 239.4	4 239.4	546 239.4	554 239.4	-4 247.4	4 247.4	546 247.4	554 247.4	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 265.5	4 265.5	546 265.5	554 265.5	-4 273.5	4 273.5	546 273.5	554 273.5	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 291.6	4 291.6	546 291.6	554 291.6	-4 299.6	4 299.6	546 299.6	554 299.6	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 317.7	4 317.7	546 317.7	554 317.7	-4 325.7	4 325.7	546 325.7	554 325.7	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 343.8	4 343.8	546 343.8	554 343.8	-4 351.8	4 351.8	546 351.8	554 351.8	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 369.9	4 369.9	546 369.9	554 369.9	-4 377.9	4 377.9	546 377.9	554 377.9	
+			-4 -4.5	4 -4.5	546 -4.5	554 -4.5	-4 24	4 24	546 24	554 24	-4 396	4 396	546 396	554 396	-4 404	4 404	546 404	554 404	
+		}
+	}
+}
+
