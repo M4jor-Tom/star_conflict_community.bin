@@ -1,0 +1,91 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Mon Jun 03 12:57:26 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1484 18
+			effect ""
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn_up
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\scroll_h\scroll_btn_up"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 26 7
+			opacity 255
+			color 0xffffffff
+			size 1430 4
+			effect "ui\graphics\scroll_h\scroll_bg"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object btn_down
+	{
+		defaults
+		{
+			pos 1466 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\scroll_h\scroll_btn_down"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object thumb
+	{
+		defaults
+		{
+			pos 26 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\scroll_3\scroll_thumb"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
