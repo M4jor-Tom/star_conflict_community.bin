@@ -1,0 +1,61 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud.ma
+//by sega
+//at Fri Jul 22 12:02:53 2011
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object warning_slot1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\warning_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object warning_slot2
+	{
+		defaults
+		{
+			pos 0 20.7858
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\warning_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object warning_slot3
+	{
+		defaults
+		{
+			pos 0 40.8672
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\hud\warning_slot"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
