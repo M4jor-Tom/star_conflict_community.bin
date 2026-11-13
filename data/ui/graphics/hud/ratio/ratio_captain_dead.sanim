@@ -1,0 +1,67 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Thu May 22 15:20:06 2014
+
+
+animations 2
+{
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 150 17
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on enemy
+		visible_on friend
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectNameer
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-1.50126 3.66976	149.501 3.66976	-1.50126 18.3302	149.501 18.3302	
+				0.159667 0.4375	0.000488952 0.4375	0.159667 0.450195	0.000488952 0.450195	
+				0xb2fb2500	0xb2fb2500	0xb2fb2500	0xb2fb2500	
+			}
+		}
+		visible_on enemy
+		anim friend sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+	}
+}
+
