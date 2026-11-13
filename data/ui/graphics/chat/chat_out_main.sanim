@@ -1,0 +1,35 @@
+﻿source_file  Y:/art/source/ui/graphics/chat/chat.ma
+//by sergey_mitryaev
+//at Wed Sep 05 11:20:39 2012
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object chat
+	{
+		defaults
+		{
+			anchor "LB"
+			pos 5 287.084
+			opacity 255
+			color 0xffffffff
+			size 356 405
+			effect "ui\graphics\chat\chat_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
