@@ -1,0 +1,55 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Mon Apr 01 16:32:58 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				25.3383 -0.0357744	49.6975 -0.0357744	25.3383 22.6318	49.6975 11.8055	
+				0.458984 0.282715	0.420898 0.282715	0.458984 0.317383	0.420898 0.300781	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite icoewr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				25.3383 -0.0357744	0.302536 -0.0357744	25.3383 22.6318	0.302536 11.8055	
+				0.458984 0.282715	0.420898 0.282715	0.458984 0.317383	0.420898 0.300781	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
