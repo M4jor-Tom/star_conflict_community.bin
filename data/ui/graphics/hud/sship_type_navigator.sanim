@@ -1,0 +1,522 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Tue Jan 14 15:55:52 2020
+
+base_res 1280 720
+
+animations 24
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim locking
+	{
+		mode looped
+		cycle_time 0.2
+	}
+	anim friend_damage
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad_damage
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim agressiv
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend_locking
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim agressiv_lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim agressiv_locking
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim nlo
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim nlo_locking
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim nlo_lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad_lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad_locking
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim neutral_lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral_locking
+	{
+		mode looped
+		cycle_time 0.3
+	}
+	anim me
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim me_damage
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim me_lock
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim me_locking
+	{
+		mode looped
+		cycle_time 0.3
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object center
+	{
+		defaults
+		{
+			pos 8 8
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "RM"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on lock
+		visible_on locking
+		visible_on friend_damage
+		visible_on neutral
+		visible_on squad
+		visible_on squad_damage
+		visible_on agressiv
+		visible_on friend_lock
+		visible_on friend_locking
+		visible_on agressiv_lock
+		visible_on agressiv_locking
+		visible_on nlo
+		visible_on nlo_locking
+		visible_on nlo_lock
+		visible_on squad_lock
+		visible_on squad_locking
+		visible_on neutral_lock
+		visible_on neutral_locking
+		visible_on me
+		visible_on me_damage
+		visible_on me_lock
+		visible_on me_locking
+	}
+	object value
+	{
+		defaults
+		{
+			pos 0 -0.00059693
+			opacity 255
+			color 0xff00ddff
+			size 16 16
+			effect ""
+			alignment "CM"
+			sampleText "A"
+			font "Tiny_outl2"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2800
+		}
+		anim lock obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim locking obj_op_col
+		{
+			11 11
+			255
+			255
+			127
+			0
+			255
+			255
+			127
+			0
+			127
+			255
+			255
+			0xffffffff
+			0xffffe8e4
+			0xffffb3a5
+			0xffff7359
+			0xffff3e1a
+			0xffff2800
+			0xffff3e1a
+			0xffff7359
+			0xffffb3a5
+			0xffffe8e4
+			0xffffffff
+		}
+		anim friend_damage obj_col
+		{
+			5
+			0xffffffff
+			0xffe3fbff
+			0xff9ff2ff
+			0xff4be7ff
+			0xff00ddff
+		}
+		anim neutral obj_colc
+		{
+			1
+			0xffcccccc
+		}
+		anim squad obj_colc
+		{
+			1
+			0xff08e700
+		}
+		anim squad_damage obj_col
+		{
+			5
+			0xffffffff
+			0xffd8fed7
+			0xff83fb7f
+			0xff2ef427
+			0xff08e700
+		}
+		anim agressiv obj_colc
+		{
+			1
+			0xffff9a00
+		}
+		anim friend_lock obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim friend_locking obj_col
+		{
+			3
+			0xff00dcff
+			0xff8eefff
+			0xffffffff
+		}
+		anim agressiv_lock obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim agressiv_locking obj_col
+		{
+			3
+			0xffff9a00
+			0xffffc97f
+			0xffffffff
+		}
+		anim nlo obj_colc
+		{
+			1
+			0xffbc24e4
+		}
+		anim nlo_locking obj_col
+		{
+			2
+			0xffbc24e4
+			0xffffffff
+		}
+		anim nlo_lock obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim squad_lock obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim squad_locking obj_col
+		{
+			2
+			0xffffffff
+			0xff00f200
+		}
+		anim neutral_lock obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim neutral_locking obj_col
+		{
+			4
+			0xffffffff
+			0xffeafae5
+			0xffa695ab
+			0xff919191
+		}
+		anim me obj_colc
+		{
+			1
+			0xffb3efa8
+		}
+		anim me_damage obj_col
+		{
+			5
+			0xffffffff
+			0xfff6fdf5
+			0xffe2f9de
+			0xffcaf4c1
+			0xffb3efa8
+		}
+		anim me_lock obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim me_locking obj_col
+		{
+			5
+			0xffffffff
+			0xfff6fdf5
+			0xffe2f9de
+			0xffcaf4c1
+			0xffb3efa8
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	16 -0	0 16	16 16	
+				0 0	1 0	0 1	1 1	
+				0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff0f00	0xffff0f00	0xffff0f00	0xffff0f00	
+		}
+		anim lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim locking sp_col
+		{
+			11
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffffe6e4	0xffffe6e4	0xffffe6e4	0xffffe6e4	
+			0xffffaaa5	0xffffaaa5	0xffffaaa5	0xffffaaa5	
+			0xffff6459	0xffff6459	0xffff6459	0xffff6459	
+			0xffff281a	0xffff281a	0xffff281a	0xffff281a	
+			0xffff0f00	0xffff0f00	0xffff0f00	0xffff0f00	
+			0xffff281a	0xffff281a	0xffff281a	0xffff281a	
+			0xffff6459	0xffff6459	0xffff6459	0xffff6459	
+			0xffffaaa5	0xffffaaa5	0xffffaaa5	0xffffaaa5	
+			0xffffe6e4	0xffffe6e4	0xffffe6e4	0xffffe6e4	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim friend_damage sp_col
+		{
+			5
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffe3fbff	0xffe3fbff	0xffe3fbff	0xffe3fbff	
+			0xff9ff2ff	0xff9ff2ff	0xff9ff2ff	0xff9ff2ff	
+			0xff4be7ff	0xff4be7ff	0xff4be7ff	0xff4be7ff	
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+		anim neutral sp_colc
+		{
+			1
+			0xff999999	0xff999999	0xff999999	0xff999999	
+		}
+		anim squad sp_colc
+		{
+			1
+			0xff45e105	0xff45e105	0xff45e105	0xff45e105	
+		}
+		anim squad_damage sp_col
+		{
+			5
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xffe2fde0	0xffe2fde0	0xffe2fde0	0xffe2fde0	
+			0xffa2f897	0xffa2f897	0xffa2f897	0xffa2f897	
+			0xff62ef44	0xff62ef44	0xff62ef44	0xff62ef44	
+			0xff45e105	0xff45e105	0xff45e105	0xff45e105	
+		}
+		anim agressiv sp_colc
+		{
+			1
+			0xffff9a00	0xffff9a00	0xffff9a00	0xffff9a00	
+		}
+		anim friend_lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim friend_locking sp_col
+		{
+			3
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+			0xff7feeff	0xff7feeff	0xff7feeff	0xff7feeff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim agressiv_lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim agressiv_locking sp_col
+		{
+			3
+			0xffff9a00	0xffff9a00	0xffff9a00	0xffff9a00	
+			0xffffcc7f	0xffffcc7f	0xffffcc7f	0xffffcc7f	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim nlo sp_colc
+		{
+			1
+			0xffbd25e4	0xffbd25e4	0xffbd25e4	0xffbd25e4	
+		}
+		anim nlo_locking sp_col
+		{
+			3
+			0xffbd25e4	0xffbd25e4	0xffbd25e4	0xffbd25e4	
+			0xffde92f1	0xffde92f1	0xffde92f1	0xffde92f1	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim nlo_lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim squad_lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim squad_locking sp_col
+		{
+			3
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xff7ff87f	0xff7ff87f	0xff7ff87f	0xff7ff87f	
+			0xff00f200	0xff00f200	0xff00f200	0xff00f200	
+		}
+		anim neutral_lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim neutral_locking sp_col
+		{
+			4
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfff0ffec	0xfff0ffec	0xfff0ffec	0xfff0ffec	
+			0xffb9a8bd	0xffb9a8bd	0xffb9a8bd	0xffb9a8bd	
+			0xffababab	0xffababab	0xffababab	0xffababab	
+		}
+		anim me sp_colc
+		{
+			1
+			0xffb4f0a7	0xffb4f0a7	0xffb4f0a7	0xffb4f0a7	
+		}
+		anim me_damage sp_col
+		{
+			5
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfff6fdf5	0xfff6fdf5	0xfff6fdf5	0xfff6fdf5	
+			0xffe2f9de	0xffe2f9de	0xffe2f9de	0xffe2f9de	
+			0xffcaf4c1	0xffcaf4c1	0xffcaf4c1	0xffcaf4c1	
+			0xffb4f0a7	0xffb4f0a7	0xffb4f0a7	0xffb4f0a7	
+		}
+		anim me_lock sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim me_locking sp_col
+		{
+			5
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xfff6fdf5	0xfff6fdf5	0xfff6fdf5	0xfff6fdf5	
+			0xffe2f9de	0xffe2f9de	0xffe2f9de	0xffe2f9de	
+			0xffcaf4c1	0xffcaf4c1	0xffcaf4c1	0xffcaf4c1	
+			0xffb4f0a7	0xffb4f0a7	0xffb4f0a7	0xffb4f0a7	
+		}
+	}
+}
+
