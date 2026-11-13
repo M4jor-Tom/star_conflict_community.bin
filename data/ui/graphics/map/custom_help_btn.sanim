@@ -1,0 +1,142 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Wed Jun 19 13:55:36 2013
+
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim unuse
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite spr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	20 -0	0 20	20 20	
+				0.03125 0.139648	0.0507813 0.139648	0.03125 0.15918	0.0507813 0.15918	
+			}
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		anim press sp_posc
+		{
+			1 
+			0 1	20 1	0 21	20 21	
+		}
+		anim disable sp_posc
+		{
+			1 
+			0 1	20 1	0 21	20 21	
+		}
+	}
+	sprite over1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	10 -0	9.91714 -0	19.9171 -0	0 10	10 10	9.91714 10	19.9171 10	0 10.3678	10 10.3678	9.91714 10.3678	19.9171 10.3678	0 20	10 20	9.91714 20	19.9171 20	
+				0.073449 0.00194174	0.0798425 0.00194174	0.113756 0.00194174	0.12015 0.00194174	0.073449 0.0273438	0.0798425 0.0273438	0.113756 0.0273438	0.12015 0.0273438	0.073449 0.0292969	0.0798425 0.0292969	0.113756 0.0292969	0.12015 0.0292969	0.073449 0.0493029	0.0798425 0.0493029	0.113756 0.0493029	0.12015 0.0493029	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		visible_on unuse
+		anim over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		visible_on press
+		visible_on disable
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				5.4 3	15.4 3	5.4 17	15.4 17	
+				0.848633 0.375	0.858398 0.375	0.848633 0.388672	0.858398 0.388672	
+			}
+		}
+		visible_on idle
+		visible_on unuse
+		visible_on over
+		anim press sp_posc
+		{
+			1 
+			5.4 4	15.4 4	5.4 18	15.4 18	
+		}
+		anim disable sp_posc
+		{
+			1 
+			5.4 4	15.4 4	5.4 18	15.4 18	
+		}
+	}
+}
+
