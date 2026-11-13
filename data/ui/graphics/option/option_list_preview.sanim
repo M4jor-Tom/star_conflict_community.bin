@@ -1,0 +1,59 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Fri Jan 10 11:58:56 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 456
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object hud_preview
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 340
+			effect "ui\graphics\option\hud_prev_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object hud_prev_cursor
+	{
+		defaults
+		{
+			pos 0 343
+			opacity 255
+			color 0xffffffff
+			size 478 116
+			effect "ui\graphics\option\hud_prev_cursor"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
