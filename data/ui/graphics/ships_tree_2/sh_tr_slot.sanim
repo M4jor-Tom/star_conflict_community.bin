@@ -1,0 +1,505 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by sergey_mitryaev
+//at Thu Jan 12 10:47:29 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 30
+
+objects 29
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 130 150
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object link_1
+	{
+		defaults
+		{
+			pos 54.2087 21.5197
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object link_2
+	{
+		defaults
+		{
+			pos 64.2087 21.5197
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object link_3
+	{
+		defaults
+		{
+			pos 74.2087 21.5197
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object link_4
+	{
+		defaults
+		{
+			pos 54.2087 158.02
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object link_5
+	{
+		defaults
+		{
+			pos 64.2087 158.02
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object link_6
+	{
+		defaults
+		{
+			pos 74.2087 158.02
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object sinergy
+	{
+		defaults
+		{
+			pos 6.20868 106.02
+			opacity 255
+			color 0xffffffff
+			size 120 20
+			effect ""
+			alignment "CM"
+			sampleText "9/10"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object ship_ico
+	{
+		defaults
+		{
+			pos 0.208681 36.5197
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\ship_ico"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object name
+	{
+		defaults
+		{
+			pos 6.20868 125.02
+			opacity 255
+			color 0xffffffff
+			size 120 20
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_name"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object color_simlpe
+	{
+		defaults
+		{
+			pos 137.274 99.1879
+			opacity 255
+			color 0xff00ddff
+			size 120 20
+			effect ""
+			alignment "CM"
+			sampleText "color_simlpe"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object color_craft
+	{
+		defaults
+		{
+			pos 137.274 119.52
+			opacity 255
+			color 0xffb87aff
+			size 120 20
+			effect ""
+			alignment "CM"
+			sampleText "color_craft"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object color_gold
+	{
+		defaults
+		{
+			pos 137.274 138.52
+			opacity 255
+			color 0xffffcf00
+			size 120 20
+			effect ""
+			alignment "CM"
+			sampleText "color_gold"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object role_ico2
+	{
+		defaults
+		{
+			pos 54.0383 22.0197
+			opacity 255
+			color 0xffffffff
+			size 20 24
+			effect "ui\graphics\hud\ratio\gmp_icon"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object indic
+	{
+		defaults
+		{
+			pos 49.2087 82.0197
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_indic_inslot"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object role_max
+	{
+		defaults
+		{
+			pos 48.2087 17.0197
+			opacity 255
+			color 0xffffffff
+			size 20 24
+			effect "ui\graphics\ships_tree_2\sh_tr_role_max"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 15.2087 102.02
+			opacity 255
+			color 0xffffffff
+			size 100 24
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_btn_1"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object syn_progr
+	{
+		defaults
+		{
+			pos 14.2087 31.0197
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree_2\sh_syn_progr_10"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+	object indic2
+	{
+		defaults
+		{
+			pos 37.2087 45.0197
+			opacity 255
+			color 0xffffffff
+			size 54 60
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_indic_inbattle"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object mark
+	{
+		defaults
+		{
+			pos 72.1464 12.6462
+			opacity 255
+			color 0xffffffff
+			size 42 42
+			effect "ui\graphics\ships_tree_2\sh_tr_mark_new"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object over
+	{
+		defaults
+		{
+			pos 6.20868 24.0197
+			opacity 255
+			color 0xffffffff
+			size 120 134
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_over"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object quest_percent
+	{
+		defaults
+		{
+			pos 76.8948 79.9358
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_indic_quest_percent"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object advertisement
+
+	{
+		defaults
+		{
+			pos 6.20868 24.0197
+			opacity 255
+			color 0xffffffff
+			size 120 134
+			effect "ui\graphics\ships_tree_2\sh_tr_advertisement"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object full
+	{
+		defaults
+		{
+			pos 6.20868 24.0197
+			opacity 255
+			color 0xffffffff
+			size 120 134
+			effect "ui\graphics\ships_tree_2\sh_tr_full"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object text
+	{
+		defaults
+		{
+			pos 6.20868 64.0197
+			opacity 255
+			color 0xffffffff
+			size 120 20
+			effect ""
+			alignment "CM"
+			sampleText "989/1098"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			171
+		}
+	}
+	object name_2
+	{
+		defaults
+		{
+			pos 6.20868 149.02
+			opacity 255
+			color 0xffffffff
+			size 120 20
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_name"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 15.2087 126.02
+			opacity 255
+			color 0xffffffff
+			size 100 24
+			effect "ui\graphics\ships_tree_2\sh_tr_slot_btn_1"
+			alignment "CM"
+			font "Tiny_outl2"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object quest_btn
+	{
+		defaults
+		{
+			pos 92.2087 44.9302
+			opacity 255
+			color 0xffffffff
+			size 20 24
+			effect "ui\graphics\ships_tree_2\sh_tr_quest_btn"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on disable
+	}
+	object info_btn
+	{
+		defaults
+		{
+			pos 38 1
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree_3\info_btn"
+			alignment "LT"
+		}
+		visible_on idle
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite que56
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices_nc
+			{
+				24 32	108 32	24 116	108 116	
+				0.548828 0.566406	0.712891 0.566406	0.548828 0.730469	0.712891 0.730469	
+			}
+		}
+		visible_on idle
+		visible_on disable
+	}
+}
+
