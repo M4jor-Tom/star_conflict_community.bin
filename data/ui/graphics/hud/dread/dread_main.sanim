@@ -1,0 +1,60 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/dreadnought.ma"
+//by sergey_mitryaev
+//at Mon Jan 12 16:50:16 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 0.7
+	}
+}
+
+total_elements 3
+
+objects 3
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 478 100
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object pr_friend
+	{
+		defaults
+		{
+			pos -10 -0
+			opacity 255
+			color 0xffffffff
+			size 208 52
+			effect "ui\graphics\hud\dread\dread_pr_friend_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object pr_enemy
+	{
+		defaults
+		{
+			pos 227 1
+			opacity 255
+			color 0xffffffff
+			size 208 52
+			effect "ui\graphics\hud\dread\dread_pr_enemy_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
