@@ -1,0 +1,92 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by Sergey_Mitryaev
+//at Wed Apr 18 17:16:30 2018
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 52 48
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite we78
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices_nc
+			{
+				0 -0	52 -0	0 48	52 48	
+				0.464844 0.792969	0.566406 0.792969	0.464844 0.886719	0.566406 0.886719	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	sprite we79
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices
+			{
+				-12.6929 -15.5898	65.552 -15.5898	-12.6929 62.6552	65.552 62.6552	
+				0.26899 -0.000541687	0.363823 -0.000541687	0.26899 0.0942917	0.363823 0.0942917	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x6001523	0x6001523	0x6001523	0x6001523	
+		}
+		visible_on press
+	}
+}
+
