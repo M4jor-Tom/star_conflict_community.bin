@@ -1,0 +1,444 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Wed Jun 04 15:32:45 2014
+
+
+animations 9
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press_gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim craft_idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim craft_over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim craft_press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 4
+{
+	object price
+	{
+		defaults
+		{
+			pos 17 -1
+			opacity 255
+			color 0xffffffff
+			size 100 23
+			effect "ui\graphics\shop\prod_price"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on idle_gold
+		visible_on over_gold
+		visible_on press_gold
+		visible_on craft_idle
+		visible_on craft_over
+		visible_on craft_press
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 114 20
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on idle_gold
+		visible_on over_gold
+		visible_on press_gold
+		visible_on craft_idle
+		visible_on craft_over
+		visible_on craft_press
+	}
+	object dlc_text
+	{
+		defaults
+		{
+			pos 23 -0
+			opacity 255
+			color 0xff11e500
+			size 86 20
+			effect ""
+			alignment "CM"
+			sampleText "DLC"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on idle_gold
+		visible_on over_gold
+		visible_on press_gold
+		visible_on craft_idle
+		visible_on craft_over
+		visible_on craft_press
+	}
+	object dlc_text1
+	{
+		defaults
+		{
+			pos 23 -0
+			opacity 255
+			color 0xff00ddff
+			size 86 20
+			effect ""
+			alignment "CM"
+			sampleText "DLC"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on idle_gold
+		visible_on over_gold
+		visible_on press_gold
+		visible_on craft_idle
+		visible_on craft_over
+		visible_on craft_press
+	}
+}
+
+sprites 7
+{
+	total_vertices 40
+
+	sprite sad
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				12 -1.14441e-005	96 -1.14441e-005	12 20	96 20	
+				0.78125 0.316406	0.889648 0.316406	0.78125 0.355469	0.889648 0.355469	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim idle_gold sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim over_gold sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim press_gold sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim craft_idle sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim craft_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim craft_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite sadevv
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				96 -1.14441e-005	115 -1.14441e-005	96 20	115 20	
+				0.873047 0.316406	0.892578 0.316406	0.873047 0.355469	0.892578 0.355469	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim idle_gold sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim over_gold sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim press_gold sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim craft_idle sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim craft_over sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim craft_press sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite sadeg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				12 -1.14441e-005	96 -1.14441e-005	12 20	96 20	
+				0.78125 0.566406	0.889648 0.566406	0.78125 0.605469	0.889648 0.605469	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim idle_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim over_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_over
+		visible_on craft_press
+	}
+	sprite sadeeg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				96 -1.14441e-005	115 -1.14441e-005	96 20	115 20	
+				0.876221 0.566406	0.892578 0.566406	0.876221 0.605469	0.892578 0.605469	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim idle_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim over_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim press_gold sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on craft_idle
+		visible_on craft_over
+		visible_on craft_press
+	}
+	sprite sad59
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				96 -1.14441e-005	115 -1.14441e-005	96 20	115 20	
+				0.876221 0.609375	0.892578 0.609375	0.876221 0.648438	0.892578 0.648438	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on idle_gold
+		visible_on over_gold
+		visible_on press_gold
+		anim craft_idle sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim craft_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim craft_press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite sad60
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				12 -1.14441e-005	96 -1.14441e-005	12 20	96 20	
+				0.78125 0.609375	0.889648 0.609375	0.78125 0.648438	0.889648 0.648438	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on idle_gold
+		visible_on over_gold
+		visible_on press_gold
+		anim craft_idle sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim craft_over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim craft_press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite sp12
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				12 20	17 14	23 6	28 3.8147e-006	18 20	23 14	29 6	34 -3.8147e-006	109 20	109 14	109 6	109 -3.8147e-006	115 20	115 14	115 5.99999	115 -3.8147e-006	
+				0.0528233 0.138746	0.0528233 0.132886	0.0528233 0.119955	0.0528233 0.114095	0.046964 0.138746	0.046964 0.132886	0.046964 0.119955	0.046964 0.114095	0.034159 0.138746	0.034159 0.132886	0.034159 0.119955	0.034159 0.114095	0.0282996 0.138746	0.0282997 0.132886	0.0282997 0.119955	0.0282996 0.114095	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	
+		}
+		anim press sp_colc
+		{
+			1
+			0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	0x3e3e3f3d	
+		}
+		visible_on idle_gold
+		anim over_gold sp_colc
+		{
+			1
+			0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	
+		}
+		anim press_gold sp_colc
+		{
+			1
+			0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	
+		}
+		visible_on craft_idle
+		anim craft_over sp_colc
+		{
+			1
+			0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	0xffffb2b2	
+		}
+		anim craft_press sp_colc
+		{
+			1
+			0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	0x3e3e3f34	
+		}
+	}
+}
+
