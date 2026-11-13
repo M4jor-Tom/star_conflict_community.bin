@@ -1,0 +1,144 @@
+﻿source_file "Y:/art/source/ui/graphics/mail/mail.ma"
+//by sergey_mitryaev
+//at Wed Apr 17 16:10:53 2013
+
+
+animations 2
+{
+	anim sel
+	{
+		mode looped
+		cycle_time 1.5
+	}
+	anim desel
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 460 130
+			effect ""
+			alignment "LT"
+		}
+		visible_on sel
+		visible_on desel
+	}
+	object select_color
+	{
+		defaults
+		{
+			pos 14.1454 1.60273
+			opacity 255
+			color 0xff6a93b5
+			size 260 20
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on sel
+		visible_on desel
+	}
+	object cursor
+	{
+		defaults
+		{
+			pos 14.1454 1.60273
+			opacity 255
+			color 0xffffffff
+			size 260 20
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on sel
+		visible_on desel
+	}
+	object text
+	{
+		defaults
+		{
+			pos 12.1454 3.60273
+			opacity 255
+			color 0xffffffff
+			size 424 120
+			effect ""
+			alignment "LT"
+			sampleText "Курсант"
+			font "VerySmall"
+		}
+		visible_on sel
+		visible_on desel
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 438 2
+			opacity 255
+			color 0xffffffff
+			size 16 126
+			effect "ui\graphics\scroll\scroll_main"
+			alignment "LT"
+		}
+		visible_on sel
+		visible_on desel
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				7.64037 -0	13.6404 -0	449.607 -0	455.607 -0	7.64037 6	13.6404 6	449.607 6	455.607 6	7.64037 123.859	13.6404 123.859	449.607 123.859	455.607 123.859	7.64037 129.859	13.6404 129.859	449.607 129.859	455.607 129.859	
+				0.0019778 0.160203	0.00783718 0.160203	0.0204249 0.160203	0.0262842 0.160203	0.0019778 0.166062	0.00783718 0.166062	0.0204249 0.166062	0.0262842 0.166062	0.0019778 0.178786	0.00783718 0.178786	0.0204249 0.178786	0.0262842 0.178786	0.0019778 0.184645	0.00783718 0.184645	0.0204249 0.184645	0.0262842 0.184645	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on sel
+		visible_on desel
+	}
+	sprite sp219
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				7.64037 -0	13.6404 -0	449.607 -0	455.607 -0	7.64037 6	13.6404 6	449.607 6	455.607 6	7.64037 123.859	13.6404 123.859	449.607 123.859	455.607 123.859	7.64037 129.859	13.6404 129.859	449.607 129.859	455.607 129.859	
+				0.0548148 0.114133	0.0606741 0.114133	0.0732618 0.114133	0.0791212 0.114133	0.0548148 0.119992	0.0606741 0.119992	0.0732618 0.119992	0.0791212 0.119992	0.0548148 0.132716	0.0606741 0.132716	0.0732618 0.132716	0.0791212 0.132716	0.0548148 0.138576	0.0606741 0.138576	0.0732618 0.138576	0.0791212 0.138576	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on sel
+		anim desel sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+		}
+	}
+}
+
