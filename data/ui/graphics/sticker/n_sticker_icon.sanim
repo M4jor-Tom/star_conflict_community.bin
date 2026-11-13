@@ -1,0 +1,70 @@
+﻿source_file "Y:/art/source/ui/graphics/sticker/sticker.ma"
+//by sergey_mitryaev
+//at Fri Jul 05 10:29:55 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 85 85
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				-0.121639 -0.398613	84.8784 -0.398613	-0.121639 84.6014	84.8784 84.6014	
+				-9.77889e-009 0	1 0	-9.77889e-009 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp2df
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 63	6 63	79 63	85 63	0 69	6 69	79 69	85 69	0 79	6 79	79 79	85 79	0 85	6 85	79 85	85 85	
+				0.116201 0.115234	0.122061 0.115234	0.194346 0.115234	0.200205 0.115234	0.116201 0.121094	0.122061 0.121094	0.194346 0.121094	0.200205 0.121094	0.116201 0.136141	0.122061 0.136141	0.194346 0.136141	0.200205 0.136141	0.116201 0.142001	0.122061 0.142001	0.194346 0.142001	0.200205 0.142001	
+			}
+		}
+		visible_on idle
+	}
+}
+
