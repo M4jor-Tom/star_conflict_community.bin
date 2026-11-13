@@ -1,0 +1,56 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Mon Dec 17 15:47:18 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/mark_pattern.tif"
+			vertices
+			{
+				101 107	117 107	101 123	117 123	
+				0.486328 0.486328	0.513672 0.486328	0.486328 0.513672	0.513672 0.513672	
+				0xdeffffff	0xdeffffff	0xdeffffff	0xdeffffff	
+			}
+		}
+		anim idle sp_pos_uv_col
+		{
+			2 2 11
+			101 107	117 107	101 123	117 123	
+			60.0464 66.0464	157.953 66.0464	60.0464 163.953	157.953 163.953	
+			0.486328 0.486328	0.513672 0.486328	0.486328 0.513672	0.513672 0.513672	
+			0.414143 0.41219	0.589764 0.41219	0.414143 0.58781	0.589764 0.58781	
+			0xdeffffff	0xdeffffff	0xdeffffff	0xdeffffff	
+			0xd0ffffff	0xd0ffffff	0xd0ffffff	0xd0ffffff	
+			0xc1ffffff	0xc1ffffff	0xc1ffffff	0xc1ffffff	
+			0xb3ffffff	0xb3ffffff	0xb3ffffff	0xb3ffffff	
+			0xa4ffffff	0xa4ffffff	0xa4ffffff	0xa4ffffff	
+			0x96ffffff	0x96ffffff	0x96ffffff	0x96ffffff	
+			0x87ffffff	0x87ffffff	0x87ffffff	0x87ffffff	
+			0x79ffffff	0x79ffffff	0x79ffffff	0x79ffffff	
+			0x6affffff	0x6affffff	0x6affffff	0x6affffff	
+			0x5cffffff	0x5cffffff	0x5cffffff	0x5cffffff	
+			0x4dffffff	0x4dffffff	0x4dffffff	0x4dffffff	
+		}
+	}
+}
+
