@@ -1,0 +1,121 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Fri Sep 24 16:11:52 2021
+
+base_res 1280 720
+
+animations 4
+{
+	anim off_enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off_friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim on_enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim on_friend
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 20
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on off_enemy
+		visible_on off_friend
+		visible_on on_enemy
+		visible_on on_friend
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-6 -12	30 -12	-6 32	30 32	
+				0.0927734 0.496094	0.12793 0.496094	0.0927734 0.539063	0.12793 0.539063	
+				0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+			}
+		}
+		visible_on off_enemy
+		anim off_friend sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+		anim on_enemy sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+		anim on_friend sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+	}
+	sprite icon
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-6 -12	30 -12	-6 32	30 32	
+				0.129883 0.496094	0.165039 0.496094	0.129883 0.539063	0.165039 0.539063	
+				0xff2700	0xff2700	0xff2700	0xff2700	
+			}
+		}
+		visible_on off_enemy
+		anim off_friend sp_colc
+		{
+			1
+			0x7fb2ff	0x7fb2ff	0x7fb2ff	0x7fb2ff	
+		}
+		anim on_enemy sp_colc
+		{
+			1
+			0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+		}
+		anim on_friend sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+	}
+}
+
