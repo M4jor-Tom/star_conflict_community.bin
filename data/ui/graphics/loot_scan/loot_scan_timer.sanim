@@ -1,0 +1,54 @@
+﻿source_file  Y:/art/source/ui/graphics/loot_scan/loot_scan.ma
+//by sergey_mitryaev
+//at Tue May 29 11:37:36 2012
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim finish
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object timer
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect ""
+			alignment "CM"
+			sampleText "00:25"
+			font "Medium"
+		}
+		visible_on idle
+		anim finish obj_col
+		{
+			10
+			0xffffffff
+			0xfffff9f9
+			0xffffe9e8
+			0xffffd1cf
+			0xffffb3b0
+			0xffff918d
+			0xffff6d67
+			0xffff4942
+			0xffff271f
+			0xffff0a00
+		}
+	}
+}
+
