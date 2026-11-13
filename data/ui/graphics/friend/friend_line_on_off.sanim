@@ -1,0 +1,237 @@
+﻿source_file "Y:/art/source/ui/graphics/friend/friend.ma"
+//by Sergey_Mitryaev
+//at Fri Feb 10 12:20:05 2017
+
+base_res 1280 720
+
+animations 7
+{
+	anim on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim gold
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim ignor
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lid_off
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lid_on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lid
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 15 15
+			effect ""
+			alignment "LT"
+		}
+		visible_on on
+		visible_on off
+		visible_on gold
+		visible_on ignor
+		visible_on lid_off
+		visible_on lid_on
+		visible_on lid
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				1.5 1.5	13.5 1.5	1.5 13.5	13.5 13.5	
+				0.388672 0.173828	0.400391 0.173828	0.388672 0.185547	0.400391 0.185547	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on on
+		anim off sp_uvc
+		{
+			1 
+			0.376953 0.173828	0.388672 0.173828	0.376953 0.185547	0.388672 0.185547	
+		}
+		anim gold sp_posc_uvc
+		{
+			1 1 
+			-1 -1	16 -1	-1 16	16 16	
+			0.302734 0.0527344	0.320313 0.0527344	0.302734 0.0703125	0.320313 0.0703125	
+		}
+		anim ignor sp_uvc_colc
+		{
+			1 1
+			0.861328 0.0556641	0.873047 0.0556641	0.861328 0.0673828	0.873047 0.0673828	
+			0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	0xffb2b2b2	
+		}
+		anim lid_off sp_uvc_colc
+		{
+			1 1
+			0.861328 0.0556641	0.873047 0.0556641	0.861328 0.0673828	0.873047 0.0673828	
+			0x1fefefe	0x1fefefe	0x1fefefe	0x1fefefe	
+		}
+		anim lid_on sp_uvc_colc
+		{
+			1 1
+			0.861328 0.0556641	0.873047 0.0556641	0.861328 0.0673828	0.873047 0.0673828	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim lid sp_uvc_colc
+		{
+			1 1
+			0.861328 0.0556641	0.873047 0.0556641	0.861328 0.0673828	0.873047 0.0673828	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName337
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.5 0.5	14.5 0.5	0.5 14.5	14.5 14.5	
+				0.384766 0.285156	0.398438 0.285156	0.384766 0.298828	0.398438 0.298828	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on on
+		visible_on off
+		anim gold sp_posc
+		{
+			1 
+			-2 -2	17 -2	-2 17	17 17	
+		}
+		anim ignor sp_colc
+		{
+			1
+			0xb2b2b2	0xb2b2b2	0xb2b2b2	0xb2b2b2	
+		}
+		anim lid_off sp_colc
+		{
+			1
+			0xfdfefefe	0xfdfefefe	0xfdfefefe	0xfdfefefe	
+		}
+		visible_on lid_on
+		visible_on lid
+	}
+	sprite objectName338
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.5 0.5	14.5 0.5	0.5 14.5	14.5 14.5	
+				0.370117 0.285156	0.383789 0.285156	0.370117 0.298828	0.383789 0.298828	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on on
+		visible_on off
+		anim gold sp_posc
+		{
+			1 
+			-2 -2	17 -2	-2 17	17 17	
+		}
+		anim ignor sp_colc
+		{
+			1
+			0xb2b2b2	0xb2b2b2	0xb2b2b2	0xb2b2b2	
+		}
+		anim lid_off sp_colc
+		{
+			1
+			0xfefefe	0xfefefe	0xfefefe	0xfefefe	
+		}
+		anim lid_on sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on lid
+	}
+	sprite objectName339
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.5 0.5	14.5 0.5	0.5 14.5	14.5 14.5	
+				0.399414 0.285156	0.413086 0.285156	0.399414 0.298828	0.413086 0.298828	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on on
+		visible_on off
+		anim gold sp_posc
+		{
+			1 
+			-2 -2	17 -2	-2 17	17 17	
+		}
+		anim ignor sp_colc
+		{
+			1
+			0xb2b2b2	0xb2b2b2	0xb2b2b2	0xb2b2b2	
+		}
+		anim lid_off sp_colc
+		{
+			1
+			0xfefefe	0xfefefe	0xfefefe	0xfefefe	
+		}
+		visible_on lid_on
+		anim lid sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
