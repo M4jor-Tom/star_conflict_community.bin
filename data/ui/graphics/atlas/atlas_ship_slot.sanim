@@ -1,0 +1,193 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by Sergey_Mitryaev
+//at Wed Feb 14 16:09:51 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 11
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 320
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\atlas\atlas_ship_slot_bg"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ship_ico
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\atlas\atlas_ship_ico"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object lvl
+	{
+		defaults
+		{
+			pos 92.5081 16
+			opacity 255
+			color 0xffffffff
+			size 100 40
+			effect ""
+			alignment "LM"
+			sampleText "333"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 36.9428 261.22
+			opacity 255
+			color 0xffffffff
+			size 400 50
+			effect "ui\graphics\atlas\atlas_ship_name"
+			alignment "RM"
+			font "play_reg_24"
+		}
+		visible_on idle
+	}
+	object role
+	{
+		defaults
+		{
+			pos 84.3862 10
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\ships_tree_3\ed_ship_info_role_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object lvl2
+	{
+		defaults
+		{
+			pos -6 21
+			opacity 255
+			color 0xffffffff
+			size 100 30
+			effect ""
+			alignment "CM"
+			sampleText "333"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object lvl2_color
+	{
+		defaults
+		{
+			pos -177.377 175.098
+			opacity 255
+			color 0xff4d565d
+			size 100 30
+			effect ""
+			alignment "LM"
+			sampleText "lvl2_color"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 320
+			effect "ui\graphics\atlas\atlas_ship_slot_over"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bg_2
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\atlas\atlas_ship_slot_bg_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object bg_2_1
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\atlas\atlas_ship_slot_bg_2_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -0	10.6667 -0	439.5 -0	450.167 -0	0 10.6667	10.6667 10.6667	439.5 10.6667	450.167 10.6667	0 309	10.6667 309	439.5 309	450.167 309	0 319.667	10.6667 319.667	439.5 319.667	450.167 319.667	
+				0.695313 0.847656	0.716146 0.847656	0.736979 0.847656	0.757813 0.847656	0.695313 0.86849	0.716146 0.86849	0.736979 0.86849	0.757813 0.86849	0.695313 0.889323	0.716146 0.889323	0.736979 0.889323	0.757813 0.889323	0.695313 0.910156	0.716146 0.910156	0.736979 0.910156	0.757813 0.910156	
+				0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	0x8cffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
