@@ -1,0 +1,178 @@
+﻿source_file "Y:/art/source/ui/graphics/player_progress/player_progress.ma"
+//by sergey_mitryaev
+//at Mon Jul 21 11:45:33 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 382 34
+			effect ""
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object title
+	{
+		defaults
+		{
+			pos 40 7
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Wsds f geghg eh "
+			font "VerySmall"
+		}
+		visible_on idle
+		anim over obj_opc
+		{
+			1 
+			255
+		}
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 347 7
+			opacity 255
+			color 0xffff9000
+			size 30 20
+			effect ""
+			alignment "RM"
+			sampleText "20"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim over obj_opc
+		{
+			1 
+			255
+		}
+	}
+	object ico_1
+	{
+		defaults
+		{
+			pos 346 1
+			opacity 255
+			color 0xffffffff
+			size 30 20
+			effect "ui\graphics\player_progress\pl_prog_ico_1"
+			alignment "RM"
+			sampleText "20"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim over obj_opc
+		{
+			1 
+			255
+		}
+	}
+}
+
+sprites 4
+{
+	total_vertices 52
+
+	sprite bg38
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	6 -4	376 -4	386 -4	-4 6	6 6	376 6	386 6	-4 28	6 28	376 28	386 28	-4 38	6 38	376 38	386 38	
+				0.0849609 0.670898	0.0947266 0.670898	0.0986328 0.670898	0.108398 0.670898	0.0849609 0.680664	0.0947266 0.680664	0.0986328 0.680664	0.108398 0.680664	0.0849609 0.68457	0.0947266 0.68457	0.0986328 0.68457	0.108398 0.68457	0.0849609 0.694336	0.0947266 0.694336	0.0986328 0.694336	0.108398 0.694336	
+				0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	0x83000000	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+	sprite bg31
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-4 -4	6 -4	376 -4	386 -4	-4 6	6 6	376 6	386 6	-4 28	6 28	376 28	386 28	-4 38	6 38	376 38	386 38	
+				0.0263672 0.714844	0.0361328 0.714844	0.0400391 0.714844	0.0498047 0.714844	0.0263672 0.724609	0.0361328 0.724609	0.0400391 0.724609	0.0498047 0.724609	0.0263672 0.728516	0.0361328 0.728516	0.0400391 0.728516	0.0498047 0.728516	0.0263672 0.738281	0.0361328 0.738281	0.0400391 0.738281	0.0498047 0.738281	
+				0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+	sprite objectName329
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				3 2	33 2	3 32	33 32	
+				0.392578 0.635742	0.421875 0.635742	0.392578 0.665039	0.421875 0.665039	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+	sprite bg32
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-4 -4	6 -4	376 -4	386 -4	-4 6	6 6	376 6	386 6	-4 28	6 28	376 28	386 28	-4 38	6 38	376 38	386 38	
+				0.00195313 0.69043	0.0117188 0.69043	0.015625 0.69043	0.0253906 0.69043	0.00195313 0.700195	0.0117188 0.700195	0.015625 0.700195	0.0253906 0.700195	0.00195313 0.704102	0.0117188 0.704102	0.015625 0.704102	0.0253906 0.704102	0.00195313 0.713867	0.0117188 0.713867	0.015625 0.713867	0.0253906 0.713867	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
