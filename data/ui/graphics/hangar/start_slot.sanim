@@ -1,0 +1,103 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Tue Nov 12 13:21:56 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object pl_title
+	{
+		defaults
+		{
+			pos 67.7985 42.1798
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect "ui\graphics\hangar\token"
+			alignment "RM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object pl_name
+	{
+		defaults
+		{
+			pos 89.7985 1.31309
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect ""
+			alignment "RM"
+			sampleText "naGIBAtor"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object pl_expo
+	{
+		defaults
+		{
+			pos 89.7985 22.9264
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect ""
+			alignment "RM"
+			sampleText "3000xp"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 150
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object load_text_3
+	{
+		defaults
+		{
+			pos 175.979 4.98267
+			opacity 255
+			color 0xffffffff
+			size 64 8
+			effect "ui\graphics\hangar\loading_text"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+	object load_text_4
+	{
+		defaults
+		{
+			pos 175.979 27.7908
+			opacity 255
+			color 0xffffffff
+			size 64 8
+			effect "ui\graphics\hangar\loading_text"
+			alignment "RM"
+		}
+		visible_on idle
+	}
+}
+
