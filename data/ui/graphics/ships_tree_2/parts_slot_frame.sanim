@@ -1,0 +1,70 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by Sergey
+//at Thu May 12 19:53:10 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite que241
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 -0	94 -0	0 48	94 48	
+				0.302734 0.644531	0.486328 0.644531	0.302734 0.738281	0.486328 0.738281	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite que249
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_1.tif"
+			vertices
+			{
+				0 -0	94 -0	0 48	94 48	
+				0.548828 0.734375	0.732422 0.734375	0.548828 0.828125	0.732422 0.828125	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
