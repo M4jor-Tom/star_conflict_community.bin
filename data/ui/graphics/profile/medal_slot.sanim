@@ -1,0 +1,87 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by sergey_mitryaev
+//at Mon Mar 11 13:48:28 2019
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos 17 104
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect ""
+			alignment "CM"
+			sampleText "10"
+			font "Medium"
+		}
+		visible_on idle
+		anim lock obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 84 120
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on lock
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	84 -0	0 112	84 112	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim lock sp_colc
+		{
+			1
+			0x4cffffff	0x4cffffff	0x4cffffff	0x4cffffff	
+		}
+	}
+}
+
