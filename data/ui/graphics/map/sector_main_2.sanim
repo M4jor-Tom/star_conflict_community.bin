@@ -1,0 +1,282 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Fri Jun 30 11:06:20 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 18
+
+objects 18
+{
+	object center
+	{
+		defaults
+		{
+			pos 9.71966 10.2436
+			opacity 153
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object title_4
+	{
+		defaults
+		{
+			pos -38.2803 30.2436
+			opacity 255
+			color 0xffababab
+			size 100 50
+			effect ""
+			alignment "CT"
+			sampleText "Sector 4"
+			font "Tiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object fraction_ico_1
+	{
+		defaults
+		{
+			pos -95.2803 -8.75635
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\ship_fraction_ico"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object fraction_ico_2
+	{
+		defaults
+		{
+			pos -95.2803 -8.75635
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\hangar\ship_fraction_ico"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bg_1
+	{
+		defaults
+		{
+			pos 9.71966 10.2436
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_bg_1"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bg_2
+	{
+		defaults
+		{
+			pos 9.71966 10.2436
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_bg_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object marker
+	{
+		defaults
+		{
+			pos 9.71966 10.2436
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_sector_marker"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object color_title_1
+	{
+		defaults
+		{
+			pos -38.2803 54.2436
+			opacity 153
+			color 0xffffdeb3
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "Color Sector 4"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object color_title_2
+	{
+		defaults
+		{
+			pos -38.2803 77.2436
+			opacity 255
+			color 0xffc6c6c6
+			size 100 50
+			effect ""
+			alignment "CM"
+			sampleText "Color Sector 4"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_8
+	{
+		defaults
+		{
+			pos -28.2803 18.2436
+			opacity 255
+			color 0xffffffff
+			size 80 30
+			effect ""
+			alignment "CT"
+			sampleText "Sector 4|dfv sg sg "
+			font "VeryTiny"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object color_title_3
+	{
+		defaults
+		{
+			pos -38.2803 100.244
+			opacity 255
+			color 0xff737373
+			size 100 20
+			effect ""
+			alignment "CM"
+			sampleText "Color Sector 4"
+			font "VerySmall"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object rang
+	{
+		defaults
+		{
+			pos -106.28 0.243647
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect ""
+			alignment "RM"
+			sampleText "15"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object lock
+	{
+		defaults
+		{
+			pos 2.71966 -0.756353
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\ships_tree\ship_tr_lock"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object clan_ico_2
+	{
+		defaults
+		{
+			pos -6.28034 -32.7564
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\map\map_clan_ico_2"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object lock4
+	{
+		defaults
+		{
+			pos 4.71966 -7.75635
+			opacity 255
+			color 0xffffffff
+			size 10 12
+			effect "ui\graphics\map\lock"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object exclamatory
+	{
+		defaults
+		{
+			pos 1 -23
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\map\sector_exclamatory"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object bg_6
+	{
+		defaults
+		{
+			pos 9.71966 10.2436
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\map\sector_bg_6"
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+}
+
