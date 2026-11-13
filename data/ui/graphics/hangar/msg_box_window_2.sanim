@@ -1,0 +1,141 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Wed Dec 18 12:32:01 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 7
+{
+	object title
+	{
+		defaults
+		{
+			pos 10.3215 -0
+			opacity 255
+			color 0xffff9a00
+			size 300 20
+			effect ""
+			alignment "LM"
+			sampleText "Conection problen"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 10.3215 29.731
+			opacity 255
+			color 0xffffffff
+			size 530 60
+			effect ""
+			alignment "LT"
+			sampleText "Conection problen Text"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dist_max
+	{
+		defaults
+		{
+			pos 0 5.95459
+			opacity 255
+			color 0xffffffff
+			size 10 250
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dist_min
+	{
+		defaults
+		{
+			pos 10.3215 29.731
+			opacity 255
+			color 0xffffffff
+			size 10 40
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_3
+	{
+		defaults
+		{
+			pos 3.30941 94.3768
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn6"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_4
+	{
+		defaults
+		{
+			pos 204.445 94.3768
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn6"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_5
+	{
+		defaults
+		{
+			pos 407.445 94.3768
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\hangar\msg_box_btn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-4 -4	4 -4	564 -4	572 -4	-4 22	4 22	564 22	572 22	-4 118	4 118	564 118	572 118	-4 126	4 126	564 126	572 126	
+				0.0585938 0.695313	0.0664063 0.695313	0.0742188 0.695313	0.0820313 0.695313	0.0585938 0.720703	0.0664063 0.720703	0.0742188 0.720703	0.0820313 0.720703	0.0585938 0.723633	0.0664063 0.723633	0.0742188 0.723633	0.0820313 0.723633	0.0585938 0.731445	0.0664063 0.731445	0.0742188 0.731445	0.0820313 0.731445	
+			}
+		}
+		visible_on idle
+	}
+}
+
