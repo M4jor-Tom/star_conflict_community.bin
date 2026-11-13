@@ -1,0 +1,233 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing_2.ma"
+//by sergey_mitryaev
+//at Mon Mar 01 15:56:15 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 15
+
+objects 12
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 950 570
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object status_image
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 950 204
+			effect "ui\graphics\debrifing_2\deb_status_image"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object status_mess
+	{
+		defaults
+		{
+			pos 128 31
+			opacity 255
+			color 0xffffffff
+			size 680 60
+			effect "ui\graphics\debrifing_2\deb_status_mess"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object result
+	{
+		defaults
+		{
+			pos 310 166
+			opacity 255
+			color 0xffffffff
+			size 320 24
+			effect "ui\graphics\debrifing_2\deb_result"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object result_block_1
+	{
+		defaults
+		{
+			pos -442 253
+			opacity 255
+			color 0xffffffff
+			size 380 110
+			effect "ui\graphics\debrifing_2\result_block_1_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object result_block_2
+	{
+		defaults
+		{
+			pos 14 261
+			opacity 255
+			color 0xffffffff
+			size 525 110
+			effect "ui\graphics\debrifing_2\result_block_2_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object karma
+	{
+		defaults
+		{
+			pos 12 209
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\debrifing_2\karma_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object trophy
+	{
+		defaults
+		{
+			pos 14 408
+			opacity 255
+			color 0xffffffff
+			size 620 150
+			effect "ui\graphics\debrifing_2\trophy_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 360 380
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "CM"
+			sampleText "q3t 3y4 5uj 4 i 4i"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object medals
+	{
+		defaults
+		{
+			pos 563 217
+			opacity 255
+			color 0xffffffff
+			size 380 150
+			effect "ui\graphics\debrifing_2\quest_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 328 166
+			opacity 255
+			color 0xffffdeb3
+			size 300 24
+			effect ""
+			alignment "CM"
+			sampleText "3435"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object reputation
+	{
+		defaults
+		{
+			pos 220 215
+			opacity 255
+			color 0xffffffff
+			size 330 20
+			effect "ui\graphics\debrifing_2\rep_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 48
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				8 210	14 210	937 210	943 210	8 216	14 216	937 216	943 216	8 372	14 372	937 372	943 372	8 378	14 378	937 378	943 378	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26e9
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 5.72205e-006	6 5.72205e-006	944 5.72205e-006	950 5.72205e-006	0 6.00001	6 6.00001	944 6.00001	950 6.00001	0 198	6 198	944 198	950 198	0 204	6 204	944 204	950 204	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+	sprite sp26iuo
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				8 402	14 402	937 402	943 402	8 408	14 408	937 408	943 408	8 564	14 564	937 564	943 564	8 570	14 570	937 570	943 570	
+				0.223577 0.00283498	0.229437 0.00283498	0.266534 0.00283498	0.272394 0.00283498	0.223577 0.00869435	0.229437 0.00869435	0.266534 0.00869435	0.272394 0.00869435	0.223577 0.0449664	0.229437 0.0449664	0.266534 0.0449664	0.272394 0.0449664	0.223577 0.0508258	0.229437 0.0508258	0.266534 0.0508258	0.272394 0.0508258	
+			}
+		}
+		visible_on idle
+	}
+}
+
