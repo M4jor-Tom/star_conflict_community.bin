@@ -1,0 +1,82 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/drop_down.ma"
+//by Sergey
+//at Tue Jul 05 11:56:07 2016
+
+base_res 1280 720
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object drop_down_btn
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 390 22
+			effect "ui\graphics\shop\filt_drop_down_btn"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object list
+	{
+		defaults
+		{
+			pos -0.63286 25.0944
+			opacity 255
+			color 0xffffffff
+			size 20 22
+			effect "ui\graphics\shop\filt_drop_down_list"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 350
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object drop_down_text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 22
+			effect "ui\graphics\shop\filt_drop_down_input"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
