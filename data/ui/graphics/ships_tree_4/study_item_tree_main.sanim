@@ -1,0 +1,162 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race_4.ma"
+//by Sergey_Mitryaev
+//at Wed Nov 29 11:37:41 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hide
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 6
+{
+	object item
+	{
+		defaults
+		{
+			pos 117.708 27
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on hide
+	}
+	object tem_tree
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\ships_tree_4\study_item_tree"
+			alignment "LT"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			255
+			255
+			255
+			255
+			255
+			228
+			165
+			89
+			26
+			0
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 180
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on hide
+	}
+	object decor
+	{
+		defaults
+		{
+			pos 0.0872303 -0.79674
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\ships_tree_3\alien_craft_decor_3"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on hide
+	}
+	object study_item_ico
+	{
+		defaults
+		{
+			pos 113 22
+			opacity 255
+			color 0xffffffff
+			size 60 60
+			effect "ui\graphics\ships_tree_3\study_item_ico"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on hide
+	}
+	object ico_spec
+	{
+		defaults
+		{
+			pos 105 14
+			opacity 255
+			color 0xffffffff
+			size 60 60
+			effect "ui\graphics\ships_tree_3\study_item_ico_spec"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on hide
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite que404
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_2.tif"
+			vertices_nc
+			{
+				105 14	181 14	105 90	181 90	
+				0.00390625 0.193359	0.152344 0.193359	0.00390625 0.341797	0.152344 0.341797	
+			}
+		}
+		visible_on idle
+		visible_on hide
+	}
+	sprite que405
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3_2.tif"
+			vertices_nc
+			{
+				143.528 89	143.528 104	141.528 89	141.528 104	
+				0.195313 0.0957031	0.255859 0.0957031	0.195313 0.0996094	0.255859 0.0996094	
+			}
+		}
+		visible_on idle
+		visible_on hide
+	}
+}
+
