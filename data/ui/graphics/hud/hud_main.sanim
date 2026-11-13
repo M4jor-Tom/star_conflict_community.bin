@@ -1,0 +1,492 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud.ma"
+//by sergey_mitryaev
+//at Mon Oct 04 17:02:56 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 32
+
+objects 32
+{
+	object modules
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 355 589.119
+			opacity 255
+			color 0xffffffff
+			size 568 130
+			effect "ui\graphics\hud\modules_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object navigator
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 959 28.5586
+			opacity 255
+			color 0xffffffff
+			size 310 185
+			effect "ui\graphics\hud\combo_effects_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object warning_msg
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 400 320
+			effect "ui\graphics\warning_msg\warning_msg_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object buff
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 152 586
+			opacity 255
+			color 0xffffffff
+			size 920 30
+			effect "ui\graphics\hud\buff_main"
+			alignment "LM"
+		}
+		visible_on idle
+	}
+	object warning
+	{
+		defaults
+		{
+			anchor "C"
+			pos 388.561 238
+			opacity 255
+			color 0xffffffff
+			size 300 100
+			effect "ui\graphics\hud\wow_msg"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object map_view
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\map_view\map_view_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object map_grid
+	{
+		defaults
+		{
+			anchor "LT"
+			keep_screen_size
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\map_view\map_view_grid"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object map_title
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 600 40
+			effect "ui\graphics\map_view\map_title"
+			alignment "CM"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object medals
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 1045.33 363.412
+			opacity 255
+			color 0xffffffff
+			size 230 220
+			effect "ui\graphics\awards\medals_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object score
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 230 100
+			effect "ui\graphics\awards\effectiv_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ratio
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 415.592 5.32811
+			opacity 255
+			color 0xffffffff
+			size 450 50
+			effect "ui\graphics\hud\ratio\gmp_oaa_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object timer
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 1192.44 5.59607
+			opacity 255
+			color 0xffffffff
+			size 100 20
+			effect "ui\graphics\hud\timer"
+			alignment "CM"
+			sampleText "226:35"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object target_window
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 9.90977 27.1023
+			opacity 255
+			color 0xffffffff
+			size 260 150
+			effect "ui\graphics\hud\target_window"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object map_info
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 888.729 5.59607
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect "ui\graphics\hud\map_info"
+			alignment "RM"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object bomb_prog
+	{
+		defaults
+		{
+			anchor "C"
+			pos 567 159
+			opacity 255
+			color 0xffffffff
+			size 158 70
+			effect "ui\graphics\hud\ratio\bomb_prog_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object bomb
+	{
+		defaults
+		{
+			anchor "C"
+			pos 628 417
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\hud\bomb_in_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object msg_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 389.58 113
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect "ui\graphics\warning_msg\warning_msg_2"
+			alignment "CM"
+			font "Small"
+		}
+		visible_on idle
+	}
+	object player_name_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 566 325
+			opacity 255
+			color 0xffffffff
+			size 160 20
+			effect "ui\graphics\spectate\new\player_name_2"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object killmess
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 1.64007 188
+			opacity 255
+			color 0xffffffff
+			size 230 100
+			effect "ui\graphics\awards\killmess_name_slot"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object squad_info
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 11 273
+			opacity 255
+			color 0xffffffff
+			size 100 150
+			effect "ui\graphics\hud\ship_markers\squad_info_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object tutor_info
+	{
+		defaults
+		{
+			anchor "LC"
+			pos 1.64007 159
+			opacity 255
+			color 0xffffffff
+			size 230 100
+			effect "ui\graphics\tutor\tutor_info_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object progress_main_2
+	{
+		defaults
+		{
+			anchor "C"
+			pos 354 74
+			opacity 255
+			color 0xffffffff
+			size 572 572
+			effect "ui\graphics\hud\hud_3\progress_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object karma
+	{
+		defaults
+		{
+			anchor "TC"
+			pos 520 2
+			opacity 255
+			color 0xffffffff
+			size 120 70
+			effect "ui\graphics\hud\loot\h_karma_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object loot
+	{
+		defaults
+		{
+			anchor "RB"
+			pos 1068 488
+			opacity 255
+			color 0xffffffff
+			size 211 230
+			effect "ui\graphics\hud\loot\h_loot_2_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object map_info_2
+	{
+		defaults
+		{
+			anchor "RT"
+			pos 960 5.59607
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect "ui\graphics\hud\map_info"
+			alignment "RM"
+			font "VerySmall_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object damage_indicator
+	{
+		defaults
+		{
+			anchor "C"
+			pos 914 269
+			opacity 255
+			color 0xffffffff
+			size 230 220
+			effect "ui\graphics\hud\hud_3\damage_indicator"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object fps_info
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 760 30
+			effect "ui\graphics\hangar\fps_info_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object resurrection
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 429 377
+			opacity 255
+			color 0xffffffff
+			size 300 100
+			effect "ui\graphics\hud\combo_effects_2"
+			alignment "LB"
+		}
+		visible_on idle
+	}
+	object talk_head_2
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 364 498
+			opacity 255
+			color 0xffffffff
+			size 568 130
+			effect "ui\graphics\hud\talk_head_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object map
+	{
+		defaults
+		{
+			anchor "LT"
+			pos -2361 -0
+			opacity 255
+			color 0xffffffff
+			size 6000 3000
+			effect "ui\graphics\map\map_fs_main"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object killmess_2
+	{
+		defaults
+		{
+			anchor "BC"
+			pos 489 623
+			opacity 255
+			color 0xffffffff
+			size 300 70
+			effect "ui\graphics\hud\killmess"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			anchor "C"
+			pos 800 50
+			opacity 255
+			color 0xffffffff
+			size 580 730
+			effect "ui\graphics\quests_2\q_map_list_main_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
