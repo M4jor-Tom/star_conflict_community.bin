@@ -1,0 +1,83 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/profile.ma"
+//by sergey_mitryaev
+//at Thu Jun 13 17:31:57 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object title_list
+	{
+		defaults
+		{
+			pos 6 6
+			opacity 255
+			color 0xffffffff
+			size 440 510
+			effect "ui\graphics\profile\title_list"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 966 525
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title_info
+	{
+		defaults
+		{
+			pos 451 6
+			opacity 255
+			color 0xffffffff
+			size 500 510
+			effect "ui\graphics\profile\title_info"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	960 -0	966 -0	0 6	6 6	960 6	966 6	0 515	6 515	960 515	966 515	0 523	6 523	960 523	966 523	
+				0.325184 0.000963449	0.331044 0.000963449	0.370107 0.00096339	0.375966 0.00096339	0.325184 0.00682282	0.331044 0.00682282	0.370107 0.00682282	0.375966 0.00682276	0.325184 0.0439453	0.331044 0.0439453	0.370107 0.0439453	0.375966 0.0439453	0.325184 0.0517613	0.331044 0.0517614	0.370107 0.0517613	0.375966 0.0517614	
+			}
+		}
+		visible_on idle
+	}
+}
+
