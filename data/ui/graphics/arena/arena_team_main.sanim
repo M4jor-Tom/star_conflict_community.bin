@@ -1,0 +1,116 @@
+﻿source_file "Y:/art/source/ui/graphics/arena/arena.ma"
+//by sergey_mitryaev
+//at Tue Mar 05 18:11:09 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 7
+{
+	object description7
+	{
+		defaults
+		{
+			pos 30.1195 39
+			opacity 255
+			color 0xffffdeb3
+			size 700 20
+			effect ""
+			alignment "CM"
+			sampleText "Боевые Хомяки"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object top_3
+	{
+		defaults
+		{
+			pos 322.216 27.2464
+			opacity 255
+			color 0xffffffff
+			size 120 214
+			effect "ui\graphics\arena\ar_top_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 870 350
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object fights
+	{
+		defaults
+		{
+			pos 259 95
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\arena\ar_fights"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object wins
+	{
+		defaults
+		{
+			pos 441 95
+			opacity 255
+			color 0xffffffff
+			size 64 64
+			effect "ui\graphics\arena\ar_f_wins"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object pl_list
+	{
+		defaults
+		{
+			pos 0 190
+			opacity 255
+			color 0xffffffff
+			size 600 172
+			effect "ui\graphics\arena\ar_pl_list"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object description_color
+	{
+		defaults
+		{
+			pos 529.387 61.3589
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "+1"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
