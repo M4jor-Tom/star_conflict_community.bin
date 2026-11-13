@@ -1,0 +1,215 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Fri Mar 16 16:53:13 2018
+
+base_res 1920 1080
+
+animations 5
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 0.5
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim blink
+	{
+		mode looped
+		cycle_time 0.8
+	}
+}
+
+total_elements 7
+
+objects 4
+{
+	object loading
+	{
+		defaults
+		{
+			pos 59 -28
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big_2"
+			alignment "CM"
+			font "Large_outl"
+			blend color_add
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+		visible_on blink
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 220 46
+			effect ""
+			alignment "CM"
+			font "Medium"
+			blend color_add
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+		visible_on blink
+	}
+	object start
+	{
+		defaults
+		{
+			pos 1 6
+			opacity 255
+			color 0xffffffff
+			size 220 32
+			effect ""
+			alignment "CM"
+			sampleText "В БОЙ"
+			font "play_reg_34"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable obj_opc
+		{
+			1 
+			127
+		}
+		visible_on blink
+	}
+	object blink
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 220 46
+			effect "ui\graphics\hangar_iter_3\start_button_blink"
+			alignment "CM"
+			font "Medium"
+			blend color_add
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+		visible_on blink
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite we
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				-3 -5	225 -5	-3 49	225 49	
+				0.532227 0.00683594	0.754883 0.00683594	0.532227 0.0595703	0.754883 0.0595703	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+		}
+		visible_on blink
+	}
+	sprite we8_5
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				-3 -5	225 -5	-3 49	225 49	
+				0.761719 0.00585938	0.984375 0.00585938	0.761719 0.0585938	0.984375 0.0585938	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on press
+		visible_on disable
+		anim blink sp_col
+		{
+			9
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0xf4ffffff	0xf4ffffff	0xf4ffffff	0xf4ffffff	
+			0xd7ffffff	0xd7ffffff	0xd7ffffff	0xd7ffffff	
+			0xaeffffff	0xaeffffff	0xaeffffff	0xaeffffff	
+			0x7fffffff	0x7fffffff	0x7fffffff	0x7fffffff	
+			0x50ffffff	0x50ffffff	0x50ffffff	0x50ffffff	
+			0x27ffffff	0x27ffffff	0x27ffffff	0x27ffffff	
+			0xaffffff	0xaffffff	0xaffffff	0xaffffff	
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite we8_25
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				-3 -5	225 -5	-3 49	225 49	
+				0.532227 0.0693359	0.754883 0.0693359	0.532227 0.12207	0.754883 0.12207	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		anim disable sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim blink sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+}
+
