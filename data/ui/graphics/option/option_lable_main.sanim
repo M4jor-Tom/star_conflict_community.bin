@@ -1,0 +1,185 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Tue Jan 14 17:54:26 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 11
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 7 38
+			opacity 255
+			color 0xffffffff
+			size 17 20
+			effect "ui\graphics\option\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 820 152
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object lable_ship
+	{
+		defaults
+		{
+			pos 567 -3
+			opacity 255
+			color 0xffffffff
+			size 250 150
+			effect "ui\graphics\option\option_lable_ship"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 289 38
+			opacity 255
+			color 0xffffffff
+			size 17 20
+			effect "ui\graphics\option\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 7 63
+			opacity 255
+			color 0xffffffff
+			size 17 20
+			effect "ui\graphics\option\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 289 63
+			opacity 255
+			color 0xffffffff
+			size 17 20
+			effect "ui\graphics\option\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 7 88
+			opacity 255
+			color 0xffffffff
+			size 17 20
+			effect "ui\graphics\option\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_6
+	{
+		defaults
+		{
+			pos 289 88
+			opacity 255
+			color 0xffffffff
+			size 17 20
+			effect "ui\graphics\option\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_7
+	{
+		defaults
+		{
+			pos 7 114
+			opacity 255
+			color 0xffffffff
+			size 17 20
+			effect "ui\graphics\option\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_8
+	{
+		defaults
+		{
+			pos 289 114
+			opacity 255
+			color 0xffffffff
+			size 17 20
+			effect "ui\graphics\option\chek_box"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 6 2
+			opacity 255
+			color 0xffffffff
+			size 200 20
+			effect "ui\graphics\option\chek_box_text_2"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp26
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				2 0.5	8 0.5	811 0.5	817 0.5	2 6.5	8 6.5	811 6.5	817 6.5	2 17.5	8 17.5	811 17.5	817 17.5	2 23.5	8 23.5	811 23.5	817 23.5	
+				0.282229 0.0097183	0.288089 0.0097183	0.313474 0.0097183	0.319333 0.0097183	0.282229 0.0155777	0.288089 0.0155777	0.313474 0.0155777	0.319333 0.0155777	0.282229 0.0273911	0.288089 0.0273911	0.313474 0.0273911	0.319333 0.0273911	0.282229 0.0332505	0.288089 0.0332505	0.313474 0.0332505	0.319333 0.0332505	
+			}
+		}
+		visible_on idle
+	}
+}
+
