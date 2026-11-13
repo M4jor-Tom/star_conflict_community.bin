@@ -1,0 +1,71 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Tue Feb 19 16:24:59 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object namber
+	{
+		defaults
+		{
+			pos -1 -0
+			opacity 255
+			color 0xffffffff
+			size 20 18
+			effect ""
+			alignment "CM"
+			sampleText "4"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp12
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0274658 18	0.0274734 12	0.0274658 6	0.0274734 3.8147e-006	6.02746 18	6.02747 12	6.02747 6	6.02747 -3.8147e-006	12 18	12 12	12 6	12 -3.8147e-006	18 18	18 12	18 5.99999	18 -3.8147e-006	
+				0.245117 0.292969	0.245117 0.287109	0.245117 0.282227	0.245117 0.276367	0.239258 0.292969	0.239258 0.287109	0.239258 0.282227	0.239258 0.276367	0.234375 0.292969	0.234375 0.287109	0.234375 0.282227	0.234375 0.276367	0.228516 0.292969	0.228516 0.287109	0.228516 0.282227	0.228516 0.276367	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xff696969	0xff696969	0xffffffff	0xffffffff	0xff696969	0xff696969	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
