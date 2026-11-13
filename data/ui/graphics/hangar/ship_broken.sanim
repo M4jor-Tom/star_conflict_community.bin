@@ -1,0 +1,124 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by Sergey
+//at Wed Dec 23 10:21:48 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+sprites 6
+{
+	total_vertices 24
+
+	sprite objectName244
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				7.53157 64.4241	129.19 64.4241	7.53157 21.5759	129.19 21.5759	
+				0.288574 0.863281	0.290039 0.863281	0.288574 0.868164	0.290039 0.868164	
+				0x99898989	0x99898989	0x99898989	0x99898989	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName243
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				7.53157 64.4241	129.19 64.4241	7.53157 79.4241	129.19 79.4241	
+				0.289551 0.861328	0.291016 0.861328	0.289551 0.866211	0.291016 0.866211	
+				0x997f7f7f	0x997f7f7f	0x997f7f7f	0x997f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName242
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				7.53157 6.57594	129.19 6.57594	7.53157 21.5759	129.19 21.5759	
+				0.289551 0.861328	0.291016 0.861328	0.289551 0.866211	0.291016 0.866211	
+				0x997f7f7f	0x997f7f7f	0x997f7f7f	0x997f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName248
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				127.224 78.0389	6.8096 78.0389	127.224 64.7089	6.80963 64.7088	
+				0.284919 0.847869	0.406488 0.847869	0.284919 0.87103	0.406488 0.87103	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName247
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				127.224 20.5633	6.8096 20.5633	127.224 7.33055	6.80963 7.33047	
+				0.284919 0.847799	0.406488 0.847799	0.284919 0.870951	0.406488 0.870951	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico_ship
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			not_align
+			vertices_nc
+			{
+				40.8563 15.7889	93.8563 15.7889	40.8563 68.7889	93.8563 68.7889	
+				0.00173277 0.639394	0.0534906 0.639394	0.00173277 0.691151	0.0534906 0.691151	
+			}
+		}
+		visible_on idle
+	}
+}
+
