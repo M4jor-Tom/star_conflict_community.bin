@@ -1,0 +1,113 @@
+﻿source_file  Y:/art/source/ui/graphics/agreement/agreement.ma
+//by sergey_mitryaev
+//at Mon Jun 18 16:55:40 2012
+
+
+animations 2
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim show
+	{
+		mode once
+		cycle_time 5
+	}
+}
+
+total_elements 4
+
+objects 3
+{
+	object title
+	{
+		defaults
+		{
+			pos 5.72318 5.8694
+			opacity 255
+			color 0xffffffff
+			size 250 20
+			effect ""
+			alignment "LM"
+			sampleText "Соглашение"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim show obj_op
+		{
+			2 
+			0
+			255
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 385 470
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on show
+	}
+	object description
+	{
+		defaults
+		{
+			pos 5.9257 25.3747
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\agreement\news_description"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		anim show obj_op
+		{
+			2 
+			0
+			255
+		}
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp5
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0442877 -0	6.04429 -0	380.963 -0	386.963 -0	0.0442877 6	6.04429 6	380.963 6	386.963 6	0.0442877 465.318	6.04429 465.318	380.963 465.318	386.963 465.318	0.0442877 471.318	6.04429 471.318	380.963 471.318	386.963 471.318	
+				0.00190511 0.159248	0.00776449 0.159248	0.0205952 0.159248	0.0264545 0.159248	0.00190511 0.165108	0.00776449 0.165108	0.0205952 0.165108	0.0264545 0.165108	0.00190511 0.179604	0.00776449 0.179604	0.0205952 0.179604	0.0264545 0.179604	0.00190511 0.185463	0.00776449 0.185463	0.0205952 0.185463	0.0264545 0.185463	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		anim show sp_col
+		{
+			6
+			0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+			0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	0x33ffffff	
+			0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	0x99ffffff	
+			0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	0xccffffff	
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
