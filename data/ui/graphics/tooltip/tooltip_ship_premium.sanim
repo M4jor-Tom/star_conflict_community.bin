@@ -1,0 +1,84 @@
+﻿source_file "Y:/art/source/ui/graphics/tooltip/tooltip.ma"
+//by sergey_mitryaev
+//at Thu Sep 10 17:23:03 2015
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos 4 -0
+			opacity 255
+			color 0xffff9100
+			size 500 54
+			effect ""
+			alignment "LM"
+			sampleText "dsgewgqeghqhe|srgewrg|egeghg"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 515 56
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp16
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	508 -0	514 -0	0 5.95985	6 5.95985	508 5.95985	514 5.95985	0 50	6 50	508 50	514 50	0 56	6 56	508 56	514 56	
+				0.00197756 0.785167	0.00783694 0.785167	0.102539 0.785167	0.108398 0.785167	0.00197756 0.791026	0.00783694 0.791026	0.102539 0.791026	0.108398 0.791026	0.00197756 0.839844	0.00783694 0.839844	0.102539 0.839844	0.108398 0.839844	0.00197756 0.845703	0.00783694 0.845703	0.102539 0.845703	0.108398 0.845703	
+				0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xffffffff	0xffffffff	0xc9ffffff	0xc9ffffff	0xffffffff	0xffffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	0xc9ffffff	
+			}
+		}
+		visible_on idle
+		anim idle_2 sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+		}
+	}
+}
+
