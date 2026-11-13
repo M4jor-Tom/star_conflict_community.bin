@@ -1,0 +1,88 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_2.ma"
+//by sergey_mitryaev
+//at Fri Sep 27 11:23:15 2013
+
+
+animations 2
+{
+	anim on
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim off
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 24 10
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on on
+		visible_on off
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName602wdcx
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	24 -0	0 10	24 10	
+				0.420898 0.230469	0.444336 0.230469	0.420898 0.240234	0.444336 0.240234	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on on
+		anim off sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite objectName602
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	24 -0	0 10	24 10	
+				0.448242 0.230469	0.47168 0.230469	0.448242 0.240234	0.47168 0.240234	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on on
+		anim off sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
