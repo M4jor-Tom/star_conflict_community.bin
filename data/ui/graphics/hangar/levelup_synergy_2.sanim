@@ -1,0 +1,129 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by Sergey_Mitryaev
+//at Wed Nov 29 14:37:34 2017
+
+base_res 1280 720
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 248 38
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object syn_free_txt
+	{
+		defaults
+		{
+			pos 4.05283 3
+			opacity 255
+			color 0xffcccccc
+			size 200 36
+			effect ""
+			alignment "LM"
+			sampleText "Доступно  100500 синергии для ввода"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 235 0.226343
+			opacity 255
+			color 0xffffffff
+			size 40 25
+			effect "ui\graphics\hangar\sale_syn"
+			alignment "CM"
+			font "Tiny"
+		}
+		visible_on idle
+		visible_on over
+	}
+	object btn
+	{
+		defaults
+		{
+			pos 207.623 2.69781
+			opacity 255
+			color 0xffffffff
+			size 36 36
+			effect "ui\graphics\hangar\levelup_ship_2"
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite lvlup_syn_bg
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	247.648 -0	0 41.577	247.648 41.577	
+				0.224391 0.00315797	0.271649 0.00315797	0.224391 0.0502048	0.271649 0.0502048	
+				0x95ffffff	0x95ffffff	0x95ffffff	0x95ffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+	}
+	sprite objectName331
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-3.8147e-006 -0	4 -0	244 -0	248 -0	-3.8147e-006 4	4 4	244 4	248 4	-3.8147e-006 38	4 38	244 38	248 38	-3.8147e-006 42	4 42	244 42	248 42	
+				0.494141 0.615234	0.498047 0.615234	0.505859 0.615234	0.509766 0.615234	0.494141 0.619141	0.498047 0.619141	0.505859 0.619141	0.509766 0.619141	0.494141 0.626953	0.498047 0.626953	0.505859 0.626953	0.509766 0.626953	0.494141 0.630859	0.498047 0.630859	0.505859 0.630859	0.509766 0.630859	
+				0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	
+		}
+	}
+}
+
