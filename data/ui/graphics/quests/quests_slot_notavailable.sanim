@@ -1,0 +1,87 @@
+﻿source_file  Y:/art/source/ui/graphics/quests/quests.ma
+//by sergey_mitryaev
+//at Wed Sep 05 10:52:11 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos 51.4239 66.7099
+			opacity 255
+			color 0xff666666
+			size 600 20
+			effect ""
+			alignment "CM"
+			sampleText "Не доступно представителям другой рассы"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object ico
+	{
+		defaults
+		{
+			pos 268.9 -3.13815
+			opacity 25
+			color 0xffffffff
+			size 132 100
+			effect "ui\graphics\quests\fraction_big_ico"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sprite_1
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				2.05873 -0.092556	6.05873 -0.092556	690.765 -0.092556	694.765 -0.092556	2.05873 3.90744	6.05873 3.90744	690.765 3.90744	694.765 3.90744	2.05873 90.8521	6.05873 90.8521	690.765 90.8521	694.765 90.8521	2.05873 94.8521	6.05873 94.8521	690.765 94.8521	694.765 94.8521	
+				0.223531 0.00279558	0.227438 0.00279558	0.268549 0.00279558	0.272455 0.00279558	0.223531 0.00670183	0.227438 0.00670183	0.268549 0.00670183	0.272455 0.00670183	0.223531 0.0470076	0.227438 0.0470076	0.268549 0.0470076	0.272455 0.0470076	0.223531 0.0509138	0.227438 0.0509138	0.268549 0.0509138	0.272455 0.0509138	
+				0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	0xb2b2b2b2	
+			}
+		}
+		visible_on idle
+	}
+	sprite sprite_2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				3.84839 63.3823	7.84839 63.3823	688.626 63.3823	692.626 63.3823	3.84839 67.3823	7.84839 67.3823	688.626 67.3823	692.626 67.3823	3.84839 88.5568	7.84839 88.5568	688.626 88.5568	692.626 88.5568	3.84839 92.5568	7.84839 92.5568	688.626 92.5568	692.626 92.5568	
+				0.223531 0.00279558	0.227438 0.00279558	0.268549 0.00279558	0.272455 0.00279558	0.223531 0.00670183	0.227438 0.00670183	0.268549 0.00670183	0.272455 0.00670183	0.223531 0.0470076	0.227438 0.0470076	0.268549 0.0470076	0.272455 0.0470076	0.223531 0.0509138	0.227438 0.0509138	0.268549 0.0509138	0.272455 0.0509138	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
