@@ -1,0 +1,124 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Wed Aug 20 11:33:43 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object map_ico
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\help_control\sale_map_ico_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim lock obj_opc_colc
+		{
+			1 1
+			167
+			0xff747474
+		}
+	}
+	object lock
+	{
+		defaults
+		{
+			pos 34 14
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\equip\slot_lock"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on lock
+	}
+	object rank
+	{
+		defaults
+		{
+			pos 37 33
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\map\pve_scenario_rank"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on lock
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 90 50
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on lock
+	}
+	object info_mission
+	{
+		defaults
+		{
+			pos 2 33
+			opacity 255
+			color 0xffffffff
+			size 16 18
+			effect "ui\graphics\map\pve_scenar_info_mission"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on lock
+	}
+	object blackout
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\map\pve_scenario_slot_blackout"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim lock obj_opc_colc
+		{
+			1 1
+			167
+			0xff747474
+		}
+	}
+}
+
