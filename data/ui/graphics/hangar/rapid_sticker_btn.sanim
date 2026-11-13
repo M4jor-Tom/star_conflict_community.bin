@@ -1,0 +1,197 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_new.ma"
+//by sergey_mitryaev
+//at Wed Nov 28 15:09:29 2012
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 2
+{
+	object value
+	{
+		defaults
+		{
+			pos 28.731 4.92318
+			opacity 255
+			color 0xffffffff
+			size 150 15
+			effect ""
+			alignment "CM"
+			sampleText "Наклейки эмблемы"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		anim disable obj_opc
+		{
+			1 
+			76
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 206 25
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		visible_on disable
+	}
+}
+
+sprites 5
+{
+	total_vertices 56
+
+	sprite m
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0239325 -0.115014	10.0239 -0.115014	196.012 -0.115014	206.012 -0.115014	0.0239325 9.88499	10.0239 9.88499	196.012 9.88499	206.012 9.88499	0.0121527 15	10.0122 15	196 15	206 15	0.0121527 25	10.0122 25	196 25	206 25	
+				0.0020557 0.114243	0.0118213 0.114243	0.0165421 0.114243	0.0263078 0.114243	0.0020557 0.124009	0.0118213 0.124009	0.0165421 0.124009	0.0263078 0.124009	0.0020557 0.128866	0.0118213 0.128866	0.0165421 0.128866	0.0263078 0.128866	0.0020557 0.138632	0.0118213 0.138632	0.0165421 0.138632	0.0263078 0.138632	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		anim disable sp_colc
+		{
+			1
+			0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	0xb2ffffff	
+		}
+	}
+	sprite m4
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.0239325 -0.115014	10.0239 -0.115014	196.012 -0.115014	206.012 -0.115014	0.0239325 9.88499	10.0239 9.88499	196.012 9.88499	206.012 9.88499	0.0121527 15	10.0122 15	196 15	206 15	0.0121527 25	10.0122 25	196 25	206 25	
+				0.0284823 0.114243	0.0382479 0.114243	0.0429687 0.114243	0.0527343 0.114243	0.0284823 0.124009	0.0382479 0.124009	0.0429687 0.124009	0.0527343 0.124009	0.0284823 0.128866	0.0382479 0.128866	0.0429687 0.128866	0.0527343 0.128866	0.0284823 0.138632	0.0382479 0.138632	0.0429687 0.138632	0.0527343 0.138632	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		visible_on press
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on disable
+	}
+	sprite m5
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0.0239325 -0.115014	10.0239 -0.115014	196.012 -0.115014	206.012 -0.115014	0.0239325 9.88499	10.0239 9.88499	196.012 9.88499	206.012 9.88499	0.0121527 15	10.0122 15	196 15	206 15	0.0121527 25	10.0122 25	196 25	206 25	
+				0.054787 0.114243	0.0645527 0.114243	0.0692735 0.114243	0.0790391 0.114243	0.054787 0.124009	0.0645527 0.124009	0.0692735 0.124009	0.0790391 0.124009	0.054787 0.128866	0.0645527 0.128866	0.0692735 0.128866	0.0790391 0.128866	0.054787 0.138632	0.0645527 0.138632	0.0692735 0.138632	0.0790391 0.138632	
+				0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	0xff000000	
+			}
+		}
+		visible_on idle
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on over
+		visible_on disable
+	}
+	sprite spr
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.58046 -0.987463	40.5805 -0.987463	0.58046 25.0125	40.5805 25.0125	
+				0.281026 0.131844	0.320089 0.131844	0.281026 0.157234	0.320089 0.157234	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		anim disable sp_colc
+		{
+			1
+			0x7a616161	0x7a616161	0x7a616161	0x7a616161	
+		}
+	}
+	sprite spr22
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				166 -0.987463	206 -0.987463	166 25.0125	206 25.0125	
+				0.281026 0.131844	0.320089 0.131844	0.281026 0.157234	0.320089 0.157234	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on press
+		visible_on over
+		anim disable sp_colc
+		{
+			1
+			0x7a616161	0x7a616161	0x7a616161	0x7a616161	
+		}
+	}
+}
+
