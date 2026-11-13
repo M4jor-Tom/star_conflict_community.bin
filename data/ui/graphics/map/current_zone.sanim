@@ -1,0 +1,38 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Thu Mar 17 17:07:15 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName383
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_2.tif"
+			vertices_nc
+			{
+				-23 -23	25 -23	-23 24	25 24	
+				0.0859375 0.910156	0.175781 0.910156	0.0859375 1	0.175781 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
