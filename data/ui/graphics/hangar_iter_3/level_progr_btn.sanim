@@ -1,0 +1,164 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Tue Apr 17 19:11:14 2018
+
+base_res 1920 1080
+
+animations 3
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 204 23
+			effect ""
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	object text
+	{
+		defaults
+		{
+			pos 12 -1
+			opacity 255
+			color 0xff301e08
+			size 190 23
+			effect ""
+			alignment "CM"
+			sampleText "Выполнить"
+			font "segoeuilr_20"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
+sprites 5
+{
+	total_vertices 44
+
+	sprite m59
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_3.tif"
+			vertices
+			{
+				11 -4.5	21 -4.5	194 -4.5	204 -4.5	11 5.5	21 5.5	194 5.5	204 5.5	11 16.5	21 16.5	194 16.5	204 16.5	11 26.5	21 26.5	194 26.5	204 26.5	
+				0.34082 0.124023	0.350586 0.124023	0.796875 0.124023	0.806641 0.124023	0.34082 0.133789	0.350586 0.133789	0.796875 0.133789	0.806641 0.133789	0.34082 0.164063	0.350586 0.164063	0.796875 0.164063	0.806641 0.164063	0.34082 0.173828	0.350586 0.173828	0.796875 0.173828	0.806641 0.173828	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	sprite we81
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				201 -0.5	202 -0.5	201 21.5	202 21.5	
+				0.553556 0.905853	0.557772 0.905853	0.553556 0.91446	0.557772 0.91446	
+				0xfff5d57c	0xfff5d57c	0xfff5d57c	0xfff5d57c	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	sprite we82
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				12 -0.5	13 -0.5	12 21.5	13 21.5	
+				0.553556 0.905853	0.557772 0.905853	0.553556 0.91446	0.557772 0.91446	
+				0xfff5d57c	0xfff5d57c	0xfff5d57c	0xfff5d57c	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+	sprite m60
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_3.tif"
+			blend color_add
+			vertices
+			{
+				11 -4.5	21 -4.5	194 -4.5	204 -4.5	11 5.5	21 5.5	194 5.5	204 5.5	11 16.5	21 16.5	194 16.5	204 16.5	11 26.5	21 26.5	194 26.5	204 26.5	
+				0.34082 0.124023	0.350586 0.124023	0.796875 0.124023	0.806641 0.124023	0.34082 0.133789	0.350586 0.133789	0.796875 0.133789	0.806641 0.133789	0.34082 0.164063	0.350586 0.164063	0.796875 0.164063	0.806641 0.164063	0.34082 0.173828	0.350586 0.173828	0.796875 0.173828	0.806641 0.173828	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	0x33333333	
+		}
+		visible_on press
+	}
+	sprite we83
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				-3.88626 -5.77252	11.8863 -5.77252	-3.88626 25.7725	11.8863 25.7725	
+				0.97168 0.650391	0.991211 0.650391	0.97168 0.689453	0.991211 0.689453	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+	}
+}
+
