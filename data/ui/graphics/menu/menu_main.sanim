@@ -1,0 +1,51 @@
+﻿source_file  Y:/art/source/ui/graphics/menu/menu.ma
+//by sega
+//at Thu Dec 15 14:24:10 2011
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object menu_bg
+	{
+		defaults
+		{
+			anchor "LT"
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 0 0
+			effect "ui\graphics\menu\menu_bg"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			anchor "C"
+			pos 481.793 203.677
+			opacity 255
+			color 0xffffffff
+			size 320 240
+			effect "ui\graphics\menu\menu_window"
+			alignment "LT"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
