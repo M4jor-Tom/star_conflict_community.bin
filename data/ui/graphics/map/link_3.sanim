@@ -1,0 +1,92 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by Sergey_Mitryaev
+//at Tue Feb 06 16:24:40 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self133
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 100 4
+			effect ""
+			alignment "LM"
+			font "Large"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite myself62
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			not_align
+			vertices
+			{
+				27.515 -0	72.485 -0	27.515 2	72.485 2	
+				0.358887 0.785156	0.361816 0.785156	0.358887 0.787109	0.361816 0.787109	
+				0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite myself97
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			not_align
+			vertices
+			{
+				100 -0	72.485 -0	100 2	72.485 2	
+				0.357422 0.785156	0.360352 0.785156	0.357422 0.787109	0.360352 0.787109	
+				0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite myself107
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			not_align
+			vertices
+			{
+				0 -0	27.5151 -0	0 2	27.5151 2	
+				0.357422 0.785156	0.360352 0.785156	0.357422 0.787109	0.360352 0.787109	
+				0x66ffffff	0x66ffffff	0x66ffffff	0x66ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
