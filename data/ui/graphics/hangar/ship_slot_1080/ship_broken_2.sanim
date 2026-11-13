@@ -1,0 +1,124 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_ship_list.ma"
+//by sergey_mitryaev
+//at Thu Oct 31 11:35:03 2019
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+sprites 6
+{
+	total_vertices 24
+
+	sprite ico_ship
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			not_align
+			vertices_nc
+			{
+				52.407 7.33966	78.3056 7.33966	52.407 33.2382	78.3056 33.2382	
+				0.00173277 0.639394	0.0534906 0.639394	0.00173277 0.691151	0.0534906 0.691151	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName244
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				1.52588e-005 6	134 6	1.52588e-005 34	134 34	
+				0.288574 0.863281	0.290039 0.863281	0.288574 0.868164	0.290039 0.868164	
+				0x99898989	0x99898989	0x99898989	0x99898989	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName247
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				71.9999 6	-1.52588e-005 6	72.0001 4.19617e-005	1.52588e-005 -4.19617e-005	
+				0.286133 0.847799	0.406488 0.847799	0.286133 0.870951	0.406488 0.870951	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName313
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				134 6	72 6	134 4.19617e-005	72 -4.19617e-005	
+				0.284919 0.847799	0.388672 0.847799	0.284919 0.870951	0.388672 0.870951	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName314
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				71.9999 40	-1.52588e-005 40	72.0001 34	1.52588e-005 34	
+				0.286133 0.847799	0.406488 0.847799	0.286133 0.870951	0.406488 0.870951	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName315
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				134 40	72 40	134 34	72 34	
+				0.284919 0.847799	0.388672 0.847799	0.284919 0.870951	0.388672 0.870951	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
