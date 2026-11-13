@@ -1,0 +1,129 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_2.ma"
+//by Sergey
+//at Tue Dec 01 10:12:42 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 8
+
+objects 8
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1280 320
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object spacer_1
+	{
+		defaults
+		{
+			pos 20 -0
+			opacity 255
+			color 0xffffffff
+			size 714 20
+			effect "ui\graphics\ships_tree_2\sh_tr_spacer_1"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object spacer_2
+	{
+		defaults
+		{
+			pos 20 -0
+			opacity 255
+			color 0xffffffff
+			size 714 20
+			effect "ui\graphics\ships_tree_2\sh_tr_spacer_2"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_1
+	{
+		defaults
+		{
+			pos 134 28
+			opacity 255
+			color 0xffffffff
+			size 120 120
+			effect "ui\graphics\ships_tree_2\sh_tr_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 134 173
+			opacity 255
+			color 0xffffffff
+			size 120 120
+			effect "ui\graphics\ships_tree_2\sh_tr_slot"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object rank
+	{
+		defaults
+		{
+			pos 0 -1
+			opacity 255
+			color 0xff99ffff
+			size 20 20
+			effect ""
+			alignment "CM"
+			sampleText "9"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object color_ rank_inactive
+	{
+		defaults
+		{
+			pos 0 22.4233
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "CM"
+			sampleText "color_ count_inactive"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object dark
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 1280 20
+			effect "ui\graphics\ships_tree_2\sh_tr_spacer_3_dark"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
