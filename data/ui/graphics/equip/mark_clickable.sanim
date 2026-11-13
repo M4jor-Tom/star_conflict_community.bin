@@ -1,0 +1,57 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by Sergey
+//at Wed May 18 12:30:59 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 22 22
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				5.25 39	5.25 39	5.25 44.75	11 44.75	
+				0.500977 0.302734	0.507813 0.302734	0.500977 0.308594	0.507813 0.308594	
+				0xffff9900	0xffff9900	0xffff9900	0xffff9900	
+			}
+		}
+		visible_on idle
+	}
+}
+
