@@ -1,0 +1,98 @@
+﻿source_file "Y:/art/source/ui/graphics/atlas/atlas.ma"
+//by sergey_mitryaev
+//at Mon May 21 15:00:04 2018
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 4
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 250 44
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object list
+	{
+		defaults
+		{
+			pos 0 44
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\atlas\drop_down_list"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object drop_down_input
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\atlas\drop_down_input"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object drop_down_btn
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 30 30
+			effect "ui\graphics\atlas\drop_down_btn"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite objectName335
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -0	10.6667 -0	239.667 -0	250.333 -0	0 10.6667	10.6667 10.6667	239.667 10.6667	250.333 10.6667	0 33.3333	10.6667 33.3333	239.667 33.3333	250.333 33.3333	0 44	10.6667 44	239.667 44	250.333 44	
+				0.695313 0.847656	0.716146 0.847656	0.736979 0.847656	0.757813 0.847656	0.695313 0.86849	0.716146 0.86849	0.736979 0.86849	0.757813 0.86849	0.695313 0.889323	0.716146 0.889323	0.736979 0.889323	0.757813 0.889323	0.695313 0.910156	0.716146 0.910156	0.736979 0.910156	0.757813 0.910156	
+				0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	0xe7ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
