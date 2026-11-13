@@ -1,0 +1,101 @@
+﻿source_file "Y:/art/source/ui/graphics/debrifing/debrifing.ma"
+//by sergey_mitryaev
+//at Tue May 27 14:51:49 2014
+
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim disable
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 12 52
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on over
+		visible_on press
+		visible_on disable
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName299
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.371824 25.1984	11.3388 0.118175	0.371824 25.1984	11.3388 51.2363	
+				0.454565 0.289941	0.457544 0.289941	0.454565 0.301856	0.457544 0.301856	
+				0x8dffffff	0x8dffffff	0x8dffffff	0x8dffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim press sp_posc
+		{
+			1 
+			1.2796 25.2777	10.431 4.3494	1.2796 25.2777	10.431 47.005	
+		}
+		anim disable sp_colc
+		{
+			1
+			0x8da4a4a4	0x8da4a4a4	0x8da4a4a4	0x8da4a4a4	
+		}
+	}
+	sprite objectName268
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-2.59126 -2.65306	14.2313 -2.65306	-2.59126 55.0818	14.2313 55.0818	
+				0.426264 0.690086	0.446783 0.690086	0.426264 0.710305	0.446783 0.710305	
+				0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	0xff4c4c4c	
+			}
+		}
+		visible_on over
+	}
+}
+
