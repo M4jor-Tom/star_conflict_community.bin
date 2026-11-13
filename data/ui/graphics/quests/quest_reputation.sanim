@@ -1,0 +1,64 @@
+﻿source_file  Y:/art/source/ui/graphics/quests/quests.ma
+//by sergey_mitryaev
+//at Fri Jun 08 15:00:28 2012
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim red
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object text
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 250 18
+			effect ""
+			alignment "RM"
+			sampleText "[Репутация 2 Отрешенный]"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim red obj_colc
+		{
+			1
+			0xffff0300
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 250 18
+			effect ""
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim red obj_colc
+		{
+			1
+			0xffff0300
+		}
+	}
+}
+
