@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/profile/avatar.ma"
+//by sergey_mitryaev
+//at Wed Jan 28 17:36:18 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				2 2	10 2	80 2	86 2	2 8	10 8	80 8	86 8	2 80	10 80	80 80	86 80	2 86	10 86	80 86	86 86	
+				0.509766 0.630864	0.509766 0.623042	0.509766 0.621094	0.509766 0.615234	0.503906 0.630864	0.503906 0.623042	0.503906 0.621094	0.503906 0.615234	0.5 0.630864	0.5 0.623042	0.5 0.621094	0.5 0.615234	0.494141 0.630864	0.494141 0.623042	0.494141 0.621094	0.494141 0.615234	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
