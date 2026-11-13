@@ -1,0 +1,40 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_3.ma"
+//by Sergey_Mitryaev
+//at Thu Aug 31 12:59:53 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 -0	6 -0	422.5 -0	428.5 -0	0 6	6 6	422.5 6	428.5 6	0 59	6 59	422.5 59	428.5 59	0 65	6 65	422.5 65	428.5 65	
+				0.0733453 0.00196683	0.0792047 0.00196683	0.1142 0.00196683	0.12006 0.00196683	0.0733453 0.00782621	0.0792047 0.00782621	0.1142 0.00782621	0.12006 0.00782621	0.0733453 0.0449466	0.0792047 0.0449466	0.1142 0.0449466	0.12006 0.0449466	0.0733453 0.050806	0.0792047 0.050806	0.1142 0.050806	0.12006 0.050806	
+				0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	0xcc7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+}
+
