@@ -1,0 +1,167 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud.ma"
+//by sergey_mitryaev
+//at Wed Sep 11 12:28:38 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 300 70
+			effect ""
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 0 5
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "Вас сбил (Офицер киборов)"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object descript_1
+	{
+		defaults
+		{
+			pos 0 28
+			opacity 255
+			color 0xffababab
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "Прочность корабля упала до 89"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object descript_2
+	{
+		defaults
+		{
+			pos 0 51
+			opacity 255
+			color 0xffababab
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "Стоимость ремонта 8999"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title3
+	{
+		defaults
+		{
+			pos 0 28
+			opacity 255
+			color 0xffffffff
+			size 300 20
+			effect ""
+			alignment "CM"
+			sampleText "Вас сбил (Офицер киборов)"
+			font "Medium"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 16
+
+	sprite objectName173
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			vertices
+			{
+				149.72 -2.55785	416.119 -2.55768	149.72 74.0769	416.119 74.0767	
+				0.380886 0.847863	0.774979 0.847863	0.380886 0.955188	0.774979 0.955188	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName176
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			vertices
+			{
+				149.72 -2.55785	-103.743 -2.55768	149.72 74.0769	-103.743 74.0767	
+				0.380886 0.847863	0.774979 0.847863	0.380886 0.955188	0.774979 0.955188	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName177
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices
+			{
+				-120.069 -5.04597	493.069 -5.04597	-120.069 -2.04597	493.069 -2.04597	
+				0.318874 0.803405	0.581144 0.803405	0.318874 0.809927	0.581144 0.809927	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName178
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/hud_spectrate.tif"
+			blend color_add
+			vertices
+			{
+				-120.069 73.537	493.069 73.537	-120.069 76.537	493.069 76.537	
+				0.318874 0.803405	0.581144 0.803405	0.318874 0.809927	0.581144 0.809927	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
