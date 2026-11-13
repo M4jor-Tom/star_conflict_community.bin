@@ -1,0 +1,121 @@
+﻿source_file "Y:/art/source/ui/graphics/option/option.ma"
+//by sergey_mitryaev
+//at Mon Apr 06 12:35:01 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim sample
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim video
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim audio
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 6
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 820 200
+			effect ""
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object scroll
+	{
+		defaults
+		{
+			pos 802 2
+			opacity 255
+			color 0xffffffff
+			size 20 487
+			effect "ui\graphics\login_screen\scroll_main"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object btn2
+	{
+		defaults
+		{
+			pos 290 67
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\shop\buy_btn8"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object slot_1_13
+	{
+		defaults
+		{
+			pos 203 2
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_7"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object slot_1_14
+	{
+		defaults
+		{
+			pos 203 91
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\option\option_slot_7"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+	object btn3
+	{
+		defaults
+		{
+			pos 290 156
+			opacity 255
+			color 0xffffffff
+			size 17 15
+			effect "ui\graphics\shop\buy_btn8"
+			alignment "LT"
+		}
+		visible_on sample
+		visible_on video
+		visible_on audio
+	}
+}
+
