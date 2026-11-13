@@ -1,0 +1,56 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/dreadnought.ma"
+//by sergey_mitryaev
+//at Mon Jan 12 16:33:55 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 0.7
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 28 28
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite qw6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				0 -0	28 -0	0 28	28 28	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
