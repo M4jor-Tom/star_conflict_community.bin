@@ -1,0 +1,40 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_2.ma"
+//by sergey_mitryaev
+//at Mon Nov 07 17:09:22 2016
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sel6
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				2 2	8 2	553 2	559 2	2 8	8 8	553 8	559 8	2 24	8 24	553 24	559 24	2 30	8 30	553 30	559 30	
+				0.130637 0.0099504	0.134581 0.0099504	0.158135 0.0099504	0.162079 0.0099504	0.130637 0.0138941	0.134581 0.0138941	0.158135 0.0138941	0.162079 0.0138941	0.130637 0.0388787	0.134581 0.0388787	0.158135 0.0388787	0.162079 0.0388787	0.130637 0.0428224	0.134581 0.0428224	0.158135 0.0428224	0.162079 0.0428224	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
