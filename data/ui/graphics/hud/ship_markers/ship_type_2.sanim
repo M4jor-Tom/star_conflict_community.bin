@@ -1,0 +1,121 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/ship_markers.ma"
+//by sergey_mitryaev
+//at Tue Nov 12 14:59:45 2013
+
+
+animations 5
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy_shot
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim squad
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim neutral
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 16 16
+			effect ""
+			alignment "CM"
+			sampleText "100"
+			font "Tiny_outl2"
+		}
+		visible_on friend
+		visible_on enemy
+		visible_on enemy_shot
+		visible_on squad
+		visible_on neutral
+	}
+}
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite bg_ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-0.732601 -0.824176	8.7326 -0.824176	-0.732601 9.82418	8.7326 9.82418	
+				0 0	1 0	0 1	1 1	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		anim enemy_shot sp_colc
+		{
+			1
+			0xffff0000	0xffff0000	0xffff0000	0xffff0000	
+		}
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				1 -0	15 -0	1 16	15 16	
+				-2.23517e-008 0	1 0	-2.23517e-008 1	1 1	
+				0x6900ddff	0x6900ddff	0x6900ddff	0x6900ddff	
+			}
+		}
+		visible_on friend
+		anim enemy sp_colc
+		{
+			1
+			0xffff2800	0xffff2800	0xffff2800	0xffff2800	
+		}
+		anim enemy_shot sp_colc
+		{
+			1
+			0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	0xfff3f3f3	
+		}
+		anim squad sp_colc
+		{
+			1
+			0xff00ff00	0xff00ff00	0xff00ff00	0xff00ff00	
+		}
+		anim neutral sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
