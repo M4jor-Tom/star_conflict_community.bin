@@ -1,0 +1,140 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by sergey_mitryaev
+//at Fri Mar 20 16:38:16 2015
+
+base_res 1280 720
+
+animations 4
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim white
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 12 12
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on inactive_2
+		visible_on white
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite sad
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				13 13	-2 13	13 -1.90735e-006	-2 1.90735e-006	
+				0.794922 0.279297	0.780273 0.279297	0.794922 0.253906	0.780273 0.253906	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim inactive_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on white
+	}
+	sprite sadtym 
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				13 13	-2 13	13 -2	-2 -2	
+				0.794922 0.25	0.780273 0.25	0.794922 0.220703	0.780273 0.220703	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		anim inactive sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim inactive_2 sp_colc
+		{
+			1
+			0xff535353	0xff535353	0xff535353	0xff535353	
+		}
+		anim white sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite sad95
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ships_tree.tif"
+			vertices
+			{
+				-0.999999 13	-1 -2	14 13	14 -2	
+				0.882813 0.222656	0.868164 0.222656	0.882813 0.251953	0.868164 0.251953	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on inactive_2
+		anim white sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
