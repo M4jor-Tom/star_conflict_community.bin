@@ -1,0 +1,76 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map_2.ma"
+//by sergey_mitryaev
+//at Mon Dec 25 13:59:42 2017
+
+base_res 1920 1080
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+	anim not_visit
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim clan_enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim clan_frend
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName385
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-30 -30	30 -30	-30 30	30 30	
+				0.180664 0.216797	0.239258 0.216797	0.180664 0.333984	0.239258 0.333984	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on not_visit
+		visible_on clan_enemy
+		visible_on clan_frend
+	}
+	sprite objectName398
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_4.tif"
+			vertices
+			{
+				-47 -48	47 -48	-47 46	47 46	
+				0 0.486328	0.0917969 0.486328	0 0.669922	0.0917969 0.669922	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on not_visit
+		visible_on clan_enemy
+		visible_on clan_frend
+	}
+}
+
