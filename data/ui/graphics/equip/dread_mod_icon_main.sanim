@@ -1,0 +1,102 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Thu Nov 20 12:47:53 2014
+
+
+animations 3
+{
+	anim active
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim inactive
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim drop
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 72 72
+			effect ""
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+	}
+	object tier
+	{
+		defaults
+		{
+			pos -10 1.45319
+			opacity 255
+			color 0xffffffff
+			size 25 13
+			effect "ui\graphics\shop\prod_icon_tier"
+			alignment "LT"
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0.0229149 0.123478	6.02291 0.123478	66 0.123478	72 0.123478	0.0229149 6.12348	6.02291 6.12348	66 6.12348	72 6.12348	0.0229149 66	6.02291 66	66 66	72 66	0.0229149 72	6.02291 72	66 72	72 72	
+				0.00190297 0.0635197	0.00776234 0.0635197	0.044947 0.0635197	0.0508064 0.0635197	0.00190297 0.069379	0.00776234 0.069379	0.044947 0.069379	0.0508064 0.069379	0.00190297 0.106391	0.00776234 0.106391	0.044947 0.106391	0.0508064 0.106391	0.00190297 0.11225	0.00776234 0.11225	0.044947 0.11225	0.0508064 0.11225	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices
+			{
+				4 4	68 4	4 68	68 68	
+				0 0	1 0	0 1	1 1	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on active
+		visible_on inactive
+		visible_on drop
+	}
+}
+
