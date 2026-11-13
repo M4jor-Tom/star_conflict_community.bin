@@ -1,0 +1,70 @@
+﻿source_file "Y:/art/source/ui/graphics/skills/skills_2.ma"
+//by sergey_mitryaev
+//at Thu Sep 04 17:03:29 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 216 142
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object lock
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 216 142
+			effect "ui\graphics\skills_2\skill_set_slot_lock"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp23
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-1 -1	5 -1	211 -1	217 -1	-1 5	5 5	211 5	217 5	-1 137	5 137	211 137	217 137	-1 143	5 143	211 143	217 143	
+				0.0566408 0.668945	0.0625 0.668945	0.0781251 0.668945	0.0839844 0.668945	0.0566406 0.674805	0.0625 0.674805	0.0781251 0.674805	0.0839844 0.674805	0.0566406 0.69043	0.0624999 0.69043	0.078125 0.69043	0.0839844 0.69043	0.0566406 0.696289	0.0624999 0.696289	0.0781249 0.696289	0.0839844 0.696289	
+				0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	0x99999999	
+			}
+		}
+		visible_on idle
+	}
+}
+
