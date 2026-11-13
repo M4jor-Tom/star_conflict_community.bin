@@ -1,0 +1,51 @@
+﻿source_file "Y:/art/source/ui/graphics/map_view/map_view.ma"
+//by sergey_mitryaev
+//at Tue Dec 11 16:14:42 2012
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object players_slot_left
+	{
+		defaults
+		{
+			anchor "LC"
+			pos 5.31754 114.992
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\players_slot_main_left"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object players_slot_right
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 873 114.992
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect "ui\graphics\spectate\players_slot_main_right"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
