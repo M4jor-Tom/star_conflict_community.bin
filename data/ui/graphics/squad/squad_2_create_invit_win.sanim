@@ -1,0 +1,230 @@
+﻿source_file "Y:/art/source/ui/graphics/squad/squad_2.ma"
+//by Sergey_Mitryaev
+//at Tue Jan 24 11:37:47 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 14
+
+objects 12
+{
+	object title_1
+	{
+		defaults
+		{
+			pos 10 2
+			opacity 255
+			color 0xffffffff
+			size 225 20
+			effect ""
+			alignment "LM"
+			sampleText "Добавить друга"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 604 454
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 582 3
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_8
+	{
+		defaults
+		{
+			pos 4 425
+			opacity 255
+			color 0xffffffff
+			size 200 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object load
+	{
+		defaults
+		{
+			pos 239 193
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 10.2584 28.4031
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "LM"
+			sampleText "Выбирите активность"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object drop_down1
+	{
+		defaults
+		{
+			pos 10 49
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 10.2584 129
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "LM"
+			sampleText "Введите описание"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self95
+	{
+		defaults
+		{
+			pos 9 151
+			opacity 255
+			color 0xffffffff
+			size 584 94
+			effect "ui\graphics\squad\squad_2_cr_inv_input"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos 10.2584 76
+			opacity 255
+			color 0xffffffff
+			size 500 20
+			effect ""
+			alignment "LM"
+			sampleText "Введите описание"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object drop_down2
+	{
+		defaults
+		{
+			pos 10 97
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object note
+	{
+		defaults
+		{
+			pos 10.2584 380
+			opacity 255
+			color 0xffffdeb3
+			size 580 40
+			effect ""
+			alignment "LM"
+			sampleText "Чтобы более эффективно управлять своей командой, используйте войсчат (по умолчанию клавиша "Y")"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	596.5 -0	602.5 -0	0 6	6 6	596.5 6	602.5 6	0 448	6 448	596.5 448	602.5 448	0 454	6 454	596.5 454	602.5 454	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				1 26	1 24	601.5 26	601.5 24	
+				0.0566406 0.145264	0.0546875 0.145264	0.0566406 0.151611	0.0546875 0.151611	
+			}
+		}
+		visible_on idle
+	}
+}
+
