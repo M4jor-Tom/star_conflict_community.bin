@@ -1,0 +1,45 @@
+﻿source_file "Y:/art/source/ui/graphics/battle_pass/battle_pass.ma"
+//by sergey_mitryaev
+//at Fri May 31 17:42:05 2019
+
+base_res 1920 1080
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we105
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_add.tif"
+			blend color_add
+			vertices_nc
+			{
+				0 3	256 3	0 77	256 77	
+				0.382813 0.0214843	0.701172 0.0214843	0.382813 0.166016	0.701172 0.166016	
+			}
+		}
+		visible_on idle
+		visible_on select
+	}
+}
+
