@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+	<Templates>
+	
+		<LinearLayout name="DamageInfoTemplate" w="360" h="40" horizontal="true" margin="5" debug="false">
+			<Widget name="$parent_Icon" w="40" h="40" />
+			<TextLabel name="$parent_Value" text="0" w="50" h="40" text_align="right vcenter" />
+			<TextLabel name="$parent_ItemName" text="itemName" w="190" h="40" text_align="left vcenter" />
+			<TextLabel name="$parent_AttackerName" text="attacker" w="80" h="40" text_align="left vcenter" />
+		</LinearLayout>	
+
+	</Templates>
+	
+	<Form name="DeathRecap_Main"
+		class="DeathRecapUI" 
+		width="360" 
+		height="500"
+		resizable="false"
+		movable="false"
+		font="Tiny_outl2"
+		foreground="White"
+		background="White"
+		enable_title="false"
+		enable_shadow="false"
+		enable_close_button="false"
+		alpha="0.75">
+		
+		<anchor point="BOTTOM_RIGHT" to="DeathRecap_Title:TOP_RIGHT" />
+		
+		<Widget name="KillingBlowBlock" w="360" h="60" debug="false">
+			<anchor point="TOPLEFT"/>
+			<anchor point="TOPRIGHT"/>
+			<TextLabel text="#DeathRecap_KillingBlow" w="125" h="20" x="0" y="0" text_align="center" foreground="red" />
+			
+			<LinearLayout w="360" h="40" x="0" y="20" horizontal="true" margin="5" debug="false">
+				<Widget name="KillingBlow_Icon" w="40" h="40" />
+				<TextLabel name="KillingBlow_Value" text="0" w="50" h="40" text_align="right vcenter" />
+				<TextLabel name="KillingBlow_Name" text="itemName" w="300" h="40" text_align="left vcenter" />
+			</LinearLayout>	
+		</Widget>
+		
+		<LinearLayout w="360" h="450" x="0" y="80" debug="false">
+			<anchor point="TOPLEFT" to="KillingBlowBlock:BOTTOMLEFT" y="0"/>
+			<anchor point="BOTTOMRIGHT"/>
+			<Widget name="KillerInfo" w="360" h="95">
+				<TextLabel name="Killer_Title" text="#DeathRecap_Killer" w="125" h="20" x="0" y="0" text_align="center" foreground="red" />
+				<Widget name="Killer_Icon" w="125" h="73">
+					<anchor point="TOPLEFT" y="20"/>
+				</Widget>
+				<TextLabel name="Killer_Name" text="KillerName" w="300" h="20" text_align="left vcenter">
+					<anchor point="TOPLEFT" to="Killer_Icon:TOPRIGHT" x="10"/>
+				</TextLabel>
+				<TextLabel name="Killer_ShipName" text="KillerShipName" w="300" h="20" text_align="left vcenter">
+					<anchor point="TOPLEFT" to="Killer_Name:BOTTOMLEFT"/>
+				</TextLabel>
+				<TextLabel name="Killer_TotalDamgeTitle" text="#DeathRecap_TotalDamage" text_align="left vcenter">
+					<anchor point="TOPLEFT" to="Killer_ShipName:BOTTOMLEFT"/>
+				</TextLabel>
+				<TextLabel name="Killer_TotalDamge" text="0000000000000" text_align="left vcenter">
+					<anchor point="LEFT" to="Killer_TotalDamgeTitle:RIGHT" x="5"/>
+				</TextLabel>
+			</Widget>
+			
+			<Widget name="DamageInfo1"  template="DamageInfoTemplate" />
+			<Widget name="DamageInfo2"  template="DamageInfoTemplate" />
+			<Widget name="DamageInfo3"  template="DamageInfoTemplate" />
+			<Widget name="DamageInfo4"  template="DamageInfoTemplate" />
+			<Widget name="DamageInfo5"  template="DamageInfoTemplate" />
+			<Widget name="DamageInfo6"  template="DamageInfoTemplate" />
+			<Widget name="DamageInfo7"  template="DamageInfoTemplate" />
+			<Widget name="DamageInfo8"  template="DamageInfoTemplate" />
+
+		</LinearLayout>
+
+		<TextLabel name="PageText" text="00/00" text_align="right" foreground="Gray">
+			<anchor point="BOTTOM_RIGHT"/>
+		</TextLabel>
+	</Form>
+</Ui>
