@@ -1,0 +1,314 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip.ma"
+//by sergey_mitryaev
+//at Wed Oct 23 12:50:10 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 20
+	}
+}
+
+total_elements 20
+
+objects 17
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 570 154
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object special
+	{
+		defaults
+		{
+			pos 254.518 80.2836
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "CM"
+		}
+		visible_on idle
+	}
+	object active
+	{
+		defaults
+		{
+			pos 334.962 80.2836
+			opacity 255
+			color 0xffffffff
+			size 224 50
+			effect "ui\graphics\equip\equip_modules_active"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object rocket
+	{
+		defaults
+		{
+			pos 169.962 80.2836
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object gun
+	{
+		defaults
+		{
+			pos 11.9616 80.2836
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object ammo
+	{
+		defaults
+		{
+			pos 82.9616 80.2836
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\prod_icon_main"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object active_title
+	{
+		defaults
+		{
+			pos 373 135
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect ""
+			alignment "CM"
+			sampleText "Мод,орудий"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object rocket_title
+	{
+		defaults
+		{
+			pos 153 135
+			opacity 255
+			color 0xffffffff
+			size 80 16
+			effect ""
+			alignment "CM"
+			sampleText "hjrtns"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object gun_title
+	{
+		defaults
+		{
+			pos 12 135
+			opacity 255
+			color 0xffffffff
+			size 80 16
+			effect ""
+			alignment "LM"
+			sampleText "hjrtns"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object ammo_title
+	{
+		defaults
+		{
+			pos 69 135
+			opacity 255
+			color 0xffffffff
+			size 80 16
+			effect ""
+			alignment "CM"
+			sampleText "hjrtns"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object modules_ship
+	{
+		defaults
+		{
+			pos 0 4
+			opacity 255
+			color 0xffffffff
+			size 50 50
+			effect "ui\graphics\equip\equip_modules_ship"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object cpu
+	{
+		defaults
+		{
+			pos 12 58
+			opacity 255
+			color 0xffffffff
+			size 150 16
+			effect ""
+			alignment "LM"
+			sampleText "Мод,орудий"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object generator
+	{
+		defaults
+		{
+			pos 265 58
+			opacity 255
+			color 0xffffffff
+			size 80 16
+			effect ""
+			alignment "CM"
+			sampleText "Мод,орудий"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object shiled
+	{
+		defaults
+		{
+			pos 484 58
+			opacity 255
+			color 0xffffffff
+			size 80 16
+			effect ""
+			alignment "CM"
+			sampleText "Мод,орудий"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object armor
+	{
+		defaults
+		{
+			pos 402 58
+			opacity 255
+			color 0xffffffff
+			size 80 16
+			effect ""
+			alignment "CM"
+			sampleText "Мод,орудий"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object motor
+	{
+		defaults
+		{
+			pos 323 58
+			opacity 255
+			color 0xffffffff
+			size 80 16
+			effect ""
+			alignment "CM"
+			sampleText "Мод,орудий"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object special_title
+	{
+		defaults
+		{
+			pos 240 135
+			opacity 255
+			color 0xffffffff
+			size 80 16
+			effect ""
+			alignment "CM"
+			sampleText "hjrtns"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 24
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 72	6 72	564 72	570 72	0 78	6 78	564 78	570 78	0 148	6 148	564 148	570 148	0 154	6 154	564 154	570 154	
+				0.325212 0.00723875	0.331072 0.00723875	0.370079 0.00723875	0.375939 0.00723875	0.325212 0.0130981	0.331072 0.0130981	0.370079 0.0130981	0.375939 0.0130981	0.325212 0.0461038	0.331072 0.0461038	0.370079 0.0461038	0.375939 0.0461038	0.325212 0.0519632	0.331072 0.0519632	0.370079 0.0519632	0.375939 0.0519632	
+				0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	0x7f7f7f7f	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 133	570 133	0 154	570 154	
+				0.24926 0.0258647	0.254646 0.0258647	0.24926 0.0366353	0.254646 0.0366353	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNameev
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				64.5554 116.671	64.5554 92.6706	79.5554 116.671	79.5554 92.6706	
+				0.376953 0.0620117	0.400391 0.0620117	0.376953 0.0766602	0.400391 0.0766602	
+			}
+		}
+		visible_on idle
+	}
+}
+
