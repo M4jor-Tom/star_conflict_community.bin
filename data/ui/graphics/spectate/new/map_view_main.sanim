@@ -1,0 +1,155 @@
+﻿source_file "Y:/art/source/ui/graphics/spectate/spectate_2.ma"
+//by sergey_mitryaev
+//at Thu Apr 25 16:31:25 2019
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 9
+{
+	object players_slot_left
+	{
+		defaults
+		{
+			anchor "LC"
+			pos 1.20986 42.9918
+			opacity 255
+			color 0xffffffff
+			size 200 40
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_slot
+	{
+		defaults
+		{
+			anchor "LC"
+			pos 5.0205 39.117
+			opacity 255
+			color 0xffffffff
+			size 26 26
+			effect "ui\graphics\spectate\new\mode_main_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object long_4
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 860.871 42.9918
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\spectate\new\players_slot_main_left"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object long_3
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 908 42.9918
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\spectate\new\players_slot_main_left"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object mid_4
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 949.869 42.9918
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\spectate\new\players_slot_main_left"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object mid_3
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 978 42.9918
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\spectate\new\players_slot_main_left"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object short_4_name
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 1032.27 42.9918
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect "ui\graphics\spectate\new\players_slot_main_left"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object s_long_4
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 771.871 42.9918
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object s_long_3
+	{
+		defaults
+		{
+			anchor "RC"
+			pos 811 42.9918
+			opacity 255
+			color 0xffffffff
+			size 50 15
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
