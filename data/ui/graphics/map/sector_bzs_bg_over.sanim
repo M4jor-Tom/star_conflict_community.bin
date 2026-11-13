@@ -1,0 +1,40 @@
+﻿source_file "Y:/art/source/ui/graphics/map/map.ma"
+//by sergey_mitryaev
+//at Thu Mar 12 14:42:39 2015
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 5
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite myself57
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				19.1721 -95.0425	117.748 -95.0425	19.1721 3.53323	117.748 3.53323	
+				0.422872 0.686544	0.450175 0.686544	0.422872 0.713847	0.450175 0.713847	
+				0x3e3e3e3e	0x3e3e3e3e	0x3e3e3e3e	0x3e3e3e3e	
+			}
+		}
+		visible_on idle
+	}
+}
+
