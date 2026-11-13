@@ -1,0 +1,225 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Wed May 21 11:44:23 2014
+
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim hide
+	{
+		mode once
+		cycle_time 1
+	}
+	anim show
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 220 120
+			effect ""
+			alignment "LM"
+			font "VeryTiny"
+		}
+		visible_on idle
+		visible_on hide
+		visible_on show
+	}
+	object title
+	{
+		defaults
+		{
+			pos 9.84617 -0
+			opacity 255
+			color 0xffffdeb3
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "Wsds f geghg eh "
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+	object text
+	{
+		defaults
+		{
+			pos 36 23
+			opacity 255
+			color 0xffffffff
+			size 180 96
+			effect ""
+			alignment "LT"
+			sampleText "sdgrherjtkrtk"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+	object color_1
+	{
+		defaults
+		{
+			pos 82 64
+			opacity 255
+			color 0xffff9000
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "erhahjtrkaskk"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+	object tick
+	{
+		defaults
+		{
+			pos 11 22
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\quests\quests_hud_tick"
+			alignment "LT"
+			font "Tiny"
+		}
+		visible_on idle
+		anim hide obj_op
+		{
+			11 
+			255
+			254
+			251
+			245
+			235
+			219
+			196
+			163
+			121
+			67
+			0
+		}
+		anim show obj_op
+		{
+			11 
+			0
+			64
+			116
+			157
+			189
+			212
+			229
+			240
+			247
+			252
+			255
+		}
+	}
+}
+
