@@ -1,0 +1,68 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by sergey_mitryaev
+//at Thu May 22 11:18:41 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 0.2
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite friend_damage
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				0.00206947 -2.95851	26.0021 -2.95851	0.00206947 23.0415	26.0021 23.0415	
+				0.138549 0.316217	0.170044 0.316217	0.138549 0.347846	0.170044 0.347846	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			3
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x33313131	0x33313131	0x33313131	0x33313131	
+			0x1000000	0x1000000	0x1000000	0x1000000	
+		}
+	}
+	sprite friend_damage4
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			blend color_add
+			vertices
+			{
+				0.00206947 -2.95851	26.0021 -2.95851	0.00206947 23.0415	26.0021 23.0415	
+				0.145784 0.352959	0.170623 0.352959	0.145784 0.37751	0.170623 0.37751	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_col
+		{
+			3
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			0x33353535	0x33353535	0x33353535	0x33353535	
+			0x1000000	0x1000000	0x1000000	0x1000000	
+		}
+	}
+}
+
