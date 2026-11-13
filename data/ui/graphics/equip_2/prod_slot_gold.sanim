@@ -1,0 +1,225 @@
+﻿source_file "Y:/art/source/ui/graphics/equip/equip_2.ma"
+//by sergey_mitryaev
+//at Thu Sep 18 18:07:01 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 12
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 394 90
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 11
+{
+	total_vertices 56
+
+	sprite sp61
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	390 -2	396 -2	-2 4	4 4	390 4	396 4	-2 86	4 86	390 86	396 86	-2 92	4 92	390 92	396 92	
+				0.0605797 0.646484	0.0664391 0.646484	0.0742188 0.646484	0.0800781 0.646484	0.0605797 0.652344	0.0664391 0.652344	0.0742188 0.652344	0.0800781 0.652344	0.0605797 0.660162	0.0664391 0.660162	0.0742188 0.660162	0.0800781 0.660162	0.0605797 0.666021	0.0664391 0.666021	0.0742188 0.666021	0.0800781 0.666021	
+				0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	0xffff8f00	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 69.1204	394 69.1204	0 70.8797	394 70.8797	
+				0.299588 0.733171	0.413303 0.733171	0.299588 0.739485	0.413303 0.739485	
+				0x78ffffff	0x78ffffff	0x78ffffff	0x78ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico13
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				37.9414 71	216.566 71	37.9414 89	216.566 89	
+				0.261719 0.824219	0.408203 0.824219	0.261719 0.841797	0.408203 0.841797	
+				0x81818181	0x81818181	0x81818181	0x81818181	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName386
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				0 19.1203	394 19.1203	0 20.8797	394 20.8797	
+				0.316236 0.733192	0.396655 0.733192	0.316236 0.739464	0.396655 0.739464	
+				0x78ffffff	0x78ffffff	0x78ffffff	0x78ffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico16
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				108.062 22.7042	393 22.7042	108.062 70	393 70	
+				0.261719 0.824219	0.37793 0.824219	0.261719 0.841797	0.37793 0.841797	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico17
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				212.994 2	391.618 2	212.994 20	391.618 20	
+				0.261719 0.824219	0.408203 0.824219	0.261719 0.841797	0.408203 0.841797	
+				0x81818181	0x81818181	0x81818181	0x81818181	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico19
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				96 71	386 71	96 89	386 89	
+				0.261719 0.824219	0.408203 0.824219	0.261719 0.841797	0.408203 0.841797	
+				0x81818181	0x81818181	0x81818181	0x81818181	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico20
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				189 22.7042	371 22.7042	189 114	371 114	
+				0.277344 0.737305	0.427734 0.737305	0.277344 0.742676	0.427734 0.742676	
+				0xffb73300	0xffb73300	0xffb73300	0xffb73300	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico18
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/head_back_1.tif"
+			vertices
+			{
+				233 21	393 21	233 69	393 69	
+				0.85394 0.591146	0.65192 0.591146	0.85394 0.924479	0.65192 0.924479	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico21
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				64.1051 70.9584	179.895 70.9584	64.1051 114	179.895 114	
+				0.277344 0.737305	0.427734 0.737305	0.277344 0.742676	0.427734 0.742676	
+				0x6b4c1500	0x6b4c1500	0x6b4c1500	0x6b4c1500	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico22
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				354.069 20.1545	238.279 20.1545	354.069 -22.8871	238.279 -22.8871	
+				0.277344 0.737305	0.427734 0.737305	0.277344 0.742676	0.427734 0.742676	
+				0x6b4c1500	0x6b4c1500	0x6b4c1500	0x6b4c1500	
+			}
+		}
+		visible_on idle
+	}
+}
+
