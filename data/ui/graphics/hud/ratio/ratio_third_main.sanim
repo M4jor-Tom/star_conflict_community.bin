@@ -1,0 +1,162 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Fri Feb 05 16:07:55 2021
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 9
+
+objects 6
+{
+	object friend_score
+	{
+		defaults
+		{
+			pos 214 8
+			opacity 255
+			color 0xffcccccc
+			size 20 20
+			effect ""
+			alignment "CM"
+			sampleText "20"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object indicator_1
+	{
+		defaults
+		{
+			pos 180 11
+			opacity 255
+			color 0xffffffff
+			size 20 15
+			effect "ui\graphics\hud\ratio\ratio_indicator"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 450 54
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object enemy_score
+	{
+		defaults
+		{
+			pos 145.448 8
+			opacity 255
+			color 0xffcccccc
+			size 20 20
+			effect ""
+			alignment "CM"
+			sampleText "20"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object enemy_score_2
+	{
+		defaults
+		{
+			pos 284.448 8
+			opacity 255
+			color 0xffcccccc
+			size 20 20
+			effect ""
+			alignment "CM"
+			sampleText "20"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object indicator_2
+	{
+		defaults
+		{
+			pos 250 11
+			opacity 255
+			color 0xffffffff
+			size 20 15
+			effect "ui\graphics\hud\ratio\ratio_indicator"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				209 3	239 3	209 33	239 33	
+				0.640625 0.110352	0.693359 0.110352	0.640625 0.163086	0.693359 0.163086	
+				0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectNameer
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				140 3	170 3	140 33	170 33	
+				0.693359 0.110352	0.640625 0.110352	0.693359 0.163086	0.640625 0.163086	
+				0xffff2700	0xffff2700	0xffff2700	0xffff2700	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName66
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				279 3	309 3	279 33	309 33	
+				0.693359 0.110352	0.640625 0.110352	0.693359 0.163086	0.640625 0.163086	
+				0xff7c00e1	0xff7c00e1	0xff7c00e1	0xff7c00e1	
+			}
+		}
+		visible_on idle
+	}
+}
+
