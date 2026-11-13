@@ -1,0 +1,151 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud.ma"
+//by sergey_mitryaev
+//at Tue Nov 12 15:03:42 2013
+
+
+animations 11
+{
+	anim s_enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim m_enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim l_enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim s_friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim m_friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim l_friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim base_enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim base_friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim small
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim medium
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim large
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+sprites 2
+{
+	total_vertices 8
+
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/ship_type.tif"
+			vertices_nc
+			{
+				0.23946 -0.088172	14.2395 -0.088172	0.23946 14.9118	14.2395 14.9118	
+				0.137647 0.463602	0.151318 0.463602	0.137647 0.492899	0.151318 0.492899	
+			}
+		}
+		visible_on s_enemy
+		anim m_enemy sp_uvc
+		{
+			1 
+			0.153437 0.463602	0.167109 0.463602	0.153437 0.492899	0.167109 0.492899	
+		}
+		anim l_enemy sp_uvc
+		{
+			1 
+			0.169069 0.463602	0.182741 0.463602	0.169069 0.492899	0.182741 0.492899	
+		}
+		anim s_friend sp_uvc
+		{
+			1 
+			0.137964 0.496453	0.151636 0.496453	0.137964 0.52575	0.151636 0.52575	
+		}
+		anim m_friend sp_uvc
+		{
+			1 
+			0.153516 0.495659	0.167188 0.495659	0.153516 0.524956	0.167188 0.524956	
+		}
+		anim l_friend sp_uvc
+		{
+			1 
+			0.169069 0.495818	0.182741 0.495818	0.169069 0.525115	0.182741 0.525115	
+		}
+		anim base_enemy sp_uvc
+		{
+			1 
+			0.285967 0.422061	0.299639 0.422061	0.285967 0.451358	0.299639 0.451358	
+		}
+		anim base_friend sp_uvc
+		{
+			1 
+			0.286061 0.39334	0.299733 0.39334	0.286061 0.422637	0.299733 0.422637	
+		}
+	}
+	sprite objectName53
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/ship_type.tif"
+			vertices_nc
+			{
+				0.23946 -0.088172	14.2395 -0.088172	0.23946 14.9118	14.2395 14.9118	
+				0.089795 0.419657	0.19917 0.419657	0.089795 0.536844	0.19917 0.536844	
+			}
+		}
+		anim small sp_uvc
+		{
+			1 
+			0.0182734 0.00539172	0.127648 0.00539172	0.0182734 0.122579	0.127648 0.122579	
+		}
+		anim medium sp_uvc
+		{
+			1 
+			0.14375 0.00539172	0.253125 0.00539172	0.14375 0.122579	0.253125 0.122579	
+		}
+		anim large sp_uvc
+		{
+			1 
+			0.262177 0.00539172	0.371552 0.00539172	0.262177 0.122579	0.371552 0.122579	
+		}
+	}
+}
+
