@@ -1,0 +1,95 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Tue Jun 03 17:16:55 2014
+
+
+animations 2
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object gmp_icon
+	{
+		defaults
+		{
+			pos 9 -0
+			opacity 255
+			color 0xffffffff
+			size 10 26
+			effect "ui\graphics\hud\ratio\gmp_icon"
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 240 20
+			effect ""
+			alignment "CM"
+			font "Medium"
+		}
+		visible_on idle
+		visible_on idle_2
+	}
+	object title
+	{
+		defaults
+		{
+			pos 31 1
+			opacity 255
+			color 0xffff2800
+			size 100 18
+			effect ""
+			alignment "LM"
+			sampleText "Агрессор"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim idle_2 obj_colc
+		{
+			1
+			0xff00ddff
+		}
+	}
+	object value
+	{
+		defaults
+		{
+			pos 185 1
+			opacity 255
+			color 0xffff2800
+			size 50 18
+			effect ""
+			alignment "RM"
+			sampleText "30с"
+			font "VerySmall"
+		}
+		visible_on idle
+		anim idle_2 obj_colc
+		{
+			1
+			0xff00ddff
+		}
+	}
+}
+
