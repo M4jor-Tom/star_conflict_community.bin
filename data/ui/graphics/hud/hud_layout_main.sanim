@@ -1,0 +1,214 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_new.ma"
+//by Sergey_Mitryaev
+//at Fri Mar 02 16:18:43 2018
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 13
+
+objects 12
+{
+	object button_1
+	{
+		defaults
+		{
+			pos 336 172
+			opacity 255
+			color 0xffffffff
+			size 160 28
+			effect "ui\graphics\button\button_1"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_2
+	{
+		defaults
+		{
+			pos 173.413 172
+			opacity 255
+			color 0xffffffff
+			size 160 28
+			effect "ui\graphics\button\button_1"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object button_3
+	{
+		defaults
+		{
+			pos 10.4126 172
+			opacity 255
+			color 0xffffffff
+			size 160 28
+			effect "ui\graphics\button\button_1"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object arrow_btn
+	{
+		defaults
+		{
+			pos 485.647 1
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\login_screen\arrow_btn"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 10 1
+			opacity 255
+			color 0xfff9d369
+			size 200 20
+			effect ""
+			alignment "LM"
+			sampleText "HUD Layout"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object layout_btn
+	{
+		defaults
+		{
+			pos 10 53
+			opacity 255
+			color 0xffffffff
+			size 40 28
+			effect "ui\graphics\hud\hud_layout_btn_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos -1.64313e-014 -3.55271e-015
+			opacity 255
+			color 0xffffffff
+			size 506 210
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object area
+	{
+		defaults
+		{
+			pos 1 1
+			opacity 255
+			color 0xfff9d369
+			size 506 20
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title_2
+	{
+		defaults
+		{
+			pos 10 27
+			opacity 255
+			color 0xffffffff
+			size 400 20
+			effect ""
+			alignment "LM"
+			sampleText "Настройка для сохранения"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object title_3
+	{
+		defaults
+		{
+			pos 10 93.1051
+			opacity 255
+			color 0xffffffff
+			size 400 20
+			effect ""
+			alignment "LM"
+			sampleText "Настройка для сохранения"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object chek_box
+	{
+		defaults
+		{
+			pos 10 146
+			opacity 255
+			color 0xffffffff
+			size 400 20
+			effect "ui\graphics\login_screen\chek_box"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object drop_down
+	{
+		defaults
+		{
+			pos 10 115.105
+			opacity 255
+			color 0xffffffff
+			size 400 20
+			effect "ui\graphics\login_screen\drop_down_main"
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite objectName70
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	501 -0	507 -0	0 23	6 23	501 23	507 23	0 199	6 199	501 199	507 199	0 205	6 205	501 205	507 205	
+				0.0625 0.699219	0.0683594 0.699219	0.0722656 0.699219	0.078125 0.699219	0.0625 0.720703	0.0683594 0.720703	0.0722656 0.720703	0.078125 0.720703	0.0625 0.72168	0.0683594 0.72168	0.0722656 0.72168	0.078125 0.72168	0.0625 0.727539	0.0683594 0.727539	0.0722656 0.727539	0.078125 0.727539	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
