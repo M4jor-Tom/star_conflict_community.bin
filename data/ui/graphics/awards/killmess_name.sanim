@@ -1,0 +1,45 @@
+﻿source_file "Y:/art/source/ui/graphics/awards/awards.ma"
+//by sergey_mitryaev
+//at Fri Nov 07 13:40:59 2014
+
+
+animations 2
+{
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode once
+		cycle_time 0.2
+	}
+}
+
+total_elements 1
+
+objects 1
+{
+	object name
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff00dcff
+			size 230 20
+			effect ""
+			alignment "LM"
+			sampleText "МСТИТЕЛЬ"
+			font "VerySmall"
+		}
+		visible_on friend
+		anim enemy obj_colc
+		{
+			1
+			0xffff2700
+		}
+	}
+}
+
