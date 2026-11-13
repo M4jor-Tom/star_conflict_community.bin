@@ -1,0 +1,160 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Thu Mar 19 15:50:34 2015
+
+base_res 1280 720
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim idle_2
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim over_2
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_2
+	}
+}
+
+sprites 4
+{
+	total_vertices 40
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-2 -2	4 -2	36 -2	42 -2	-2 4	4 4	36 4	42 4	-2 36	4 36	36 36	42 36	-2 42	4 42	36 42	42 42	
+				0.060547 0.646484	0.0664063 0.646484	0.0742188 0.646484	0.0800781 0.646484	0.0605469 0.652344	0.0664063 0.652344	0.0742188 0.652344	0.0800781 0.652344	0.0605469 0.660156	0.0664062 0.660156	0.0742188 0.660156	0.0800781 0.660156	0.0605469 0.666016	0.0664062 0.666016	0.0742188 0.666016	0.0800781 0.666016	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		visible_on idle_2
+		visible_on over_2
+	}
+	sprite myself10
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				3 2	37 2	3 36	37 36	
+				0.628906 0.269531	0.761719 0.269531	0.628906 0.402344	0.761719 0.402344	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+		anim over_2 sp_colc
+		{
+			1
+			0xffffff	0xffffff	0xffffff	0xffffff	
+		}
+	}
+	sprite myself14
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/map_dread.tif"
+			vertices
+			{
+				3 2	37 2	3 36	37 36	
+				0.863281 0.214844	0.996094 0.214844	0.863281 0.347656	0.996094 0.347656	
+				0xffffff	0xffffff	0xffffff	0xffffff	
+			}
+		}
+		visible_on idle
+		visible_on over
+		anim idle_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim over_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite over6
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				1 1	7 1	33 1	39 1	1 7	7 7	33 7	39 7	1 33	7 33	33 33	39 33	1 39	7 39	33 39	39 39	
+				0.107422 0.645508	0.101562 0.645508	0.0917969 0.645508	0.0859375 0.645508	0.107422 0.651367	0.101562 0.651367	0.0917969 0.651367	0.0859375 0.651367	0.107422 0.661133	0.101563 0.661133	0.0917969 0.661133	0.0859375 0.661133	0.107422 0.666992	0.101563 0.666992	0.0917969 0.666992	0.0859375 0.666992	
+				0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim over sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on idle_2
+		anim over_2 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+}
+
