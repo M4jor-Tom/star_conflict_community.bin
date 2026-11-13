@@ -1,0 +1,278 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree/ships_tree.ma"
+//by Sergey_Mitryaev
+//at Tue Aug 29 19:47:00 2017
+
+base_res 1280 720
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 17
+
+objects 13
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 400 210
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 10 3
+			opacity 255
+			color 0xffffffff
+			size 180 20
+			effect ""
+			alignment "LT"
+			sampleText "Легкие лазеры"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_x
+	{
+		defaults
+		{
+			pos 380 2
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\login_screen\btn_x"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_1
+	{
+		defaults
+		{
+			pos 239.172 192
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object btn_2
+	{
+		defaults
+		{
+			pos 80.1722 192
+			opacity 255
+			color 0xffffffff
+			size 200 30
+			effect "ui\graphics\button\button_1"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_3
+	{
+		defaults
+		{
+			pos 35 117
+			opacity 255
+			color 0xffffffff
+			size 350 20
+			effect ""
+			alignment "RM"
+			sampleText "Легкие лазеры"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object syn_sl
+	{
+		defaults
+		{
+			pos 210 141.711
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect "ui\graphics\ships_tree\trans_syn_sl_main"
+			alignment "RM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object text_5
+	{
+		defaults
+		{
+			pos 48 142
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "RM"
+			sampleText "Легкие лазеры"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price_1
+	{
+		defaults
+		{
+			pos 35 93.5798
+			opacity 255
+			color 0xffffffff
+			size 350 18
+			effect ""
+			alignment "RM"
+			sampleText "6634646"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object price_2
+	{
+		defaults
+		{
+			pos 36 166
+			opacity 255
+			color 0xffffffff
+			size 350 18
+			effect ""
+			alignment "RM"
+			sampleText "46546"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object syn_ico
+	{
+		defaults
+		{
+			pos 362.609 143
+			opacity 255
+			color 0xffffffff
+			size 18 18
+			effect "ui\graphics\shop\gold_icon"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object loading
+	{
+		defaults
+		{
+			pos 146.134 30
+			opacity 255
+			color 0xffffffff
+			size 100 100
+			effect "ui\graphics\hangar\loading_big"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object descript
+	{
+		defaults
+		{
+			pos 12 30
+			opacity 255
+			color 0xffffffff
+			size 380 50
+			effect ""
+			alignment "LT"
+			sampleText "Легкие лазеры|ioiyoi tluyl iyull|uiklu ytkyk yuk "
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 4
+{
+	total_vertices 40
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			anchor "LR"
+			vertices
+			{
+				0 -0	8 -0	394 -0	400 -0	0 6	8 6	394 6	400 6	0 213.404	8 213.404	394 213.404	400 213.404	0 222.787	8 222.787	394 222.787	400 222.787	
+				0.325193 0.000978887	0.333014 0.000978887	0.370119 0.000978827	0.375979 0.000978827	0.325193 0.0068382	0.333014 0.0068382	0.370119 0.00683814	0.375979 0.0068382	0.325193 0.0439453	0.333015 0.0439453	0.37012 0.0439453	0.375979 0.0439453	0.325193 0.05176	0.333015 0.05176	0.370119 0.05176	0.375979 0.05176	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite dff
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0.89801 24.1004	0.89801 22.1004	399.1 24.1003	399.1 22.1004	
+				0.077202 0.144612	0.0791552 0.144612	0.077202 0.150449	0.0791552 0.150449	
+			}
+		}
+		visible_on idle
+	}
+	sprite black
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				6 25	14 25	388.018 25	394.018 25	6 31	14 31	388.018 31	394.018 31	6 180.809	14 180.809	388.018 180.809	394.018 180.809	6 189.191	14 189.191	388.018 189.191	394.018 189.191	
+				0.234862 0.0151361	0.242684 0.0151361	0.253419 0.0151361	0.259278 0.0151361	0.234862 0.0209954	0.242684 0.0209954	0.253419 0.0209954	0.259279 0.0209955	0.234862 0.0317366	0.242684 0.0317366	0.253419 0.0317366	0.259279 0.0317366	0.234862 0.0395513	0.242684 0.0395513	0.253419 0.0395514	0.259279 0.0395513	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+	sprite b
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				5.67274 85	5.67274 83	394.325 85	394.325 83	
+				0.077202 0.144612	0.0791552 0.144612	0.077202 0.150449	0.0791552 0.150449	
+			}
+		}
+		visible_on idle
+	}
+}
+
