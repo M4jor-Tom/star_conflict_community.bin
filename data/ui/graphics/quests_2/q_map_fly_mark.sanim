@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests_2.ma"
+//by sergey_mitryaev
+//at Thu Nov 30 15:47:51 2017
+
+base_res 1920 1080
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite que68
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				0 -0	14 -0	0 24	14 24	
+				0.972656 0.380859	1 0.380859	0.972656 0.427734	1 0.427734	
+				0x19ffffff	0x19ffffff	0x19ffffff	0x19ffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
