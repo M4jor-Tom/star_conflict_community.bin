@@ -1,0 +1,106 @@
+﻿source_file  Y:/art/source/ui/graphics/hud/hud_2.ma
+//by sega
+//at Wed Sep 28 12:02:13 2011
+
+animations 2
+{
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 5
+
+objects 5
+{
+	object title
+	{
+		defaults
+		{
+			pos -0.140118 0.794372
+			opacity 255
+			color 0xffff1f00
+			size 20 13
+			effect ""
+			alignment "RM"
+			sampleText "A"
+			font "Tiny_outl2"
+		}
+		visible_on enemy
+		anim friend obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+	}
+	object dron
+	{
+		defaults
+		{
+			pos 23.557 3.04094
+			opacity 255
+			color 0xffff2700
+			size 112 11
+			effect "ui\graphics\hud\dron_main"
+			alignment "CM"
+		}
+		visible_on enemy
+		anim friend obj_colc
+		{
+			1
+			0xff88b5ff
+		}
+	}
+	object value
+	{
+		defaults
+		{
+			pos 60.3608 0.794372
+			opacity 255
+			color 0xffffffff
+			size 40 13
+			effect ""
+			alignment "LM"
+			sampleText "100"
+			font "Tiny_outl2"
+		}
+		visible_on enemy
+		visible_on friend
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 190 16
+			effect ""
+			alignment "RM"
+		}
+		visible_on enemy
+		visible_on friend
+	}
+	object damage_base
+	{
+		defaults
+		{
+			pos 11.0115 2.81145
+			opacity 255
+			color 0xffffffff
+			size 60 10
+			effect "ui\graphics\hud\damage_base"
+			alignment "RM"
+		}
+		visible_on enemy
+		visible_on friend
+	}
+}
+
