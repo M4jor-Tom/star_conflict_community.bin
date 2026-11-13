@@ -1,0 +1,103 @@
+﻿source_file "Y:/art/source/ui/graphics/ships_tree_2/ships_tree_new_race.ma"
+//by sergey_mitryaev
+//at Mon Jul 04 17:24:35 2016
+
+base_res 1280 720
+
+animations 3
+{
+	anim 9
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 7
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim 5
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 3
+
+sprites 3
+{
+	total_vertices 12
+
+	sprite que252
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3.tif"
+			vertices
+			{
+				7.62939e-006 -0	200 -0	7.62939e-006 234	200 234	
+				0 0.470703	0.390625 0.470703	0 0.927734	0.390625 0.927734	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on 9
+		anim 7 sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+		anim 5 sp_colc
+		{
+			1
+			0x0	0x0	0x0	0x0	
+		}
+	}
+	sprite que253
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3.tif"
+			vertices
+			{
+				0 -0	234 -0	0 234	234 234	
+				0.00195313 0.00976563	0.458984 0.00976563	0.00195313 0.466797	0.458984 0.466797	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on 9
+		visible_on 7
+		anim 5 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+	}
+	sprite que254
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/ui_text_3.tif"
+			vertices
+			{
+				0 -1	234 -1	0 233	234 233	
+				0.470703 0.00976563	0.927734 0.00976563	0.470703 0.466797	0.927734 0.466797	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on 9
+		anim 7 sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on 5
+	}
+}
+
