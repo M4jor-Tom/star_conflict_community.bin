@@ -1,0 +1,78 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/dreadnought.ma"
+//by sergey_mitryaev
+//at Mon Jan 12 15:19:50 2015
+
+base_res 1280 720
+
+animations 3
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 0.7
+	}
+	anim friend
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim enemy
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 2
+
+objects 1
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 10 10
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+		visible_on friend
+		visible_on enemy
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite qw6
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 -0	10 -0	0 10	10 10	
+				0.430664 0.295898	0.44043 0.295898	0.430664 0.305664	0.44043 0.305664	
+				0xffb3b3b3	0xffb3b3b3	0xffb3b3b3	0xffb3b3b3	
+			}
+		}
+		visible_on idle
+		anim friend sp_colc
+		{
+			1
+			0xff00ddff	0xff00ddff	0xff00ddff	0xff00ddff	
+		}
+		anim enemy sp_colc
+		{
+			1
+			0xffff2800	0xffff2800	0xffff2800	0xffff2800	
+		}
+	}
+}
+
