@@ -1,0 +1,170 @@
+﻿source_file "Y:/art/source/ui/graphics/hangar/hangar_iter_3.ma"
+//by Sergey_Mitryaev
+//at Wed Feb 28 17:10:39 2018
+
+base_res 1920 1080
+
+animations 4
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim press
+	{
+		mode once
+		cycle_time 0.2
+	}
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim lock
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 6
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 168 74
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on select
+		visible_on lock
+	}
+	object sale
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xfff7f7f7
+			size 80 69
+			effect "ui\graphics\hangar_iter_3\menu_btn_sale"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on select
+		visible_on lock
+	}
+	object over
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xfff7f7f7
+			size 80 69
+			effect "ui\graphics\hangar_iter_3\menu_btn_over"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on select
+		visible_on lock
+	}
+	object value
+	{
+		defaults
+		{
+			pos 0 20
+			opacity 255
+			color 0xff8ec5e4
+			size 170 32
+			effect ""
+			alignment "CM"
+			sampleText "МАГАЗИН"
+			font "Medium"
+		}
+		visible_on idle
+		anim press obj_col
+		{
+			4
+			0xffa4bde7
+			0xffa4bde7
+			0xffa4bde7
+			0xffffffff
+		}
+		anim select obj_colc
+		{
+			1
+			0xffffffff
+		}
+		anim lock obj_colc
+		{
+			1
+			0xff535d63
+		}
+	}
+	object blink
+	{
+		defaults
+		{
+			pos 1 -0
+			opacity 255
+			color 0xffffffff
+			size 40 40
+			effect "ui\graphics\hangar_iter_3\menu_btn_blink"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+		visible_on press
+		visible_on select
+		visible_on lock
+	}
+}
+
+sprites 1
+{
+	total_vertices 4
+
+	sprite we8_15
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/texture_iter_3_2.tif"
+			vertices
+			{
+				-2 1	169 1	-2 73	169 73	
+				0.107422 0.207031	0.447266 0.207031	0.107422 0.347656	0.447266 0.347656	
+				0x0	0x0	0x0	0x0	
+			}
+		}
+		visible_on idle
+		anim press sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		anim select sp_colc
+		{
+			1
+			0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+		}
+		visible_on lock
+	}
+}
+
