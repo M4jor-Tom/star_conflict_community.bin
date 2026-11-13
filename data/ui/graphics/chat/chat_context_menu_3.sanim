@@ -1,0 +1,295 @@
+﻿source_file "Y:/art/source/ui/graphics/chat/chat.ma"
+//by sergey_mitryaev
+//at Wed Oct 23 14:44:53 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode once
+		cycle_time 1
+	}
+}
+
+total_elements 17
+
+objects 15
+{
+	object slot_1
+	{
+		defaults
+		{
+			pos 0 58.4012
+			opacity 255
+			color 0xffffffff
+			size 234 18
+			effect "ui\graphics\chat\chat_context_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_2
+	{
+		defaults
+		{
+			pos 0 77.8454
+			opacity 255
+			color 0xffffffff
+			size 234 18
+			effect "ui\graphics\chat\chat_context_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_3
+	{
+		defaults
+		{
+			pos 0 97.2897
+			opacity 255
+			color 0xffffffff
+			size 234 18
+			effect "ui\graphics\chat\chat_context_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_4
+	{
+		defaults
+		{
+			pos 0 116.734
+			opacity 255
+			color 0xffffffff
+			size 234 18
+			effect "ui\graphics\chat\chat_context_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_5
+	{
+		defaults
+		{
+			pos 0 134.018
+			opacity 255
+			color 0xffffffff
+			size 234 18
+			effect "ui\graphics\chat\chat_context_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_6
+	{
+		defaults
+		{
+			pos 0 153.462
+			opacity 255
+			color 0xffffffff
+			size 234 18
+			effect "ui\graphics\chat\chat_context_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_7
+	{
+		defaults
+		{
+			pos 0 172.906
+			opacity 255
+			color 0xffffffff
+			size 234 18
+			effect "ui\graphics\chat\chat_context_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_8
+	{
+		defaults
+		{
+			pos 0 192.35
+			opacity 255
+			color 0xffffffff
+			size 234 18
+			effect "ui\graphics\chat\chat_context_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_9
+	{
+		defaults
+		{
+			pos 0 211.401
+			opacity 255
+			color 0xffffffff
+			size 234 18
+			effect "ui\graphics\chat\chat_context_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object slot_10
+	{
+		defaults
+		{
+			pos 0 230.401
+			opacity 255
+			color 0xffffffff
+			size 234 18
+			effect "ui\graphics\chat\chat_context_line"
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 234 250
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object min_dist
+	{
+		defaults
+		{
+			pos 20.6754 -0
+			opacity 255
+			color 0xffffffff
+			size 16 45
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object sacer
+	{
+		defaults
+		{
+			pos 0 54
+			opacity 255
+			color 0xffffffff
+			size 16 45
+			effect "ui\graphics\chat\chat_context_menu_sacer"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 5 4
+			opacity 255
+			color 0xffffffff
+			size 225 50
+			effect ""
+			alignment "LT"
+			sampleText "fdsfjmup|eeevev"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object bg
+	{
+		defaults
+		{
+			pos 2 2
+			opacity 255
+			color 0xffffffff
+			size 20 20
+			effect "ui\graphics\chat\chat_context_menu_bg"
+			alignment "LT"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 32
+
+	sprite sp217wf
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 46	3 46	237 46	243 46	-3 52	3 52	237 52	243 52	
+				0.325195 0.0546875	0.331055 0.0546875	0.370117 0.0546875	0.375977 0.0546875	0.325195 0.0605469	0.331055 0.0605469	0.370117 0.0605469	0.375977 0.0605469	0.325195 0.0996094	0.331055 0.0996094	0.370117 0.0996094	0.375977 0.0996094	0.325195 0.105469	0.331055 0.105469	0.370117 0.105469	0.375977 0.105469	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 46	3 46	237 46	243 46	-3 52	3 52	237 52	243 52	
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 66.9	3 66.9	237 66.9	243 66.9	-3 72.9	3 72.9	237 72.9	243 72.9	
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 87.8	3 87.8	237 87.8	243 87.8	-3 93.8	3 93.8	237 93.8	243 93.8	
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 108.7	3 108.7	237 108.7	243 108.7	-3 114.7	3 114.7	237 114.7	243 114.7	
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 129.6	3 129.6	237 129.6	243 129.6	-3 135.6	3 135.6	237 135.6	243 135.6	
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 150.5	3 150.5	237 150.5	243 150.5	-3 156.5	3 156.5	237 156.5	243 156.5	
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 171.4	3 171.4	237 171.4	243 171.4	-3 177.4	3 177.4	237 177.4	243 177.4	
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 192.3	3 192.3	237 192.3	243 192.3	-3 198.3	3 198.3	237 198.3	243 198.3	
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 213.2	3 213.2	237 213.2	243 213.2	-3 219.2	3 219.2	237 219.2	243 219.2	
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 234.1	3 234.1	237 234.1	243 234.1	-3 240.1	3 240.1	237 240.1	243 240.1	
+			-3 -3	3 -3	237 -3	243 -3	-3 3	3 3	237 3	243 3	-3 255	3 255	237 255	243 255	-3 261	3 261	237 261	243 261	
+		}
+	}
+	sprite sp217
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 39	6 39	230 39	236 39	0 45	6 45	230 45	236 45	
+				0.0546875 0.140625	0.0605469 0.140625	0.0732422 0.140625	0.0791015 0.140625	0.0546875 0.146484	0.0605469 0.146484	0.0732422 0.146484	0.0791015 0.146484	0.0546875 0.150391	0.0605469 0.150391	0.0732422 0.150391	0.0791015 0.150391	0.0546875 0.15625	0.0605469 0.15625	0.0732422 0.15625	0.0791015 0.15625	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		anim idle sp_pos
+		{
+			11 
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 39	6 39	230 39	236 39	0 45	6 45	230 45	236 45	
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 59.8	6 59.8	230 59.8	236 59.8	0 65.8	6 65.8	230 65.8	236 65.8	
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 80.6	6 80.6	230 80.6	236 80.6	0 86.6	6 86.6	230 86.6	236 86.6	
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 101.4	6 101.4	230 101.4	236 101.4	0 107.4	6 107.4	230 107.4	236 107.4	
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 122.2	6 122.2	230 122.2	236 122.2	0 128.2	6 128.2	230 128.2	236 128.2	
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 143	6 143	230 143	236 143	0 149	6 149	230 149	236 149	
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 163.8	6 163.8	230 163.8	236 163.8	0 169.8	6 169.8	230 169.8	236 169.8	
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 184.6	6 184.6	230 184.6	236 184.6	0 190.6	6 190.6	230 190.6	236 190.6	
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 205.4	6 205.4	230 205.4	236 205.4	0 211.4	6 211.4	230 211.4	236 211.4	
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 226.2	6 226.2	230 226.2	236 226.2	0 232.2	6 232.2	230 232.2	236 232.2	
+			0 -0	6 -0	230 -0	236 -0	0 6	6 6	230 6	236 6	0 247	6 247	230 247	236 247	0 253	6 253	230 253	236 253	
+		}
+	}
+}
+
