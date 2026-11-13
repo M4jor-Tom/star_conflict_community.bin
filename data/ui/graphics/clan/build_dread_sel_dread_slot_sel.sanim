@@ -1,0 +1,39 @@
+﻿source_file "Y:/art/source/ui/graphics/clan_screen/clan_screen.ma"
+//by sergey_mitryaev
+//at Fri Nov 07 11:33:39 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 1
+
+sprites 1
+{
+	total_vertices 16
+
+	sprite sp79
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			blend color_add
+			vertices
+			{
+				-4 -4	2 -4	242 -4	248 -4	-4 2	2 2	242 2	248 2	-4 381	2 381	242 381	248 381	-4 387	2 387	242 387	248 387	
+				0.00391842 0.692383	0.00972934 0.692383	0.0175782 0.692383	0.0234374 0.692383	0.00391831 0.698242	0.00972934 0.698242	0.0175781 0.698242	0.0234376 0.698242	0.00391836 0.707031	0.00972934 0.707031	0.0175782 0.707031	0.0234376 0.707031	0.00391836 0.712891	0.00972931 0.712891	0.0175781 0.712891	0.0234376 0.712891	
+				0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	0xffffffff	
+			}
+		}
+		visible_on idle
+	}
+}
+
