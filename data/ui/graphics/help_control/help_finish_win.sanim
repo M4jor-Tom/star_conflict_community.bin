@@ -1,0 +1,128 @@
+﻿source_file "Y:/art/source/ui/graphics/help_control/help.ma"
+//by sergey_mitryaev
+//at Thu Nov 15 16:19:21 2012
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 5
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 860 500
+			effect ""
+			alignment "CM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object buy_btn
+	{
+		defaults
+		{
+			pos 699.037 472.441
+			opacity 255
+			color 0xffffffff
+			size 158 25
+			effect "ui\graphics\shop\buy_btn"
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object title
+	{
+		defaults
+		{
+			pos 132.095 8.50745
+			opacity 255
+			color 0xffffffff
+			size 600 40
+			effect ""
+			alignment "CM"
+			sampleText "Обучение завершено"
+			font "Large"
+		}
+		visible_on idle
+	}
+	object text_1
+	{
+		defaults
+		{
+			pos 132.095 415.812
+			opacity 255
+			color 0xffffffff
+			size 600 25
+			effect ""
+			alignment "CM"
+			sampleText "Добро пожаловать в строй новобранец "
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 132.095 445.485
+			opacity 255
+			color 0xffffffff
+			size 600 18
+			effect ""
+			alignment "CM"
+			sampleText "wswqfqwfqwfwfwfwffwwf fwffwf"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sp2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices_nc
+			{
+				0 -0	6 -0	854 -0	860 -0	0 6	6 6	854 6	860 6	0 494	6 494	854 494	860 494	0 500	6 500	854 500	860 500	
+				0.325184 0.000963569	0.331044 0.000963569	0.370107 0.000963569	0.375966 0.000963569	0.325184 0.00682294	0.331044 0.00682294	0.370107 0.00682294	0.375966 0.00682294	0.325184 0.0459021	0.331044 0.0459021	0.370107 0.0459021	0.375966 0.0459021	0.325184 0.0517615	0.331044 0.0517615	0.370107 0.0517615	0.375966 0.0517615	
+			}
+		}
+		visible_on idle
+	}
+	sprite objectName
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				0 72.1555	860 72.1555	0 412.156	860 412.156	
+				1.86265e-009 0	1 0	1.86265e-009 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
