@@ -1,0 +1,189 @@
+﻿source_file "Y:/art/source/ui/graphics/quests/quests.ma"
+//by sergey_mitryaev
+//at Fri Apr 12 13:58:01 2013
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 11
+
+objects 9
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 265 100
+			effect ""
+			alignment "LT"
+		}
+		visible_on idle
+	}
+	object name
+	{
+		defaults
+		{
+			pos 64.3274 8.35492
+			opacity 255
+			color 0xffffce99
+			size 160 20
+			effect ""
+			alignment "CM"
+			sampleText "KTUBJ"
+			font "Medium"
+		}
+		visible_on idle
+	}
+	object prog
+	{
+		defaults
+		{
+			pos 70.1787 44.2793
+			opacity 255
+			color 0xffffffff
+			size 149 12
+			effect "ui\graphics\equip\skill_prog"
+			alignment "LM"
+			font "VerySmall"
+		}
+		visible_on idle
+	}
+	object vol_1
+	{
+		defaults
+		{
+			pos 90.1613 26.4941
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "RM"
+			sampleText "10000"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object vol_2
+	{
+		defaults
+		{
+			pos 140.092 26.4941
+			opacity 255
+			color 0xffffffff
+			size 10 20
+			effect ""
+			alignment "CM"
+			sampleText "/"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object vol_3
+	{
+		defaults
+		{
+			pos 150.443 26.4941
+			opacity 255
+			color 0xffffffff
+			size 50 20
+			effect ""
+			alignment "LM"
+			sampleText "10000"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text
+	{
+		defaults
+		{
+			pos 58.904 56.359
+			opacity 255
+			color 0xffffffff
+			size 170 45
+			effect ""
+			alignment "LT"
+			sampleText "SAFsffff|weff fwef |ewfef |weff"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object name_2
+	{
+		defaults
+		{
+			pos 64.3274 8.35492
+			opacity 255
+			color 0xffffffff
+			size 160 20
+			effect ""
+			alignment "LM"
+			sampleText "..........................ранг 10"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object text_2
+	{
+		defaults
+		{
+			pos 58.904 56.359
+			opacity 255
+			color 0xff00e80a
+			size 170 45
+			effect ""
+			alignment "LT"
+			sampleText "SAFsffff|weff fwef |ewfef |weff"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+}
+
+sprites 2
+{
+	total_vertices 20
+
+	sprite sprite_2
+	{
+		defaults
+		{
+			rows 4
+			cols 4
+			texture "ui/textures/interation_2/hangar.tif"
+			vertices
+			{
+				-12.4512 0.695442	-8.4512 0.695442	232.61 0.695442	236.61 0.695442	-12.4512 4.69544	-8.4512 4.69544	232.61 4.69544	236.61 4.69544	-12.4512 67.4917	-8.4512 67.4917	232.61 67.4917	236.61 67.4917	-12.4512 71.4917	-8.4512 71.4917	232.61 71.4917	236.61 71.4917	
+				0.223531 0.00279558	0.227438 0.00279558	0.268549 0.00279558	0.272455 0.00279558	0.223531 0.00670183	0.227438 0.00670183	0.268549 0.00670183	0.272455 0.00670183	0.223531 0.0470076	0.227438 0.0470076	0.268549 0.0470076	0.272455 0.0470076	0.223531 0.0509138	0.227438 0.0509138	0.268549 0.0509138	0.272455 0.0509138	
+				0x99999999	0x99999999	0x7f999999	0x7f999999	0x99999999	0x99999999	0x7f999999	0x7f999999	0x99999999	0x99999999	0x7f999999	0x7f999999	0x99999999	0x99999999	0x7f999999	0x7f999999	
+			}
+		}
+		visible_on idle
+	}
+	sprite ico
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "textures/uv_01_01.tif"
+			vertices_nc
+			{
+				-7.281 4.69443	54.719 4.69443	-7.281 64.6944	54.719 64.6944	
+				1.49012e-008 0	1 0	1.49012e-008 1	1 1	
+			}
+		}
+		visible_on idle
+	}
+}
+
