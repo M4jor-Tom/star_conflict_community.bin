@@ -1,0 +1,62 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/hud_3.ma"
+//by sergey_mitryaev
+//at Thu Aug 27 11:21:01 2020
+
+base_res 1280 720
+
+animations 2
+{
+	anim shield
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim shield_damage
+	{
+		mode once
+		cycle_time 0.3
+	}
+}
+
+total_elements 2
+
+objects 2
+{
+	object armor_progress
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffff9100
+			size 24 180
+			effect "ui\graphics\hud\hud_3\armor_progress_swarm"
+			alignment "LT"
+		}
+		visible_on shield
+		anim shield_damage obj_col
+		{
+			5
+			0xffff9100
+			0xffff99ff
+			0xffffb3ff
+			0xffffd21d
+			0xffffed4c
+		}
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xff88b5ff
+			size 24 180
+			effect ""
+			alignment "LT"
+		}
+		visible_on shield
+		visible_on shield_damage
+	}
+}
+
