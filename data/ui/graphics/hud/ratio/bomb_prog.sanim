@@ -1,0 +1,161 @@
+﻿source_file "Y:/art/source/ui/graphics/hud/navigator.ma"
+//by sergey_mitryaev
+//at Thu May 22 14:58:52 2014
+
+
+animations 1
+{
+	anim idle
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 7
+
+objects 2
+{
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 158 22
+			effect ""
+			alignment "LM"
+			font "Tiny"
+		}
+		visible_on idle
+	}
+	object value
+	{
+		defaults
+		{
+			pos 4 -0
+			opacity 255
+			color 0xffffffff
+			size 150 20
+			effect ""
+			alignment "CT"
+			sampleText "ЗАХВАТ БОМБЫ"
+			font "Tiny_outl"
+			blend color_add
+		}
+		visible_on idle
+	}
+}
+
+sprites 5
+{
+	total_vertices 20
+
+	sprite wqe
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-3 18	3 18	-3 24	3 24	
+				0.359375 0.270508	0.353027 0.270508	0.359375 0.264648	0.353027 0.264648	
+				0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	
+			}
+		}
+		visible_on idle
+	}
+	sprite wqe13
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				0 15	0 15	0 21	0 21	
+				0.285156 0.291992	0.285156 0.291992	0.285156 0.280273	0.285156 0.280273	
+				0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	
+			}
+		}
+		anim idle sp_pos_uv
+		{
+			11 11 
+			0 15	0 15	0 21	0 21	
+			0 15	15.8 15	0 21	15.8 21	
+			0 15	31.6 15	0 21	31.6 21	
+			0 15	47.4 15	0 21	47.4 21	
+			0 15	63.2 15	0 21	63.2 21	
+			0 15	79 15	0 21	79 21	
+			0 15	94.8 15	0 21	94.8 21	
+			0 15	110.6 15	0 21	110.6 21	
+			0 15	126.4 15	0 21	126.4 21	
+			0 15	142.2 15	0 21	142.2 21	
+			0 15	158 15	0 21	158 21	
+			0.285156 0.291992	0.285156 0.291992	0.285156 0.280273	0.285156 0.280273	
+			0.285156 0.291992	0.300586 0.291992	0.285156 0.280273	0.300586 0.280273	
+			0.285156 0.291992	0.316016 0.291992	0.285156 0.280273	0.316016 0.280273	
+			0.285156 0.291992	0.331445 0.291992	0.285156 0.280273	0.331445 0.280273	
+			0.285156 0.291992	0.346875 0.291992	0.285156 0.280273	0.346875 0.280273	
+			0.285156 0.291992	0.362305 0.291992	0.285156 0.280273	0.362305 0.280273	
+			0.285156 0.291992	0.377734 0.291992	0.285156 0.280273	0.377734 0.280273	
+			0.285156 0.291992	0.393164 0.291992	0.285156 0.280273	0.393164 0.280273	
+			0.285156 0.291992	0.408594 0.291992	0.285156 0.280273	0.408594 0.280273	
+			0.285156 0.291992	0.424023 0.291992	0.285156 0.280273	0.424023 0.280273	
+			0.285156 0.291992	0.439453 0.291992	0.285156 0.280273	0.439453 0.280273	
+		}
+	}
+	sprite wqe14
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				155 18	161 18	155 24	161 24	
+				0.353027 0.270508	0.359375 0.270508	0.353027 0.264648	0.359375 0.264648	
+				0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	
+			}
+		}
+		visible_on idle
+	}
+	sprite wqe15
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				155 12	161 12	155 18	161 18	
+				0.353027 0.264648	0.359375 0.264648	0.353027 0.270508	0.359375 0.270508	
+				0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	
+			}
+		}
+		visible_on idle
+	}
+	sprite wqe16
+	{
+		defaults
+		{
+			rows 2
+			cols 2
+			texture "ui/textures/interation_2/hud_screen_3.tif"
+			vertices
+			{
+				-3 12	3 12	-3 18	3 18	
+				0.359375 0.264648	0.353027 0.264648	0.359375 0.270508	0.353027 0.270508	
+				0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	0xff7fb2ff	
+			}
+		}
+		visible_on idle
+	}
+}
+
