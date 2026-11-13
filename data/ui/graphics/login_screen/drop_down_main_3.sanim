@@ -1,0 +1,82 @@
+﻿source_file "Y:/art/source/ui/graphics/login_screen/login_screen.ma"
+//by Sergey_Mitryaev
+//at Fri Dec 07 14:45:21 2018
+
+base_res 1280 720
+
+animations 2
+{
+	anim select
+	{
+		mode looped
+		cycle_time 1
+	}
+	anim deselect
+	{
+		mode looped
+		cycle_time 1
+	}
+}
+
+total_elements 4
+
+objects 4
+{
+	object list
+	{
+		defaults
+		{
+			pos -1 25.0804
+			opacity 255
+			color 0xffffffff
+			size 20 22
+			effect "ui\graphics\login_screen\drop_down_list_3"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object drop_down_input
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 20 22
+			effect "ui\graphics\login_screen\drop_down_input_3"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object self
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 290 447
+			effect ""
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+	object drop_down_btn
+	{
+		defaults
+		{
+			pos 0 -0
+			opacity 255
+			color 0xffffffff
+			size 390 22
+			effect "ui\graphics\login_screen\drop_down_btn_3"
+			alignment "LT"
+		}
+		visible_on select
+		visible_on deselect
+	}
+}
+
